@@ -1,0 +1,155 @@
+baseURL: ''
+title: OOG Capital Management
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Archiel
+  authorimage: ../assets/images/archiel.png
+  og_image: /images/featured/featured-img-placeholder.png
+  moto: "The premier Antares Corporation"
+  description: "OOG works to ensure the stability and growth of Antares, while spearheading governance training, shipbuilding, and planetary and regional development."
+  disable_theme_toggle: false
+  disable_stay_uptodate: false
+
+  p1:
+    heading: "About OOG"
+    image: "images/prunScreenshot.png"
+    content:
+      - text: "We are the largest and oldest highly-active corporation in Antares space and the largest governance organization in the universe. As a corporation, we work to ensure the stability of the Antares region, as well as creating a fun and engaging place for our members to enjoy Prosperous Universe."
+      - text: "Our corporation includes governance training and support, shipbuilding, planetary and regional development, a discord-based internal auction/order system and preferential material access and prices."
+      - text: "The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones."
+    links:
+      - text: Meet our shipbuilder team
+        url: "#"
+  p2:
+    heading: "A leader in Antares Space"
+    image: "images/conceptConsole.jpg"
+    content:
+      - text: "OOG was formed in early 2021, and now governs over 1 million citizens in ANT space. We've been a major funder of the SE-110 development project in coordination with FICSIT and the Antares Development Initiative. Through various projects, we've build administrative centers and chambers of commerce on dozens of planets. Prospective members should be based in ANT or be willing to relocate. Relocation support can be provided for the right people."
+  p3:
+    heading: "Join OOG"
+    content:
+      - text: "We're always recruiting! OOG is a highly selective corp with limited available positions. Each member will be internally discussed, then a 7 day trial is offered, followed by the full corp invite."
+
+  p4:
+    heading: "Articles and Posts"
+    content:
+      - text: "Official news and articles from OOG"
+  p5:
+    heading: "Reach out to OOG"
+    content:
+      - text: "We're always recruiting! OOG is a highly selective corp with limited available positions. Each member will be internally discussed, then a 7 day trial is offered, followed by the full corp invite. To contact us, join the UFO discord, and ping an OOG member, such as Archiel. Better yet, join the UFO recruiting channels and look for the OOG post."
+    action: "#"
+    label: "Email address"
+    placeholder: "Enter your email"
+    button: "Join UFO Discord"
+
+
+menu:
+  main:
+    - identifier: map
+      name: Universe Map
+      url: /map/
+      weight: 20
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+    - identifier: posts
+      name: Articles
+      url: /posts/
+      weight: 50
+
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: articles
+      name: Articles
+      url: /posts/
+      weight: 20
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"
