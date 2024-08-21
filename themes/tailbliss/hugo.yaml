@@ -48,7 +48,7 @@ markup:
 params:
   author: Archiel
   authorimage: ../assets/images/archiel.png
-  og_image: /images/featured/featured-img-placeholder.png
+  og_image: /images/justmoonsquare.png
   moto: "The premier Antares Corporation"
   description: "OOG works to ensure the stability and growth of Antares, while spearheading governance training, shipbuilding, and planetary and regional development."
   disable_theme_toggle: false
