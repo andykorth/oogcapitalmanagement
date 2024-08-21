@@ -365,6 +365,16 @@ dialog {
   padding: 0;
 }
 
+img[src$='#floatleft']
+{
+	float:left;
+}
+
+img[src$='#floatright']
+{
+	float:right;
+}
+
 /*
 Prevent resizing textareas horizontally by default.
 */
@@ -3428,6 +3438,13 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+article summary {
+  color: rgb(0 150 150);
+}
+.dark article summary {
+  color: rgb(50 255 255);
 }
 
 .text-zinc-900 {
