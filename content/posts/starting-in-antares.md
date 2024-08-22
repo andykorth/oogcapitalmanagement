@@ -1,6 +1,6 @@
 ---
 title: "Getting started in Antares"
-date: 2024-08-20
+date: 2024-08-22
 draft: false
 language: en
 featured_image: ../assets/images/conceptPlanetNarrow.jpg
@@ -16,7 +16,7 @@ tags: Posts
 #### Subtitle: Promitor is actually fairly medicore.
 {{< /center >}}
 
-Promitor is often considered "the best start", but that recommendation comes with many caveats. It is true that Promitor has the highest fertility, which speeds up your farms, but how does it compare to other starting industries? Turns out that with a modest investment, there are plenty of starter builds in ANT that will double the daily income of farming on Promitor. 
+Promitor is often considered "the best start". While it's true that Promitor has the highest fertility, how does it compare to other starting industries? Turns out that with a modest investment, there are plenty of starter builds in ANT that will double the daily income of farming on Promitor. 
 
 > When compared to other turds, Promitor is the best turd.
 <div style="text-align: right">Quote from me, right now.</div>
@@ -26,9 +26,6 @@ Promitor features an amazing fertility of 112%. So with the COGC and 5 experts, 
 {{< foldoutLinkImage title="See Base" image="http://kortham.net/temp/firefox_2024-08-19_19-19-31.png" >}}
 
 With the free starter CM, this base costs $390k to construct and makes.... $37,372 per day. You can do better. It's got an admittedly decent ROI of 10.43d. I'm here to show you there are plenty of better starting choices.
-
-In Antares, join the Antares Development Initiative 
-
 
 
 ![Antares Logo](/images/ANTLogo.png#floatright)
@@ -41,21 +38,25 @@ However, all of these designs work if you don't get a grant. Build the buildings
 
 [![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
 
-| Planet and Base                              | Income per Day     |   Base Cost |
-|------------------------------------------|----------|--------|
-| Promitor - Farms                         | $37,372  |  $390k |
-| Harmonia - Farms                         | $30,959  |  $390k |
-| Hephaestus - Manufacturing PE            | $72,343  |  $880k |
-| Hephaestus - Other BMP                   | $100,000 |  $880k |
-| Deimos - Metallurgy - AL                 | $47,646  |  $880k |
-| Nascent - Carbon Farmer                  | $75,786  |  $900k |
-| Norwick - Drinking Water                 | $98,029  |  $800k |
+---
+
+### Bases that are better than Promitor:
+
+| Planet and Base                  | Income per Day     |   Base Cost |
+|---------------------------------------------|----------|--------|
+| 💩 Promitor - Farms                         | $37,372  |  $390k |
+| 💩 Harmonia - Farms                         | $30,959  |  $390k |
+| 🏭 Hephaestus - Manufacturing PE            | $72,343  |  $880k |
+| 🏭 Hephaestus - Other BMP                   | $100,000 |  $880k |
+| 🏗️ Deimos - Metallurgy - AL                 | $47,646  |  $880k |
+| 🌲 Nascent - Carbon Farmer                  | $75,786  |  $900k |
+| 🚰 Norwick - Drinking Water                 | $98,029  |  $800k |
 
 ---
 
 # Starter Bases in Antares
 
-## Manufacturing Start
+## 🏭 Manufacturing Start
 
 One starter option is manufacturing on Hephaestus in Antares:
 
@@ -69,7 +70,7 @@ What if you're a new player and you've got two 500t/500m3 ships that you can uti
 
 Want to do it with minimal importing? A base full of BMPs making SEA produces $108k per day on Heph.
 
-## Metallurgy Start
+## 🏗️ Metallurgy Start
 
 Antares is hungry for Aluminum, which is easy to ship compared to Iron. A base full of SMEs makes $47,646 on Deimos. It costs more than a FRM base, so has a slower ROI, but it can also synergize well with other starts.
 
@@ -77,7 +78,7 @@ Antares is hungry for Aluminum, which is easy to ship compared to Iron. A base f
 
 You can also mix in other metals, they tend to have higher returns, although AL is always guaranteed to sell. LI and TI are good higher income options that still move relatvely quickly. Later you can transition a Deimos base to make alloys with an ASM.
 
-## Carbon Farmin'
+## 🌲 Carbon Farmin'
 
 Nascent is an great planet to run INCs. It's not a starter planet, but you can move yourself on over, and throw down some INCs.
 
@@ -85,7 +86,7 @@ Nascent is an great planet to run INCs. It's not a starter planet, but you can m
 
 Just like that, $75,786 per day. And everyone loves carbon, so you'll also make a bunch of friends!
 
-## Good ol' drinkin' water
+## 🚰 Good ol' drinkin' water
 
 There isn't a "starter pack" for Food Processing, but a drinking water base is probably simpler than any of the other recommended starts, and it makes great money with just Pioneers.
 
@@ -95,7 +96,7 @@ Start on Norwick and build twards 12 HB1s and 29 FPs. Import water, which is at 
 
 Want even more money on a simple Pioneer only starter base? Make rations using whatever crops you can buy off the CX for 101k per day of income. This will also work out to around 500t of shipping per day, once your base is full. (as you are starting with a partial base, it'll be lower, of course).
 
-### Farming: A comparison Harmonia vs. Promitor
+### 🌱 Farming: A comparison Harmonia vs. Promitor
 
 A Harmonia farming base is a little worse than Promitor, due to the fertility difference.
 
@@ -107,15 +108,15 @@ So it's 31k/d on Harmonia vs 37k/d on Promitor. 20% better is nothing to sneeze 
 
 ## Why do people recommend Promitor?
 
-If you're gonna build a FRM base, Promitor has a 20% edge over another FRM planet like Harmonia. But the FOMO (Fear of Missing Out) is often stronger than rational thinking.
+Returns on Promitor aren't great. You don't have to be worried about missing out on such a low-income planet.  But the FOMO (Fear of Missing Out) is often stronger than rational thinking.
 
 > If you don't start with a base on Promitor, you'll never be able to get one!
 
 This is true, but also consider:
 
-> If you don't grab this turd right now, you won't be able to grab it later!
+> If you don't grab this turd right now, you won't be able to grab it later! 💩
 
-You will be okay if you don't start on Promitor. Just because it's the best FRM planet, doesn't mean it's the best starting planet. 
+You will be okay if you don't start on Promitor. Just because it's the best FRM planet, doesn't mean it's the best starting planet. Yes, if you feel the need to build a FRM base, Promitor has a 20% edge over another FRM planet like Harmonia, but it's not a big deal.
 
 ---
 # Common Concerns
