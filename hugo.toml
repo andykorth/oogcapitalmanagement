@@ -1,0 +1,4 @@
+baseURL = 'https://oogcapitalmanagement.com/'
+languageCode = 'en-us'
+title = 'OOG Capital Management'
+theme = 'tailbliss'
