@@ -16,7 +16,7 @@ tags: Posts
 #### Subtitle: Promitor is actually fairly medicore.
 {{< /center >}}
 
-Promitor is often considered "the best start", but that recommendation comes with many caveats. It is true that Promitor has the highest fertility, which speeds your farms, but does that mean it's better than other industries too?
+Promitor is often considered "the best start", but that recommendation comes with many caveats. It is true that Promitor has the highest fertility, which speeds up your farms, but how does it compare to other starting industries? Turns out that with a modest investment, there are plenty of starter builds in ANT that will double the daily income of farming on Promitor. 
 
 > When compared to other turds, Promitor is the best turd.
 <div style="text-align: right">Quote from me, right now.</div>
@@ -25,16 +25,21 @@ Promitor features an amazing fertility of 112%. So with the COGC and 5 experts, 
 
 {{< foldoutLinkImage title="See Base" image="http://kortham.net/temp/firefox_2024-08-19_19-19-31.png" >}}
 
-With the free starter CM, this base costs $390k to construct and makes a whopping.... $37,372 per day. It's got a ROI of 10.43d. I'm here to show you there are plenty of better starting choices.
+With the free starter CM, this base costs $390k to construct and makes.... $37,372 per day. You can do better. It's got an admittedly decent ROI of 10.43d. I'm here to show you there are plenty of better starting choices.
+
+In Antares, join the Antares Development Initiative 
+
+
 
 ![Antares Logo](/images/ANTLogo.png#floatright)
 
 ## Antares, the best region
 
-Keep in mind that the Antares Development Initiative gives new players in Antares space 750k AIC grants. For most of these base designs, this is enough to complete your first 500 area base, especially if you get discounted building materials.
+Keep in mind that the Antares Development Initiative gives new players in Antares space 750k AIC grants. For most of these base designs, this is enough to complete your first 500 area base, especially if you get discounted building materials. For more information, join the [Antares Development Initiative Discord](https://discord.gg/gmx7br5XBQ). A pro license is required to receive contracts and grants.
 
 However, all of these designs work if you don't get a grant. Build the buildings incrementally. Be sure you save money for production inputs, workforce consumables, and taxes.  
 
+[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
 
 | Planet and Base                              | Income per Day     |   Base Cost |
 |------------------------------------------|----------|--------|
