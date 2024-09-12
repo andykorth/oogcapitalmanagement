@@ -8,8 +8,8 @@ summary: Our top secret regional development project
 description: Our top secret regional development project.
 author: Archiel
 authorimage: ../assets/images/archiel.png
-categories: Posts
-tags: Posts
+accessCategories: Posts
+tags: Stockholders
 ---
 
 Information about Project 6115 is available to shareholders in the appropriate discord channel. 

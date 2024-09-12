@@ -8,7 +8,7 @@ summary: August 2024, Malahat Survey Results
 description: August 2024, Malahat Survey Results
 author: Archiel
 authorimage: ../assets/images/archiel.png
-categories: Posts
+accessCategories: Posts
 tags: Malahat
 ---
 

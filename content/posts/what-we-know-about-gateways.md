@@ -8,7 +8,7 @@ summary: Everything we know about gateways so far
 description: Everything we know about gateways so far
 author: Archiel
 authorimage: ../assets/images/archiel.png
-categories: Posts
+accessCategories: Posts
 tags: Posts
 ---
 

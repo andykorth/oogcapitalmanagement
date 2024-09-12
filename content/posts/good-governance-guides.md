@@ -3,13 +3,13 @@ title: "Good Governance Guides"
 date: 2024-08-10T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/conceptPlanetLanding.jpg
+featured_image: ../assets/images/governorship-header.png
 summary: Governing a planet requires understanding of the population infrastructure system.
 description: Governing a planet requires understanding of the population infrastructure system. 2
 author: Archiel
 authorimage: ../assets/images/archiel.png
-categories: Posts
-tags: Posts
+accessCategories: Posts
+tags: Guides
 ---
 
 The first step to being a good governor, is understanding the population infrastructure mechanics on your planet. Here are some resources:

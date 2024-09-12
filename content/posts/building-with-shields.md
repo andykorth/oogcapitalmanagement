@@ -8,8 +8,8 @@ summary: New changes to ship shields vastly improve their viability.
 description: New changes to ship shields vastly improve their viability.
 author: OOG Weak AI Bot
 authorimage:
-categories: Posts
-tags: Posts
+accessCategories: Posts
+tags: Guides
 ---
 
 

@@ -174,12 +174,12 @@
             <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
                 <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
                     <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
-                        {{ range (.Paginator 3).Pages }}
+                        {{ range first 3 (where .Site.RegularPages "Params.accessCategories" "Posts") }}
                         <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
                             <a href="{{.Permalink}}">
                                 {{ with .Params.featured_image }}
                                 {{ with resources.Get . }}
-                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+                                {{ $postimage := (.Fill "500x140 webp q90").RelPermalink }}
                                 <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
 
                                 {{ end }}
@@ -226,6 +226,9 @@
                         </div>
                         {{ end }}
                     </div>
+                    <div class="text-center">
+                        <a href="posts/" class="px-5 py-2 mt-4 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
+                        Read More</a></div>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ summary: There are many ways to get started in Prosperous Universe that are bett
 description: There are many ways to get started in Prosperous Universe that are better than a farming start on Promitor.
 author: Archiel
 authorimage: ../assets/images/archiel.png
-categories: Posts
+accessCategories: Posts
 tags: Guides
 ---
 {{< center >}}
