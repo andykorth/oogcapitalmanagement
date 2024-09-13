@@ -25,18 +25,20 @@ Gateways are coming, and Antares will be ready for them!
 
 I suspect any gateway can recieve ships, even if it doesn't match the requirements to send a ship back through. This can be a feature, enabling triangular paths of gates, but can be a disadvantage if you accidentally strand a STL ship.
 
+* Gateways max out with 3 distance upgrades, and 5 upgrades total.
+
 ### The default gateway stats:
 
-![Draft Gateway Stats ](/images/draft-gateway-stats.png)
+![Draft Gateway Stats ](/images/gateway-choices.png)
 
 We have potentially non-final stats for the starting un-upgraded gateway. Observations about these values:
 
 * 200 jumps per day starting value- in my estimation this is a lot of jumps.
 * 1500 max ship volume. This fits a starter ship (963 m3), a WCB (1488 m3), but not a standard 2k (2675m). We don't know how much space is added per size upgrade.
-* Distance starts at 10 parsecs and with 2 upgrades goes to 20 parsecs. We don't know the max number of upgrades, but it's probably more than 2 because the + button remains highlighted at 2.
-* We know nothing about fuel yet.
+* Distance starts at 10 parsecs and with 3 upgrades goes to a max of 25 parsecs.
+* We don't know about fuel consumption rates.
 
-## How far is 20 Parsecs?
+## How far is 25 Parsecs?
 
 OOG has a [specially refitted version of Taiyi's map](https://oogcapitalmanagement.com/map/) that can calculate gateway distances. Since it's hard to visualize actual distances in any of the maps, tools are essential for pre-planning gateway routes.
 
@@ -57,7 +59,7 @@ The shipyard engineers of OOG have designed the Gateway Jumper. At internal pric
 
 ## Gateway cost
 
-Costs have been well covered in discussion on discord. We don't exactly know how many upgrades will be typical. It seems the two distance upgrades adds a few hundred of each afab and 240 LIT. We don't know the cost of the new materials, but since it doesn't add TSH/RSH/PSH, it's pretty cheap, proportionally.
+Costs have been well covered in discussion on discord. We now have a pretty solid look at the materials for each upgrade cost. It seems the two distance upgrades adds a few hundred of each afab and 240 LIT. We don't know the cost of the new materials, but since it doesn't add TSH/RSH/PSH, it's pretty cheap, proportionally.
 
 ![More jumps](http://kortham.net/temp/firefox_Cq7DW5ZA51.png)
 
@@ -65,7 +67,7 @@ Based on my work with the map distances, I think increased distance is a must-ha
 
 ## Antares Gateway Planning
 
-Personally, I expect the Antares Development Initiative to be a location for gateway planning in the best region of space in the universe. It's important to consider both sides of a gateway in planning, the reusability of a gateway as a destination for multiple gateways, and the cost per jump saved, given the upgrades chosen.
+Te Antares Development Initiative is organizing gateway planning in the best region of space in the universe. It's important to consider both sides of a gateway in planning, the reusability of a gateway as a destination for multiple gateways, and the cost per jump saved, given the upgrades chosen.
 
 [![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
 
