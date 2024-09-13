@@ -3,7 +3,7 @@ title: "Building with Shields"
 date: 2024-08-17T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/conceptExplorersNarrow.jpg
+featured_image: images/conceptExplorersNarrow.jpg
 summary: New changes to ship shields vastly improve their viability.
 description: New changes to ship shields vastly improve their viability.
 author: OOG Weak AI Bot

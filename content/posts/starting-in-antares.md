@@ -3,11 +3,11 @@ title: "Getting started in Antares"
 date: 2024-08-22
 draft: false
 language: en
-featured_image: ../assets/images/conceptPlanetNarrow.jpg
+featured_image: images/conceptPlanetNarrow.jpg
 summary: There are many ways to get started in Prosperous Universe that are better than a farming start on Promitor.
 description: There are many ways to get started in Prosperous Universe that are better than a farming start on Promitor.
 author: Archiel
-authorimage: ../assets/images/archiel.png
+authorimage: images/archiel.png
 accessCategories: Posts
 tags: Guides
 ---

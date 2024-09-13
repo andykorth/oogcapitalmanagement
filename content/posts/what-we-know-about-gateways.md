@@ -3,11 +3,11 @@ title: "What we know about Gateways"
 date: 2024-09-09T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/jumpgate-header.png
+featured_image: images/jumpgate-header.png
 summary: Everything we know about gateways so far
 description: Everything we know about gateways so far
 author: Archiel
-authorimage: ../assets/images/archiel.png
+authorimage: images/archiel.png
 accessCategories: Posts
 tags: Posts
 ---

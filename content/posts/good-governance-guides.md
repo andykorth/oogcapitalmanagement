@@ -3,11 +3,11 @@ title: "Good Governance Guides"
 date: 2024-08-10T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/governorship-header.png
+featured_image: images/governorship-header.png
 summary: Governing a planet requires understanding of the population infrastructure system.
-description: Governing a planet requires understanding of the population infrastructure system. 2
+description: Governing a planet requires understanding of the population infrastructure system.
 author: Archiel
-authorimage: ../assets/images/archiel.png
+authorimage: images/archiel.png
 accessCategories: Posts
 tags: Guides
 ---

@@ -3,11 +3,11 @@ title: "Project 6115"
 date: 2024-08-12T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/conceptProject6115.jpg
+featured_image: images/conceptProject6115.jpg
 summary: Our top secret regional development project
 description: Our top secret regional development project.
 author: Archiel
-authorimage: ../assets/images/archiel.png
+authorimage: images/archiel.png
 accessCategories: Posts
 tags: Stockholders
 ---

@@ -3,11 +3,11 @@ title: "2024 Malahat Survey"
 date: 2024-08-17T11:10:36+08:00
 draft: false
 language: en
-featured_image: ../assets/images/conceptPlanetNarrow.jpg
+featured_image: images/conceptPlanetNarrow.jpg
 summary: August 2024, Malahat Survey Results
 description: August 2024, Malahat Survey Results
 author: Archiel
-authorimage: ../assets/images/archiel.png
+authorimage: images/archiel.png
 accessCategories: Posts
 tags: Malahat
 ---
