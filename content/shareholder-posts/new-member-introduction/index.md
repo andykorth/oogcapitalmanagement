@@ -9,6 +9,7 @@ description: New Member Introduction Guide
 author: Akyan
 authorimage: ../assets/images/akyan-author.webp
 accessCategories: ShareholderPosts
+compactFormat: true
 tags: Shareholders
 ---
 
@@ -54,51 +55,11 @@ _Tip: If you want your name to appear when members search for goods, you need to
 
 For example (in rows 136-139, columns A-D):
 
-
-
-<table>
-  <tr>
-   <td>Akyan
-   </td>
-   <td>Akyan
-   </td>
-   <td>
-   </td>
-   <td>EPO @ 140
-   </td>
-  </tr>
-  <tr>
-   <td>Ingenious Innovations Inc
-   </td>
-   <td>Akyan
-   </td>
-   <td>
-   </td>
-   <td>NR @ 350
-   </td>
-  </tr>
-  <tr>
-   <td>III
-   </td>
-   <td>Akyan
-   </td>
-   <td>
-   </td>
-   <td>C @ 500
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>Akyan
-   </td>
-   <td>
-   </td>
-   <td>H @ 70
-   </td>
-  </tr>
-</table>
-
+| Akyan | Akyan |  |  EPO @ 140 |
+| ------------- | ------------- | ------------- | ------------- | ------- |
+| Ingenious Innovations Inc | Akyan |  |  NR @ 350 |
+| III | Akyan |  | C @ 500  | 
+|     | Akyan |  | H @ 70   |
 
 The listing of goods enables all corp members to:
 
@@ -123,7 +84,7 @@ If you have stock you wish to sell then use the [#auction channel on discord](ht
 	_It’ll look something like this: \
 _
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](image1.png)
 
 
 
@@ -131,7 +92,7 @@ _
 5. Your goods will then automatically be posted to the #auction channel for members to bid on.  \
 _It’ll look something like this once you have bids:_
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](image2.png)
 
 
 6. When you’re ready to complete the auction, at a time of your choosing, you can click the finish button. _The bot will then update the message to reflect who should receive the contracts_
@@ -145,13 +106,7 @@ The members of the corp will post their own auctions in the #auctions channel, w
 
 If you wish to sell any of your goods to them at the price & location they’ve specified, feel free to offer by clicking on the fulfil all, or fulfil some buttons on order messages posted by the bot.
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+![alt_text](image3.png)
 
 The bot will then automatically update the order to state that you’re fulfilling some or all of the order. Once registered, feel free to send a contract to the other member, if not already sent by them.
 
@@ -165,17 +120,9 @@ If you’d like to order goods from other members of the corporation the use the
 
 Before starting an order, check the [corp price sheet](https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit#gid=489658022), to see what kinds of prices corp members are offering. You'll often be able to place an internal corp order below the CX prices. You can quickly find the price for a material by entering the code in C1, and hitting enter. You’ll get results something like this:
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-
+![alt_text](image4.png)
 
 To place a order:
-
-
 
 1. Open the [orders channel](https://discordapp.com/channels/854795108720443393/1156955200867811450).
 2. Type /order and hit space.
@@ -188,40 +135,18 @@ To place a order:
 
 _It’ll look something like this once you’re done:_
 
-
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
-
-
-
+![alt_text](image5.png)
 
 4. Hit enter
 5. Your order will then automatically be posted to the #orders channel for members to bid on.  \
 _It’ll look something like this:_
 
 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
-
-
+![alt_text](image6.png)
 
 6. Await a member to offer to fulfil the order. Once they do it’ll change to look something like this:
 
-
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image7.png "image_tooltip")
-
-
+![alt_text](image7.png)
 
 
 7. _If a contract has not been sent by the fulfilling member. _Send a contract in-game to the person to match the order details in discord.
@@ -233,13 +158,7 @@ _It’ll look something like this:_
 
 You can bid on goods offered by other players, for each auction posted by the bot you’ll see options to bid for the full amount of goods available, as well as a bidding for a subset of the goods:
 
-
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
-
+![alt_text](image8.png)
 
 Once you’ve clicked the buttons the auction message will automatically update. If there are bids for more goods than available, then upon finishing the auction, the bot will automatically calculate a fair distribution upon the bidding members. 
 
@@ -261,224 +180,37 @@ The corp "bank" is not a formal bank, but members of the corp are encouraged to 
 
 ## Channels
 
-
-<table>
-  <tr>
-   <td><strong>Section</strong>
-   </td>
-   <td><strong>Channel</strong>
-   </td>
-   <td><strong>Purpose</strong>
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="3" >Welcome
-   </td>
-   <td>#shareholder-welcome
-   </td>
-   <td>To share initial information for any new trial members of the corporation. 
-   </td>
-  </tr>
-  <tr>
-   <td>#public-welcome
-   </td>
-   <td>To share initial information about the corporation to any person who joins our Discord server
-   </td>
-  </tr>
-  <tr>
-   <td>#public-general
-   </td>
-   <td>For any discussion between non-members, potential trial members, and shareholders.
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="11" >Logistics
-   </td>
-   <td>#general
-   </td>
-   <td>For general chitter chatter, either about the game or off topic.
-   </td>
-  </tr>
-  <tr>
-   <td>#auctions
-   </td>
-   <td>For posting any goods which you wish to offer to corp members. <em>See 
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Internal Market "). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-<a href="#heading=h.4es79cyoc7j1">Internal Market </a>section for more details.</em>
-   </td>
-  </tr>
-  <tr>
-   <td>#orders
-   </td>
-   <td>For posting any requests to purchase goods from corp members. <em>See 
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Internal Market "). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-<a href="#heading=h.4es79cyoc7j1">Internal Market </a>section for more details.</em>
-   </td>
-  </tr>
-  <tr>
-   <td>#strategy
-   </td>
-   <td>For discussion on expansion plans, and getting feedback or support from other members
-   </td>
-  </tr>
-  <tr>
-   <td>#space-politics
-   </td>
-   <td>For discussion about interactions & challenges with other players outside the corporation
-   </td>
-  </tr>
-  <tr>
-   <td>#governance-and-popi-materials
-   </td>
-   <td>Discussion regarding governance strategies, getting and supplying population upkeep materials.
-   </td>
-  </tr>
-  <tr>
-   <td>#bank-of-oog
-   </td>
-   <td>For discussion about loan requests between members to fund expansion. <em>See more details in the 
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Bank of OOG"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-<a href="#heading=h.hwae4o6brg8y">Bank of OOG</a> section.</em>
-   </td>
-  </tr>
-  <tr>
-   <td>#hq-upgrades
-   </td>
-   <td>Requests for HQ-upgrade specific materials (SP, POW, COM, ADS, etc…), and discussion of HQ upgrades
-   </td>
-  </tr>
-  <tr>
-   <td>#base-sponsoring
-   </td>
-   <td>For discussion of any offers from members to other members to build additional bases upon their behalf. <em>This can include commercial arrangements on ongoing upkeep, or simply supporting with funding or material donations.</em>
-   </td>
-  </tr>
-  <tr>
-   <td>#role-request
-   </td>
-   <td>For requesting any missing roles appropriate to you. <em>See 
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Discord Roles"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-<a href="#heading=h.3rxgbzfyod03">Discord Roles</a> for more information about the roles available.</em>
-   </td>
-  </tr>
-  <tr>
-   <td>#ship-building
-   </td>
-   <td>For collaboration on any ship building projects amongst members. <em>See more details in the 
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Ship Construction"). Did you generate a TOC with blue links? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-<a href="#heading=h.82vt1tk2bn7d">Ship Construction</a> section.</em>
-   </td>
-  </tr>
-  <tr>
-   <td>Planets
-   </td>
-   <td><em>Various</em>
-   </td>
-   <td><em>A set of planet specific channels to coordinate between shareholders where we have a significant presence.</em>
-   </td>
-  </tr>
-  <tr>
-   <td rowspan="2" >Shipping
-   </td>
-   <td>#shipping
-   </td>
-   <td>For discussion about requests or offers to transport goods.
-   </td>
-  </tr>
-  <tr>
-   <td>#route-board
-   </td>
-   <td>For sharing regular transport routes for use by members.
-   </td>
-  </tr>
-</table>
-
+|	Section	|	Channel	|	Purpose	|
+|	-------	|	-----	|	------ |
+|	Welcome	|	#shareholder-welcome	|	To share initial information for any new trial members of the corporation.	|
+|		|	#public-welcome	|	To share initial information about the corporation to any person who joins our Discord server	|
+|		|	#public-general	|	For any discussion between non-members, potential trial members, and shareholders.	|
+|	Logistics	|	#general	|	For general chitter chatter, either about the game or off topic.	|
+|		|	#auctions	|	For posting any goods which you wish to offer to corp members. See Internal Market section for more details.	|
+|		|	#orders	|	For posting any requests to purchase goods from corp members. See Internal Market section for more details.	|
+|		|	#strategy	|	For discussion on expansion plans, and getting feedback or support from other members	|
+|		|	#space-politics	|	For discussion about interactions & challenges with other players outside the corporation	|
+|		|	#governance-and-popi-materials	|	Discussion regarding governance strategies, getting and supplying population upkeep materials.	|
+|		|	#bank-of-oog	|	For discussion about loan requests between members to fund expansion. See more details in the Bank of OOG section.	|
+|		|	#hq-upgrades	|	Requests for HQ-upgrade specific materials (SP, POW, COM, ADS, etc…), and discussion of HQ upgrades	|
+|		|	#base-sponsoring	|	For discussion of any offers from members to other members to build additional bases upon their behalf. This can include commercial arrangements on ongoing upkeep, or simply supporting with funding or material donations.	|
+|		|	#role-request	|	For requesting any missing roles appropriate to you. See Discord Roles for more information about the roles available.	|
+|		|	#ship-building	|	For collaboration on any ship building projects amongst members. See more details in the Ship Construction section.	|
+|	Planets	|	Various	|	A set of planet specific channels to coordinate between shareholders where we have a significant presence.	|
+|	Shipping	|	#shipping	|	For discussion about requests or offers to transport goods.	|
+|		|	#route-board	|	For sharing regular transport routes for use by members.	|
 
 
 ## Discord Roles
 
 
-<table>
-  <tr>
-   <td><strong>Role</strong>
-   </td>
-   <td><strong>Shareholder Only</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Shareholder
-   </td>
-   <td>Y
-   </td>
-   <td>Any member holding shares in the OOG corporation.
-   </td>
-  </tr>
-  <tr>
-   <td>Governor
-   </td>
-   <td>Y
-   </td>
-   <td>Any member who is currently a governor of a planet.
-   </td>
-  </tr>
-  <tr>
-   <td>Bank of OOG
-   </td>
-   <td>Y
-   </td>
-   <td>Allocater is in charge of the bank, so he gets this role.
-   </td>
-  </tr>
-  <tr>
-   <td>Shipwright
-   </td>
-   <td>Y
-   </td>
-   <td>Originally this was for the member who was organising all ship production or co-ordinating the production of components for the purpose of ship building. (Sort of unused currently)
-   </td>
-  </tr>
-  <tr>
-   <td>Mod
-   </td>
-   <td>Y
-   </td>
-   <td>Any member who has moderation rights on the server.
-   </td>
-  </tr>
-  <tr>
-   <td>Planet Roles
-   </td>
-   <td>Y
-   </td>
-   <td>Assigned to shareholding members with a base on the relevant planet to indicate your presence there to other members. e.g. Harmonia, Nike
-   </td>
-  </tr>
-  <tr>
-   <td>Trial Member
-   </td>
-   <td>N
-   </td>
-   <td>Any trial member who has yet to become a shareholder in the corporation.
-   </td>
-  </tr>
-  <tr>
-   <td>Retired
-   </td>
-   <td>N
-   </td>
-   <td>Any shareholding member who is no longer actively playing the game.
-   </td>
-  </tr>
-</table>
+|	Role	|	Shareholder Only	|	Description	|
+|	-------	|	-----	|	------ |
+|	Shareholder	|	Y	|	Any member holding shares in the OOG corporation.	|
+|	Governor	|	Y	|	Any member who is currently a governor of a planet.	|
+|	Bank of OOG	|	Y	|	Allocater is in charge of the bank, so he gets this role.	|
+|	Shipwright	|	Y	|	Originally this was for the member who was organising all ship production or co-ordinating the production of components for the purpose of ship building. (Sort of unused currently)	|
+|	Mod	|	Y	|	Any member who has moderation rights on the server.	|
+|	Planet Roles	|	Y	|	Assigned to shareholding members with a base on the relevant planet to indicate your presence there to other members. e.g. Harmonia, Nike	|
+|	Trial Member	|	N	|	Any trial member who has yet to become a shareholder in the corporation.	|
+|	Retired	|	N	|	Any shareholding member who is no longer actively playing the game.	|
