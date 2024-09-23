@@ -1,6 +1,6 @@
 ---
 title: "What we know about Gateways"
-date: 2024-20-09T11:10:36+08:00
+date: 2024-09-23T11:10:36+08:00
 draft: false
 language: en
 featured_image: images/jumpgate-header.png
