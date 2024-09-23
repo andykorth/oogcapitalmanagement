@@ -1,6 +1,6 @@
 ---
 title: "What we know about Gateways"
-date: 2024-09-09T11:10:36+08:00
+date: 2024-20-09T11:10:36+08:00
 draft: false
 language: en
 featured_image: images/jumpgate-header.png
@@ -10,10 +10,11 @@ author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
 tags: Posts
+compactFormat: true
 ---
 
 
-{{< calltoaction heading="ahhhhh" thetext="asdfasdf asdf" button="twp" buttonlink="3" >}}
+{{< calltoaction heading="Own a piece of a gateway!" thetext="Are you interested in contributing to a cooperative focused on constructing a gateway? Ownerships shares are proportional to your contribution. See the Antares Development Initiative Gateway Co-op!" button="Join ADI Discord" buttonlink="https://discord.gg/gmx7br5XBQ" >}}
 
 
 Gateways are coming, and Antares will be ready for them!
@@ -44,10 +45,7 @@ Gateways are coming, and Antares will be ready for them!
 * Any gateway can recieve ships, even if it doesn't match the (volume or range) requirements to send a ship back through. This can be a feature, enabling triangular paths of gates, but can be a disadvantage if you accidentally strand a STL ship.
 * Gateways max out with 3 distance upgrades, and 5 upgrades total.
 
-
 ### The default gateway stats:
-
-![Draft Gateway Stats ](/images/gateway-choices.png)
 
 We have potentially non-final stats for the starting un-upgraded gateway. Observations about these values:
 
@@ -55,6 +53,8 @@ We have potentially non-final stats for the starting un-upgraded gateway. Observ
 * 1500 max ship volume. This fits a starter ship (963 m3), a WCB (1488 m3), but not a standard 2k (2675m). We don't know how much space is added per size upgrade.
 * Distance starts at 10 parsecs and with 3 upgrades goes to a max of 25 parsecs.
 * We don't know about fuel consumption rates.
+
+![Draft Gateway Stats ](/images/gateway-choices.png)
 
 ## How far is 25 Parsecs?
 
