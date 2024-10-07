@@ -14,7 +14,7 @@ compactFormat: true
 ---
 
 
-{{< calltoaction heading="Own a piece of a gateway!" thetext="Are you interested in contributing to a cooperative focused on constructing a gateway? Ownerships shares are proportional to your contribution. See the Antares Development Initiative Gateway Co-op!" button="Join ADI Discord" buttonlink="https://discord.gg/gmx7br5XBQ" >}}
+{{< calltoaction heading="Commit yourself to the Cooperative!" thetext="Are you interested in contributing to a cooperative focused on constructing a gateway? Ownerships shares are proportional to your contribution. Join the cooperative and commit to the  " button="Learn more!" buttonlink="/adi-gateway-cooperative/"  color1="#86198f" color2="#4a044e" >}}
 
 
 Gateways are coming, and Antares will be ready for them!
