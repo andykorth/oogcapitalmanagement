@@ -104,9 +104,9 @@ menu:
       weight: 50
 
   footer:
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: home
+      name: Home
+      url: /
       weight: 10
     - identifier: articles
       name: Articles
@@ -131,7 +131,7 @@ privacy:
     disable: false
   googleAnalytics:
     anonymizeIP: true
-    disable: false
+    disable: true
     respectDoNotTrack: false
     useSessionStorage: false
   instagram:
