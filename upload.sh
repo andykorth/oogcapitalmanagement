@@ -1,0 +1,3 @@
+cd public
+sftp oog_capital_management@oogcapitalmanagement.com:oogcapitalmanagement.com
+
