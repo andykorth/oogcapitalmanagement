@@ -23,7 +23,7 @@ See our [discord post on the UFO discord](https://discord.com/channels/855488309
 
 |  | Price |
 | ------ | ----------- |
-| OOG Premium 2k/2k   | 6,280,000 AIC |
+| OOG Premium 2k/2k   | ~~6,280,000 AIC~~ 5,786,820 AIC |
 
 ## Instructions
 Contact Archiel (preferably via Discord). You will receive 15 contracts with the full purchase price split among the contracts. 

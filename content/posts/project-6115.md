@@ -14,4 +14,4 @@ tags: Stockholders
 
 Information about Project 6115 is available to shareholders in the appropriate discord channel. 
 
-Meanwhile, our [/map](Corporate Map) includes a gateway planner. To use it, click on the pathfinding button on the top-right, then click two systems. The gateway distance in parsecs will be drawn.
+Meanwhile, our [Corporate Map](/map/) includes a gateway planner. To use it, click on the pathfinding button on the top-right, then click two systems. The gateway distance in parsecs will be drawn.
