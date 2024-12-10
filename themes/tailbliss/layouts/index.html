@@ -180,7 +180,7 @@
                                 {{ with .Params.featured_image }}
                                 {{ with resources.Get . }}
                                 {{ $postimage := (.Fill "500x140 webp q90").RelPermalink }}
-                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
+                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="500" height="140" loading="lazy" alt="{{ .Title }}" />
 
                                 {{ end }}
                                 {{ end }}
