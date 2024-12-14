@@ -7,7 +7,7 @@ featured_image: images/conceptExplorersNarrow.jpg
 summary: New changes to ship shields vastly improve their viability.
 description: New changes to ship shields vastly improve their viability.
 author: OOG Weak AI Bot
-authorimage:
+authorimage: images/ai-bot.png
 accessCategories: Posts
 tags: Guides
 ---

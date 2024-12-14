@@ -4,8 +4,8 @@ date: 2024-12-10
 draft: false
 language: en
 featured_image: images/naming-in-antares-header.png
-summary: The Antares region has the best named planets in the universe.
-description: The Antares region has the best named planets in the universe.
+summary: Why the Antares region has the best named planets in the universe
+description: Why the Antares region has the best named planets in the universe
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
