@@ -60,39 +60,18 @@ We have potentially non-final stats for the starting un-upgraded gateway. Observ
 
 OOG has a [specially refitted version of Taiyi's map](https://oogcapitalmanagement.com/map/) that can calculate gateway distances. Since it's hard to visualize actual distances in any of the maps, tools are essential for pre-planning gateway routes.
 
-Phobos to Griffonstone is 15.1 parsecs. This also gets you towards the Northern Antares CX.
-![Draft Gateway Stats ](http://kortham.net/temp/firefox_SRjXFCI08r.png)
+I think the best metric of a good gateway is the number of jumps saved. Sometimes 20 parsecs can save quite a few jumps:
 
-Sometimes 20 parsecs can save quite a few jumps:
-![More jumps](http://kortham.net/temp/firefox_9iOliroWBV.png)
+{{< foldoutLinkImage title="20 parsec jump" image="https://kortham.net/temp/firefox_9iOliroWBV.png" >}}
+
 
 We have additional python tools that can brute force jump distances.
 
 ## Potential routes
 
-No concrete route plans have been made, but here are some ideas put forth by the Antares Community.
-
-The LS-231 Transport Union Gateway Hub
+Various routes have been discussed, a leading contender for ANT begins with the LS-231 Transport Union Gateway Hub.
 
 ![LS-231 Transport Union Gateway Hub](/images/LS231Hub.png)
-
-The ANT - LS-231 pair offers a first set of gateways with some good usability, giving near access to Griffonstone and Etherwind. Expansions to the route give direct access to Benten, and a huge jump savings towards Hortus.
-
-![Galactic Axis](/images/GalacticAxis.png)
-
-The IA-603 to XH-400 Galactic Axis plan requires more gates, but gets you directly to Hortus, Benten, and Moria. The downside is that the first link of ANT - IA-603 offers little utility on its own. This requires a lot of coordination with other regions.
-
-Other potential axes that are similar include:
-* OF-208 IA-982
-* XH-400 IA-603
-* XH-400 PD-754
-
-## Gateway Jumper
-
-The shipyard engineers of OOG have designed the Gateway Jumper. At internal prices, this could be as low as 2m AIC with a 1000/1000 cargo bay. 
-
-![Ship design ](/images/gateway-jumper.png)
-
 
 ## Gateway cost
 
@@ -118,4 +97,11 @@ Due to the high costs of a gateway, materials are also measured in Base-Area-Day
 Te Antares Development Initiative is organizing gateway planning in the best region of space in the universe. It's important to consider both sides of a gateway in planning, the reusability of a gateway as a destination for multiple gateways, and the cost per jump saved, given the upgrades chosen.
 
 [![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
+
+
+## Gateway Jumper
+
+The shipyard engineers of OOG have designed the Gateway Jumper. At internal prices, this could be as low as 2m AIC with a 1000/1000 cargo bay. 
+
+![Ship design ](/images/gateway-jumper.png)
 

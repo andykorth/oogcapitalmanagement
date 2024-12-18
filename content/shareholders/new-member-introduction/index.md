@@ -19,46 +19,29 @@ We are the premier corporation in Antares space and the largest governance organ
 Our corporation includes governance training and support, planetary and regional development, a discord-based internal auction/order system and preferential material access and prices. The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones.
 
 ### Corp Rules
-* Continue to be an active contributing member of OOG.
-* Willingness to aid in corp expansion goals.
-* Leave the in-game corporation if you decide to stop playing.
+* Be active in the corp discord, the larger PRUN community, or participate any of the corp goals that align with your personal goals.
+* Uphold the friendly and helpful spirit of the corp.
+* Leave the in-game corporation if you decide to stop playing. If possible, pay it forward with your assets. 
 
 ### Onboarding Steps
 
 1. Say hello in the [#general channel](https://discordapp.com/channels/854795108720443393/854795108720443395).
-2. Update the [Corp Google Sheet](https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit#gid=0) with your company details.
-    1. Add your [planets to the planets tab](https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit#gid=0). 
-        1. Add your company details at the end of the sheet in column A. Your user, company name, then company code.
-        2. For each planet on which you have a base, find the associated column, and enter the number of each production building. Highlight any production buildings at the end of longer production chains in red.
-    2. Add any goods you wish to sell via the internal corp market to the Prices tab. _See more details for how this works in [Selling Goods](#selling-goods).
-
+2. Check the bank and #membership-perks channel to see if you can get some welcome money.
+3. Skim through the other channels to see what projects might interest you.
 
 # Internal Market
 
-The corporation operates an internal market for goods, offering preferential prices to trial and shareholding members. You can find the current prices for goods in the [Corp Google Sheet, on the Prices tab](https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit#gid=489658022).
+The corporation operates an internal market for goods, offering preferential access to our trial and shareholding members. This is a great way to combat shortages and market shenanigans. 
+
+OOG doesn't dictate any prices. When choosing a price, common techniques include looking in discord for previous auction prices or looking at bid or ask prices on the ANT CX. 
 
 
-## Selling Goods
+Our old [Corp Google Sheet, on the Prices tab](https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit#gid=489658022) contains historical pricing info, but it is pretty out of date now, and should only be used as a historical reference.
 
 
-### Price Listing
+## Buying and Selling Goods
 
-If you wish to sell goods within the corp then you are encouraged to add these to the [Prices tab in the Corp Google Sheet](https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit#gid=489658022). If you have not already, add your user & company details as a new section prior to the “Inactive / Retired Players” row. 
-
-_Tip: If you want your name to appear when members search for goods, you need to make sure that every row relevant for your corp has your username in column B (this is hidden most of the time by shrinking it to 5px wide column, so can be missed easily). _
-
-For example (in rows 136-139, columns A-D):
-
-| Akyan | Akyan |  |  EPO @ 140 |
-| ------------- | ------------- | ------------- | ------------- | ------- |
-| Ingenious Innovations Inc | Akyan |  |  NR @ 350 |
-| III | Akyan |  | C @ 500  | 
-|     | Akyan |  | H @ 70   |
-
-The listing of goods enables all corp members to:
-
-* Price up expansion efforts by utilizing goods offered at discounted prices by members.
-* Understand what goods are manufactured by other members, and enable decisions about how they might expand their manufacturing. Redundancy is generally good, so don’t be put off if a good is already offered by other members.
+Currently, our buying and selling mostly happens with our [auction and order](/shareholders/auctions-and-orders/) system. Thanks to Exeler for fantastic work on this tool!
 
 
 # Ship Construction

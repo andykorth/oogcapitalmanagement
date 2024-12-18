@@ -40,6 +40,20 @@ Yes. The best way to contribute cash is to find a player (preferably a relativel
 
 If this process is burdensome, contact a gateway cooperative administrator to facilitate your cash contribution.
 
+#### How are cash contributions converted to shares?
+
+Your cash contribution is recorded under your name and used to purchase whatever materials are needed for the gateway. Cash Managers will endevour to get the best possible price for gateway materials, so cash contributors can earn as many shares as possible for their contributions. We will offer to make purchases at prices either at PP30d_Universe prices or prices at the average AIC per Share price (currently ~$152 per share). 
+
+All cash contributions are pooled and then the shares from purchased materials are distributed proportionally to cash contributors. This prevents a cash manager from making "good" purchases from one person's donations and "bad" purchases from another person's donations. This does mean that the cash value of your donation will fluctuate a little over time. 
+
+Cash Managers have some discretion to adjust prices upward to get critical final materials to finish a gateway.
+
+If you like buying things at good prices, and would like to be a Cash Manager, contact Archiel. It mostly focuses around understanding the ADI sheet and coordinating.
+
+### Upkeep and Fuel
+
+Gateways have significant upkeep costs, and we don't know what the fuel costs are. Gateway upkeep is paid for first out of usage tolls, before any payouts are made. 
+
 ### How do payouts work?
 
 Once a month, the gateway planet's governor, (or an appointed representative) will calculate how much income each gateway has made, then assign it to each gateway shareholder in proportion to the number of shares. Shareholder profits will be logged in a running ledger. If a person's assigned profit exceeds some threshold ($25,000?), a payout will be made. 
