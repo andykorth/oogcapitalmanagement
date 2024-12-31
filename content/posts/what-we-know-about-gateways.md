@@ -23,16 +23,16 @@ Gateways are coming, and Antares will be ready for them!
 
 ### How they work:
 
-* A planetary government can commission one gateway in orbit. They administer that gateway.
-* Ships without FTL drives can take gateways.
+* A planetary government can commission gateways in orbit. They administer those gateways.
 * Ships jump from a source gateway to a destination gateway that is in range. 
 * Gateways have limits on ships per day, distance the gateway can reach, the volume of ships that can fly through it, and the fuel that is used. 
 * Gateways need to be refueled occasionally using Vortex Fuel, which is consumed by gateway usage.
 * Each gateway is linked to one other gateway, in a symmetric 1:1 relationship.
+* Ships without FTL drives can take gateways.
 
 ### Flying through gateways:
 
-* Ships take time to travel through a gateway, balanced to be similar to an FTL jump.
+* Ships take time to travel through a gateway. Each gateway jump is "balanced to be of similar duration to an FTL jump".
 * Ships take no damage through gateways.
 * A short "ALIGN" phase is needed before starting the jump, once you are in the correct orbit.
 * The flight buffer can take you through multiple gateways in a trip, if desired.
@@ -42,17 +42,15 @@ Gateways are coming, and Antares will be ready for them!
 
 * You can build multiple gateways in orbit of one planet.
 * Governments can change the gateway destination with a motion.
-* Any gateway can recieve ships, even if it doesn't match the (volume or range) requirements to send a ship back through. This can be a feature, enabling triangular paths of gates, but can be a disadvantage if you accidentally strand a STL ship.
 * Gateways max out with 3 distance upgrades, and 5 upgrades total.
 
 ### The default gateway stats:
 
-We have potentially non-final stats for the starting un-upgraded gateway. Observations about these values:
+We have stats for gateways and their upgrades. Observations about these values:
 
 * 200 jumps per day starting value- in my estimation this is a lot of jumps.
-* 1500 max ship volume. This fits a starter ship (963 m3), a WCB (1488 m3), but not a standard 2k (2675m). We don't know how much space is added per size upgrade.
+* 1500 max ship volume by default. This fits a starter ship (963 m3), a WCB (1488 m3), but not a standard 2k (2675m). One size upgrade allows all 2k ship configurations.
 * Distance starts at 10 parsecs and with 3 upgrades goes to a max of 25 parsecs.
-* We don't know about fuel consumption rates.
 
 ![Draft Gateway Stats ](/images/gateway-choices.png)
 
@@ -64,14 +62,7 @@ I think the best metric of a good gateway is the number of jumps saved. Sometime
 
 {{< foldoutLinkImage title="20 parsec jump" image="https://kortham.net/temp/firefox_9iOliroWBV.png" >}}
 
-
 We have additional python tools that can brute force jump distances.
-
-## Potential routes
-
-Various routes have been discussed, a leading contender for ANT begins with the LS-231 Transport Union Gateway Hub.
-
-![LS-231 Transport Union Gateway Hub](/images/LS231Hub.png)
 
 ## Gateway cost
 
@@ -97,6 +88,12 @@ Due to the high costs of a gateway, materials are also measured in Base-Area-Day
 Te Antares Development Initiative is organizing gateway planning in the best region of space in the universe. It's important to consider both sides of a gateway in planning, the reusability of a gateway as a destination for multiple gateways, and the cost per jump saved, given the upgrades chosen.
 
 [![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
+
+## Potential routes
+
+Various routes have been discussed, a leading contender for ANT begins with the LS-231 Transport Union Gateway Hub.
+
+![LS-231 Transport Union Gateway Hub](/images/LS231Hub.png)
 
 
 ## Gateway Jumper

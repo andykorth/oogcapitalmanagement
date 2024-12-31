@@ -28,17 +28,42 @@ Since we need to make at least two gateways for functional travel, we should poo
 
 Why use this model? At the moment, any gateway constructed falls under the control of the government of the planet it is build around. A hostile but coordinated group could seize the gateway from the group that constructed it. By bringing many stakeholders to the table, the co-op model incentivizes the good behavior of a large number of members. This allows the entire interested Antares community to participate and act as a self-interested voting block. 
 
+# The Spreadsheet:
+
+Material pledges, cash contributions, and all gateway business is managed on this sheet. You can add your pledges directly to this sheet:
+
+[ADI Gateway Cooperative Spreadsheet](https://docs.google.com/spreadsheets/d/1oET7LURFw6m-3iKu_5n8iT2SWS4PU-P-hiH6fMazWmU/edit?gid=0#gid=0)
+
 # Questions
+
+
+### How do pledges work?
+
+A pledge is a promise to contribute materials to the gateway projects. Recording your pledge helps us organize production to identify shortfalls and minimize duplicate effort. 
+
+Once gateways become close to release, pledges will be collected by a gateway coordinator (Archiel), then your contribution will be considered finalized. Assume materials will be delivered on ANT, but in some cases deliveries to gateway locations may be appreciated, you will be contacted in this case.
+
+### Pledge Prioritization
+
+We will prioritize collecting gateway materials from people who pledged them, but if those materials aren't available when they are needed, other sources will be considered. You don't get credit for pledging materials you can't deliver. 
+
+Because we don't know the gateway release date, and some gateway materials can't be extracted until release date, there will be a grace period to sort out your contributions. 
+
+### When are materials collected?
+
+As of Jan 1st, 2025, we haven't heard the devs fly a ship through a gateway. I personally take this as a sign we have a few more months before release. My hope is to collect pledges about a month before release. 
+
+Materials purchased with cash contributions are already sitting in my ANT warehouse.
 
 ### Can I join without contributing?
 
-Absolutely. Your support is still very helpful in maintaining the ADI Gateway Cooperative agreement, and the safe administration of the gateways.
+Absolutely. Your support is still very helpful in maintaining the ADI Gateway Cooperative agreement, and the safe administration of the gateways. Without contributing, your support for the governance of gateway governments is the most important thing you can do to help.
 
 ### Can I contribute cash?
 
-Yes. The best way to contribute cash is to find a player (preferably a relatively new  Antares player!), and purchase needed gateway materials from that player, then donate materials in their name.
+Yes. One great way to contribute cash is to find a player (preferably a relatively new Antares player!), and purchase needed gateway materials from that player, then donate materials in their name.
 
-If this process is burdensome, contact a gateway cooperative administrator to facilitate your cash contribution.
+If this process is burdensome, you can contribute cash to a Cash Manager. This empowers the Cash Manager to buy what is needed for the gateway on your behalf.
 
 #### How are cash contributions converted to shares?
 
