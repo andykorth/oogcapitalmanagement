@@ -1,6 +1,6 @@
 ---
 title: "Interested in Joining OOG?"
-date: 2024-10-06T11:10:36+08:00
+date: 2025-03-01T11:10:36+08:00
 draft: false
 language: en
 featured_image: images/big-round-table-2-narrow.png
@@ -17,7 +17,7 @@ tags: Shareholders
 
 We are the premier corporation in Antares space and leaders in production, ship design, and galactic strategy. As a corporation, we work to ensure the stability of the Antares region, as well as creating a fun and engaging place for our members to enjoy Prosperous Universe. Our corporation includes governance training and support, shipbuilding, planetary and regional development (including gateways!), a discord-based internal auction/order system, and preferential material access and prices. The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones.
 
-OOG was formed in early 2021, and now governs over 1 million citizens in ANT space. We've been a major funder of the SE-110 development project in coordination with FICSIT and the Antares Development Initiative.  Prospective members should be based in ANT or be willing to relocate. Relocation support can be provided for the right people.
+OOG was formed in early 2021, and now governs over 1 million citizens in ANT space. We've been a major funder of the Thalassa development project in coordination with FICSIT and the Antares Development Initiative.  Prospective members should be based in ANT or be willing to relocate. Relocation support can be provided for the right people.
 
 ## 📈   Recruitment Guidelines:
 

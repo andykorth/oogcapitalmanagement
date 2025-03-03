@@ -18,31 +18,31 @@ In August 2024, I conducted a survey of the citizens of Malahat. Here are their 
 
 Five respondents said it was somewhat important people outside the government be able to contribute, while seven said it was not important. So it's somewhat split here.
 
-![POPI reimbursement](/images/malahat-Aug2024-1.png)
+![POPI reimbursement](malahat-Aug2024-1.png)
 
 More interesting is that only one person actually wanted to participate in the POPI system themselves. That respondent was an MP to was already contributing. I'm inclined to leave the program open, and just reach out if you'd like to contribute. The prices are on the ledger!
 
-![Do you want to contribute to POPI?](/images/malahat-Aug2024-2.png)
+![Do you want to contribute to POPI?](malahat-Aug2024-2.png)
 
 ## Gateways
 
-![Gateways](/images/malahat-Aug2024-3.png)
+![Gateways](malahat-Aug2024-3.png)
 
 There's pretty strong interest in gateways, and for the use of Malahat funds to create a gateway. It's true we don't know a lot about how they will work. Right now, we know it will have a certain range in parsecs, so placing a gateway where it can save as many jumps as possible will be most beneficial. Gateways can be upgraded to increase the size of ships traveling through them, the range in parsecs, and the number of ships that can use it per day. We believe another gateway will be needed at the other side to link to. So we will likely need to collaborate with another planetary government once we know the ranges.
 
 ## Cash Buffer
 
-![Cash Buffer](/images/malahat-Aug2024-4.png)
+![Cash Buffer](malahat-Aug2024-4.png)
 
 Support for maintaining a cash buffer was quite high. About a month was the most common response.
 
-![Cash Buffer 2 ](/images/malahat-Aug2024-5.png)
+![Cash Buffer 2 ](malahat-Aug2024-5.png)
 
 And likewise the expectation is that the government should be paying for expenses as they are incurred. This is definitely what I am working towards with Malahat.
 
 ## Governor Salary
 
-![Cash Buffer 2 ](/images/malahat-Aug2024-6.png)
+![Cash Buffer 2 ](malahat-Aug2024-6.png)
 
 Support for a governor's salary was much higher than I expected. It can be a ton of work to govern a complex planet, but there's always been loud voices decrying spending. So this question is very valuable to me because I hear from a larger number of people, rather than just the few loudest voices.
 
@@ -95,7 +95,7 @@ The actual tax rate for IDC is 3.08%. For EDC, it works out to 3.30%. For other 
 
 Generally people figured their tax rate was around 5%, but there was a lot of variation. Most people answered that they would be okay with a higher tax rate, but answers were all over the place. If you want to see what your actual tax rate is, the game tells you your actual tax per production order here:
 
-![Cash Buffer 2 ](/images/malahat-Aug2024-taxRate.png)
+![Cash Buffer 2 ](malahat-Aug2024-taxRate.png)
 
 You can divide out the CX cost to get the percentage.
 
@@ -103,16 +103,16 @@ You can divide out the CX cost to get the percentage.
 
 Nearly everyone recommends Malahat!
 
-![Recommend to a friend](/images/malahat-Aug2024-10.png)
+![Recommend to a friend](malahat-Aug2024-10.png)
 
 And generally, people strongly prefer having all their workers, rather than saving on their taxes and missing workers. 
 
-![Jobs](/images/malahat-Aug2024-11.png)
+![Jobs](malahat-Aug2024-11.png)
 
 ## Currency
 
 I asked about currency just as a future reference point. AIC was the most popular currency respondents chose, with NCC and CIS tying for second place. Devs expected to one day allow us to change our currency, but there's no telling when that will happen. I am very conscious of the potentially disruptive effect that changing currencies might have. 
 
-![Currency](/images/malahat-Aug2024-12.png)
+![Currency](malahat-Aug2024-12.png)
 
 
