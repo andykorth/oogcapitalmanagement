@@ -4,7 +4,7 @@ featured_image: 'images/gateway-okay-narrow.png'
 summary: The ADI Gateway cooperative is a regional organization dedicated to the construction and operation of a gateway network.
 description: The ADI Gateway cooperative is a regional organization dedicated to the construction and operation of a gateway network.
 omit_header_text: true
-compactFormat: true
+fullWidthArticle: true
 type: page
 ---
 

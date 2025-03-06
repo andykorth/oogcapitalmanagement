@@ -9,7 +9,7 @@ description: Learn more about joining OOG, Antares premier corporation
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: ShareholderPosts
-compactFormat: true
+fullWidthArticle: true
 tags: Shareholders
 ---
 

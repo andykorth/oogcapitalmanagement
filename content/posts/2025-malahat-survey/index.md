@@ -10,7 +10,7 @@ author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
 tags: Malahat
-compactFormat: true
+fullWidthArticle: true
 ---
 
 In late February of 2025, I conducted another survey of the citizens of Malahat. Here are their responses, plus a commentary from your governor. I kept the questions the same as the [2024 Malahat Survey](/posts/2024-malahat-survey).
@@ -73,6 +73,8 @@ As I'd personally expect, people strongly favor having no open jobs over quibbli
 
 ![Open Jobs vs. Lower Taxes](malahat-2025-7.png)
 
+(1 - Lower taxes are more important, 6 - No open jobs is more important)
+
 ## Currency
 
 AIC remains the preferred currency, with 46% support. I asked about currency just as a future reference point. AIC was the most popular currency respondents chose, with NCC and CIS tying for second place. Devs expected to one day allow us to change our currency, but there's no telling when that will happen. I am very conscious of the potentially disruptive effect that changing currencies might have. 
@@ -81,7 +83,7 @@ AIC remains the preferred currency, with 46% support. I asked about currency jus
 
 In fact 64.3% of respondents indicate that they will be _maximum angry_ if a different currency than their favorite is adopted. More people will be angry about the currency choice than preferred any given currency. This illustrates an important fact of governing- no matter what you do, a lot of people will be angry.
 
-![Everyone will be angry](malahat-2025-8.png)
+![Everyone will be angry](malahat-2025-9.png)
 
 
 ## Anonymous Testimonials

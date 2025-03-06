@@ -9,6 +9,7 @@
 
         {{ if $image }}
             <!-- Use Page Bundle Resource if found -->
+            <A HREF="{{ $image.RelPermalink }}">
             <img
                 src="{{ $image.RelPermalink }}"
                 alt="{{ .Get "alt" }}"
@@ -16,13 +17,16 @@
                 height="{{ $image.Height }}"
                 class="w-full max-w-xl mx-auto rounded-lg"
             />
+            </A>
         {{ else }}
             <!-- Fallback to static resource if not found -->
-            <img
+            <A HREF="{{$src}}">
+                <img
                 src="{{ $src }}"
                 alt="{{ .Get "alt" }}"
                 class="w-full max-w-xl mx-auto rounded-lg"
             />
+            </A>
         {{ end }}
     </div>
 </div>

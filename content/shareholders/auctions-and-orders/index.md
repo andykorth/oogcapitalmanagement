@@ -9,7 +9,7 @@ description: How to use our discord based auction system
 author: Akyan
 authorimage: images/akyan-author.webp
 accessCategories: ShareholderPosts
-compactFormat: true
+fullWidthArticle: true
 tags: Shareholders
 ---
 

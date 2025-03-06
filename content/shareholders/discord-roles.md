@@ -9,7 +9,7 @@ description: Overview of discord channels and roles
 author: Akyan
 authorimage: images/akyan-author.webp
 accessCategories: ShareholderPosts
-compactFormat: true
+fullWidthArticle: true
 tags: Shareholders
 ---
 

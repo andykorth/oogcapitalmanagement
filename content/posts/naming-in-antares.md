@@ -64,7 +64,7 @@ If you're considering naming a planet or system, take a look at a [list of Greek
 |Hephaestus|Antares I|Gladi099|4/11/2022|
 |Aceland|Acetares|aceBaron|5/28/2022|
 |Aratora|Styx|prophetar|10/7/2022|
-|Elon|Aurum|Valencia_Minh|1/13/2023|
+|Origo|Aurum|Valencia_Minh|1/13/2023|
 |Lom Palanka|Acetares|??|3/25/2023|
 |Vulcan|Antares II|Hernanduer|4/7/2023|
 |Life|Antares IV|Australis|12/10/2023|

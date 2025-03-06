@@ -10,7 +10,7 @@ author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
 tags: Posts
-compactFormat: true
+fullWidthArticle: true
 ---
 
 

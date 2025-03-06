@@ -4,7 +4,7 @@ featured_image: 'images/conceptShipbuildingNarrowest.png'
 omit_header_text: true
 type: page
 menu: main
-compactFormat: true
+fullWidthArticle: true
 ---
 
 # Premium Shipbuilding
@@ -25,7 +25,8 @@ See our [discord post on the UFO discord](https://discord.com/channels/855488309
 Generally orders should be filled within 24 hours. Your ship will take 23 hours to build. All items are delivered on Hephaestus in ANT space, which has a shipyard for immediate construction. Full fuel tanks are included. 
 
 * OOG Premium 2k/2k
-  * ~~6,280,000 AIC~~ 5,950,000 AIC
+  * ~~6,280,000 AIC~~ 
+  * Now: 5,950,000 AIC
 
 ## Instructions
 Contact Archiel (preferably via Discord). 
@@ -34,5 +35,7 @@ Create a ship blueprint that matches the above image. Rent 4 warehouses on Hepha
 
 {{< /twoColImage >}}
 
-
+{{< center >}}
+![Premium Shipbuilding Logo](/images/oog_premium_shipbuilding.png)
+{{< /center >}}
 

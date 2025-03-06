@@ -9,7 +9,7 @@ description: New Member Introduction Guide
 author: Akyan
 authorimage: images/akyan-author.webp
 accessCategories: ShareholderPosts
-compactFormat: true
+fullWidthArticle: true
 tags: Shareholders
 ---
 
