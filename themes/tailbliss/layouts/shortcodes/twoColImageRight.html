@@ -1,0 +1,39 @@
+
+<!-- twoColImageRight.html -->
+{{- $verticalClass := "items-top" -}}
+{{- if eq (.Get "verticalCenter") "true" -}}
+    {{- $verticalClass = "items-center" -}}
+{{- end -}}
+
+
+<div class="grid {{ $verticalClass }} gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+    <div class="col-span-6 text-left sm:mb-6 lg:mb-0">
+        {{ .Inner | markdownify }}
+    </div>
+    <div class="col-span-6">
+        {{- $src := .Get "imageURL" -}}
+        {{- $image := .Page.Resources.GetMatch $src -}}
+
+        {{ if $image }}
+            <!-- Use Page Bundle Resource if found -->
+            <A HREF="{{ $image.RelPermalink }}">
+            <img
+                src="{{ $image.RelPermalink }}"
+                alt="{{ .Get "alt" }}"
+                width="{{ $image.Width }}"
+                height="{{ $image.Height }}"
+                class="max-w-xl mx-auto rounded-lg"
+            />
+            </A>
+        {{ else }}
+            <!-- Fallback to static resource if not found -->
+            <A HREF="{{$src}}">
+                <img
+                src="{{ $src }}"
+                alt="{{ .Get "alt" }}"
+                class="max-w-xl mx-auto rounded-lg"
+            />
+            </A>
+        {{ end }}
+    </div>
+</div>
