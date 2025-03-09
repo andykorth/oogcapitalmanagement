@@ -1,6 +1,6 @@
 ---
 title: "Good Governance Guide"
-date: 2025-03-06T11:10:36+08:00
+date: 2025-03-08T11:10:36+08:00
 draft: false
 language: en
 featured_image: images/governor-and-pioneers-narrow.png
@@ -13,7 +13,7 @@ tags: Guides
 fullWidthArticle: true
 ---
 
-This guide has been brought to you by [/](OOG) - We are the premier corporation in Antares space and leaders in production, ship design, and galactic strategy.
+This guide has been brought to you by [OOG](/) - We are the premier corporation in Antares space and leaders in production, ship design, and galactic strategy.
 
 # Responsibilities of a Governor
 Generally the responsibilities of a newly elected governor falls into these categories, roughly in order of importance:
