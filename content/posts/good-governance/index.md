@@ -1,6 +1,6 @@
 ---
 title: "Good Governance Guide"
-date: 2025-03-08T11:10:36+08:00
+date: 2025-03-10T11:10:36+08:00
 draft: false
 language: en
 featured_image: images/governor-and-pioneers-narrow.png
@@ -102,13 +102,31 @@ Any member of government can prepare a motion and bring them to vote.
 Once a motion is put up for voting, the governor and MP's have 24 hours to vote. Not voting on a motion will be recorded as “ABSTAIN”. All motion voting results are publically available through the GOV buffer, grouped per government cycle.
 {{< /twoColImageLeft >}}
 
+{{< twoColImageRight imageURL="startingPrograms.png" verticalCenter="true">}}
+
+## Running workforce programs:
+
+Workforce programs can be very cost effective and are often essential to governing. The strategy varies quite a bit depending on the type of planet. Large planets vs. small planets or low-tier workers vs. high-tier workers require different strategies.
+It is always a good idea to keep some sort of buffer for workforce programs, which can only take funding from the government account.
+
+After creating a motion for a program, you have to wait for that motion to pass. Then find the contract for the program, pay for it, and start the program. You can have one active program, and one in the queue. You can also prepay for programs, as long as you start them within 30 days. If you don't manually start them, they will expire, and the cost will be lost.
+
+{{< /twoColImageRight >}}
+
+## Capped Satisfaction:
+
+{{< center >}}
+![Capped Satisfaction](capped.png)
+{{< /center >}}
+
+While this article doesn't explain every aspect of the [Population Infrastructure](https://pct.fnar.net/population-infrastructure/), take special note of the [satisfaction caps](https://pct.fnar.net/population-infrastructure/#capping-of-higher-tier-needs). Your education is limited by the lower of your comfort and culture. Your comfort and culture is limited by the lower of your safety and health. So if you see a planet where the education is the same as the culture, you can safely assume a bunch of education was lost due to the cap.  This is common for education, since Universities have easy upkeep materials and make a lot of education, while it's easy to run low on comfort and culture. 
+
+{{< center >}}
+![This is capped education](capped2.png)
+{{< /center >}}
 
 # Governance Strategies:
 Your governance strategy will depend on your goal for the planet. 
-
-## Running workforce programs:
-Workforce programs can be very cost effective and are often essential to governing. The strategy varies quite a bit depending on the type of planet. Large planets vs. small planets or low-tier workers vs. high-tier workers require different strategies.
-It is always a good idea to keep some sort of buffer for workforce programs, which can only take funding from the government account.
 
 ## Maintaining Population:
 If you're simply maintaining a planet, your goal should be to keep a small buffer of unemployed workers in each tier, so all players have enough workers for their bases. Avoid growing the population too much, since unemployed workers consume “needs” fulfillment just like employed ones. This can become a serious problem when Pioneer counts grow out of control and you're trying to develop high tier workers on a planet. Even though each Pioneer and Settler only consumes 0.05 Comfort, having 100k of them will make it very difficult to get enough comfort to reliably recruit engineers. 
