@@ -1,11 +1,10 @@
 ---
 title: "Gateway Update, March 2025"
-date: 2025-03-06T11:10:36+08:00
-draft: true
+date: 2025-03-16T17:10:36+08:00
 language: en
 featured_image: images/gateway-march-2025-narrow.png
-summary: We begin collecting pledges as our 4th gateway is planned.
-description: We begin collecting pledges as our 4th gateway is planned.
+summary: Pledge collection proceeds. See our most wanted items and join the cooperative!
+description: Pledge collection proceeds. See our most wanted items and join the cooperative!
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
@@ -16,30 +15,25 @@ The ADI Gateway Cooperative is an Antares-based regional group focused on constr
 
 # March 2025 Progress Update
 
-
 ![List of pledged and collected percentages](pledges.png)
 
 ## Collecting Materials:
 
-Now that we have some complete gateways, I will begin contacting people to collect their pledges. We've demonstrated we've got resources to complete gates, so collecting and positioning resources now will prepare us for the release. To help me out, please send me your materials before I have to ask. 😄
+Pledge collections have begun, and we have solid contributions coming in across the materials. Right now, 52% of our pledges are filled, and if you don't count the unreleased materials, the number is just under 70%. 
 
-I will focus on collecting the Heph and Hekaton pair first. 
+## What's still needed?
 
-Collecting materials now also helps lock in your shares, and mitigates risks associated with people forgetting about pledges made months ago.
+Your help is still needed- I'd love to see more people throughout the galaxy contributing to the project. Check the Gateway Ledger for an up to date list of most wanted items. As of the time of this writing we need:
+
+![Table of Most Wanted items](mostWanted.png)
+
+We recently had some people who made pledges leave the game, so new pledges have opened, especially in Rfabs and RSH. Once we get closer to the gateway launch date, I will reach out again to people with unfilled pledges and will expire any that are likely to remain unfilled.
 
 ## Cash Contributions:
 
-So far $127,785,359 of $180,000,000 recieved contributions has been spent towards the project. Lately we've been very successful in acquiring the tough-to-get items like SP via the CX. I've noticed a few people have spun up bases just to sell into the Gateway coop buy orders. We've been able to keep the shares purchased through this program competitive with the material rates. 
+$256,100,000 has been contributed to the project, and 98.94% of that has been spent and shipped to the ANT warehouse. 
 
-More cash contributions are welcome! It's a great way to turn idle cash into economic value for the region!
-
-## Galactic Gateway Coordination
-
-We're coordinating our efforts with other groups. A group in BEN is planning the return gate from BEN to Hekaton. EvoV is planning the return gate from IA-151 to Heph. This works great from an ownership point of view, since it consolidates the coop's gates on Heph and Hekaton, where the accounting will be easy to manage.
-
-As before, these gateways are planned:
-
-![Map of the universe with a few gateway lines added.](in-progress-dec-2024.png)
+Managing cash contributions dilligently has been a lot of effort, but through careful bids on every CX, I have recieved a great return on these cash contributions. They have been focused on hard-to-get materials, and we've had good returns buying in a few key areas: RSH/TSH, SP, and afabs. Monitor the responsible spending of cash contributions on the [Cash Contribution Register](https://docs.google.com/spreadsheets/d/1oET7LURFw6m-3iKu_5n8iT2SWS4PU-P-hiH6fMazWmU/edit?gid=73270455#gid=73270455).
 
 ## Join the efforts
 
