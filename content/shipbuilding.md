@@ -17,7 +17,7 @@ To streamline the process of buying a new ship, we offer a single model with imm
 * Large Cargo bay, the 2k/2k offers the best balance for most needs
 * Lightweight hull plates improve acceleration
 
-{{< twoColImageRight imageURL="/images/OOG2kShip.png">}}
+{{< twoColImage right="true" imageURL="/images/OOG2kShip.png">}}
 
 ## Availability
 See our [discord post on the UFO discord](https://discord.com/channels/855488309802172469/1235430108127432754) for up to date stock information.
@@ -33,7 +33,7 @@ Contact Archiel (preferably via Discord).
 
 Create a ship blueprint that matches the above image. Rent 4 warehouses on Hephaestus to store the entire ship, or insert components into the ship as you accept the contracts. Make sure to click "start" in the shipyard after adding all the components.
 
-{{< /twoColImageRight >}}
+{{< /twoColImage >}}
 
 {{< center >}}
 ![Premium Shipbuilding Logo](/images/oog_premium_shipbuilding.png)

@@ -1,13 +1,22 @@
 
-<!-- twoColImageLeft.html -->
+<!-- twoColImage.html -->
 {{- $verticalClass := "items-top" -}}
 {{- if eq (.Get "verticalCenter") "true" -}}
     {{- $verticalClass = "items-center" -}}
 {{- end -}}
 
+{{- $orderOne := "lg:order-first" -}}
+{{- $orderTwo := "lg:order-last" -}}
+{{- if eq (.Get "right") "true" -}}
+    {{- $orderOne = "lg:order-last" -}}
+    {{- $orderTwo = "lg:order-first" -}}
+{{- end -}}
 
-<div class="grid {{ $verticalClass }} gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-    <div class="col-span-6">
+<div class="grid {{ $verticalClass }} gap-8 mb-8 py-4 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+    <div class="{{ $orderOne }} col-span-6 text-left sm:mb-6 lg:mb-0">
+        {{ .Inner | markdownify }}
+    </div>
+    <div class="{{ $orderTwo }} col-span-6">
         {{- $src := .Get "imageURL" -}}
         {{- $image := .Page.Resources.GetMatch $src -}}
 
@@ -32,8 +41,5 @@
             />
             </A>
         {{ end }}
-    </div>
-    <div class="col-span-6 text-left sm:mb-6 lg:mb-0">
-        {{ .Inner | markdownify }}
     </div>
 </div>

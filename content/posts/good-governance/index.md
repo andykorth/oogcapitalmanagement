@@ -36,7 +36,7 @@ Each section of the sheet has an explanation, and as you read this guide, you'll
 Check the boxes for each consumable you want to provide, paying attention to the $/satisfaction of that consumable. It will then calculate the projected True Happiness for those supply levels. (Recall the happiness shown in-game is averaged over 5 weeks). 
 The top right section will provide a prediction on the population growth resulting from the happiness percentages, where you can also evaluate if running projects is worthwhile (more on those later).
 
-{{< twoColImageRight imageURL="cogc.png">}}
+{{< twoColImage right="true" imageURL="cogc.png">}}
 
 ## Chamber of Global Commerce
 
@@ -44,7 +44,7 @@ Each 10 days  a planet requires a mix of 4 basic materials (DW, MCG, PE, and RAT
 Make sure to maintain a buffer of these materials if you do not visit the planet frequently. Alternatively you can engage with the MP's to assist if you encounter logistical challenges. You can always ask in the planet chat before it's due and someone can probably help, especially with DW and RAT. 
 If you don't fill it, players will get a notification that their workers are on strike.
 
-{{< /twoColImageRight >}}
+{{< /twoColImage >}}
 
 ## Understanding the POPR Screen
 The Population Report, on the POPR buffer is the next most important screen to watch as a governor:
@@ -61,7 +61,7 @@ https://pct.fnar.net/population-infrastructure/
 
 Pay particular attention to how needs can be capped. This comes up later in strategies for high-tier worker planets.
 
-{{< twoColImageRight imageURL="popi.png" alt="POPI Buffer" verticalCenter="true">}}
+{{< twoColImage right="true" imageURL="popi.png" alt="POPI Buffer" verticalCenter="true">}}
 
 ## Population Infrastructure:
 
@@ -69,16 +69,16 @@ The POPI page is a convenient access point for your different upkeep buildings. 
 
 Upkeep strategies are found later in this document. 
 
-{{< /twoColImageRight >}}
+{{< /twoColImage >}}
 
-{{< twoColImageLeft imageURL="popid.png" verticalCenter="true">}}
+{{< twoColImage right="false" imageURL="popid.png" verticalCenter="true">}}
 
 For the sake of completeness, by clicking on “details” you open the buffer where you actually donate materials to an infrastructure building in order to generate safety, health, comfort, etc.
 Any player can contribute upkeep materials for a given building, but ultimately the governor is expected to provide these upkeep items, and to upgrade the buildings if more satisfaction is needed than can be provided by the current infrastructure level. Same as with the COGC, engage with your MPs if you are not able to donate in time.
 
-{{< /twoColImageLeft >}}
+{{< /twoColImage >}}
 
-{{< twoColImageRight imageURL="notifs.png" verticalCenter="true">}}
+{{< twoColImage right="true" imageURL="notifs.png" verticalCenter="true">}}
 
 ## Government Context:
 Once you are elected as governor or MP, your notifications buffer provides you with an additional section at the bottom where you can check if there are actions pending and where you can access the government context. 
@@ -86,23 +86,23 @@ Make sure you regularly evaluate pending tasks to not miss any motions in voting
 Switching context will bring you to a separate APEX view for the governments. You can switch between contexts over the notification buffer or the CTXS button at the top left of the APEX screen. 
 The government context allows the governor and MP's evaluate the interaction with the motions, contracts and financial buffers of that planet. 
 
-{{< /twoColImageRight >}}
+{{< /twoColImage >}}
 
-{{< twoColImageRight imageURL="image1.png" verticalCenter="true">}}
+{{< twoColImage right="true" imageURL="image1.png" verticalCenter="true">}}
 
 ## Motions:
 
 Most of the government actions are operated through “motions”. Here you can change taxes, prepare workforce programs, change infrastructure levels, payout donating players and more.
 You can group multiple changes in one  motion. Once you are happy with a “draft” motion, take the opportunity to inform or convince the MP's they should vote “YES” on your motion.
 Any member of government can prepare a motion and bring them to vote.
-{{< /twoColImageRight >}}
+{{< /twoColImage >}}
 
-{{< twoColImageLeft imageURL="voting.png" verticalCenter="true">}}
+{{< twoColImage imageURL="voting.png" verticalCenter="true">}}
 
 Once a motion is put up for voting, the governor and MP's have 24 hours to vote. Not voting on a motion will be recorded as “ABSTAIN”. All motion voting results are publically available through the GOV buffer, grouped per government cycle.
-{{< /twoColImageLeft >}}
+{{< /twoColImage >}}
 
-{{< twoColImageRight imageURL="startingPrograms.png" verticalCenter="true">}}
+{{< twoColImage right="true" imageURL="startingPrograms.png" verticalCenter="true">}}
 
 ## Running workforce programs:
 
@@ -111,7 +111,7 @@ It is always a good idea to keep some sort of buffer for workforce programs, whi
 
 After creating a motion for a program, you have to wait for that motion to pass. Then find the contract for the program, pay for it, and start the program. You can have one active program, and one in the queue. You can also prepay for programs, as long as you start them within 30 days. If you don't manually start them, they will expire, and the cost will be lost.
 
-{{< /twoColImageRight >}}
+{{< /twoColImage >}}
 
 ## Capped Satisfaction:
 
