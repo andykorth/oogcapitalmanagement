@@ -1,0 +1,100 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Antares Grant Program / agp-information
+==============================================================
+
+[23-Jun-24 11:02 PM] jvaler#0000
+# AGP Information
+**__Updated:__** 26-Mar-25 12:34 AM
+### What is AGP?
+* AGP stands for "Antares Grant Program" and exists to provide ₳1,000,000 AIC grants to less developed Antares-based players. (this includes those who are looking to move/expand into Antares)
+  * We use the term "grant" to simply mean free money; you are not obligated to pay any of it back.
+### Who is operating this program?
+* The official project lead is currently @jvaler, however the other contributors operate somewhat autonomously. Determining who pays out grants is currently done randomly based on whoever volunteers first, which isn't ideal but 🤷‍♀️
+  * Said contributors are: @jvaler, @sidepipe, @archielvahr, @realharvey, and @.urpalhal.
+### How can I join?
+* You must have at minimum a BASIC license to receive a grant, as you need to be able to receive a player contract from us.
+* We want to ensure that you get the most out of this grant, therefore we require participants to consult with knowledgeable or established ADI members to create a plan of action regarding what the grant money will be spent on.
+  * We highly recommend familiarizing yourself with https://prunplanner.org/, it is an invaluable tool for base planning and getting a feel for the state of the game's economy. Remember to reality-check supposedly extremely high profit recipes by looking at their historical CXPC trade price as well as their traded amount.
+  * Please don't feel restricted by the grant requiring approval of your plan, we simply want to help you avoid common pitfalls new players fall into.
+* Once a plan has been made and agreed upon, you will be sent an in-game contract to receive the money. It's contract description should include relevant instructions.
+### Miscellaneous Information:
+* The old AGP channels can be read by collecting the @Archive Viewer role from https://discord.com/channels/1183243037430796339/1253487843574153257.
+
+
+[06-Aug-24 04:01 PM] jvaler#0000
+https://docs.google.com/spreadsheets/d/1nHlwiZ3z110rOlRlZ97K7ezpli1TeYM_4kOwbNLhDkc/edit?gid=0#gid=0
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1nHlwiZ3z110rOlRlZ97K7ezpli1TeYM_4kOwbNLhDkc/edit?gid=0
+AGP Database 2.0
+https://images-ext-1.discordapp.net/external/a8GoE6YsgxsvzasUcOsVYc1NkWfdADi-IxldDH4zAqA/https/lh7-us.googleusercontent.com/docs/AHkbwyLfcJc4v7fTE1jdDblAfFN78C07o9n1rAmk72VOoIc1vzAptT7unqFIrekpeTSpwIEgzuE976iQ9p6ifxZsNm-f7K11tVAc_9QeYA0jubVW7qwaXEbM%3Dw1200-h630-p
+
+{Reactions}
+🎉 (3) 💸 
+
+[15-Sep-24 08:16 PM] jvaler#0000
+To be clear, I am not the only one running AGP. Post your questions and/or proposals related to AGP in #agp-operations instead of my DMs. This way more people can see it and give their input, and you'll get faster response times.
+
+{Reactions}
+👀 (2) 
+
+[14-Feb-25 12:29 PM] laaxus#0000
+https://youtu.be/Vi-i6rLZMaQ?si=rZSgFkkQ26JBcYz0
+
+{Embed}
+Lord
+https://www.youtube.com/watch?v=Vi-i6rLZMaQ
+How to use Prunplanner for Prosperous Universe
+Hopefully this video helps you understand how to set up Prunplanner, if you have any questions please leave them below
+
+--Links--
+
+The official Prosp discord  https://discord.gg/YkwpJ2hdDE
+
+Link to Prunplanner https://prunplanner.org/
+
+Background audio used https://youtu.be/EM5KwkTQzsE
+
+Ending music from Sweet Cafe https://youtu.be/6DhONAQfEVg
+https://images-ext-1.discordapp.net/external/DSq6GXwpy1FwDBpBlIBMy2TpSSXULzOp4ckXQXPKUp0/https/i.ytimg.com/vi/Vi-i6rLZMaQ/maxresdefault.jpg
+
+{Reactions}
+❤️ 
+
+[24-Feb-25 03:28 PM] laaxus#0000
+I **heavily** recommend the following CX settings
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1254642134317793300/1343696100799807619/image.png?ex=68149043&is=68133ec3&hm=efe336435218347688155e7fb0114fe733c5ba4c63522cba7abe687f46835b83&
+
+{Reactions}
+💯 (3) 
+
+[22-Apr-25 02:51 PM] laaxus#0000
+Are you lacking ideas for your new bases ?
+Look at this ! https://prunplanner.org/tools/roi
+
+Sort by ROI, and don't forget to check if the CX is able to provide and eat a full base of production !
+
+{Embed}
+https://prunplanner.org/tools/roi
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+{Reactions}
+💯 (3) 
+
+[22-Apr-25 04:03 PM] jcheung#0000
+Oh god that's horrible on mobile lmao
+
+
+[23-Apr-25 04:45 PM] histidinedwarf#0000
+:antares_initiative:JUI on top :antares_initiative:
+
+{Reactions}
+🌈 (2) 
+
+==============================================================
+Exported 8 message(s)
+==============================================================

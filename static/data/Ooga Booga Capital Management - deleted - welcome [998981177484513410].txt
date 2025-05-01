@@ -1,0 +1,49 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: deleted / welcome
+==============================================================
+
+[06-Aug-22 10:47 AM] insensless72#0000
+**Welcome**: Welcome to Ooga Booga Capital Management! We are a corporation based in the Antares System. As a corporation, we work to ensure the stability of the Antares System, as well as creating a fun and engaging place for our members to enjoy Prosperous Universe. Listed below and in the #rules-faq are several things you need to know about OOG before joining.
+
+**7 day Trial Period**: We have a 7 day trial period for all players interested in joining OOG. During this period, you have access to everything within corp except corporate dividend payments. During your 7 day trial, feel free to ask questions, explore the Discord, and get to know us as a corp. We will do the same getting to know you as a player. After your 7 day trial is up, you will receive an official invite to the corporation in game.
+
+**Spreadsheet**: We have a running corporate spreadsheet listed below, on which you will find all of our member’s bases and the buildings on those bases. Page 2 of our spreadsheet is where members post items they sell on each base along with the price their items are sold for. Feel free to add yourself to the sheet and utilize corp prices before officially being invited to the corporation in game. Once you have added yourself, make sure to keep the information regarding your base info and prices up to date.  
+
+**Roles**: Roles within corp are primarily planetary focused. Each planet that has a dedicated channel also has a role. Ships do not have dedicated roles and minor planets with 1 or 2 members do not have a dedicated role. Other roles include but are not limited to @ admin, @ Governor, @ everyone.
+-
+
+
+[06-Aug-22 10:48 AM] insensless72#0000
+**Corporate Dynamics: Corp Pricing / Shipping**
+**Corp Pricing**: There are several items we sell internally that have fixed prices. “Gas stations” are an example of this. Players who manage gas stations sell SF and FF for 8ea on Phobos, Nike, and Deimos. You are not required to sell items at corporate prices if it is not profitable for you, but feel free to utilize corp pricing to bolster yourself as a company. 
+
+**Shipping**: There is a dedicated shipping channel for regular ships and specialized corporate ships. Feel free to post in #shipping if you need items moved. Make sure to frequently check to see if there is another player offering shipping to specific planets. Specialized ships are controlled by corporate members who have roles in helping keep specific production lines in place across the corporation. An example of this would be @insensless72 hauling LST off of Nike. These ships have large cargo holds and can accommodate more than regular ships.
+
+**Bank of OOG**: The corp "bank" is not a formal bank, but members of the corp are encouraged to request expansion financing from veteran members of the corp in the Bank of OOG Discord channel, particularly for bases that produce materials in high demand such as RATs, AL, or C.  Typically loans will be around the 200-400k range and can repaid interest free over periods from 20-60 days.  Opportunities to repay with materials produced versus cash may be available.  Other special financing may be available and the corporation may proactively offer loans for specific high-need projects as well (for example, a new HE base).  If you have any questions, feel free to ask in the bank channel or message any officer.
+
+
+[06-Aug-22 10:48 AM] insensless72#0000
+Corporate Sheet:
+https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit?usp=sharin
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit?usp=sharin
+Ooga Booga Corporate Production
+Planets
+
+ ,Phobos,Deimos,Harmonia,Nike,Griffonstone,Antares II G,QJ-382g,Hephaestus,IY-206i,IY-206j,KI-439b,KI-840C,Etherwind,Demeter,QJ-650c,Time Zone
+# OF BASES >>,13,17,15,12,8,1,3,8,2,2,3,5,9,2
+Production buildings only, please. Large stacks of buildings, or production at the end of a vertica...
+https://images-ext-1.discordapp.net/external/xeg-DU3exPRl5HrR3Mj6Hsz7mXxWFXqd0K3qkr4R300/https/lh3.googleusercontent.com/PTysxsDsgeo6q2034YXeR9r-rcLewwTVsM_G5yKO8FlndgLGoPSdELfDh43DkFxoAJU-cTi9anUn2Q%3Dw1200-h630-p
+
+
+[26-Dec-22 09:49 AM] yjhasaday#0000
+Gas station locations have now changed to better service everyone! You can still request both SF and FF at 8/u but we no longer service Phobos, it has been replaced with ANT station. Please use the LM's to request fuel on Nike or Deimos, if you are at ANT @jackinabox86 manages the fuel reserves so you can send him a custom contract for what you need. Any questions feel free to message the #fuel-ops channel!
+
+{Reactions}
+⛽ (3) 
+
+==============================================================
+Exported 4 message(s)
+==============================================================

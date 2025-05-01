@@ -1,0 +1,2531 @@
+==============================================================
+Guild: Prosperous Universe
+Channel: meta / server-status
+Topic: Channel about scheduled and unscheduled downtimes and other server-related issues.
+==============================================================
+
+[03-Jan-20 03:21 AM] lunikon#0000
+PSA: Doing another quick server reboot shortly.
+
+
+[03-Jan-20 03:49 AM] lunikon#0000
+should be back to normal
+
+{Reactions}
+👏 (5) 
+
+[07-Jan-20 01:56 PM] lunikon#0000
+Just a heads-up: our hosting provider has a maintenance window tonight. If the game is briefly unavailable, that’ll likely be the cause.
+
+{Reactions}
+😱 (9) 😭 (5) 
+
+[26-Jan-20 04:27 AM] lunikon#0000
+have to restart at least one node, might cause some lag and hydration timeouts
+
+{Reactions}
+👍 (3) 
+
+[28-Jan-20 04:01 AM] lunikon#0000
+heads-up: Later today we'll do a (hopefully) quick technical upgrade of the  server. Game will be down for a few minutes.
+
+{Reactions}
+👍 (3) 
+
+[28-Jan-20 04:29 AM] lunikon#0000
+update will commence shortly
+
+
+[28-Jan-20 06:11 AM] lunikon#0000
+another patch is inbound
+
+{Reactions}
+👍 (2) 
+
+[28-Jan-20 06:42 AM] lunikon#0000
+sorry guys, experimenting with life subjects a bit 😉
+
+{Reactions}
+🥺 🦥 🐹 👨‍🔬 (2) 
+
+[28-Jan-20 07:24 AM] lunikon#0000
+should be back to normal for now...might kill a few server nodes at will again later today 😉
+
+
+[28-Jan-20 07:25 AM] lunikon#0000
+https://tenor.com/view/its-alive-gene-wilder-young-frankenstein-frankensteins-gif-5403958
+
+{Embed}
+https://tenor.com/view/its-alive-gene-wilder-young-frankenstein-frankensteins-gif-5403958
+https://images-ext-1.discordapp.net/external/SH85-26sHjLDLPmCRSFHY8j_01rnvWGOiYbvQmS40Iw/https/media.tenor.co/images/7ecefa6bd4a532a4a4501b39719c0949/raw
+
+{Reactions}
+💀 (2) 😱 (3) 
+
+[28-Jan-20 10:06 AM] lunikon#0000
+PSA PSA PSA Hopefully last reboot for the day. As you might have figured, we're on the hunt for something, please excuse the frequent hiccups.
+
+
+[29-Jan-20 07:59 AM] molp#0000
+We are about to release the next maintenance release, so expect a short downtime and some hiccups (https://com.prosperousuniverse.com/t/release-notes-maintenance-02/1969)
+
+
+[29-Jan-20 09:14 AM] molp#0000
+The maintenance release is complete, let us know if you run into issues
+
+
+[30-Jan-20 01:49 AM] lunikon#0000
+one more small patch after yesterday's release that should help with some of the performance issues we're seeing
+
+
+[30-Jan-20 01:50 AM] lunikon#0000
+should hit the servers in a couple of minutes
+
+
+[30-Jan-20 01:59 AM] lunikon#0000
+done. Let's see whether that helps.
+
+
+[30-Jan-20 08:23 AM] molp#0000
+There will be a quick downtime in a couple of minutes
+
+
+[31-Jan-20 02:33 AM] molp#0000
+Expect a short downtime in a couple of minutes!
+
+
+[31-Jan-20 04:36 AM] molp#0000
+.. and there will be another short downtime in a couple of minutes. Hopefully the last one for today.
+
+{Reactions}
+🇯 (4) 🇮 (3) 🇳 (3) 🇽 (3) 🇪 (3) 🇩 (3) 👁️ (3) 🇾 (3) 🇴 (3) 🇺 (3) 🇷 (3) 🇸 (3) al (3) ff (3) 
+
+[27-Feb-20 01:47 AM] lunikon#0000
+APEX seems to refuse to load right now
+
+
+[27-Feb-20 01:47 AM] lunikon#0000
+looking into it
+
+{Reactions}
+🍻 (8) 
+
+[27-Feb-20 02:27 AM] lunikon#0000
+I can't see anything inherently wrong on our end, just high latency between the cluster nodes. Did a reboot, but things still feel slow
+
+
+[27-Feb-20 02:27 AM] lunikon#0000
+will keep an eye on it
+
+
+[06-Mar-20 08:59 AM] molp#0000
+Server restart imminent!
+
+
+[12-Mar-20 02:52 AM] molp#0000
+Releasing the presence update has begun. Expect server downtime, restarts, hiccups, errors, you know the drill 😉
+
+{Reactions}
+🍻 (9) 
+
+[12-Mar-20 03:56 AM] molp#0000
+The servers are back, now let's see if anything is broken!
+
+{Reactions}
+✅ (3) 
+
+[16-Mar-20 03:59 AM] molp#0000
+There will be a short downtime soon
+
+{Reactions}
+😱 (6) 
+
+[16-Mar-20 06:19 AM] molp#0000
+.. and another one ..
+
+{Reactions}
+🙄 (2) POGGERS (3) 
+
+[18-Mar-20 02:36 AM] molp#0000
+Hold on to your hats, there will be a server restart soon
+
+
+[23-Mar-20 03:13 AM] lunikon#0000
+hey everyone, we have to upgrade our cluster to a newer major version, meaning there will be a downtime and it will take a little bit longer than our usual ones. Fingers crossed!
+
+{Reactions}
+☕ (6) 
+
+[23-Mar-20 03:57 AM] lunikon#0000
+turns out to be a bit bumpier than I anticipated
+
+
+[24-Mar-20 03:23 AM] lunikon#0000
+turns out that we missed a few minor versions of Kubernetes and our hosting provider only allows to upgrade to the latest one by stepping through all intermediate versions
+
+
+[24-Mar-20 03:23 AM] lunikon#0000
+meaning: please expect somewhat frequent and longer downtimes over the course of the day. Sorry about that!
+
+
+[24-Mar-20 04:28 AM] lunikon#0000
+this is taking a bit of time
+
+{Reactions}
+👍 (7) 
+
+[24-Mar-20 04:28 AM] lunikon#0000
+_twiddles thumbs_
+
+{Reactions}
+😰 (5) 
+
+[24-Mar-20 04:44 AM] lunikon#0000
+two more minor versions to go
+
+
+[24-Mar-20 05:56 AM] lunikon#0000
+doing the final increment now
+
+
+[24-Mar-20 05:57 AM] lunikon#0000
+hope to be back soon
+
+
+[24-Mar-20 05:57 AM] lunikon#0000
+longest downtime since this alpha started, I think 😳
+
+
+[24-Mar-20 06:26 AM] lunikon#0000
+server is coming back up...as usual, expect some sluggishness and hydration timeouts for a little bit
+
+{Reactions}
+🥔 (2) 🔥 (2) 🍞 (3) 
+
+[25-Mar-20 02:53 AM] lunikon#0000
+our recent update spree seems to be causing some unexpected issues. Please be patient with us while we iterate on our configuration 🙂
+
+{Reactions}
+PogChamp 🇳 (2) 🇴 (3) 🇵 (3) 🇦 (2) 🇹 (2) 🇮 (2) 🇪 (2) n_ (2) 🇨 (3) 3️⃣ (2) 
+
+[22-Apr-20 07:22 AM] molp#0000
+I am getting started with the maintenance update. Expect some downtime
+
+{Reactions}
+🤞 (7) 
+
+[22-Apr-20 09:29 AM] molp#0000
+I am going to jinx it again, but I think the update is done. Everything seems to work
+
+{Reactions}
+🙌 (4) 🇯 (3) 🇮 (3) 🇳 (3) 🇽 (3) 
+
+[24-Apr-20 11:10 AM] lunikon#0000
+Sorry about the on-going performance issues everyone! Something in this week's release must have caused it but we haven't figured out what it is just yet. Until then, I'm afraid there will be more or less regular performance degradations about which we can do little more than reboot the servers. Thank you very much for your understanding...we're trying to resolve the issue as quickly as we can!
+
+{Reactions}
+👀 (4) 👍 (16) ❓ 
+
+[25-Apr-20 07:49 AM] lunikon#0000
+rebooting the server again and testing some changes, expect more downtimes (like...more than already)
+
+{Reactions}
+👍 (6) 
+
+[25-Apr-20 08:45 AM] lunikon#0000
+it's going great...
+
+{Reactions}
+🤞 (7) 👍 🙏 
+
+[25-Apr-20 11:47 AM] lunikon#0000
+Game should be accessible again. So far no concrete fix for the performance issues we saw before the downtime, but I tried a few things, so let's see how it goes
+
+{Reactions}
+👍 (4) 😹 
+
+[04-May-20 09:23 AM] molp#0000
+PSA: there will be a quick server restart in a couple of moments
+
+
+[09-May-20 02:20 AM] molp#0000
+PSA: quick server restart
+
+
+[14-May-20 08:00 AM] molp#0000
+PSA: quick server restart in a few minutes
+
+
+[15-May-20 12:33 PM] lunikon#0000
+restarting the server shortly to try a config change
+
+{Reactions}
+👍 
+
+[15-May-20 12:46 PM] lunikon#0000
+should be back
+
+
+[16-May-20 04:34 PM] lunikon#0000
+rebooting the server once again
+
+
+[16-May-20 04:35 PM] lunikon#0000
+promise we'll have this sorted soon
+
+
+[18-May-20 06:31 AM] molp#0000
+Despite the servers running well today, I need to do a reboot soon to install some instrumentation. Expect some downtime.
+
+
+[18-May-20 08:30 AM] molp#0000
+I am currently extracting some information to fix the performance issues which in turn degrades the servers' performance at the moment..
+
+
+[18-May-20 01:38 PM] molp#0000
+I am about to remove the instrumentation, this will hopefully stabilize the servers..
+
+
+[19-May-20 12:35 PM] molp#0000
+One more reboot to cleanup the mess..
+
+{Reactions}
+🔥 (9) 🇾 🇪 🇸 ❕ (2) zoidberg 
+
+[25-May-20 03:11 AM] molp#0000
+I plan to do two server reboots this morning, let's see how it goes 🙂
+
+{Reactions}
+👍 (2) 
+
+[25-May-20 03:40 AM] molp#0000
+The first one was successful, the second will come up in a couple of minutes
+
+
+[25-May-20 04:19 AM] molp#0000
+Second reboot also successful, but I'll do another restart to fix some minor issues
+
+
+[25-May-20 04:34 AM] molp#0000
+So, that should be it for today. The first code of the upcoming *Populous* release is deployed 🙂
+
+{Reactions}
+👀 (8) 👍 (6) 
+
+[01-Jun-20 01:46 AM] molp#0000
+There will be a server restart in a couple of minutes
+
+
+[04-Jun-20 06:53 AM] lunikon#0000
+heads-up: Will restart the server in a little bit to apply a fix
+
+{Reactions}
+🤞 (2) 
+
+[04-Jun-20 12:36 PM] lunikon#0000
+one more reboot soon as I am investigating an issue
+
+
+[08-Jun-20 05:46 AM] lunikon#0000
+Server wil reboot shortly to enable an internal feature
+
+{Reactions}
+rip (2) 👍🏼 (2) 
+
+[10-Jun-20 02:20 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[15-Jun-20 03:36 AM] lunikon#0000
+PSA: We had a silly configuration issue over the weekend that caused email transmissions to silently fail. All the messages that did not get sent should now have been delivered. Sorry for the troubles!
+
+
+[18-Jun-20 12:16 AM] molp#0000
+There will be a quick server reboot soon
+
+
+[18-Jun-20 06:43 AM] lunikon#0000
+doing a quick reboot shortly to add some logging
+
+
+[18-Jun-20 07:10 AM] lunikon#0000
+aaaaaand one more, hopefully with a fix
+
+
+[01-Jul-20 06:44 AM] molp#0000
+I had to restart one server instance, there will be some hiccups
+
+
+[22-Jul-20 02:11 AM] molp#0000
+Expect some hiccups, I had to restart two nodes
+
+
+[10-Aug-20 12:34 AM] molp#0000
+We are about to deploy a tool to collect more data on performance problems. Expect restarts and connection losses today and tomorrow.
+
+
+[13-Aug-20 02:12 AM] molp#0000
+I am deploying something, expect a short downtime soon
+
+
+[13-Aug-20 03:33 AM] molp#0000
+..and another one!
+
+{Reactions}
+🇲 (3) 🇴 (3) 🇷 (3) 🇪 (3) ❗ (2) 
+
+[15-Aug-20 02:08 PM] lunikon#0000
+people are reporting sluggish-ness of the server again, so I'll fiddle with a few settings and reboot in the process
+
+
+[16-Aug-20 07:32 AM] lunikon#0000
+heads-up: Restarting the server to hunt down/fix a bug I discovered last night
+
+
+[16-Aug-20 08:37 AM] lunikon#0000
+and another reboot soon...hopefully the last one for today (do I jinx it when I say this?)
+
+{Reactions}
+🇾 (3) 🇪 (3) 🇸 (3) 
+
+[16-Aug-20 09:26 AM] lunikon#0000
+aaaaaaand one more reboot...jinxed it!
+
+
+[16-Aug-20 09:45 AM] lunikon#0000
+I think I might actually be done with reboots for the moment 🙂
+
+{Reactions}
+👍 (3) 
+
+[25-Aug-20 03:02 AM] lunikon#0000
+doing a quick reboot because messages to the server are stuck again. I promise I'll look into this issue soon!
+
+
+[27-Aug-20 04:28 AM] lunikon#0000
+sorry everyone, it's troubleshooting time! Please expect the occasional server reboot over the next few hours, starting shortly!
+
+
+[27-Aug-20 07:09 AM] lunikon#0000
+another reboot in a few minutes
+
+
+[02-Sep-20 02:11 AM] molp#0000
+The day of *Populous* has finally come! We will start early today in case there are any bugs that need immediate attention. Since this is a rather large update expect a longer downtime and frequent reboots until everything has stabilized.
+
+{Reactions}
+👍 (2) 
+
+[02-Sep-20 03:58 AM] molp#0000
+Another reboot is necessary. Will take some time
+
+{Reactions}
+👍 (4) 
+
+[02-Sep-20 07:54 AM] molp#0000
+.. and another one ..
+
+
+[02-Sep-20 08:44 AM] molp#0000
+.. and another one ..
+
+{Reactions}
+♾️ (5) 🛰️ (2) 
+
+[02-Sep-20 01:25 PM] molp#0000
+.. and hopefully the last one for today
+
+{Reactions}
+👍 (3) 
+
+[03-Sep-20 03:44 AM] molp#0000
+There will be a quick server restart in a couple of minutes
+
+
+[04-Sep-20 03:23 AM] molp#0000
+There will be a quick server restart in a couple of minutes
+
+{Reactions}
+prun (4) 
+
+[04-Sep-20 04:41 AM] lunikon#0000
+hey everyone, if you suddenly find yourself in the situation that your extractors can't extract a resource anymore that used to be present before, please read and comment on this post: https://com.prosperousuniverse.com/t/release-notes-populous/2391/16?u=martin
+
+{Embed}
+https://com.prosperousuniverse.com/t/release-notes-populous/2391/16?u=martin
+Release Notes - Populous
+We just noticed that the fix to update the resource availability in production caused other resources to disappear (one example being H2O and O missing from Electronica). We will look into this issue as soon a we can, but because @molp is out-of-office until Monday and we don’...
+https://images-ext-1.discordapp.net/external/Qq5Vg0omd7EPHGoU1ex7VUGB8PS5_dkfuwJ8uVP0adA/https/com.prosperousuniverse.com/uploads/default/original/2X/6/6aa0edefe09de42bd427f96bc62d4627accb83da.png
+
+
+[04-Sep-20 07:00 AM] lunikon#0000
+will be doing a quick reboot in a few minutes to fix a bug (no data issues addressed)
+
+
+[07-Sep-20 08:55 AM] molp#0000
+There will be a reboot in a couple of minutes
+
+
+[11-Sep-20 12:29 AM] molp#0000
+There will be a quick reboot
+
+
+[21-Sep-20 02:59 AM] molp#0000
+We will deploy the maintenance update in a couple of minutes. Expect some down time.
+
+{Reactions}
+🤞 (3) 👍 (4) 
+
+[22-Sep-20 08:26 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[25-Sep-20 01:11 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[29-Sep-20 07:34 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+{Reactions}
+👍 
+
+[05-Oct-20 04:34 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+{Reactions}
+👍 
+
+[08-Oct-20 03:02 AM] molp#0000
+We are experiencing some technical difficulties, hopefully we'll be back soon
+
+{Reactions}
+👍 (8) 🐛 (2) 
+
+[08-Oct-20 05:54 AM] lunikon#0000
+servers should be back for now. Sorry for the inconvenience!
+
+{Reactions}
+🚀 (3) 👌 (2) 
+
+[12-Oct-20 01:18 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[14-Oct-20 04:42 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[15-Oct-20 04:20 AM] molp#0000
+Just in case you wondered, the handbook is available again https://handbook.apex.prosperousuniverse.com/ (has been down since yesterday)
+
+
+[15-Oct-20 07:45 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[15-Oct-20 01:01 PM] molp#0000
+There will be a quick reboot in a couple of seconds
+
+{Reactions}
+👍 (2) 
+
+[21-Oct-20 09:49 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[22-Oct-20 07:06 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+{Reactions}
+🎺 
+
+[22-Oct-20 08:12 AM] molp#0000
+..and once more: There will be a quick reboot in a couple of minutes
+
+{Reactions}
+👍 o_ 
+
+[30-Oct-20 01:58 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[09-Nov-20 01:09 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[16-Nov-20 12:43 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[16-Nov-20 09:15 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[19-Nov-20 01:51 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+{Reactions}
+🇶 🇺 🇮 🇨 🇰 🇷 🇪 🇧 🇴 🅾️ 🇹 
+
+[07-Dec-20 02:27 AM] molp#0000
+Today is release day and I will shortly begin the procedure, so expect some down time!
+
+
+[08-Dec-20 08:55 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[08-Dec-20 09:29 AM] molp#0000
+Here is the mini-changelog of the recent reboot: https://com.prosperousuniverse.com/t/release-notes-ignition/2522/11?u=molp
+
+{Reactions}
+👍 (2) 
+
+[10-Dec-20 07:54 AM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[10-Dec-20 08:36 AM] molp#0000
+Here is the mini-changelog of the recent reboot:
+https://com.prosperousuniverse.com/t/release-notes-ignition/2522/13?u=molp
+
+
+[20-Dec-20 12:57 PM] molp#0000
+Hey everyone, you might have noticed that we are currently experiencing some server issues from time to time. We haven't found out what exactly goes wrong yet. If APEX shows you hydration errors or behaves oddly just wait a few minutes, refresh your browser and it should work again. Sorry for the inconvenience!
+
+{Reactions}
+👍 
+
+[20-Dec-20 01:56 PM] molp#0000
+There will be a quick reboot in a couple of minutes
+
+
+[22-Dec-20 06:35 AM] molp#0000
+I am about to start the release process for https://com.prosperousuniverse.com/t/release-notes-2020-1/2692?u=molp. Expect some downtime in the next hour!
+
+{Reactions}
+💯 👍 
+
+[22-Dec-20 07:26 AM] molp#0000
+Servers are back up, but I had to revert to the old version due to technical problems. There might be a 2nd attempt later today.
+
+
+[22-Dec-20 07:55 AM] molp#0000
+Second attempt to release the update.. fingers crossed!
+
+
+[22-Dec-20 08:32 AM] molp#0000
+Servers are back up, let us know if you run into any issues!
+
+{Reactions}
+👍 (4) 
+
+[05-Jan-21 01:22 AM] molp#0000
+There will be a quick reboot in a couple of minutes. I am trying to find out what causes the instance restarts!
+
+{Reactions}
+👍 
+
+[14-Jan-21 12:44 AM] molp#0000
+There will be a quick reboot in a couple of minutes.
+
+
+[16-Feb-21 06:10 AM] molp#0000
+There will be a quick reboot in a couple of minutes. (no, it is not the reset 😉 )
+
+{Reactions}
+🤣 (2) 😢 (2) 
+
+[23-Feb-21 02:37 AM] molp#0000
+The migration process has begun. PrUn will be down any time now
+
+{Reactions}
+😲 (6) 👍 
+
+[23-Feb-21 01:07 PM] molp#0000
+Here is a quick status report: The migration of the account system has been successful, although a few minor issues remain. APEX is running on the test server. We are currently spinning it up on production for tomorrow's launch!
+
+{Reactions}
+🚀 (20) prun (6) 👍 (2) 
+
+[24-Feb-21 08:20 AM] molp#0000
+Status update! All systems nominal, we have a fresh universe!
+
+{Reactions}
+🚀 (14) 
+
+[25-Feb-21 07:05 AM] molp#0000
+There will be a quick reboot in a couple of minutes. Wish us luck, it is the first reboot in the new universe 🙂
+
+{Reactions}
+🤞 (8) 
+
+[27-Feb-21 07:37 AM] molp#0000
+Servers will be down shortly for a quick hotfix
+
+{Reactions}
+👀 (4) pepeHowdy (2) 
+
+[27-Feb-21 07:45 AM] molp#0000
+.. and we are back
+
+{Reactions}
+🥳 (6) prun (4) ♥️ (4) 
+
+[04-Mar-21 02:49 AM] molp#0000
+There will be a quick reboot in a couple of minutes.
+
+{Reactions}
+♻️ (8) 
+
+[15-Mar-21 01:12 AM] molp#0000
+There will be a quick reboot in a couple of minutes.
+
+
+[19-Mar-21 07:38 AM] molp#0000
+We are currently experiencing some authentication issues, Martin is looking into it right now
+
+{Reactions}
+👌🏼 (4) ☕ (4) 👍🏾 (2) 
+
+[23-Mar-21 10:55 AM] molp#0000
+There will be a quick reboot in a couple of minutes.
+
+
+[25-Mar-21 04:39 AM] molp#0000
+We will start soon with the deployment of the maintenance update (https://com.prosperousuniverse.com/t/release-notes-2021-1/2948?u=molp)
+
+
+[06-Apr-21 07:46 AM] molp#0000
+Servers will be down for maintenance in a couple of minutes
+
+{Reactions}
+👌 (2) 🇮 (4) 🇬 (4) 🇭 (4) 🇹 (4) 📉 (4) 🏁 (2) br (2) o_ (2) 
+
+[06-Apr-21 01:15 PM] molp#0000
+.. and another reboot incoming to fix some bugs
+
+{Reactions}
+turnip (3) 
+
+[07-Apr-21 07:59 AM] molp#0000
+I am still trying to figure out a problem, so there will be a reboot in a few moments
+
+{Reactions}
+👌 (4) cof (2) 
+
+[15-Apr-21 12:55 PM] molp#0000
+PSA: Servers need a quick restart, we'll be back shortly
+
+{Reactions}
+👌 (8) 💣 (4) 
+
+[22-Apr-21 02:02 AM] molp#0000
+There will be a short downtime in a couple of minutes
+
+{Reactions}
+👌 (4) 🇹 (4) 🇭 (4) 🇦 (4) 🇳 (4) 🇰 (4) 🇸 (4) 
+
+[22-Apr-21 03:01 AM] molp#0000
+.. and another one. Hopefully the last one for today!
+
+{Reactions}
+ff (6) 👌 (4) 
+
+[27-Apr-21 02:31 AM] molp#0000
+The servers will be down for maintenance for a moment starting in a few minutes
+
+{Reactions}
+☕ (6) 
+
+[27-Apr-21 02:45 AM] molp#0000
+.. and back up! So far no problems 🤞
+
+
+[27-Apr-21 07:12 AM] lunikon#0000
+forums are down for a moment to apply an upgrade
+
+{Reactions}
+😲 (4) 
+
+[27-Apr-21 07:32 AM] lunikon#0000
+and they are back
+
+
+[03-May-21 03:00 AM] molp#0000
+Servers will be down in a couple of minutes
+
+
+[05-May-21 12:31 AM] molp#0000
+Servers will be down for a brief moment
+
+{Reactions}
+🔮 (4) 
+
+[11-May-21 01:20 AM] molp#0000
+We have a disk failure in the account registry. We'll let you know as soon as it is fixed. Until then you might experience trouble logging in, or registering for a new account.
+
+{Reactions}
+🇷 (6) 🇮 (6) 🇵 (6) KomaYohaRIP (2) prun (2) 
+
+[11-May-21 02:02 AM] molp#0000
+The account registry is back up. Logins, registrations etc should work again. If you run into any problems let us know!
+
+{Reactions}
+👍 (3) yayjump (3) 
+
+[28-May-21 12:29 PM] molp#0000
+Will have to restart the servers, we'll be back in a couple of minutes
+
+{Reactions}
+😢 (4) 🥳 (3) 🎉 (3) 
+
+[01-Jun-21 12:53 AM] molp#0000
+Servers will be down in a couple of minutes for a brief moment
+
+{Reactions}
+👍 (4) 
+
+[09-Jun-21 07:01 AM] molp#0000
+Servers will be down in a couple of minutes for a brief moment
+
+{Reactions}
+👍 🇷 (2) 🇮 (2) 🇵 (2) 🇪 🇳 🎐 
+
+[14-Jun-21 01:08 AM] molp#0000
+Servers will be down in a couple of minutes for a brief moment
+
+
+[14-Jun-21 03:35 AM] molp#0000
+Servers will be down in a couple of minutes for a brief moment
+
+{Reactions}
+👍🏼 (2) 👍 
+
+[23-Jun-21 02:30 AM] molp#0000
+Servers will be down for the maintenance update in a few minutes
+
+{Reactions}
+👍 (3) 
+
+[23-Jun-21 02:52 AM] molp#0000
+Servers are back, but there will be another reboot in a couple of minutes
+
+{Reactions}
+mm (2) 
+
+[23-Jun-21 03:07 AM] molp#0000
+Servers are back up and the update complete. So far no errors 🤞
+
+{Reactions}
+mm 
+
+[24-Jun-21 12:39 PM] molp#0000
+There will be a short downtime in a couple of minutes
+
+{Reactions}
+👍 (3) 
+
+[01-Jul-21 05:40 AM] molp#0000
+There will be a short downtime in a couple of minutes
+
+{Reactions}
+mm (2) 
+
+[08-Jul-21 07:32 AM] molp#0000
+There will be a short downtime in a couple of minutes
+
+{Reactions}
+👍 (2) 🇳 (2) 🧊 (2) 
+
+[12-Jul-21 09:24 AM] molp#0000
+There will be a short downtime in a couple of minutes
+
+
+[12-Jul-21 12:56 PM] molp#0000
+Second attempt to restart the servers..
+
+
+[15-Jul-21 03:56 AM] molp#0000
+There will be a short downtime in a couple of minutes
+
+
+[20-Jul-21 02:47 AM] molp#0000
+Servers will restart in a few minutes. The health and safety values provided by bases is adjusted for the first time. See here for more details: https://com.prosperousuniverse.com/t/reducing-base-safety-and-health-values/3461?u=molp
+
+
+[27-Jul-21 02:20 AM] molp#0000
+Servers will restart in a few minutes.
+
+
+[03-Aug-21 04:11 AM] molp#0000
+Servers will restart in a few minutes. The health and safety values provided by bases are being adjusted again. See here for more details: https://com.prosperousuniverse.com/t/reducing-base-safety-and-health-values/3461?u=molp
+
+
+[04-Aug-21 06:44 AM] molp#0000
+Quick reboot incoming!
+
+
+[06-Aug-21 02:31 AM] molp#0000
+Quick reboot incoming!
+
+{Reactions}
+👍 (4) 
+
+[10-Aug-21 07:43 AM] molp#0000
+We need to perform some maintenance, so there will be a downtime starting at around 15:00 CEST (in 15 minutes).
+
+
+[25-Aug-21 02:53 PM] lunikon#0000
+heads-up: Have to turn it off and on again.
+
+{Reactions}
+👀 (5) 
+
+[27-Aug-21 05:03 AM] lunikon#0000
+and rebooting again to flush the pipes
+
+{Reactions}
+💦 💧 🚿 🚽 👨‍🔧 (2) 
+
+[31-Aug-21 03:24 AM] molp#0000
+There will be a reboot in a couple of minutes
+
+
+[02-Sep-21 03:18 PM] lunikon#0000
+sorry folks, quick reboot to flush the pipes!
+
+
+[02-Sep-21 03:18 PM] lunikon#0000
+got beans stuck in them for some reason...
+
+{Reactions}
+bea (31) 🇧 (9) 🇪 (11) 🇦 (11) 🇳 (11) 🇸 (11) ❕ (10) 😆 (2) 😂 beans (2) 
+
+[09-Sep-21 01:06 AM] molp#0000
+Today is release day! We are going to release the maintenance update 2021.4! Expect some downtime starting shortly.
+
+{Reactions}
+🇭 (5) 🇾 (5) 🇵 (5) 🇪 (5) LEEK (3) 
+
+[09-Sep-21 01:54 AM] molp#0000
+Servers are up and running! Please let us know if you run into any issues!
+
+
+[09-Sep-21 03:16 AM] molp#0000
+Servers need a restart, we'll be back shortly
+
+{Reactions}
+fiery_heart (6) 
+
+[10-Sep-21 02:08 AM] molp#0000
+Servers will be down for a brief moment, starting in a few minutes
+
+
+[13-Sep-21 03:30 PM] lunikon#0000
+sorry about the late-evening server restart, but...the pipes
+
+{Reactions}
+rat (2) bongojazzhands 
+
+[16-Sep-21 02:37 PM] lunikon#0000
+Pipes are clogged again. But this time I hopefully have a permanent fix!
+
+{Reactions}
+🚽 (5) turnip 💩 (3) 
+
+[16-Sep-21 02:37 PM] lunikon#0000
+Please excuse a short downtime in a few minutes!
+
+
+[16-Sep-21 02:59 PM] lunikon#0000
+Fingers crossed this was the last reboot for this silly reason!
+
+
+[22-Sep-21 01:49 AM] molp#0000
+Servers will reboot shortly
+
+
+[07-Oct-21 01:14 AM] molp#0000
+Servers will be rebooted in a couple of minutes
+
+
+[11-Oct-21 12:30 PM] molp#0000
+Servers will be rebooted in a couple of minutes
+
+
+[11-Oct-21 11:34 PM] molp#0000
+Seems like we are experiencing some network issues, currently investigating..
+
+{Reactions}
+🐛 ❤️ 
+
+[12-Oct-21 01:36 AM] molp#0000
+We deployed a fix, please let us know if you still experience connection/loading problems!
+
+{Reactions}
+💯 
+
+[15-Oct-21 12:30 PM] molp#0000
+I will restart the servers shortly, something doesn't seem quite right
+
+{Reactions}
+👍 (9) 
+
+[21-Oct-21 04:44 AM] molp#0000
+Servers will restart in a moment
+
+{Reactions}
+🔄 (3) 
+
+[22-Oct-21 12:46 AM] molp#0000
+Servers will restart in a moment
+
+{Reactions}
+❤️ 
+
+[02-Nov-21 12:03 AM] molp#0000
+We'll shortly start the release of the mobile UI (see https://com.prosperousuniverse.com/t/release-notes-mobile-ui/3898?u=molp), so expect some downtime.
+
+{Reactions}
+POG 
+
+[10-Nov-21 06:55 AM] molp#0000
+Servers will restart in a few minutes!
+
+
+[11-Nov-21 02:59 AM] molp#0000
+Servers will restart in a few minutes!
+
+{Reactions}
+prun (2) 
+
+[20-Nov-21 12:11 PM] molp#0000
+Of course the pipes become clogged on the weekend. Quick server reboot incoming!
+
+
+[22-Nov-21 03:04 AM] molp#0000
+Seems we suffered a restart of all nodes at the same time, nodes should be up and running in a few minutes.
+
+{Reactions}
+👍 
+
+[01-Dec-21 09:56 AM] molp#0000
+Servers need a restart! 🤖 🪠
+
+
+[08-Dec-21 01:16 PM] molp#0000
+We are currently experiencing a bug with a COGC that can lead to the game being slow. We're investigating!
+
+
+[09-Dec-21 12:44 AM] molp#0000
+Servers will be restarted in a few minutes to fix the COGC problem
+
+{Reactions}
+👏 (2) 👮‍♂️ 
+
+[20-Dec-21 08:46 AM] molp#0000
+Server need a restart. Will commence in a few minutes
+
+
+[26-Dec-21 01:35 AM] molp#0000
+Servers will be restarted in a minute 🪠
+
+
+[01-Feb-22 04:44 AM] molp#0000
+Looks like a couple of nodes decided to reboot. We should be back soon.
+
+{Reactions}
+👍 (4) 
+
+[07-Feb-22 01:03 AM] molp#0000
+Hello! There will be a scheduled maintenance window (not for the release, but in preparation of it 😉 )  today, starting at around 14:00 GMT. We are not sure how long it will take, but I assume not much longer than 30 minutes.
+
+
+[07-Feb-22 08:04 AM] molp#0000
+Maintenance started.
+
+{Reactions}
+🇫 (3) 5️⃣ (3) 
+
+[07-Feb-22 08:34 AM] molp#0000
+.. and we are back.
+
+
+[08-Feb-22 07:20 AM] molp#0000
+We need to update our cluster today. Expect some down time!
+https://com.prosperousuniverse.com/t/scheduled-maintenance-2022-02-08/4137?u=molp
+
+{Embed}
+https://com.prosperousuniverse.com/t/scheduled-maintenance-2022-02-08/4137?u=molp
+Scheduled Maintenance 2022-02-08
+We are planning a cluster update later today which will likely cause intermittent down times of the account management system and the game. While this happens, you might be unable to login, register or play the game.  We will let you know once the upgrade is complete.
+https://images-ext-1.discordapp.net/external/x0Lcv9Tc0WstLZAut1pc9Cply1Z-ZpDJ_X3qJLQ4S_k/https/com.prosperousuniverse.com/uploads/default/original/1X/9637dadda95e302d05ebee320ec8473189637a64.jpg
+
+
+[08-Feb-22 09:58 AM] molp#0000
+.. and we are back!
+
+{Reactions}
+👍 
+
+[10-Feb-22 01:45 AM] molp#0000
+It is release day! Over the course of the next hour or two we are going to release the ATLAS update. Expect some down times and reboots. Here is the update's release notes: https://com.prosperousuniverse.com/t/release-notes-atlas/4117?u=molp
+
+{Embed}
+https://com.prosperousuniverse.com/t/release-notes-atlas/4117?u=molp
+Release Notes - Atlas
+Release: Atlas     Release date The APEX update will be released on Thursday February 10th   General Notes If your APEX console is stuck in a loading state after the update, please make sure to refresh it once after the update to ensure you got the latest version.   New features  New maps    The improved maps offer a new filter mechanism that al...
+https://images-ext-1.discordapp.net/external/beNwl-aG6e5JwGQFX0oh2AULLVRJpG3M3mhO1_awz4g/https/com.prosperousuniverse.com/uploads/default/original/2X/9/91a0d6cda355ab0d7ecfa8e3327e8f4ba9c8a20a.jpeg
+
+{Reactions}
+🥳 (7) 
+
+[11-Feb-22 02:26 AM] molp#0000
+Servers will be down for a bit to fix some some post release problems
+
+
+[11-Feb-22 09:10 AM] lunikon#0000
+there will be a reboot in a couple of minutes, sorry for the inconvenience!
+
+{Reactions}
+👍 (3) 
+
+[11-Feb-22 09:42 AM] lunikon#0000
+should be back
+
+
+[15-Feb-22 04:21 AM] molp#0000
+Server restart incoming. Expect some down time.
+
+
+[24-Feb-22 01:36 AM] molp#0000
+Server restart incoming. Expect some down time.
+
+{Reactions}
+🇺🇦 (4) 
+
+[28-Feb-22 03:16 AM] molp#0000
+FYI: today we'll perform some server maintence: https://com.prosperousuniverse.com/t/maintenance-server-performance/4251
+
+{Embed}
+https://com.prosperousuniverse.com/t/maintenance-server-performance/4251
+Maintenance: Server performance
+We’ll shortly begin with a maintenance update to improve server performance. This is one of a few more of such updates, I will go into more detail in today’s devlog.  This update will concern the ‘user’ part of the game, e.g. everything that has to do with screens, communication, rating, notifications, tutorials.  As always with changes like the...
+https://images-ext-1.discordapp.net/external/x0Lcv9Tc0WstLZAut1pc9Cply1Z-ZpDJ_X3qJLQ4S_k/https/com.prosperousuniverse.com/uploads/default/original/1X/9637dadda95e302d05ebee320ec8473189637a64.jpg
+
+{Reactions}
+🎉 (4) 
+
+[28-Feb-22 08:00 AM] molp#0000
+Another reboot is required
+
+
+[14-Mar-22 01:21 AM] molp#0000
+Monday morning, of course there is a problem: One of the databases is upset, looking into it right now
+
+{Reactions}
+dw (5) 🚀 (3) 🧑‍💻 🕗 💦 PrUnguing_laser (4) prun 
+
+[14-Mar-22 03:55 AM] molp#0000
+The servers are up and running again. We are still seeing some issues. We'll look into them next.
+
+{Reactions}
+☕ 👍 (3) 
+
+[14-Mar-22 03:15 PM] molp#0000
+There is still a company that cannot be loaded and causing performance issues.. https://com.prosperousuniverse.com/t/apex-outage-on-2022-03-14/4302/8?u=molp
+
+
+[15-Mar-22 02:41 AM] molp#0000
+Restarting the server in a bit, trying to fix the performance problem
+
+
+[15-Mar-22 03:29 AM] molp#0000
+Another restart incoming
+
+
+[15-Mar-22 06:00 AM] molp#0000
+Servers appear stable now. Let us know if something doesn't work as expected!
+
+{Reactions}
+🥳 prun 
+
+[18-Mar-22 07:56 AM] molp#0000
+Servers are taking a short break, will be back soon
+
+
+[29-Mar-22 01:39 AM] molp#0000
+We are currently preparing the 2022.02 release. Expect a downtime in a few minutes!
+
+{Reactions}
+🚀 (5) 
+
+[30-Mar-22 02:19 AM] molp#0000
+PSA: Server reboot in 11 minutes, at 9:30 CEST
+
+
+[01-Apr-22 02:06 AM] molp#0000
+PSA: Server reboot in 15 minutes, at 7:20 UTC
+
+
+[06-Apr-22 07:45 AM] molp#0000
+PSA: There will be a server restart at 13:15 UTC, in ~30 minutes
+
+
+[07-Apr-22 01:31 AM] molp#0000
+PSA: There will be a server restart at 7:00 UTC, in ~30 minutes
+
+
+[07-Apr-22 02:53 AM] molp#0000
+Sorry about the extended down time, we ran into an unexpected issue
+
+
+[07-Apr-22 03:42 AM] molp#0000
+Servers are back up ⬆️
+
+{Reactions}
+👍 
+
+[07-Apr-22 04:31 AM] molp#0000
+Looking into a problem right now, expect frequent restarts :/
+
+
+[07-Apr-22 06:19 AM] molp#0000
+Unfortunately we haven't figured out yet what stalls the production lines etc. We'll let you know as soon as it is working again!
+
+
+[07-Apr-22 07:05 AM] molp#0000
+We've identified a possible cause of the problem, now trying to fix it
+
+
+[07-Apr-22 07:29 AM] molp#0000
+Restarting
+
+
+[07-Apr-22 08:06 AM] molp#0000
+one bug fixed, two other discovered.. shutting the server down for a while
+
+{Reactions}
+🥷 cof (3) 
+
+[07-Apr-22 01:58 PM] molp#0000
+PSA: Please do not demolish any buildings at the moment. There is still a unfixed bug that will render your company inaccessible. ⚒️
+
+{Reactions}
+thisisfinefire (7) thisguyisburninglol 🙄 
+
+[08-Apr-22 12:53 AM] molp#0000
+Good morning everyone, next attempt to fix the building demolishing bug. Servers will reboot shortly 🤞
+
+{Reactions}
+👍 (3) alpha 
+
+[08-Apr-22 01:50 AM] molp#0000
+Looks like demolishing buildings is working again
+
+{Reactions}
+🥳 (5) hyperyay (4) 🎱 
+
+[11-Apr-22 01:43 AM] molp#0000
+Quick server restart at 7:00 (in ~15 minutes)
+
+
+[12-Apr-22 01:48 AM] molp#0000
+Servers will be down for maintenance at 7:15 UTC (in ~28min)
+
+
+[14-Apr-22 12:49 AM] molp#0000
+Servers will be down for maintenance at 6:15 UTC (in ~27min)
+
+
+[22-Apr-22 02:46 AM] molp#0000
+Deploying some changes, expect hiccups
+
+
+[23-Apr-22 02:13 AM] lunikon#0000
+I will be rolling out an upgrade to our account backend over the next hour or so. Please expect intermittent outages of things like login, signup and account management functions in general. Thanks!
+
+
+[23-Apr-22 03:28 AM] lunikon#0000
+taking a bit longer than planned, sorry
+
+
+[23-Apr-22 03:53 AM] lunikon#0000
+Upgrade should be complete for now. Please let us know if you run into any unexpected issues (to do with account management, payment and the likes)!
+
+
+[28-Apr-22 02:12 AM] molp#0000
+Today's scheduled maintenance update started!
+
+{Reactions}
+OK (6) 🤟 cof 
+
+[28-Apr-22 02:59 AM] molp#0000
+Servers are back up, thanks for your patience!
+
+
+[28-Apr-22 12:28 PM] molp#0000
+Servers down, should be back soon
+
+{Reactions}
+🤞 (27) castillo SN8_Starship_destruction (2) 😢 (3) 👀 
+
+[29-Apr-22 02:48 AM] molp#0000
+We are looking into the current issues
+
+{Reactions}
+👍 (12) 🤞 (4) castillo (2) 🎆 (3) antares (2) Dog_ThisIsFine (8) 🌟 
+
+[29-Apr-22 01:55 PM] lunikon#0000
+trying a little something with the cluster...if there are issues, they should remain minimal 🤞
+
+{Reactions}
+🤞 (9) Dog_ThisIsFine 🚒 
+
+[02-May-22 02:25 PM] lunikon#0000
+Killing one node on purpose to de-clogg the pipes. Will most likely lead to hydration timeouts (ironically)
+
+
+[04-May-22 01:17 AM] molp#0000
+We are shutting down the servers for maintenance at 7:00 UTC (in ~40m)
+
+
+[04-May-22 02:55 AM] molp#0000
+and we should be back
+
+{Reactions}
+🥳 (2) 🌟 (2) 
+
+[05-May-22 05:32 AM] molp#0000
+Servers are rebooting 🙄
+
+{Reactions}
+😉 (3) 🥺 (5) 
+
+[07-May-22 01:35 PM] molp#0000
+Servers are rebooting. They don't care if it is the weekend or not, apparently
+
+{Reactions}
+😌 (10) 😥 (9) PrUnguing_laser (2) 🤞 cof rat 👍 🔥 
+
+[07-May-22 02:31 PM] lunikon#0000
+taking over from @molp
+
+{Reactions}
+OK (3) 
+
+[07-May-22 02:44 PM] lunikon#0000
+it's struggling
+
+
+[07-May-22 02:44 PM] lunikon#0000
+oh man
+
+{Reactions}
+😢 (3) 🤞 (3) 
+
+[07-May-22 03:20 PM] lunikon#0000
+taking everything (including the UI) down to check what's going on
+
+{Reactions}
+👍 (6) 
+
+[07-May-22 03:20 PM] lunikon#0000
+something's very crash-loopy tonight
+
+{Reactions}
+gal (6) 
+
+[07-May-22 03:44 PM] lunikon#0000
+sorry people this is taking so long this time
+
+{Reactions}
+😬 (5) 👍 (14) 👌 (3) 
+
+[07-May-22 04:07 PM] lunikon#0000
+Cautiously optimistic that the server is back up for now and might stay so.
+
+{Reactions}
+🤑 (8) 👍 (6) 🌟 
+
+[10-May-22 06:51 AM] molp#0000
+I have to restart a node, expect some hiccups (and hopefully no catastrophe 😉 🤞 )
+
+{Reactions}
+🤞 (3) elmofire (5) 
+
+[19-May-22 06:44 AM] molp#0000
+Servers will be shut down for a short maintenance at 12:30 UTC (in 45m)
+
+{Reactions}
+👍 (2) 
+
+[23-May-22 02:29 PM] molp#0000
+Rebooting a faulty node (🪠 ), expect some hiccups
+
+{Reactions}
+👍 (5) 
+
+[24-May-22 03:38 AM] molp#0000
+Since the notification banner is kind of broken 🙄 : There will be a short maintenance in ~22 minutes
+
+{Reactions}
+👍 (3) 
+
+[01-Jun-22 02:31 AM] molp#0000
+Started server maintenance
+
+
+[01-Jun-22 02:56 AM] molp#0000
+... and we are back
+
+
+[07-Jun-22 12:38 AM] lunikon#0000
+de-clogging the pipes
+
+{Reactions}
+evilgiggle (2) 🪠 (5) 
+
+[14-Jun-22 03:24 AM] lunikon#0000
+I will have to restart a node soon to help with clogged pipes again
+
+{Reactions}
+🪠 (3) 
+
+[14-Jun-22 04:00 AM] lunikon#0000
+need to do a full restart as something doesn't seem to be working
+
+{Reactions}
+cof (6) 
+
+[14-Jun-22 04:00 AM] lunikon#0000
+sorry for that!
+
+
+[14-Jun-22 04:13 AM] lunikon#0000
+should be back up
+
+
+[20-Jun-22 02:38 AM] molp#0000
+Looking into the performance issue. Might result in some reboots/reconnects. 🤞
+
+
+[20-Jun-22 03:03 AM] molp#0000
+Servers will be shut down for a short maintenance at 08:30 UTC (in 26m 43s).
+
+
+[20-Jun-22 04:04 AM] molp#0000
+Quick status update: we ran into an unexpected technical issue. The game is up again, but without the intended bug fixes 😦
+
+{Reactions}
+👍🏻 (2) cof (3) 
+
+[20-Jun-22 04:24 AM] molp#0000
+Okay, problem seems to be solved. Loading times for contracts should be reduced / back to normal. Please let us know if you still see exceptionally long contract loading times!
+
+{Reactions}
+👏 (6) 🌟 (2) 
+
+[27-Jun-22 03:02 AM] molp#0000
+Servers are down for maintenance
+
+
+[30-Jun-22 12:40 AM] molp#0000
+APEX seems to get stuck on loading the subsystems. A few refreshes usually fixes that. We are looking into the issue!
+
+{Reactions}
+🛠️ (3) 
+
+[30-Jun-22 01:30 AM] molp#0000
+Rolling out a potential fix, you might get reconnected a few times
+
+
+[30-Jun-22 01:51 AM] molp#0000
+I am not getting stuck anymore. Please let us know, if the issue is not fixed for you!
+
+{Reactions}
+🎉 (3) 
+
+[10-Jul-22 02:16 PM] molp#0000
+Servers seem to have run into a problem, should be back up soon
+
+{Reactions}
+🧯 (5) 
+
+[12-Jul-22 12:17 AM] molp#0000
+Looking into a server issue
+
+{Reactions}
+👍🏼 (15) 🧯 (12) 🔨 (11) persona_speedtype (5) 🤒 (6) cof (4) 
+
+[12-Jul-22 03:03 AM] molp#0000
+So far no luck, looks like a database corruption. Will take a while
+
+{Reactions}
+👀 (8) pio (2) pepewut (12) monkaS (9) mm (3) 🥵 (3) 👍 PeepoReee 
+
+[12-Jul-22 04:32 AM] molp#0000
+Servers are back up for now. We are allowing connections at the moment to see if anything breaks. Expect more disconnects and reboots in the next time.
+
+{Reactions}
+🥳 (7) 👍 
+
+[12-Jul-22 07:01 AM] molp#0000
+Unfortunately we lost some of the data from last night. In most cases that is not bad at all, for example just ships still on the ground instead of flying or inventory still not transferred. In some cases errors did and will happen. If you encounter errors please let us know, either in Discord or in the corresponding forum thread https://com.prosperousuniverse.com/t/apex-outage-on-2022-07-12/4826
+We will try to fix these issues as soon as possible
+
+{Embed}
+https://com.prosperousuniverse.com/t/apex-outage-on-2022-07-12/4826
+APEX outage on 2022-07-12
+Due to technical difficulties the game is currently down. We will use this thread to continue to update you on progress until the game is back up and running. Thank you for your patience and we hope to have a solution as soon as possible.
+https://images-ext-1.discordapp.net/external/x0Lcv9Tc0WstLZAut1pc9Cply1Z-ZpDJ_X3qJLQ4S_k/https/com.prosperousuniverse.com/uploads/default/original/1X/9637dadda95e302d05ebee320ec8473189637a64.jpg
+
+{Reactions}
+😢 (4) 
+
+[12-Jul-22 08:49 AM] molp#0000
+Servers will be shut down for a short maintenance at 14:05 UTC (in 15m 50s).
+
+
+[13-Jul-22 01:43 AM] molp#0000
+Servers will be shut down for a short maintenance at 06:45 UTC (in 2m 0s).
+
+
+[13-Jul-22 04:24 AM] molp#0000
+Servers will be shut down for a short maintenance at 09:35 UTC (in 10m 47s).
+
+{Reactions}
+😢 (5) 
+
+[14-Jul-22 07:39 AM] molp#0000
+Time for another downtime: Servers will be shut down for a short maintenance at 13:00 UTC (in 20m 16s).
+
+{Reactions}
+👍 (2) 🛠️ (4) cof 
+
+[17-Jul-22 12:50 PM] lunikon#0000
+looks like we are having server issues again. Looking into it.
+
+{Reactions}
+cof (6) 
+
+[17-Jul-22 01:01 PM] lunikon#0000
+should be back, sorry for that
+
+
+[18-Jul-22 09:39 AM] molp#0000
+We are currently experiencing a problem with a node, preventing route calculations and ship flights. Looking into it!
+
+
+[25-Jul-22 08:07 AM] molp#0000
+Servers will be shut down for a short maintenance at 14:00 UTC (in 52m 51s).
+
+
+[27-Jul-22 04:01 AM] molp#0000
+Servers are down for a quick patch
+
+{Reactions}
+🩹 (4) 
+
+[28-Jul-22 12:46 AM] molp#0000
+Servers will be shut down for a short maintenance at 06:30 UTC (in 43m 7s).
+
+{Reactions}
+bigups 
+
+[03-Aug-22 02:23 AM] molp#0000
+Servers will be shut down for the Convergence update at 07:30 UTC (in 6m 42s). See this forum topic for more details. https://com.prosperousuniverse.com/t/release-notes-convergence/4862?u=molp
+
+{Embed}
+https://com.prosperousuniverse.com/t/release-notes-convergence/4862?u=molp
+Release Notes - Convergence
+Release: Convergence     Release date The Convergence release will be released on Wednesday August 3rd.   General Notes Convergence will bring you the first iteration of custom contracts and the long awaited ship upgrades! We also renamed the TRIAL license to FREE!  If your APEX console is stuck in a loading state after the update, please make s...
+https://images-ext-1.discordapp.net/external/6IA6F-jflXFiHT066eAPp1xOsa69kLpVcnvVGnCZ1Ek/https/com.prosperousuniverse.com/uploads/default/optimized/2X/c/c63bf8977ee7829bacb3ec87904db54aa8575972_2_1024x682.jpeg
+
+
+[03-Aug-22 03:27 AM] molp#0000
+Still working on the update
+
+{Reactions}
+🛠️ (3) 
+
+[03-Aug-22 03:43 AM] molp#0000
+We still see some errors regarding ship flight. Another reboot might be necessary!
+
+
+[03-Aug-22 03:56 AM] molp#0000
+Reboot in a few minutes
+
+{Reactions}
+✅ (2) 
+
+[03-Aug-22 09:48 AM] molp#0000
+Sorry, unplanned reboot
+
+{Reactions}
+cof (6) 
+
+[04-Aug-22 04:07 AM] molp#0000
+First round of fixes! Servers will be shut down for maintenance at 09:15 UTC (in 7m 50s)
+
+
+[04-Aug-22 06:58 AM] molp#0000
+Still cleaning up some bugs from the release, expect some hiccups and restarts in the next two hours or so
+
+{Reactions}
+👍 (3) ff 
+
+[04-Aug-22 10:02 AM] molp#0000
+Another reboot incoming
+
+{Reactions}
+👢 (3) 🚀 (3) 
+
+[08-Aug-22 02:15 AM] molp#0000
+Servers will be shut down for maintenance at 07:30 UTC (in 15m 2s).
+
+
+[08-Aug-22 03:07 AM] molp#0000
+Another reboot incoming
+
+
+[08-Aug-22 03:52 AM] molp#0000
+.. and another one
+
+
+[08-Aug-22 04:37 AM] molp#0000
+.. and another one. Sorry about the restarts, I have to fix a nasty few bugs
+
+{Reactions}
+👍 (7) 🐛 
+
+[09-Aug-22 02:54 AM] molp#0000
+Servers will be shut down for maintenance at 08:00 UTC (in 5m 55s).
+
+{Reactions}
+cof (3) 
+
+[11-Aug-22 12:43 AM] molp#0000
+Ship flight is working again. Sorry for the inconvenience
+
+{Reactions}
+👌 (4) 
+
+[13-Aug-22 06:48 AM] molp#0000
+Just a quick reminder: we have identified a performance problem that leads to a server reboot every 24 hours or so. In most cases the reboot will work just fine, in rare cases the navigation subsystem does not work afterwards. If you cannot calculate flights after a restart (please give it 5-10 minutes to start up), please ping us. We'll try to fix the performance issue as soon as possible.
+
+{Reactions}
+👍 (8) cof (4) 💩 
+
+[14-Aug-22 01:25 PM] molp#0000
+Looking into current server problems.. 🧯
+
+{Reactions}
+🔥 (3) 🍦 (2) 
+
+[14-Aug-22 01:37 PM] molp#0000
+Seems to be working again. Players who updated to a PRO license within the last hours should see the PRO license now. Let me know if not!
+
+{Reactions}
+👍 (5) 💩 
+
+[15-Aug-22 12:26 AM] molp#0000
+Servers will be shut down for a short maintenance at 5:30 UTC (in 3m 45s).
+
+{Reactions}
+🛠️ (5) gal 
+
+[15-Aug-22 02:29 AM] molp#0000
+Working on that performance issue: Servers will be shut down for a short maintenance at 7:40 UTC (in 10m 45s).
+
+{Reactions}
+🙏 (2) cof (2) 
+
+[16-Aug-22 08:25 AM] molp#0000
+I always forget to post here as well. Doing some maintenance, should be back up soon!
+
+{Reactions}
+👍 (6) cof 
+
+[22-Aug-22 12:39 AM] molp#0000
+Servers will be shut down for a short maintenance at 06:00 UTC (in 20m 45s).
+
+{Reactions}
+cof (2) 🦖 
+
+[22-Aug-22 02:01 AM] molp#0000
+Servers will be shut down for a short maintenance at 07:10 UTC (in 8m 38s).
+
+{Reactions}
+👍 (2) 🪠 🎰 (2) 🇩🇪 antares 
+
+[29-Aug-22 12:54 AM] molp#0000
+Servers will be shut down for a short maintenance at 06:00 UTC (in 5m 56s).
+
+
+[31-Aug-22 12:31 PM] molp#0000
+Servers will be shut down for a short maintenance at 17:40 UTC (in 8m 50s).
+
+{Reactions}
+👌 (2) 
+
+[02-Sep-22 03:55 AM] molp#0000
+Servers will be shut down for a short maintenance at 09:00 UTC (in 4m 42s).
+
+{Reactions}
+cof (5) 
+
+[02-Oct-22 10:04 AM] lunikon#0000
+it's been 30 days since the last reboot of our servers...but now I need to do it again to clear clogged pipes
+
+{Reactions}
+👍 (5) 🪠 (3) 🥳 (3) 
+
+[02-Oct-22 10:20 AM] lunikon#0000
+should be done.
+
+{Reactions}
+👍 (3) 
+
+[04-Oct-22 03:12 AM] molp#0000
+Servers will be shut down for a short maintenance at 08:30 UTC (in 18m 2s).
+
+{Reactions}
+👍 (3) cof (3) 
+
+[10-Oct-22 02:57 AM] molp#0000
+Servers will be shut down for maintenance at 07:58 UTC (in 35s).
+
+{Reactions}
+👍 (4) cof (4) turnip (2) 💤 (3) 
+
+[10-Oct-22 06:50 AM] molp#0000
+Servers are back up for now! Sorry for the extended down time
+
+{Reactions}
+👏 (3) 👍 (2) 
+
+[11-Oct-22 01:41 AM] molp#0000
+Servers will be shut down for maintenance at 7:00 UTC (in about 19 minutes)
+
+{Reactions}
+ppJedi (2) 🇴 🇰 👌 cof (2) 
+
+[11-Oct-22 02:27 AM] molp#0000
+Servers are back up
+
+{Reactions}
+🎉 (5) partyparrot (4) dog_dance (2) 
+
+[17-Oct-22 11:44 AM] molp#0000
+The RAT broker RAT.NC1 is broken. We'll look into it first thing tomorrow morning.
+
+{Reactions}
+🐀 (8) 
+
+[18-Oct-22 04:21 AM] molp#0000
+Servers will be shut down for a short maintenance at 09:30 UTC (in 8m 45s).
+
+
+[18-Oct-22 04:45 AM] molp#0000
+Servers are back. RAT.NC1 should be back online as well.
+
+{Reactions}
+🐀 (7) 🍴 (6) rat 
+
+[02-Nov-22 06:25 AM] molp#0000
+Our cloud provider has reported problems with their backend. So far it does not affect PrUn, but we'll keep an eye on it.
+
+{Reactions}
+☁️ 😱 (2) 🦨 (2) 
+
+[11-Nov-22 02:08 AM] molp#0000
+Servers will be shut down for a short maintenance at 07:30 UTC (in 21m 53s).
+
+
+[11-Nov-22 02:40 AM] molp#0000
+.. and we are back
+
+{Reactions}
+🥳 (6) cof (2) rat 
+
+[06-Dec-22 01:18 AM] molp#0000
+Servers will be shut down for a short maintenance at 07:40 UTC (in 21m 58s).
+
+{Reactions}
+cof (3) 
+
+[06-Dec-22 02:52 AM] molp#0000
+Servers are back up. Don't forget to refresh the site before trying out the new features.
+
+
+[13-Dec-22 02:07 AM] molp#0000
+Servers will be shut down for a short maintenance at 08:30 UTC (in 22m 24s).
+
+
+[13-Dec-22 02:37 AM] molp#0000
+Ran into a small error, downtime will be a couple of minutes longer than usual
+
+{Reactions}
+cof (5) 
+
+[13-Dec-22 02:48 AM] molp#0000
+Servers are booting 🤖
+
+{Reactions}
+🥳 (6) 👍 (2) 👢 (2) 
+
+[10-Jan-23 02:05 AM] molp#0000
+Servers will be shut down for a short maintenance at 08:30 UTC (in 25m 5s).
+
+
+[10-Jan-23 02:42 AM] molp#0000
+Servers are back up
+
+
+[24-Jan-23 03:25 AM] molp#0000
+Servers will be shut down for a short maintenance at 09:45 UTC (in 19m 15s).
+
+
+[24-Jan-23 04:12 AM] molp#0000
+Servers are up again
+
+
+[13-Feb-23 04:48 AM] molp#0000
+Servers will be shut down for maintenance at 11:00 UTC (in 11m 26s).
+
+{Reactions}
+blackcatblep 
+
+[13-Feb-23 05:13 AM] molp#0000
+Servers are booting up..
+
+{Reactions}
+lunalurk 
+
+[02-Mar-23 12:30 AM] molp#0000
+Servers will be shut down for maintenance at 6:40 UTC (in 9m 43s).
+
+
+[02-Mar-23 01:06 AM] molp#0000
+Servers are back up
+
+{Reactions}
+sunna11 (4) 
+
+[08-Mar-23 01:29 AM] molp#0000
+In about an hour we will release the maintenance release (https://com.prosperousuniverse.com/t/release-notes-maintenance-2023-01/5568?u=molp). Expect the downtime to be a bit longer than usual, as we are also upgrading our infrastructure. We'll post a message here as soon as we are done.
+
+{Embed}
+https://com.prosperousuniverse.com/t/release-notes-maintenance-2023-01/5568?u=molp).
+Release Notes - Maintenance 2023.01
+Release: Maintenance 2023.01  Release date The APEX update will be released on March 8th 2023.   General Notes If your APEX console is stuck in a loading state after the update, please make sure to refresh it once after the update to ensure you got the latest version.   New features  Introductory Faction Contracts and User Interface Tours   Besi...
+https://images-ext-1.discordapp.net/external/2STEh-CyAE9TbtYlCn5z1qqBIIjhF-Lk71xCkCcIufU/https/com.prosperousuniverse.com/uploads/default/original/2X/3/39e1e0dccf9c0c33e770aae622adb3d699e9dbc7.png
+
+{Reactions}
+💸 cudpog (2) 🇪 (3) 🇩 (3) 🇨 (3) 🪦 (3) 
+
+[08-Mar-23 04:23 AM] molp#0000
+Still figuring out some performance problems 😦
+
+{Reactions}
+sip (12) uwu 
+
+[09-Mar-23 01:04 AM] molp#0000
+Servers have been stable overnight. There are a couple of issues we have to fix (deleting CX orders hangs the client, additional building materials seem to be off), but that should not lead to down times we saw yesterday.
+
+
+[09-Mar-23 04:39 AM] molp#0000
+Quick deployment to fix the CX order deletion bug
+
+{Reactions}
+❤️ (3) 🚀 (2) 
+
+[13-Mar-23 05:02 AM] molp#0000
+Servers will be shut down for maintenance at 13-Mar-23 05:20 AM.
+
+{Reactions}
+✅ (2) 
+
+[13-Mar-23 05:53 AM] molp#0000
+Servers are back up, just a few faction agents are still loading ... ⌛
+
+
+[15-Mar-23 02:39 AM] molp#0000
+Servers will be shut down for maintenance at 15-Mar-23 03:00 AM
+
+{Reactions}
+blackcatblep 
+
+[15-Mar-23 03:30 AM] molp#0000
+Servers are back up, just a few faction agents are still loading ... ⏳
+
+
+[23-Mar-23 04:20 AM] molp#0000
+Servers will be shut down for maintenance in 23-Mar-23 04:40 AM
+
+
+[23-Mar-23 05:02 AM] molp#0000
+Servers are back up, might feel a bit slow for the next minutes
+
+
+[24-Mar-23 01:48 AM] molp#0000
+Servers will be shut down for maintenance in 24-Mar-23 02:15 AM
+
+{Reactions}
+🤣 
+
+[24-Mar-23 02:27 AM] molp#0000
+Servers are back up, might feel a bit slow for the next minutes
+
+{Reactions}
+blackcatblep (4) 
+
+[30-Mar-23 01:57 AM] molp#0000
+Servers will be shut down for maintenance in 30-Mar-23 02:15 AM
+
+{Reactions}
+Sadeg (4) 
+
+[30-Mar-23 02:55 AM] molp#0000
+Servers are back up, might feel a bit slow for the next minutes
+
+{Reactions}
+PogU (3) 
+
+[03-Apr-23 01:21 AM] molp#0000
+Servers will be shut down for maintenance in 03-Apr-23 01:40 AM
+
+{Reactions}
+💀 (7) 
+
+[03-Apr-23 01:54 AM] molp#0000
+Servers are back up, might feel a bit slow for the next minutes
+
+{Reactions}
+blackcatblep (4) 
+
+[15-May-23 01:21 PM] molp#0000
+Seems like the servers are acting up. Will have a look!
+
+
+[26-Jul-23 12:33 AM] molp#0000
+We'll release the liquidity update in ~30 minutes. Expect a longer than usual down time. We'll keep you posted once APEX is available again.
+
+{Reactions}
+😲 (14) 🚀 (24) 🔥 (8) 👍 (4) 💦 (6) he (3) al (3) 🍕 (2) PrUnguing_laser (2) 😭 (2) 🇵🇭 
+
+[26-Jul-23 04:44 PM] molp#0000
+Uff, a long day is finally coming to an end. It seems we found the performance issue, but will have to call it a day. We hope the servers will be stable enough for you to check into the game ever now and then.
+
+{Reactions}
+🫡 (31) 👍🏼 (6) 🥳 (3) 🎉 (2) sf (2) neo ❤️ (5) 🤔 (2) ALASTOR1121 
+
+[27-Jul-23 04:16 AM] molp#0000
+Status update: it seems we solved *a performance problem*, but not all. We work on a solution. Sorry! :/
+
+{Reactions}
+💪 (17) br_yay (11) cof (7) ❤️ (8) 🫡 (4) 
+
+[27-Jul-23 01:00 PM] molp#0000
+Seems like we managed to fix the worst performance issues for now. We'll still need to do some regular bugfixing (leaderboards have a few issues), but that can wait until tomorrow morning.
+
+{Reactions}
+💚 (16) prun (4) 🫡 (15) cof (15) turt (4) renoHype (3) 
+
+[28-Jul-23 12:54 AM] molp#0000
+Expect some down time in the next hour, as we fix a few issues
+
+{Reactions}
+😍 (5) cof (4) 
+
+[28-Jul-23 01:58 AM] molp#0000
+Okay, servers are up an running again. If we don't have to, we won't touch them until the weekend is over 😉
+
+{Reactions}
+❤️ (13) 🎉 (10) 🫡 (4) 
+
+[05-Aug-23 03:10 AM] molp#0000
+The server that hosts the forums will receive an update this weekend, so expect some downtime
+
+{Reactions}
+👍 (2) 
+
+[09-Aug-23 01:28 AM] molp#0000
+We'll do some maintenance at 06:45 UTC (in 09-Aug-23 01:45 AM)
+
+
+[09-Aug-23 02:42 AM] molp#0000
+We are back online, these are the things we changed:
+* Faction contracts of type exploration and shipping are more lucrative now
+* The "click to load more" button of the leaderboards now works
+* Opening the ship flight controls `SFC` now opens the address selector by default, allowing to instantly start typing
+* The address selector suggestion list is now scrollable
+
+{Reactions}
+🎉 (19) hugheart (3) ❤️ (2) 
+
+[10-Aug-23 02:52 PM] molp#0000
+Sorry, seeing some instability. Kicked the servers in the rear 🤞
+
+{Reactions}
+🥁 (3) 🔨 (9) ♻️ (3) 🤞 (2) ☕ (2) 🍕 
+
+[15-Aug-23 09:24 AM] molp#0000
+We'll restart the servers at 14:35 UTC for a quick maintenance (in 15-Aug-23 09:35 AM)
+
+{Reactions}
+🧑‍🔧 
+
+[15-Aug-23 09:55 AM] molp#0000
+Servers are back up
+
+
+[17-Aug-23 09:11 AM] molp#0000
+We'll restart the servers at 14:30 UTC for a quick maintenance (17-Aug-23 09:30 AM)
+
+{Reactions}
+🪠 (3) 🫡 (4) 
+
+[17-Aug-23 09:46 AM] molp#0000
+Servers are back up
+
+{Reactions}
+👍 (3) 
+
+[12-Sep-23 07:30 AM] molp#0000
+We'll restart the servers at 12:45 UTC for a quick maintenance (12-Sep-23 07:45 AM)
+
+{Reactions}
+🇵 🇺 pio 
+
+[12-Sep-23 08:01 AM] molp#0000
+Servers are up and running again. Here is what we changed:
+* Fixed a bug where the amount of contracts that went into a rating was not updating properly
+* We are now showing the names of fixed storage locations in the `MTRA` command
+* Revenue from interest is now properly being added to the revenue indicator in `FIN`
+* Blocklist is now scrollable
+* We fixed a problem with editing loan payout conditions
+
+{Reactions}
+prun (8) ove (2) n_ (2) 🎉 
+
+[13-Sep-23 10:09 AM] molp#0000
+Sorry, servers need a quick restart
+
+{Reactions}
+cowslaBot n_ (2) o_ (2) 
+
+[15-Sep-23 06:54 AM] lunikon#0000
+Quick heads-up, although I don't really expect anyone to notice: Our new ops partners (might have to name-drop them in a devlog one day) will be migrating our forums to a new server shortly. So there might be a few minutes of downtime. Game and website will remain unaffected.
+
+
+[15-Sep-23 07:35 AM] lunikon#0000
+And done. Let us know if you run into any issues.
+
+
+[19-Sep-23 10:26 AM] molp#0000
+We'll restart the servers at 15:35 UTC for a bug fix (19-Sep-23 10:35 AM)
+
+{Reactions}
+😢 
+
+[19-Sep-23 10:47 AM] molp#0000
+Servers are back up
+
+
+[21-Nov-23 06:42 AM] molp#0000
+Backend migration has been successful.
+
+{Reactions}
+🎉 (13) 🦢 (2) turt 
+
+[27-Nov-23 03:58 AM] molp#0000
+Servers will be shut down for maintenance at 9:10 UTC (in ~10 minutes)
+
+
+[27-Nov-23 04:34 AM] molp#0000
+Servers are back up
+
+
+[29-Nov-23 02:43 AM] molp#0000
+Servers will be down for maintenance at 09:00 UTC (29-Nov-23 03:00 AM). Here are the release notes: https://com.prosperousuniverse.com/t/maintenance-release-2023-02/6117?u=molp
+
+{Embed}
+https://com.prosperousuniverse.com/t/maintenance-release-2023-02/6117?u=molp
+Maintenance Release 2023.02
+Hey everyone!  We are releasing two changes with this release. Usually we’d not call that a maintenance release, since it is so small, but given that it changes the map layout a bit, we decided to write some proper release notes.  Please note that this update will require an additional restart. We’ll let you know in this topic once the game is r...
+https://images-ext-1.discordapp.net/external/99ns8ZyAXtdqESvIGsYJoafe1JdOzBwE9bK9JddBsHA/https/com.prosperousuniverse.com/uploads/default/original/2X/4/48323f2488e4e9be749755cf84cc44a2bd7a5487.jpeg
+
+{Reactions}
+✨ (4) 🎉 (2) 
+
+[29-Nov-23 03:24 AM] molp#0000
+Servers are back up
+
+{Reactions}
+🎉 (3) 
+
+[29-Nov-23 05:31 AM] molp#0000
+Sorry about the additional downtime, looks like I missed a scheduled cluster update and it started automatically 😄
+
+
+[01-Dec-23 12:59 AM] molp#0000
+Servers will be down for a quick maintenance update
+
+
+[01-Dec-23 01:13 AM] molp#0000
+Servers are back up
+
+{Reactions}
+parrot (4) 
+
+[13-Dec-23 12:51 AM] molp#0000
+We'll restart the servers at 07:10 UTC for a bug fix (13-Dec-23 01:10 AM)
+
+
+[13-Dec-23 01:20 AM] molp#0000
+Servers are restarting. Looking good so far.
+
+
+[19-Dec-23 07:08 AM] molp#0000
+We'll restart the servers at 13:15 UTC for a bug fix (19-Dec-23 07:15 AM)
+
+{Reactions}
+⏳ (2) 
+
+[19-Dec-23 07:45 AM] molp#0000
+Servers are back.
+
+
+[21-Dec-23 07:22 AM] molp#0000
+Hotfix incoming, servers will be down shortly (21-Dec-23 07:30 AM)
+
+
+[21-Dec-23 07:45 AM] molp#0000
+Servers are back up
+
+{Reactions}
+prun (4) 
+
+[10-Jan-24 01:12 AM] molp#0000
+Servers will be shut down for maintenance at 07:25 UTC  (10-Jan-24 01:25 AM)
+
+
+[10-Jan-24 01:55 AM] molp#0000
+Servers are back up
+
+
+[11-Jan-24 02:04 AM] molp#0000
+Servers will be shut down for maintenance at 08:10 UTC (11-Jan-24 02:10 AM)
+
+
+[11-Jan-24 02:23 AM] molp#0000
+Servers are back up
+
+
+[26-Jan-24 02:38 AM] molp#0000
+Servers will be shut down for maintenance at 08:40 UTC
+
+
+[26-Jan-24 03:38 AM] molp#0000
+Servers are back up, but we are still looking into a few issues
+
+{Reactions}
+👍 
+
+[26-Jan-24 04:09 AM] molp#0000
+Seems we need another restart to fix a few issues.
+
+
+[06-Feb-24 08:53 AM] molp#0000
+Servers will be shut down for a maintenance update at 15:00 UTC (06-Feb-24 09:00 AM)
+
+
+[06-Feb-24 09:34 AM] molp#0000
+Servers are back up
+
+
+[07-Feb-24 08:05 AM] molp#0000
+Servers will be shut down for a quick maintenance update at 14:15 UTC (07-Feb-24 08:15 AM)
+
+
+[07-Feb-24 08:29 AM] molp#0000
+Servers are back up
+
+
+[04-Mar-24 12:37 AM] molp#0000
+Servers will be shut down for maintenance at 06:45 UTC. (04-Mar-24 12:45 AM)
+
+{Reactions}
+ff (3) castillo (2) PrUnguin (3) 
+
+[04-Mar-24 01:23 AM] molp#0000
+Servers are back up.
+
+
+[28-Mar-24 02:00 AM] molp#0000
+Servers will be shut down for maintenance at 07:30 UTC. (28-Mar-24 02:30 AM)
+
+{Reactions}
+dogokay (4) 
+
+[28-Mar-24 02:53 AM] molp#0000
+Servers are back up
+
+{Reactions}
+❤️ (7) JIJI_IS_YIPPEE (3) 
+
+[03-Apr-24 06:01 AM] molp#0000
+Servers will be shut down for maintenance at 11:15 UTC. (03-Apr-24 06:15 AM)
+
+
+[22-Apr-24 02:15 AM] molp#0000
+We experience some connectivity issues from asian regions, due to a subsea fiber fault (see https://status.digitalocean.com/incidents/21gg18q1ddmv)
+
+{Reactions}
+😯 (4) 🦈 (4) 🚠 (2) 🌏 (3) mm 
+
+[22-May-24 10:04 AM] molp#0000
+A server node restarted. We should be back to normal in a few minutes.
+
+
+[07-Jun-24 12:14 AM] molp#0000
+Sorry for the extended downtime. Servers went down just minutes after I went to bed. I am looking into it now!
+
+{Reactions}
+classic (5) 
+
+[07-Jun-24 12:21 AM] molp#0000
+Servers are up again. Sorry again, for the downtime :/
+
+{Reactions}
+🙏 (15) 🫡 (13) 🫀 🙌 molpreaction ❤️ (5) 
+
+[26-Jun-24 12:28 AM] molp#0000
+Servers will be shut down for the Realpolitik update at 06:30 UTC. (26-Jun-24 01:30 AM)
+
+{Reactions}
+HyperClap (3) pepepray 👀 (5) 🔥 
+
+[26-Jun-24 02:05 AM] molp#0000
+Servers are back up. Please refresh your browser and let us know if you run into any issues. You can find the release notes here: https://com.prosperousuniverse.com/t/release-notes-realpolitik/6399?u=molp
+
+{Reactions}
+👍🏼 (2) 👏 🫀 castillo 
+
+[28-Jun-24 02:33 PM] molp#0000
+Unfortunately we are currently experiencing a database problem. We are on it!
+
+{Reactions}
+🔥 (3) 🎉 (3) 
+
+[28-Jun-24 03:03 PM] molp#0000
+Fortunately it isn't too bad. It seems it is limited to the commodity exchange broker RAT.NC1
+
+{Reactions}
+🚫 (3) neo (4) 
+
+[28-Jun-24 03:16 PM] molp#0000
+I'll restart the server in a few minutes to try to fix the broker
+
+{Reactions}
+🛠️ (4) 
+
+[28-Jun-24 04:00 PM] molp#0000
+Servers are back up, we'll have to sort out the underlying cause next week.
+
+{Reactions}
+💪🏼 (8) 
+
+[10-Jul-24 12:35 AM] molp#0000
+Servers will be shut down for the maintenance update at 07:00 UTC. (10-Jul-24 02:00 AM)
+
+{Reactions}
+🛠️ (2) catspam 
+
+[10-Jul-24 03:05 AM] molp#0000
+Servers are up again
+
+{Reactions}
+pepepray (6) 
+
+[11-Jul-24 02:03 AM] molp#0000
+Servers will be shut down for a quick maintenance update at 07:20 UTC. (11-Jul-24 02:20 AM)
+
+{Reactions}
+🛠️ (4) 
+
+[11-Jul-24 02:37 AM] molp#0000
+Servers are up again
+
+{Reactions}
+PartyParrot (4) 💪🏼 (4) 🔥 (2) 
+
+[11-Jul-24 09:07 AM] molp#0000
+Fixing two small UI issues, expect a disconnect in a few minutes
+
+{Reactions}
+🙌 👍 
+
+[06-Aug-24 01:54 AM] molp#0000
+We are currently seeing some errors, will restart the servers in a few minutes
+
+{Reactions}
+PepeJesus2 
+
+[06-Aug-24 02:22 AM] molp#0000
+.. and we are back
+
+{Reactions}
+❤️ 🎉 (5) 
+
+[28-Aug-24 03:52 AM] molp#0000
+Fixing a thing on the client side, you might get disconnected
+
+{Reactions}
+🤔 👍 
+
+[05-Sep-24 03:25 AM] molp#0000
+The servers will be shut down for maintenance at 07:40 UTC (05-Sep-24 03:40 AM)
+
+
+[05-Sep-24 04:08 AM] molp#0000
+Servers are back up. Please refrain from changing the language for now, I think there is a bug to be fixed first
+
+{Reactions}
+❤️ (2) 🥲 💪 (2) RuleBritannia (5) 
+
+[10-Sep-24 12:47 AM] molp#0000
+Servers will be down for a quick maintenance at 5:55 UTC (10-Sep-24 12:55 AM)
+
+{Reactions}
+🫡 (6) 
+
+[10-Sep-24 01:06 AM] molp#0000
+Servers are back up. Switching languages should work now as intended.
+
+{Reactions}
+🎉 (3) 🔥 
+
+[23-Sep-24 08:43 AM] molp#0000
+Seeing some server issues at the moment, I'll investigate
+
+{Reactions}
+🥇 (3) 
+
+[23-Sep-24 08:51 AM] molp#0000
+Servers up and running again
+
+{Reactions}
+🔥 👏 (2) h2o (3) 
+
+[16-Oct-24 06:47 AM] lunikon#0000
+Server having the hick-ups while both @molp and myself aren't at their desk, of course. Restarted the cluster, let's hope for the best 😬
+
+{Reactions}
+🤞 (8) 
+
+[16-Oct-24 07:04 AM] lunikon#0000
+there seem to be technical issues I am not qualified to deal with (anymore). I have pinged molp about it, but if he's busy/out-of-reach atm, we might have to wait a bit. Sorry about that! 😬
+
+{Reactions}
+😭 (10) 🛠️ (2) molpreaction CatWantsToCry (3) 
+
+[16-Oct-24 08:44 AM] molp#0000
+Servers are up again. One admin center still doesn't work, but my time today is limited, so it'll have to wait till tomorrow. If you encounter any bugs either tag me or send me a private message please
+
+{Reactions}
+🍻 (16) 🙏 (3) 
+
+[21-Oct-24 01:58 AM] molp#0000
+The servers will be shut down for maintenance at 07:05 UTC. (21-Oct-24 02:05 AM)
+
+{Reactions}
+🛠️ (5) 😢 (2) 👍 
+
+[21-Oct-24 02:58 AM] molp#0000
+Server's are up again. Please let us know if you run into any issues
+
+
+[30-Oct-24 02:02 AM] molp#0000
+The servers will be shut down for maintenance at 07:15 UTC. (30-Oct-24 02:15 AM)
+
+{Reactions}
+🛠️ (3) 🔥 
+
+[30-Oct-24 02:39 AM] molp#0000
+Servers are back up
+
+
+[13-Nov-24 01:48 AM] molp#0000
+The servers will be shut down for maintenance at 08:00 UTC. (13-Nov-24 02:00 AM)
+
+{Reactions}
+🛠️ (4) 🔥 
+
+[13-Nov-24 02:36 AM] molp#0000
+Servers are back up
+
+{Reactions}
+🎉 (4) 
+
+[28-Jan-25 03:14 AM] molp#0000
+Forgot to post here 😓  Servers are down for the maintenance release
+
+{Reactions}
+🔥 (5) 
+
+[28-Jan-25 03:35 AM] molp#0000
+Servers are back up
+
+{Reactions}
+🎉 (4) 
+
+[06-Feb-25 02:44 AM] lunikon#0000
+Updating the forums, will be down for a couple of minutes
+
+
+[06-Feb-25 02:51 AM] lunikon#0000
+or maybe not...running into some technical issues here. Just expect a downtime to occur at a random time later today 😅
+
+{Reactions}
+😁 🔥 
+
+[06-Feb-25 03:40 AM] lunikon#0000
+and done
+
+{Reactions}
+🎉 (3) 
+
+[19-Feb-25 08:49 AM] molp#0000
+Not entirely sure yet what happened a few moments ago, but the servers are rebooting!
+
+{Reactions}
+🔥 (2) 🚀 (3) 
+
+[19-Feb-25 09:11 AM] molp#0000
+Servers are back up
+
+{Reactions}
+🎉 (5) 
+
+[20-Feb-25 01:41 AM] molp#0000
+The servers will be shut down for maintenance at 07:45 UTC. (20-Feb-25 01:45 AM)
+
+{Reactions}
+🪿 (2) 
+
+[20-Feb-25 02:04 AM] molp#0000
+Servers are back up
+
+{Reactions}
+💪 (2) 
+
+[25-Feb-25 08:29 AM] molp#0000
+The servers are acting up, I am investigating
+
+{Reactions}
+💥 (4) 
+
+[25-Feb-25 08:55 AM] molp#0000
+Seems they are better now
+
+{Reactions}
+🎉 (3) 
+
+[26-Feb-25 02:41 AM] lunikon#0000
+will be updating the forums shortly, so please expect a short downtime
+
+
+[26-Feb-25 02:53 AM] lunikon#0000
+and done
+
+{Reactions}
+🎉 (3) 
+
+[17-Mar-25 02:53 AM] molp#0000
+The servers will be shut down for maintenance at 08:00 UTC. (17-Mar-25 03:00 AM)
+
+
+[17-Mar-25 03:24 AM] molp#0000
+Servers are back up
+
+
+[24-Mar-25 03:24 AM] molp#0000
+The servers will be shut down for maintenance at 08:30 UTC. (24-Mar-25 03:30 AM)
+
+{Reactions}
+🥲 (2) 😱 (2) 
+
+[24-Mar-25 04:07 AM] molp#0000
+Servers are back up
+
+{Reactions}
+🫡 (5) 🥓 🚀 (2) 
+
+[26-Mar-25 04:07 AM] lunikon#0000
+quick heads-up: We will do some unscheduled maintenance to our cluster's plumbing shortly 🪠
+
+{Reactions}
+👨‍🔧 (6) 
+
+[26-Mar-25 05:07 AM] lunikon#0000
+...and should be finished. Please let us know if you run into any issues.
+
+
+[07-Apr-25 02:10 AM] molp#0000
+The servers will be shut down for maintenance at 07:15 UTC. (07-Apr-25 02:15 AM)
+
+{Reactions}
+🔧 (5) 
+
+[07-Apr-25 02:29 AM] molp#0000
+Servers are coming back online
+
+
+[09-Apr-25 01:07 AM] molp#0000
+Servers will be down briefly to fix the SF.NC1 broker
+
+{Reactions}
+🫡 (3) 🎉 (3) sf (3) 
+
+[09-Apr-25 01:28 AM] molp#0000
+Servers are back up, please let us know if you run into issues with that (or any other) broker again.
+
+
+[14-Apr-25 02:55 AM] molp#0000
+The servers will be shut down for maintenance at 08:00 UTC. (14-Apr-25 03:00 AM)
+
+{Reactions}
+👀 🛠️ (5) 
+
+[14-Apr-25 03:13 AM] molp#0000
+Servers are back up
+
+{Reactions}
+❤️ (3) ItmEncGetUp (3) 🎉 (3) 
+
+[14-Apr-25 03:15 AM] molp#0000
+I had another go at fixing the brokers' performance (`DW.NC1` and `SF.NC1`). Please let us know if you encounter any problems with them.
+
+{Reactions}
+🙏 (7) 
+
+[22-Apr-25 06:35 AM] molp#0000
+The servers will be shut down briefly for maintenance at 11:40 UTC. (22-Apr-25 06:40 AM)
+
+{Reactions}
+babasleep (6) 🐎 (3) 
+
+[22-Apr-25 06:55 AM] molp#0000
+Servers are back up
+
+{Reactions}
+danceboi (4) 🫡 (3) 🏳️‍⚧️ 🗣️ 
+
+==============================================================
+Exported 479 message(s)
+==============================================================

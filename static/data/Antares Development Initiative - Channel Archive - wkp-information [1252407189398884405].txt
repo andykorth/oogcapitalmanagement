@@ -1,0 +1,52 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Channel Archive / wkp-information
+==============================================================
+
+[20-Jun-24 12:59 PM] jvaler#0000
+# WKP Information
+**__Updated:__** 21-Jun-24 11:39 PM
+### What is WKP?
+* WKP stands for "WCB Kit Program" and exists to provide financial assistance to new(er) players seeking more logistics capacity.
+ * The increased logistics capacity is provided in the form of upgrading your starter ships to use WCB cargo bays. This will give your ships a 3,000t/1,000m^3 capacity while having a negligible impact on their speed. Because this upgrade avoids unnecessary parts replacement, it is the most cost effective method in the game.
+### Who is operating this program?
+* This program is currently managed by @jvaler.
+* WKP is jointly funded 50/50 by @jvaler and @sidepipe.
+### Where do the resources come from?
+* The WCB kits are sourced from Schaitr using their deal offered for new(er) players. "New(er)" is defined as a <180d old company. More information can be found here: https://discord.com/channels/855488309802172469/1202257500213366804
+* LHP and SSC are not provided by Schaitr's kit, and so we will source them for you.
+### How does the financial assistance work?
+* We will provide participants with 0% interest + no deadline loans in order to pay for everything you will receive.
+* Depending on the price we can get on LHP the cost estimate per upgrade is between 750k-900k AIC.
+### How can I join?
+* The current structure of the program is "wave"-based in order to make shipping the kits more efficient. Our first group of participants is already full, so we would need multiple interested people at the same time to start a second group.
+ * If you would like to have your name put down as interested, please let @jvaler know. Once enough people are willing, a second group order can be started.
+ * We are receiving kits from Schaitr in batches of 3, so the minimum group order size is 3.
+
+
+[20-Jun-24 04:12 PM] jvaler#0000
+https://docs.google.com/spreadsheets/d/1_5AORkSfF-w2M5W51y6FrAqH8_YxgTwjH8etOP4WJEc/edit?gid=945418939#gid=945418939
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1_5AORkSfF-w2M5W51y6FrAqH8_YxgTwjH8etOP4WJEc/edit?gid=945418939
+ADI WCB Kit Program Finances
+Debt Summary
+
+Entry Name,Total Cost,Total Paid,Total Unpaid,User,Total Loaned,Total Paid,Debt Remaining
+Wave 1 Schaitr WCB Kit,7,800,000,0,7,800,000,igfloz,1,585,688,0,1,585,688
+Wave 1 ADI Sourced,1,453,592,0,1,453,592,SecretAce,1,585,688,0,1,585,688
+,,,Ielisa,1,325,152,0,1,325,152
+,,,
+https://images-ext-1.discordapp.net/external/fR_kiG-6S9I2pakntxQifnOmCRi4LsMIBiidOstAl0E/https/lh7-us.googleusercontent.com/docs/AHkbwyJsafJmFdvTW90O9z1fxk50TU7JZri2VBgqnaFqxRyYnobcBue32wHe33JV_-q7-0OFzxScbeIozSLVc_E4yv5uZUwVJ2L_7eYRdteUKtTIxjnmPVX2%3Dw1200-h630-p
+
+
+[22-Aug-24 11:36 PM] jvaler#0000
+# WKP is closed until further notice.
+### Stay tuned for an upcoming internal kit production program.
+
+{Reactions}
+Cry (2) 
+
+==============================================================
+Exported 3 message(s)
+==============================================================

@@ -1,0 +1,6424 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: 🪐Planets / 🌾demeter
+Topic: PLI KI-446b
+==============================================================
+
+[10-May-22 01:55 PM] bitcoin_ape#0000
+@allocater @yang_mills @namthorn @insensless72 @rune_242 @thummper @Deleted User
+
+{Reactions}
+🥳 (4) 
+
+[10-May-22 01:55 PM] bitcoin_ape#0000
+KI-OOG planet chat
+
+
+[10-May-22 01:55 PM] bitcoin_ape#0000
+Ill be back later, i have to work now.
+
+
+[10-May-22 02:06 PM] namthorn#0000
+awesome, i shall stockpile all the bfabs I can (though my production is rather paltry). If anyone needs any GL/PG for fabs for this, gimme a shout
+
+
+[10-May-22 02:10 PM] allocater#0000
+yeah I will need constant GL on nike for BTA
+
+
+[10-May-22 02:10 PM] bitcoin_ape#0000
+can somebody copy+paste the project cost for LM, WAR and COGC?
+
+
+[10-May-22 02:10 PM] bitcoin_ape#0000
+so we can pin them on this channel
+
+
+[10-May-22 02:10 PM] bitcoin_ape#0000
+screen captures are nice
+
+
+[10-May-22 02:11 PM] allocater#0000 (pinned)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/973663638311280670/unknown.png?ex=681518ed&is=6813c76d&hm=ef1eb60c4f44ab0ae0bd327a4a9ccc7fb357bab035eb5801dd7f4606aaeff1cc&
+
+
+[10-May-22 02:11 PM] allocater#0000 (pinned)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/973663686260555847/unknown.png?ex=681518f8&is=6813c778&hm=a19dadd0e967bce8c64a3474c4e5154724b19e7d21f0978a5603c61a497d2aa6&
+
+
+[10-May-22 02:12 PM] allocater#0000 (pinned)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/973663742376181760/unknown.png?ex=68151905&is=6813c785&hm=a7eaae8b1051da707aa6329caaf6f084afb726c7547d849fc1736f533337463b&
+
+
+[10-May-22 02:12 PM] bitcoin_ape#0000
+Pinned a message.
+
+
+[10-May-22 02:12 PM] bitcoin_ape#0000
+Pinned a message.
+
+
+[10-May-22 02:12 PM] bitcoin_ape#0000
+Pinned a message.
+
+
+[10-May-22 02:12 PM] allocater#0000
+all cheap except COGC
+
+
+[10-May-22 02:13 PM] bitcoin_ape#0000
+ill pay for that one
+
+
+[10-May-22 02:14 PM] bitcoin_ape#0000
+unlimited upside on these buildings if we are going to have a bunch of bases here 🙂
+
+
+[10-May-22 02:16 PM] bitcoin_ape#0000
+Im going for 33 RIG, 10 HB1 and STO.
+
+
+[10-May-22 02:16 PM] namthorn#0000
+probably also want a ADM
+
+{Reactions}
+☝️ 
+
+[10-May-22 02:16 PM] allocater#0000
+I can bring 16 from benton
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/973664857205407774/unknown.png?ex=68151a0f&is=6813c88f&hm=c7f5edc57745fc058bd3a32028f41fd25b49799a82f7e753414e7363f35af636&
+
+
+[10-May-22 02:16 PM] namthorn#0000
+for population controls
+
+
+[10-May-22 02:16 PM] namthorn#0000
+government programs, etc
+
+
+[10-May-22 02:17 PM] allocater#0000
+BMF I have in store
+
+
+[10-May-22 02:18 PM] allocater#0000
+SP I can produce if I get 24 GL
+
+
+[10-May-22 02:18 PM] rune_242#0000
+I can give you that at deimos right now
+
+
+[10-May-22 02:19 PM] allocater#0000
+ad up
+
+
+[10-May-22 02:22 PM] rune_242#0000
+can I give you 96 more?
+
+
+[10-May-22 02:22 PM] rune_242#0000
+so you can make more SP
+
+
+[10-May-22 02:22 PM] rune_242#0000
+I'l need them in the future for hq upgrades
+
+
+[10-May-22 02:41 PM] allocater#0000
+so many? ok ad is up
+
+
+[10-May-22 02:41 PM] rune_242#0000
+I need those permits!😅
+
+
+[14-May-22 02:49 AM] allocater#0000
+I think it would be neat if we could maintain large reservoirs of essentials on the planet, so that everyone can easily request it on KIOOG LM.
+
+SF reservoir
+FF reservoir
+MCG reservoir
+B-fab reservoir
+COF reservoir
+OVE/PWO reservoir (or PG reservoir to make it locally)
+... what else?
+
+question is how do we ship the stuff there:
+1) public shipping contracts
+2) every reservoir manager with their own ship
+3) bundles for a dedicated corp shipper (possibly even with 2k/2k new ship)
+
+what do you think?
+
+
+[14-May-22 04:34 AM] namthorn#0000
+probably internal shipping. i doubt many people will take public shipping contracts out there without a hefty pricetag
+
+
+[14-May-22 09:19 AM] insensless72#0000
+We could make a 2000m^3, 2000t ship. It would be perfect for this planet. While the 3000 is perfect for hauling metals. Then regular trips out here and to Harmonia
+
+
+[14-May-22 09:23 PM] bitcoin_ape#0000
+2k/2k ship is ideal. I will start the bfab reservoir tomorrow when i have a little more time
+
+
+[14-May-22 09:24 PM] bitcoin_ape#0000
+Ima nuke the supply on ANT, just so you guys are aware. Dont panic when all the bfabs vanish. they will build your bases anyways
+
+{Reactions}
+👍 😲 
+
+[14-May-22 09:33 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/975224393921888356/IMG_2108.jpg?ex=6814d7be&is=6813863e&hm=a5b175158d04b160567935241f9cf65ed0f303e2252326f312a69c0e150aa2f4&
+
+
+[14-May-22 09:34 PM] bitcoin_ape#0000
+BDEs are a bit of a pain, ill try to figure out some more of these
+
+
+[14-May-22 09:35 PM] bitcoin_ape#0000
+maybe we can bring them in from moria/benten
+
+
+[15-May-22 02:36 AM] allocater#0000
+I am bringing 100 BDE from hubur I snatched at 1000/u, I also produce 15/day but yeah we could use more PP1
+
+
+[15-May-22 03:37 AM] allocater#0000
+it has been noticed 😄
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/975316095797977099/unknown.png?ex=68148465&is=681332e5&hm=f4cd1b89ec62f8e71a3976f576d3baa9652d18ec5d6ff664950cf472e913466c&
+
+
+[15-May-22 04:57 AM] allocater#0000
+I will build this base:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/975336014732206080/unknown.png?ex=681496f2&is=68134572&hm=c308e3bf0879595e76fddfb0bf472d439d92fb65afaba07d26540559258dc3aa&
+
+
+[15-May-22 04:57 AM] allocater#0000
+so there will be some excess crop for INCs and I can supply other bases with DW/RAT as usual
+
+
+[15-May-22 04:57 AM] allocater#0000
+but I need input from the RIG base and the supply reservoirs
+
+
+[15-May-22 05:08 AM] namthorn#0000
+weird that people noticed that but not Mad flipping all the AL/FLX a couple days ago
+
+
+[15-May-22 07:14 AM] bitcoin_ape#0000
+BSE are probably more watched on the market in general
+
+
+[15-May-22 07:14 AM] bitcoin_ape#0000
+not everyone works with AL, but everyone buys bfabs
+
+
+[18-May-22 01:40 AM] bitcoin_ape#0000
+@rune_242 we are going to need about 80-100 TRU for this initial build
+
+
+[18-May-22 01:40 AM] bitcoin_ape#0000
+Also @spatial_piano , @domicius we will need about 6k-10k MCG to start out. 10k MCG should build 5x 500 area bases
+
+
+[18-May-22 01:41 AM] bitcoin_ape#0000
+allocater and myself are staging a few thousand BFABs on Phobos and are preparing to ship out. Now is a good time to get your base permits ready if you havent already
+
+
+[18-May-22 01:42 AM] bitcoin_ape#0000
+Also, please prepare some plans for relevant 500/500 area bases, and provide a bill of materials to make this base.
+
+
+[18-May-22 01:43 AM] bitcoin_ape#0000
+I will be starting with RIG only, and will of course provide all the H2O on planet for our grow op
+
+
+[18-May-22 01:44 AM] bitcoin_ape#0000
+I think we will need more rigs somehow, but this will be a decent start
+
+
+[18-May-22 02:03 AM] allocater#0000
+who can manage the PWO, COF and OVE reservoirs?
+
+
+[18-May-22 03:31 AM] rune_242#0000
+I could manage the PWO and OVE
+
+
+[18-May-22 03:31 AM] rune_242#0000
+Truss already made
+
+
+[18-May-22 03:33 AM] rune_242#0000
+Will take about a week or 2 to get the stock made
+
+
+[18-May-22 03:36 AM] rune_242#0000
+how big should the reservoir be?
+
+
+[18-May-22 09:54 AM] allocater#0000
+enough to supply all bases for 10 days, but not sure how much that would be
+
+
+[18-May-22 10:11 AM] thummper#0000
+I can save some COF up
+
+
+[18-May-22 10:13 AM] bitcoin_ape#0000
+ive been using 5 bases at roughly 1000 pioneers as my reference, so ~50k pioneer-days
+
+
+[18-May-22 10:14 AM] bitcoin_ape#0000
+but any amount is good, and at first i think it is wise to bring our own consumables to avoid getting stuck in the first week
+
+
+[18-May-22 10:23 AM] allocater#0000
+but then we all have to fly there, I was hoping some people can just teleport bases there once the expeditionary fleet lands with materials 😄
+
+
+[18-May-22 10:24 AM] allocater#0000
+for example I can bring lfabs and psl for 5 bases, then 4 people can teleport
+
+
+[18-May-22 10:26 AM] bitcoin_ape#0000
+thats fine and all but it is like 4+ standard ships
+
+
+[18-May-22 10:26 AM] bitcoin_ape#0000
+especially BDE, MCG, BBH. these are a bit bulky at these quantities
+
+
+[18-May-22 12:19 PM] allocater#0000
+yeah as long as we fill the ships, just don't want everybody to go half empty
+
+
+[18-May-22 12:21 PM] allocater#0000
+can we immediately set warehouse/LM prices to 0 after building the ADM?
+
+
+[18-May-22 12:21 PM] allocater#0000
+or will there be a 1 week election?
+
+
+[18-May-22 12:22 PM] bitcoin_ape#0000
+1 week election
+
+{Reactions}
+🤔 
+
+[18-May-22 12:44 PM] namthorn#0000
+I can have a couple hundred excess water per day for crops I think if I bring over some PG. Planning on running mainly RIG/FP with a few FRM growing HER for KOM/FIM. Will get permit sorted after delivering the GEN.
+
+
+[18-May-22 12:46 PM] allocater#0000
+I think PG-less DW is cheaper if we have water that easily locally.
+
+
+[18-May-22 12:47 PM] allocater#0000
+will anyone run INC? It's a good planet to produce C, or is it too heavy to export?
+
+
+[18-May-22 12:49 PM] bitcoin_ape#0000
+Personally i think it is so heavy as to be incovenient that far away, but it would still make money
+
+
+[18-May-22 12:50 PM] namthorn#0000
+You could make C, get H from 401d and make PE
+
+
+[18-May-22 12:51 PM] allocater#0000
+that sounds promising
+
+
+[18-May-22 12:55 PM] bitcoin_ape#0000
+that is pretty meta. nice one namthorn
+
+
+[18-May-22 12:55 PM] bitcoin_ape#0000
+could solve the overall problem
+
+
+[18-May-22 12:55 PM] bitcoin_ape#0000
+ehh, OVE problem.
+
+{Reactions}
+🤣 
+
+[18-May-22 12:55 PM] namthorn#0000
+Would lead to local OVE production and if theres any MGS around, PG
+
+
+[18-May-22 12:56 PM] bitcoin_ape#0000
+to be fair though, shipping PG and PE is quite easy. it is the ingredients that are difficult
+
+
+[18-May-22 12:57 PM] bitcoin_ape#0000
+so much so that it is worth considering plastics wherever there is carbon 😁
+
+
+[18-May-22 01:00 PM] namthorn#0000
+Yea totally, it should however be more profitable than shipping the H back to say, phobos and then shipping the wrought product out, so there are some gains to be had there. Not much compared to the size of the OOG wallet, but still.
+
+
+[18-May-22 01:00 PM] bitcoin_ape#0000
+those H flights are no fun
+
+
+[18-May-22 01:01 PM] bitcoin_ape#0000
+so sloooww
+
+
+[18-May-22 01:05 PM] namthorn#0000
+Is there any LST in the area? I just remembered the FEO on 401b and am now wondering if we could do yet more Bfabs locally 🤣
+
+
+[18-May-22 01:06 PM] bitcoin_ape#0000
+401b is offline, about to be fully taken down to reclaim a base permit
+
+
+[18-May-22 01:06 PM] bitcoin_ape#0000
+waiting on the 3000 to clean out my rock collection
+
+
+[18-May-22 01:06 PM] allocater#0000
+WU-070d has LST and FEO
+
+
+[18-May-22 01:07 PM] allocater#0000
+WR-186b more LST and easier to settle
+
+
+[18-May-22 01:08 PM] allocater#0000
+still almost as far away as nike
+
+
+[18-May-22 01:08 PM] namthorn#0000
+Boo, prob not worth then.
+
+
+[18-May-22 02:32 PM] yang_mills#0000
+I have 2K MCG in reserve. That's a full cargo.
+
+
+[18-May-22 02:41 PM] spatial_piano#0000
+Currently at 1.5k MCG on Heph, and 2.7k on ANT. Producing at about 160/day
+
+
+[18-May-22 03:22 PM] domicius#0000
+I make 1k a day, so just let me know how much you'll need from me.
+
+
+[18-May-22 03:23 PM] domicius#0000
+I was actually pumping out OVE/EXO, so I'll be a few hours getting back on full MCG prod
+
+
+[20-May-22 02:33 AM] domicius#0000
+I have 2.5k MCG now. Who wants it where?
+
+
+[20-May-22 01:28 PM] bitcoin_ape#0000
+I suppose it is time to fly, we have several shiploads of fabs and building mats
+
+
+[20-May-22 01:29 PM] bitcoin_ape#0000
+After work today, I will begin the flights
+
+
+[20-May-22 01:30 PM] bitcoin_ape#0000
+@domicius please hold on phobos, or if you are planning to be one of the first builders, please send it out to ki-446b
+
+{Reactions}
+👍 
+
+[20-May-22 01:31 PM] bitcoin_ape#0000
+i will build the warehouse and LM on my first flight, and also bring several core modules with me
+
+
+[20-May-22 01:33 PM] bitcoin_ape#0000
+I will need some help on BDE and BBH transport
+
+
+[20-May-22 01:54 PM] allocater#0000
+can you donate before you have a base?
+
+
+[20-May-22 01:55 PM] bitcoin_ape#0000
+I think not
+
+
+[20-May-22 02:44 PM] allocater#0000
+we probably have to consider that there won't be enough workers for weeks
+
+
+[20-May-22 03:04 PM] bitcoin_ape#0000
+it is okay, we will make sure to have a bunch of open jobs, and probably build an infirmary at some point once we get a decent population going
+
+
+[20-May-22 03:05 PM] allocater#0000
+if bases are destroyed, are they taking their 200 workers with them?
+
+
+[20-May-22 03:05 PM] allocater#0000
+if not we could build and destroy dummy bases to generate workers 😄
+
+
+[20-May-22 03:27 PM] bitcoin_ape#0000
+pioneer cloning facility
+
+
+[20-May-22 03:53 PM] namthorn#0000
+yea just gonna build jobs for first 200 workers, then right before popr slap down a bunch of jobs
+
+{Reactions}
+🧠 
+
+[20-May-22 08:18 PM] bitcoin_ape#0000
+This is the preferred method
+
+
+[20-May-22 08:48 PM] bitcoin_ape#0000
+We are going to be short on TRU right away. @rune_242 can you bring them Along with MCG?
+
+
+[20-May-22 08:49 PM] bitcoin_ape#0000
+Here are the ships I am sending now
+
+
+[20-May-22 08:49 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/977387693254271016/unknown.png?ex=6814cd79&is=68137bf9&hm=0b58efa3f55d5c19dbb10a7944197f80619fb53ff4ad931659c6d65f69400122&
+
+
+[20-May-22 08:52 PM] bitcoin_ape#0000
+36 hours arrival
+
+
+[21-May-22 02:44 AM] rune_242#0000
+I can post a shipping ad from deimos
+
+
+[21-May-22 02:44 AM] rune_242#0000
+But not now
+
+
+[21-May-22 02:44 AM] rune_242#0000
+I'll have an exam in 15 min
+
+
+[21-May-22 02:45 AM] rune_242#0000
+I do not make MCG yet
+
+
+[21-May-22 02:45 AM] rune_242#0000
+Another 5 days until that begins
+
+
+[21-May-22 08:39 AM] domicius#0000
+I'm at 4k MCG
+
+
+[21-May-22 12:43 PM] bitcoin_ape#0000
+@rune_242 we will combine the tru with an mcg shipment to send a fully loaded 500t ship
+
+
+[21-May-22 12:44 PM] bitcoin_ape#0000
+Did you post the TRU shipment? was it accepted?
+
+
+[21-May-22 12:45 PM] bitcoin_ape#0000
+@insensless72 can depart from deimos with this TRU andsome of his own supplies, and then pick up the remaining capacity as MCG from @domicius
+
+
+[21-May-22 01:11 PM] namthorn#0000
+we need anything brought from the CX? About to head out to ki from there.
+
+
+[21-May-22 01:11 PM] namthorn#0000
+have ~150t free
+
+
+[21-May-22 02:14 PM] bitcoin_ape#0000
+yes, let me get a shipment for you
+
+
+[21-May-22 02:15 PM] bitcoin_ape#0000
+how much volume?
+
+
+[21-May-22 02:15 PM] namthorn#0000
+180m^3
+
+
+[21-May-22 02:23 PM] bitcoin_ape#0000
+posting on ANT LM
+
+
+[21-May-22 02:25 PM] bitcoin_ape#0000
+posted 2 ads which should fill the ship
+
+
+[21-May-22 02:30 PM] namthorn#0000
+got it, will be there in 36h!
+
+{Reactions}
+🛫 
+
+[21-May-22 10:21 PM] bitcoin_ape#0000
+So, provided the TRU and MCG from insensless’s ship, I can build 5 bases including my own. I know @namthorn @thummper and @yang_mills were planning to build
+
+
+[21-May-22 10:22 PM] bitcoin_ape#0000
+who gets the last core module from my inventory?
+
+
+[21-May-22 10:23 PM] bitcoin_ape#0000
+@allocater can you build any core modules on KI-446?
+
+
+[21-May-22 10:24 PM] bitcoin_ape#0000
+ah, @rune_242 do you need a core module from me?
+
+
+[22-May-22 02:04 AM] allocater#0000
+yes, I have the full base materials
+
+
+[22-May-22 03:43 AM] rune_242#0000
+yes pls!
+
+
+[22-May-22 04:11 AM] yang_mills#0000
+I have mats for 1 core module (mine), plus a reserve of MCG (2,5 K) and Bfabs.
+
+
+[22-May-22 04:48 AM] namthorn#0000
+im bringing a CM kit too, so we can get 1 more person over
+
+
+[22-May-22 05:39 AM] yang_mills#0000
+When do we settle on KI-446b? Next week-end?
+
+
+[22-May-22 08:13 AM] insensless72#0000
+I think DLR is ready to get things in motion. Im sending a ship from Nike -Deimos this morning with my LDE, picking up TRU from Deimos, flying Deimos -> Phobos to buy @domicius MCG and then heading Phobos -> KI-446 so DLR can establish a base and get a head start on POPI. An exact timeline I dont have for you but id say you could probably head that way within several days]
+
+
+[22-May-22 09:02 AM] yang_mills#0000
+I have my construction mats ready. I may send one ship to KI-446b in a couple of days.
+
+
+[22-May-22 10:05 AM] bitcoin_ape#0000
+My ship landed on KI-446 2 hours ago
+
+{Reactions}
+🚩 (2) 
+
+[22-May-22 10:07 AM] domicius#0000
+I'm at 5k now... About 2 ships loads! Happy to serve as required tho
+
+
+[22-May-22 10:09 AM] insensless72#0000
+I can fit 1928, how much would you like to sell them for?
+
+
+[22-May-22 10:33 AM] domicius#0000
+20 a piece?
+
+
+[22-May-22 10:35 AM] insensless72#0000
+👍 ad is up
+
+{Reactions}
+💱 👍 
+
+[22-May-22 10:54 AM] bitcoin_ape#0000
+OK, so there is a slight delay due to some sloppy execution on my side, but overall we are still on track and nobody needs to make any changes to their plans except allocater 😄
+
+
+[22-May-22 10:55 AM] bitcoin_ape#0000
+I forgot the LBH, so allocater will now bring those on his ship. Also, since I split my core module components between 2 ships, and have no inventory room, I now need to take a field trip to KI-439b* to borrow their warehouse and rearrange my inventory
+
+
+[22-May-22 10:55 AM] bitcoin_ape#0000
+this delays my base by 10 hours, and our "base teleporting" until Wendesday, when allocater will arrive and build the local market on KI-446b
+
+{Reactions}
+👍 
+
+[22-May-22 11:02 AM] allocater#0000
+we were assuming next weekend, so this is still 3 days early 😄
+
+
+[23-May-22 06:50 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/978444928348741652/unknown.png?ex=6814b199&is=68136019&hm=36eb5da2310ad0eabcfcb65dfbafe46acf546d801d095588a1be45abe9f81db6&
+
+{Reactions}
+🚩 
+
+[23-May-22 06:52 PM] bitcoin_ape#0000
+LM is waiting on an LBH shipment, and then we can teleport 4 bases
+
+
+[23-May-22 07:11 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/978450195132084325/unknown.png?ex=6814b681&is=68136501&hm=0cd64605e699574d02a9aa3ac6d8599d1a1941dbb3fba393e806ff4fdeb85033&
+
+{Reactions}
+🥳 (3) 😲 
+
+[24-May-22 01:35 AM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/978546812476596254/unknown.png?ex=6815107c&is=6813befc&hm=0018041fe2ca95eb61f8ec4b0650adb04245e5ccf7eafec800ccd8ecdb88290f&
+
+
+[24-May-22 01:44 AM] allocater#0000
+do we have that TRU? 😱
+
+
+[24-May-22 03:13 AM] rune_242#0000
+Think so🤔
+
+
+[24-May-22 03:13 AM] rune_242#0000
+Gave 150 with DLR
+
+
+[24-May-22 03:30 AM] namthorn#0000
+not to worry, I brought 20 spare TRU
+
+
+[24-May-22 10:36 AM] bitcoin_ape#0000
+yea we have 150 TRU on a ship headed in generally the right direction
+
+
+[24-May-22 10:36 AM] bitcoin_ape#0000
+always nice to have backup truss haha
+
+
+[24-May-22 11:11 AM] domicius#0000
+Duders, I have 5k MCG
+
+
+[24-May-22 11:11 AM] domicius#0000
+How much you all still need?
+
+
+[24-May-22 11:12 AM] bitcoin_ape#0000
+This is unclear. It became apparent we did not have enough ships so i just started sending them
+
+
+[24-May-22 11:12 AM] bitcoin_ape#0000
+i can buy all of your mcg on phobos though, thanks for producing and holding it
+
+
+[24-May-22 11:13 AM] bitcoin_ape#0000
+at least one more full 500t ship of mcg will be needed. likely 2
+
+
+[24-May-22 11:14 AM] namthorn#0000
+ye I'm gonna need to buy 1k of it I think, as DLR said it's mainly getting the goods out there. Stuff be heavy.
+
+
+[24-May-22 11:14 AM] namthorn#0000
+will be heading back out soon so I can ship a partial load out
+
+
+[24-May-22 11:25 AM] domicius#0000
+Sure, just post up at 20pu
+
+
+[24-May-22 11:58 AM] allocater#0000
+@bitcoin_ape you can build the LM, only LBH missing
+
+
+[24-May-22 12:02 PM] allocater#0000
+Do we need OFF and SUN to make the pop grow? it's not above 70% happiness atm
+
+
+[24-May-22 12:02 PM] bitcoin_ape#0000
+did you arrive with the LBH shipment?
+
+
+[24-May-22 12:03 PM] allocater#0000
+yeah, you got it?
+
+
+[24-May-22 12:04 PM] bitcoin_ape#0000
+ah, yes there they are
+
+
+[24-May-22 12:04 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/978705157573464114/unknown.png?ex=6814fb35&is=6813a9b5&hm=3903ab329e02c20fd376daec12ac37820d455adddce09b3be43e4e861cab7111&
+
+
+[24-May-22 12:05 PM] namthorn#0000
+iirc the SST wasnt built that long ago
+
+
+[24-May-22 12:05 PM] namthorn#0000
+hence the low safety
+
+
+[24-May-22 12:05 PM] namthorn#0000
+takes a week of it being there to kick in
+
+{Reactions}
+👍 
+
+[24-May-22 12:05 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/978705318253035590/unknown.png?ex=6814fb5b&is=6813a9db&hm=6ab704952ecda6e52106ace19c5e47ef1ac49473e490e55e9357281c6be6b199&
+
+{Reactions}
+🥳 
+
+[24-May-22 12:06 PM] allocater#0000
+so until how many pop are we good with DW-only SST?
+
+
+[24-May-22 12:08 PM] namthorn#0000
+should be good I think. pop is currently 1k, we have 250 safety needed. SST provides 2500 safety iirc, 2500/3 > 250
+
+{Reactions}
+👍 
+
+[24-May-22 12:09 PM] namthorn#0000
+i'd look at the INF next
+
+
+[24-May-22 12:09 PM] allocater#0000
+opened DW and RAT store
+
+
+[24-May-22 12:09 PM] allocater#0000
+also could not bring all MCG for my base, so if we have a stockpile, I buy 1.5k
+
+
+[24-May-22 12:10 PM] bitcoin_ape#0000
+I have 1100 after building, but this is needed to teleport some bases
+
+
+[24-May-22 12:10 PM] allocater#0000
+sure
+
+
+[24-May-22 12:10 PM] bitcoin_ape#0000
+my ships are on the way home now
+
+
+[24-May-22 12:10 PM] allocater#0000
+teleport > expand
+
+
+[24-May-22 12:11 PM] namthorn#0000
+we'll need a few more cargo loads of building mats i think
+
+
+[24-May-22 12:11 PM] allocater#0000
+then I will also go again with MCG
+
+
+[24-May-22 12:11 PM] namthorn#0000
+whats the stock of bfabs available to buy on world?
+
+
+[24-May-22 12:12 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/978706950541967390/unknown.png?ex=6814fce0&is=6813ab60&hm=f1046f77b18a3efa9502b3ff6892c4dfc1119b1d28f947713778dbb86d9e55ed&
+
+{Reactions}
+👍 
+
+[24-May-22 12:12 PM] namthorn#0000
+also PE for the CoGC
+
+
+[24-May-22 12:12 PM] allocater#0000
+do we have COF yet?
+
+
+[24-May-22 12:12 PM] bitcoin_ape#0000
+48 PSL not displayed, reserved for teleports
+
+
+[24-May-22 12:12 PM] bitcoin_ape#0000
+no coffee from me
+
+
+[24-May-22 12:13 PM] allocater#0000
+maybe the natives have some 😄
+
+
+[24-May-22 12:13 PM] namthorn#0000
+was barely worth using when i ran it through at 500/u
+
+
+[24-May-22 12:13 PM] bitcoin_ape#0000
+Somebody had MHL and NS plans
+
+
+[24-May-22 12:14 PM] allocater#0000
+maybe we can even recruit Triskelion, he is just in a 1 man corp
+
+
+[24-May-22 12:14 PM] bitcoin_ape#0000
+this is ultimately what blocks coffee, since it is harder to resolve than a water shortage
+
+
+[24-May-22 12:16 PM] allocater#0000
+yes, @thummper is the COF company now, but not on planet yet
+
+
+[24-May-22 12:25 PM] bitcoin_ape#0000
+if somebody wants to get into chemistry, NS is a solid market
+
+
+[24-May-22 12:25 PM] bitcoin_ape#0000
+I can buy 500 nitrogen shiploads quite easily, but im not in a position to expand chemical production really
+
+
+[24-May-22 02:26 PM] thummper#0000
+I was hoping to vertically produce NS at some point but havent looked into it
+
+
+[24-May-22 02:27 PM] thummper#0000
+my licence cancelled so all of my reoccurring ordered stopped - I have 60 COF spare and I think it was 250 needed for 5 bases for 10 days or something?
+
+
+[24-May-22 02:28 PM] thummper#0000
+I can fill that in the next 5 - 6 days but is that too late?
+
+
+[24-May-22 02:31 PM] allocater#0000
+first you can fill the core-world demand of COF, later the wildernes planets get some, maybe 😄 or if you want to build COF production base also in the wilderness at some point 😄
+
+{Reactions}
+👍🏿 
+
+[24-May-22 04:57 PM] bitcoin_ape#0000
+Wait, who is going to govern this rock? Any volunteers?
+
+
+[24-May-22 04:58 PM] bitcoin_ape#0000
+Really it is more of a formality, Guaranteed victory in the election and very minimal work to manage a pioneer-only population
+
+
+[24-May-22 05:01 PM] bitcoin_ape#0000
+or maybe @yang_mills will take over Phobos so I can retire to KI-446
+
+
+[24-May-22 05:20 PM] namthorn#0000
+I wouldn't mind governing a rock in the middle of nowhere
+
+
+[24-May-22 05:34 PM] yang_mills#0000
+I would prefer governing KI-446 actually.
+
+
+[24-May-22 06:46 PM] bitcoin_ape#0000
+Ah, alright then. I suppose there is some discussion to be had here, at a minimim between @yang_mills and @namthorn
+
+
+[24-May-22 06:46 PM] bitcoin_ape#0000
+i am fine to continue on with the current situation on Phobos
+
+
+[25-May-22 01:24 AM] erklein#0000
+I just opened up a base on Griffonstone to get more into chemistry, primarily aimed for getting out NS and DDT. Only limiting factor right now would be getting enough N and building up the base
+
+{Reactions}
+🥳 (3) 
+
+[25-May-22 02:19 AM] yang_mills#0000
+Well, yes, I would like to become the governor on KI-446b. But I don't mind if @namthorn becomes the governor.
+
+
+[25-May-22 03:20 AM] namthorn#0000
+I thought you were doing such a good job with Phobos, we can always take turns 😛
+
+
+[25-May-22 04:12 AM] yang_mills#0000
+I can continue with Phobos then.
+
+
+[25-May-22 01:43 PM] allocater#0000
+do more workers come if more jobs are open?
+
+
+[25-May-22 01:44 PM] rune_242#0000
+Yes
+
+
+[25-May-22 01:45 PM] allocater#0000
+then we should turn all available MCG into buildings within the next 14 hours
+
+
+[25-May-22 02:28 PM] yang_mills#0000
+My ship to KI-446b has just departed. Cargo
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/979103781251842158/Y_M_ship_KI-446b.jpg?ex=68151cf4&is=6813cb74&hm=5714b39bf163634adc9d42b10d42d4df2fe0280a7f9a9568b99fea15a2f16383&
+
+{Reactions}
+🥳 (2) 
+
+[25-May-22 07:40 PM] insensless72#0000
+Just landed, who should I transfer these to?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/979182201860136980/unknown.png?ex=6814bd3d&is=68136bbd&hm=40c1fa0419745658eb2d0fd7447cbde55208fea4485036252e7eed054fc296cd&
+
+
+[25-May-22 08:46 PM] bitcoin_ape#0000
+I can accept it
+
+
+[25-May-22 08:46 PM] bitcoin_ape#0000
+I have a STO
+
+
+[26-May-22 01:38 AM] allocater#0000
+2 hours left to build more open jobs!
+
+
+[26-May-22 04:07 AM] allocater#0000
+pop doubled!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/979309873957326858/unknown.png?ex=68148b64&is=681339e4&hm=4aebfce469d57f65f63aec0079d1563ae72831589e237d75dcbb817f01f2ca07&
+
+
+[26-May-22 04:08 AM] allocater#0000
+still we need more than 200 migration per week
+
+
+[26-May-22 04:08 AM] allocater#0000
+how can we increase it?
+
+
+[26-May-22 04:13 AM] namthorn#0000
+not sure we can influence it too much atm. we have open jobs and a good happiness level. Are there any ADM programs focusing on pioneers?
+
+
+[26-May-22 04:16 AM] namthorn#0000
+I think there's some cap on migration to do with current population though, as the poprs i've looked at have the migration count growing as the pop on the planet does, while maintaining a near-constant level of happiness.
+
+
+[26-May-22 04:18 AM] namthorn#0000
+which would make some sense - it would be rather odd if 100k pops migrated over when the planet was only used to 1k
+
+
+[26-May-22 05:54 AM] allocater#0000
+maybe if happiness is 100% there is more migration than with 81%?
+
+
+[26-May-22 06:24 AM] namthorn#0000
+yea looked it up: Migration In = Current Population * (Happiness - 0.7)
+
+{Reactions}
+👍 
+
+[26-May-22 06:24 AM] namthorn#0000
+so it's really capped by current population, can never be more than 0.3 * current population
+
+
+[26-May-22 06:28 AM] namthorn#0000
+so we could probably increase it by a couple hundred per week if we were to heavily invest in popi and max out happiness
+
+
+[26-May-22 06:30 AM] namthorn#0000
+probably not worth it to invest in education, comfort or culture, but an INF wouldn't be a bad idea. Would allow us to support more settlers too.
+
+{Reactions}
+👍 
+
+[26-May-22 07:38 PM] bitcoin_ape#0000
+The key ingredient is open jobs and happiness. There is a family support governor program which I think would apply well here
+
+
+[27-May-22 03:11 AM] namthorn#0000
+yea if we get an ADM up at the very least we can run either that or festivities to artificially boost happiness to 100
+
+
+[27-May-22 04:16 AM] allocater#0000
+why is happiness atm 81%? how would we get it to 100% without ADM?
+
+
+[27-May-22 04:19 AM] namthorn#0000
+filling all pop needs. And it's 81% because a) it wasn't 100% for the past few weeks - average happiness takes the past into account and b) pioneers have (small) needs in other categories than safety  & life support
+
+
+[27-May-22 04:21 AM] allocater#0000
+should approch 100% then over time, that 91% health can't impact it that much
+
+
+[27-May-22 04:21 AM] namthorn#0000
+it should cap out at around 90 something I think
+
+{Reactions}
+👍 
+
+[27-May-22 04:22 AM] namthorn#0000
+health has a 0.15 scaling so that's the last significant scaling for pioneers
+
+
+[27-May-22 04:22 AM] namthorn#0000
+0.05/0.03/0.02 for the other needs
+
+
+[27-May-22 04:23 AM] allocater#0000
+yeah, then we have to check if it's really worth raising from 90% to 100% with ADM
+
+
+[27-May-22 04:24 AM] namthorn#0000
+it could be, that's still going from 0.2* current pop to 0.3* current pop in migration
+
+
+[27-May-22 04:24 AM] namthorn#0000
+~200 extra pop at current pop levels
+
+
+[27-May-22 04:25 AM] namthorn#0000
+will matter less as we get a bigger number of pioneers on planet but that's a significant % increase in pop still given that we're limited by pioneers for expansion
+
+{Reactions}
+👍 
+
+[27-May-22 10:20 AM] allocater#0000
+so who is gonna teleport bases? we have 4 teleport packs, right?
+
+
+[27-May-22 10:25 AM] namthorn#0000
+the more the merrier, if anything for the extra 800 pioneers teleporting over xD
+
+
+[27-May-22 10:30 AM] allocater#0000
+exactly, 1 permit -> 200 pioneers if it is unused anyway
+
+
+[27-May-22 01:27 PM] yang_mills#0000
+Just opened a base on KI-446b. Does anyone need something transported on my way back to Phobos?
+
+
+[27-May-22 01:28 PM] allocater#0000
+no exports yet 😅
+
+
+[27-May-22 01:30 PM] bitcoin_ape#0000
+I think this first month will be mostly growing pop, export volume will follow shortly
+
+
+[27-May-22 04:19 PM] insensless72#0000
+There is now a dedicated column on our sheet and role in the discord for KI-446b. As you guys expand out here message me or DLR and we will assign you the role
+
+
+[28-May-22 12:26 PM] allocater#0000
+so who wants to build BMP to provide OVE for everyone? (needs H or PE imports though)
+
+
+[28-May-22 12:58 PM] namthorn#0000
+i dont mind chucking down a few after getting a few more FP & FRMs going. my base has a few industries already so not like i'll be stacking experts
+
+
+[28-May-22 12:58 PM] namthorn#0000
+will need PE for the cogc upkeep anyway
+
+
+[28-May-22 01:01 PM] namthorn#0000
+will require C so could use someone putting down a couple of INC to support the PE production, I can import the H
+
+{Reactions}
+👍 
+
+[28-May-22 01:02 PM] allocater#0000
+I was assuming C is the main product of the planet
+
+
+[28-May-22 01:04 PM] allocater#0000
+so far we only have 1 RIG base and 1 FP base though 😅
+
+
+[28-May-22 01:04 PM] namthorn#0000
+im doing a bit of FIM production myself, gives me a use for excess DDT
+
+
+[28-May-22 03:41 PM] bitcoin_ape#0000
+@rune_242 @thummper let me know when you want to base teleport.
+
+
+[28-May-22 03:47 PM] thummper#0000
+what do I need to do?
+
+
+[28-May-22 03:49 PM] bitcoin_ape#0000
+You need an available base permit. Then, you need to request all of the items for a core module on the local market here (KI-446b)
+
+
+[28-May-22 03:50 PM] bitcoin_ape#0000
+1 AIC will do. I will sell any bfabs for habs and production buildings at the normal rates of 600/800/800/500
+
+
+[28-May-22 04:02 PM] thummper#0000
+ads all up
+
+{Reactions}
+⚡ 🏗️ 
+
+[28-May-22 04:10 PM] bitcoin_ape#0000
+Nice! It works
+
+
+[28-May-22 04:10 PM] bitcoin_ape#0000
+What have you built?
+
+
+[28-May-22 04:12 PM] allocater#0000
+🤞please be COF 😄
+
+{Reactions}
+🤞 (2) 
+
+[28-May-22 04:22 PM] thummper#0000
+so far just food sorry
+
+
+[28-May-22 04:22 PM] thummper#0000
+I have spare mhl so could move some COF out here soonish
+
+
+[28-May-22 04:22 PM] thummper#0000
+but might be a pain to get NS?
+
+
+[28-May-22 04:23 PM] thummper#0000
+I've been buying it in Hortus 💀
+
+{Reactions}
+😵 
+
+[28-May-22 07:47 PM] bitcoin_ape#0000
+@namthorn has there been any discussion about the cogc program? We should build a consensus in corp about what the best choice is now, next month, and in the permanent long-term
+
+
+[28-May-22 07:52 PM] yang_mills#0000
+For now I could suggest a PIO bonus. It will bring benefits across the board, for extracting water, for planting crops and for reprocessing in FPs.
+
+
+[29-May-22 01:41 AM] allocater#0000
+agreed on PIO, longterm maybe agriculture since it's basically a better harmonia
+
+
+[29-May-22 02:06 AM] allocater#0000
+is anybody doing a next or regular shipping already? then I can send the lfabs for ADM, I hope we have 750 MCG to spare already there
+
+
+[29-May-22 05:02 AM] namthorn#0000
+yea really depends what the prevalent industry is on world. I'd be down for pioneers for a while, but presumably agriculture would speed up the farming part of food chains, allowing for fewer space-intensive FRMs and more FP/INC etc
+
+
+[29-May-22 05:04 AM] namthorn#0000
+if everyone can update the KI-446b column of the OOG sheet when they get a chance, that'll give us a good view on the planet and what would help us out the most.
+
+
+[29-May-22 10:32 AM] insensless72#0000
+@Demeter ☝️
+
+
+[29-May-22 01:51 PM] bitcoin_ape#0000
+@namthorn my suggestion is that we go with the 10% pioneer bonus. FRM, RIG, FP, BMP... This will be basically the entire planet.
+
+
+[29-May-22 02:16 PM] bitcoin_ape#0000
+Also, @namthorn ... Is it a good time for me to build the SST? I can do it right now.
+
+EDIT: I see safety is already at 100% on the planet, so it is not needed yet.
+
+
+[29-May-22 02:19 PM] bitcoin_ape#0000
+Now that I look at it, the INF is equally easy to build. I could even do both of them. This seems excessive, but in the long term i think we can plan to have both of these
+
+
+[29-May-22 02:25 PM] namthorn#0000
+we already have a SST on world, it was here before we landed I think. INF is worth it imo, but we can't supply it until we get some TUBs shipped over so it's probably not worth doing yet.
+
+
+[29-May-22 02:32 PM] namthorn#0000
+once safety starts dipping as pops grow, we can build a 2nd SST so we don't need to supply anything but DW, 'till then I think we sit tight and use the bfabs for expansion
+
+
+[29-May-22 02:33 PM] bitcoin_ape#0000
+ah, noted on both points. I will wait
+
+
+[29-May-22 02:34 PM] namthorn#0000
+I'll work on getting some TUBs over in the meantime. Shouldn't need much for a single INF
+
+
+[30-May-22 03:29 PM] namthorn#0000
+400 TUB inbound, also bringing a few hundred OVE to tide us over until we get workers for BMPs/INCs
+
+{Reactions}
+🥳 
+
+[01-Jun-22 01:43 PM] bitcoin_ape#0000
+@Demeter election started, vote in the planetary admin center
+
+{Reactions}
+👍🏿 (3) 🗳️ (2) 
+
+[01-Jun-22 01:45 PM] namthorn#0000
+MKI446bGA!
+
+
+[02-Jun-22 03:27 PM] namthorn#0000
+anyone set up or planning to set up some INC? I'll buy all the C pretty much forever.
+
+
+[02-Jun-22 07:08 PM] bitcoin_ape#0000
+I still have 3 bases ready to go in my inventory. I thought @rune_242 and possibly @mitlof would teleport here
+
+
+[02-Jun-22 08:26 PM] bitcoin_ape#0000
+@namthorn this is what jelutz was referencing in KI-446b site owners chat
+
+
+[02-Jun-22 08:26 PM] bitcoin_ape#0000
+```
+    Pioneers: Life Support and Safety
+    Settlers: Life Support, Safety and Health
+    Technicians: Health, Safety and Comfort
+    Engineers: Comfort and Culture
+    Scientists: Education, Culture and Comfort
+```
+
+
+[02-Jun-22 08:27 PM] bitcoin_ape#0000
+https://handbook.apex.prosperousuniverse.com/tutorials/planetary-population/
+
+{Embed}
+https://handbook.apex.prosperousuniverse.com/tutorials/planetary-population/
+9. Planetary Populations :: Prosperous Universe Wiki
+Prosperous Universe Wiki
+
+
+[02-Jun-22 08:33 PM] bitcoin_ape#0000
+Hey, +417 pioneers on that last population report 😄
+
+
+[03-Jun-22 01:57 AM] rune_242#0000
+how much does it cost?
+
+
+[03-Jun-22 02:34 AM] Deleted User#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/982185437676331058/Knipsel_56.PNG?ex=68151e38&is=6813ccb8&hm=e926d077f92c599720ee85028153d90f58b0626c4e79a1ecf87777df5bc7753c&
+
+
+[03-Jun-22 02:35 AM] rune_242#0000
+I meant in AIC😅
+
+
+[03-Jun-22 02:36 AM] Deleted User#0000
+-_-
+
+
+[03-Jun-22 02:36 AM] Deleted User#0000
+idk XD not yet
+
+
+[03-Jun-22 05:26 AM] namthorn#0000
+Yea those are the most important weights per pop tier. pioneers are reasonably impacted by the level of health iirc. but it's half as important to a pioneer than a technician.
+
+
+[03-Jun-22 11:49 AM] bitcoin_ape#0000
+ahh i see
+
+
+[04-Jun-22 12:56 PM] namthorn#0000
+I have edited the LR to set all fees to 0 for LM/WAR as well as pioneers & settlers. for programs I think pioneer immigration is what we want at the moment so I will be going with that tomorrow if no one has any other suggestions
+
+{Reactions}
+👍 (2) 
+
+[04-Jun-22 12:56 PM] namthorn#0000
+oh forgot the @Demeter
+
+
+[04-Jun-22 12:56 PM] churavis#0000
+Taxes are theft
+
+
+[04-Jun-22 01:01 PM] namthorn#0000
+taxes where we are the government are subsidized anyway, sweet sweet dividends.
+
+
+[04-Jun-22 01:01 PM] churavis#0000
+We are stealing from ourselves then?
+
+
+[04-Jun-22 01:01 PM] namthorn#0000
+call it a loophole
+
+
+[04-Jun-22 01:02 PM] namthorn#0000
+effectively makes warehouses on Nike/Phobos free
+
+
+[04-Jun-22 03:15 PM] bitcoin_ape#0000
+I think it is good to have no tax out there, at least for now...
+
+
+[04-Jun-22 03:18 PM] namthorn#0000
+yea, will start to levy tax once popi starts needing more than just simple upkeep
+
+
+[05-Jun-22 05:29 AM] allocater#0000
+would it make sense to set the worker reserve pool to 0%, since we want everybody to work and not sit in reserve just because someone might build something later?
+
+
+[05-Jun-22 06:20 AM] namthorn#0000
+not really an issue. the reserve pool is only taken from the unemployed population
+
+{Reactions}
+👍 
+
+[05-Jun-22 06:21 AM] namthorn#0000
+if jobs exist at the time of a popr and there are sufficient workers on planet to fill all jobs, all jobs will be filled regardless
+
+
+[05-Jun-22 06:22 AM] namthorn#0000
+i dont think there's a situation where you can have workers effectively choose to become unemployed due to the reserve pool existing.
+
+
+[05-Jun-22 06:26 AM] namthorn#0000
+I also don't see if there's a way to change it in LR - seems to be a hardcoded 10%
+
+
+[06-Jun-22 10:20 AM] bitcoin_ape#0000
+BTW guys, I still have hundreds of BFABs and MCG to go with it.
+
+
+[06-Jun-22 10:21 AM] bitcoin_ape#0000
+feel free to post at normal rates if you want to expand out here. MCG=15 AIC
+
+
+[07-Jun-22 03:10 PM] bitcoin_ape#0000
+@Demeter Ive got 11 RIGs providing 280 H2O per day (pioneer limited), and 490 H2O in inventory
+
+{Reactions}
+🚰 (2) 🌊 (2) 
+
+[07-Jun-22 03:11 PM] bitcoin_ape#0000
+allocater will happily take it all from me, but I have delivered him 500 just hours ago, so I figured I would give everyone else a chance
+
+
+[07-Jun-22 03:12 PM] mitlof#0000
+I'll tell you how much I might need when all my buildings have started producing
+
+{Reactions}
+👍 
+
+[07-Jun-22 03:14 PM] bitcoin_ape#0000
+my max base plan is 30+ RIG at 125%, so expect a ceiling aroud 1200 H2O/day
+
+
+[07-Jun-22 03:16 PM] allocater#0000
+my final base is planned to suck up 500/day
+
+
+[08-Jun-22 01:40 AM] allocater#0000
+I have 358 MCG more than I needed, selling for 20/u
+
+
+[09-Jun-22 03:46 AM] namthorn#0000
+popr is looking good. We're still fine on pop needs and growth is accelerating nicely. Though the number of open jobs seems to be increasing 0.o. I'll be running another pioneer immigration i think this week as 500 pioneers should still beat out the natural growth boost from family support III.
+
+
+[09-Jun-22 12:16 PM] bitcoin_ape#0000
+what are the prices of these programs? i have noticed they are somewhat variable on phobos and im wondering if it is cheap on a small planet like this
+
+
+[09-Jun-22 12:18 PM] namthorn#0000
+the immigration i think are static costs. checked with the griffonstone gov about an engineer migration and it's 80k, same as KI-446b. pioneer immigration is 10k
+
+
+[09-Jun-22 12:18 PM] namthorn#0000
+i would check the others but i've already locked in the next program so cant see the drop-downs
+
+
+[09-Jun-22 12:18 PM] insensless72#0000
+Its the same across all planets then. Nike is also 80k for engineer immigration
+
+
+[09-Jun-22 12:19 PM] namthorn#0000
+the others might be variable though idk. What's festivities 3 on nike?
+
+
+[09-Jun-22 12:20 PM] insensless72#0000
+I can tell you in 6hrs
+
+
+[09-Jun-22 12:20 PM] namthorn#0000
+festivities 2 even, i know the cost for that is 22.5kish on griffonstone
+
+
+[09-Jun-22 08:58 PM] insensless72#0000
+pioneer immigration is 10k and festivities III is 36k
+
+
+[10-Jun-22 09:48 AM] namthorn#0000
+anyone want some DDT? I'm doing some small-time HER growing and have 99 DDT on the way if anyone wants a chunk.
+
+
+[10-Jun-22 09:56 AM] yang_mills#0000
+I would like some DDT. But actually do you have some somewhere closer to Harmonia?
+
+
+[10-Jun-22 09:57 AM] namthorn#0000
+I think I have more stored around somewhere, this is just what i loaded up to send to ki-446
+
+
+[10-Jun-22 09:57 AM] namthorn#0000
+got 39 arriving at the CX in a few hours
+
+
+[10-Jun-22 09:58 AM] namthorn#0000
+if you dont mind shipping it from there to harmonia i can sell it to you
+
+
+[10-Jun-22 09:59 AM] yang_mills#0000
+I posted a buy order on the CX for 6 DDT at 1551 AIC/u. Could you, please, sell it to me at that price?
+
+
+[10-Jun-22 09:59 AM] namthorn#0000
+can drop some off on nike on the way back too actually if you like
+
+
+[10-Jun-22 10:00 AM] yang_mills#0000
+That would be easier. What's your price?
+
+
+[10-Jun-22 10:00 AM] namthorn#0000
+i can do a better price than the CX bid I think, 1300/u?
+
+
+[10-Jun-22 10:02 AM] yang_mills#0000
+Great. Posted a buy ad for 6 DDT on Nike.
+
+{Reactions}
+👍 
+
+[10-Jun-22 02:29 PM] churavis#0000
+If I made a base on KI-446b, could I stack experts with an RIG/INC only or FRM only base? Would the corp need or be able to support either of those?
+
+
+[10-Jun-22 02:33 PM] allocater#0000
+full INC base we probably can't support yet, but we should work towards it, guess we need FRM subsidies! 😄
+
+
+[10-Jun-22 02:33 PM] allocater#0000
+or be the FRM you want to see on the planet 😄
+
+
+[10-Jun-22 02:33 PM] churavis#0000
+I mean, it wouldn't start out as a full base, just however much the PIO pop can support
+
+
+[10-Jun-22 02:34 PM] allocater#0000
+pop will fill all jobs next week I think, so that should no longer be a concern. crops supply is more of constraint
+
+
+[10-Jun-22 02:35 PM] allocater#0000
+but you could start an INC base and encourage others to fill up remaining space with FRMs
+
+
+[10-Jun-22 03:17 PM] namthorn#0000
+pls do, i will buy all your C, would save me from making the INC myself
+
+
+[10-Jun-22 03:17 PM] churavis#0000
+Can you give me GRN/HCP/MAI?
+
+
+[10-Jun-22 03:18 PM] namthorn#0000
+i can give you some GRN
+
+
+[10-Jun-22 03:18 PM] namthorn#0000
+dont have a ton of FRMs
+
+
+[10-Jun-22 03:18 PM] namthorn#0000
+been expanding gradually, currently 3 FRM, 3 FP, 4 RIG
+
+
+[10-Jun-22 03:18 PM] churavis#0000
+If you had more H2O would you make more FRM's?
+
+
+[10-Jun-22 03:20 PM] namthorn#0000
+i ideally want to drop BMPs next
+
+
+[10-Jun-22 03:20 PM] namthorn#0000
+hence the need for C
+
+
+[10-Jun-22 03:21 PM] namthorn#0000
+could make a couple more FRMs though afterwards
+
+
+[10-Jun-22 03:23 PM] namthorn#0000
+been gradually adding on buildings so i still have about 1/2 base area to play with
+
+
+[10-Jun-22 03:32 PM] bitcoin_ape#0000
+just seeing this. I am scaling to 30 RIG now along with pio numbers, always adding rig before the pop report
+
+
+[10-Jun-22 03:33 PM] bitcoin_ape#0000
+long term, this is enough for 2-3 water consuming bases. well probably need another resource base, or at least more permits for mine
+
+
+[10-Jun-22 03:39 PM] churavis#0000
+OK, I know you said you have base module kits ready, what else do we have in terms of bfabs, mcg, consumables and burnables in stock? Would I need to make a trip out to bring stuff first?
+
+
+[10-Jun-22 03:48 PM] namthorn#0000
+you'll only have 200 pioneers to work with upon base start, so dont need too many burnables
+
+
+[10-Jun-22 04:46 PM] bitcoin_ape#0000
+ive got enough bfabs and mcg
+
+
+[10-Jun-22 04:47 PM] bitcoin_ape#0000
+not sure about the current state of consumables and frm output. What are you guys doing with all of that H2O, anyways?
+
+
+[10-Jun-22 04:48 PM] churavis#0000
+Judging by the LM, you have DW and RAT but zero PWO and maybe OVE
+
+
+[10-Jun-22 06:29 PM] namthorn#0000
+i have 300 OVE in reserve
+
+
+[10-Jun-22 06:29 PM] namthorn#0000
+also planning on making some as soon as I can get some C to start the BMPs making PE
+
+
+[10-Jun-22 06:31 PM] namthorn#0000
+if you want some of that OVE stock, chuck up an ad at 60/u. was roughly the price i paid iirc
+
+
+[11-Jun-22 02:24 AM] allocater#0000
+I will try to supply all RAT/DW on the planet, so you don't have to build FPs. 240 surplus per day, which should be enough for 6 bases
+
+{Reactions}
+🥫 (2) 🚰 (2) 
+
+[11-Jun-22 10:09 AM] bitcoin_ape#0000
+@Demeter 1.2k H2O
+
+
+[11-Jun-22 10:09 AM] bitcoin_ape#0000
+15 AIC
+
+
+[11-Jun-22 10:11 AM] allocater#0000
+ads up, second one for the future
+
+
+[12-Jun-22 09:23 AM] churavis#0000
+My ship is on it's way and should arrive in 1 day and 12h.
+I'll have 40 PWO to sell, DLR has a contract for 10, how do you want to divvy up the rest? Straws? Knife fight?
+
+
+[12-Jun-22 09:24 AM] allocater#0000
+to each according to their need 😄
+
+
+[12-Jun-22 09:25 AM] churavis#0000
+That's boring, knife fight would be more entertaining
+
+
+[12-Jun-22 01:19 PM] insensless72#0000
+Highest d20 roll
+
+
+[12-Jun-22 04:27 PM] churavis#0000
+Anyone have a few burnables they could sell? I have a shipment coming in a day but one of my INC is idle
+
+
+[12-Jun-22 07:09 PM] churavis#0000
+Can anyone fill an emergency ad for 2 GRN?
+
+{Reactions}
+💱 (2) 
+
+[13-Jun-22 01:32 AM] allocater#0000
+did you fill one INC with a giant order and now the other is idle? 😄
+
+
+[13-Jun-22 04:27 AM] namthorn#0000
+I have 60 GRN i made just for burning, you can have it as a reward for building the INC i need xD
+
+{Reactions}
+👏 
+
+[13-Jun-22 08:07 AM] churavis#0000
+If you can supply me with GRN or any other burnables on a regular basis then I'll make more INC once we get the population. I can supply water as well
+
+
+[13-Jun-22 08:23 AM] yang_mills#0000
+@Demeter  I would like to buy 1000 RAT and 1000 DW for the COGC. Also buy partial amounts.
+
+
+[13-Jun-22 10:50 AM] allocater#0000
+I put some crops onto the LM but some random guy snapped them
+
+
+[13-Jun-22 10:51 AM] allocater#0000
+you can request 12 MAI though
+
+
+[13-Jun-22 10:52 AM] churavis#0000
+I'll put up some more long term buy ads
+
+
+[13-Jun-22 10:52 AM] churavis#0000
+What price do you want for GRN, HCP and MAI long term?
+
+
+[13-Jun-22 10:55 AM] allocater#0000
+always 100/u for simplicity
+
+{Reactions}
+👍 
+
+[13-Jun-22 10:59 AM] churavis#0000
+Put up some long term water ads and I'll fill them as I can
+
+
+[13-Jun-22 11:01 AM] allocater#0000
+I am starting with GRN and MAI, because we might not be able to keep that super burn recipe fed yet and I only produce minimal crop overflow
+
+
+[13-Jun-22 11:02 AM] churavis#0000
+I'm sure others will have burnables, I'll adjust the recipe as needed
+
+
+[14-Jun-22 12:44 PM] churavis#0000
+How much FF is in stock?
+
+
+[14-Jun-22 02:22 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/986350043500003338/unknown.png?ex=68151b8f&is=6813ca0f&hm=8487739e2113fca76e808c89e9d2ee129a19d44fae2ed116c357398925c68fab&
+
+
+[14-Jun-22 02:23 PM] bitcoin_ape#0000
+same price as YJ on the other gas stations
+
+
+[14-Jun-22 03:28 PM] churavis#0000
+Ad up, thanks!
+
+
+[14-Jun-22 03:37 PM] churavis#0000
+I still have 20 PWO in stock I can spare if anyone needs it
+
+
+[14-Jun-22 03:43 PM] allocater#0000
+I have 12 MAI
+
+
+[14-Jun-22 03:50 PM] jackinabox86#0000
+I'm interested in the PWO
+
+
+[14-Jun-22 03:50 PM] jackinabox86#0000
+what's your price and could it go to Deimos in your spare space?
+
+
+[14-Jun-22 03:51 PM] churavis#0000
+I have 50 in stock on Harmonia, not sure when I'll have a ship going from there to Deimos
+
+
+[14-Jun-22 03:54 PM] jackinabox86#0000
+oh, I thought it was on Ki-446b.  No worries
+
+
+[14-Jun-22 03:55 PM] churavis#0000
+I do have it on Ki-446b but I'm not going to ship it back, I just shipped it there and I'll have plenty to ship back
+
+
+[14-Jun-22 04:03 PM] bitcoin_ape#0000
+@jackinabox86 this planet is very remote and we are still in the process of bootstrapping everything out here
+
+
+[14-Jun-22 04:03 PM] bitcoin_ape#0000
+eventually we will ship bulk consumables back to civilization, but we need to scale up for a month or so
+
+
+[14-Jun-22 04:15 PM] jackinabox86#0000
+good to know.  thanks
+
+
+[14-Jun-22 11:40 PM] churavis#0000
+Last call for shipments back to Deimos from KI-446b, I have 160.1t free still
+
+
+[15-Jun-22 02:58 AM] allocater#0000
+temporarily switching back to RAT/DW pull system, because some rando is buying all up 😅
+
+
+[15-Jun-22 11:31 AM] churavis#0000
+The new pop report drops in 16h, don't forget to add your new construction today
+
+
+[15-Jun-22 12:07 PM] namthorn#0000
+Do you have any C to sell? really want to drop at least 1 BMP
+
+
+[15-Jun-22 12:11 PM] churavis#0000
+Sorry, I just exported it all, I didn't realize you needed some, but I'll have 16 in 15h. I'll also be adding another INC tonight
+
+
+[15-Jun-22 01:35 PM] jackinabox86#0000
+What drew you all to this planet?  The water and the normal pressure/temp/grav?
+
+
+[15-Jun-22 01:37 PM] allocater#0000
+yup, it's better than harmonia
+
+
+[15-Jun-22 01:40 PM] bitcoin_ape#0000
+Indeed, it is like harmonia with better stats. This is the best food production planet in our quadrant of the galaxy, and its location is such that it is practically inaccessible for anyone other than Antares locals
+
+
+[15-Jun-22 01:41 PM] bitcoin_ape#0000
+Most of our players are already on harmonia, and yet we still have shortages on crops and water. This is despite rapid growth, so we needed a way to get a bunch of extra food-type bases quickly
+
+
+[15-Jun-22 01:42 PM] churavis#0000
+Our timing couldn't have been better given the recent shortage of C and related agricultural products
+
+
+[15-Jun-22 01:50 PM] domicius#0000
+I'll be setting one up just as soon as work stops kicking my ass
+
+
+[15-Jun-22 01:50 PM] domicius#0000
+I can go to this planet
+
+
+[16-Jun-22 01:34 AM] allocater#0000
+water shutdowns on kioog!
+
+
+[16-Jun-22 01:34 AM] bitcoin_ape#0000
+not for long, i am still awake
+
+{Reactions}
+🥳 
+
+[16-Jun-22 01:34 AM] bitcoin_ape#0000
+lets see what we have here
+
+
+[16-Jun-22 01:37 AM] churavis#0000
+I've got 56 water, you can have it all
+
+
+[16-Jun-22 01:37 AM] bitcoin_ape#0000
+I can do 1000
+
+
+[16-Jun-22 01:38 AM] allocater#0000
+ads up
+
+
+[16-Jun-22 01:39 AM] bitcoin_ape#0000
+Dont forget to make your pioneer buildings
+
+
+[16-Jun-22 01:39 AM] bitcoin_ape#0000
+pop report in 2 hours
+
+
+[16-Jun-22 01:39 AM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/986882663686225930/unknown.png?ex=6815115a&is=6813bfda&hm=37914a49e327325dc337eb622ae56d23f2b11910500acd32c7473df13326831e&
+
+
+[16-Jun-22 01:40 AM] bitcoin_ape#0000
+oh i took both ads..sorry didnt mean to do so
+
+{Reactions}
+👍 
+
+[16-Jun-22 01:41 AM] allocater#0000
+crisis averted 🥳
+
+
+[16-Jun-22 01:41 AM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/986883229585915914/unknown.png?ex=681511e1&is=6813c061&hm=4e322af2117164800d6e4cbb5337469ee859c59d526db359f3d569d1c490a2d9&
+
+
+[16-Jun-22 01:41 AM] allocater#0000
+go bigger, I think we will get unemployed now
+
+
+[16-Jun-22 01:43 AM] bitcoin_ape#0000
++10 RIG
+
+
+[16-Jun-22 01:43 AM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/986883818977894400/unknown.png?ex=6815126d&is=6813c0ed&hm=2d33fad4fb43595732fff796fca266211984c0c01d029f2f42f6481da1b766e0&
+
+
+[16-Jun-22 01:44 AM] bitcoin_ape#0000
+442/500
+
+
+[16-Jun-22 01:44 AM] churavis#0000
+If we have unemployed I will build more RIGs
+
+
+[16-Jun-22 01:45 AM] allocater#0000
+but then you have to wait 1 week for them to fill with workers
+
+
+[16-Jun-22 01:45 AM] allocater#0000
+if you build now they will instant fill in 2h
+
+
+[16-Jun-22 01:47 AM] churavis#0000
+I don't have bfabs now
+
+
+[16-Jun-22 01:48 AM] allocater#0000
+dlr gives them out, if he is still awake
+
+
+[16-Jun-22 01:48 AM] allocater#0000
+just request on LM
+
+
+[16-Jun-22 01:49 AM] bitcoin_ape#0000
+yea 20 day delivery is fine
+
+
+[16-Jun-22 01:49 AM] allocater#0000
+also snap the 12 MAI before the local randos take it 😄
+
+
+[16-Jun-22 01:49 AM] bitcoin_ape#0000
+10 RIG + 3 HB1 = 126 BSE, 12 BBH, 6 BDE, 3 BTA
+
+
+[16-Jun-22 01:50 AM] bitcoin_ape#0000
+and some MCG..
+
+
+[16-Jun-22 03:35 AM] allocater#0000
+BAM, all jobs filled
+
+
+[16-Jun-22 03:36 AM] rune_242#0000
+in a week or so I'll join too
+
+{Reactions}
+🥳 (2) 
+
+[16-Jun-22 03:37 AM] namthorn#0000
+still 2k open jobs on the world
+
+
+[16-Jun-22 03:39 AM] allocater#0000
+that was last week, we just got 2137 PIO, so all got filled
+
+
+[16-Jun-22 03:39 AM] namthorn#0000
+nah, reserve pool is still empty
+
+{Reactions}
+🤔 
+
+[16-Jun-22 03:39 AM] namthorn#0000
+so we're still down workers i think
+
+
+[16-Jun-22 03:41 AM] allocater#0000
+79 educated, 2044 jobs filled, leaves 14 in the reserve pool, which is rounded down to 0? 😄
+
+
+[16-Jun-22 03:41 AM] namthorn#0000
+nah, we're definitely missing some still
+
+
+[16-Jun-22 03:42 AM] namthorn#0000
+more pioneer migration it is
+
+
+[16-Jun-22 03:44 AM] namthorn#0000
+nice parabolic curve starting to form though
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/986914269255856198/unknown.png?ex=68148609&is=68133489&hm=4dfd351f31b340caf32c6f5d10153af8c71a1a5e31e47204a84b0c6450de2009&
+
+{Reactions}
+🥳 (3) 
+
+[16-Jun-22 07:19 PM] bitcoin_ape#0000
+975 H2O per day after that report
+
+
+[16-Jun-22 07:42 PM] bitcoin_ape#0000
+My base is now effectively maxed, 33 RIG, 990 pioneer. 30 area which I will keep in case something specific is needed, like STO.
+
+
+[16-Jun-22 07:44 PM] bitcoin_ape#0000
+I am only 3/5 resource experts, no coffee, and 90 pioneers missing, so that 975 H2O will jump significantly.
+
+
+[16-Jun-22 07:45 PM] churavis#0000
+Are planning on exporting that or feeding local FRM's?
+
+
+[16-Jun-22 09:47 PM] bitcoin_ape#0000
+Local FRM and FP only
+
+
+[16-Jun-22 09:48 PM] bitcoin_ape#0000
+It is most efficient to export rations and drinking water, or carbon if the OOG-3000 is involved.
+
+
+[16-Jun-22 09:48 PM] bitcoin_ape#0000
+🐴
+
+
+[16-Jun-22 09:54 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/987188370058911744/unknown.png?ex=6814dc90&is=68138b10&hm=3ea2493331ed8ec9f731cf864ba8c214ac0ad2b1209468e254f27e9968dc1de4&
+
+
+[16-Jun-22 09:54 PM] insensless72#0000
+🐴 👂
+
+
+[16-Jun-22 09:57 PM] churavis#0000
+Should I build more INC or RIG?
+
+
+[16-Jun-22 09:59 PM] bitcoin_ape#0000
+personally I think RIGs are better because shipping carbon so far away is difficult
+
+
+[16-Jun-22 10:00 PM] bitcoin_ape#0000
+but some carbon and factory work is needed out here for practical purposes. I forget exactly where we got on that topic
+
+
+[16-Jun-22 10:01 PM] bitcoin_ape#0000
+With that said, getting 1000C on a 3000t ship is feasible, and I think we expect to build more of these ships
+
+
+[16-Jun-22 10:04 PM] churavis#0000
+One of my main motivations for moving out here was not having to buy more C from the CX like I was doing. between AL and PE and possibly PG production, I'm going to need a ton
+
+
+[16-Jun-22 10:16 PM] bitcoin_ape#0000
+Thats fine, but it will be difficult to move. There is no way around that
+
+
+[16-Jun-22 10:17 PM] bitcoin_ape#0000
+You can build whatever you want, it makes sense to do INC and RIG together, i dont mean to discourage you
+
+
+[16-Jun-22 10:20 PM] bitcoin_ape#0000
+of course you can use your own ships! 🚀🚀
+
+
+[16-Jun-22 10:22 PM] churavis#0000
+I'm sure I will be using my own ships. Between new corp members and corp ships helping with shipping amongst the starter planets, I haven't yet become shipping constrained.
+
+
+[17-Jun-22 03:01 PM] bitcoin_ape#0000
+@namthorn those building supplies and NS from my previous screenshot were brought here for the corp, maybe you can help me find homes for them?
+
+
+[17-Jun-22 03:01 PM] churavis#0000
+I'll need some building supplies before the next pop report
+
+
+[17-Jun-22 03:01 PM] bitcoin_ape#0000
+sure. There are enough to go around.
+
+
+[17-Jun-22 03:02 PM] churavis#0000
+I think I'll focus on INC since you seem to have RIG covered
+
+
+[17-Jun-22 03:02 PM] churavis#0000
+I'll do some planning and put up some ads at sc$
+
+
+[17-Jun-22 03:08 PM] bitcoin_ape#0000
+I dont really have it covered. Maybe its enough for the next 2-3 weeks
+
+
+[18-Jun-22 12:21 PM] allocater#0000
+I just realized, if we only convert GRN into C, we make it heavier for export 😄
+
+{Reactions}
+🧠 (2) 
+
+[18-Jun-22 04:45 PM] bitcoin_ape#0000
+So we should build a WCB?
+
+
+[18-Jun-22 04:46 PM] bitcoin_ape#0000
+but also much of the GRN can be made to RAT
+
+
+[18-Jun-22 05:08 PM] insensless72#0000
+WCB is High Cargo Bay
+
+
+[18-Jun-22 05:09 PM] bitcoin_ape#0000
+high weight, like the OOG-3000 yea?
+
+
+[18-Jun-22 05:09 PM] insensless72#0000
+Ahh for C
+
+
+[18-Jun-22 05:14 PM] churavis#0000
+I will be exporting lots of C if I can be provided with burnables
+
+
+[19-Jun-22 10:31 PM] bitcoin_ape#0000
+3000 H2O
+
+
+[19-Jun-22 10:31 PM] bitcoin_ape#0000
+🌊
+
+{Reactions}
+🪣 
+
+[20-Jun-22 09:32 AM] yang_mills#0000
+@Demeter I would like to buy 500 RAT for the COGC on Phobos.
+
+
+[20-Jun-22 11:56 AM] allocater#0000
+scraping the bottom of the barrel planets? 😄
+
+
+[20-Jun-22 11:57 AM] allocater#0000
+I have 1000 RAT
+
+
+[20-Jun-22 12:00 PM] bitcoin_ape#0000
+@Demeter does anyone have 2 LBH out here?
+
+
+[20-Jun-22 12:00 PM] bitcoin_ape#0000
+I plan to ship more on the next flight out here, but it would be very convenient if we had them already
+
+
+[20-Jun-22 12:01 PM] namthorn#0000
+i have 3
+
+{Reactions}
+💥 
+
+[20-Jun-22 12:02 PM] bitcoin_ape#0000
+can i buy them?
+
+
+[20-Jun-22 12:03 PM] namthorn#0000
+you can have them. im not doing anything with them right now.
+
+
+[20-Jun-22 12:14 PM] bitcoin_ape#0000
+thanks gov! posted
+
+
+[20-Jun-22 12:14 PM] bitcoin_ape#0000
+these will build the HYF on @thummper base
+
+{Reactions}
+👏 
+
+[20-Jun-22 12:15 PM] bitcoin_ape#0000
+but i blindly accepted the LBH buy before I had them
+
+
+[20-Jun-22 12:16 PM] bitcoin_ape#0000
+To anyone else who might be tuning in... I still have a base teleport out here that I have offered to multiple OOG players
+
+
+[20-Jun-22 12:16 PM] bitcoin_ape#0000
+food processors are cool
+
+
+[20-Jun-22 12:22 PM] churavis#0000
+My Pioneers are getting the jitters without their coffee
+
+
+[20-Jun-22 12:23 PM] thummper#0000
+Do we have the LSE also? 👀
+
+
+[20-Jun-22 12:24 PM] bitcoin_ape#0000
+BSE for HYF
+
+
+[20-Jun-22 12:24 PM] bitcoin_ape#0000
+i have 4 LSE reserved for a core module
+
+
+[20-Jun-22 12:30 PM] thummper#0000
+oh, do you have 2 tru 2 bse and 2 bta then still
+
+
+[20-Jun-22 12:30 PM] thummper#0000
+i was going to build a hbb
+
+
+[20-Jun-22 12:34 PM] bitcoin_ape#0000
+yea bfabs are easy, i have plenty
+
+
+[20-Jun-22 12:34 PM] thummper#0000
+also how much are you charging for NS?
+
+
+[20-Jun-22 12:36 PM] bitcoin_ape#0000
+175 AIC, but I only have 200 out here
+
+
+[20-Jun-22 12:36 PM] bitcoin_ape#0000
+all yours of course, but thats not a massive amount of coffee at the end of the day
+
+
+[20-Jun-22 12:37 PM] bitcoin_ape#0000
+400 COF
+
+{Reactions}
+☕ (2) 
+
+[20-Jun-22 01:16 PM] jackinabox86#0000
+Once I have the third ship, I’d be open to a base out here. I don’t have anything in the water/food/carbon chain yet, so I can be helpful however
+
+
+[20-Jun-22 01:22 PM] bitcoin_ape#0000
+FP i think is most needed right now
+
+{Reactions}
+👍 
+
+[20-Jun-22 04:33 PM] yang_mills#0000
+Exactly. I posted an ad for 500 RAT.
+
+{Reactions}
+💱 
+
+[21-Jun-22 12:05 PM] churavis#0000
+Should we keep doing Pioneers?
+
+{Reactions}
+🧑‍🌾 (2) 😄 
+
+[21-Jun-22 12:42 PM] namthorn#0000
+unless the consensus changes I think so. We've got resource extraction, farming and fp operations atm.
+
+{Reactions}
+👍 (2) 
+
+[21-Jun-22 12:43 PM] namthorn#0000
+keeps it as a sort of "hub" world in the sector, jack of all trades deal
+
+
+[21-Jun-22 01:26 PM] jackinabox86#0000
+anyone have PWO?  Also, I've got some FPs happy to process things if anyone has anything to offload
+
+
+[21-Jun-22 01:27 PM] bitcoin_ape#0000
+I have H2O to offload
+
+
+[21-Jun-22 01:27 PM] churavis#0000
+I can spare 6 currently
+
+
+[21-Jun-22 01:27 PM] bitcoin_ape#0000
+and PG to go with it. Although i think at this point H2O efficiency is not an issue
+
+
+[21-Jun-22 01:29 PM] jackinabox86#0000
+4 would give me 10 days, so I'll do an LM for that.  Price?
+
+
+[21-Jun-22 01:30 PM] churavis#0000
+SC$ is 125/u
+
+
+[22-Jun-22 04:30 AM] rune_242#0000
+can the warehouse be upgraded?
+
+
+[22-Jun-22 04:30 AM] rune_242#0000
+I'll supply the MCG
+
+
+[22-Jun-22 08:29 AM] churavis#0000
+Can anyone supply some RAT or DW quickly? Ad already up
+
+
+[22-Jun-22 10:17 AM] bitcoin_ape#0000
+@rune_242 it could be, but what do you need more than 500t for?
+
+
+[22-Jun-22 10:17 AM] bitcoin_ape#0000
+once you build a base, you get 1500t
+
+
+[22-Jun-22 10:19 AM] bitcoin_ape#0000
+On that note, I am starting to run low on MCG. 2k remaining
+
+
+[22-Jun-22 10:19 AM] namthorn#0000
+iirc we need 2 upgrades to increase storage too. I have 6500t storage if you need some extra room
+
+{Reactions}
+👍 
+
+[22-Jun-22 10:19 AM] bitcoin_ape#0000
+good point, it is 2 upgrades
+
+
+[22-Jun-22 10:21 AM] bitcoin_ape#0000
+selling 3000 H2O @15 AIC
+
+
+[22-Jun-22 10:32 AM] jackinabox86#0000
+I'll take 1000
+
+
+[22-Jun-22 10:42 AM] namthorn#0000
+@Demeter does anyone have plans to use higher worker tiers than pioneers? If so, please let me know your rough estimates on how many you want and I'll see about getting some more infrastructure built to support them.
+
+
+[22-Jun-22 10:43 AM] churavis#0000
+I'm planning on another run soon, I can bring more MCG
+
+
+[22-Jun-22 11:46 AM] rune_242#0000
+I have 6 BMP's making MCG
+
+
+[22-Jun-22 11:47 AM] rune_242#0000
+since it's so far I would like to stock up a bit before I have my permit
+
+
+[22-Jun-22 11:48 AM] rune_242#0000
+so extra storage would be nice
+
+
+[22-Jun-22 11:52 AM] churavis#0000
+Is anyone planning on building more FRM to take my H2O and give my INC burnables?
+
+
+[22-Jun-22 12:03 PM] archielvahr#0000
+I've been thinking that I'd like to do my second base on ki-446b. Probably go FRM heavy for someone else's INC, then a splash of FP . But I think I'm at least a week or two out before adding a second base.
+
+
+[22-Jun-22 12:05 PM] churavis#0000
+DLR still has a base teleport package and bfabs. He can probably work out the financing with him or the bank-of-oog. I've got some MCG and H2O I'd give you as well
+
+
+[22-Jun-22 12:07 PM] archielvahr#0000
+Sounds good to me. Sounds like there's plenty of demand on KI-446b for RAT, DW, and carbon producing plants?
+
+
+[22-Jun-22 12:08 PM] churavis#0000
+I'm adding more INC today and would love for someone to provide the burnables to do faster recipes
+
+{Reactions}
+👍 
+
+[22-Jun-22 12:14 PM] churavis#0000
+@bitcoin_ape What's the Bfab stock look like today?
+
+
+[22-Jun-22 01:06 PM] bitcoin_ape#0000
+base teleports are gone
+
+
+[22-Jun-22 01:06 PM] churavis#0000
+Oh, who used the last one?
+
+
+[22-Jun-22 01:06 PM] bitcoin_ape#0000
+Antler took the last one yesterday
+
+
+[22-Jun-22 01:08 PM] archielvahr#0000
+Okay no problem. No rush on my side to get out there
+
+
+[22-Jun-22 01:08 PM] bitcoin_ape#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/989230318802313246/unknown.png?ex=68150a07&is=6813b887&hm=8a6aaf820da402b4939e2e9e181244382de669359cb55cb5ba2edce0137b160a&
+
+
+[22-Jun-22 01:08 PM] bitcoin_ape#0000
+yes
+
+
+[22-Jun-22 01:09 PM] bitcoin_ape#0000
+FRM, FP, or both is a winner on this planet
+
+
+[22-Jun-22 01:09 PM] bitcoin_ape#0000
+INC by extension is quite good, but the shipping is more difficult
+
+
+[22-Jun-22 01:10 PM] archielvahr#0000
+Figured I'd go all in on agriculture experts, especially if someone else is supplying water and able to make the INCs
+
+{Reactions}
+👍 
+
+[22-Jun-22 01:10 PM] churavis#0000
+Stack those experts
+
+{Reactions}
+🧑‍🔬 (2) 
+
+[22-Jun-22 01:11 PM] archielvahr#0000
+You're gonna be drowning in Beans!
+
+
+[22-Jun-22 01:12 PM] bitcoin_ape#0000
+not if we all drown in h2o first 🌊
+
+
+[22-Jun-22 01:17 PM] churavis#0000
+I've got some Bfab ads up if you could fill them, that would be wonderful, I'm building more INC and RIG.
+
+
+[22-Jun-22 01:42 PM] jackinabox86#0000
+when is the pop report here?
+
+
+[22-Jun-22 01:58 PM] churavis#0000
+In 14 hours from now
+
+
+[22-Jun-22 03:02 PM] jackinabox86#0000
+to make sure I have population available (pioneers), do I have to have built both the habs and production facilities built or just the habs?
+
+
+[22-Jun-22 03:11 PM] allocater#0000
+both
+
+
+[22-Jun-22 04:10 PM] jackinabox86#0000
+I'm trying to hit this pop report, so if I can buy 1 bse, 15 bbh, 2 bde, 1 bta, and 400 mcg that would be great.  I'll put up the ads, but no sweat if that isn't possible
+
+
+[22-Jun-22 04:10 PM] jackinabox86#0000
+keeping these FP fed is rough
+
+
+[22-Jun-22 05:46 PM] bitcoin_ape#0000
+@churavis @jackinabox86 delivered building supplies
+
+{Reactions}
+👏 👍 
+
+[22-Jun-22 06:34 PM] jackinabox86#0000
+I’m going to send a virtually empty ship from Nike here tomorrow, so happy to help ship any restocking shipments here.
+
+
+[22-Jun-22 06:34 PM] jackinabox86#0000
+I can fit another frm and fp in now before the report, so I’ve posted a couple more ads. No worries if it needs to wait until I can buy and bring stuff from Nike
+
+
+[22-Jun-22 06:44 PM] churavis#0000
+I'm going Deimos to KI-446b in 6h and will have about 192t/200m^3 free
+
+
+[22-Jun-22 07:00 PM] bitcoin_ape#0000
+Ok the most urgent things to bring are nutrient solution and MHL
+
+
+[22-Jun-22 07:01 PM] bitcoin_ape#0000
+i know these are not exactly ready to go on deimos, but if possible it would be very nice to bring some out
+
+
+[22-Jun-22 07:01 PM] exeler#0000
+I've only got one base on Harmonia, but have started thinking about where I might build a second base. I've got some agriculture and extraction experts so was planning on making another base for FRM/INC. 
+
+Would this be a good planet for that?
+
+Also was toying with the idea of getting into the FP chain as well.
+
+
+[22-Jun-22 07:02 PM] bitcoin_ape#0000
+also @churavis @jackinabox86 , complete core module sets would be useful
+
+
+[22-Jun-22 07:02 PM] churavis#0000
+My base is all INC/RIG so if you want to go all FRM then I'll give you water and burn all your crops
+
+
+[22-Jun-22 07:02 PM] bitcoin_ape#0000
+i will pay of course, for the materials and the service of organizing + shipping
+
+
+[22-Jun-22 07:03 PM] bitcoin_ape#0000
+@exeler this planet is excellent for FRM + FP
+
+
+[22-Jun-22 07:04 PM] bitcoin_ape#0000
+or just FRM
+
+
+[22-Jun-22 07:05 PM] exeler#0000
+That sounds fantastic. My play style for this game has been "check in pretty infrequently" so having a place I can just dump a bunch of facilities with minimal babysitting required sounds super cool.
+
+
+[22-Jun-22 07:05 PM] bitcoin_ape#0000
+we made a point of getting the water supply established first, so its pretty much plug and play with FRM/FP
+
+
+[22-Jun-22 07:06 PM] exeler#0000
+I've not done a new base before, I'm guessing it's pretty expensive. What's a kit to start with maybe 2-4 FRM (and the huts to house the pioneers) go for?
+
+
+[22-Jun-22 07:08 PM] bitcoin_ape#0000
+HB1 = 7500 AIC
+
+
+[22-Jun-22 07:08 PM] bitcoin_ape#0000
+FRM = 7800 AIC
+
+
+[22-Jun-22 07:09 PM] bitcoin_ape#0000
+I was initially giving core modules for free out here, but i am fresh out and now am asking people to do my job for me 🤣
+
+
+[22-Jun-22 07:10 PM] bitcoin_ape#0000
+so you will need to build your own core module at this point. maybe this changes in a week or so if i can get my act together
+
+
+[22-Jun-22 07:11 PM] bitcoin_ape#0000
+for the building supplies and trades in general out here, i am accepting 20 day contracts and delivering my side up front
+
+
+[22-Jun-22 07:11 PM] bitcoin_ape#0000
+so you have plenty of time to spread the expense over
+
+
+[22-Jun-22 07:12 PM] exeler#0000
+I have ships mostly sitting around doing nothing all day, so if I can help pay my way by carting a ton of stuff out here I'm down.
+
+
+[22-Jun-22 07:16 PM] jackinabox86#0000
+Just let me know who to talk to to get the orders set up. I’m coming from Nike tomorrow morning. Can bring COF as well if anyone on @Nike has extra to sell to these far out reaches
+
+
+[22-Jun-22 07:50 PM] bitcoin_ape#0000
+Talk to me in a few minutes. I will direct message you to avoid spam
+
+
+[22-Jun-22 07:53 PM] bitcoin_ape#0000
+If you could somehow organize a big nutrient solution shipment, that would be huge. I havent looked too much into it
+
+
+[22-Jun-22 07:53 PM] bitcoin_ape#0000
+it might be unavailable, or crazy expensive
+
+
+[22-Jun-22 07:59 PM] exeler#0000
+How much inutrient solution constitutes a big nutrient solution shipment?
+
+I don't mind dedicating my ships to moving it if it's just in the wrong place. My base on Harmonia outputs only carbon from 2 INC and only need pioneer supplies as input, and I just learned I can buy most of those directly on Harmonia, so my two starter ships are effectively idle 90% of the time. 
+
+I'm super low on capital so if I gotta buy the nutrient solution myself, that'll be the bottleneck. I could see about finding a supplier to put up sell orders and then someone with money could buy it and then use shipping contracts I can fulfill to move it?
+
+
+[22-Jun-22 08:11 PM] jackinabox86#0000
+There’s been a lot of good shipping contracts up recently in ANT space, so if you aren’t grabbing those, they could be good around your own needs and this NS shipment. I’ve somehow managed to juggle all that and not starve my people
+
+
+[22-Jun-22 08:26 PM] bitcoin_ape#0000
+oh yea I realize I didnt say this, but I would be paying for all of the NS or construction fabs or whatever, and then paying you to ship it.
+
+
+[22-Jun-22 08:28 PM] churavis#0000
+Are you missing anything for another com module on Deimos?
+
+
+[22-Jun-22 08:29 PM] bitcoin_ape#0000
+com?
+
+
+[22-Jun-22 08:29 PM] churavis#0000
+core module*
+
+
+[22-Jun-22 08:30 PM] bitcoin_ape#0000
+oh, yea, I have nothing for core modules, except for MCG and those LFABs from my inventory screenshots. missing LSE and LTA
+
+
+[22-Jun-22 08:30 PM] bitcoin_ape#0000
+PSL is the worst part.
+
+
+[23-Jun-22 07:52 PM] jackinabox86#0000
+Tomorrow morning, even after I bring all of DLR's NS, I will have 210t of open space headed from ANT to KI-446b.  Please let me know if you want me to bring anything
+
+
+[24-Jun-22 04:34 AM] cazertanu#0000
+I have 16 MHL for sale on harmonia. Any of yal interested in buying?
+
+
+[24-Jun-22 09:05 AM] erklein#0000
+Yes please. What’s the price?
+
+
+[25-Jun-22 06:48 PM] bitcoin_ape#0000
+H2O for sale
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/990403153482620959/unknown.png?ex=6814b110&is=68135f90&hm=43398f246d4ac5ea5bd855ee63aa7fa233226dd6d3a7f4b6c91cb8e2cac72b0b&
+
+{Reactions}
+👍 
+
+[26-Jun-22 02:50 PM] thummper#0000
+~~20 ~~ 10 COF available
+
+
+[26-Jun-22 02:51 PM] churavis#0000
+I'll take 10
+
+{Reactions}
+☕ (2) 
+
+[26-Jun-22 03:14 PM] bitcoin_ape#0000
+@thummper 478 NS on this planet
+
+
+[26-Jun-22 03:15 PM] bitcoin_ape#0000
+You are the only HYF, so go ahead and structure these buys however it works for you.
+
+
+[26-Jun-22 03:22 PM] thummper#0000
+ad up
+
+{Reactions}
+🧪 
+
+[28-Jun-22 08:56 AM] rune_242#0000
+is there still a base teleport available?
+
+
+[28-Jun-22 08:59 AM] insensless72#0000
+No, I believe the last one went to Antler a day or so ago
+
+
+[28-Jun-22 02:54 PM] churavis#0000
+I have 90 PWO at 125 and 50 OVE at 50 available on planet if anyone needs it
+
+
+[28-Jun-22 04:43 PM] jackinabox86#0000
+I’ll take 10 of each if that works for my guys here
+
+
+[28-Jun-22 04:43 PM] churavis#0000
+I've already filled several ads for them so you can take more if you want
+
+
+[28-Jun-22 05:02 PM] churavis#0000
+Is there any more COF left?
+
+
+[28-Jun-22 05:09 PM] jackinabox86#0000
+I’ll do 15 more of each then. Posting the ads
+
+
+[28-Jun-22 05:12 PM] jackinabox86#0000
+Thanks much. Saved me a trip for a good bit!
+
+{Reactions}
+👍 
+
+[29-Jun-22 06:54 AM] thummper#0000
+60 COF currently
+
+
+[29-Jun-22 08:21 AM] churavis#0000
+Ad up for 30, thanks
+
+
+[29-Jun-22 09:20 AM] jackinabox86#0000
+short 80 mcg if anyone has, posted an LM ad
+
+{Reactions}
+🤝 ❤️ 
+
+[29-Jun-22 09:25 AM] jackinabox86#0000
+ha, what a dumb.  I forgot to build right before the pop report, so now I slowed down my old lines before my new lines can get moving.  not a big deal, but still a learning curve on these less populated planets
+
+
+[29-Jun-22 11:52 AM] bitcoin_ape#0000
+Next pop report you will be zooming!
+
+
+[29-Jun-22 11:55 AM] jackinabox86#0000
+it's later today thankfully
+
+{Reactions}
+😁 
+
+[29-Jun-22 02:08 PM] archielvahr#0000
+All of my ships have arrived at KI-446b, so when I get home from work tonight I should be able to set up my second base!
+
+{Reactions}
+🎉 (5) 🥳 (4) 🏠 (2) 
+
+[29-Jun-22 07:46 PM] bitcoin_ape#0000
+@Demeter 🌊
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/991867217375400026/unknown.png?ex=6814be94&is=68136d14&hm=c11ce2a4ec0e26b95623d0b23e1e3e252daca4a24aa501663d19c702c2ac2183&
+
+
+[29-Jun-22 07:47 PM] churavis#0000
+Can you fill all of those right away?
+
+
+[29-Jun-22 07:58 PM] jackinabox86#0000
+need 1 BTA and 40 mcg if anyone has avaialble. posting ads
+
+
+[29-Jun-22 07:58 PM] churavis#0000
+I've got the mcg
+
+
+[29-Jun-22 10:28 PM] bitcoin_ape#0000
+yes
+
+{Reactions}
+😯 
+
+[30-Jun-22 01:51 PM] bitcoin_ape#0000
+water delivered to everyone, more tomorrow and this coming weekend
+
+{Reactions}
+🎉 
+
+[01-Jul-22 12:21 AM] archielvahr#0000
+Ad up to buy 400 FTL Fuel `LMA KI-446b/424`
+
+
+[01-Jul-22 07:27 AM] jackinabox86#0000
+I don’t stock any out there. I can build up a bit of a supply in a few days, but it would more for serious needs than regular fueling
+
+
+[01-Jul-22 08:53 AM] archielvahr#0000
+Okay, no rush. We will see if anyone else has some handy there.
+
+
+[03-Jul-22 12:12 PM] churavis#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/993202706456002590/unknown.png?ex=6814fd1a&is=6813ab9a&hm=b61f5ba01bc31756236b03d88825d5a72df144eead59452fafcd2e6770e44d85&
+
+
+[03-Jul-22 12:14 PM] allocater#0000
+ads up
+
+
+[03-Jul-22 12:16 PM] churavis#0000
+This does not include what I need for my own base so buy it all:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/993203606603968512/unknown.png?ex=6814fdf0&is=6813ac70&hm=376b228ea7c053bc8bbc856a051cbde58378d45f305498553267b56956df0557&
+
+
+[03-Jul-22 12:19 PM] namthorn#0000
+I have 400 OVE so just put up buy ads whenever and when i check LM i'll fill
+
+
+[03-Jul-22 12:20 PM] namthorn#0000
+will also be producing PWO actively after next popr
+
+
+[04-Jul-22 01:40 PM] thummper#0000
+~~58 ~~ 38 COF available
+
+{Reactions}
+☕ (2) 💱 
+
+[04-Jul-22 02:09 PM] bitcoin_ape#0000
+4k H2O for sale
+
+
+[04-Jul-22 02:24 PM] bitcoin_ape#0000
+@Demeter 
+
+Moving forward, I would like to coordinate logistics to/from this planet on 10-14 day time frames, using our large ships.
+
+Earthling, @exeler and @dersix should ideally plan to use KI-446b as a logistics hub for their gas collection and fuel production operations in KI-sector and IY-sector bases.
+
+These operations lend themselves well to 2000t ships, so our prospective pilots for this route will be
+@allocater 
+@yang_mills 
+@jackinabox86 
+@yjhasaday (ship not built yet)
+
+{Reactions}
+👍 (2) 
+
+[04-Jul-22 02:24 PM] jackinabox86#0000
+it's a good idea
+
+
+[04-Jul-22 02:24 PM] jackinabox86#0000
+I get hosed out there all the time
+
+
+[04-Jul-22 02:25 PM] bitcoin_ape#0000
+The main flight route will be Antares 1 --> KI-446
+
+
+[04-Jul-22 02:25 PM] bitcoin_ape#0000
+Earthling and myself maintain an FF reserve already, so a ship with a small amount of slow fuel will not be stuck.
+
+
+[04-Jul-22 02:26 PM] churavis#0000
+Hephaestus, Phobos or CX?
+
+
+[04-Jul-22 02:28 PM] bitcoin_ape#0000
+it is flexible, whatever works best for the pilot and the people sending stuff out there
+
+
+[04-Jul-22 02:29 PM] bitcoin_ape#0000
+if somehow it makes sense to start from a different system, thats fine too, but I assume this is the most reasonable route
+
+
+[04-Jul-22 03:51 PM] archielvahr#0000
+@bitcoin_ape  Can you fill `LMA KI-446b/444` for 400 FF? I can up the price if needed. Got a ship stuck here atm
+
+{Reactions}
+👍 
+
+[04-Jul-22 03:51 PM] archielvahr#0000
+(or go for a smaller amount- 200 FF would get me home)
+
+
+[04-Jul-22 04:54 PM] bitcoin_ape#0000
+done
+
+{Reactions}
+🤝 
+
+[06-Jul-22 06:05 PM] exeler#0000
+Are there any PWO or COF available out here? I want to stock up for my new HE base. If they're needed here I can send my ship back to Antares to pick up a load. ki-446b is closer though, so if anyone is flying out here, I'd really appreciate a little extra PWO and COF.
+
+
+[06-Jul-22 06:10 PM] churavis#0000
+I don't have any PWO in stock on KI-446b but I have plenty on Hephaestus, Harmonia and Deimos. I'll bring a bunch out on my next run in a few days.
+
+
+[06-Jul-22 06:36 PM] exeler#0000
+That'd be awesome. I'm guessing the LM here will end up being where I get most of my consumables?
+
+
+[06-Jul-22 06:42 PM] churavis#0000
+Thats up to you. I can stock more OVE and PWO out here if you want and there's always RAT and DW available. I think someone started COF production but I don't know how much they make now
+
+
+[06-Jul-22 07:00 PM] thummper#0000
+80 cof available
+
+{Reactions}
+🥳 
+
+[06-Jul-22 07:07 PM] exeler#0000
+Awesome! How much you want per unit?
+
+
+[07-Jul-22 12:53 AM] allocater#0000
+Our planet is supporting local infrastructure now? 🤗
+
+
+[07-Jul-22 12:54 AM] allocater#0000
+I can spare 20 PWO
+
+
+[07-Jul-22 12:54 AM] churavis#0000
+I have more PWO and OVE coming on Jackinbox' ship
+
+
+[07-Jul-22 06:45 AM] thummper#0000
+350 / unit
+
+
+[07-Jul-22 08:24 AM] namthorn#0000
+local PWO production started
+
+{Reactions}
+🥳 
+
+[07-Jul-22 08:48 PM] churavis#0000
+I am out of space, can anyone sell be 6 BDE for an STO or at least take some H2O or MCG off my hands?
+
+
+[07-Jul-22 08:49 PM] bitcoin_ape#0000
+yea i can do either one. STO is highly recommended though. Normal price for BFABs
+
+
+[07-Jul-22 08:49 PM] churavis#0000
+The ad is already up
+
+{Reactions}
+👍 (2) 🏗️ (2) 
+
+[08-Jul-22 03:45 AM] namthorn#0000
+i have a couple of bfab orders up
+
+
+[09-Jul-22 11:27 AM] jackinabox86#0000
+@churavis can I buy some of those OVE when I deliver them tomorrow morning?
+
+
+[09-Jul-22 11:29 AM] churavis#0000
+Yes
+
+
+[09-Jul-22 11:29 AM] churavis#0000
+I've got 20 to spare now if you need it right away
+
+
+[09-Jul-22 11:48 AM] jackinabox86#0000
+would be great.  what's the price/u?
+
+
+[09-Jul-22 11:48 AM] churavis#0000
+50/u
+
+
+[09-Jul-22 11:49 AM] jackinabox86#0000
+done, tyvm
+
+
+[09-Jul-22 02:11 PM] archielvahr#0000
+@churavis Do you have a preference for the next burnable contract I fulfill here?
+
+
+[09-Jul-22 02:16 PM] churavis#0000
+2-1-1 HCP-MAI-GRN
+
+{Reactions}
+👍 
+
+[09-Jul-22 02:29 PM] thummper#0000
+90 COF available
+
+{Reactions}
+💱 
+
+[09-Jul-22 02:37 PM] allocater#0000
+I am still tweaking my queue but with more experts I will tilt more into excess crops. So far only GRN though, since it won't be enough to do tripleburn crops.
+
+{Reactions}
+🌾 
+
+[09-Jul-22 03:03 PM] exeler#0000
+I want to make a full FRM base out here eventually, probably after I get the HE base fully up to speed and get my base on Deimos up. 
+
+So at least a few weeks out.
+
+{Reactions}
+👍 
+
+[09-Jul-22 03:20 PM] bitcoin_ape#0000
+posted some water sell offers at 15 AIC each. mind the delivery dates on the 1000 H2O offers
+
+
+[09-Jul-22 03:20 PM] bitcoin_ape#0000
+That is stuff I do not have in inventory yet, but I will over the next week
+
+
+[09-Jul-22 03:22 PM] allocater#0000
+so much abundance on the LM 🤗
+
+
+[09-Jul-22 05:52 PM] namthorn#0000
+feel free to request PWO and OVE at cheaper prices btw, i just put up some sells to see if anyone of the other inhabitants would bite.
+
+
+[11-Jul-22 02:39 PM] allocater#0000
+took me way to long to find this channel again 😅
+
+
+[11-Jul-22 02:40 PM] churavis#0000
+Demeter does look a lot like Deimos at a glance
+
+
+[12-Jul-22 11:19 PM] churavis#0000
+Coffee ad up if anyone can fill it
+
+
+[13-Jul-22 10:34 AM] rune_242#0000
+does anybody needs something shipped back?
+
+
+[13-Jul-22 10:34 AM] rune_242#0000
+otherwise I'll fly empty
+
+
+[13-Jul-22 10:38 AM] allocater#0000
+depends how is everyone with RAT and DW, should we start exporting it
+
+
+[13-Jul-22 10:41 AM] rune_242#0000
+I can go nike, deimos, griffonstone or phobos
+
+
+[13-Jul-22 10:41 AM] rune_242#0000
+even harmonia
+
+
+[13-Jul-22 10:43 AM] allocater#0000
+your choice, RAT can go anywhere
+
+
+[13-Jul-22 10:44 AM] rune_242#0000
+I am leaving in 1d 5h
+
+
+[13-Jul-22 10:44 AM] allocater#0000
+to where?
+
+
+[13-Jul-22 10:45 AM] rune_242#0000
+idk yet
+
+
+[13-Jul-22 10:45 AM] rune_242#0000
+just so they now how much time they have
+
+
+[13-Jul-22 10:45 AM] allocater#0000
+buy my RAT then you can fly anywhere with it 😄
+
+
+[13-Jul-22 10:46 AM] allocater#0000
+be free!
+
+{Reactions}
+🦋 (2) 
+
+[13-Jul-22 11:07 AM] churavis#0000
+I could use some RAT and DW, I'll buy some. I can also fill any extra space with low priority goods so let me know how much space you have left tomorrow.
+
+
+[13-Jul-22 11:07 AM] rune_242#0000
+for now it's empty
+
+
+[13-Jul-22 11:08 AM] rune_242#0000
+and you are the first so you can have it all
+
+
+[13-Jul-22 11:29 AM] jackinabox86#0000
+I'd love a bit of that space from Demeter somewhere
+
+
+[13-Jul-22 11:32 AM] churavis#0000
+Let's just say Deimos since that's fairly central
+
+
+[13-Jul-22 11:54 AM] thummper#0000
+Wouldnt mind some space either but its low prio
+
+
+[13-Jul-22 12:06 PM] churavis#0000
+2 ads up for 155t to Deimos
+
+
+[13-Jul-22 12:09 PM] jackinabox86#0000
+3 ads up for 140.5t
+
+
+[13-Jul-22 12:21 PM] churavis#0000
+Didn't you want to buy C as well? I've got more than a standard load I can sell you.
+
+
+[14-Jul-22 10:32 AM] jackinabox86#0000
+Anyone have any OVE available?
+
+
+[14-Jul-22 10:36 AM] churavis#0000
+Yes
+
+
+[14-Jul-22 10:37 AM] churavis#0000
+180 available at 50/u
+
+
+[14-Jul-22 10:38 AM] jackinabox86#0000
+great.  I'll put up an ad for 80.
+
+
+[14-Jul-22 10:39 AM] jackinabox86#0000
+also, I have 46 mai and 1 hcp to sell if anyone wants them
+
+
+[14-Jul-22 10:39 AM] churavis#0000
+I'll take them
+
+{Reactions}
+💱 
+
+[14-Jul-22 10:45 AM] insensless72#0000
+@Demeter Testing
+
+{Reactions}
+✉️ (4) 
+
+[16-Jul-22 05:58 AM] yang_mills#0000
+@Demeter I brought to sell ~~280~~ 200 OVE @ 50 AIC/u, ~~90~~ 55 PWO @ 120 AIC/u, ~~20 EXO @ 120 AIC/u, 20 PT @ 250 AIC/u~~, and 2000 MCG @ 15 AIC/u.
+
+
+[16-Jul-22 07:14 AM] jackinabox86#0000
+I'll take 15 PWO and 20 OVE
+
+{Reactions}
+🤝 
+
+[16-Jul-22 04:25 PM] bitcoin_ape#0000
+@Demeter 6000 H2O available now
+
+
+[16-Jul-22 05:44 PM] yang_mills#0000
+Since people don't rush to buy my stuff, I posted some sell ads on the LM.
+
+
+[16-Jul-22 08:00 PM] bitcoin_ape#0000
+5/5 resource extraction experts today 😄
+
+{Reactions}
+🔬 💸 (2) ⛏️ 
+
+[17-Jul-22 03:13 AM] allocater#0000
+I will fulfill RAT @50 requests, but temporarily suspending sell posting, because our wealth and abundance attracts outsiders who snap up the cheap RAT! 🤣
+
+
+[18-Jul-22 06:01 AM] yang_mills#0000
+I still have 80 OVE to sell, and lots of MCG.
+
+
+[18-Jul-22 08:49 AM] churavis#0000
+FYI the C ads are for randos, I will sell to corp members for much cheaper
+
+
+[18-Jul-22 03:13 PM] allocater#0000
+do we want to attract more bases? Maybe offer teleport packages to the public? overtake harmonia? 😄
+
+
+[22-Jul-22 08:16 PM] churavis#0000
+Can anyone fill a RAT order? I can break it up for whatever's in stock
+
+
+[22-Jul-22 10:01 PM] archielvahr#0000
+Filled!
+
+{Reactions}
+👏 
+
+[23-Jul-22 02:00 PM] bitcoin_ape#0000
+selling 8000 H2O on the local market
+
+{Reactions}
+💱 
+
+[25-Jul-22 03:54 PM] jackinabox86#0000
+anyone have any RAT available?
+
+{Reactions}
+🐀 
+
+[25-Jul-22 08:37 PM] archielvahr#0000
+Filled your rat order
+
+{Reactions}
+👍 
+
+[26-Jul-22 11:07 AM] Deleted User#0000
+Demeter ~ Harmonia? Am I right?
+
+
+[26-Jul-22 11:16 AM] allocater#0000
+Demeter > Harmonia!
+
+
+[26-Jul-22 11:16 AM] allocater#0000
+(but more remote)
+
+{Reactions}
+👍 
+
+[26-Jul-22 01:19 PM] rune_242#0000
+is there NS for sale?
+
+
+[27-Jul-22 02:33 PM] rune_242#0000
+can somebody sell me 6 BDE?
+
+
+[27-Jul-22 03:28 PM] archielvahr#0000
+I have a ship on Harmonia going to Demeter soon, I could haul some if you get your BDE on Harmonia
+
+
+[27-Jul-22 03:28 PM] rune_242#0000
+it's already fixed!
+
+
+[27-Jul-22 03:28 PM] rune_242#0000
+thanks anyway
+
+{Reactions}
+👍 
+
+[28-Jul-22 08:18 AM] jackinabox86#0000
+Is DLR our only water producer here?
+
+
+[28-Jul-22 08:18 AM] churavis#0000
+No, I have water
+
+
+[28-Jul-22 08:19 AM] jackinabox86#0000
+I'm dry as can be and he isn't fulfilling his LM orders
+
+
+[28-Jul-22 08:19 AM] jackinabox86#0000
+can I buy a bit off of you?
+
+
+[28-Jul-22 08:19 AM] churavis#0000
+I've got lots
+
+
+[28-Jul-22 08:19 AM] churavis#0000
+I have sell ads up or you can put up your own
+
+
+[28-Jul-22 08:19 AM] churavis#0000
+Up to 4.2k
+
+
+[28-Jul-22 08:20 AM] jackinabox86#0000
+I popped up an ad.  Thanks much
+
+
+[28-Jul-22 08:20 AM] churavis#0000
+Thank you, I've had trouble getting rid of it
+
+
+[28-Jul-22 09:55 AM] allocater#0000
+your sells are too small 😄
+
+
+[28-Jul-22 09:55 AM] allocater#0000
+I only click 1000+ 😄
+
+
+[28-Jul-22 10:08 AM] churavis#0000
+Is that my problem? I'll include bigger sells then
+
+
+[28-Jul-22 06:44 PM] churavis#0000
+COF buy ads up if anyone can help
+
+{Reactions}
+🧀 
+
+[30-Jul-22 03:46 AM] allocater#0000
+looks like we are ready to switch to Agriculture 👨‍🌾🌾
+
+{Reactions}
+🧑‍🌾 
+
+[30-Jul-22 07:17 AM] namthorn#0000
+boooo
+
+
+[31-Jul-22 10:49 AM] allocater#0000
+You win this round!
+
+
+[02-Aug-22 09:36 AM] allocater#0000
+2000 RAT available
+
+{Reactions}
+🐀 (2) 
+
+[02-Aug-22 09:37 AM] churavis#0000
+ad up for 500
+
+{Reactions}
+💱 
+
+[02-Aug-22 11:42 AM] jackinabox86#0000
+I’ll take 500 as well
+
+
+[03-Aug-22 08:49 AM] churavis#0000
+What does the BFAB stock look like on Demeter?
+
+
+[03-Aug-22 08:52 AM] jackinabox86#0000
+I have 209 spare mcg I won’t use, but no bfabs
+
+
+[03-Aug-22 09:22 AM] allocater#0000
+all on @bitcoin_ape I think
+
+
+[03-Aug-22 10:52 AM] yang_mills#0000
+@Demeter Tayra will depart to Demeter tomorrow. Does anyone need MCG or Bfabs? I could bring some.
+
+
+[03-Aug-22 10:53 AM] churavis#0000
+As it so happens, I do need bfabs to expand water production, what's your stock?
+
+
+[03-Aug-22 10:53 AM] yang_mills#0000
+46 BBH, 30 BDE, 91 BSE, 16 BTA, 1200 MCG. @churavis
+
+
+[03-Aug-22 10:54 AM] yang_mills#0000
+It's on Phobos.
+
+
+[03-Aug-22 11:05 AM] churavis#0000
+I will put up an ad for 8 BBH, 4 BDE, 68 BSE and 2 BTA on Demeter to save the trouble of making more shipping contracts
+
+
+[03-Aug-22 11:09 AM] churavis#0000
+Ads are up on Demeter
+
+{Reactions}
+👍 (2) 
+
+[03-Aug-22 12:21 PM] rune_242#0000
+Is there somebody with KOM?
+
+
+[03-Aug-22 12:21 PM] rune_242#0000
+I only need a little bit
+
+
+[04-Aug-22 01:11 PM] yang_mills#0000
+@Demeter I will bring 100 OVE (50 AIC/u), 30 PWO (120 AIC/u) and 1K PG (16 AIC/u).
+
+
+[04-Aug-22 01:26 PM] jackinabox86#0000
+I’ll take 250 Pg
+
+{Reactions}
+👍 
+
+[05-Aug-22 08:36 AM] Deleted User#0000
+Are there any jobs open here? I will settle Harmonia or Demeter, will go with whichever is less boring 😄
+
+
+[05-Aug-22 08:36 AM] Deleted User#0000
+If not then I’ll probably just run DW/RAT
+
+
+[05-Aug-22 10:38 AM] allocater#0000
+both can have boring farm bases 😄
+
+{Reactions}
+🥱 
+
+[05-Aug-22 04:43 PM] namthorn#0000
+rigs and farms, there's also enough infrastructure to support a bunch of settlers for w/e
+
+
+[06-Aug-22 03:10 AM] thummper#0000
+~~450 ~~ ~~350 ~~ 250 COF in stock on Demeter if anybody needs some
+
+{Reactions}
+👍 
+
+[06-Aug-22 06:14 AM] yang_mills#0000
+Posted an ad for 100 COF on Demeter LM.
+
+
+[06-Aug-22 06:14 AM] yang_mills#0000
+I have 750 PG on Demeter, 16 AIC/u.
+
+
+[06-Aug-22 06:17 AM] allocater#0000
+what are we using PG for? watersaving? If DLR doesn't come back I might have to switch to watersaving mode 😄
+
+
+[06-Aug-22 06:18 AM] yang_mills#0000
+Yes, watersaving.
+
+
+[06-Aug-22 08:29 AM] churavis#0000
+I built 12 more RIG but unfortunately have not been given enough workers so I'm stuck at 90% efficiency until the next PoPR
+
+
+[06-Aug-22 08:32 AM] allocater#0000
+ad up for 200
+
+
+[06-Aug-22 08:32 AM] allocater#0000
+also if we still have MCG
+
+
+[06-Aug-22 08:33 AM] allocater#0000
+the 2 new farm bases need 3000
+
+
+[06-Aug-22 08:33 AM] churavis#0000
+I have 301 MCG
+
+
+[06-Aug-22 08:37 AM] jackinabox86#0000
+I have 209
+
+
+[06-Aug-22 08:39 AM] allocater#0000
+ad up
+
+
+[06-Aug-22 11:05 AM] domicius#0000
+I have 6k MCG on Phobos
+
+
+[06-Aug-22 11:45 AM] namthorn#0000
+if we've got a water problem, perhaps spamming more farms isnt the best of ideas
+
+
+[06-Aug-22 11:46 AM] namthorn#0000
+maybe incorporate some RIGs in there?
+
+
+[06-Aug-22 11:48 AM] namthorn#0000
+also I'll run a festivities III to increase migration in next popr. That should hopefully top up the reserve pool.
+
+
+[06-Aug-22 12:16 PM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1005524734248751195/unknown.png?ex=6814fde2&is=6813ac62&hm=c4d6b754c725a28efd463a5a1753c7abc340fd776faab5d26a65c558a035fd8d&
+
+
+[06-Aug-22 12:16 PM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1005524794176970862/unknown.png?ex=6814fdf0&is=6813ac70&hm=df70a84211e81a7231d9af9f8f40afb45b09f42be197e6f4333714a9c589639d&
+
+
+[06-Aug-22 12:17 PM] archielvahr#0000
+ooh that's nice
+
+
+[07-Aug-22 08:58 AM] churavis#0000
+799 H2O available, who needs it the most?
+
+
+[07-Aug-22 11:22 AM] archielvahr#0000
+I have an okay stockpile, but I'd certainly take it if someone else doesn't need it more. We can give people a day or so
+
+
+[07-Aug-22 12:03 PM] jackinabox86#0000
+Both allocator and I are low. I’ll take 399
+
+
+[07-Aug-22 12:04 PM] churavis#0000
+Send me the contract
+
+
+[07-Aug-22 12:05 PM] jackinabox86#0000
+Posted LM. That ok?
+
+{Reactions}
+🤝 
+
+[07-Aug-22 12:05 PM] namthorn#0000
+i have a bunch of water i can spare too
+
+
+[07-Aug-22 12:05 PM] namthorn#0000
+lemme check
+
+
+[07-Aug-22 12:05 PM] namthorn#0000
+yea 1k easily
+
+
+[08-Aug-22 06:12 PM] churavis#0000
+Zombie DLR has ~~6.8k ~~ 4.8k H2O, send him all your requests
+
+
+[08-Aug-22 06:17 PM] jackinabox86#0000
+Sent for 2k
+
+
+[09-Aug-22 08:37 AM] churavis#0000
+Both me and Zombie DLR need DW and can give H2O, ads are up
+
+
+[09-Aug-22 09:09 AM] jackinabox86#0000
+I took your ad and can fill this afternoon
+
+
+[09-Aug-22 09:09 AM] jackinabox86#0000
+just shipped a ton off-planet
+
+
+[09-Aug-22 09:09 AM] churavis#0000
+DLR's need is more dire, can you take his ad and fill it first?
+
+
+[09-Aug-22 09:09 AM] jackinabox86#0000
+done and fulfilled
+
+
+[09-Aug-22 09:09 AM] jackinabox86#0000
+will have yours tomorrow AM
+
+
+[09-Aug-22 09:10 AM] churavis#0000
+That's perfect
+
+
+[09-Aug-22 10:39 AM] allocater#0000
+I have a base teleport ready with 12 FRM 3 RIG 1 STO. Who wants it for 300k (loan)? Churavis will buy all your crops.
+
+{Reactions}
+👍 🧑‍🌾 🪵 (2) 🔥 (2) ✏️ 
+
+[09-Aug-22 10:41 AM] churavis#0000
+DLR has more bfabs, TRU, MCG and water on planet as well
+
+
+[09-Aug-22 10:43 AM] allocater#0000
+I take it all, if you give the numbers
+
+
+[09-Aug-22 10:44 AM] churavis#0000
+I don't have them in front of me right now, I'll send you sell contracts tonight
+
+{Reactions}
+👍 
+
+[09-Aug-22 04:45 PM] exeler#0000
+I'm interested, I haven't paid off the first loan you gave me yet though :'(
+
+I also need to get another lvl on my HQ for the permit 😅
+
+
+[09-Aug-22 05:37 PM] churavis#0000
+What do you need for your next level?
+
+
+[09-Aug-22 09:22 PM] exeler#0000
+I can probably afford it myself easy, just gotta actually click the buttons to buy the things 😅
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1006749305178181712/unknown.png?ex=6814d51a&is=6813839a&hm=6de0b26e9428e28b0c546d8fcda3e4d0247cdb592c251d13b4668061fb2a4e08&
+
+
+[09-Aug-22 10:55 PM] churavis#0000
+I've got the OFF and MCG on Deimos
+
+{Reactions}
+👀 💱 
+
+[09-Aug-22 10:56 PM] Deleted User#0000
+Got your BSE on Nike If you want it there
+
+{Reactions}
+👀 
+
+[10-Aug-22 11:28 AM] allocater#0000
+Second farm base teleport is ready: 12 FRM + 3 RIG + 1 STO
+
+
+[10-Aug-22 10:01 PM] Deleted User#0000
+Assuming you want it because of the 👀?
+
+
+[10-Aug-22 10:30 PM] exeler#0000
+What eyes?
+
+
+[10-Aug-22 10:30 PM] Deleted User#0000
+The reaction
+
+
+[10-Aug-22 10:30 PM] Deleted User#0000
+To this message
+
+
+[10-Aug-22 10:31 PM] exeler#0000
+Oh, I meant that as I saw the offer. Let me see if anyone bit on the offer I put up on Harmonia since thats where my HQ is. If I still need the BSE I might get it on Nike. Just I don't really do any business there so shipping it would take me out of my way for a component I can typically get somewhere on my normal routes
+
+
+[10-Aug-22 11:13 PM] Deleted User#0000
+Makes sense, I set my HQ to Nike since thats where the prefabs usually are made or bought and prefabs make up the majority of the HQ upgrades
+
+
+[11-Aug-22 03:39 AM] namthorn#0000
+extra pioneers now available, get them while they're hot!
+
+
+[11-Aug-22 06:54 AM] dersix#0000
+is there by chance 630 MCG on planet available ? 🙂
+
+
+[11-Aug-22 06:57 AM] rune_242#0000
+Yes
+
+
+[11-Aug-22 10:23 AM] allocater#0000
+OOG needs 🌱 MASSIVE amounts of crops on demeter and for the future 🔥 INC planet. Will you take the ☎️ CALL and do the 👨‍🌾 HARD WORK of producing crops? Your first 3000 crops will be payed 💰 IN ADVANCE with a 🏗️ FULL BASE to produce these crops and 100 per crop after that. 
+
+no ships required, all transactions via local market, free permit required, available instantly, new players preferred, income ~10k per day
+
+{Reactions}
+🔥 (3) 
+
+[11-Aug-22 10:39 AM] churavis#0000
+ZDLR will provide all the water you need
+
+
+[11-Aug-22 10:42 AM] allocater#0000
+I also planned for 3 RIG per base
+
+
+[11-Aug-22 10:42 AM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1007313130088583228/unknown.png?ex=6814e7f5&is=68139675&hm=eabf650eaf0467daa816c2570dff4dbfaa8a31064eaacd7d29ec13f9cbbc8993&
+
+
+[11-Aug-22 10:43 AM] churavis#0000
+Is that enough to feed all those farms?
+
+
+[11-Aug-22 10:44 AM] dersix#0000
+I'll add 15 RIGs later today, in order to make more water available on the planet
+
+{Reactions}
+🥳 
+
+[11-Aug-22 10:45 AM] churavis#0000
+I don't know that that's necessary, ZDLR has 10k in stock and plenty of RIGS making more
+
+
+[11-Aug-22 10:46 AM] dersix#0000
+well, the question is, how long can ZDLR be an option for "semi"-active playing
+
+
+[11-Aug-22 10:47 AM] dersix#0000
+as it's against TOS
+
+
+[11-Aug-22 10:47 AM] churavis#0000
+Theoretically, forever
+
+
+[11-Aug-22 10:47 AM] churavis#0000
+As long as no one notices
+
+
+[11-Aug-22 11:14 AM] allocater#0000
+I would say phaseout when premium runs out
+
+
+[11-Aug-22 11:16 AM] churavis#0000
+I had been planning on having ZDLR make an H and PE base as well
+
+
+[11-Aug-22 11:23 AM] allocater#0000
+zombies can't build stuff! 😄
+
+
+[11-Aug-22 11:23 AM] Deleted User#0000
+They can force humans to build stuff
+
+
+[11-Aug-22 11:24 AM] churavis#0000
+Zombies can do what their master tells them
+
+
+[11-Aug-22 11:27 AM] dersix#0000
+I would prefer to let active players jump in, for new stuff and also to replace ZDLR. As intermediate solution to not completely stop some industries it's acceptable but nothing on a long term, at least from my perspective
+
+
+[11-Aug-22 12:23 PM] jackinabox86#0000
+I'd be mildly worried about losing both zDLR and aChuravis, but I agree you've got some time before they catch on.  I'll certainly take water until then
+
+
+[11-Aug-22 12:25 PM] churavis#0000
+If you need a small amount right away, send the contract to me, otherwise send it to ZDLR
+
+
+[11-Aug-22 12:55 PM] jackinabox86#0000
+I'm good at the moment; just making my point about appreciating access to his stocks at this time
+
+{Reactions}
+👍 
+
+[11-Aug-22 03:07 PM] jackinabox86#0000
+anyone have RATs or OVE?
+
+
+[11-Aug-22 03:39 PM] allocater#0000
+RAT for 50, yes
+
+
+[11-Aug-22 03:47 PM] jackinabox86#0000
+Can I get up to 400?  I'd buy even more, but I think we're actually getting constrained out here and this is for all local consumption
+
+
+[11-Aug-22 03:49 PM] archielvahr#0000
+I have up to 300 Rat @ 50 on Demeter
+
+{Reactions}
+🤝 💰 
+
+[12-Aug-22 08:52 PM] churavis#0000
+Should ZDLR put up water sell ads every so often or wait until Ooga Boogers send him contracts?
+
+
+[12-Aug-22 10:15 PM] jackinabox86#0000
+I’d say wait, but if you have a lot or that gets annoying, then post. I just think demand will be high and I don’t play this game to help out Melon!
+
+{Reactions}
+😆 
+
+[12-Aug-22 10:15 PM] archielvahr#0000
+Post in discord when he has a lot of water, and then we us boogers can send contracts.
+
+
+[12-Aug-22 10:18 PM] churavis#0000
+Is 8k a lot of water?
+
+
+[12-Aug-22 10:45 PM] archielvahr#0000
+My max farm base on Demeter uses  ~450 water a week. So that's pretty good. If someone ads HYF, which they should do on a non-fertile planet anyway, that can go way higher. My Harmonia with 4 HYFs uses 3500 h20 per week
+
+
+[12-Aug-22 10:46 PM] churavis#0000
+Very seldom do you find a non-fertile planet with a large quantity of water
+
+
+[13-Aug-22 02:18 AM] allocater#0000
+and those are ice planets anyway
+
+
+[13-Aug-22 03:40 AM] allocater#0000
+2 OVE ads up. 50 for the local OVE, 100 for the imported OVE 🤪
+
+
+[13-Aug-22 03:42 AM] namthorn#0000
+if you need more than 100 I've got 1.5k in stock
+
+
+[13-Aug-22 03:45 AM] allocater#0000
+good to know, usage is 28 per week, so should be good for while
+
+
+[13-Aug-22 03:46 AM] allocater#0000
+finally a planet where supplies are abundant
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1007933185553866802/unknown.png?ex=6814866d&is=681334ed&hm=539869d692a2b14933a7b93a01fec963a20e78fb702d5324d097f53b74bb6456&
+
+
+[13-Aug-22 04:50 AM] yuen8241#0000
+Hello everyone, I just built a base in demeter (I owe another 300K). I am producing HCP, GRN and MAI. Please contact me if you need anything.
+
+{Reactions}
+👋 (2) 🎉 (2) 
+
+[13-Aug-22 06:24 AM] jackinabox86#0000
+I need 100 as well, will post
+
+
+[13-Aug-22 06:25 AM] jackinabox86#0000
+Nvm. Just picked up one of your sells
+
+
+[13-Aug-22 02:21 PM] exeler#0000
+I also now have a shiny new base here with 12 FRM making HCP, MAI and GRN. I only got 498 of the 690 pioneers I needed though, so it's going a little slow at the start 😅
+
+{Reactions}
+🧑‍🌾 👋 
+
+[13-Aug-22 02:26 PM] allocater#0000
+Now we will be cooking carbon! 🔥
+
+
+[13-Aug-22 02:32 PM] jackinabox86#0000
+Us old timers had to wait weeks to get 500 pop!
+
+{Reactions}
+🙈 
+
+[13-Aug-22 02:32 PM] exeler#0000
+https://tenor.com/view/carbon-crbn-gif-20433527
+
+{Embed}
+https://tenor.com/view/carbon-crbn-gif-20433527
+https://images-ext-1.discordapp.net/external/axd-S1hc3hSSvS9UPG6p4Sst4lGkN5ucWeC0D9RaoV0/https/media.tenor.com/diettdYYudIAAAAD/carbon-crbn.png
+
+{Reactions}
+🤣 (2) 
+
+[14-Aug-22 11:53 AM] yang_mills#0000
+Posted sell ads for PWO and PG.
+
+
+[16-Aug-22 08:57 AM] yang_mills#0000
+Posted more sell ads for PG.
+
+
+[16-Aug-22 11:30 PM] archielvahr#0000
+Selling ~~235 GRN~~ and ~~242 HCP~~ @ 100 each. Then switching back to RAT products.
+
+{Reactions}
+💱 
+
+[17-Aug-22 10:36 AM] yjhasaday#0000
+Hi all, I've officially landed on Demeter and joined you guys! I was wondering if anyone had a small amount of C crops to get my INC's started while my farms catchup? I posted ads on the LM
+
+{Reactions}
+👋 
+
+[17-Aug-22 10:38 AM] yjhasaday#0000
+Also I brought OVE and PWO because I thought people might want some, here's whats available:
+
+200 OVE @ 55/u
+180 PWO @ 125/u
+
+
+[17-Aug-22 12:34 PM] archielvahr#0000
+Sending you a bit of leftover GRN and HCP
+
+
+[17-Aug-22 06:20 PM] yang_mills#0000
+Welcome to Demeter. Filled your ads.
+
+
+[17-Aug-22 08:20 PM] yuen8241#0000
+I cleared my inventory for you.
+
+
+[18-Aug-22 03:39 AM] yuen8241#0000
+The population plan has been completed, and we are fully employed.
+
+{Reactions}
+🤣 
+
+[18-Aug-22 03:40 AM] yuen8241#0000
+We can choose to carry out agricultural projects！
+
+
+[18-Aug-22 03:47 AM] yuen8241#0000
+But why does CoGC program only offer a 10% bonus, usually not 25%？
+
+
+[18-Aug-22 06:03 AM] rune_242#0000
+because it give's a boost to all pioneer buildings instead of just je agricultural buildings
+
+{Reactions}
+👍 
+
+[18-Aug-22 09:07 AM] yuen8241#0000
+It turns out that I have no chance to build a base in promitor. No wonder we have to develop a planet as far away as Demeter.
+
+
+[18-Aug-22 10:47 AM] jackinabox86#0000
+Posted for 200 RAT on the LM if anyone has available
+
+{Reactions}
+💱 
+
+[19-Aug-22 03:43 PM] namthorn#0000
+anyone got some spare C here? looking for about 100 but will buy any amount
+
+
+[19-Aug-22 03:48 PM] churavis#0000
+Yes, I have that, send me the contract
+
+
+[19-Aug-22 04:06 PM] namthorn#0000
+ta
+
+
+[20-Aug-22 07:42 AM] churavis#0000
+Can anyone help me out with a RAT and DW order?
+
+{Reactions}
+🥫 (2) 🧃 (2) 
+
+[21-Aug-22 08:14 PM] exeler#0000
+Buy ads up for consumables, sell ads for HCP/MAI/GRN @ 100/u
+
+{Reactions}
+🥫 🧃 
+
+[22-Aug-22 10:57 PM] churavis#0000
+zDLR has ~~12.8k~~ 5.8k H2O, please buy it
+
+{Reactions}
+💱 (2) 
+
+[22-Aug-22 11:29 PM] archielvahr#0000
+I'll take 3k: LMA KI-446b/1032
+
+{Reactions}
+🤝 
+
+[22-Aug-22 11:30 PM] archielvahr#0000
+if we get a big enough ship out here, I'd take 10k on Harmonia
+
+
+[23-Aug-22 09:39 AM] jackinabox86#0000
+Sent a contract
+
+
+[23-Aug-22 07:27 PM] yuen8241#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1011793857895219320/unknown.png?ex=6814ba35&is=681368b5&hm=e5e8b71aa9a0b7825aa72819a0b4b1c20159717bd29ca1ac4070095c28fa4935&
+
+
+[23-Aug-22 07:27 PM] yuen8241#0000
+@churavis
+
+
+[23-Aug-22 07:27 PM] yuen8241#0000
+I think you typed an extra 0.
+
+
+[23-Aug-22 07:28 PM] yuen8241#0000
+I received an extra 86400 aic yesterday. So yesterday I took your other two wrong contracts to avoid your losses.
+
+
+[23-Aug-22 07:29 PM] churavis#0000
+Huh, that explains where all my money went
+
+{Reactions}
+😅 (2) 
+
+[23-Aug-22 07:34 PM] yuen8241#0000
+Send a contract of 1dw for 86400.
+
+
+[23-Aug-22 07:34 PM] yuen8241#0000
+I'll pay you back my extra money.
+
+
+[23-Aug-22 07:36 PM] churavis#0000
+It looks like there's two contracts where I paid extra money, GSDGGN1 and TOTYFH7
+
+
+[23-Aug-22 07:36 PM] yuen8241#0000
+I take a look at the financial report every day before going to bed. I was surprised to find that it was nearly 100k more out of thin air yesterday.
+
+
+[23-Aug-22 07:37 PM] yuen8241#0000
+Wow, so you paid nearly 200k more.
+
+
+[23-Aug-22 07:39 PM] churavis#0000
+I hope you haven't spent it all yet
+
+
+[23-Aug-22 07:40 PM] yuen8241#0000
+I have enough cash to repay you 172800. But you should note that there are not only our people in demeter, but also those from other Corp.🤣
+
+
+[23-Aug-22 07:41 PM] churavis#0000
+Yeah, I'm checking my other contracts but I don't think anyone else picked up any
+
+
+[23-Aug-22 07:41 PM] churavis#0000
+If you need to pay it back with a longer contract that's fine
+
+
+[23-Aug-22 07:42 PM] yuen8241#0000
+It's okay. I have a good cash flow now. You can advertise directly.
+
+
+[23-Aug-22 07:43 PM] yuen8241#0000
+After all, your money is a windfall.😆
+
+
+[23-Aug-22 07:43 PM] churavis#0000
+Windfall? more like a gailstorm in this case
+
+
+[23-Aug-22 07:44 PM] yuen8241#0000
+So I didn't take it into account when I arranged my income and expenditure. I was surprised at how quickly everything I sold was sold out.
+
+
+[23-Aug-22 07:54 PM] yuen8241#0000
+If possible, please send me the contract now. After a long time, I may actually spend it.🤣 @churavis
+
+
+[23-Aug-22 07:59 PM] churavis#0000
+Have some C as a reward for your honesty
+
+{Reactions}
+💱 
+
+[24-Aug-22 07:09 AM] yuen8241#0000
+I sold my ove to fecu by mistake. I need it urgently, otherwise it will be gone immediately.
+
+
+[24-Aug-22 07:09 AM] yuen8241#0000
+@Demeter
+
+
+[24-Aug-22 09:07 AM] namthorn#0000
+i have a few thousand, send me a contract
+
+{Reactions}
+👍 
+
+[24-Aug-22 05:17 PM] yjhasaday#0000
+Posted a bunch of RAT ads if anyone has some available
+
+
+[27-Aug-22 11:18 AM] jackinabox86#0000
+Posted for 200 rats for local consumption if anyone has any
+
+{Reactions}
+🥫 
+
+[27-Aug-22 12:22 PM] allocater#0000
+any excess crops yet? there are ads on the LM
+
+
+[27-Aug-22 06:39 PM] rune_242#0000
+water buy ad up
+
+{Reactions}
+🤝 
+
+[28-Aug-22 10:23 PM] churavis#0000
+ZDLR has brought 184 NS and 1065 PG to Demeter for the corp
+
+
+[29-Aug-22 07:56 PM] exeler#0000
+I threw a few sell ads up for crops @100/u. 
+
+I won't be able to fill them immediately, but will have the crops in 24 hrs.
+
+
+[30-Aug-22 12:08 PM] allocater#0000
+the agriculture revolution has failed! 😄
+
+
+[30-Aug-22 12:10 PM] churavis#0000
+People need to vote
+
+
+[30-Aug-22 12:10 PM] allocater#0000
+I mean we won once and then we got complacent 😄
+
+{Reactions}
+🍹 
+
+[30-Aug-22 12:10 PM] allocater#0000
+it's the circle of liiiife
+
+
+[30-Aug-22 12:13 PM] rune_242#0000
+sended a contract
+
+
+[30-Aug-22 12:14 PM] churavis#0000
+Cool, it will be filled in 10h
+
+
+[30-Aug-22 12:20 PM] yjhasaday#0000
+My small amount of votes is for agri next cycle! I thought it might not be worth it because I have RIGs and INCs on planet too but I've changed my mind 😁
+
+
+[30-Aug-22 12:24 PM] churavis#0000
+Now we can move our INC to Nascent make more FRMs
+
+{Reactions}
+🥳 ☝️ 
+
+[30-Aug-22 12:25 PM] yjhasaday#0000
+Where is Nascent? Is that YK649b?
+
+
+[30-Aug-22 12:27 PM] rune_242#0000
+it's QJ-149c
+
+
+[30-Aug-22 12:27 PM] rune_242#0000
+YK-649b is the FP planet
+
+
+[30-Aug-22 12:28 PM] yjhasaday#0000
+Ah, thanks
+
+
+[30-Aug-22 01:58 PM] jackinabox86#0000
+any PWO?
+
+
+[30-Aug-22 02:10 PM] churavis#0000
+Yes, send me the contract, 125/u
+
+
+[01-Sep-22 12:24 PM] allocater#0000
+did the COGC bug to the wrong one? 🙈
+
+
+[01-Sep-22 12:25 PM] allocater#0000
+ah nvm just upkeep phase and the vote for the next was still fixable
+
+
+[01-Sep-22 04:01 PM] dersix#0000
+anyone have some 100 DW, forgot to bring some -.-
+
+
+[01-Sep-22 05:04 PM] archielvahr#0000
+Sent you a contract for 100
+
+
+[02-Sep-22 04:24 AM] rune_242#0000
+can somebody sell me 70 FF?
+
+
+[02-Sep-22 04:25 AM] rune_242#0000
+I can't get of planet🤦‍♂️
+
+
+[02-Sep-22 04:25 AM] yuen8241#0000
+ads up for it
+
+
+[02-Sep-22 04:25 AM] yuen8241#0000
+I was afraid of this situation, so I stayed here a little.😆
+
+
+[02-Sep-22 04:26 AM] rune_242#0000
+ad posted
+
+
+[02-Sep-22 04:27 AM] yuen8241#0000
+When you come to demeter, there are mostly empty ships. It's better to keep some in the cargo hold.
+
+{Reactions}
+🤔 👌 
+
+[02-Sep-22 02:02 PM] jackinabox86#0000
+do we have local RAT production or should I bring some out?
+
+
+[02-Sep-22 02:06 PM] archielvahr#0000
+I've got 100 RAT to sell. There's a tiny bit of local production but it doesn't keep up with LM demand
+
+
+[02-Sep-22 02:09 PM] allocater#0000
+I am deliberately not fulfilling those out-of-corp requests, but I have 800 atm and sell excess for 80 out of corp sometimes if there are no other requests up
+
+
+[02-Sep-22 02:10 PM] churavis#0000
+A lot of randos seem to think that Demeter being an agriculture world means RATs breed like rats here.
+
+
+[02-Sep-22 02:27 PM] jackinabox86#0000
+cool beans.  I won't ship some out then.  Don't be selling at corp price to randos!  They can pay a market price!
+
+
+[02-Sep-22 02:29 PM] archielvahr#0000
+Yeah the size of Atlas's contracts must mean he's just shipping them out
+
+
+[02-Sep-22 02:29 PM] archielvahr#0000
+I don't even have enough RATs to fill in-corp demand
+
+
+[02-Sep-22 02:29 PM] archielvahr#0000
+I need a second FP base 😄
+
+
+[02-Sep-22 02:30 PM] churavis#0000
+There's always australia, it's in the same system and even has water...
+
+{Reactions}
+🤔 
+
+[02-Sep-22 02:35 PM] archielvahr#0000
+Looks like a great place to live:
+
+
+[02-Sep-22 02:35 PM] archielvahr#0000
+http://kortham.net/temp/chrome_lDu1PLOg1T.png
+
+{Embed}
+http://kortham.net/temp/chrome_lDu1PLOg1T.png
+https://images-ext-1.discordapp.net/external/kQ5-E06lmkDybgCvaSvjfsrjEn32OmCDNX8Zu25OExM/http/kortham.net/temp/chrome_lDu1PLOg1T.png
+
+{Reactions}
+🤣 (2) 
+
+[02-Sep-22 02:36 PM] churavis#0000
+What special materials do you need to build on planets with giant spiders?
+
+
+[02-Sep-22 03:03 PM] archielvahr#0000
+😄
+
+
+[02-Sep-22 03:22 PM] jackinabox86#0000
+anyone have 340 mcg?  I've got everything else to convert my Demeter base to FRMs.  Ad up on LM
+
+{Reactions}
+💱 
+
+[02-Sep-22 03:24 PM] churavis#0000
+ZDLR also has MCG
+
+
+[05-Sep-22 04:05 PM] churavis#0000
+ZDLR has ~~14.7k~~   1k  H2O, please buy it, 10/u clearance sale for corp members
+
+{Reactions}
+4️⃣ 
+
+[05-Sep-22 04:11 PM] jackinabox86#0000
+Sending order for 4.7k
+
+{Reactions}
+🤝 
+
+[05-Sep-22 04:12 PM] archielvahr#0000
+Sending an order for 5k
+
+{Reactions}
+🤝 
+
+[12-Sep-22 04:01 AM] allocater#0000
+are there enough crops stockpiled to justify a 2k visit?
+
+
+[12-Sep-22 07:21 AM] archielvahr#0000
+Ah I just sent my big ship out, so once that arrives I'll only have 300t left to move.
+
+
+[13-Sep-22 06:54 PM] jackinabox86#0000
+Anyone stocking OVE?
+
+
+[13-Sep-22 09:27 PM] exeler#0000
+Anyone got DW?
+
+{Reactions}
+💱 
+
+[16-Sep-22 09:50 AM] archielvahr#0000
+For sale: 200 GRN 200 MAI, 250 HCP, send me ads.
+
+{Reactions}
+💱 🌽 🌾 
+
+[16-Sep-22 10:19 AM] archielvahr#0000
+Sold 100 grn and 100 mai, rest is still available
+
+
+[16-Sep-22 11:10 AM] churavis#0000
+Contracts sent for the rest
+
+{Reactions}
+🤝 
+
+[16-Sep-22 11:56 PM] churavis#0000
+Can anyone fill an emergency RAT and DW request? LM ads already up
+
+{Reactions}
+🥫 
+
+[22-Sep-22 07:51 AM] rune_242#0000
+posted some OVE/PWO ads
+
+
+[22-Sep-22 11:40 AM] jackinabox86#0000
+Put up a couple 100 RAT ads at corp price if anyone has any to spare
+
+
+[22-Sep-22 02:08 PM] archielvahr#0000
+Filled two RAT ads for  you. one ad for 100 left.
+
+{Reactions}
+👍 
+
+[22-Sep-22 08:49 PM] churavis#0000
+Can anyone fulfill a DW and RAT ad for ZDLR?
+
+{Reactions}
+💱 
+
+[22-Sep-22 09:04 PM] yuen8241#0000
+Demeter is so far away that I built FP directly there.
+
+{Reactions}
+🤝 
+
+[22-Sep-22 09:05 PM] yuen8241#0000
+If you need RAT and DW, you can buy them from me.
+
+
+[23-Sep-22 02:43 PM] churavis#0000
+Can anyone fill a DW and RAT ad?
+
+{Reactions}
+🤝 
+
+[23-Sep-22 02:52 PM] archielvahr#0000
+Yup, I got em
+
+{Reactions}
+🙏 
+
+[24-Sep-22 11:40 PM] exeler#0000
+Anyone got RAT? I'm dangerously low and have had a LM order up for a few days 😅
+
+{Reactions}
+💱 
+
+[25-Sep-22 08:05 AM] yuen8241#0000
+done
+
+{Reactions}
+pengchamp 
+
+[26-Sep-22 11:28 AM] archielvahr#0000
+Buying 30 PWO: `LMA KI-446b/1268`
+
+
+[28-Sep-22 01:15 AM] churavis#0000
+DLR needs RAT and DW and has 16k H2O he needs to get rid of, please send him contracts
+
+
+[28-Sep-22 01:43 AM] yuen8241#0000
+done
+
+{Reactions}
+👍 
+
+[28-Sep-22 12:44 PM] allocater#0000
+I've ran out of OVE, and looking at LM 🎵 *I am not the only one* 😄
+
+
+[28-Sep-22 12:46 PM] churavis#0000
+I have a large shipment of OVE and PWO coming in two days, until then I can spare I up to ~~ 50 ~~ 30 OVE and 50 PWO
+
+
+[28-Sep-22 12:51 PM] allocater#0000
+ad up for 20
+
+{Reactions}
+🤝 
+
+[28-Sep-22 01:24 PM] rune_242#0000
+How big exactly?
+
+
+[28-Sep-22 01:31 PM] churavis#0000
+More than 450
+
+
+[28-Sep-22 01:37 PM] rune_242#0000
+Nice
+
+
+[28-Sep-22 01:37 PM] rune_242#0000
+I think I have some old ads up
+
+
+[30-Sep-22 09:44 AM] archielvahr#0000
+Ahhhh finally: http://kortham.homeip.net/files/chrome_2022-09-30_09-44-33.png
+
+{Embed}
+http://kortham.homeip.net/files/chrome_2022-09-30_09-44-33.png
+https://images-ext-1.discordapp.net/external/e60oOzR1yNfb4BKB7b4J9siPbsIXRPlSxv5pFlSv0JM/http/kortham.homeip.net/files/chrome_2022-09-30_09-44-33.png
+
+{Reactions}
+👍 (3) 🧑‍🌾 
+
+[30-Sep-22 11:32 PM] exeler#0000
+Got a few LM orders up selling crops if anyone wants them. I was out for a few days and ended up with a stockpile 😅
+
+
+[30-Sep-22 11:38 PM] exeler#0000
+I also have some ads for consumables 🥺
+
+
+[04-Oct-22 06:12 AM] yuen8241#0000
+ad for 40 ove,30 pwo,80 cof
+
+
+[05-Oct-22 09:40 AM] archielvahr#0000
+Is the worker reserve pool set up properly on Demeter? I only got 32 settlers out of the reserve pool when I built some new settler buildings. But there should be ~300 unemployed there.
+
+
+[05-Oct-22 09:40 AM] archielvahr#0000
+Also looking for 3 EXO: `LMA KI-446b/1314`
+
+
+[05-Oct-22 10:24 AM] yuen8241#0000
+It must have been used. You'll have to wait for the next time.
+
+
+[05-Oct-22 10:32 AM] archielvahr#0000
+fortunately only a day for the population report. The reserve pool is 10%, for some reason I thought it was a number, not a percentage, so that seems fine.
+
+
+[08-Oct-22 08:46 AM] archielvahr#0000
+I have 40 m3 I need to move from Demeter to Norwick. Getting it off demeter is the tricky bit, so if anyone is going Demeter -> Nike or Demeter -> ANT, I would like to hitch a ride there also.
+
+
+[08-Oct-22 09:56 AM] jackinabox86#0000
+I’ll be going Demeter to Nascent to ANT tonight
+
+
+[08-Oct-22 09:56 AM] jackinabox86#0000
+But it will take a couple days to work through those stops
+
+
+[08-Oct-22 10:14 AM] archielvahr#0000
+If you get it to ANT, that's plenty good, thanks 🙂
+
+
+[09-Oct-22 01:33 AM] yuen8241#0000
+I have a batch of crops that I want to ship to harmonia. Have any of you recently Plan fly to demeter?
+
+
+[09-Oct-22 01:45 PM] allocater#0000
+I will do a flight, free space for 600 crops
+
+
+[09-Oct-22 09:06 PM] yuen8241#0000
+Where are you ready to go? I prefer to go to Harmonia, and I can accept going to ANT.
+
+
+[10-Oct-22 02:23 AM] allocater#0000
+I can go harmonia
+
+{Reactions}
+🤝 
+
+[12-Oct-22 01:22 PM] churavis#0000
+I have water and carbon available if anyone wants to buy some
+
+
+[12-Oct-22 08:57 PM] churavis#0000
+The warehouse has been upgraded
+
+{Reactions}
+🥳 
+
+[13-Oct-22 09:24 AM] jackinabox86#0000
+any DW producers here?
+
+
+[13-Oct-22 09:30 AM] allocater#0000
+yeah 700 available
+
+{Reactions}
+💱 
+
+[13-Oct-22 09:55 AM] churavis#0000
+Ads up for 🐀and 🚰
+
+
+[20-Oct-22 08:47 PM] exeler#0000
+I forgot about my base out here for a while 😅. I've got 398 GRN, 400 MAI, and 788 HCP for sale. All 100/u
+
+{Reactions}
+💱 
+
+[20-Oct-22 11:58 PM] exeler#0000
+Got a few contracts, I put the rest up on the LM. Also put up a bunch of buy orders for consumables
+
+
+[21-Oct-22 06:30 AM] yuen8241#0000
+ad for pwo , ove, cof
+
+
+[22-Oct-22 10:59 AM] allocater#0000
+anarchy!
+
+
+[22-Oct-22 11:01 AM] churavis#0000
+https://tenor.com/view/oh-no-oh-no-anyway-gif-18887547
+
+{Embed}
+https://tenor.com/view/oh-no-oh-no-anyway-gif-18887547
+https://images-ext-1.discordapp.net/external/ZyOiT3BLo0TD0TB7heeztE2gdP_QnpMZg5qOZjcESSw/https/media.tenor.com/RL0-tTg3QOQAAAAD/oh-no.png
+
+
+[24-Oct-22 02:09 PM] dehzhas#0000
+Anyone have a ship here that has room on the way back to Harm/Deimos/Nike area?
+
+
+[24-Oct-22 07:40 PM] yuen8241#0000
+If HER is replanted in demeter, the transportation pressure can be greatly reduced.
+
+
+[24-Oct-22 07:41 PM] dehzhas#0000
+I solved my immediate pressure for a shipment
+
+
+[24-Oct-22 08:19 PM] jackinabox86#0000
+Sure, but Demeter to Nascent is a nice C making route.  I don't think Demeter to Norwick works as well
+
+
+[24-Oct-22 08:26 PM] yuen8241#0000
+The difference between the two schemes is that one has a long distance and a low frequency, while the other has a short distance and a high frequency. Compared with MAI, HER is very light.
+
+
+[24-Oct-22 08:48 PM] erklein#0000
+Ad up for PWO if anyone has got some
+
+{Reactions}
+💱 
+
+[25-Oct-22 12:41 PM] domicius#0000
+Anyone spare 500-1000FF on @Demeter ?
+
+
+[25-Oct-22 01:13 PM] yjhasaday#0000
+Yep, post for 1000 at usual 8/u
+
+
+[25-Oct-22 01:16 PM] yjhasaday#0000
+Ooops, I see you already did - filled your order
+
+
+[25-Oct-22 02:10 PM] domicius#0000
+Thanks!
+
+{Reactions}
+👍 
+
+[26-Oct-22 09:38 AM] allocater#0000
+that's a good point, we could consolidate all HER production around ANT and switch that amount of farms on demeter to HER, but we need a buffer to overcome the ~1 week shipping lag
+
+
+[26-Oct-22 09:40 AM] yuen8241#0000
+If the output is not large, HER can last for a long time. In fact, it is better to share FP with DW. When HER is more, FIM is produced, and when her is less, DW is produced.
+
+
+[26-Oct-22 09:44 AM] yuen8241#0000
+Demeter can plant HER, icestation can produce water, norwick can produce FIM, DW, KOM and COF, and Harmonia can produce CAF and PIB.
+
+
+[26-Oct-22 09:45 AM] yuen8241#0000
+I think the overall income is higher than that of simply producing C and RAT.
+
+
+[27-Oct-22 03:11 PM] namthorn#0000
+how much is that buffer? I have 150 HER right here
+
+
+[27-Oct-22 03:13 PM] yuen8241#0000
+I think what he means is that an organizer is needed to coordinate transportation. After all, it's not worth a trip to demeter just for a person's HER.
+
+
+[27-Oct-22 03:14 PM] yuen8241#0000
+As far as my experience is concerned, 150 won't last a week
+
+
+[27-Oct-22 03:15 PM] namthorn#0000
+ah i thought you needed a buffer here
+
+
+[27-Oct-22 03:15 PM] yuen8241#0000
+150 can keep 7 FPs running for a week (Food Planet, five experts)
+
+
+[27-Oct-22 03:17 PM] allocater#0000
+yeah, if all farms around ANT stop HER, the HER consumption needs to survive until the first demeter HER shipment comes.
+
+
+[27-Oct-22 03:18 PM] yuen8241#0000
+Using FP together with products like DW can greatly improve the fault tolerance rate.
+
+
+[27-Oct-22 03:18 PM] yuen8241#0000
+If there are enough FPs, the delivered FIM will soon be consumed, and then other products will be produced, waiting for the next batch of FIM.
+
+
+[27-Oct-22 03:22 PM] yuen8241#0000
+Actually, that's what I did. Usually, my FP is producing DW until I ship HER and RAT there .
+
+
+[27-Oct-22 03:23 PM] archielvahr#0000
+I'll keep going with FIM on Harmonia for the near term
+
+
+[27-Oct-22 03:23 PM] archielvahr#0000
+I can't keep up with my COF though, I am considering another FP for DW/COF, but it could be flexible with the FIM/MEA line too.
+
+
+[27-Oct-22 03:24 PM] yuen8241#0000
+Personally, I think Harmonia is more suitable for hydroponics and C crop production.
+
+
+[27-Oct-22 03:24 PM] yuen8241#0000
+Closer, more advanced population
+
+
+[27-Oct-22 03:25 PM] archielvahr#0000
+I think the best place for HYF is 1) non fertile planet and 2) close to a good water source.
+
+
+[27-Oct-22 03:26 PM] archielvahr#0000
+which is Exeler's side project 😄
+
+
+[27-Oct-22 03:26 PM] yuen8241#0000
+HER production, only need to transport DDT and water in the past, and then transport the crops back. The import and export transportation tonnage is not large.
+
+
+[27-Oct-22 03:26 PM] yuen8241#0000
+Very consistent with demeter, which is mainly a pioneer population and far away.
+
+
+[27-Oct-22 03:27 PM] archielvahr#0000
+yeah definitely true!
+
+
+[27-Oct-22 03:28 PM] archielvahr#0000
+don't want to haul a bunch of extra upkeep items to demeter
+
+
+[27-Oct-22 05:14 PM] jackinabox86#0000
+I’ve got tons of space on Norwick and would be happy to run FP for you. It’s just sitting there
+
+
+[27-Oct-22 05:14 PM] jackinabox86#0000
+I assume you already do some stuff there. I just don’t want to have to manage a ton more inputs for FP, but will run them for an established player
+
+
+[27-Oct-22 05:27 PM] dehzhas#0000
+If you are talking FP, you are talking my language. FP’s are a huge part of what I do.
+
+
+[27-Oct-22 05:28 PM] dehzhas#0000
+I haven’t expanded to Demeter yet because logistics are rough
+
+
+[27-Oct-22 05:29 PM] dehzhas#0000
+I’m about to go into COF in a big way. I can help.
+
+
+[27-Oct-22 05:32 PM] archielvahr#0000
+How much would you pay for CAF? I have something like 300 extra. At least in the short term. If I made a norwick base, it would probably be DW and COF
+
+
+[27-Oct-22 05:39 PM] dehzhas#0000
+I'm about to do a base devoted primarily to COF, limited only by CAF supply. Short term I will have to source the CAF where I can/CX, so your CAF would be very welcome. Long term, I have plans to get a more stable supply.
+
+
+[27-Oct-22 05:45 PM] dehzhas#0000
+How many people have bases on Demeter? And what is the population mix?
+
+
+[27-Oct-22 05:47 PM] dehzhas#0000
+----
+
+
+[27-Oct-22 05:50 PM] dehzhas#0000
+I see 12 people with bases on Demeter in the corp. It's all pioneers and settlers on the planet (and 1 lone technician, lol).
+
+If there is enough interest, we can do a group pre-purchase agreement where I supply all the consumables for Demeter and a 2k/2k ship load coming back at least once per week.
+
+
+[27-Oct-22 05:52 PM] churavis#0000
+I already supply all the OVE and PWO and lot's of people already make RAT,DW, COF and KOM on planet
+
+{Reactions}
+👍 
+
+[27-Oct-22 05:55 PM] archielvahr#0000
+More sponsored Demeter bases is always good 😄
+
+
+[27-Oct-22 05:55 PM] archielvahr#0000
+Rope in the new players!
+
+
+[29-Oct-22 12:47 PM] erklein#0000
+Some ads up for RAT and DW
+
+{Reactions}
+💱 
+
+[06-Nov-22 02:06 AM] exeler#0000
+Ads up for consumables and selling crops
+
+
+[06-Nov-22 03:43 PM] Deleted User#0000
+ad up for GRN 150/u
+
+
+[06-Nov-22 10:50 PM] churavis#0000
+600 OVE 50/u and 300 PWO 125/u available
+
+
+[12-Nov-22 04:50 PM] exeler#0000
+Buy ads up for some consumables and H2O, and some sell ads for HCP/MAI.
+
+Plus there's a few shipping contracts to move some things back to Harmonia. If there's a better destination nearby ANT let me know and I'll switch it.
+
+
+[16-Nov-22 03:48 PM] emperyan11#0000
+Anybody got some bulk orders to move? Moby Deck is nearby with 2000/2000 free.
+
+
+[16-Nov-22 05:20 PM] rune_242#0000
+heck yeah
+
+
+[16-Nov-22 05:22 PM] rune_242#0000
+posted an ad for demeter to nascent
+
+
+[16-Nov-22 06:51 PM] exeler#0000
+I've got a bunch of ads up on the LM, don't know if they're still there though, I put them up a while ago.
+
+
+[16-Nov-22 07:26 PM] churavis#0000
+When Rune says "an ad" he means a massive, gigantic 2k ton ad to fill up all of Moby's Deck
+
+
+[17-Nov-22 09:46 AM] emperyan11#0000
+Perfect, I'll get the Moby underway
+
+
+[17-Nov-22 09:51 AM] emperyan11#0000
+Accepted. Enroute to Demeter now
+
+{Reactions}
+🤝 
+
+[20-Nov-22 01:58 PM] archielvahr#0000
+Buying H2O on the LM, several ads up
+
+{Reactions}
+🤝 
+
+[20-Nov-22 03:02 PM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1043994783405834250/image.png?ex=68148a28&is=681338a8&hm=3149f1963df09c58a9a7129a9f236afe203a94d4549291e8ca663ae4cc9f89a4&
+
+
+[22-Nov-22 11:08 AM] yjhasaday#0000
+First vote for next week's COGC, so naturally I had to troll! TECHNOLOGY IS THE FUTURE
+
+
+[22-Nov-22 11:10 AM] churavis#0000
+I'm my to refrain from voting yet to see if anyone just picks the top option without looking
+
+
+[22-Nov-22 11:10 AM] yjhasaday#0000
+lol lets hope not... 😅
+
+
+[22-Nov-22 11:11 AM] yjhasaday#0000
+lmao Atlas instantly shot it down
+
+
+[22-Nov-22 11:13 AM] churavis#0000
+We're back on top
+
+
+[22-Nov-22 11:13 AM] yjhasaday#0000
+Also that guy has 19 bases!!! 😯
+
+
+[22-Nov-22 11:13 AM] yjhasaday#0000
+Glory to the trolls!
+
+{Reactions}
+🧌 
+
+[22-Nov-22 11:13 AM] churavis#0000
+And his Demeter base has almost as much voting power as both of us
+
+
+[22-Nov-22 11:20 AM] archielvahr#0000
+I don't know what or why we're doing this, but I'm in
+
+
+[22-Nov-22 11:20 AM] archielvahr#0000
+http://kortham.homeip.net/files/chrome_2022-11-22_11-20-21.png
+
+{Embed}
+http://kortham.homeip.net/files/chrome_2022-11-22_11-20-21.png
+https://images-ext-1.discordapp.net/external/UiBcPT8l8jCzYR6E23c_8r8gwx1LSfbgugo1OEedwgo/http/kortham.homeip.net/files/chrome_2022-11-22_11-20-21.png
+
+
+[22-Nov-22 02:32 PM] allocater#0000
+all the non-corpos
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1044712076016353280/image.png?ex=68152bf0&is=6813da70&hm=a4048a37d13cdc13af858590404346953b1083761f86da9b306312bfcd31e7d9&
+
+
+[22-Nov-22 03:07 PM] exeler#0000
+If we win won't this be tracked in the history forever?
+
+Like you can view past cogc vote results?
+
+
+[22-Nov-22 03:12 PM] allocater#0000
+we will switch it before it locks in ... I hope 😄
+
+
+[22-Nov-22 03:15 PM] exeler#0000
+Whatcha mean? You mean we aren't all building ECA there now?
+
+The lovely folks who also settled there have been kind enough to hold the PIO bag for us, so we can just educate some peeps and build some batteries.
+
+
+[22-Nov-22 03:51 PM] churavis#0000
+https://tenor.com/view/crazy-eyes-peeps-easter-gif-13718371
+
+{Embed}
+https://tenor.com/view/crazy-eyes-peeps-easter-gif-13718371
+https://images-ext-1.discordapp.net/external/zocSffqVf6Lr_sAAjOdE3vEmVBM5_CH5-WY5-6PkBwg/https/media.tenor.com/9RrrT9_LAEIAAAAD/crazy-eyes-peeps.png
+
+
+[22-Nov-22 03:51 PM] churavis#0000
+Most peeps aren't qualified to code software
+
+
+[22-Nov-22 05:02 PM] churavis#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1044749657634512936/image.png?ex=6814a630&is=681354b0&hm=f221a1a26e33ee7c490f1063a72e37bec74ee5cbea828806276596f8efa5b365&
+
+
+[22-Nov-22 05:51 PM] archielvahr#0000
+oh dear, now he's running for governor
+
+
+[22-Nov-22 05:52 PM] exeler#0000
+🤣
+
+
+[22-Nov-22 05:52 PM] exeler#0000
+If we can pull a cogc vote with our low pop bases, what makes him think he can win a governor election where we all get an equal say?
+
+
+[22-Nov-22 05:54 PM] exeler#0000
+This is true, but that certainly doesn't stop them from trying.
+
+
+[23-Nov-22 02:24 AM] rune_242#0000
+I'll change my vote too
+
+
+[23-Nov-22 02:39 AM] exeler#0000
+If this goes through we should take this opportunity to corner the MTC market by putting adding some INC+CLR to go with the farms.
+
+
+[23-Nov-22 08:17 AM] churavis#0000
+There's a market for MTC?
+
+
+[23-Nov-22 12:27 PM] exeler#0000
+Only the one we make in our hearts
+
+
+[23-Nov-22 12:28 PM] churavis#0000
+What are the advantages of a heart made out of MTC?
+
+
+[23-Nov-22 12:30 PM] exeler#0000
+Flesh gets old and weak over time. Mega tubes are forever
+
+
+[23-Nov-22 12:39 PM] churavis#0000
+Why would you want your heart to keep beating after you die?
+
+
+[23-Nov-22 02:08 PM] mrtcsmith#0000
+So your soul survives on its travel to the afterlife
+
+
+[23-Nov-22 02:24 PM] exeler#0000
+Nah, you never die. You just slowly evolve into MTC enlightenment.
+
+
+[26-Nov-22 11:10 AM] churavis#0000
+I've got sell ads up for OVE and PWO, they are at inflated prices for desperate randos. If you need either, just send me a contract for corp prices, I've got plenty
+
+
+[26-Nov-22 12:25 PM] allocater#0000
+dito for DW and RAT
+
+
+[27-Nov-22 04:06 PM] archielvahr#0000
+Buying water, ads up on the LM.
+
+
+[28-Nov-22 02:06 AM] allocater#0000
+3 people forgot to switch their vote 😄
+
+
+[28-Nov-22 02:33 AM] exeler#0000
+"forgot"
+
+
+[28-Nov-22 05:42 AM] namthorn#0000
+anyone got 2 BDEs here I can buy for the SST upgrade?
+
+
+[28-Nov-22 05:52 AM] rune_242#0000
+I got u
+
+
+[28-Nov-22 05:53 AM] namthorn#0000
+thanks!
+
+
+[28-Nov-22 01:54 PM] emperyan11#0000
+Anyone have any cargo they need hauled off Demeter? 2000t/2000m3 available
+
+
+[28-Nov-22 02:21 PM] churavis#0000
+To Nascent?
+
+
+[28-Nov-22 02:51 PM] allocater#0000
+I can put together 800t
+
+
+[28-Nov-22 03:31 PM] exeler#0000
+I can put up another 1k t or so
+
+
+[28-Nov-22 04:36 PM] emperyan11#0000
+I've got 300t/m3 left for now to Nascent
+
+
+[28-Nov-22 04:36 PM] emperyan11#0000
+But I can come back in a few days
+
+
+[29-Nov-22 02:33 PM] emperyan11#0000
+All full up now, thanks!
+
+
+[29-Nov-22 02:33 PM] churavis#0000
+Thank you
+
+
+[13-Dec-22 02:20 AM] allocater#0000
+anyone got water? I am out.
+
+
+[13-Dec-22 08:40 AM] jackinabox86#0000
+I bought some from DLR
+
+
+[13-Dec-22 08:43 AM] churavis#0000
+I've filled your LM ad
+
+{Reactions}
+❤️ 
+
+[14-Dec-22 10:09 PM] exeler#0000
+Ad up for 5 MCG at a very generous price. I rounded up when shipping MCG here, but apparently missed the mark still by just a few 😅
+
+{Reactions}
+🤝 
+
+[14-Dec-22 10:10 PM] churavis#0000
+I always keep extra MCG on almost every planet because repairs always take more than you initially calculate
+
+
+[14-Dec-22 10:16 PM] exeler#0000
+That was the plan for when I shipped some out, but slow ship and rapidly decaying buildings added up to just a bit more than my padding
+
+
+[16-Dec-22 02:58 AM] thummper#0000
+~~200~~ 100 COF / ~~100 ~~ 50 KOM available
+
+
+[16-Dec-22 08:24 AM] churavis#0000
+I'll take 100 COF and 50 KOM
+
+{Reactions}
+🍒 
+
+[19-Dec-22 10:04 AM] paxmagellanic#0000
+Would anyone have some water, put up an ad for 1k @ 25 ?
+
+{Reactions}
+💱 ⬅️ ❤️ 
+
+[20-Dec-22 10:36 AM] yjhasaday#0000
+some RAT and DW ads up if anyone has some to sell?
+
+
+[20-Dec-22 11:46 AM] archielvahr#0000
+Filled 4 of the 6
+
+{Reactions}
+5️⃣ 6️⃣ 🙏 
+
+[23-Dec-22 07:42 AM] paxmagellanic#0000
+Put up some good (?) deals on some RAT and DW if anyone could give a hand. My shipping schedule is a bit messy at the moment 😄
+
+{Reactions}
+💱 ⬅️ ❤️ 
+
+[04-Jan-23 08:13 AM] yjhasaday#0000
+Anyone have some MCG kicking around for repairs? I put an ad on LM for 100
+
+{Reactions}
+🤝 
+
+[04-Jan-23 08:57 AM] churavis#0000
+MCG is a bit too heavy to serve as a kick ball but I do have some totally stationary MCG if that's alright?
+
+{Reactions}
+😆 (2) 
+
+[06-Jan-23 11:36 AM] yjhasaday#0000
+Anyone make RCO here? I have a ship landing in 24 hours and I could really use some extra RCO (I am making it myself but apparently not enough and I can't switch any more of my FRMs from C ingredients)
+
+
+[06-Jan-23 11:52 AM] churavis#0000
+Bettino and Xenoarch have been known to make RCO on Harmonia at times
+
+
+[06-Jan-23 12:32 PM] jackinabox86#0000
+I can run some RCA through on my Harmonia FRMs.  Got more HER than I need
+
+
+[06-Jan-23 12:32 PM] xenoxerarch#0000
+Just posted the math behind FRM RCO on #🍇harmonia and its not that good tbh
+
+
+[06-Jan-23 12:36 PM] xenoxerarch#0000
+I'm producing around 25 RCO/d on Harmonia if you want some.
+
+
+[06-Jan-23 04:55 PM] yjhasaday#0000
+Awesome, how much can you sell now? And I can't find you on the sheet so just let me know your price 👍
+
+
+[06-Jan-23 05:07 PM] xenoxerarch#0000
+Just started producing on Harmonia today so I've only got 12 atm, another 12 in 2 hrs. Would you like me to stock up a specific bulk amount, or just send the 24 batch to Demeter for now? As for price, whatever feels fair, CX prices right now are a bit wide at 700-610(with the vast majority of bids being OOG members lol), but I'll take whatever. I'm just doing this temporarily to help the supply glut until I figure out what to do. Did note @exeler & @optitronic have RCO listed on price sheet, so they might have a proper stockpile squirred away 🙂
+
+
+[06-Jan-23 07:09 PM] jackinabox86#0000
+I doubt very much he uses it on Demeter
+
+
+[06-Jan-23 07:10 PM] jackinabox86#0000
+he's just hitting up a farm planet I expect
+
+
+[06-Jan-23 07:35 PM] xenoxerarch#0000
+Ahh ok
+
+
+[06-Jan-23 10:08 PM] exeler#0000
+I just posted a bunch of sell orders for C ingredients here if you want to pick those up and swap farms to RCO for a bit instead.
+
+I make some RCO on Harmonia (about 7 per day right now as I'm just splitting excess HYF time between RCO and CAF). I've got 20 available on #🍇harmonia and another 100 available on #🏭hephaestus  if you need it there.
+
+
+[07-Jan-23 01:49 PM] yjhasaday#0000
+Yeah, I use the RCO on Phobos, but I can pick up on Harmonia. what is your current stock pile?
+
+
+[07-Jan-23 06:43 PM] xenoxerarch#0000
+48 RCO atm, 9 hrs til that becomes 60
+
+
+[07-Jan-23 07:02 PM] xenoxerarch#0000
+I'll bring the 48 to ANT on this outbound shipment, that should get you closer to @exeler 's stockpile and save you the lengthwise trip
+
+
+[17-Jan-23 12:17 AM] paxmagellanic#0000
+Posted an ad for some 10FTL fuel if anyone could give me a nudge to get off planet ^^
+
+
+[17-Jan-23 12:18 AM] churavis#0000
+Just get out and push
+
+
+[17-Jan-23 12:20 AM] paxmagellanic#0000
+With your help we managed to do it! Cheers! ❤️
+
+
+[20-Jan-23 05:42 PM] exeler#0000
+I put up a bunch of shipping ads from Demeter->Nascent. Not urgent, just there if anyone is making a trip and has some extra room. I put a nice tip on them.
+
+
+[26-Jan-23 09:41 AM] allocater#0000
+is there still a water producer here? ads up on LM
+
+
+[11-Feb-23 09:24 AM] allocater#0000
+ad up for water
+
+
+[11-Feb-23 01:49 PM] archielvahr#0000
+Filled one of yours for now. In maybe 3 days I can bring 10k H2O from Ice Station Alpha
+
+
+[14-Feb-23 08:57 AM] yjhasaday#0000
+Hi all, I've folded all my bases and am now giving away my inventories. So feel free to start sending my contracts for anything you want below (I can't send contracts but can receive them) - obviously no cost for anything! 
+
+BEHOLD! My stuff!!
+
+
+[14-Feb-23 08:57 AM] yjhasaday#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1075068384896622692/image.png?ex=6814dd74&is=68138bf4&hm=7bed1bc513977b477a9df008b19f4be2778655c0b8e279335dec2b488ff16ecc&
+
+
+[14-Feb-23 09:28 AM] jackinabox86#0000
+Sent for 2000 H2O
+
+
+[14-Feb-23 10:33 AM] allocater#0000
+just as I am out of water and need repairs 😅
+
+
+[14-Feb-23 10:35 AM] allocater#0000
+6000 water and all b fabs
+
+
+[14-Feb-23 08:33 PM] yjhasaday#0000
+I dont think I received a contract from you?
+
+
+[14-Feb-23 08:33 PM] yjhasaday#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1075243401592717312/image.png?ex=6814d7b3&is=68138633&hm=258c8aebb125127f50f3454b46cc0fab4bf36816031c9cb8e319c30fa4418954&
+
+
+[15-Feb-23 01:30 AM] allocater#0000
+I put it on the LM
+
+
+[16-Feb-23 01:00 PM] yjhasaday#0000
+Some BBH and BSE was taken so I couldn't accept those ones. Here's whats left:
+
+
+[16-Feb-23 01:00 PM] yjhasaday#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1075854227500449893/image.png?ex=68151654&is=6813c4d4&hm=cbab90351e35897efc0480a680ec5e83b0839e67d0bf6cc786280b7df64edb16&
+
+
+[16-Feb-23 01:49 PM] allocater#0000
+fixed ads up
+
+
+[16-Feb-23 01:52 PM] hernanduer#0000
+I'll take some of the C for new DDT setup on next base 🙂
+
+{Reactions}
+👍 
+
+[16-Feb-23 02:32 PM] yjhasaday#0000
+gave the C to Hernanduer - he took 150 so I have 112 left if you want?
+
+
+[16-Feb-23 02:35 PM] allocater#0000
+perfect, I am out of space anyway 😄
+
+
+[16-Feb-23 02:35 PM] allocater#0000
+@hernanduer take the other 112
+
+
+[16-Feb-23 02:36 PM] hernanduer#0000
+sure
+
+
+[16-Feb-23 02:39 PM] churavis#0000
+Are you taking everything or just the bfabs?
+
+
+[16-Feb-23 02:40 PM] allocater#0000
+all crops bfabs and construction mats
+
+{Reactions}
+👍 
+
+[17-Feb-23 06:56 PM] hernanduer#0000
+Anyone have 2 BDE? I miscounted for my final HB1 😦
+
+
+[17-Feb-23 06:59 PM] hernanduer#0000
+that's what I get for combining expansions for two bases in the same ship
+
+
+[18-Feb-23 01:12 AM] allocater#0000
+I have 1
+
+
+[18-Feb-23 01:14 AM] allocater#0000
+I am bringing more for repairs in 25h
+
+
+[18-Feb-23 09:32 AM] hernanduer#0000
+Still faster than me sending a ship back and forth 😅
+
+
+[19-Feb-23 02:58 AM] allocater#0000
+now 35 available
+
+
+[22-Feb-23 01:02 PM] archielvahr#0000
+Mistakes were made... and there is now an LM ad buying 100 FF for 30/u: `LMA KI-446b/1744`
+
+{Reactions}
+🤝 
+
+[22-Feb-23 01:32 PM] archielvahr#0000
+Thank you!
+
+
+[04-Mar-23 06:05 PM] exeler#0000
+Anyone want some GRN or MAI? I have 3k and 2k of it respectively. 
+
+My storage is full and it's gonna be a little while before I can get a ship out here.
+
+
+[04-Mar-23 06:32 PM] churavis#0000
+I have ads up already
+
+
+[04-Mar-23 06:34 PM] churavis#0000
+I'll send you a contract for all of it
+
+
+[04-Mar-23 06:35 PM] exeler#0000
+Sounds good, I was checking things on mobile so didn't see the LM
+
+
+[04-Mar-23 06:43 PM] churavis#0000
+Ok, I actually only have room for the GRN and 1.5k MAI
+
+
+[04-Mar-23 07:24 PM] archielvahr#0000
+Buying 100 FF on the LM because I confused demeter and Norwick's position on the map again -_-
+
+
+[04-Mar-23 07:24 PM] archielvahr#0000
+I actually had a stock of FF on demeter, but then I moved it for some incomprehensible reason
+
+{Reactions}
+⛽ 🙏 
+
+[04-Mar-23 07:25 PM] churavis#0000
+If anyone else wants some of the GRN just send me a contract for 140/u
+
+
+[04-Mar-23 08:01 PM] exeler#0000
+I'm actually just shy of 3k GRN, you okay if I just send you a new contract for 2k?
+
+
+[04-Mar-23 08:01 PM] churavis#0000
+That's fine, 140/u
+
+{Reactions}
+partyglasses 
+
+[05-Mar-23 03:03 AM] allocater#0000
+oops I am also out of space, time to send a ship
+
+
+[18-Mar-23 07:50 PM] domicius#0000
+Is there anyone with 12 PSL by any chance.... Guess what I forgot at ANT?
+
+
+[18-Mar-23 07:51 PM] domicius#0000
+Also, is the a coms channel for the planet? COMG pl-ki-446b didn't seem to work
+
+
+[19-Mar-23 05:30 PM] hernanduer#0000
+COMG pl-ki-446b should work, but don't you have to have a base to access it?
+
+
+[19-Mar-23 06:52 PM] domicius#0000
+I didn't know you needed a base. That'll be it
+
+
+[19-Mar-23 09:36 PM] mrtcsmith#0000
+There is an Apex Chat discord where FIO pushes the different planet chats to channels. There is a link in the wiki https://handbook.apex.prosperousuniverse.com/wiki/community-resources/
+
+{Embed}
+https://handbook.apex.prosperousuniverse.com/wiki/community-resources/
+Community Resources :: Prosperous Universe Wiki
+Prosperous Universe Wiki
+
+
+[06-Apr-23 04:11 PM] Prosperous Bot#5834
+Auction for 4000 MAI@110.0 AIC/u results:
+* Churavis: 1333 MAI for a total of 146630.0 AIC
+* Exeler22: 1333 MAI for a total of 146630.0 AIC
+* Neth Havoc: 1333 MAI for a total of 146630.0 AIC
+
+Unallocated items: 1 MAI
+
+
+[17-Jun-23 04:07 AM] rune_242#0000
+ad up for 2 BTA...
+
+{Reactions}
+💱 👊🏻 
+
+[27-Jun-23 09:59 AM] allocater#0000
+ad up for water
+
+{Reactions}
+🤝 
+
+[27-Jul-23 11:21 AM] hernanduer#0000
+Nyuu is running for governor and they don't even have a base on Demeter
+
+
+[27-Jul-23 11:22 AM] hernanduer#0000
+so if anyone else wants to run... 🙂
+
+{Reactions}
+🙏 
+
+[29-Jul-23 01:04 AM] allocater#0000
+LM ads up for water
+
+{Reactions}
+🤝 
+
+[30-Jul-23 01:04 PM] emperyan11#0000
+Ima throw my hat into the ring for Governor. Gonna be a day or two to set up a new farm, but I'll be there.
+
+{Reactions}
+🎉 (2) 
+
+[30-Jul-23 01:05 PM] emperyan11#0000
+Why bother being a tech millionaire *cough* Phobos *cough* if you're not going to run for office right?
+
+
+[30-Jul-23 02:20 PM] hernanduer#0000
+Well hopefully they don't change anything this term, but we'll see I suppose
+
+
+[30-Jul-23 03:36 PM] hernanduer#0000
+prettiest planet in ANT space though!
+
+
+[30-Jul-23 03:42 PM] hernanduer#0000
+also @Demeter make sure to check your orders, apparently a non-Antares Initiative as governor automatically resets taxes
+
+
+[30-Jul-23 03:42 PM] hernanduer#0000
+didn't realize that
+
+
+[30-Jul-23 03:42 PM] hernanduer#0000
+they're in ICA
+
+
+[30-Jul-23 06:22 PM] archielvahr#0000
+😱
+
+
+[30-Jul-23 09:55 PM] sage42#0000
+If I have my ships ready, which should be the case, I can run for next election.
+
+
+[30-Jul-23 09:58 PM] churavis#0000
+You'll need to fight Emperyan for it
+
+
+[30-Jul-23 10:32 PM] sage42#0000
+Didn't even notice his message oops 😂
+
+
+[30-Jul-23 10:37 PM] churavis#0000
+We usually have more planets in need of a governor than willing governors so I'm sure another will open up
+
+
+[31-Jul-23 05:26 PM] emperyan11#0000
+Hey, I'm all for an open election!
+
+
+[31-Jul-23 09:47 PM] archielvahr#0000
+No need for fair elections, we have enough planets and voters to just install people wherever 😉
+
+{Reactions}
+😆 (2) 
+
+[01-Aug-23 07:38 AM] sage42#0000
+That’s how you do democracy effectively 😂
+
+{Reactions}
+😆 
+
+[01-Aug-23 10:07 AM] parisinspringtime#0000
+Well, what else are you gonna do? Let the plebs choose for themselves?! Please. They _need_ guidance. For their own good.
+
+{Reactions}
+😎 (2) 🎩 (2) 
+
+[03-Aug-23 01:57 PM] emperyan11#0000
+Anybody have 5 -10 BSE they could sell me? I shipped short and it will be a while before I want to cycle back
+
+
+[03-Aug-23 01:57 PM] allocater#0000
+yup I have it 1000/u
+
+
+[03-Aug-23 01:58 PM] emperyan11#0000
+I'll take 10 then!
+
+{Reactions}
+💱 
+
+[03-Aug-23 01:58 PM] emperyan11#0000
+I'll send you a contract
+
+
+[03-Aug-23 02:02 PM] emperyan11#0000
+Paperwork away
+
+
+[03-Aug-23 02:04 PM] emperyan11#0000
+Thanks! 🤝
+
+
+[12-Aug-23 02:00 PM] emperyan11#0000
+I've got 2k hauling capacity at Demeter if anyone wants to off load something to the CX
+
+
+[12-Aug-23 02:04 PM] allocater#0000
+I put up 1000t on LM
+
+
+[12-Aug-23 02:05 PM] emperyan11#0000
+Got it onboard.
+
+
+[12-Aug-23 02:06 PM] emperyan11#0000
+There are now 950t / 1500m3 left in the hold. Leaving today for ANT CX
+
+
+[12-Aug-23 02:08 PM] churavis#0000
+Two ads totalling 297.6t/256m up
+
+
+[12-Aug-23 02:10 PM] emperyan11#0000
+Thank you!
+
+{Reactions}
+👍 
+
+[12-Aug-23 02:10 PM] emperyan11#0000
+Ok let's call it  500t / 1000m3 left (rounding for safety margin 😉 )
+
+
+[12-Aug-23 02:11 PM] churavis#0000
+Do you not have a calculator or spreadsheet or brain?
+
+
+[12-Aug-23 02:12 PM] emperyan11#0000
+You run you ships your way, I'll run them mine good sir. Besides, I've been burnt a few times by folk who aren't exactly accurate in their shipment sizes
+
+
+[12-Aug-23 02:14 PM] churavis#0000
+Tell them to get a brain too
+
+
+[12-Aug-23 02:19 PM] emperyan11#0000
+I don't get why you're being  this way... not very kind
+
+
+[12-Aug-23 02:19 PM] churavis#0000
+Good natured sarcasm doesn't translate well through text
+
+
+[12-Aug-23 02:20 PM] emperyan11#0000
+It does not.
+
+
+[12-Aug-23 08:23 PM] hernanduer#0000
+It's best to assume everything Churavis says is laced with sarcasm
+
+
+[12-Aug-23 08:23 PM] hernanduer#0000
+he's our dry wit, for sure
+
+
+[19-Aug-23 05:27 PM] parisinspringtime#0000
+"Absolutely drenched" would be more accurate.
+
+{Reactions}
+😄 💯 
+
+[28-Aug-23 10:58 AM] emperyan11#0000
+5k for a 35t shipment to Phobos seem reasonable?
+
+
+[28-Aug-23 10:59 AM] domicius#0000
+Depends if you expect any imperial entanglements
+
+
+[28-Aug-23 11:00 AM] emperyan11#0000
+Given I'm the local governor, I think we're good, lol
+
+{Reactions}
+😁 
+
+[28-Aug-23 12:10 PM] churavis#0000
+https://tenor.com/view/is-that-legal-legal-illegal-star-wars-legality-gif-17605531
+
+{Embed}
+https://tenor.com/view/is-that-legal-legal-illegal-star-wars-legality-gif-17605531
+https://images-ext-1.discordapp.net/external/6TpQsRAkBl3uBvygIJ95LRbkD12uu8cIri8eqGUxSwU/https/media.tenor.com/ENgWR-D2pg4AAAAe/is-that-legal-legal.png
+
+
+[28-Aug-23 12:10 PM] churavis#0000
+https://tenor.com/view/legal-star-wars-illegal-p-palpatine-gif-13521108
+
+{Embed}
+https://tenor.com/view/legal-star-wars-illegal-p-palpatine-gif-13521108
+https://images-ext-1.discordapp.net/external/mByqnMwQN_nWWKxRis7BFRKA5fb50FxL09ZAE_SfiKA/https/media.tenor.com/WBnSGBl7QCAAAAAe/legal-star.png
+
+
+[28-Aug-23 12:40 PM] emperyan11#0000
+Hey, you got my style in one!
+
+{Reactions}
+2️⃣ 
+
+[28-Aug-23 12:44 PM] domicius#0000
+😂
+
+
+[28-Aug-23 12:56 PM] churavis#0000
+I tried to get it in one but there weren't any gifs that had both so I had to use two
+
+
+[28-Aug-23 01:35 PM] emperyan11#0000
+Lol, seems like it should be one. Well done at any rate
+
+
+[31-Aug-23 10:48 AM] emperyan11#0000
+Anyone have any BSE they could sell me on Demeter?
+
+
+[31-Aug-23 10:51 AM] churavis#0000
+I have 7 on planet, same price as Nike
+
+
+[31-Aug-23 10:51 AM] emperyan11#0000
+I'll take 'em
+
+{Reactions}
+🤝 
+
+[31-Aug-23 10:52 AM] emperyan11#0000
+Um, what would the Nike price be?
+
+
+[31-Aug-23 10:52 AM] emperyan11#0000
+(seeing no LM contracts to compare...)
+
+
+[31-Aug-23 10:59 AM] emperyan11#0000
+Thanks
+
+
+[31-Aug-23 11:08 AM] churavis#0000
+I have a ship going out to Demeter soon with plenty of extra space if you need more
+
+
+[31-Aug-23 11:09 AM] emperyan11#0000
+I'll take what you can spare. All my production is allocated elsewhere right now...
+
+
+[31-Aug-23 11:17 AM] churavis#0000
+You are welcome to fill the carrier entirely from ANT to Demeter, I also have plenty of bfabs and other construction MATs stockpiled on ANT
+
+
+[31-Aug-23 11:19 AM] emperyan11#0000
+Lol, I probably don't need a whole cargo but 30 - 50 BSE if you've got it. (30 is my min build, 50 is my "optimal" for my new stuff). Just filling out the land you know?
+
+
+[31-Aug-23 11:20 AM] churavis#0000
+Do you need MCG or consumables or anything else?
+
+
+[31-Aug-23 11:27 AM] emperyan11#0000
+No, just the BSE. Mostly since my hauler just landed and I don't know where my brain was when I loaded up. Don't make a special trip though...
+
+
+[31-Aug-23 11:28 AM] emperyan11#0000
+(Full disclosure I read BDE for BSE and loaded the wrong stuff 🙄 )
+
+
+[31-Aug-23 11:29 AM] churavis#0000
+I can definitely spare 50 BSE, standard corp price of 1k each, send me a buy contract on Demeter and you'll have it in a day or two
+
+
+[31-Aug-23 11:35 AM] emperyan11#0000
+Thanks!
+
+{Reactions}
+👍 
+
+[31-Aug-23 03:00 PM] higgsy#0000
+Buying 100 emergency water on Demeter
+
+
+[31-Aug-23 03:01 PM] higgsy#0000
+More if you can spare
+
+
+[31-Aug-23 03:04 PM] archielvahr#0000
+Feel free to send me a contract for up to 5k @ 22/u
+
+{Reactions}
+🤝 
+
+[31-Aug-23 04:33 PM] higgsy#0000
+Anyone got 4 BBH on Demeter?
+
+
+[02-Sep-23 10:52 AM] allocater#0000
+yes, if you still need it
+
+{Reactions}
+🤝 
+
+[10-Sep-23 11:10 AM] higgsy#0000
+Buying water on Demeter!
+
+
+[10-Sep-23 11:10 AM] churavis#0000
+I can give you up to 4k at 20/u
+
+{Reactions}
+🤝 
+
+[12-Sep-23 11:21 AM] emperyan11#0000
+Anybody have anything they'd like shipped to the CX? I've got 1200t / 1400m3 available, leaving today.
+
+
+[12-Sep-23 01:19 PM] archielvahr#0000
+Buying 10 DDT@600/u to keep my ORCs going for a day
+
+
+[12-Sep-23 02:19 PM] emperyan11#0000
+I got you
+
+
+[12-Sep-23 02:19 PM] archielvahr#0000
+Thanks! 😄
+
+
+[12-Sep-23 02:20 PM] emperyan11#0000
+No worries, I got cans and cans of that stuff just lying around 😉
+
+
+[12-Sep-23 02:38 PM] emperyan11#0000
+Hey all, your friendly neighbourhood governor here... any POP requests?
+
+
+[12-Sep-23 02:39 PM] emperyan11#0000
+Numbers look good to my eyes but what do I know? I'm new here
+
+
+[12-Sep-23 03:43 PM] archielvahr#0000
+Seems quite solid to me!
+
+
+[12-Sep-23 03:43 PM] archielvahr#0000
+I don't think I'd change a thing unless there was a massive influx of new people
+
+
+[12-Sep-23 07:19 PM] exeler#0000
+I was thinking about starting up an electronics base here. So if we could get some higher tier pops that would be great 😄
+
+
+[12-Sep-23 07:30 PM] pateirn#0000
+🤣
+
+
+[12-Sep-23 07:33 PM] exeler#0000
+It was almost a reality at one point. I'm still dreaming though.
+
+
+[26-Sep-23 09:40 AM] pateirn#0000
+Forgot to bring h2o for the new base. Can anyone get me for the semi short term?
+
+
+[26-Sep-23 09:41 AM] churavis#0000
+I've got extra, how much do you need?
+
+
+[26-Sep-23 09:44 AM] pateirn#0000
+500, 1K? Anything extra i'd buy 🙂
+
+
+[26-Sep-23 09:45 AM] churavis#0000
+Send me a contract for 1k at 25/u
+
+{Reactions}
+👍 
+
+[26-Sep-23 09:46 AM] pateirn#0000
+ty!
+
+{Reactions}
+👍 
+
+[14-Oct-23 07:16 PM] emperyan11#0000
+Anybody got some spare BSE hanging around? Order for 20 @ 1500/unit on the LM
+
+{Reactions}
+🤝 
+
+[14-Oct-23 07:17 PM] emperyan11#0000
+If you have to ship it don't worry, I've got a supply run coming, I'm just getting impatient
+
+
+[14-Oct-23 08:03 PM] churavis#0000
+Bring 20 and sell it back to me
+
+
+[15-Oct-23 01:01 PM] emperyan11#0000
+Heh. "Howdy neighbour, can I borrow a cup of BSE?"
+
+
+[25-Oct-23 03:04 PM] emperyan11#0000
+~~I've got ~just under 1000t available to haul Demeter >> ANT if anyone's got something lying around...~~
+
+
+[25-Oct-23 05:04 PM] mrsmith33#0000
+I need 20 DDT on Demeter (or Harmonia). Anyone selling anywhere?
+
+
+[25-Oct-23 06:06 PM] melon164#0000
+Sure, send a CONTD on Demeter
+
+
+[25-Oct-23 09:26 PM] hernanduer#0000
+I make some excess and have a few hundred on ANT
+
+
+[26-Oct-23 08:49 AM] mrsmith33#0000
+What price @melon164, @hernanduer ?
+
+
+[26-Oct-23 08:51 AM] hernanduer#0000
+2500 sounds fine
+
+{Reactions}
+👍 (2) 
+
+[30-Oct-23 11:28 AM] mrsmith33#0000
+Where do I get cheaper water for Demeter? Ice station?
+
+
+[30-Oct-23 11:29 AM] mrsmith33#0000
+Also need it for Harmonia and Norwick
+
+
+[30-Oct-23 11:30 AM] churavis#0000
+The nearest planet where you can get water would be Australia
+
+{Reactions}
+🤣 
+
+[30-Oct-23 11:45 AM] archielvahr#0000
+Ice Station Alpha or Etherwind
+
+
+[30-Oct-23 11:45 AM] archielvahr#0000
+probably better to haul it long distance
+
+{Reactions}
+👆 
+
+[30-Oct-23 01:16 PM] emperyan11#0000
+Not dredging your own?
+
+
+[30-Oct-23 01:17 PM] mrsmith33#0000
+not yet
+
+
+[30-Oct-23 01:23 PM] archielvahr#0000
+Actually I can spare 10k H2O at Demeter actually
+
+
+[30-Oct-23 01:23 PM] archielvahr#0000
+I usually keep my demeter base topped up with water
+
+
+[02-Nov-23 04:42 AM] mrsmith33#0000
+My base is up, I'm ready to buy H2O. What's the price?
+
+
+[02-Nov-23 09:50 AM] archielvahr#0000
+22/u
+
+
+[21-Nov-23 02:38 PM] emperyan11#0000
+How goes fellow citizens of Demeter?
+
+
+[21-Nov-23 02:45 PM] hernanduer#0000
+keep yer feet off mine der orchard lands
+
+
+[21-Nov-23 02:45 PM] mrsmith33#0000
+Pretty far journey. In the future I would only use it for stuff that can only grow on fertile land and is high in price (HER + ORC stuff)
+
+
+[21-Nov-23 02:45 PM] mrsmith33#0000
+food can be fully made from HYF products
+
+
+[21-Nov-23 02:49 PM] churavis#0000
+HER cannot be made in HYF and MAI doesn't make sense unless the price of RAT is quite high
+
+
+[21-Nov-23 02:50 PM] emperyan11#0000
+Anybody have any requests of your friendly neighbourhood governor?
+
+
+[21-Nov-23 02:50 PM] mrsmith33#0000
+yea, by food I meant RAT
+
+
+[21-Nov-23 02:51 PM] churavis#0000
+The dirt is too dirty, clean it up
+
+
+[21-Nov-23 02:57 PM] emperyan11#0000
+Done!
+
+
+[21-Nov-23 02:57 PM] emperyan11#0000
+No more dirt, will work on promoting everyone to Scientists so we can all work in clean rooms!
+
+
+[21-Nov-23 03:15 PM] churavis#0000
+I didn't say get rid of the dirt, just clean it up
+
+
+[21-Nov-23 03:32 PM] emperyan11#0000
+Oh. It will be CLEAN(room)
+
+
+[21-Nov-23 03:32 PM] churavis#0000
+Farming requires dirt so we can't get rid of it, I just want it to be clean dirt
+
+
+[21-Nov-23 03:36 PM] hernanduer#0000
+HYF is for _volume_
+
+
+[21-Nov-23 03:37 PM] hernanduer#0000
+these darned planets just don't have enough space to fit 100 farms on them
+
+{Reactions}
+🏙️ 
+
+[21-Nov-23 03:37 PM] hernanduer#0000
+gotta go vertical
+
+
+[21-Nov-23 03:54 PM] emperyan11#0000
+Well, shoot.
+
+
+[21-Nov-23 03:54 PM] churavis#0000
+You asked
+
+
+[21-Nov-23 04:33 PM] emperyan11#0000
+Lol
+
+
+[23-Nov-23 12:55 PM] allocater#0000
+ad up for COF and water
+
+
+[23-Nov-23 12:59 PM] churavis#0000
+I've got plenty of water and the COF will arrive in a day or two
+
+{Reactions}
+❤️ 
+
+[25-Nov-23 02:00 PM] higgsy#0000
+Do y'all use Demeter for HYF or FRM? Is there any benefit of FRM over HYF?
+
+
+[25-Nov-23 02:17 PM] melon164#0000
+FRM because Demeter is one of the relatively few places where you _can_ FRM
+
+
+[25-Nov-23 02:20 PM] mrsmith33#0000
+Demeter is fertile, so you should use it for FRM/ORC. HYF can be built anywhere
+
+
+[25-Nov-23 08:05 PM] hernanduer#0000
+Demeter is better than Harmonia in fertility so it's my FRM and ORCs
+
+
+[25-Nov-23 08:37 PM] archielvahr#0000
+SE-110B is ready for another HYF base!
+
+{Reactions}
+🎉 
+
+[25-Nov-23 08:50 PM] dehzhas#0000
+Let me know if you want anything other than settlers for the program
+
+
+[25-Nov-23 09:01 PM] archielvahr#0000
+Thanks, I think with the HYF focus it will just need more and more settlers 🙂
+
+{Reactions}
+👍 
+
+[26-Nov-23 05:42 PM] higgsy#0000
+Do we need anymore ORC in ANT space?
+
+
+[26-Nov-23 08:07 PM] archielvahr#0000
+I suspect not really. I have 800 GRA (that have been shipped to Norwick) and I have a lot of HOP on the CX
+
+
+[27-Nov-23 08:31 AM] hernanduer#0000
+yeah I have nearly 1k excess HOPS and a couple hundred GRA. I've pushed ALE prices quite low recently too :/
+
+
+[27-Nov-23 08:55 AM] mrsmith33#0000
+I could buy those
+
+
+[15-Dec-23 12:04 AM] churavis#0000
+Can someone buy some water from me real quick, I'm running out of space, 20/u
+
+
+[15-Dec-23 04:12 AM] mrsmith33#0000
+Sent contract for 5k
+
+{Reactions}
+🤝 
+
+[21-Mar-24 11:04 AM] emperyan11#0000
+Hey all, I'm going to continue to let the POP run down until we can get our unemployment numbers down. If anyone has any suggestions, I'm happy to hear them.
+
+
+[21-Mar-24 11:26 AM] archielvahr#0000
+Yeah like a good plan to me
+
+
+[21-Mar-24 11:38 AM] churavis#0000
+I would suggest letting the POP run down by ceasing festivities but still maintaining a minimum level of upkeep as upkeep based happiness changes slowly and you don't want to pendulum swing too far in the other direction.
+
+
+[21-Mar-24 11:51 AM] emperyan11#0000
+Yeah, I just triggered a festivity since I was away for a month and missed an upkeep period. Figured i'd count on the quick pop in happiness to tide us over until I caught up on upkeep
+
+
+[14-Jun-24 10:24 AM] emperyan11#0000
+Anyone have 3 BSE they could spare? I thought I had a buffer onboard for repairs but apparently I was dawdling too much
+
+
+[14-Jun-24 10:25 AM] churavis#0000
+I've got them, send me the contract
+
+{Reactions}
+👍 
+
+[14-Jun-24 10:27 AM] emperyan11#0000
+Contract away! With a small bonus 🙂
+
+{Reactions}
+🤝 
+
+[02-Jul-24 12:11 PM] katinga#0000
+Why was the COGC changed?!
+
+
+[02-Jul-24 12:12 PM] katinga#0000
+WTF?
+
+
+[02-Jul-24 12:13 PM] hernanduer#0000
+lol no one paying attention
+
+
+[02-Jul-24 12:13 PM] katinga#0000
+that looks deliberate!
+
+
+[02-Jul-24 12:13 PM] hernanduer#0000
+by that guy, yeah
+
+
+[02-Jul-24 12:13 PM] katinga#0000
+Demeter's a bread basket!  We don't have enough Ag planets as it is
+
+
+[02-Jul-24 12:13 PM] hernanduer#0000
+some people are bad at the game and setup industries in random places
+
+
+[02-Jul-24 12:14 PM] hernanduer#0000
+and then they troll vote like that
+
+
+[02-Jul-24 12:14 PM] hernanduer#0000
+just vote the right way
+
+
+[02-Jul-24 12:14 PM] churavis#0000
+Go tell him that
+
+
+[02-Jul-24 12:15 PM] churavis#0000
+Honestly, we shouldn't have to vote every week, we should only have to vote when a certain number of players or political leaders actively request it
+
+
+[02-Jul-24 12:15 PM] hernanduer#0000
+agreed, it's quite annoying
+
+
+[02-Jul-24 12:16 PM] hernanduer#0000
+now with governments, there should be a motion to set it and forget it
+
+
+[02-Jul-24 12:16 PM] katinga#0000
+agreed
+
+
+[02-Jul-24 12:17 PM] katinga#0000
+but it's OOG people in Demeter's parliament.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1257747001999884338/image.png?ex=6814fe2d&is=6813acad&hm=dd3c5785e65805ec2fbd70138778b5a44561726ba29dd50c23e143b2db6c20a1&
+
+
+[02-Jul-24 12:17 PM] churavis#0000
+Let's create a forum post and then ask everyone on Demeter and the UFO server to go comment/like it
+
+
+[02-Jul-24 12:17 PM] churavis#0000
+I'm sure we're not the only ones mad about this
+
+
+[02-Jul-24 12:18 PM] katinga#0000
+who else can set the COGC?  isn't it a govt function?
+
+
+[02-Jul-24 12:18 PM] sidepipe#0000
+Nope, everyone on the planet votes
+
+
+[02-Jul-24 12:19 PM] sidepipe#0000
+And vote power is weighted by how many PIO SET etc you have on your base
+
+
+[02-Jul-24 12:20 PM] churavis#0000
+Except you have to vote every week, and many people don't bother because it's a pain every  week, and so fewer and fewer people vote until the situation where one large base can completely change it because no one else is paying attention
+
+
+[02-Jul-24 12:22 PM] hernanduer#0000
+then it starts the cycle over again
+
+{Reactions}
+🔄 
+
+[02-Jul-24 12:22 PM] katinga#0000
+Who suggests the change, though?
+
+
+[02-Jul-24 12:22 PM] hernanduer#0000
+you can vote for anything at the CoGC at any time
+
+{Reactions}
+👆 (2) 
+
+[02-Jul-24 12:26 PM] sidepipe#0000
+No one, it’s a dumb majority vote every week
+
+
+[02-Jul-24 12:57 PM] .urpalhal#0000
+It’s kinda tedious
+
+
+[02-Jul-24 12:58 PM] mrsmith33#0000
+I always want to want the same way on each base. Let players set it once so it automatically votes each time.
+
+
+[02-Jul-24 02:30 PM] archielvahr#0000
+Which guy changed it?
+
+
+[02-Jul-24 02:30 PM] hernanduer#0000
+cyrilk
+
+
+[02-Jul-24 02:31 PM] archielvahr#0000
+Uhg, we should have auto-renewing votes
+
+
+[02-Jul-24 02:31 PM] archielvahr#0000
+Some people are trying to change Phobos too.
+
+
+[02-Jul-24 02:32 PM] churavis#0000
+Who's going to write up the forum post?
+
+
+[02-Jul-24 02:32 PM] archielvahr#0000
+I've made too many recently 😛
+
+
+[02-Jul-24 02:35 PM] akyantor#0000
+tbh, sound be controlled by the government. 😛
+
+
+[02-Jul-24 02:36 PM] hernanduer#0000
+good point - you can build CoGC without an ADM, so what do then?
+
+
+[02-Jul-24 02:37 PM] akyantor#0000
+Ah, that's fair.
+
+
+[02-Jul-24 03:44 PM] tuffyless#0000
+I feel the CoGC decision should be left with the people, not the Government.
+
+
+[02-Jul-24 04:23 PM] churavis#0000
+But what if the official name of the organization in charge has the word "people" in it?
+
+
+[03-Jul-24 02:33 PM] emperyan11#0000
+A reminder about the importance of voting...
+
+
+[06-Jul-24 01:04 PM] martin1194#0000
+Ads up for MCG (50ea)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1259208269046481048/image.png?ex=68150916&is=6813b796&hm=0d8d3f79aa88f3dace88671a0c0e700396f894dc86b546e850abeb8d9b2a1948&
+
+{Reactions}
+🤝 🫡 
+
+[21-Jul-24 11:47 AM] hernanduer#0000
+Make sure to vote here, we don't want the troll cyrilk to end up on the board
+
+{Reactions}
+🫡 (3) 
+
+[07-Aug-24 03:03 AM] melon164#0000
+Does anyone have any H2O spare here?  I didn't realise my setup was so far out of balance 😭
+
+
+[07-Aug-24 09:23 AM] archielvahr#0000
+Yup, sending you 3k
+
+{Reactions}
+🎉 
+
+[07-Aug-24 04:03 PM] turlorn_angren#0000
+let me know if you need more. i have a lot of water on demeter.
+
+
+[10-Aug-24 09:15 AM] akyantor#0000
+I’m on my way to Demeter. Need more cheap GRN for the INC. 😂
+
+
+[06-Oct-24 02:45 PM] mrsmith33#0000
+Reminder: Missing COGC mats, 4 days left
+
+
+[07-Oct-24 03:43 AM] turlorn_angren#0000
+i'm shipping some cocg mats out just to be sure.
+
+
+[08-Oct-24 11:20 AM] turlorn_angren#0000
+COCG mats have been fully supplied.
+
+
+[07-Nov-24 12:21 PM] mrsmith33#0000
+Missing COGC mats, 2 days left
+
+
+[07-Nov-24 12:35 PM] sidepipe#0000
+Dropped in the MCG - does anyone have some PE to spare?
+
+
+[07-Nov-24 01:03 PM] turlorn_angren#0000
+i added the PE
+
+
+[08-Nov-24 10:05 AM] emperyan11#0000
+Hey gang, it's been a good run as governor but I don't think I'm going to stand in the election this time around. Did everything I needed to I think.
+
+{Reactions}
+👍 (2) 
+
+[08-Nov-24 11:32 AM] archielvahr#0000
+Looks like Hern and Sidepipe will be there to take over, so it should be a smooth transition
+
+{Reactions}
+👍 
+
+[10-Nov-24 11:35 AM] sidepipe#0000
+@hernanduer looks like you're in line for gov on Demeter right now - does that work for you?
+
+
+[10-Nov-24 11:35 AM] hernanduer#0000
+just taking up the old crown 😄
+
+{Reactions}
+🫡 
+
+[10-Nov-24 11:38 AM] hernanduer#0000
+it's easy to handle, I already shipped out everything needed
+
+
+[04-Dec-24 01:42 PM] katinga#0000
+does anyone need water on Demeter?  I have an excess
+
+
+[04-Dec-24 06:11 PM] melon164#0000
+Always
+
+
+[04-Dec-24 06:12 PM] melon164#0000
+I don’t have quite enough RIG to balance, but the setup is perfectly 500 area so I can’t bring myself to change it 😂
+
+
+[04-Dec-24 06:31 PM] katinga#0000
+I've got 10000 units.  how much do you need?
+
+
+[05-Dec-24 02:24 AM] melon164#0000
+Yes 😝
+
+
+[05-Dec-24 02:24 AM] melon164#0000
+(all of it if it's available)
+
+
+[05-Dec-24 05:56 AM] katinga#0000
+hey, I still have to water *my* farms
+
+
+[05-Dec-24 06:05 AM] katinga#0000
+how about 8k?
+
+
+[05-Dec-24 06:06 AM] katinga#0000
+If it helps, I've had ads in the LM for quite a while
+
+
+[05-Dec-24 06:27 AM] melon164#0000
+That would be perfect 😁
+
+
+[05-Dec-24 06:30 AM] katinga#0000
+I've got 4k worth in the LM
+
+
+[06-Dec-24 11:45 AM] mrsmith33#0000
+COGC is not filled. 3 days left
+
+
+[06-Dec-24 02:42 PM] turlorn_angren#0000
+it is filled now.
+
+{Reactions}
+🎉 
+
+[07-Dec-24 08:01 PM] martin1194#0000
+ads up
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1315136232417792000/image.png?ex=6814d04f&is=68137ecf&hm=68d06c8dbe89796f266618dc5154b0d296bc45b27ca8d9d7a1ffcadc378aeea2&
+
+
+[20-Jan-25 11:02 PM] superbadsounds#0000
+I'll be planting a new 13 FRM base here in about a day. looks like popi should be covered by unemployment just fine.
+
+
+[22-Jan-25 04:25 PM] superbadsounds#0000
+Managed to forgot my PSL at the CX. I put up an ad on the LM  in case anyone has any laying around. 🙄
+
+
+[22-Jan-25 04:27 PM] archielvahr#0000
+Ahh not on Demeter
+
+
+[22-Jan-25 04:39 PM] superbadsounds#0000
+I figured it would be a long shot, but worth the ask
+
+
+[13-Feb-25 03:58 PM] emperyan11#0000
+Got an order up for 4 "emergency" BBH over MM
+
+
+[13-Feb-25 05:57 PM] tuffyless#0000
+got you!
+
+
+[14-Feb-25 09:35 AM] hernanduer#0000
+@martin1194 what's up with the weird motions? I don't see the SST or INF supplied, but also the motions are really high for what they are. I just supplied them with what they actually need
+
+
+[14-Feb-25 09:35 AM] hernanduer#0000
+I also ignore Emperyan because he always fills everything and that's not what they need most of the time 😛
+
+{Reactions}
+🤣 
+
+[14-Feb-25 09:42 AM] martin1194#0000
+sending from ANT. That motion is for fill those.
+
+
+[14-Feb-25 09:42 AM] martin1194#0000
+Trust me
+
+
+[14-Feb-25 09:43 AM] martin1194#0000
+Still on the way
+
+{Attachments}
+https://cdn.discordapp.com/attachments/973658736503697521/1339985333831471224/image.png?ex=6814e817&is=68139697&hm=a165164b4f9f1aeb79997848ae92b91635f06793128c068e43bf3328c693ac1c&
+
+
+[14-Feb-25 09:43 AM] martin1194#0000
+Motion also can remind me. : P
+
+
+[14-Feb-25 09:57 AM] martin1194#0000
+Ok. Then, I vote NO for it.
+
+
+[14-Feb-25 09:58 AM] martin1194#0000
+I preparing to fill all Safety station and OFF(Infirmary)
+
+
+[14-Feb-25 09:59 AM] martin1194#0000
+@hernanduer Or no need those now after u filled.
+
+
+[14-Feb-25 03:41 PM] hernanduer#0000
+feel free to save them for later
+
+
+[14-Feb-25 03:42 PM] hernanduer#0000
+I forgot to fill honestly
+
+
+[05-Apr-25 02:57 PM] mrsmith33#0000
+COGC reminder
+
+
+[05-Apr-25 07:30 PM] sidepipe#0000
+Filled 😎
+
+
+==============================================================
+Exported 1,442 message(s)
+==============================================================

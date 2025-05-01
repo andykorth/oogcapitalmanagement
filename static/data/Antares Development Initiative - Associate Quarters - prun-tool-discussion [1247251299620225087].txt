@@ -1,0 +1,4132 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Associate Quarters / prun-tool-discussion
+Topic: External PrUn tool development/discussion.
+==============================================================
+
+[03-Jun-24 01:13 PM] cptcoleslaw#0000
+ayoooo!! it's spreadsheet time!
+
+
+[03-Jun-24 01:17 PM] acramernc#0000
+okay so what would the goal of an administrative sheet be? are we looking to condense corporation production into a single view of sorts, or do you want to be able to set production goals and know what is necessary
+
+
+[03-Jun-24 01:20 PM] cptcoleslaw#0000
+my personal goal is a sheet that calculates what I need on each planet using a combination of burn math and manually set thresholds, then I can just select a planet from a dropdown and it will tell me what to export and what to import. The goal is when a ship arrives on a planet I don't even need to think, just open the load/unload view and do what it says. That way I don't have to research my whole company every time a ship lands somewhere...
+
+
+[03-Jun-24 01:22 PM] cptcoleslaw#0000
+but I think an 'administrative sheet' for this project, I imagine just a condensed list of all the tools people have made or are working on, as well as some standards to use when making tools collaboratively. Like "name the sheet that pulls CX data this" or "refer to this formula output as this to avoid confusion with that" ¯\_(ツ)_/¯
+
+
+[03-Jun-24 01:22 PM] cptcoleslaw#0000
+then a bunch of data sheets already set up for actively experimenting with tools easily
+
+
+[03-Jun-24 01:25 PM] acramernc#0000
+I've heard this sentiment a bunch of different places, particularly the tracking of what to import / export. I'm not far enough into the game yet to really understand this need, so let me ask this: what are you looking for that is distinct from the use of an XIT BURN screen
+
+
+[03-Jun-24 01:26 PM] lossi#0000
+I would like to see less demand for so many sheets, especially when as noted, they often draw the same data, and more accurate sheets could make use of fewer calls to the API and update information in multiple sheets
+
+{Reactions}
+💯 
+
+[03-Jun-24 01:26 PM] lossi#0000
+One of the biggest complaints I get from people is that the in-game UI is too hard to understand, and I think a centralization of sheet tools could supplement this and help new players.
+
+{Reactions}
+💯 
+
+[03-Jun-24 01:27 PM] lossi#0000
+XIT doesn't do much in the way of telling you how to balance out your network
+
+
+[03-Jun-24 01:27 PM] lossi#0000
+Burn just tells you where things are and where they're needed in an isolated way
+
+
+[03-Jun-24 01:29 PM] cptcoleslaw#0000
+a) some materials are not included in burn but I still like to keep a specific amount of those things on a planet. Like fuel stockpiles, or things I sell there.
+b) burn tells only what I need to deliver, not what I need to export
+c) XIT burn doesn't really help with bigger picture planning. I would like to be able to manually enter shipping routes, then the sheet uses that to tell me what to load and unload for future stops.
+
+I absolutely love XIT burn and use it *a lot*, but there are some limitations, and once you start having more bases it can get tedious to keep up with everything and I don't always have the time
+
+
+[03-Jun-24 01:29 PM] lossi#0000
+C is rather adjacent to one of the things I'm working on
+
+
+[03-Jun-24 01:29 PM] lossi#0000
+my focus in the game has been that little to almost no care is given to the logisitics organization
+
+
+[03-Jun-24 01:30 PM] lossi#0000
+People just...  Build a new ship
+
+{Reactions}
+🚀 
+
+[03-Jun-24 01:30 PM] lossi#0000
+Or increase fuel use
+
+
+[03-Jun-24 01:35 PM] lossi#0000
+Take a theoretical player that has the entire strip from benten as their bases.  You can easily split it into smaller ships the further out you go instead of just utilizing a massive expensive WCB fully decked out ship
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1247257456707502102/image.png?ex=68151086&is=6813bf06&hm=4a95ea58a60998977e50e939f27363cdd9fad0adf1b67474eb01f1a658dd5f41&
+
+
+[03-Jun-24 01:38 PM] lossi#0000
+That's an entirely theoretical layout for a route, I'm in the nightmare that is Moria logistics
+
+
+[03-Jun-24 01:38 PM] lossi#0000
+but benten looked easier to make an example from
+
+
+[03-Jun-24 01:39 PM] archielvahr#0000
+Also worth noting that there are a handful of connections that aren't on that map
+
+
+[03-Jun-24 01:39 PM] acramernc#0000
+```
+Planet |    <Enhanced Burn Tickers>    | <Additional Manual Tickers>
+-------|-------------------------------|-----------------------------
+       |               <Fio Storage Data for Ticker> 
+-------|-------------------------------|-----------------------------
+       |         <Min Required stockpile (manually entered)>
+-------|-------------------------------|-----------------------------
+       |                  <Calculated import/export>
+```
+
+
+[03-Jun-24 01:42 PM] acramernc#0000
+okay so i think this table would get a and b, still need to think about c
+
+
+[03-Jun-24 01:43 PM] lossi#0000
+C is easier than you may think
+
+
+[03-Jun-24 01:43 PM] acramernc#0000
+could potentially add special characters to the stockpile to indicate a set # of days of burn instead of a static number
+
+
+[03-Jun-24 01:45 PM] acramernc#0000
+tbh i think c isn't reaching as high as it could, why manually set your own shipping routes when you could have an algorithm set them for you
+
+
+[03-Jun-24 01:46 PM] acramernc#0000
+but that is reaching well into the realm of a full blown website instead of a sheet
+
+
+[03-Jun-24 01:46 PM] lossi#0000
+Would it be necessary though?
+
+
+[03-Jun-24 01:46 PM] lossi#0000
+Or helpful?
+
+
+[03-Jun-24 01:47 PM] acramernc#0000
+is any of this necessary?
+
+
+[03-Jun-24 01:47 PM] lossi#0000
+The algorithm I mean
+
+
+[03-Jun-24 01:48 PM] acramernc#0000
+i think that may depend on the person, i much prefer the idea of inserting my bases and ships into an algorithm and having it figure out the optimal routing, but i'm sure there are many people who would like to make their own routes
+
+
+[03-Jun-24 01:50 PM] lossi#0000
+I'm weary to consider an algorithmic solution, admittedly.  You can in theory give chatgpt an explanation of the data with the CSV's from fnar and it could build a network for you
+
+
+[03-Jun-24 01:51 PM] lossi#0000
+But you wouldn't understand the underlying results
+
+
+[03-Jun-24 01:51 PM] lossi#0000
+Having worked as a PA at amazon long enough I've seen the consequences of automation for the sake of automation
+
+
+[03-Jun-24 01:52 PM] acramernc#0000
+chatgpt is not a good tool for algorithmic problems
+
+
+[03-Jun-24 01:52 PM] lossi#0000
+You generate a culture of people who don't actually understand or understand how to obtain the information they're playing with.
+
+
+[03-Jun-24 01:53 PM] lossi#0000
+And then a small group of people hold way too much knowledge that hinders the entire community when they leave and their tools are left barren
+
+
+[03-Jun-24 01:53 PM] lossi#0000
+It's not perfect, but admittedly for the simplicity of this question it could do it just fine
+
+
+[03-Jun-24 01:54 PM] lossi#0000
+1 build routes between planets
+2 establish the flow rates
+3 identify locations where large sums of goods can transfer and set up warehouses there
+4 buy ships to transfer to the warehouse hubs and back
+
+
+[03-Jun-24 01:57 PM] acramernc#0000
+regardless, i don't think this particular feature would be appropriate for a spreadsheet anyways
+
+
+[03-Jun-24 01:59 PM] acramernc#0000
+my brain loves the complexity of the potential heuristic of the a* algorithm and all the weights you could apply, but there is no way to program that within a sheet and i want to avoid appscripts if at all possible
+
+
+[03-Jun-24 01:59 PM] lossi#0000
+:GIFRengeNom:
+
+
+[03-Jun-24 01:59 PM] lossi#0000
+Anyone wanna make a spread on gsheet for us
+
+
+[03-Jun-24 02:00 PM] lossi#0000
+Recommend editors use their emails and let other people make copies
+
+
+[03-Jun-24 02:00 PM] lossi#0000
+I've seen some rough things happen to sheets that let anyone edit them
+
+{Reactions}
+💯 
+
+[03-Jun-24 02:07 PM] cptcoleslaw#0000
+either of you want to take lead here? I've been playing PrUn a bit and have some ideas that might help guide development, but not nearly the technical knowledge you seem to have. I'll play 'product owner' if you wanna decide *how* to do things. I feel like you have an idea in mind for organizing this based on experience, and I'm more interested in learning from that than stepping on toes with my own totally inexperienced and ill-informed ideas, lol
+
+
+[03-Jun-24 02:07 PM] lossi#0000
+*looks at the organization of my sheets*
+
+
+[03-Jun-24 02:08 PM] acramernc#0000
+i can make a google account for this in a few hours, but i don't want to host something like this on my personal google account
+
+
+[03-Jun-24 02:08 PM] lossi#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1247265646828453938/image.png?ex=68151827&is=6813c6a7&hm=5eff50f13dcdc97dfc935fee8035efc0eb50716e3a867038c47ee58007d09591&
+
+
+[03-Jun-24 02:08 PM] cptcoleslaw#0000
+based on my experience in KAWA. All the talent in the world won't mean much unless someone takes responsibility for standardizing/coordinating effort...
+
+
+[03-Jun-24 02:08 PM] lossi#0000
+Fuel cost calculation has like 8 things jammed into it lol
+
+
+[03-Jun-24 02:09 PM] acramernc#0000
+i desperately wish gsheets would let you make sheet folders lol
+
+
+[03-Jun-24 02:09 PM] lossi#0000
+You can
+
+
+[03-Jun-24 02:09 PM] acramernc#0000
+O_O
+
+
+[03-Jun-24 02:09 PM] lossi#0000
+none of them are completed ofc
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1247265928752664676/image.png?ex=6815186a&is=6813c6ea&hm=56b214e67871ccdb812f97e5f6e034796fb27b4a3236586bac4d0a649e37ec93&
+
+
+[03-Jun-24 02:10 PM] lossi#0000
+The bottom right black thing should be in a sheet of its own since it calculates the best things to buy in arbitration
+
+
+[03-Jun-24 02:10 PM] lossi#0000
+has nothing to actually do with fuel cost
+
+
+[03-Jun-24 02:10 PM] acramernc#0000
+how lol
+
+
+[03-Jun-24 02:10 PM] lossi#0000
+use drive.google.com not sheets.google.com
+
+
+[03-Jun-24 02:11 PM] acramernc#0000
+no i mean the tabs
+
+
+[03-Jun-24 02:11 PM] lossi#0000
+oh
+
+
+[03-Jun-24 02:11 PM] lossi#0000
+God that would be wonderful
+
+
+[03-Jun-24 02:11 PM] acramernc#0000
+ikr
+
+
+[03-Jun-24 02:12 PM] cptcoleslaw#0000
+at least there's this little guy and color coding
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1247266558389129359/image.png?ex=68151900&is=6813c780&hm=a8d33dc516b7b603e0aaedbd3848a003ccb90aa8422ca2ef0833e7ef34fefb73&
+
+
+[03-Jun-24 02:12 PM] acramernc#0000
+true
+
+
+[03-Jun-24 02:12 PM] cptcoleslaw#0000
+my really big sheets I just group by color and use that
+
+
+[03-Jun-24 02:12 PM] lossi#0000
+once it gets a scrolly, it stops being so helpful :c
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1247266693261168640/image.png?ex=68151920&is=6813c7a0&hm=38c5fb4155af28b9e854fddb297971a87e8627254aee50874dd0927be7b2771f&
+
+
+[03-Jun-24 02:13 PM] lossi#0000
+ignore sheet10
+
+
+[03-Jun-24 02:13 PM] lossi#0000
+:stabbo:
+
+{Reactions}
+🤣 
+
+[03-Jun-24 02:13 PM] acramernc#0000
+sheet10 has nothing on hidden harold
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1247267052742377532/image.png?ex=68151976&is=6813c7f6&hm=628c60849a04beda8342116d92eb5bae7dd9bbd339a9543d3f3350a07f7d2d26&
+
+{Reactions}
+😆 
+
+[03-Jun-24 03:17 PM] evany.#0000
+thats someones route? holy hell
+im such a casual..
+
+
+[03-Jun-24 03:30 PM] lossi#0000
+It's not
+
+
+[03-Jun-24 07:19 PM] tanda#0000
+gosh every time I go to work I have to read a novel to catch back up
+
+
+[03-Jun-24 07:19 PM] tanda#0000
+you are some busy folks!
+
+
+[03-Jun-24 07:27 PM] cptcoleslaw#0000
+TL;DR: spreadsheets 🥰
+
+
+[04-Jun-24 06:57 AM] acramernc#0000
+okay, i made a blank playground spreadsheet for us to mess with ideas on, if y'all want to dm me emails to add to the sheet as editors I can share it with you
+
+
+[04-Jun-24 07:03 AM] acramernc#0000
+hmm, it's not letting me share it, maybe b/c its a new account?
+
+
+[04-Jun-24 07:08 AM] acramernc#0000
+oop, there it goes, we're good
+
+
+[24-Jun-24 10:03 PM] jcheung#0000
+👀 so, what kind of tools do y'all have
+
+
+[24-Jun-24 10:05 PM] riseoffilth#0000
+Well, I think my personal tool is pretty damn good. Hangs a bit to the left, but ive never heard any complaints
+
+
+[24-Jun-24 10:06 PM] jcheung#0000
+I can't do math with that tool fool
+
+
+[24-Jun-24 10:06 PM] riseoffilth#0000
+I mean, you got a 1 and a 0, what more do you need
+
+
+[24-Jun-24 10:06 PM] riseoffilth#0000
+clearly not a fan of binary
+
+
+[24-Jun-24 10:07 PM] jcheung#0000
+What am i supposed to do with *one* zero and *one* one
+
+
+[24-Jun-24 10:08 PM] riseoffilth#0000
+https://tenor.com/view/finger-bang-natalie-dormer-insert-finger-gif-16035564
+
+{Embed}
+https://tenor.com/view/finger-bang-natalie-dormer-insert-finger-gif-16035564
+https://images-ext-1.discordapp.net/external/K76WWAF5-sfTjQDbdd1UJnVobD5pRIhm0T7sYQm9Ef0/https/media.tenor.com/2J2R20k9C_8AAAAe/finger-bang-natalie-dormer.png
+
+
+[24-Jun-24 10:08 PM] riseoffilth#0000
+im straight up LOLing irl atm
+
+
+[24-Jun-24 10:09 PM] jcheung#0000
+I'm trying to add, not multiply
+
+
+[24-Jun-24 10:10 PM] riseoffilth#0000
+Only if you get twins or triplets.
+
+
+[24-Jun-24 10:10 PM] riseoffilth#0000
+let alone more 😮
+
+
+[01-Jul-24 11:59 AM] avalock#0000
+thinking of doing some fun with some raspberry pi’s :3
+
+
+[01-Jul-24 12:00 PM] histidinedwarf#0000
+Any ideas ?
+
+
+[01-Jul-24 12:01 PM] avalock#0000
+i’m guessing automation might be cheaty, if its possible to grab timers on ships from the game, maybe a lil alarm clock thing
+
+
+[01-Jul-24 12:02 PM] .urpalhal#0000
+Yeah
+
+
+[01-Jul-24 12:02 PM] .urpalhal#0000
+I’m pretty sure those are against the ToS
+
+
+[01-Jul-24 12:02 PM] avalock#0000
+the alarm clock or automation
+
+
+[01-Jul-24 12:02 PM] .urpalhal#0000
+Definitely the alarm clock
+
+
+[01-Jul-24 12:02 PM] avalock#0000
+damn 😔
+
+
+[01-Jul-24 12:03 PM] avalock#0000
+well i guess non game stuff then lmao
+
+
+[01-Jul-24 12:05 PM] histidinedwarf#0000
+I believe FIO was updating endpoints
+
+
+[01-Jul-24 12:05 PM] histidinedwarf#0000
+Maybe it will have some cool new functionality you can use
+
+
+[01-Jul-24 12:06 PM] avalock#0000
+yeeee i’ll look around FIO
+
+
+[01-Jul-24 12:06 PM] histidinedwarf#0000
+Oh, you could have a thing live-updating all LM contracts available
+
+
+[01-Jul-24 12:07 PM] avalock#0000
+ooooo that would go hard
+
+
+[01-Jul-24 12:08 PM] avalock#0000
+maybe a lil like… compare LM to CX prices
+
+
+[01-Jul-24 12:08 PM] histidinedwarf#0000
+mhm
+
+
+[01-Jul-24 12:08 PM] avalock#0000
+*cracks fingers*
+
+i needed a python project anyways
+
+
+[01-Jul-24 12:09 PM] histidinedwarf#0000
+With enough free time you could have a thing telling you if there's a convenient shipping path between multiple planets to collect a bunch of orders
+
+
+[01-Jul-24 12:09 PM] histidinedwarf#0000
+FIO has a path finding endpoint
+
+
+[01-Jul-24 12:09 PM] avalock#0000
+oo
+
+
+[01-Jul-24 12:11 PM] avalock#0000
+imma start small i think, just “get LM prices” type thing
+
+
+[01-Jul-24 12:11 PM] avalock#0000
+i think thats a good starting point
+
+{Reactions}
+👍 
+
+[01-Jul-24 12:14 PM] avalock#0000
+could be fun to let it have a lil website type thing to connect to but like *do i really want to open that up*
+
+
+[01-Jul-24 12:21 PM] evany.#0000
+that would be incredibly weird for reading a variable to be considered game breaking
+
+
+[01-Jul-24 12:22 PM] evany.#0000
+would like forcing people to play with their monitor off, or PMMG - just displaying the same information differently
+
+
+[01-Jul-24 12:22 PM] histidinedwarf#0000
+I thought it was a joke
+
+
+[01-Jul-24 12:22 PM] .urpalhal#0000
+Yeah….
+
+
+[01-Jul-24 12:22 PM] evany.#0000
+i could be retarded too thats an option
+
+
+[01-Jul-24 12:22 PM] evany.#0000
+been dealing with dumb all day. my bad!
+
+{Reactions}
+👌 
+
+[01-Jul-24 12:22 PM] .urpalhal#0000
+It’s ok
+
+
+[01-Jul-24 12:54 PM] jcheung#0000
+i would love it if there was a way to see all the LMs and filter by range 😄
+
+
+[01-Jul-24 04:16 PM] razesdark#0000
+For the heck of it, I wanted to just import my trades into some accounting software to have some "real" data, while testing it out.
+
+
+[02-Jul-24 07:16 PM] histidinedwarf#0000
+#shipping would make for a useful discord bot
+
+{Reactions}
+💯 
+
+[02-Jul-24 07:16 PM] histidinedwarf#0000
+So you don't need to manage deleting your post and you can see all shipping by planet and size
+
+
+[02-Jul-24 07:31 PM] .urpalhal#0000
+Yeah exeler made one for OOG and it is nice
+
+
+[10-Jul-24 08:25 PM] evany.#0000
+https://discord.com/channels/1183243037430796339/1183249253439639592/1260716860823965737 @sidepipe share src
+
+
+[10-Jul-24 08:28 PM] tanda#0000
+I think that needs a pin for when FIO is working again
+
+
+[10-Jul-24 08:40 PM] sidepipe#0000
+https://docs.google.com/spreadsheets/d/1zXoajSsCl-6QJO_ibXU6H_-2LLPc8mLjCo-ZhtUFkJc/edit?usp=sharing
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1zXoajSsCl-6QJO_ibXU6H_-2LLPc8mLjCo-ZhtUFkJc/edit?usp=sharing
+STGL Storefront Static
+Stock
+
+Username,NaturalId,Name,StorageType,Ticker,Amount
+SIDEPIPE,ANT,Antares Station,WAREHOUSE_STORE,DDT,743
+SIDEPIPE,ANT,Antares Station,WAREHOUSE_STORE,DW,8566
+SIDEPIPE,ANT,Antares Station,WAREHOUSE_STORE,FIM,755
+SIDEPIPE,ANT,Antares Station,WAREHOUSE_STORE,NA,3912
+SIDEPIPE,ANT,Antares Station...
+https://images-ext-1.discordapp.net/external/KGBQnvCTjINhQDLCC4jE1r3uzfIDZyfStlC8yokf2B0/https/lh7-us.googleusercontent.com/docs/AHkbwyLkwY3OBk2DSlfzz_0zvfz2ZPNNbZHeXqDnVjj5FT5N550E62ZCTvNHU-pYYY4d7pLveLtro3qTSPI2eaOaVebiMV8GwTELoJMq1i4cqPy70pAjOIv8%3Dw1200-h630-p
+
+
+[10-Jul-24 08:41 PM] sidepipe#0000
+Just put `=IMPORTDATA("https://rest.fnar.net/csv/inventory?apikey=YOUR_API_KEY&username=YOU")` in Cell A1 in the 'Stock' tab
+
+
+[10-Jul-24 08:43 PM] sidepipe#0000
+Looks like FIO links work if you add some other random parameter to the end of the URL, like ?googlesheets=issue
+
+
+[10-Jul-24 08:46 PM] tanda#0000
+oddly enough mine seems to be working
+
+
+[10-Jul-24 08:48 PM] sidepipe#0000
+I saw Saganaki talking about how it might be some caching issue with google sheets
+
+
+[10-Jul-24 08:48 PM] evany.#0000
+thanks
+
+
+[10-Jul-24 11:45 PM] jvaler#0000 (pinned)
+at the request of evayoo: https://aeryen23.github.io/yapt/#/planetsearch
+
+
+[10-Jul-24 11:45 PM] jvaler#0000
+Pinned a message.
+
+
+[11-Jul-24 12:01 AM] jcheung#0000
+hmmm. trying to decide if i like this or prunplanner's more
+
+
+[11-Jul-24 12:02 AM] jcheung#0000
+it's more snappy than prunplanner's
+
+
+[11-Jul-24 09:42 AM] evany.#0000
+see at least one other person didnt know
+
+
+[11-Jul-24 09:42 AM] evany.#0000
+its definitely better albeit less useful than prunplanners
+
+
+[18-Jul-24 05:39 PM] histidinedwarf#0000
+I happen to be in the figurative business of galaxy generation algorithms so I took a look at PRuN and FIO. Apparently all the systems have 3D coordinates
+
+
+[18-Jul-24 05:39 PM] histidinedwarf#0000
+Would be neat to see a full 3D map if that's not a thing yet
+
+
+[18-Jul-24 05:39 PM] histidinedwarf#0000
+Like 15% I'll try it
+
+
+[18-Jul-24 05:53 PM] jcheung#0000
+I did notice they were 3d as i was moving around the map ingame... some lines overlap in the default view angle and make it a pita to view
+
+
+[18-Jul-24 05:58 PM] histidinedwarf#0000
+Oh yeah you can move the camera a bit
+
+
+[18-Jul-24 05:58 PM] histidinedwarf#0000
+I can do better though
+
+
+[18-Jul-24 05:58 PM] histidinedwarf#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1263630947224649748/iu.png?ex=6814a546&is=681353c6&hm=8d895f708cfdcf19af2c03e39589453edbc5c114594bf901a87cd7b32c4e17d5&
+
+
+[18-Jul-24 05:58 PM] histidinedwarf#0000
+Maybe exaggerate the Z position more and give more camera freedom
+
+
+[18-Jul-24 05:59 PM] histidinedwarf#0000
+And give the CX systems a different 3D model
+
+
+[19-Jul-24 12:40 AM] evany.#0000
+i'd also be curious as to what time is like 'the ideal time' to launch ships are they on daily cycles etc
+
+
+[19-Jul-24 12:40 AM] evany.#0000
+physics in general make very little sense seemingly.. ill launch two ships to the same target station but two hours apart and frequently have the 2nd ship arriving as much as 5 hours earlier which is crazy to me.
+
+
+[19-Jul-24 12:48 AM] jcheung#0000
+Or I'll add one unit of fuel allocation and it adds 8 hours to the flight time
+
+
+[19-Jul-24 12:48 AM] jcheung#0000
+By one unit, i mean literally one SF
+
+
+[19-Jul-24 12:49 AM] jcheung#0000
+https://discord.com/channels/350171287785701388/350171288267915277/1263684080621326417
+
+Oh, sorry. 6 hours
+
+
+[24-Jul-24 02:01 AM] shinonomesciences#0000
+Hello, I’m interested in creating (or help creating) a shipping tool for the game. I am new player, but my background is in computational physics, so this is really compelling subject for me.
+
+{Reactions}
+👀 
+
+[24-Jul-24 02:07 AM] shinonomesciences#0000
+As far as I know, I don’t think there’s a published formula for fuel usage. I was wondering if anybody had tried logging differing fuel usage vs the live orbit map inside the game?
+
+
+[24-Jul-24 02:16 AM] razenpok#0000
+Not sure if anyone here has tried that, but you might find helpful the planetary data from the game available at https://rest.fnar.net/planet/allplanets/full (the response is huge, and API might be slow to return a response; I'll attach the most recent one to this message). Look for:
+```
+        "Gravity": 1.030679702758789,
+        "MagneticField": 0.3492189645767212,
+        "Mass": 2.6765849798542058E+25,
+        "MassEarth": 4.481890678405762,
+        "OrbitSemiMajorAxis": 397184271000.0,
+        "OrbitEccentricity": 0.011317654512822628,
+        "OrbitInclination": 0.043438296765089035,
+        "OrbitRightAscension": 0.0,
+        "OrbitPeriapsis": 0.0,
+        "OrbitIndex": 4,
+        "Pressure": 4.480185031890869,
+        "Radiation": 1.2759549040633039E-24,
+        "Radius": 13294019.0,
+        "Sunlight": 60.0067138671875,
+        "Surface": true,
+        "Temperature": -151.0745086669922,
+        "Fertility": -1.0,
+```
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1265568202088513556/full.json?ex=681519fc&is=6813c87c&hm=2ef27b6bfb9f7bcc32cd3de2a7da3ed0af966578c2948a7a4c373a6384594972&
+
+
+[24-Jul-24 02:29 AM] marat_sh#0000
+transfer windows? 👀
+
+{Reactions}
+👆 
+
+[24-Jul-24 03:22 AM] evany.#0000
+its actually an interesting question to ask too, so you can see exactly what/how long something should take
+
+would help tackle the issue of "is 6hours good for this route?" only to get only 8 hours and spend 3 minutes dragging around trying to get back to 6 hours
+
+
+[24-Jul-24 04:07 AM] Deleted User#0000
+There's been a few people discussing this in the past.
+
+
+[24-Jul-24 04:08 AM] Deleted User#0000
+If I recall somebody had a working prototype of a shipping calculator that had somewhat accurate predictions of flight characteristics between one planet to another.
+
+
+[24-Jul-24 07:20 AM] cptcoleslaw#0000
+MemoryAlpha is probably the person who's done the most work in flight stuff. Check out the stl flight discussion channel here for most of the community research so far https://discord.com/invite/m3NVRpFF
+
+
+[24-Jul-24 10:20 AM] cptcoleslaw#0000
+anyone have an CX arbitrage tool they'd be willing to use to help me in exchange for a cut of profit? I've got a ship about to fly HRT to BEN and I know there's got to be some good trades there, but I don't personally have a tool for finding them because I don't do CX trading a lot
+
+
+[25-Jul-24 05:14 AM] razenpok#0000
+I've made an extension over https://rest.fnar.net/exchange/all here:
+
+> https://refined-prun.github.io/refined-prices/all.csv
+
+Information is updated during the day from https://rest.fnar.net/exchange/all and https://rest.fnar.net/exchange/cxpc/, with added fields for each ticker:
+- FullTicker
+- OpenYesterday
+- CloseYesterday
+- HighYesterday
+- LowYesterday
+- TradedYesterday
+- TWAP7D
+- VWAP7D
+- Traded7D
+- AverageTraded7D
+- TWAP30D
+- VWAP30D
+- Traded30D
+- AverageTraded30D
+
+VWAP: Volume-Weighted Average Price
+TWAP: Time-Weighted Average Price
+VWAP7D and VWAP30D are like PP7D and PP30D in prunplanner (idk what they really use) in a way that it's a more stable price than ask/buy/average. TWAPs are added just in case.
+AverageTraded helps to estimate the average daily supply/demand for a commodity when trades are infrequent:
+AverageTraded7D = Traded7D / 7
+AverageTraded30D = Traded30D / 30
+
+
+[25-Jul-24 05:15 AM] razenpok#0000
+Ah, and there's probably less chance to get N/A in Google Sheets than when using FIO API, since it is statically served by GitHub Pages
+
+
+[25-Jul-24 05:15 AM] razenpok#0000
+FIO API has more recent data though
+
+
+[25-Jul-24 05:29 AM] evany.#0000
+daily ?
+
+
+[25-Jul-24 05:39 AM] razenpok#0000
+Every half-hour a script runs, updates all fields from https://rest.fnar.net/exchange/all, and then for each ticker that was updated more than a day ago, it goes to https://rest.fnar.net/exchange/cxpc/ticker and updates the added fields up until it gets rate limited by FIO API
+
+
+[25-Jul-24 06:11 AM] evany.#0000
+not concerned about getting rate limited on the same items every time ?
+
+
+[25-Jul-24 06:14 AM] evany.#0000
+i might dm you about that i'm kind of curious how you stood t hat up
+
+{Reactions}
+👌 
+
+[25-Jul-24 06:16 AM] razenpok#0000
+Nope, I keep the timestamp of last update, and only update items that were not updated for more than 24h
+
+
+[25-Jul-24 06:16 AM] evany.#0000
+ah ha. good solution i like it
+
+
+[25-Jul-24 06:17 AM] evany.#0000
+i've been playing with a lot of api's lately trying to automate switching layer but i'm kind of trash at it
+
+
+[25-Jul-24 06:17 AM] evany.#0000
+this seems like a good opportunity to play with an api that isn't business critical
+
+{Reactions}
+kekw 
+
+[25-Jul-24 06:18 AM] evany.#0000
+if you can't afford lab hardware, production is lab at the end of the day
+
+
+[25-Jul-24 06:18 AM] razenpok#0000
+Well, there are 2000 tickers,  the script runs 48 times a day, and it takes some 60 requests to get rate limited
+
+
+[25-Jul-24 06:18 AM] razenpok#0000
+I think it should work fine
+
+
+[25-Jul-24 06:20 AM] evany.#0000
+yeah thats fair. probably a sort so that you target oldest/expired data most often for updates would ensure things don't get missed i suppose
+
+{Reactions}
+blobthink 
+
+[25-Jul-24 06:21 AM] evany.#0000
+when PUT's happen thats an http(s) call isn't it? regardless of whether its a string or binary blob i'd imagine.
+
+
+[25-Jul-24 06:21 AM] evany.#0000
+thanks
+
+
+[25-Jul-24 06:55 AM] razenpok#0000
+Yes, that's one type of http requests
+
+
+[25-Jul-24 06:56 AM] razenpok#0000
+Like GET, POST, etc
+
+
+[25-Jul-24 07:08 AM] razenpok#0000
+Added sorting by timestamp, so the items with the oldest timestamps are processed first
+
+
+[31-Jul-24 11:21 PM] evany.#0000
+https://universemap.duckdns.org/
+
+{Embed}
+https://universemap.duckdns.org/
+Taiyi's Prosperous Universe Map
+Taiyi's Prosperous Universe Map - An interactive map for the Prosperous Universe game
+
+
+[02-Aug-24 02:52 PM] razesdark#0000
+This map is great!
+
+
+[03-Aug-24 08:05 AM] evany.#0000
+i thought so too!
+
+
+[03-Aug-24 11:50 AM] tanda#0000
+man, I thought there was a self calculating spreadsheet out there for HQ upgrades where you just put in your starting level and your desired level and it told you the mats you needed
+
+
+[03-Aug-24 12:06 PM] realharvey#0000
+those are all calculations you are doing once. So I guess its to much effort to make an extra sheet like that?
+
+
+[03-Aug-24 12:07 PM] tanda#0000
+that's fair, I just figured it's done over and over on a community level as well
+
+
+[03-Aug-24 12:08 PM] jcheung#0000
+I could probably make one
+
+
+[03-Aug-24 12:13 PM] jcheung#0000
+I was thinking about it for a while
+
+
+[03-Aug-24 12:18 PM] tanda#0000
+I would definitely appreciate it, and I think it would get use
+
+
+[03-Aug-24 12:18 PM] evany.#0000
+i made a sheet that does that
+
+
+[03-Aug-24 12:19 PM] evany.#0000
+i think i did it for internal prices too
+
+
+[03-Aug-24 12:19 PM] evany.#0000
+cuz i did this
+
+
+[03-Aug-24 12:20 PM] evany.#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1269344049232482364/image.png?ex=6814fec4&is=6813ad44&hm=4f0ae217e0074c18355d576acd3568b497050f82b8ba829f418cd353dad73e2b&
+
+
+[03-Aug-24 12:20 PM] tanda#0000
+oh it was your sheet that I was remembering. I knew I'd seen one
+
+
+[03-Aug-24 12:20 PM] evany.#0000
+i never public'd it because i have a million tabs in it of all my crazy shit
+
+
+[03-Aug-24 12:20 PM] evany.#0000
+gimme a minute.
+
+
+[03-Aug-24 12:25 PM] evany.#0000 (pinned)
+https://docs.google.com/spreadsheets/d/1x-oLy-yQleeCV0n-hF0uEKnT31ppsi-lMJL6Dve_Z_M/edit?usp=sharing
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1x-oLy-yQleeCV0n-hF0uEKnT31ppsi-lMJL6Dve_Z_M/edit?usp=sharing
+PU HQ
+https://images-ext-1.discordapp.net/external/SB3fs38oJxBzVXtNS2ni15lRqbfs7t9TsGb9_FVqT14/https/lh7-us.googleusercontent.com/docs/AHkbwyKbNiPksI0qxh_48xJ-oDxHxDGI3A8iwA4HQuihBf5XSksONaqgqeF_RYYefJiNxFx--HOW0hSp8n6DHSIVMID_9A85VpFYvBQXwG6gdhapk69ZhSKJ%3Dw1200-h630-p
+
+
+[03-Aug-24 12:25 PM] evany.#0000
+would be easy to add another column if someone wanted to add internal prices
+
+
+[03-Aug-24 12:26 PM] evany.#0000
+well, probably row
+
+
+[03-Aug-24 12:26 PM] evany.#0000
+but feel free to copy it put in name / current / target
+
+
+[03-Aug-24 12:27 PM] evany.#0000
+i too was annoyed that i couldnt find a nice batch upgrade script
+
+
+[03-Aug-24 12:27 PM] tanda#0000
+excellent this looks perfect
+
+
+[03-Aug-24 12:28 PM] tanda#0000
+@jvaler pin please?
+
+
+[03-Aug-24 12:29 PM] evany.#0000
+the only thing is i didn't find a good way to handle 'current level'  because if you are 7 and you put in 7 then it will count the materials you are on, so you have to put in 8 to skip your current levels materials
+
+
+[03-Aug-24 12:29 PM] evany.#0000
+couldn't really think of a good way to handle that situation without putting 'caps' on it
+
+
+[03-Aug-24 12:30 PM] tanda#0000
+that's pretty easy to just explain how to use it on the sheet itself
+
+
+[03-Aug-24 12:30 PM] evany.#0000
+yeah i tried to - i'm certainly open to other suggestions to make things more clean
+
+
+[03-Aug-24 12:33 PM] tanda#0000
+~~It does look like it's not counting some materials going above level 10 (like AAR) but even just having a quick sum sheet for up to level 10 is great~~ Nope I see it now
+
+
+[03-Aug-24 12:34 PM] evany.#0000
+was gonna say. hqclean should have everything 1-50
+
+
+[03-Aug-24 12:35 PM] evany.#0000
+preeetty confident i didn't miss anything but i relied on prunplanner for counts of things, so not like i tried first-hand
+
+
+[03-Aug-24 12:35 PM] tanda#0000
+understandable
+
+
+[03-Aug-24 12:54 PM] jvaler#0000
+Pinned a message.
+
+
+[03-Aug-24 12:54 PM] jvaler#0000
+✅
+
+{Reactions}
+🫶 (2) 
+
+[03-Aug-24 01:12 PM] jcheung#0000
+Can't you simply do "value + 1"?
+
+
+[03-Aug-24 02:13 PM] evany.#0000
+trueee i could do the math elsewhere
+
+
+[03-Aug-24 02:13 PM] evany.#0000
+good point
+
+
+[03-Aug-24 04:16 PM] evany.#0000
+okay i made that change, but it has the side effect of reversing now so you can put in hq lvl 7 and target level 5 and it will tell you how many parts to downgrade which i dont like.. but since you can't downgrade i will leave it
+
+
+[03-Aug-24 04:16 PM] evany.#0000
+thanks for the feedback
+
+
+[03-Aug-24 04:26 PM] jcheung#0000
+Well, can also do ``if(current - target > 0, (current code),,)``
+
+
+[03-Aug-24 04:26 PM] jcheung#0000
+Will output blank
+
+
+[13-Aug-24 02:39 PM] imjoshuarice#0000
+Hi peeps, is there a way to 'force' PRUNplanner inventory updates? I can see FIO is relatively quick but PRUNplanner saves on API calls by reducing calls to (at least) an hour. I understand if it's intentionally and cannot be changed.
+
+
+[13-Aug-24 02:42 PM] realharvey#0000
+Just force the update
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1273003737371115635/image.png?ex=6814775e&is=681325de&hm=2e59c33f920aec4cf62ef7c5a9d34657e8e5ee128c2258036e537f153abb4678&
+
+
+[13-Aug-24 02:43 PM] imjoshuarice#0000
+I tried that, but it still has old stock 😦
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1273003929466179705/Arc_h95pAC7S9H.png?ex=6814778c&is=6813260c&hm=f6ff806d6dbb6430a116fb8ae9a3b12f1d63b901090f21bba58b41f227d7af4e&
+
+
+[13-Aug-24 02:43 PM] imjoshuarice#0000
+For example I have 308 INS showing on FIO prior to import
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1273004082143166526/Arc_8BqDoF5dIT.png?ex=681477b0&is=68132630&hm=a8f40869f3c2d9daf0fbd1c37859c90eff92f72fc07429060a2278c1afc081d2&
+
+
+[13-Aug-24 02:52 PM] imjoshuarice#0000
+It's not the end of the world, I can wait - I was just thinking of times where I don't have much time on a break at work to check/plan. (Sounds like a spreadsheet to me)
+
+
+[13-Aug-24 08:30 PM] scintillating_iridescence#0000
+Oooo, new channel!
+
+
+[13-Aug-24 08:31 PM] scintillating_iridescence#0000
+I post something, maybe. Let me just #make-it-better.
+
+
+[13-Aug-24 08:32 PM] tanda#0000
+renamed channel, lol
+
+
+[23-Aug-24 06:15 AM] jvaler#0000
+i got motivation again to work on that internal offers sheet and it's coming along well
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1276500116856897566/image.png?ex=6814a960&is=681357e0&hm=325c54fab33b2ec31560a1e42d7dd0c2eddb09dca73d3f1bd41ac9f997d3136f&
+
+{Reactions}
+pog (2) 
+
+[23-Aug-24 06:16 AM] jvaler#0000
+but question for people with listings, how important is your inventory and burn privacy to you?
+
+
+[23-Aug-24 06:17 AM] jvaler#0000
+i'm wondering if i should filter down your outputs to only the items and locations specified by the settings, or if it should export your entire inventory and burn outputs
+
+
+[23-Aug-24 06:23 AM] jvaler#0000
+filtering your outputs would make it so anything you don't have listed will stay private, but it could also possibly prevent certain features being made in the mastersheet in the future
+
+
+[23-Aug-24 06:24 AM] jvaler#0000
+said features wouldn't be that important imo though
+
+
+[23-Aug-24 06:37 AM] tanda#0000
+It's just a game, specifically a game where subterfuge isn't really a thing. I don't really need privacy for my space bits and bytes
+
+
+[23-Aug-24 07:02 AM] akyantor#0000
+tbh, not really bothered about sharing burn rate. I think most people looking at the internal market just want to know what they can buy somewhat immediately.
+
+
+[23-Aug-24 07:03 AM] akyantor#0000
+I'd probably only share my available stock to buy, price, and location (if we offer more than one).
+
+
+[23-Aug-24 07:05 AM] sidepipe#0000
+I would personally want my unlisted inventory private, but that’s just because I run a few bases for other people where I don’t want to share the inventory
+
+
+[23-Aug-24 07:06 AM] sidepipe#0000
+Burn rate is fine! I had that in my own listings, I just never updated it 😁
+
+
+[23-Aug-24 07:06 AM] laaxus#0000
+how would that spreadsheet work ?
+
+
+[23-Aug-24 07:07 AM] laaxus#0000
+everybody would have access ?
+
+
+[23-Aug-24 07:17 AM] jvaler#0000
+not bothered as in fine to do so or as in don't want to?
+
+
+[23-Aug-24 07:17 AM] jvaler#0000
+i'd like to structure it assuming i have burn data
+
+
+[23-Aug-24 07:18 AM] jvaler#0000
+cause it's useful for people to have a reference of scale on how much they're buying relative to your production
+
+
+[23-Aug-24 07:19 AM] jvaler#0000
+this way people don't feel like they're too burdensome. i had at least one anecdote of someone feeling that way iirc
+
+
+[23-Aug-24 07:19 AM] jvaler#0000
+noted
+
+
+[23-Aug-24 07:19 AM] jvaler#0000
+thinking i'm gonna only send filtered data then
+
+
+[23-Aug-24 07:21 AM] jvaler#0000
+each internal offers seller will fill out their template sheet with their authorization keys and item prices, then send me a web published link for me to import into a mastersheet. this mastersheet will then compile all seller's data for easy use by buyers
+
+
+[23-Aug-24 07:22 AM] tanda#0000
+let me know when you need test data
+
+
+[23-Aug-24 07:22 AM] jvaler#0000
+i'm using myself as test data :P
+
+
+[23-Aug-24 07:22 AM] jvaler#0000
+but that might be useful once i start on the mastersheet and need to incorperate multiple sellers
+
+
+[23-Aug-24 07:23 AM] tanda#0000
+hopefully you're using multiple differentiated copies? or at least one bugged sheet like what happened to mine where it lost all the import data for a second
+
+
+[23-Aug-24 07:23 AM] akyantor#0000
+tbh, I can always return 0 in the burn data field, as could someone else if they didn't want to share it for some reason
+
+
+[23-Aug-24 07:23 AM] jvaler#0000
+still brainstorming how i want to setup the architecture for the mastersheet lol
+
+
+[23-Aug-24 07:24 AM] jvaler#0000
+i am not... should i be? i trust sheets' history feature to undo any severe breakages
+
+
+[23-Aug-24 07:24 AM] akyantor#0000
+I'd probably not want to share the difference between my stock and available stock to buy... but again, I could just fill those two fields with the same value at my end.
+
+
+[23-Aug-24 07:24 AM] sidepipe#0000
+Did you have that thing where the import from an FIO url stopped working?
+
+
+[23-Aug-24 07:25 AM] tanda#0000
+I'd mostly be worried if the master sheet tries to import from a broken feeder sheet
+
+
+[23-Aug-24 07:25 AM] jvaler#0000
+yeah you could move the stock minus buffer calculation to the data processing sheet that way only end stock gets sent
+
+
+[23-Aug-24 07:25 AM] tanda#0000
+Yeah, and I didn't catch it for a while. I think it was a sheets issue, since the import command disappeared from the Gsheets page
+
+
+[23-Aug-24 07:25 AM] sidepipe#0000
+Yep - they had some caching issue
+
+
+[23-Aug-24 07:26 AM] sidepipe#0000
+But you could add some random parameter onto the url to trick it into thinking it was a different one and refreshing
+
+
+[23-Aug-24 07:27 AM] jvaler#0000
+wait no it would be more complicated than this due to how it's structured
+
+
+[23-Aug-24 07:27 AM] jvaler#0000
+you'd have to route those processed numbers into the inventory array
+
+
+[23-Aug-24 07:29 AM] jvaler#0000
+😬
+
+i don't think there's all too much i can do about that, but i do plan on putting data validation settings on as many of the template-side inputs as possible
+
+
+[23-Aug-24 08:16 AM] sidepipe#0000
+Depending on how you’re doing it, it shouldn’t be a huge problem - you’d just have a lookup returning NA or something like that
+
+
+[23-Aug-24 08:54 AM] jvaler#0000
+🤞
+
+
+[23-Aug-24 09:04 AM] razesdark#0000
+I have been kinda dabbling into making a website that lists trade offers and shipping opportunities and have that mirror listings in a discord chat for users not registered on the site. The idea was that if you wanted to use an offer, a discord bot would create a private thread between both parties for further discussion/clarification.
+
+
+[23-Aug-24 09:09 AM] laaxus#0000
+Might as well sell it on the market in this case no ?
+
+
+[23-Aug-24 09:23 AM] razesdark#0000
+I just find Discord somewhat annoying to use when trying to find offers and what not. I'dd love to have something more structured/searchable. It was meant to augment/replace that.
+
+
+[23-Aug-24 09:50 AM] cptcoleslaw#0000
+Would you be interested in testing with the market bot KAWA uses? Is just a discord bot. You use commands to give it a material, location, and threshold. Then it connects to FIO and if someone else is looking for material to buy, it will display everything you have at that location above your threshold. So it's like an internal offer post that can automatically track supply, but unlike FIDO will *only* show others what is available for sale
+
+
+[27-Aug-24 06:30 AM] _sashkaa#0000
+Is there a site/database of all registered companies?
+
+
+[27-Aug-24 06:30 AM] _sashkaa#0000
+Preferrably with stuff like bases, what do they do, etc.
+
+
+[27-Aug-24 06:34 AM] laaxus#0000
+There's https://doc.fnar.net/#/company/get_company_code__CompanyCode_ but it doesnt work
+
+
+[27-Aug-24 06:35 AM] laaxus#0000
+https://doc.fnar.net/#/company/get_company_name__CompanyName_ works better, you get their base but not what they're doing
+
+
+[27-Aug-24 06:49 AM] _sashkaa#0000
+Interesting
+
+
+[27-Aug-24 06:50 AM] _sashkaa#0000
+My country's ministry of the interior has a publically available database of all tax-paying subjects in the country
+
+
+[27-Aug-24 06:51 AM] laaxus#0000
+there are api call that requires players api key (as permissionà
+
+
+[27-Aug-24 06:51 AM] _sashkaa#0000
+There's a few websites where you can sorty companies by employee count/revenue/profit/declared area where they operate in
+
+
+[27-Aug-24 06:52 AM] laaxus#0000
+I don't know how they're doing it
+
+
+[27-Aug-24 06:52 AM] _sashkaa#0000
+I might think about doing something similar
+
+
+[27-Aug-24 06:52 AM] _sashkaa#0000
+Players would self-report their productions
+
+
+[27-Aug-24 06:53 AM] _sashkaa#0000
+or maybe we could estimate it by watching CX listings?
+
+
+[27-Aug-24 06:56 AM] _sashkaa#0000
+we could
+
+
+[27-Aug-24 06:56 AM] _sashkaa#0000
+interestiiing
+
+
+[27-Aug-24 07:05 AM] tanda#0000
+you can also see what individual companies are doing on their plots on a planet by clicking on the plots
+
+
+[27-Aug-24 07:05 AM] tanda#0000
+but that doesn't work for ghost plot planets like Deimos, and is extremely tedious
+
+
+[27-Aug-24 10:02 AM] _sashkaa#0000
+shame there isn't an official PR API :(
+
+
+[27-Aug-24 10:05 AM] razenpok#0000
+Some day...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1278007521834963015/image.png?ex=6814df41&is=68138dc1&hm=ca23ee0aa351e711dfe70c5f60fd38d574ffebb79583f1e1ce4c15fb466e4451&
+
+
+[31-Aug-24 10:15 AM] _sashkaa#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279459527103615088/image.png?ex=6814e18a&is=6813900a&hm=11278f082355117ea98fbfb7439d59b4ec8d8b9c7fad66de7ab24f60407742ab&
+
+
+[31-Aug-24 10:15 AM] _sashkaa#0000
+now just to aggregate CX data
+
+
+[31-Aug-24 10:17 AM] _sashkaa#0000
+with some mathematical hijinks
+
+
+[31-Aug-24 10:17 AM] _sashkaa#0000
+I think I can get a reasonably accurate estimate of revenue
+
+
+[31-Aug-24 10:18 AM] _sashkaa#0000
+and stuff like "most sold commodities"
+
+
+[31-Aug-24 10:18 AM] _sashkaa#0000
+or
+
+
+[31-Aug-24 10:18 AM] _sashkaa#0000
+"sold per month (tons)"
+
+
+[31-Aug-24 12:58 PM] histidinedwarf#0000
+If you can get an equivalent of LEAD with an API, that'd be nice
+
+
+[31-Aug-24 12:59 PM] histidinedwarf#0000
+Useful data on companies in general so far
+
+
+[31-Aug-24 01:20 PM] _sashkaa#0000
+What's "LEAD"?
+
+
+[31-Aug-24 01:21 PM] tanda#0000
+it's an in game leaderboard that shows a variety of things
+
+
+[31-Aug-24 01:21 PM] tanda#0000
+the most useful of them is commodity production, which lets you see who makes what
+
+
+[31-Aug-24 01:21 PM] tanda#0000
+type LEAD in a new buffer and play around with it a bit
+
+
+[31-Aug-24 01:22 PM] _sashkaa#0000
+ooh that's neat
+
+
+[31-Aug-24 01:22 PM] _sashkaa#0000
+I can automatize this
+
+
+[31-Aug-24 01:22 PM] tanda#0000
+I think scraping is against the TOS
+
+
+[31-Aug-24 01:22 PM] _sashkaa#0000
+poor saganaki's gonna go mad with merge requests
+
+
+[31-Aug-24 01:22 PM] tanda#0000
+does FIO have any functions for that?
+
+
+[31-Aug-24 01:22 PM] _sashkaa#0000
+not so far!
+
+
+[31-Aug-24 01:33 PM] razenpok#0000
+Isn't FIO basically a game data scraper?
+
+
+[31-Aug-24 01:34 PM] tanda#0000
+yeah, but it's just scraping the data that users pull up. So if you have FIO turned on, and you pull up the CX to look up prices on a commodity, that gets shared and stored by FIO
+
+
+[31-Aug-24 01:34 PM] tanda#0000
+making a tool to actively scrape an entire dataset by passing calls to the server would be against the TOS
+
+
+[31-Aug-24 01:34 PM] razenpok#0000
+Ah, that's 💯
+
+
+[31-Aug-24 01:34 PM] razenpok#0000
+Pardon
+
+
+[31-Aug-24 01:34 PM] razenpok#0000
+That's :true:
+
+
+[31-Aug-24 01:40 PM] histidinedwarf#0000
+I was thinking you could pull that information out of CX listings to some extent
+
+
+[31-Aug-24 01:40 PM] histidinedwarf#0000
+But I don't know how to not count arbitrage in that at the moment
+
+
+[31-Aug-24 01:48 PM] _sashkaa#0000
+Exactly my idea
+
+
+[31-Aug-24 01:50 PM] _sashkaa#0000
+if that doesn't work out I am gonna have to try to ask Saganaki about adding LEAD data collection to FIO
+
+
+[31-Aug-24 02:08 PM] _sashkaa#0000
+Interesting thing is, Antares is almost half the size of Castillo-Ito
+
+
+[31-Aug-24 02:08 PM] _sashkaa#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279518319837446235/image.png?ex=6815184b&is=6813c6cb&hm=3d8bb39b3a717ac4becce58709561e627319795f7b46cfcaa0297bfd17b45df7&
+
+
+[31-Aug-24 02:09 PM] _sashkaa#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279518388045086844/image.png?ex=6815185c&is=6813c6dc&hm=c0e8fb3a308ca2dad542f57576002744c7d300a6a10b82a0027ce5ca22a8620a&
+
+
+[31-Aug-24 04:06 PM] pi3142718#0000
+You might have some problems with data quality crowd sourcing LEAD
+
+
+[31-Aug-24 04:07 PM] pi3142718#0000
+Pulling all of LEAD yourself, or with a small group (CULT?) in a managed manner isn’t too much work and I already have a scrapper mostly written if you’d be interested in picking it up/organizing it.
+
+
+[31-Aug-24 05:41 PM] _sashkaa#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279571803475542059/image.png?ex=6814a15b&is=68134fdb&hm=eea89b4e60209d23f24ed1b8914f27f074f11bb937497ec48cbd0099e22473b4&
+
+
+[31-Aug-24 05:41 PM] _sashkaa#0000
+Any ideas for more useful stats?
+
+
+[31-Aug-24 05:42 PM] _sashkaa#0000
+Or just interesting ones
+
+
+[31-Aug-24 05:43 PM] scintillating_iridescence#0000
+https://tenor.com/view/what-the-fuck-food-soldier-diet-gif-16663279
+
+{Embed}
+https://tenor.com/view/what-the-fuck-food-soldier-diet-gif-16663279
+https://images-ext-1.discordapp.net/external/01kou6_EiHfq-tI-Mw4VrXsPVOiLxoo1wa9DO_IzXKM/https/media.tenor.com/joagqAMsm74AAAAe/what-the-fuck-food.png
+
+
+[31-Aug-24 05:44 PM] scintillating_iridescence#0000
+Yes, there is a donut in there... You just gotta see it.
+
+
+[31-Aug-24 05:45 PM] _sashkaa#0000
+https://tenor.com/view/brian-cox-laughing-at-you-giggle-gif-14165266
+
+{Embed}
+https://tenor.com/view/brian-cox-laughing-at-you-giggle-gif-14165266
+https://images-ext-1.discordapp.net/external/ui7zy1bD-dRGObjzYwWCuD6S5BCGvmfhydViAK8yU0U/https/media.tenor.com/ePcMMBFhfC0AAAAe/brian-cox-laughing-at-you.png
+
+
+[31-Aug-24 05:45 PM] _sashkaa#0000
+love that movie
+
+
+[31-Aug-24 05:47 PM] marat_sh#0000
+https://tenor.com/view/action-drama-show-me-your-war-face-yelling-training-gif-3298937
+
+{Embed}
+https://tenor.com/view/action-drama-show-me-your-war-face-yelling-training-gif-3298937
+Louder!
+https://images-ext-1.discordapp.net/external/hs6WXF9CaUGZWOY0JJendaeU5ZsDbjOljXzbVg6sHoI/https/media.tenor.com/1uZRW7Hw4mEAAAAe/action-drama.png
+
+
+[31-Aug-24 05:47 PM] _sashkaa#0000
+you guys just wait until I manage to ram some economic data in
+
+
+[31-Aug-24 05:47 PM] razenpok#0000
+Companies != players? :waitwhat:
+
+
+[31-Aug-24 05:48 PM] _sashkaa#0000
+People be coliq'ing
+
+{Reactions}
+blobok 
+
+[31-Aug-24 05:51 PM] scintillating_iridescence#0000
+Companies ~= Players / Daily_Server_Updates. Some are happy with their first in-game decisions. Others COLIQ; some more never come back. You'll see the true numbers in a few months, when all the newbros start to buy more RAT.AI1 than can be supplied. :/
+
+
+[31-Aug-24 05:55 PM] scintillating_iridescence#0000
+If you can eventually --- yes eventually.... plop in some time-series data, regarding COM.CX order data, you will start to see very interesting stuff ( involving inter-player competition).
+
+
+[31-Aug-24 05:55 PM] _sashkaa#0000
+what would you specifically like to see?
+
+
+[31-Aug-24 05:58 PM] scintillating_iridescence#0000
+ASK + BID orders, on a time series, along a 3d projection... Something like this: https://www.youtube.com/watch?v=dUtPnIYelwU
+
+{Embed}
+John Locke
+https://www.youtube.com/watch?v=dUtPnIYelwU
+"Young Americans" David Bowie 3D Waveform
+Generation of a 3d waveform landscape from Bowies classic. Note pause at 4:19.
+https://images-ext-1.discordapp.net/external/BgKeiu7hWOGBzFJn5w1j6ayrUIvaOifJWIeFpkbIYQw/https/i.ytimg.com/vi/dUtPnIYelwU/maxresdefault.jpg
+
+
+[31-Aug-24 05:58 PM] scintillating_iridescence#0000
+Competitive order updates are best seen in a 2d, linear projection. Market activity, in aggregate, is best seen on a 3d projection.
+
+
+[31-Aug-24 06:05 PM] scintillating_iridescence#0000
+A good opportunity for one of my memes.....
+https://www.youtube.com/watch?v=LT3cERVRoQo
+
+{Embed}
+David Bowie
+https://www.youtube.com/watch?v=LT3cERVRoQo
+David Bowie - I'm Afraid of Americans (Official Music Video) [4K Up...
+The official 4K upgradde music video for David Bowie - I'm Afraid Of Americans
+
+Taken from Bowie's 21st studio album 'Earthling' released in 1997, which featured the singles 'Telling Lies', 'Little Wonder', 'Dead Man Walking', 'Seven Years In Tibet' & 'I'm Afraid Of Americans'.
+
+Subscribe to the David Bowie channel for all the best official musi...
+https://images-ext-1.discordapp.net/external/TnHoSz4ZGvFBAs_tpmf5Tn8ej6dnfryHA9LgAFCK3Os/https/i.ytimg.com/vi/LT3cERVRoQo/maxresdefault.jpg
+
+
+[31-Aug-24 06:05 PM] _sashkaa#0000
+i'm sure i'll wrap my head around this one day 🤤
+
+
+[31-Aug-24 06:05 PM] scintillating_iridescence#0000
+Those projections will get exceedingly scary, for anyone who has access to them.
+
+
+[31-Aug-24 06:05 PM] scintillating_iridescence#0000
+It's more of a projection issue, than data recording...
+
+
+[31-Aug-24 06:07 PM] scintillating_iridescence#0000
+Most server backends, that I've seen, are 2d time series... You may need to pipe the database info, into some sort of matlab/wolfram stuff, to get your hands on 3d projections. I'm not aware of any free database/engines that can do such things, in-house, if they're even open sourced.
+
+
+[31-Aug-24 09:45 PM] pi3142718#0000
+I’m sure you could pipe it into a Python package. Or at worst you can make a mesh and put it in a Python 3D renderer or a proper 3D rendering software
+
+
+[01-Sep-24 05:56 AM] _sashkaa#0000
+Oh its doable for sure
+
+
+[01-Sep-24 05:57 AM] _sashkaa#0000
+Its written in asp.net, so theres a lot i can do
+
+
+[01-Sep-24 08:36 AM] _sashkaa#0000
+http://prunstats.com/
+
+
+[01-Sep-24 08:36 AM] _sashkaa#0000
+Here's a preliminary version
+
+
+[01-Sep-24 08:38 AM] _sashkaa#0000
+Features some quick graphs
+
+
+[01-Sep-24 08:39 AM] _sashkaa#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279797688417648650/image.png?ex=6814cafa&is=6813797a&hm=920ccb81ee416279ea331c50dd9c18013432bcd2d4b04a7adcfd7e43e7d56edc&
+
+
+[01-Sep-24 08:39 AM] _sashkaa#0000
+and a very basic database of all companies according to FIO
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279797791211786270/image.png?ex=6814cb12&is=68137992&hm=e13a4b6bb89be097db8f4d66627dcd15222b8171e1d3aad12a9928fad7da0c95&
+
+
+[01-Sep-24 08:39 AM] _sashkaa#0000
+bunch of basic filters too
+
+
+[01-Sep-24 08:40 AM] laaxus#0000
+it would be cool to have the number of players for each number of base
+
+
+[01-Sep-24 08:40 AM] laaxus#0000
+number of player with 3, 4, 5 bases etc
+
+
+[01-Sep-24 09:15 AM] razenpok#0000
+Hmmmmmmmm
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279806842179944579/image.png?ex=6814d380&is=68138200&hm=eb276e4b4792a14afb4539aa4308239dd853e9a8b78d62ab96a9bd9f25ce2ff2&
+
+
+[01-Sep-24 09:15 AM] razenpok#0000
+Cool website tho
+
+{Reactions}
+❤️ 
+
+[01-Sep-24 09:30 AM] _sashkaa#0000
+yup
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279810623718293605/image.png?ex=6814d706&is=68138586&hm=7df3130f2f79563b87db19eed7fda0831e2e7f8f3921d0c5abde8880049ec913&
+
+
+[01-Sep-24 09:59 AM] flor2081#0000
+whats that basecount supposed to represent?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279818012152827995/image.png?ex=6814dde7&is=68138c67&hm=43079da7a6c66bb306deb10d8a724c53f811e7052e7a1e266e80c4028a96ccd0&
+
+
+[01-Sep-24 10:00 AM] flor2081#0000
+because this is extremely wrong lol
+
+
+[01-Sep-24 10:00 AM] flor2081#0000
+maybe it counts most bases ever built and then demolished? gravy changed plans quite a lot so thats possible i guess
+
+
+[01-Sep-24 10:01 AM] flor2081#0000
+also the hell is prophetar doing on that list 😂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1279818473865744467/image.png?ex=6814de56&is=68138cd6&hm=528e8575fff4970891a473a5be209486f723426f1b463cb35435de14e6a8f803&
+
+
+[01-Sep-24 10:28 AM] _sashkaa#0000
+it counts all bases ever
+
+
+[01-Sep-24 10:29 AM] _sashkaa#0000
+seeing as FIO doesn't really distinguish it
+
+
+[01-Sep-24 10:29 AM] _sashkaa#0000
+its very very basic rn
+
+
+[01-Sep-24 10:30 AM] flor2081#0000
+hm makes sense
+
+
+[01-Sep-24 12:42 PM] histidinedwarf#0000
+FIO includes which player collected what data
+
+
+[01-Sep-24 12:42 PM] histidinedwarf#0000
+Would be fun to include a thank you note somewhere
+
+
+[01-Sep-24 12:43 PM] histidinedwarf#0000
+Like on a company page, thing in corner that says "thanks to {COMPANY OR USERNAME OR A COMBINATION HERE} for company data"
+
+
+[01-Sep-24 12:46 PM] flor2081#0000
+fio also collects leaderboard data right? might be better to go there for a max base count
+
+
+[01-Sep-24 12:46 PM] histidinedwarf#0000
+I don't think it does
+
+
+[01-Sep-24 12:47 PM] histidinedwarf#0000
+I saw Saganaki was updating the API but I don't see it in doc.fnar.net
+
+
+[01-Sep-24 12:53 PM] jvaler#0000
+yeah didn't piboy have to write their own program to collect LEAD data?
+
+
+[01-Sep-24 12:59 PM] flor2081#0000
+oh that sucks
+
+
+[01-Sep-24 02:32 PM] _sashkaa#0000
+We were adding a /company/all endpoint, so I don't have to spam FIO with 20k requests for company data
+
+
+[01-Sep-24 02:33 PM] histidinedwarf#0000
+Nice
+
+
+[01-Sep-24 02:34 PM] histidinedwarf#0000
+I remember doing that by seeing all companies with sites on one of starter planets to reduce requests
+
+
+[01-Sep-24 02:34 PM] histidinedwarf#0000
+But then there are more than expected that don't have a site anywhere on those
+
+
+[01-Sep-24 02:35 PM] histidinedwarf#0000
+Thought I thought there was somethign experimental before August
+
+
+[08-Sep-24 01:50 PM] .shiva.#0000
+are there any existing tools/sheets that can show what's needed for multi-stage production pipelines? Eg. if I want to look at drones or something, all the buildings/products involved?
+
+
+[08-Sep-24 01:50 PM] laaxus#0000
+prunplanner
+
+
+[08-Sep-24 01:51 PM] tanda#0000
+yeah, but it is kinda rough
+
+
+[08-Sep-24 01:51 PM] laaxus#0000
+https://prunplanner.org/tools/production-chain
+
+{Embed}
+https://prunplanner.org/tools/production-chain
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+
+[08-Sep-24 01:51 PM] .shiva.#0000
+those graphs are mostly useless other than getting a rough overview
+
+
+[08-Sep-24 01:52 PM] laaxus#0000
+you can't get it better than that afaik
+
+
+[08-Sep-24 01:52 PM] tanda#0000
+if you're looking for something that breaks it out into ratios of what to build, that's up to you
+
+
+[08-Sep-24 01:56 PM] sidepipe#0000
+https://prosper.run/
+
+{Embed}
+https://prosper.run/
+Prosper: Production Chain Viewer
+Production chain viewer for Prosperous Universe
+
+
+[08-Sep-24 01:56 PM] .shiva.#0000
+pretty sure thats the same code that running on prunplanner
+
+
+[08-Sep-24 01:56 PM] sidepipe#0000
+Probably similar problems to the prunplanner one, but that’s what I use
+
+
+[08-Sep-24 01:56 PM] sidepipe#0000
+Ah gotcha
+
+
+[08-Sep-24 01:57 PM] laaxus#0000
+still better because it shows the building required
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1282414579984371805/image.png?ex=681515a5&is=6813c425&hm=337aec9881307a950cf5157a52cdecc65bc11d1a6bde3e13e6247142dced7fa5&
+
+
+[08-Sep-24 01:57 PM] laaxus#0000
+what are you looking for exactly ?
+
+
+[08-Sep-24 01:58 PM] .shiva.#0000
+https://factoriolab.github.io/list?p=express-transport-belt&v=10
+
+
+[08-Sep-24 01:58 PM] sidepipe#0000
+Yeah, I’m not sure how much closer you could get than that - at some point, ratios and #’s of buildings gets down to the individual planets you’re building on, and what materials you want to over / underproduce
+
+
+[08-Sep-24 01:58 PM] .shiva.#0000
+something like that
+
+
+[08-Sep-24 01:59 PM] .shiva.#0000
+which tbh
+
+
+[08-Sep-24 01:59 PM] .shiva.#0000
+I should probably just take one of those and jam the PRUN recipies into it
+
+
+[08-Sep-24 01:59 PM] .shiva.#0000
+and it might not be that hard
+
+
+[08-Sep-24 01:59 PM] laaxus#0000
+won't work imho
+
+
+[08-Sep-24 01:59 PM] laaxus#0000
+because factorio think in building
+
+
+[08-Sep-24 01:59 PM] laaxus#0000
+while prun think in base
+
+
+[08-Sep-24 02:00 PM] laaxus#0000
+there are many optimal bases using 2 sets of building
+
+
+[08-Sep-24 02:00 PM] .shiva.#0000
+it'd be a hell of a lot better starting point than nothing
+
+
+[08-Sep-24 02:00 PM] laaxus#0000
+you could probably get a linear approximation quite easily
+
+
+[08-Sep-24 02:00 PM] .shiva.#0000
+not that hard to map rough numbers of buildings to bases
+
+{Reactions}
+👆 
+
+[08-Sep-24 02:01 PM] laaxus#0000
+Then do it
+
+
+[08-Sep-24 02:01 PM] laaxus#0000
+¯\_(ツ)_/¯
+
+
+[28-Oct-24 07:47 AM] tanda#0000
+I am attempting to import data from some of FIO's API calls that return in Json but must admit I wind up feeling a bit dumb
+
+
+[28-Oct-24 07:48 AM] tanda#0000
+how do I authenticate for these calls? the CSV calls allow me append an API key but it seems not to work for the json calls
+
+
+[28-Oct-24 07:56 AM] jvaler#0000
+should probably ask saganaki in https://discord.com/channels/667551433503014924/783070850680750111
+
+
+[28-Oct-24 08:21 AM] pxlfox.#0000
+I probably could help you with that, if you still need it 🙂
+
+
+[28-Oct-24 08:47 AM] tanda#0000
+I'm off to work, I'll continue to muddle with this in a bit
+
+
+[28-Oct-24 11:52 AM] archielvahr#0000
+If you need to put it into a header instead of a URL parameter, you can do something like this:
+
+```
+function ImportJSONBasicAuth(url, username, password, query, parseOptions) {
+  var encodedAuthInformation = Utilities.base64Encode(username + ":" + password);
+  var header = {headers: {Authorization: "Basic " + encodedAuthInformation}};
+  return ImportJSONAdvanced(url, header, query, parseOptions, includeXPath_, defaultTransform_);
+}
+
+function ImportJSONFioAPI(url, authToken, query, parseOptions) {
+  var header = {headers: {Authorization: authToken}};
+  return ImportJSONAdvanced(url, header, query, parseOptions, includeXPath_, defaultTransform_);
+}
+```
+
+
+[28-Oct-24 11:52 AM] archielvahr#0000
+Takes some experimenting, but the bottom method was workign for me with with FIO
+
+
+[28-Oct-24 11:53 AM] archielvahr#0000
+That's how I pull my flights:
+
+
+[28-Oct-24 11:53 AM] archielvahr#0000
+http://kortham.net/temp/firefox_d8IRLSvviz.png
+
+{Embed}
+http://kortham.net/temp/firefox_d8IRLSvviz.png
+https://images-ext-1.discordapp.net/external/bHcGqAZNyQ1H-pbByAYCYRuJ-Rfpmej83ZEIAnEyDdw/http/kortham.net/temp/firefox_d8IRLSvviz.png
+
+
+[28-Oct-24 12:19 PM] tanda#0000
+Oh gosh I thought this was going to be easy
+
+
+[29-Oct-24 09:24 PM] tanda#0000
+so there is a CSV endpoint for what I'm trying to do (Thank you Saganaki)
+
+
+[29-Oct-24 09:25 PM] tanda#0000
+now I'm faced with  figuring out what "BuildingLastRepairEpochMs" with the data of "1728263727980" means
+
+
+[29-Oct-24 09:27 PM] tanda#0000
+especially when that data converts to "54 Yrs 9 Mths 2 Wks 5 D 6 H 32 Min 15 s"
+
+
+[29-Oct-24 09:29 PM] jvaler#0000
+it's epoch time
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1301010099485016085/image.png?ex=6814d6d3&is=68138553&hm=c5e7069d0f3507b42b88571df4d3baa0ef824db6335da827550d7e7496e82b6d&
+
+
+[29-Oct-24 09:29 PM] jcheung#0000
+https://currentmillis.com/
+
+{Embed}
+https://currentmillis.com/
+Current Millis
+Convert milliseconds to date-time. Link to a moment.
+https://images-ext-1.discordapp.net/external/YtROYEYjjhlRcBPOMEAHa-zkiNWPdgU78ZGDpVgc0oY/http/currentmillis.com/images/date-time.png
+
+
+[29-Oct-24 09:29 PM] jcheung#0000
+damn, jvaler beat me
+
+
+[29-Oct-24 09:29 PM] jvaler#0000
+aha
+
+
+[29-Oct-24 09:30 PM] tanda#0000
+what the heck is epoch time
+
+
+[29-Oct-24 09:30 PM] jcheung#0000
+they picked a day
+
+
+[29-Oct-24 09:30 PM] jcheung#0000
+and said "this is zero"
+
+
+[29-Oct-24 09:30 PM] jcheung#0000
+then every milisecond they count up one
+
+
+[29-Oct-24 09:30 PM] tanda#0000
+they picked a day nearly 55 years ago? whaaat
+
+
+[29-Oct-24 09:30 PM] jcheung#0000
+wait til you find out this isn't the first time we did it
+
+
+[29-Oct-24 09:30 PM] jvaler#0000
+https://en.wikipedia.org/wiki/Unix_time
+
+{Embed}
+https://en.wikipedia.org/wiki/Unix_time
+Unix time
+Unix time is a date and time representation widely used in computing. It measures time by the number of non-leap seconds that have elapsed since 00:00:00 UTC on 1 January 1970, the Unix epoch. In modern computing, values are sometimes stored with higher granularity, such as microseconds or nanoseconds.
+Unix time originated as the system time of ...
+https://images-ext-1.discordapp.net/external/OkoyDW9p7jmjR6Ty0pmO3um7GKkF-UHYYfe1N7eGke4/https/upload.wikimedia.org/wikipedia/commons/e/e3/1000000000seconds.jpg
+
+
+[29-Oct-24 09:30 PM] jcheung#0000
+...the first one ran out of numbers
+
+
+[29-Oct-24 09:31 PM] archielvahr#0000
+I believe for google sheets you have to take that time and divide by 1000, because sheets and excel assume epoch time in seconds.
+
+
+[29-Oct-24 09:32 PM] tanda#0000
+Thank you, Archiel in with the helpful stuff again
+
+
+[29-Oct-24 09:32 PM] archielvahr#0000
+Also if a number has too many digits, it thinks it is a string
+
+
+[29-Oct-24 09:32 PM] archielvahr#0000
+So... if you hit that, I have a fix but it was awful to work out, haha
+
+
+[29-Oct-24 09:33 PM] jcheung#0000
+~~subtract a number then add the equivalent amount in days~~
+
+{Reactions}
+💯 
+
+[29-Oct-24 09:33 PM] jcheung#0000
+anyways
+
+
+[29-Oct-24 09:33 PM] jcheung#0000
+you can use =EPOCHTODATE(######,2) for miliseconds
+
+
+[29-Oct-24 09:33 PM] archielvahr#0000
+To generate a unix time stamp you can: `=(NOW()-DATE(1970,1,1)`
+
+
+[29-Oct-24 09:33 PM] jcheung#0000
+1 is seconds, 3 is microseconds
+
+
+[29-Oct-24 09:34 PM] archielvahr#0000
+Ooh that's nice
+
+
+[29-Oct-24 09:34 PM] jcheung#0000
+you'll have to convert it to your timezone though
+
+
+[29-Oct-24 09:34 PM] jcheung#0000
+will be in UTC
+
+
+[29-Oct-24 09:38 PM] tanda#0000
+all very helpful guys, thank you!
+
+
+[29-Oct-24 10:37 PM] tanda#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1301027126882992148/image.png?ex=6814e6ae&is=6813952e&hm=248c83db610af1bd42fce2b6643afa8644d8852a2a610314e16c2556f198310a&
+
+
+[29-Oct-24 10:37 PM] tanda#0000
+It freaking works
+
+
+[29-Oct-24 10:41 PM] tanda#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1301028163404431400/image.png?ex=6814e7a6&is=68139626&hm=2b832395b157973242313b13afb2ba1c7556e933bb341eee97c7cb1183da9409&
+
+
+[29-Oct-24 10:41 PM] tanda#0000
+and now it's embedded
+
+
+[30-Oct-24 04:18 AM] pxlfox.#0000
+Oh, you can embed sheets? That’s nifty 👀
+
+
+[30-Oct-24 11:00 AM] archielvahr#0000
+Looks similar to what i put together:
+
+
+[30-Oct-24 11:00 AM] archielvahr#0000
+http://kortham.net/temp/firefox_8VzfGRdS6I.png
+
+{Embed}
+http://kortham.net/temp/firefox_8VzfGRdS6I.png
+https://images-ext-1.discordapp.net/external/oubk3golQwCSpm7zXa7QVe5JYM2k5JkwThzi-3w_BWM/http/kortham.net/temp/firefox_8VzfGRdS6I.png
+
+
+[30-Oct-24 11:08 AM] tanda#0000
+Maybe I should expand on my sheet a bit.
+
+
+[30-Oct-24 11:08 AM] tanda#0000
+But I really like the embedded sheet.
+
+
+[31-Oct-24 12:16 PM] kynadre#0000
+oooh
+
+
+[31-Oct-24 01:32 PM] cptcoleslaw#0000
+@archielvahr , respectfully: you have some very sexy spreadsheets 😍😆
+
+
+[31-Oct-24 01:33 PM] cptcoleslaw#0000
+When I have time to get back into the game I'm definitely investing some energy into making better sheets before I go all out
+
+
+[31-Oct-24 01:33 PM] archielvahr#0000
+😎
+
+
+[31-Oct-24 01:33 PM] archielvahr#0000
+There were some real doozies on that sheet
+
+
+[31-Oct-24 01:34 PM] archielvahr#0000
+When things get weird enough, the answer is just to use `=QUERY(...)` for everything 😄
+
+{Reactions}
+💚 
+
+[31-Oct-24 01:34 PM] cptcoleslaw#0000
+I always wanted to make a shipping tracker like that though, and a shopping list. Started them both but never finished them
+
+
+[31-Oct-24 01:34 PM] cptcoleslaw#0000
+Query has just become my first answer to most things, lol
+
+
+[31-Oct-24 01:36 PM] manhim#0000
+Try mixing QUERY with LET and LAMBDA 😄
+
+
+[31-Oct-24 01:36 PM] cptcoleslaw#0000
+I want to learn more about pivot tables and appsscript before investing in any more big sheet ideas though
+
+
+[31-Oct-24 01:37 PM] cptcoleslaw#0000
+LAMBDA... that one can wait 😅
+
+
+[31-Oct-24 01:37 PM] manhim#0000
+```=LET(mats, QUERY({IF($C$6="Yes", {Provision!$A$2:$A, Provision!$C$2:$C}, {"", ""}); IF($C$7="Yes", {Burn!$C$2:$C, Burn!$K$2:$K}, {"", ""})}, "SELECT Col1, SUM(Col2) WHERE Col1 <> '' AND Col2 > 0 AND NOT Col1 MATCHES '" & JOIN("|", Provided!$A$2:$A) & "' GROUP BY Col1 ORDER BY Col1 ASC LABEL SUM(Col2) ''"), BYROW(mats, LAMBDA(row, {INDEX(row, 0, 1), VLOOKUP(INDEX(row, 0, 1), Prices!$A$2:$I, 2, FALSE), INDEX(row, 0, 2), VLOOKUP(INDEX(row, 0, 1), Prices!$A$2:$I, 3, FALSE), INDEX(row, 0, 2) * VLOOKUP(INDEX(row, 0, 1), Prices!$A$2:$I, 3, FALSE)})))```
+
+
+[31-Oct-24 01:37 PM] manhim#0000
+Looks so ugly in Discord
+
+
+[31-Oct-24 01:38 PM] manhim#0000
+LET and LAMBDA lets you reference to the same query results multiple times
+
+
+[31-Oct-24 01:38 PM] manhim#0000
+So I can hide data from my summaries, but still calculate from them
+
+
+[31-Oct-24 01:39 PM] manhim#0000
+Basically, I make 1 QUERY for the raw data, then output each rows with formulas
+
+
+[31-Oct-24 01:39 PM] archielvahr#0000
+Ohhh that's interesting. I will have to look into that. There are some cases where I worked really hard to avoid intermediate calculation cells, especially when stuff like FILTER wants you to repeat elements
+
+
+[31-Oct-24 01:39 PM] manhim#0000
+Hell yeah
+
+
+[31-Oct-24 01:40 PM] archielvahr#0000
+awesome tip 😄
+
+
+[31-Oct-24 01:40 PM] manhim#0000
+Makes for cleaner sheets, and removes the need for intermediary sheets for more complex calculations (but I still use them, cause I'm not THAT savage)
+
+
+[31-Oct-24 01:41 PM] cptcoleslaw#0000
+Yeah I love LET for that specifically. Still can't wrap my head around LAMBDA though...
+
+
+[31-Oct-24 01:41 PM] cptcoleslaw#0000
+When I first started PrUn I didn't even know what vlookup was though, so I'm pretty proud of my progress so far
+
+
+[31-Oct-24 01:42 PM] manhim#0000
+Haha yeah, pretty much one of the most usefull command
+
+{Reactions}
+💯 
+
+[31-Oct-24 01:43 PM] manhim#0000
+```=SUM(ARRAYFORMULA(INDEX(FILTER('/recipeinputs'!$B$2:$C, '/recipeinputs'!$A$2:$A=B2), 0, 2) * VLOOKUP(INDEX(FILTER('/recipeinputs'!$B$2:$C, '/recipeinputs'!$A$2:$A=B2), 0, 1), Prices!$A$2:$I, 3, FALSE)))```
+
+Calculate the cost of all recipe inputs in 1 cell.
+
+{Reactions}
+🤩 
+
+[31-Oct-24 01:43 PM] manhim#0000
+ARRAYFORMULA is useful too for processing
+
+{Reactions}
+💯 
+
+[31-Oct-24 01:43 PM] cptcoleslaw#0000
+Someone in KAWA used =LOOKUP in a really clever way for an HQ upgrade calculator and I need to study that one again too
+
+
+[31-Oct-24 01:44 PM] archielvahr#0000
+I've started using the discontinous stuff quite a bit, like `FILTER({B49:C,I49:I} ... ` It helps with things like vlookup too, when there's a huge mess of columns
+
+
+[31-Oct-24 07:36 PM] jcheung#0000
+you can make it look better in both sheets and discord with line breaks
+
+
+[31-Oct-24 07:40 PM] jcheung#0000
+like for example
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1301707466966564976/image.png?ex=6814bd4c&is=68136bcc&hm=611fbb2636e280273da9d58071964e2cfa586d01d5610dc3f0028b87bf891be2&
+
+
+[31-Oct-24 07:40 PM] jcheung#0000
+```=LET(
+mats, QUERY(
+  {
+    IF($C$6="Yes", {Provision!$A$2:$A, Provision!$C$2:$C}, {"", ""}); 
+    IF($C$7="Yes", {Burn!$C$2:$C, Burn!$K$2:$K}, {"", ""})
+  }, 
+  "SELECT Col1, SUM(Col2) WHERE Col1 <> '' AND Col2 > 0 AND NOT Col1 MATCHES '" & JOIN("|", Provided!$A$2:$A) & "' GROUP BY Col1 ORDER BY Col1 ASC LABEL SUM(Col2) ''"), 
+BYROW(mats, LAMBDA(row, 
+  {INDEX(row, 0, 1), VLOOKUP(INDEX(row, 0, 1), Prices!$A$2:$I, 2, FALSE), INDEX(row, 0, 2), VLOOKUP(INDEX(row, 0, 1), Prices!$A$2:$I, 3, FALSE), INDEX(row, 0, 2) * VLOOKUP(INDEX(row, 0, 1), Prices!$A$2:$I, 3, FALSE)})
+))```
+
+
+[31-Oct-24 07:42 PM] manhim#0000
+Last time I tried, it didn't save the indentation. Not sure why
+
+{Reactions}
+🤔 
+
+[31-Oct-24 07:42 PM] manhim#0000
+But, usually I copy paste them in notepad and I space/indent only the parts I want to work on, then remove them
+
+
+[31-Oct-24 07:43 PM] jcheung#0000
+notepad eh
+
+
+[31-Oct-24 07:43 PM] jcheung#0000
+well, i guess notepad works well enough
+
+
+[31-Oct-24 07:43 PM] manhim#0000
+Well, notepad++
+
+
+[31-Oct-24 07:43 PM] manhim#0000
+The most important feature being, highlighting the related opening/closing bracket/parenthesis when I select the other side.
+
+
+[31-Oct-24 07:44 PM] jcheung#0000
+sheets does that natively
+
+
+[31-Oct-24 07:45 PM] manhim#0000
+Yeah, but you can't CTRL+F the query itself
+
+
+[31-Oct-24 07:46 PM] jcheung#0000
+ah, fair
+
+
+[31-Oct-24 07:46 PM] manhim#0000
+I think it's the only thing missing from that
+
+
+[08-Nov-24 04:54 PM] .shiva.#0000
+I wrote a small python script that parses out the construction cart on PrunPlanner and converts it into a buy/load action package
+
+{Reactions}
+👀 (3) 
+
+[08-Nov-24 04:54 PM] .shiva.#0000
+```python
+import sys, json, csv, locale
+cx = "AI1"
+group_name = "BaseMats"
+locale.setlocale(locale.LC_ALL, '')
+print('Copy and Paste the both "Total Weight" & "Total Volume" lines:')
+counts = sys.stdin.readline().strip()
+mat_names = sys.stdin.readline().strip()
+r = csv.DictReader([mat_names, counts], delimiter='\t')
+mats = r.__next__()
+mats.pop(next(iter(mats)))
+mats.pop(next(iter(mats)))
+mats = {k: locale.atoi(v) for k,v in mats.items()}
+package = {
+    "global": {"name": "BuildPlannerBase"},
+    "groups":[
+        {"name": group_name, "type": "Manual", "materials": mats}
+    ],
+    "actions": [
+        {"name": "Buy BaseMats", "type": "CX Buy", "group": group_name, "exchange": cx, "useCXInv": True, "buyPartial": False},
+        {"name": "Load BaseMats", "type": "MTRA", "group": group_name, "origin": "Configure on Execution", "dest": "Configure on Execution"}
+    ]
+}
+print("\n")
+print("Copy this JSON to import the action package 'BuildPlannerBase':")
+print(json.dumps(package, separators=(',',':')))
+```
+
+
+[09-Nov-24 09:36 PM] smittyventures#0000
+Can anyone help me with PRUNplanner?
+
+
+[09-Nov-24 09:38 PM] tanda#0000
+What is your need?
+
+
+[09-Nov-24 09:57 PM] smittyventures#0000
+Loading plans or you don't have any plans yet.
+Head to your Management view.
+
+
+[09-Nov-24 09:57 PM] smittyventures#0000
+Not sure what to tell it to get that spinning thing to stop
+
+
+[09-Nov-24 10:00 PM] smittyventures#0000
+I will say in the upper right hand corner of PRUNplanner FIO is in red.
+
+
+[09-Nov-24 10:02 PM] tanda#0000
+are you on the wrong empire or somehow don't have your plans assigned to an empire?
+
+
+[09-Nov-24 10:02 PM] tanda#0000
+only time I've seen that is when I try to load an empty empire with no plans attached
+
+
+[09-Nov-24 10:03 PM] smittyventures#0000
+I found a tutorial on how to setup PRUNplanner I am going to watch it real quick and see what I did wrong.
+
+
+[09-Nov-24 10:03 PM] tanda#0000
+okay, good. That might save you a lot of time
+
+
+[10-Nov-24 10:07 AM] finestone#0000
+you have to setup a planet via planet search first i had that same problem when i started
+
+
+[10-Nov-24 10:10 AM] smittyventures#0000
+I figured that out. That is exactly what it was. I am also using AI to help me make decisions instead of spreadsheets.
+
+
+[10-Nov-24 10:11 AM] smittyventures#0000
+Thank you @finestone
+
+
+[10-Nov-24 04:27 PM] tanda#0000
+I've been a little on the fence about AI in general, but I don't think I could have gotten this sheet even slightly functional without Claude
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1305297768339865711/image.png?ex=68149e07&is=68134c87&hm=70c66a361dcc224370c79b3af82e4c58e8aa01cfa98602f7612b9d5ccfca762e&
+
+
+[10-Nov-24 04:29 PM] tanda#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1305298277561929830/image.png?ex=68149e80&is=68134d00&hm=a3b14a6a9f81d80e276f3c08619864d352694f54c2db2f6d2aeec130f3d2f93c&
+
+
+[10-Nov-24 04:29 PM] tanda#0000
+It's just a huge monster of a function
+
+
+[10-Nov-24 05:02 PM] smittyventures#0000
+Well I am using Co-pilot for now. In the next week I will be working on getting a stand alone LLM setup on my homelab.
+
+
+[10-Nov-24 05:03 PM] smittyventures#0000
+I have needed something to get me to learn LLM and this is perfect for it.
+
+
+[10-Nov-24 05:03 PM] smittyventures#0000
+Hoping I can learn how to tie the API into it, but right now it is WAY above my knowledge.
+
+
+[10-Nov-24 05:04 PM] tanda#0000
+Fio is easy, it's just learning how to manipulate the data
+
+
+[10-Nov-24 05:07 PM] tanda#0000
+to give a reference: This excel sheet only needs two calls to the FIO API to actually get the data it needs:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1305307855678734426/image.png?ex=6814a76c&is=681355ec&hm=967592237716c329a989bab82e8aa6c45a6f7f0c3a27e9c819191cf3dc3492d8&
+https://cdn.discordapp.com/attachments/1247251299620225087/1305307856173531227/Screenshot_2024-11-10_150703.png?ex=6814a76c&is=681355ec&hm=85a156ddf9b9de5daf9b4e77674561cda8f075da0dd9125f0ddd8b804facbc46&
+
+
+[10-Nov-24 05:08 PM] tanda#0000
+the remaining 6 hours of time I put into this was to get it to digest that data usefully
+
+
+[10-Nov-24 07:02 PM] jcheung#0000
+My issue with this is you now don't understand the underlying code so if you need to fix or want to change it...
+
+
+[10-Nov-24 07:02 PM] jcheung#0000
+LLMs go after whatever is used most, the average. Not the best...
+
+
+[10-Nov-24 07:05 PM] tanda#0000
+fair, and thankfully the AI does actually break stuff down on a line by line basis with an explanation, but I'm lost on *some*of the calls
+
+
+[10-Nov-24 07:05 PM] tanda#0000
+LAMBDA for instance, appears to be data-sorcery
+
+
+[10-Nov-24 09:07 PM] jcheung#0000
+I'll try to explain what little i know.
+
+
+[10-Nov-24 09:07 PM] jcheung#0000
+It works similar to a programming function
+
+
+[10-Nov-24 09:09 PM] jcheung#0000
+So in javascript for example i could write (poorly)
+
+```Function functionName(argument1, argument2) {
+Return argument1 + argument2
+}```
+
+
+[10-Nov-24 09:11 PM] jcheung#0000
+Then i can call it with `functionName(1,2)` and get 3 as a result
+
+
+[10-Nov-24 09:11 PM] jcheung#0000
+What the function processes then is
+
+```return 1 + 2```
+
+
+[10-Nov-24 09:12 PM] jcheung#0000
+That any clearer or not really
+
+
+[10-Nov-24 09:12 PM] jcheung#0000
+Well. To be clear, functionName is assigned with let()
+
+
+[10-Nov-24 09:12 PM] tanda#0000
+I understand basic programming, and I used to work in SQL
+
+
+[10-Nov-24 09:13 PM] tanda#0000
+Excel's terminology is vastly unfamiliar to me
+
+
+[10-Nov-24 09:13 PM] jcheung#0000
+Lambda is an anonymous function
+
+
+[10-Nov-24 09:13 PM] jcheung#0000
+Is that better?
+
+
+[10-Nov-24 09:14 PM] tanda#0000
+now that I'm actually bothering to look at it, Lambda looks like "find in string" or general string parsing, just without needing loops to step through
+
+
+[10-Nov-24 09:15 PM] tanda#0000
+correction, it's a method of acting on data you've already extracted
+
+
+[10-Nov-24 09:15 PM] tanda#0000
+looks like it can be used for a wide variety of applications, including math as well as string parsing
+
+
+[10-Nov-24 09:15 PM] manhim#0000
+LAMBDA is used to send an anonymous function as a parameter. It's usually used with helpers like BYROW or BYCOLUMN so that you can execute the anonymous function on each rows or columns (and others like MAP, etc.)
+
+
+[10-Nov-24 09:16 PM] manhim#0000
+Allows you to execute the function x amount of time, x being the amount of data to process based on the helper (or the raw data).
+
+
+[10-Nov-24 09:16 PM] jcheung#0000
+There's an explaination by someone who actually knows more than a textbook
+
+
+[10-Nov-24 09:18 PM] tanda#0000
+alright I get it, LAMBDA is a defined function. It does whatever it's told to do and can be called upon multiple times in the same function
+
+
+[10-Nov-24 09:18 PM] tanda#0000
+so if I need it to increment a variable by 1, it can do that or it can do what it's being used here for, which is to parse strings to find values for output
+
+
+[10-Nov-24 09:18 PM] jcheung#0000
+It's not defined technically
+Let defines it
+
+
+[10-Nov-24 09:18 PM] manhim#0000
+There's also a usage to reuse the input data multiple time. So if you have a complex query and you need to reference to it multiple times in a calculation, then you can use the variable name rather than copy-pasting the whole query.
+
+
+[10-Nov-24 09:18 PM] tanda#0000
+~~*user defined~~ The method by which a user defines and names a reusable function
+
+
+[10-Nov-24 09:19 PM] manhim#0000
+Yeah
+
+
+[10-Nov-24 09:19 PM] manhim#0000
+To be fair, I'm pretty sure that this query could be simplified
+
+
+[10-Nov-24 09:20 PM] tanda#0000
+most likely, I merely checked it for whether or not it returned the correct values, not whether it was efficient at it
+
+
+[11-Nov-24 07:48 AM] laaxus#0000
+anybody know how to fix this bug ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1305529523064012861/image.png?ex=6814cd1d&is=68137b9d&hm=e835e2fa44da87f8cdb488a11ef7057661dc39ec6dd7803a87bc8fcec92d7acf&
+
+
+[11-Nov-24 08:04 AM] jcheung#0000
+Have you tried refreshing?
+
+
+[11-Nov-24 08:04 AM] jcheung#0000
+Also what does the buffer command look like?
+
+
+[11-Nov-24 08:04 AM] jcheung#0000
+Is that burn all?
+
+
+[11-Nov-24 08:13 AM] laaxus#0000
+that's burn all
+
+
+[11-Nov-24 08:13 AM] laaxus#0000
+and I tried restarting pc and clearing cookies
+
+
+[11-Nov-24 03:24 PM] .urpalhal#0000
+Open the BS buffer for each base
+
+
+[11-Nov-24 03:24 PM] .urpalhal#0000
+Not just the INV I believe
+
+
+[11-Nov-24 04:45 PM] archielvahr#0000
+Reset Fio data I think
+
+
+[11-Nov-24 04:45 PM] archielvahr#0000
+If those were deconstructed bases
+
+
+[11-Nov-24 04:46 PM] jcheung#0000
+i think it's a new base?
+
+
+[11-Nov-24 04:52 PM] archielvahr#0000
+Ah yeah then hopefully Hal's suggestion should do it
+
+
+[11-Nov-24 11:33 PM] laaxus#0000
+How do I do that ?
+
+
+[12-Nov-24 06:40 AM] archielvahr#0000
+On the https://fio.fnar.net/burnrate go to your settings and there’s a button. Reset data then go back to prun and visit every base Jen refresh
+
+
+[12-Nov-24 01:58 PM] laaxus#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1305985090882506857/image.png?ex=68147b25&is=681329a5&hm=5bacf8ef3791f8b6363c8660943eb8ec0cdf80b472e2b2ef5af01aaf5a8c1c5c&
+
+{Reactions}
+😭 
+
+[12-Nov-24 01:58 PM] laaxus#0000
+still have it
+
+
+[12-Nov-24 01:58 PM] laaxus#0000
+:/
+
+
+[17-Nov-24 04:23 AM] laaxus#0000
+How is the "optimal day", in the repair part of prunplanner, calculated ?
+
+
+[17-Nov-24 04:23 AM] laaxus#0000
+does it take into account the loss of production ?
+
+
+[17-Nov-24 08:22 AM] jcheung#0000
+probably not
+
+
+[17-Nov-24 08:22 AM] jcheung#0000
+but usually by 45/60 it hasn't degraded too far
+
+
+[17-Nov-24 08:24 AM] cptcoleslaw#0000
+idk, it probably does. Most tools that have tried to calculate that so far have compared the profit of items made to loss of production capacity to determine a value metric of some kind, then compared that to the repair cost every time the needed materials tick up
+
+
+[17-Nov-24 08:25 AM] cptcoleslaw#0000
+cause what you're looking for is: when does the cost of lost production outweigh the cost of repair materials
+
+
+[17-Nov-24 08:34 AM] jcheung#0000
+well the graph is the basic one from prun repair guide
+
+
+[17-Nov-24 08:34 AM] jcheung#0000
+not the advanced ones
+
+
+[17-Nov-24 08:34 AM] jcheung#0000
+rather not the expert one
+
+
+[17-Nov-24 08:58 AM] cptcoleslaw#0000
+yeah the graph is just repair cost. But idk how you'd calculate the *optimal* day *without* factoring in loss of production
+
+
+[17-Nov-24 09:44 AM] jcheung#0000
+@scintillating_iridescence found a bug with your loan calculator
+annuity loan drops off last payment
+
+suggestion for fix:
+H7:H
+```=let(
+interest,H6*(1+$F$3),
+principal,$E$3,
+totalReturn,G6,
+principalRemaining,principal-totalReturn,
+if(principal-(totalReturn+interest)>0,interest,if(principalRemaining>0,principalRemaining,0))
+)
+
+ALT:
+=if($E$3-(G6+H6*(1+$F$3))>0,H6*(1+$F$3),if($E$3-G6>0,$E$3-G6,0))```
+
+F7:F
+```=IF(E6>0,$F$3*E6,0)```
+
+
+[17-Nov-24 09:45 AM] jcheung#0000
+i think a similar bug may exist for stable loan too, but i haven't gotten to that yet
+
+
+[17-Nov-24 09:48 AM] jcheung#0000
+yeah, it does
+
+
+[17-Nov-24 09:48 AM] jcheung#0000
+D7:D
+```=IF(B6-D6>0,D6,B6)```
+
+
+[17-Nov-24 09:49 AM] scintillating_iridescence#0000
+Yeah, there's the same thing on the Stable side, but it's just a feature of how the calculations were run.
+
+The point of the thing was to quickly batch up total interest costs for a given loan offer, so that borrowers and lenders can easily see what's going to happen, and how much the profits/liquidity matter to them.
+
+
+[17-Nov-24 09:49 AM] jcheung#0000
+and i'm giving you a fix
+
+
+[17-Nov-24 09:49 AM] jcheung#0000
+if you would like to implement them
+
+
+[17-Nov-24 09:55 AM] scintillating_iridescence#0000
+yeah no I popped the whole libreoffice sheet to jvaler, who dropped a gsheet copy and posted the permalink.
+
+You can fix it and resubmit the edited version, so that the fixed g-sheet tool can have its permalink re-edited or whatnot. I say that cuz I'm a pure idiot with variable setting and use in gsheets, so you really don't want me to fix it, lol. 
+
+You can drop your name in on the side notes for patch credit too! 😄
+
+
+[17-Nov-24 09:57 AM] jcheung#0000
+oh. thought you were owner 😂
+
+
+[17-Nov-24 09:57 AM] jcheung#0000
+the ALT for first fix doesn't use variables 😛
+
+
+[17-Nov-24 10:08 AM] scintillating_iridescence#0000
+Hmm, lets see.
+
+
+[17-Nov-24 10:10 AM] jcheung#0000
+it probably has inefficiencies to be ironed out, but hey
+
+
+[17-Nov-24 10:12 AM] jcheung#0000
+some additional alterations made, in case you want to also do them to your local copy
+J6:J
+```=$J$3-sum($L$6:L6)```
+
+K6
+```=J3*$A$3```
+
+K7:K
+```=J6*$K$3```
+
+purpose: match other two where 0 is shown on final term principal remaining
+
+
+[17-Nov-24 10:12 AM] scintillating_iridescence#0000
+yeah that fixes the run-overs for the annuities.
+
+
+[17-Nov-24 10:14 AM] scintillating_iridescence#0000
+**Interest** loans only pay out interest. All of the principle gets returned on the final interest payment. I think that one is a feature. 🙂 *Ugh I hate these loan type names.*
+
+
+[17-Nov-24 10:17 AM] jcheung#0000
+eh. the others also have principle to be returned on final payment too
+
+
+[17-Nov-24 12:30 PM] scintillating_iridescence#0000
+Fixed out the remaining mismatch bugs
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1307774935707684925/prun-loan-export.ods?ex=68150f51&is=6813bdd1&hm=aa37a8923a7fe9f6178d693596db16cd1aad8424c335e3441dc07e44f657134e&
+
+
+[24-Nov-24 12:26 AM] antisyntax#0000
+Do I need to run the PMMG extension every now and then to get updated FIO CSV data, or does it run w/o needing the extension?
+
+
+[24-Nov-24 12:45 AM] tanda#0000
+Fio is separate from pmmg. Pmmg is just an Interface extension that makes it prettier and adds some functionality
+
+{Reactions}
+👍 
+
+[24-Nov-24 07:09 AM] antisyntax#0000
+dang. was about to sell my AL batch, but then realized it went from 720 to 680 AIC in 12 hours lol. i think ill wait for it to go above 700 again
+
+
+[24-Nov-24 09:59 AM] jcheung#0000
+set an ask
+
+
+[24-Nov-24 11:49 PM] evov#0000
+<- I'll buy AL on Deimos or Vulcan if you produce it there. Just send me a cont for whatever the current bid price is.
+
+
+[26-Nov-24 02:12 PM] laaxus#0000
+congrats for the release @razenpok !
+
+{Reactions}
+🎉 (2) blobthanks 
+
+[26-Nov-24 02:24 PM] scintillating_iridescence#0000
+how's the user experience on the PMMG fork?
+
+
+[26-Nov-24 02:25 PM] scintillating_iridescence#0000
+Is it faster. More comprehensive? More intuitive? Gimme your experiences, if you've tried it out already.
+
+
+[26-Nov-24 02:34 PM] pxlfox.#0000
+Don’t know about faster - time will show.
+It has a slicker and more compressed UI, which I like. 
+If you know PMMG, you’ll feel right at home. And the fork has some extra features. 
+Over all, it feels like a bit more polished version of PMMG with some extra stuff and prettier icons.
+
+
+[26-Nov-24 02:34 PM] pxlfox.#0000
+I like the condition indicator of the ships
+
+
+[26-Nov-24 02:35 PM] pxlfox.#0000
+Some new finance screens
+
+
+[26-Nov-24 02:35 PM] pxlfox.#0000
+XIT BURN is clearer and easier to read
+
+
+[26-Nov-24 02:36 PM] pxlfox.#0000
+And the switch was really easy and quick
+
+
+[26-Nov-24 02:37 PM] astra1414#0000
+it's a shame, really liked what piboy did for the community. but i guess there's always competition somewhere
+
+
+[26-Nov-24 02:39 PM] pxlfox.#0000
+As far as I understood PiBoy had to back down from PrUn and PMMG due to real life stuff. And they seemed to be really supportive about the fork.
+
+
+[26-Nov-24 02:39 PM] pxlfox.#0000
+And they did the groundwork. So it’s more of a PMMG 2.0
+
+
+[26-Nov-24 02:49 PM] jvaler#0000
+it feels much more responsive because i think the data collection method is different from PMMG. stuff like XIT BURN and XIT CONTS update instantly when changes occur, and they're much more reliable as far as i can tell. i'd often have issues with pmmg's XIT BURN not updating for extended periods of time, but that doesn't happen with rprun.
+
+
+[26-Nov-24 03:10 PM] scintillating_iridescence#0000
+Hmm sounds good. 
+
+I'll give it a spin on the weekend. I have very low requirements (efficiency, low memory use, and GUI scalability/retention, so that I don't have to zoom out to like -50% to see all the details). If I leik it, I'll start to push it on the in-game COMGs.
+
+
+[26-Nov-24 03:13 PM] scintillating_iridescence#0000
+But third party tools have the same issues, everywhere. 
+
+Once a dev needs much more time for RL stuff, or loses interest for "reasons", maintenance/upgrades of a given tool fall off, and are eventually depreciated. I push basic maths around all the time, since it's the most basic redundancy that any player can have. If PMMG++++ gets a second wind, so be it.
+
+
+[26-Nov-24 03:15 PM] scintillating_iridescence#0000
+<--- seen the same stuff in Eve over the years. It's not fun, for anyone. :/
+
+
+[26-Nov-24 03:40 PM] jcheung#0000
+@razenpok there, you have someone to offset me
+
+{Reactions}
+👍 
+
+[27-Nov-24 03:26 PM] pxlfox.#0000
+I really like the new extension - reshuffled my base screens a bit 😋
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1311443160169447424/image.png?ex=68148fde&is=68133e5e&hm=9e3ed3ae889a8276e3980a3226e629a1fcc31e1f255b2596621996113a82e1e5&
+
+{Reactions}
+❤️ 👍 
+
+[27-Nov-24 03:28 PM] pxlfox.#0000
+it is definitely faster. BURN for example updates immediately, when you change your production lines
+
+
+[27-Nov-24 03:29 PM] pxlfox.#0000
+love the LM ads. Way better, then vanilla
+
+
+[27-Nov-24 04:35 PM] cptcoleslaw#0000
+I've got to reorganize so many screens because of how space efficient it made some tiles. Very excited
+
+
+[28-Nov-24 05:41 AM] jcheung#0000
+LM is insanely compacted and easier to read
+
+
+[28-Nov-24 07:40 AM] cptcoleslaw#0000
+Yeah the LM changes are so beautiful. Same with FLT
+
+
+[28-Nov-24 07:44 AM] jcheung#0000
+maybe i've been using this for too long. what changed with FLT other than the damage indicators?
+
+
+[28-Nov-24 11:13 AM] tanda#0000
+Nothing changed other than forced minimalist mode, I think?
+
+
+[28-Nov-24 11:14 AM] jcheung#0000
+🤔
+
+
+[28-Nov-24 02:21 PM] tanda#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1311788975308013617/image.png?ex=6814806f&is=68132eef&hm=dae486dd255e19491f3ae9543450262a74c3fefb5cfb92600ad98b718be07104&
+
+
+[28-Nov-24 02:21 PM] tanda#0000
+Just sharing my screens again, lol. Been a few months since I got to do this
+
+
+[28-Nov-24 02:22 PM] jvaler#0000
+i'm not claustrophobic but this screenshot is making me
+
+
+[28-Nov-24 02:22 PM] tanda#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1311789352472416336/Screenshot_2024-11-28_122146.png?ex=681480c9&is=68132f49&hm=8daff40c380af34d70c1c21f8252641f08c284054d2cdab73beb93631a7be605&
+https://cdn.discordapp.com/attachments/1247251299620225087/1311789353432776764/Screenshot_2024-11-28_122159.png?ex=681480c9&is=68132f49&hm=354d74e35223e6c3b00fb37b4a731e4aa13ae72d111251675ceed34d321f1741&
+https://cdn.discordapp.com/attachments/1247251299620225087/1311789354368241694/Screenshot_2024-11-28_122210.png?ex=681480c9&is=68132f49&hm=39c127058025e3a1654e3b439bb7bdbff1eebe7ed3313a56b1fe5d3582b849bc&
+
+
+[28-Nov-24 02:23 PM] tanda#0000
+Density is my goal here, lol
+
+
+[28-Nov-24 02:25 PM] jcheung#0000
+Wait til i get to my pc
+
+
+[28-Nov-24 02:47 PM] pxlfox.#0000
+my financial screen locks similar
+
+
+[28-Nov-24 02:49 PM] jcheung#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1311796230585712772/image.png?ex=68148731&is=681335b1&hm=dc425aa8f6255ec69c8acf72d53fd5ac0c9a60af1c065a518e9b5a8c87e1f591&
+
+
+[28-Nov-24 02:50 PM] tanda#0000
+wow
+
+
+[28-Nov-24 02:51 PM] pxlfox.#0000
+https://tenor.com/view/help-wasabi-gif-12718090
+
+{Embed}
+https://tenor.com/view/help-wasabi-gif-12718090
+https://images-ext-1.discordapp.net/external/SB2FaON_m_tHdky0BR_S3DkgI_sxuPwsPnQwP9oQ6jA/https/media.tenor.com/oxH5Dal_Xr4AAAAe/help-wasabi.png
+
+
+[28-Nov-24 02:59 PM] antisyntax#0000
+🤣
+
+
+[28-Nov-24 02:59 PM] antisyntax#0000
+is that just for quick pop-out buttons or something? or do you resize all the time to whatever window you need?
+
+
+[28-Nov-24 03:00 PM] antisyntax#0000
+i'm very OCD with mine, it's gotta be exactly lined up with other windows, and its all gotta fit ***PERFECTLY*** but i'm just weird
+
+
+[28-Nov-24 03:08 PM] jcheung#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1311800884140707952/image.png?ex=68148b86&is=68133a06&hm=3781fe0ad28a46f449d559e0781c1adee656ce69e2420468a068b98844d48718&
+
+{Reactions}
+👍 
+
+[28-Nov-24 03:08 PM] jcheung#0000
+i think i got inspiration from something i saw in yours
+
+
+[28-Nov-24 03:09 PM] jcheung#0000
+this one is for quick pop outs
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1311801049119461417/image.png?ex=68148bae&is=68133a2e&hm=7df775ece9f6f9821df295355991beb1ce373f8acf626eeaf9500c491a304f4f&
+
+{Reactions}
+👍 
+
+[28-Nov-24 03:10 PM] jcheung#0000
+i've been meaning to rework the tiles though
+
+
+[28-Nov-24 03:10 PM] jcheung#0000
+if razenpok gets it so i can do presets for what tabs are visible up top....
+
+
+[28-Nov-24 03:11 PM] tanda#0000
+I dream of folders
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1311801573323706428/image.png?ex=68148c2b&is=68133aab&hm=f4f4f8199fdaa38a7c135c77ebd1445d02e5d9fd11fc9d9d2768f0483740829b&
+
+
+[28-Nov-24 03:11 PM] antisyntax#0000
+ooh folders would be nice
+
+
+[28-Nov-24 03:11 PM] tanda#0000
+or! at least a way to search for keywords
+
+{Reactions}
+👍 
+
+[28-Nov-24 03:12 PM] tanda#0000
+"PSK" or "Kevin" just showing contracts related to those projects would be fantastic
+
+{Reactions}
+✍️ 
+
+[28-Nov-24 03:16 PM] jcheung#0000
+the reason why i have things named like that is so i can go vtrl f k-s
+or k-b
+
+
+[28-Nov-24 03:20 PM] tanda#0000
+you've inspired me to clean up my contracts today
+
+
+[29-Nov-24 06:39 AM] cptcoleslaw#0000
+The plans 😆💚
+
+
+[30-Nov-24 11:55 AM] tanda#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1312477211181322240/image.png?ex=68150727&is=6813b5a7&hm=aa6aeaee3a4d840c4ff30351b13bf305f6a86e03aa64918b5ba7bfdfadf127f1&
+
+{Reactions}
+✅ 😬 
+
+[30-Nov-24 12:01 PM] astra1414#0000
+birb.
+
+
+[30-Nov-24 12:01 PM] tanda#0000
+This amuses me
+
+
+[30-Nov-24 12:01 PM] astra1414#0000
+birb approved.
+
+
+[30-Nov-24 04:54 PM] jcheung#0000
+why doesn't it come up for me 😦
+
+
+[30-Nov-24 04:54 PM] jcheung#0000
+you're the second one i've seen to have that
+
+
+[30-Nov-24 04:56 PM] tanda#0000
+I think it's probably just a low percentage chance
+
+
+[30-Nov-24 04:57 PM] tanda#0000
+I just need BRA to occasionally pop up a pair of:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1312553041966268456/images.jpg?ex=6814a507&is=68135387&hm=3f834adf3570918276876e8766e0833eedf82319a17837e81b92204e31a917b4&
+
+
+[30-Nov-24 04:59 PM] jcheung#0000
+heh. made me think of this place i used to work at
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1312553546893361243/KPSI4GVV5YBLLYCGMWTVVNXPGLWHIUKPDQQIY3Q5PGMVTW5C.png?ex=6814a57f&is=681353ff&hm=55ce47483950703859bb2f55c02be0de203d21b9df9a374ff81135f60e7770cd&
+
+
+[30-Nov-24 07:38 PM] cptcoleslaw#0000
+https://discord.com/channels/855488309802172469/855489711635431475/1311757511233372270
+
+
+[30-Nov-24 07:43 PM] scintillating_iridescence#0000
+https://github.com/refined-prun/refined-prun/blob/main/CHANGELOG.md#241125
+
+{Embed}
+https://github.com/refined-prun/refined-prun/blob/main/CHANGELOG.md
+refined-prun/CHANGELOG.md at main · refined-prun/refined-prun
+Contribute to refined-prun/refined-prun development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/dGE_8jXifwpixkYYmJrLc1VDCxaCt-xhLY73biWreF0/https/opengraph.githubassets.com/b291897c4cbd1541ebbea6d8e6a6886ada6475ab46adcb76a67372a4ecc7b15a/refined-prun/refined-prun
+
+
+[01-Dec-24 02:07 AM] getonthetrain#0000
+looks like the dirty Deid's bra to me
+
+
+[01-Dec-24 03:32 AM] scintillating_iridescence#0000
+Lol....
+
+I'll admire these quips, for their potential...
+
+But keep them on the #down-low, or even just in your DMs...
+
+
+[01-Dec-24 03:33 AM] astra1414#0000
+banned
+
+
+[01-Dec-24 03:33 AM] scintillating_iridescence#0000
+k
+
+
+[01-Dec-24 03:37 AM] scintillating_iridescence#0000
+I'm gonna do it! 
+
+Nah...
+
+But you've got more le ' femmes than is realised.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1312714177173000243/Screenshot_from_2024-12-01_03-33-57.png?ex=68149258&is=681340d8&hm=c15f209f8783c798e6664cebc1f8496602178611bca6326d990444c75801866f&
+
+{Reactions}
+❓ 🤔 
+
+[01-Dec-24 10:12 AM] jcheung#0000
+You been there?
+
+
+[01-Dec-24 10:12 AM] jcheung#0000
+Wait, wrong place to talk about it
+
+
+[03-Dec-24 08:24 AM] scintillating_iridescence#0000
+I'm releasing the next iteration of my #DANK-Tools lineup... The POPI Planner, in beta! \o/.
+
+(alpha testing was performed with unwilling volunteers, that I keep entrapped on Promitor, unofficially known as the Pits of Prose)...
+
+Anyways, I've found that while our beloved GOV sheet answers many questions, others are still left floating around in our to-do lists. One of those questions is the construction cost of any POPI/PPS upgrade. This question relates to several considerations that either PMs on established planets, or new-found planetary developers might have:
+
+1) How much will these, times x SST, INF, PAR, or else cost me or my tax base?
+2) How do these costs scale per level?
+3) How much of a piggy bank do I/we need, to purchase them outright on the CX?
+4) How can I engage in these maths, to contribute to some discussion on a GOV COMG, or in Discord?
+5) If I want to simplify the whole process, how many MCG, TRU, BBH, etc, do I need in total?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1313511089203318814/POPI-Planner-by-Roh.xlsx?ex=6814d587&is=68138407&hm=10c062731bf66b8853346679e71f2ac7209d2aeaa7ddab219912ad6d949e82a7&
+
+
+[03-Dec-24 08:24 AM] scintillating_iridescence#0000
+The tool presented, offers some elucidation regarding these things, to anyone concerned who hasn't made their own tools for it. Manual and FIO-integrated price calculations have been included, since some things just aren't for sale on the CX. 
+
+It's meant to be directly imported into g-sheets. If you want to use it solely in Excel, feel free, since it's a public mockup. (I'm not hosting a public g-sheet :P)
+
+Analysis of the cost figures has been left out, since it will be included in a later update with more features, whenever I get around to formatting it all.
+
+
+[03-Dec-24 08:27 AM] cptcoleslaw#0000
+This sounds awesome! (I can't look into it until I'm back on PC later)
+
+
+[03-Dec-24 08:28 AM] cptcoleslaw#0000
+I've been wanting to modify Archiel's sheet to factor in a depreciated cost of upgrades to daily cost calculations just to get an idea.
+
+
+[03-Dec-24 08:30 AM] scintillating_iridescence#0000
+Yeah, I've tested it out already on some mid-range upgrades to Pallada... the math is perfect. 
+
+It's not included on the GOV sheet, since I'm keeping the matrix calculations to be as simple as possible, giving a rather fast tool.
+
+
+[04-Dec-24 01:54 AM] evov#0000
+I did a similar thing but for a different purpose.
+
+I wanted to see how the cost of the capital used to build the inf ( Assuming cost of capital is worth about 2% per week.. or set it to whatever seems appropriate ) compared to the cost of upkeeps. Basically just converting capital costs into a daily cost so it's easier to evaluate across different cost types.
+
+At what points did it make more sense to simply use 2 or 3 or more of the different types of upkeeps, and when does it make more sense to upgrade. Or... when does it make sense to use the large or mixed versions of the buildings compared to the more commonly used small versions.
+
+RoH's sheet sounds like good info to have out there as I don't believe I've seen any public info on those costs floating around.
+
+
+[04-Dec-24 06:06 AM] scintillating_iridescence#0000
+Hmm. Well per level, the cost of upkeep increases on a steady linear basis, of 1000/n, 2500/n, or 5000/n (with n denoting the number of upkeep material tiers possible, on a continual basis). The cost of upgrade however, grows along a parabolic basis, being 1.2x the previous level.
+
+So the relationship that you get is ever increasing sunk costs, with a relatively diminishing return of said costs, the larger the planet gets. Skewed POPR metrics don't help that relationship either.
+
+I'm pretty sure Archiel's sheet does a wonderful job on the upkeep cost analysis, but I'll implement your train of thought, with a bit of Evovian flair, to flesh out any possibilities.
+
+
+[12-Dec-24 09:40 PM] jvaler#0000
+@_sashkaa we're having discussion about prunstats in UFO, i have a question
+
+
+[12-Dec-24 09:41 PM] jvaler#0000
+does prunstats report cumulative stats? or does it account for removals and subtracts from the data accordingly
+
+
+[12-Dec-24 09:41 PM] jvaler#0000
+because gravy doesn't have 68 bases, the HQ level highscore is only 50
+
+
+[13-Dec-24 02:57 AM] _sashkaa#0000
+This is a limitation of FIO im afraid, it doesn't tell us when bases get deleted
+
+
+[13-Dec-24 02:59 AM] jvaler#0000
+that's unfortunate
+
+
+[13-Dec-24 03:51 AM] _sashkaa#0000
+I was thinking of making a "claiming" system for self-reporting data that's hard to get
+
+
+[13-Dec-24 03:52 AM] _sashkaa#0000
+Claim your company with your email, then say what sort of stuff you produce, how much, etc.
+
+
+[13-Dec-24 03:54 AM] laaxus#0000
+Couldn't we give you a fio key ?
+
+
+[13-Dec-24 04:00 AM] jcheung#0000
+would that help with limitations of FIO? 🤔
+
+
+[13-Dec-24 04:01 AM] laaxus#0000
+I mean, you could see burn rates
+
+
+[13-Dec-24 04:01 AM] laaxus#0000
+a base without burn can be considered dead
+
+
+[13-Dec-24 04:01 AM] laaxus#0000
+and a player without any base burning is inactive
+
+
+[13-Dec-24 04:01 AM] jcheung#0000
+can it? what if someone dropped a core module and is reserving a slot
+
+
+[13-Dec-24 04:02 AM] jcheung#0000
+in that case you have a base
+
+
+[13-Dec-24 04:02 AM] laaxus#0000
+We can't see that unfortunately I_believe
+but it would still be better than currently, no ?
+
+
+[13-Dec-24 04:02 AM] jcheung#0000
+but no burn
+
+
+[13-Dec-24 04:02 AM] jcheung#0000
+"better" depends on your end use case
+
+
+[15-Dec-24 12:16 AM] jvaler#0000
+with all this free time i'm working on that sheet again. i think the template is pretty much done, it just needs instructions made for it
+
+i've got no idea where to even begin with the mastersheet though lol
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1317736911376355408/image.png?ex=68150be2&is=6813ba62&hm=3d88f50df1c703a641f8057c3644bf41283b0fb37bbfb319e4d2873ada294cef&
+
+
+[15-Dec-24 12:17 AM] jvaler#0000
+wait why is inventory fucked up in that screenshot
+
+
+[15-Dec-24 12:18 AM] jvaler#0000
+oh the import broke for no reason
+
+
+[15-Dec-24 12:19 AM] jvaler#0000
+there
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1317737679349219338/image.png?ex=68150c99&is=6813bb19&hm=fbe3af8b0d702256cf07cac66a49841e81635d64afa397515bcb2f08b2353552&
+
+
+[15-Dec-24 04:03 PM] jcheung#0000
+i have suggestion
+
+
+[15-Dec-24 04:04 PM] jcheung#0000
+hide personal buffer and inventory from view, show only stuff in stock
+
+
+[15-Dec-24 04:04 PM] jcheung#0000
+if less than 0, display 0
+
+
+[15-Dec-24 05:07 PM] manhim#0000
+Yeah, I do IMPORTRANGE from another sheet for my sheet, so I can pick and choose which data I want to show to do that.
+
+
+[15-Dec-24 07:11 PM] jvaler#0000
+that's the plan for the mastersheet, i just want to send the data so i have it available if needed.
+
+but now i'm wondering why i'd need it.....
+
+
+[15-Dec-24 07:12 PM] jvaler#0000
+i've been using arrayformula(), so i could just also use choosecols() inside of that
+
+
+[17-Dec-24 03:51 AM] antisyntax#0000
+is RPrun's web feature not working, is there no XIT Discord?
+
+
+[17-Dec-24 03:52 AM] antisyntax#0000
+any XIT WEB [link] says refused to connect
+
+
+[17-Dec-24 03:53 AM] jvaler#0000
+hm broken for me too
+
+
+[17-Dec-24 03:54 AM] antisyntax#0000
+wow. didn't expect to catch anyone else online this early lol
+
+
+[17-Dec-24 03:55 AM] jvaler#0000
+this is my late... 😶
+
+
+[17-Dec-24 03:55 AM] antisyntax#0000
+ah
+
+
+[17-Dec-24 03:55 AM] antisyntax#0000
+this is my unusually early (i woke up @ 4:30 am, its now almost 5)
+
+
+[17-Dec-24 03:55 AM] antisyntax#0000
+my body didn't get the memo i don't work this morning
+
+
+[17-Dec-24 04:00 AM] laaxus#0000
+Me, an european :
+...
+
+
+[17-Dec-24 04:00 AM] antisyntax#0000
+lol
+
+
+[17-Dec-24 04:08 AM] razenpok#0000
+XIT WEB is working correctly. The refused to connect error is expected for a lot of websites because that's how web browsers work. You can read more details here https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+
+{Embed}
+https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+Same-origin policy - Security on the web | MDN
+The same-origin policy is a critical security mechanism that restricts how a document or script loaded by one origin can interact with a resource from another origin.
+https://images-ext-1.discordapp.net/external/hUVa2hDz_JFyaKisVwEf7NLXWZPTB7vljw-2UNKPADs/https/developer.mozilla.org/mdn-social-share.d893525a4fb5fb1f67a2.png
+
+{Reactions}
+👍 
+
+[02-Feb-25 12:00 PM] pxlfox.#0000
+Does anybody have intel on how the market exploration tool of PP calculates the supply/demand chart?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1335671233655603335/image.png?ex=68150845&is=6813b6c5&hm=1886bf7c64a422fcf8d16abe2f181e1efeefe7169a7e01132c58960a868bf6c5&
+
+
+[02-Feb-25 12:01 PM] pxlfox.#0000
+I feel like those data isn't representative
+
+
+[02-Feb-25 12:01 PM] pxlfox.#0000
+because the market isn't reacting to it
+
+
+[02-Feb-25 12:03 PM] pxlfox.#0000
+for example: if the CU market is oversupplied by 5k for over a month, prices should already have fallen, didn't they?
+
+
+[02-Feb-25 12:03 PM] pxlfox.#0000
+same goes for AU
+
+
+[02-Feb-25 12:04 PM] jvaler#0000
+afaik it's just taking the supply/demand numbers you see on CXM
+
+
+[02-Feb-25 12:04 PM] jvaler#0000
+which aren't always accurate, because people can post asks/bids that are totally unreasonable and would never be interacted with, but it still gets counted as supply/demand
+
+
+[02-Feb-25 12:05 PM] pxlfox.#0000
+CXM shows bids vs asks?
+
+
+[02-Feb-25 12:05 PM] jvaler#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1335672496808136714/image.png?ex=68150972&is=6813b7f2&hm=ffffe5262ea782abb482b5968ffed1fbcac57a8ec6a0888a5d0e60202466af53&
+
+
+[02-Feb-25 12:05 PM] pxlfox.#0000
+but if somebody parks some materials for 100x the marketprice, this is still calculated as supply, rught?
+
+
+[02-Feb-25 12:05 PM] jvaler#0000
+afaik yes
+
+
+[02-Feb-25 12:07 PM] jvaler#0000
+in these cases you can see it's mostly rise storage orders
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1335673065945698407/image.png?ex=681509fa&is=6813b87a&hm=1704d1e5b711ca8e80a90d0ef48fe8adda707df435c6ba6fd30bc4ab20216319&
+
+
+[02-Feb-25 12:08 PM] jvaler#0000
+same goes for BGO & BRO
+
+
+[02-Feb-25 12:11 PM] pxlfox.#0000
+yeah, just checked the values
+
+
+[02-Feb-25 12:11 PM] pxlfox.#0000
+seems like you're right
+
+
+[02-Feb-25 12:13 PM] pxlfox.#0000
+and then again, those values aren't really telling us about the real supply and demand, because it doesn't include trade volume
+
+
+[02-Feb-25 12:13 PM] pxlfox.#0000
+just the amount listed on the market
+
+
+[02-Feb-25 12:24 PM] pxlfox.#0000
+that would be a more realistic ask/bid for CU
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1335677185993736244/image.png?ex=68150dd0&is=6813bc50&hm=5930c7bb32684f84fed8ae5d3ef0fcca7501502627fc39655742584735173464&
+
+
+[02-Feb-25 12:24 PM] pxlfox.#0000
+5,000 for CU is still really expensive, tho
+
+
+[02-Feb-25 12:26 PM] igfloz#0000
+most smelters hate the transport weight. So there will be few that actually smelt for market. It will be for themselves
+
+
+[02-Feb-25 12:26 PM] igfloz#0000
+..hence lower supply
+
+
+[02-Feb-25 12:26 PM] pxlfox.#0000
+you don't need to tell me 😅 😂 
+metals are my main venture
+
+
+[04-Feb-25 05:53 AM] pxlfox.#0000
+Is there an endpoint, that gets your full burn rate, including inputs and outputs, like the rPrun buffer does?
+
+
+[04-Feb-25 05:53 AM] pxlfox.#0000
+The FIO CSV endpoint only returns worker consumables
+
+
+[04-Feb-25 08:47 AM] potaterror#0000
+Err...doesn't PrunPlanner's empire breakdown do that? Or maybe I'm misunderstanding your ask.
+
+
+[04-Feb-25 08:51 AM] jcheung#0000
+yeah, but i don't think you can hit it as an api
+
+
+[04-Feb-25 08:51 AM] sidepipe#0000
+Yes, prunplanner has an API
+
+{Reactions}
+👀 
+
+[04-Feb-25 08:52 AM] jcheung#0000
+oh
+
+
+[04-Feb-25 08:52 AM] jcheung#0000
+i sit corrected
+
+
+[04-Feb-25 08:52 AM] sidepipe#0000
+Yeah I only found this out recently myself 😄
+
+
+[04-Feb-25 08:58 AM] jcheung#0000
+where's the documentation for that?
+
+
+[04-Feb-25 09:06 AM] sidepipe#0000
+There isn’t really any, there’s just three endpoints on the API tab
+
+
+[04-Feb-25 09:07 AM] sidepipe#0000
+https://prunplanner.org/api
+
+{Embed}
+https://prunplanner.org/api
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+
+[04-Feb-25 02:14 PM] jvaler#0000
+yes! https://discord.com/channels/1183243037430796339/1183248948543098992/1307447672289890376
+
+
+[04-Feb-25 02:15 PM] jvaler#0000
+i use it, it's very nice
+
+
+[04-Feb-25 02:22 PM] jcheung#0000
+Yay undocumented endpoints
+
+
+[04-Feb-25 02:24 PM] jvaler#0000
+idk why it's like that ;_;
+
+
+[04-Feb-25 02:25 PM] jvaler#0000
+iirc it's actually listed in the new FIO documentation site
+
+
+[04-Feb-25 02:26 PM] jvaler#0000
+but i only found out about it from saganaki telling me
+
+
+[04-Feb-25 02:30 PM] jcheung#0000
+New? 👀
+
+
+[04-Feb-25 03:51 PM] jvaler#0000
+""new""
+
+
+[04-Feb-25 03:51 PM] jvaler#0000
+it's in #prun-resources
+
+
+[04-Feb-25 03:57 PM] jcheung#0000
+Shit. Been using the wrong one this whole time?
+
+
+[04-Feb-25 03:58 PM] jvaler#0000
+no i'd stick to the old one tbh, the new one is a bit buggy last i tried using it iirc
+
+
+[04-Feb-25 04:01 PM] manhim#0000
+I've been using the /materialio endpoint quite successfully. I just needed to add a column for my plan IDs in my Bases sheet to create the link. By planet name didn't work because I sometimes have the same planet multiple times, but only one as my "current" setup.
+
+
+[05-Feb-25 03:51 PM] pxlfox.#0000
+I made myself an own order book sheet, which excludes overpriced offers and requests and includes traded materials as demand to calculate are more accurate supply vs demand prediction
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1336816398294319104/image.png?ex=6814958a&is=6813440a&hm=fb57c862f634d77ffc43c8b0ef2c8bd3e9ee635099298c862885706b8adc451c&
+
+
+[05-Feb-25 03:55 PM] pxlfox.#0000
+Also, I like those graphs. You could probably relatively easy generate those from the burn data. Don't know how usefull they actually are, but they look pretty :3
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1336817535722717358/image.png?ex=68149699&is=68134519&hm=f875dbef2442e107f92765d49507fd42436efe68536bf1681df07d82c9ab286a&
+
+
+[06-Feb-25 07:12 AM] taiyibureau#0000
+That looks like a useful idea. How are you deciding on a cutoff value?
+
+
+[06-Feb-25 07:16 AM] pxlfox.#0000
+Every offer that’s twice as expensive as the cheapest and every request that’s half as much as the highest
+
+
+[06-Feb-25 07:24 AM] pxlfox.#0000
+I can share the sheet, it you’re interested
+
+
+[06-Feb-25 09:28 AM] pxlfox.#0000
+it has some potential.. tho not like this 🤔 😅
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1337082539164307468/mermaid-diagram-2025-02-06-152806.png?ex=6814e4a7&is=68139327&hm=ccb1fe30d434ef385b71684eb391bf383a5275ec2d1780eac4f0a2333dd09c85&
+
+
+[06-Feb-25 09:48 AM] pagy1234#0000
+Wait how do i make something like that?
+
+
+[06-Feb-25 09:48 AM] pagy1234#0000
+It looks really cool
+
+
+[06-Feb-25 09:48 AM] pxlfox.#0000
+https://mermaid.js.org/syntax/sankey.html
+
+{Embed}
+https://mermaid.js.org/syntax/sankey.html
+Sankey diagram (v10.3.0+) | Mermaid
+Create diagrams and visualizations using text and code.
+
+
+[06-Feb-25 09:49 AM] pxlfox.#0000
+it takes CSV data, which you can either put in manually, or generate from the `https://rest.fnar.net/csv/burn` endpoint
+
+
+[06-Feb-25 09:50 AM] pagy1234#0000
+You have to code it yourself??
+
+
+[06-Feb-25 09:50 AM] pagy1234#0000
+Damn thats gonna take a while
+
+
+[06-Feb-25 09:51 AM] pxlfox.#0000
+not quite, but a bit
+
+
+[06-Feb-25 09:51 AM] pxlfox.#0000
+but I can share the sheet, if you want 🙂
+
+
+[06-Feb-25 09:51 AM] pxlfox.#0000
+and explain how to get the diagram
+
+
+[06-Feb-25 09:52 AM] pagy1234#0000
+What sheet?
+
+
+[06-Feb-25 09:52 AM] pagy1234#0000
+Is there a sheet to make the CSV for you?
+
+
+[06-Feb-25 09:52 AM] pxlfox.#0000
+I have an other version, which excludes the consumables and takes the mass/volume of the materials and not the amount
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1337088640089722910/mermaid-diagram-2025-02-06-165214.png?ex=6814ea55&is=681398d5&hm=7710d5428900e03899ba503643fd61e8a3dd5bcfb21075e9413d181928fed601&
+
+
+[06-Feb-25 09:53 AM] pxlfox.#0000
+I made myself one, yes
+
+
+[06-Feb-25 09:53 AM] pagy1234#0000
+That gives a massively different graph, wow
+
+
+[06-Feb-25 09:53 AM] pagy1234#0000
+Oh yeah that would be nice
+
+
+[06-Feb-25 10:02 AM] pxlfox.#0000
+yeah, the first one shows the amount of resources produced and consumed and highlights surpluses and deficiencies
+
+
+[06-Feb-25 10:02 AM] pxlfox.#0000
+the second one displays the logistic demand of the production lines
+
+
+[06-Feb-25 10:03 AM] pxlfox.#0000
+IA-151a consumes the most amount of materials, IA-151e has the heaviest ones and needs the most shipping
+
+
+[06-Feb-25 10:09 AM] pagy1234#0000
+Yeah
+
+
+[06-Feb-25 10:09 AM] pagy1234#0000
+Thats pretty neat
+
+
+[06-Feb-25 10:09 AM] pagy1234#0000
+Functional and looks nice
+
+
+[06-Feb-25 11:29 AM] taiyibureau#0000
+That sounds reasonable. I'm probably not going to use the sheet myself, but for the demand curve on prun planner that would be nice to have.
+
+
+[06-Feb-25 11:30 AM] taiyibureau#0000
+That is pretty much the only place I would interact with this kind of data.
+
+
+[06-Feb-25 11:36 AM] pxlfox.#0000
+Yeah, I think it would make sense for PP to at least exclude the parking-offers from the demand/supply
+
+
+[06-Feb-25 08:55 PM] evov#0000
+That looks cool AF. Make one that covers my production stuff pls.
+
+{Reactions}
+❤️ 
+
+[07-Feb-25 06:35 AM] pxlfox.#0000
+But to make it work you need either setup all your bases in PrunPlanner, use the FIO extension or provide the burn data manually. I feel all those options contradict with your mantra 😂
+
+
+[07-Feb-25 06:36 AM] pxlfox.#0000
+If we talk about the Sankey diagrams
+
+
+[07-Feb-25 08:09 AM] roche3950#0000
+This is great, thanks
+
+
+[12-Feb-25 02:23 AM] vanarazor#0000
+https://prunplanner.org/shared/813efd6e-a6ff-4b3e-aa4e-0e5885bdfbdb
+
+{Embed}
+https://prunplanner.org/shared/813efd6e-a6ff-4b3e-aa4e-0e5885bdfbdb
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+
+[12-Feb-25 02:24 AM] jcheung#0000
+i don't think you hit save
+
+
+[12-Feb-25 02:24 AM] vanarazor#0000
+it does say it :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1339150179764408361/image.png?ex=6814814b&is=68132fcb&hm=d4d0b19a7e412b2dc4342098c41a414d5e410e35bfa6beacd1e6ae0170c7750a&
+
+
+[12-Feb-25 02:24 AM] vanarazor#0000
+and link loads up fine for me
+
+
+[12-Feb-25 02:25 AM] jcheung#0000
+did you generate the link before or after you saved
+
+
+[12-Feb-25 02:25 AM] jcheung#0000
+because this is a little.... lacking
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1339150410627416094/image.png?ex=68148182&is=68133002&hm=db7ba42a4983af7dd2bf2c57e78dd748452f9fa10fe1d5b65fe8f4a00fa80934&
+
+
+[12-Feb-25 02:26 AM] vanarazor#0000
+oh well, haha that is just what I;ve got so far i think
+
+
+[12-Feb-25 02:26 AM] jcheung#0000
+as a side note, i think this channel is more discussions of tools themselves, but i could be wrong 🤔
+
+{Reactions}
+👍 
+
+[12-Feb-25 02:27 AM] vanarazor#0000
+oh right, understood
+
+
+[14-Feb-25 03:56 AM] random_di5cord_user#0000
+When I set materials I have in the pruplanner "construction cart", sometimes it appears to save them for next time, but most of the time it doesn't.   Is there any sense of what governs this?  (It doesn't appear to be affected by the planet's "save" button, which doesn't seem to register this at all).
+
+
+[14-Feb-25 09:26 AM] jcheung#0000
+no idea, that's been driving me nuts forever. try maybe asking here https://discord.com/channels/667551433503014924/1103962459750006894
+
+
+[14-Feb-25 09:30 AM] random_di5cord_user#0000
+off we go
+
+
+[23-Feb-25 06:26 PM] mzevilcanadian#0000
+https://www.youtube.com/watch?v=Vi-i6rLZMaQ
+
+{Embed}
+Lord
+https://www.youtube.com/watch?v=Vi-i6rLZMaQ
+How to use Prunplanner for Prosperous Universe
+Hopefully this video helps you understand how to set up Prunplanner, if you have any questions please leave them below
+
+--Links--
+
+The official Prosp discord  https://discord.gg/YkwpJ2hdDE
+
+Link to Prunplanner https://prunplanner.org/
+
+Background audio used https://youtu.be/EM5KwkTQzsE
+
+Ending music from Sweet Cafe https://youtu.be/6DhONAQfEVg
+https://images-ext-1.discordapp.net/external/DSq6GXwpy1FwDBpBlIBMy2TpSSXULzOp4ckXQXPKUp0/https/i.ytimg.com/vi/Vi-i6rLZMaQ/maxresdefault.jpg
+
+
+[23-Feb-25 06:35 PM] mzevilcanadian#0000
+https://prunplanner.org/shared/20773123-c1bd-4f1e-a384-5dfefe55b3c4
+
+{Embed}
+https://prunplanner.org/shared/20773123-c1bd-4f1e-a384-5dfefe55b3c4
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+{Reactions}
+👍🏽 
+
+[23-Feb-25 11:15 PM] vanarazor#0000
+I tweaked it a little bit, what do you think? 
+https://prunplanner.org/shared/41de7d75-09b3-4e10-9e47-a0856f43a974
+
+{Embed}
+https://prunplanner.org/shared/41de7d75-09b3-4e10-9e47-a0856f43a974
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+
+[24-Feb-25 08:18 AM] mzevilcanadian#0000
+What did you change?
+
+
+[24-Feb-25 08:19 AM] mzevilcanadian#0000
+Nvm. It's not bad, the construction costs are a but high for just the 1 mil agp grant is all, need money for operating costs
+
+
+[24-Feb-25 08:38 AM] jcheung#0000
+hi guys, this would probably be better in #agp-operations or #associate-planning
+
+
+[02-Mar-25 05:58 PM] _sashkaa#0000
+yo yo yo
+
+
+[02-Mar-25 05:58 PM] _sashkaa#0000
+PRUNStats is back online
+
+{Reactions}
+🔥 (2) 🎉 
+
+[02-Mar-25 05:58 PM] _sashkaa#0000
+- love _sashkaa
+
+
+[06-Apr-25 10:51 PM] .urpalhal#0000
+so uh
+
+
+[06-Apr-25 10:51 PM] .urpalhal#0000
+Im thinking about making a program to balance rates for goods productions
+
+
+[06-Apr-25 10:52 PM] .urpalhal#0000
+basing it on differential equations and matrix operators
+
+
+[06-Apr-25 10:59 PM] .urpalhal#0000
+my problem is I can do the maths, but am unsure about how to go about making said program
+
+
+[07-Apr-25 01:24 AM] evov#0000
+Can you give an example of what you're trying to achieve?
+
+
+[07-Apr-25 01:25 AM] .urpalhal#0000
+Yeah so like in the planning phase i think it would be nice to balance material outputs and inputs for simple to complex chains
+
+
+[07-Apr-25 01:25 AM] .urpalhal#0000
+EG how much triple double and single burn to run given my outputs from my HYF and FRM
+
+
+[07-Apr-25 01:30 AM] evov#0000
+Not sure if this is helpful at all, but this is the method I used for planning out complicated production lines  ( ships, gateways etc ) -
+
+It looks like this in a sheet - I start with how much of each final product I need  ( in this case PSH/RSH/TSH is shown ) - and work backwards from there. It lets me know how much "build time" is needed for each of the building types, and how much raw materials / inputs I'll need to buy.
+
+In this example I stop the chain at the point where it makes sense for me to buy it from the CX rather than try to produce it myself.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1358690281758920805/image.png?ex=68150f2e&is=6813bdae&hm=35d1d1cb343e19676d0dcc85404682f6f8d1f7f6c541a34d79241bd89e825f32&
+
+
+[07-Apr-25 01:32 AM] evov#0000
+Then I go through an add up all the blue boxes for each coresponding building. And add up all the raw inputs with a CX next to it. And that's what's needed to build that volume of parts. Once I know the process time required - I can scale the number of buildings needed after deciding on a run-rate  ( i.e. 1 gateway every 100 days )
+
+{Reactions}
+givelove 
+
+[07-Apr-25 01:33 AM] evov#0000
+I'm sure you can automate it a lot better if it's a tool you plan to use for many things, but that's the basic algorithm / process that works for me.
+
+
+[07-Apr-25 01:36 AM] .urpalhal#0000
+I figured it’s a problem that comes up frequent enough that it could maybe use a handy dandy tool
+
+
+[07-Apr-25 01:37 AM] .urpalhal#0000
+Have a DB with all the recipes
+
+
+[07-Apr-25 01:37 AM] jab.sh#0000
+"where it makes sense to buy from the CX" is this a gut feel or is your sheet doing that math?
+
+
+[07-Apr-25 01:38 AM] evov#0000
+I have a pretty big gut. It's pretty good at feeling stuff out.
+
+{Reactions}
+😆 (2) 
+
+[07-Apr-25 01:39 AM] .urpalhal#0000
+Checks out
+
+
+[07-Apr-25 01:39 AM] evov#0000
+... I also have multiple models that show me the profitability of each order. So that informs my gut pretty well 🙂
+
+{Reactions}
+💯 
+
+[07-Apr-25 01:39 AM] jab.sh#0000
+I'm imagining a tool where you enter an end product, and it shows you all the ingredients with checkboxes. if it's checked that means cx, if you uncheck it then it builds out the ingredients for that part and so on
+
+
+[07-Apr-25 01:41 AM] jcheung#0000
+i started poking at something similar but never got very far
+
+{Reactions}
+RSZeroShrugIDK 
+
+[07-Apr-25 01:42 AM] jcheung#0000
+would have had something like this, but brain was struggling a little
+
+{Reactions}
+😆 
+
+[07-Apr-25 01:43 AM] evov#0000
+It's just a question of time investment. If I'm designing a new complicated production line- it might take 1 or 2 hours to do all the prep/planning/balancing etc... and then a few months to implement the plans.
+
+There's a limited number of products that (imo) require that level of planning that goes 3+ bases deep.
+
+
+[07-Apr-25 01:43 AM] .urpalhal#0000
+Why do think I’m asking questions in here
+
+
+[07-Apr-25 01:43 AM] .urpalhal#0000
+Fair
+
+
+[07-Apr-25 01:43 AM] .urpalhal#0000
+I feel like it is an excuse to practice my trash coding skills tho
+
+
+[07-Apr-25 01:45 AM] evov#0000
+It's an interesting problem to solve. I'm a knuckle dragging halfwit, so I'm sure you can come up with a far more elegant solution than I have. But those are the basic steps on how I solved the problem with a sheet anyway.
+
+
+[07-Apr-25 01:45 AM] .urpalhal#0000
+That’s for sure
+
+
+[07-Apr-25 01:46 AM] evov#0000
+The next one of these type problems on my table to work through is a Gov admin one. Incorporating capital costs / intrest payments on that capital when looking at cost effective upkeeps.
+
+
+[07-Apr-25 01:48 AM] evov#0000
+I feel like people upgrading things to lvl 10 and stacking the 1 upkeep into it feels like a disgusting waste of capital in the pursuit of keeping op-ex as low as possible.
+
+{Reactions}
+RSZeroShrugIDK 
+
+[07-Apr-25 01:49 AM] .urpalhal#0000
+This is from a tool for satisfactory and it shows how much stuff would need to go into a production chain to produce X item per time
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1358695133503160423/IMG_0236.png?ex=681513b3&is=6813c233&hm=886fdba74692d7a653e00ab12e9ecae27a71764dab287bc14f4ece67f2d6d72a&
+
+
+[07-Apr-25 01:50 AM] .urpalhal#0000
+They have their code base on Git too so like machine brain and guts wise it shouldn’t be too hard to figure out something similar for PrUn
+
+{Reactions}
+😮 
+
+[07-Apr-25 01:56 AM] jab.sh#0000
+oh man if it's open source then you can probably just replace the data and it should work the same
+
+
+[07-Apr-25 01:56 AM] jab.sh#0000
+does the tool support alternate recipes?
+
+
+[07-Apr-25 01:57 AM] jab.sh#0000
+I'm thinking CX buy could be an "alternate recipe"
+
+
+[07-Apr-25 02:01 AM] .urpalhal#0000
+Yes
+
+
+[07-Apr-25 02:01 AM] .urpalhal#0000
+You can also just manually set inputs for things too
+
+
+[07-Apr-25 02:02 AM] .urpalhal#0000
+So like if you have another factory making Y which is used in X then you can just say I have so much of Y per second
+
+{Reactions}
+👍 
+
+[07-Apr-25 02:02 AM] laaxus#0000
+pretty sure we already have that
+
+
+[07-Apr-25 02:02 AM] laaxus#0000
+just not per building
+
+
+[07-Apr-25 02:04 AM] .urpalhal#0000
+Where is this 🥺
+
+
+[07-Apr-25 02:04 AM] laaxus#0000
+I don't know, i'm at work sorry 😦
+
+{Reactions}
+hehe 
+
+[07-Apr-25 02:07 AM] .urpalhal#0000
+Don’t play with my feelings like that :Panda_sad:
+
+
+[07-Apr-25 02:12 AM] laaxus#0000
+https://prunplanner.org/tools/production-chain
+
+{Embed}
+https://prunplanner.org/tools/production-chain
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+
+[07-Apr-25 02:12 AM] laaxus#0000
+was what I was thinking about
+
+
+[07-Apr-25 02:18 AM] evov#0000
+Use the prun planner for things like... a ship. Even simpler - 1 part of the 13 parts needed... a CQL for example.
+
+I suspect it would be harder/longer for me to convert that prun planer info into a workable build plan, than it would if I just used my custom sheet tools for it.
+
+Look at the minimap to get an idea of the scale of that chart just for CQL's
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1247251299620225087/1358702544213246033/image.png?ex=68151a9a&is=6813c91a&hm=ea902396d8cc82ea07935862d0ba6dd331b0c3c723f3742b66e30c1f7345e7f4&
+
+{Reactions}
+❤️ 
+
+[07-Apr-25 11:08 AM] .urpalhal#0000
+And it’s based on runs and not time
+
+
+[07-Apr-25 12:53 PM] .urpalhal#0000
+and if you try to modify it it crashes
+
+
+[07-Apr-25 05:28 PM] vanarazor#0000
+Isn’t what prplan does already? Or may be on your speadsheet you d’d like to add weekly sales volume consideration
+
+
+[07-Apr-25 07:17 PM] .urpalhal#0000
+not really. it kinda does
+
+
+[07-Apr-25 07:18 PM] .urpalhal#0000
+well if i get the math mathed out someone should help me make it look pretty
+
+
+[08-Apr-25 02:29 AM] magican1980#0000
+yes, some kind of sheet for ship production ist nice 🙂 and would be some kind of complex.
+
+
+[08-Apr-25 02:31 AM] magican1980#0000
+and in only one product like CQL are going a lot of elements of production. But it is the same for higher Base and luxury consumables
+
+
+[16-Apr-25 04:49 PM] jvaler#0000
+
+
+[20-Apr-25 04:24 PM] .urpalhal#0000
+I think a linear optomization model could work. I have seen/heard of people using Pyomo Python library and a open source solver called GLPK. I think imma go see how all that works
+
+
+[20-Apr-25 04:25 PM] .urpalhal#0000
+I guess I'll need to go find all the recipes and their rates and such
+
+
+[26-Apr-25 12:28 PM] jab.sh#0000 (pinned)
+
+{Reactions}
+👍🏼 
+
+[26-Apr-25 12:43 PM] tanda#0000
+hmm, I'll see if I can implement this into my shop to reduce loading issues
+
+{Reactions}
+👍 
+
+[26-Apr-25 12:47 PM] jvaler#0000
+Pinned a message.
+
+
+[28-Apr-25 09:49 AM] bigtoot#0000
+I'm trying to dig up data on fuel calcs.
+I'm building a python lib for doing calculations of cogm /shipping and stuff.
+
+any chance you can link this again? the invite here expired
+
+
+[28-Apr-25 09:51 AM] bigtoot#0000
+@cptcoleslaw^
+
+{Reactions}
+👍 
+
+[28-Apr-25 09:54 AM] cptcoleslaw#0000
+https://discord.gg/mjKzCEE8
+
+{Reactions}
+🫡 ❤️ 
+
+==============================================================
+Exported 866 message(s)
+==============================================================

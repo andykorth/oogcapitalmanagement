@@ -1,0 +1,72 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Server Information / channel-information
+==============================================================
+
+[24-Jun-24 01:15 PM] jvaler#0000
+# Channel Information
+**__Updated:__** 04-Apr-25 05:11 PM
+## Associate Quarters
+__Most general chatter occurs here.__
+* #associate-office 
+  * Anything related to ADI or PrUn goes here!
+* #associate-planning 
+  * Used for any kind of PrUn planning. New players, ask for advice here! Unless you're planning to get an AGP grant, then #agp-operations is better for that.
+* #associate-offtopic 
+  * Basically an off-topic channel. Discuss anything here, PrUn related or not.
+* #bot-spam 
+  * Command your robot servants here.
+* #prun-tool-discussion 
+  * External PrUn tool development/discussion.
+## Marketplace
+__Where coordination of in-game transactions happens.__
+* #trading 
+  * Negotiate one-time trades, recurring trades, or just notify people that you sent them contracts.
+* #internal-offers 
+  * A bulletin board for persistent sale offers. 
+  * It's current main purpose is to subsidize less established players by providing them with cheaper essential goods.
+* #internal-requests 
+  * The inverse of #internal-offers, but not necessarily oriented towards newer players. Use if you have a consistent material demand and are looking for a trading partner.
+* #shipping 
+  * Post time-sensitive shipping offers here. Both shippers and contractors can post.
+* #recurring-shipping 
+  * Post long-term shipping deals here. Both shippers and contractors can post.
+
+
+[25-Jun-24 07:41 PM] jvaler#0000
+## Antares Grant Program
+__The original ADI program. We give out ₳1,000,000 AIC grants to new/less developed Antares-based players.__
+* #agp-information 
+  *  Information about AGP and how it works.
+* #agp-operations 
+  * Request a grant and discuss plans related to it here.
+## Project Ship Kit
+__Description Pending. Check PSK's information channel.__
+* #psk-information 
+* #psk-operations 
+## ADI Gateway Cooperative
+__Lead by @archielvahr, this is a set of channels dedicated to discussing the upcoming gateway update and for planning construction related to it.__
+* #agc-information 
+  * Information and updates related to AGC.
+* #agc-general 
+  * Discussion and planning for AGC.
+## CULT (Antares Prosperity Union)
+__This is a branch of ADI started by @histidinedwarf that runs co-op production projects.__
+* #cult-information 
+  * Information about CULT as a whole.
+* #cult-office 
+  * Discussion for anything CULT related.
+* #ppp-information 
+  * Information about Plastic Producing Persons, a PG production co-op run entirely on Elon (QJ-650c).
+* #ppp-operations 
+  * Discussion about running PPP: Contract requests, expansion planning, etc.
+* #kevin-information 
+  * Information for kevin, an INS production co-op.
+  * No, the name doesn't mean anything, it was a joke that became a meme https://discord.com/channels/1183243037430796339/1246543290854146058/1254296283133513799.
+* #kevin-operations 
+  * Discussion about running kevin: Contract requests, expansion planning, etc.
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

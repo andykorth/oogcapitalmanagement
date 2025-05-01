@@ -1,0 +1,5124 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: 🚀 Logistics / project-6115
+==============================================================
+
+[27-Jun-24 11:08 AM] archielvahr#0000
+Project 6115 is a top secret project to colonize the three triple-green planets on OS-099. This is the only system in the game with three triple-green goldilocks zone planets. It's also in ANT space, albeit 16 jumps away.
+
+Ideas have been discussed elsewhere, but I think the winning idea is to make 3 electronics planets in the system, due to the low logistic burden. 
+
+We will simultaneously build ADMs, establish a government, and set a high, but refundable, base founding fee.
+
+{Reactions}
+🙌 (2) 
+
+[27-Jun-24 11:10 AM] sidepipe#0000
+I think something like this is the best argument for a 10M base establishment tax - getting all the materials out there is gonna be really expensive at first, so it makes sense to try and keep others not in the project out, or to at least pay their fair share 🙂
+
+
+[27-Jun-24 11:11 AM] churavis#0000
+What would you make with 3 electronics planets?
+
+
+[27-Jun-24 11:13 AM] sidepipe#0000
+I’m guessing EDC / IDC would be a safe bet, for one. For this to make sense, we’d need something very value-dense for shipping home, as well as something that minimizes import requirements
+
+{Reactions}
+👍 
+
+[27-Jun-24 11:14 AM] sidepipe#0000
+“Safe bet” meaning highest chance of this being feasible as something that can make money in this case. Not necessarily something that will guarantee returns 😄
+
+
+[27-Jun-24 11:15 AM] archielvahr#0000
+We would need some technician bases, but they can make LD, etc
+
+
+[27-Jun-24 11:16 AM] sidepipe#0000
+I think it’s probably warranted to look into the nearby planets as well, and see if it’s feasible to make some POPI materials there - again, just with the aim of minimizing import requirements
+
+
+[27-Jun-24 11:19 AM] archielvahr#0000
+Yeah, so, flipping back through search history: GM-498 has one of the best water planets in the game. Post map change that's 4 jumps away.  Resharing this map I made, you can see the legend at the top:
+
+
+[27-Jun-24 11:19 AM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1255920457664827423/Untitled.png?ex=6814f092&is=68139f12&hm=f9a073372682da76503807a72d88c5782e4da594bc42f2498c278055a69d1b8c&
+
+
+[27-Jun-24 11:19 AM] archielvahr#0000
+You can poke around in-game for nearby resources.
+
+
+[27-Jun-24 11:20 AM] hernanduer#0000
+I can move my Eos base out there, will be way cheaper on parts and fill up some SET and TEC need
+
+{Reactions}
+👍 
+
+[27-Jun-24 11:20 AM] archielvahr#0000
+It would be cool to do something more useful than electronics down there but I don't think we have a complete enough chain. EPO and other chemistry products could be good candidates.
+
+
+[27-Jun-24 11:20 AM] archielvahr#0000
+In the next few weeks, I'm gonna try to clear up 3 permits
+
+
+[27-Jun-24 11:21 AM] sidepipe#0000
+I have 5 good to go 🙂
+
+{Reactions}
+🥵 (2) 💯 (2) 
+
+[27-Jun-24 11:22 AM] sidepipe#0000
+It’s nice to be a less established player sometimes 😄
+
+
+[27-Jun-24 12:02 PM] mrsmith33#0000
+I need a bit more software production for ship parts
+
+
+[27-Jun-24 12:03 PM] mrsmith33#0000
+Could move all the software from phobos to there, and only do Electronic parts on Phobos
+
+
+[27-Jun-24 12:06 PM] akyantor#0000
+Cool project, keen to join, but must finish my current plans in main space first. Love the idea of an ADI outpost in the outer reaches 🙂
+
+
+[27-Jun-24 12:06 PM] archielvahr#0000
+Or move low end software out, and keep high end where we have ample scientists
+
+
+[27-Jun-24 12:07 PM] mrsmith33#0000
+yeah, that's a better idea
+
+
+[27-Jun-24 12:11 PM] .urpalhal#0000
+Guess it’s time to add a bunch of upgrades to my HQ
+
+
+[27-Jun-24 03:11 PM] zipatsu#0000
+I've built up that planet from scratch a while back, it's currently home to me and one other player and has pretty much every infrastructure building needed + admin paid for by the sale of fresh, pure H2O ✌️
+
+{Reactions}
+🌊 (4) 
+
+[27-Jun-24 03:30 PM] archielvahr#0000
+Woaahh I had no idea, that's awesome
+
+
+[27-Jun-24 03:30 PM] archielvahr#0000
+How bad is the shipping?
+
+
+[27-Jun-24 04:35 PM] zipatsu#0000
+Left to right: standard 2k/2k maxed out - HYR 2k/2k saving some fuel - HYR 2k/2k maxed out
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1255999967105912975/image.png?ex=681491df&is=6813405f&hm=f3bfeb549ee0bc136c7b5ad06a519468f7160a0bee4f7d52b8f1a46908660377&
+
+
+[27-Jun-24 04:38 PM] zipatsu#0000
+HYR costs a bit extra but if you have them then it's a pretty fast trip at roughly 72k/roundtrip if buying fuel from the CX on ANT max speed and ~59k going a few hours slower ✌️
+
+
+[27-Jun-24 04:45 PM] sidepipe#0000
+How long would ANT - OS-99 (whichever planet) take for HYR? Just curious 🙂
+
+
+[27-Jun-24 04:46 PM] hernanduer#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1256002783203823708/image.png?ex=6814947e&is=681342fe&hm=4b85387a8b922f7fcba3756594a093fad95c83c42e8225c52a2b30bc270a18a9&
+
+
+[27-Jun-24 04:46 PM] hernanduer#0000
+that's with an HTE and HYR
+
+
+[27-Jun-24 04:47 PM] hernanduer#0000
+maxes out at 79% because of the distance, lol
+
+
+[27-Jun-24 04:48 PM] zipatsu#0000
+Pretty much the same for mine there
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1256003177552023572/image.png?ex=681494dc&is=6813435c&hm=24b461857b22efc61f0e321b89bd7b89c71799b1cef21841d2a967f642ed0e08&
+
+
+[27-Jun-24 04:48 PM] zipatsu#0000
+Give or take 4 hours if you keep spamming the fuel button because that's still a thing somehow 😄
+
+
+[27-Jun-24 04:49 PM] sidepipe#0000
+That’s not bad at all. I spend about that much time going to either wind for DW atm 😁
+
+
+[27-Jun-24 04:51 PM] zipatsu#0000
+Here's GM > OS just in case you're planning on doing something with the water there (edit: add ~40 minutes for the full inventory)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1256003890693013524/image.png?ex=68149586&is=68134406&hm=3457a7f8d78bc48e66347348fab48e9f5127a2f843291984035fafb1b5f7fb91&
+
+
+[27-Jun-24 06:37 PM] draconisdomini#0000
+There's HAL on OS-416b (needs HSE) and GM-332c (HSE+INS) if we wanted to go down the chemistry route for one of the three
+
+
+[27-Jun-24 06:38 PM] draconisdomini#0000
+H for making EPO would probably have to come from KI-401d
+
+
+[27-Jun-24 06:40 PM] draconisdomini#0000
+O could come from OS-476d (HSE+INS)
+
+
+[27-Jun-24 07:02 PM] draconisdomini#0000
+GK-115i (HSE+INS) has the second highest amount of SCR in the galaxy, though I am not sure how useful that is
+
+
+[29-Jun-24 03:22 AM] allocater#0000
+1.5 days is very doable, I fly like this multiple times per week ANT-Etherwind-Malahat
+
+
+[29-Jun-24 02:01 PM] hernanduer#0000
+@archielvahr you still have those fancy charts from when we were trying to find good resources near 099? Think maybe that was 7 months ago
+
+
+[29-Jun-24 02:01 PM] hernanduer#0000
+I know there's the map with water quality
+
+
+[29-Jun-24 02:05 PM] hernanduer#0000
+Maybe that's the one you already posted...
+
+
+[29-Jun-24 03:09 PM] archielvahr#0000
+Yeah I had a lot of variations all dumped into the strategy channel at some point. I'm looking to see what else I had. I think that one posted above shows most of it.
+
+
+[29-Jun-24 03:09 PM] archielvahr#0000
+Here is a detail map with "good" resources listed:
+
+
+[29-Jun-24 03:09 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1256703159284400157/Untitled.png?ex=68152685&is=6813d505&hm=0bc79be5e898d479eddec14ba065d5f51036f98a6d40d78ec831a656f78c2307&
+
+
+[29-Jun-24 03:10 PM] archielvahr#0000
+So that's actually Resources in the top 5 of the universe. Which should be a profitable level, although you could manage with lower
+
+
+[29-Jun-24 03:11 PM] archielvahr#0000
+So we have O next door, TIO and LST 2 jumps. 
+FEO, ZIR, ALO at 3 jumps
+H2O on Zipatsu's planet 4 jumps (on-route to the cx)
+
+
+[30-Jun-24 01:38 PM] turlorn_angren#0000
+is it planned to set up hydroponic farms nearby?
+
+
+[30-Jun-24 03:41 PM] archielvahr#0000
+Got my 3  base permits ready:
+
+
+[30-Jun-24 03:41 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-06-30_15-40-51.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-06-30_15-40-51.png
+https://images-ext-1.discordapp.net/external/vrfsc37j49XjfaWvBDyG3MBY_x1Rqfgu-j-GMR1neFI/http/kortham.net/temp/firefox_2024-06-30_15-40-51.png
+
+
+[30-Jun-24 03:44 PM] archielvahr#0000
+A hyf planet is an interesting idea. There is water available. I don't think it's a great region for making C, cause it's heavy and you'd have to ship it back. AU-605c has a food processing COGC, so you could make RAT/DW (MUS/VEG/MAI recipe I guess..?) Can't make FIM without farms doing HER
+
+{Reactions}
+👌 
+
+[30-Jun-24 03:46 PM] archielvahr#0000
+Here's the region. Yellow dot is OS-099. blue dot is the water planet. Purples have a cheap planet we could put anything on: http://kortham.net/temp/firefox_2024-06-30_15-45-38.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-06-30_15-45-38.png
+https://images-ext-1.discordapp.net/external/FliWmORnhPEGwdO8EhM03kmhFdxxL0sLlFPmONgUZZQ/http/kortham.net/temp/firefox_2024-06-30_15-45-38.png
+
+
+[30-Jun-24 03:46 PM] archielvahr#0000
+"cheap" being SEA or MCG
+
+
+[30-Jun-24 03:47 PM] archielvahr#0000
+the green ring is the planet with the food COGC
+
+
+[30-Jun-24 05:13 PM] hernanduer#0000
+Yeah I was looking at that planet, it's got a great TIO, idk why they went food on it
+
+
+[30-Jun-24 05:14 PM] hernanduer#0000
+But I think there's an even better one in OS?
+
+
+[30-Jun-24 08:25 PM] archielvahr#0000
+I suppose it's H2O extraction in GM, then convert it to DW to save shipping on AU
+
+
+[30-Jun-24 11:20 PM] archielvahr#0000
+First ship is away:
+
+
+[30-Jun-24 11:20 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-06-30_23-19-29.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-06-30_23-19-29.png
+https://images-ext-1.discordapp.net/external/ehvWvT0Ux2dyMOanDXtN5XeiIR9utglocAorezDNrxs/http/kortham.net/temp/firefox_2024-06-30_23-19-29.png
+
+
+[30-Jun-24 11:22 PM] archielvahr#0000
+Thanks to Domicius for the funding, and MrSmith, Exeler, and Zipatsu for prefab purchases, plus others I'm sure I'm forgetting!
+
+This includes 3x COGC, WAR, LM, and ADMs. Just starting out with 2 SD on each planet to get technicians started. More to come with the next ship
+
+{Reactions}
+🙌 (2) 
+
+[05-Jul-24 09:49 AM] archielvahr#0000
+So one way to prevent population bloat on low tier planets is to have zero Pioneers:
+
+
+[05-Jul-24 09:49 AM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-07-05_09-48-36.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-07-05_09-48-36.png
+https://images-ext-1.discordapp.net/external/3-hNYKyvqVQBffO58R6gy7Jg96NF8udJmv-nQgVrx4A/http/kortham.net/temp/firefox_2024-07-05_09-48-36.png
+
+
+[05-Jul-24 09:49 AM] archielvahr#0000
+Then the unemployment is 100% so they can't grow at all, then they don't eat your Needs
+
+
+[05-Jul-24 09:49 AM] churavis#0000
+Until the next base lands...
+
+
+[05-Jul-24 09:49 AM] archielvahr#0000
+Still need techs to educate into other tiers
+
+
+[05-Jul-24 09:51 AM] archielvahr#0000
+Well I should say zero workforce, my 200 pioneers on OS-099B aren't employed. And we have a way to stop randos from making PIO bases on certain planets
+
+
+[05-Jul-24 09:58 AM] sidepipe#0000
+I should have a ship free for this soon - would having more bases help at this stage?
+
+
+[05-Jul-24 12:36 PM] archielvahr#0000
+I'd say just plan them out for now. I am going to see how the first POPI reports come in. I started with just 100 techs, I figure it will be short for a while
+
+
+[07-Jul-24 10:25 AM] archielvahr#0000
+Apparently OS-099 is the same number of jumps from Hortus as ANT so it's using ICA currency in the government 🙄
+
+{Reactions}
+😨 🙃 (2) 
+
+[07-Jul-24 10:27 AM] lancercaster#0000
+I'm curious. Why colonize all the way out there?
+
+
+[07-Jul-24 10:52 AM] hernanduer#0000
+wtf
+
+
+[07-Jul-24 10:52 AM] hernanduer#0000
+it's the only system with 3 habitable planets
+
+
+[07-Jul-24 11:05 AM] archielvahr#0000
+Yep, best system in the game (sorta)
+
+
+[07-Jul-24 11:06 AM] archielvahr#0000
+Partly a prestige project. It was made a handful of jumps closer a few months ago when they changed the map. There are some future promises of improving extracted resources out in the further reaches of the map, so it might be helpful in that case
+
+
+[07-Jul-24 11:06 AM] archielvahr#0000
+Also the project was made easier by allowing multiple planets governed by one person, so now was a good time to do it
+
+
+[07-Jul-24 11:11 AM] hernanduer#0000
+just need fertility then it really will be the best
+
+
+[09-Jul-24 08:52 PM] archielvahr#0000
+Okay exciting updates!
+
+Each of the three planets now have
+ADM, COGC, WAR, and a LM. 
+
+They also have a SST, INF, and art cafe. (one still needs some RDE or something that I forgot to ship).
+
+I am governor of all 3 planets now, they are all running technician immigration jobs, and have their POPI filled. 
+
+A base establishment fee is established on each planet, it is fully refundable to any OOG member who joins 😉 If you need help footing the 10m ICA, we can work something out, lol
+
+{Reactions}
+🎉 (4) 
+
+[09-Jul-24 08:53 PM] archielvahr#0000
+Population is very slow to grow at first, so I will keep everyone up to date about that.
+
+
+[15-Jul-24 03:10 PM] archielvahr#0000
+Project update! Next population report hits in 3 or 4 days. I have 100 techs working on each planet, with jobs for the next 100
+
+
+[15-Jul-24 03:10 PM] archielvahr#0000
+I can keep growing these myself, but it could be feasible for another person to start making bases out here if desired
+
+
+[15-Jul-24 03:10 PM] archielvahr#0000
+Hern had a good idea to make one of them something other than electronics, (esp in the short term), but I don't remember what it is
+
+
+[15-Jul-24 04:40 PM] melon164#0000
+I would happily throw down several short-term WPL or PPF bases.
+
+
+[15-Jul-24 04:40 PM] melon164#0000
+That’s SET though
+
+
+[15-Jul-24 04:49 PM] archielvahr#0000
+Honestly wouldn't hurt. They'll educate upwards, in addition to the migration that will be happening. We can probably avoid PIOs
+
+
+[15-Jul-24 04:49 PM] archielvahr#0000
+Unless someone has a use case
+
+
+[15-Jul-24 04:55 PM] sidepipe#0000
+Are there any POPI / base upkeep needs that we could address with one of the planets, to cut down on shipping? or is shipping not as huge of an issue as it seemed?
+
+
+[15-Jul-24 04:56 PM] archielvahr#0000
+My ships take 2 or 3 days to get there, but it's been fine since there's not a lot to ship
+
+
+[15-Jul-24 04:57 PM] archielvahr#0000
+Just needs DW, OFF, and the COGC mats, and I have a good supply of all of them
+
+
+[15-Jul-24 04:57 PM] archielvahr#0000
+if you bring up 100 of each for each planet you can cover all them easily for a couple weeks if I forget 🤷‍♂️
+
+
+[15-Jul-24 05:01 PM] sidepipe#0000
+Fair enough. I suppose there's not a ton to ship back and forth at this early stage anyway. I can toss down some WPLs as well 🙂
+
+
+[15-Jul-24 05:02 PM] archielvahr#0000
+(With the art cafe, you can cover comfort and culture with DW, at least for a few hundred to thousand pop)
+
+
+[15-Jul-24 05:02 PM] archielvahr#0000
+Cool, just call a planet b, c, or d.. so you don't end up overlapping 🙂
+
+
+[15-Jul-24 05:02 PM] sidepipe#0000
+B! 🙂
+
+
+[15-Jul-24 05:04 PM] sidepipe#0000
+I'll try to haul out a bunch of fuel as well, just in case anyone gets stranded
+
+
+[15-Jul-24 05:05 PM] sidepipe#0000
+@archielvahr  - would labs work better, actually? Since they employ some SET and some TEC
+
+
+[15-Jul-24 05:06 PM] archielvahr#0000
+do you need 10m ICA? For the base construction cost?
+
+
+[15-Jul-24 05:06 PM] archielvahr#0000
+Hmmm entirely up to you. Whatever y ou can run the longest without it being a logistics burden is probably best
+
+
+[15-Jul-24 05:07 PM] sidepipe#0000
+Cool, I'll look at prunplanner then - I've got 6M ICA in the bank, so I'd only need to swap for 4
+
+{Reactions}
+👍 
+
+[15-Jul-24 06:00 PM] hernanduer#0000
+Manufacturing I mentioned, and with gates on the horizon I think it makes sense to use them for more than just electronics
+
+{Reactions}
+👍 
+
+[15-Jul-24 06:01 PM] hernanduer#0000
+If we can haul metals out, then they become superbly useful planets
+
+
+[15-Jul-24 06:01 PM] hernanduer#0000
+I think the best TI planet is somewhere around there, I'd happily give up KI-401b for it ,
+
+
+[16-Jul-24 06:23 AM] melon164#0000
+Heading out to OS-099c with a WPL/PPF base (700 SET)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1262731320644341841/image.png?ex=6814ab2f&is=681359af&hm=a2d5dacf8ec015180424bf1ee1f087c6d9b723f2c51b79105c7efc549980c4a7&
+
+{Reactions}
+🙌 (2) 
+
+[16-Jul-24 06:23 AM] melon164#0000
+that's the longest (by duration) flight I've taken for a very long time...
+
+
+[16-Jul-24 08:47 AM] shrewdsun_88540#0000
+In the surroundings, there are some very good ore planets. Maybe something can be done to supply locally
+
+
+[16-Jul-24 08:49 AM] shrewdsun_88540#0000
+Once I get my early game started, I would be interested in developing that area. Iv pretty much tapped out the smelting potential of Ant at this point and would like to expand some more
+
+
+[16-Jul-24 09:27 AM] hernanduer#0000
+Metals have a big weight cost, so I figured that part would wait until we have jumpgates
+
+{Reactions}
+💯 (2) 
+
+[16-Jul-24 10:47 AM] shrewdsun_88540#0000
+Yeah anyways, I’m not ready yet. But I’m starting to think about what I want to do in my end game and colonisation seems fun
+
+
+[16-Jul-24 08:33 PM] archielvahr#0000
+Okay, Sidepipe has  700-1000 (?) SET on b. Melon has 700 SET coming for c. I seem to suddently need a lot of PSL, so I'm going to make OS-099d a mix of SD and PPF. They roll over tomorrow, and Techs are already queued, but the week after that I'll queue settler immigration on all 3. 
+
+@melon164  is already enroute. I gave away all my ICA for the moment, so if you can build the base, the government can send the kickback afterwards
+
+
+[16-Jul-24 08:56 PM] archielvahr#0000
+Yeah OS-099d is gonna be 700 SET, 200 techs for me. At least for now
+
+
+[16-Jul-24 09:01 PM] sidepipe#0000
+Will figure out what makes sense and send it tomorrow - I’m either going to do WPL or labs. I’ll let you know as soon as I know 😄
+
+
+[16-Jul-24 09:02 PM] sidepipe#0000
+If anyone else gets there before me, just ping me and I can send them the 10M fee 🙂
+
+
+[16-Jul-24 09:38 PM] draconisdomini#0000
+Maybe a case for building up OS-099e as a refinery planet? Given the long flights
+
+
+[16-Jul-24 09:39 PM] draconisdomini#0000
+I'm refiguring some of my bases, and just started Afab production on Nike, so I'll have some spare permits soon
+
+
+[16-Jul-24 09:59 PM] hernanduer#0000
+What's the sublight speed look like between the planets in opposition?
+
+
+[16-Jul-24 10:07 PM] archielvahr#0000
+usually a handful of hours at the default burn. Not as nice as Antares I
+
+
+[16-Jul-24 10:08 PM] archielvahr#0000
+Fuel hasn't been too bad in my experience
+
+
+[16-Jul-24 10:10 PM] sidepipe#0000
+We could always haul some in and list it on the LM for emergencies
+
+
+[16-Jul-24 10:14 PM] hernanduer#0000
+hopefully the next announcement is about corps CXs, but it's sounding like they might push the corp ownership out a bit
+
+
+[16-Jul-24 10:15 PM] hernanduer#0000
+I assume they'll want to have some kind of corps context, and perhaps even some kind of voting on board members who can access it
+
+
+[16-Jul-24 10:16 PM] archielvahr#0000
+I sort of expected some corp consolidation now that the one person government corps were done
+
+
+[16-Jul-24 10:16 PM] archielvahr#0000
+I'm not really sure if that happened though
+
+
+[16-Jul-24 10:18 PM] archielvahr#0000
+Honestly not sure what they might do after the "second half of the politics and infrastructure" update
+
+
+[16-Jul-24 10:18 PM] sidepipe#0000
+I have dreams of building an OOG CX in OS-099 and just making our own cooler economy 😄
+
+
+[16-Jul-24 10:18 PM] archielvahr#0000
+😎
+
+
+[16-Jul-24 10:19 PM] archielvahr#0000
+I think a lot of people will say "the CX is too thin already, adding corp CXes will just thin the actual CX more"
+
+
+[16-Jul-24 10:19 PM] archielvahr#0000
+Hard to know if the devs share that sentiment
+
+
+[16-Jul-24 10:19 PM] sidepipe#0000
+You know, I’ve heard a lot of people say exactly that
+
+
+[16-Jul-24 10:20 PM] sidepipe#0000
+But we already trade all these goods internally anyway
+
+
+[16-Jul-24 10:20 PM] archielvahr#0000
+Yeah 🤷‍♂️
+
+
+[16-Jul-24 10:20 PM] archielvahr#0000
+oh but they don't sit "locked into" a cx
+
+
+[16-Jul-24 10:20 PM] archielvahr#0000
+Where things tend to get forgotten for years, heh
+
+
+[16-Jul-24 10:21 PM] archielvahr#0000
+It will sort of change the situation with discounted prices . I'm not sure how that will shape up
+
+
+[16-Jul-24 10:23 PM] archielvahr#0000
+If every corp has a CX where everything on it is half off, the main CX becomes the backup CX. But also each person is just deciding if they want to "help out" by selling their stuff at half price, or generate capital selling at full price.... Which sort of raises the point that the internal corp market should happen at full price, and then the corp finds more effective ways to help out new members
+
+
+[16-Jul-24 10:24 PM] archielvahr#0000
+Our current system allows me as an established player to buy at higher prices from new players, or offer some things for free.. in a way the CX interface doesn't allow. (If someone is buying BMFs at 10k, I can't sell them for free to that person, and vice versa)
+
+
+[16-Jul-24 10:25 PM] hernanduer#0000
+it could also play an aspect with volume
+
+
+[16-Jul-24 10:25 PM] hernanduer#0000
+instead of having to auction FF and create 9 contracts of varying amounts to 9 people
+
+
+[16-Jul-24 10:25 PM] sidepipe#0000
+Yeah. Other than some slight sub-economy megalomania, my main hope for a corporate CX is just to reduce the work to sell things to you all. I’d settle for a corp LM too
+
+
+[16-Jul-24 10:25 PM] hernanduer#0000
+I just put it on the CX
+
+
+[16-Jul-24 10:26 PM] hernanduer#0000
+I can sell it all for sure, because it's a lower price
+
+
+[16-Jul-24 10:26 PM] hernanduer#0000
+yeah, what sidepipe said
+
+
+[16-Jul-24 10:26 PM] archielvahr#0000
+Anyway, I'm not a stickler about it, and I generally agree that it's a wash if we are all giving each other discounts, and we don't reaaaaally have anyone who only buys at corp prices and sells at external prices, so it all works out. Happy either way
+
+
+[16-Jul-24 10:26 PM] archielvahr#0000
+😄
+
+
+[16-Jul-24 10:26 PM] archielvahr#0000
+The volume thing is pretty valuable, and if it saves clicks it's amazing in my book
+
+
+[16-Jul-24 10:27 PM] hernanduer#0000
+just taking the motion making system and putting it in contracts would be very nice
+
+{Reactions}
+💯 (2) 
+
+[16-Jul-24 10:27 PM] archielvahr#0000
+Notice there's a lot fewer save buttons on that one too!
+
+
+[16-Jul-24 10:27 PM] archielvahr#0000
+Preferential stockpiles is the most important aspect. Like if there's no iodine in the real CX, and there is in the corp CX, that's a big win for all of us from the view of availability.
+
+
+[16-Jul-24 10:28 PM] archielvahr#0000
+I think our corp regularly passes around quantities of things that exceed the CX offer quantity
+
+
+[16-Jul-24 10:28 PM] archielvahr#0000
+so availability is way more important than price in that case
+
+
+[16-Jul-24 10:28 PM] sidepipe#0000
+Oh here’s an idea - corporate ownership of WARs? With a corp context to send contracts to individual members?
+
+
+[16-Jul-24 10:29 PM] hernanduer#0000
+the government needs to own WARs first
+
+
+[16-Jul-24 10:30 PM] hernanduer#0000
+and the storefront system
+
+
+[16-Jul-24 10:31 PM] hernanduer#0000
+sell items to government, they're now in the gov WAR, then the gov can apply those to POPI as needed
+
+
+[16-Jul-24 10:31 PM] hernanduer#0000
+preferably without motions
+
+
+[16-Jul-24 10:31 PM] sidepipe#0000
+Yeah, the gov contexts are what got me thinking of that originally. The storefront system for a gov would be a nice thing to have for a corp too, if you could limit access to it to members
+
+
+[16-Jul-24 10:32 PM] sidepipe#0000
+Heck, if you could buy and sell from a government, we could use one of the OS planets for that 😄
+
+
+[16-Jul-24 10:32 PM] hernanduer#0000
+yeah I figured it'd be restricted to POPI and COGC
+
+
+[16-Jul-24 10:32 PM] hernanduer#0000
+those kinds of items
+
+
+[16-Jul-24 10:32 PM] hernanduer#0000
+and no buyback
+
+
+[16-Jul-24 10:33 PM] hernanduer#0000
+thought perhaps there could be a motion to move items around in case the WAR gets filled up or something
+
+
+[16-Jul-24 10:33 PM] sidepipe#0000
+No, that totally makes sense and you’re most likely right
+
+
+[16-Jul-24 10:38 PM] sidepipe#0000
+I really do hope they do some sort of storefront, or at least allow the gov to fill POPI and COGC - it’d be nice to have a single place to do that transparently
+
+
+[16-Jul-24 10:38 PM] archielvahr#0000
+a shared WAR would make so many things soooo easy
+
+{Reactions}
+🤔 
+
+[16-Jul-24 10:39 PM] archielvahr#0000
+Put one on malahat and just take some FIM when you are low, drop in the EDC
+
+
+[16-Jul-24 10:39 PM] archielvahr#0000
+I mean I guess you might get the eve online heists
+
+
+[16-Jul-24 10:39 PM] sidepipe#0000
+But then I’d be out of a job 😱
+
+{Reactions}
+🥲 😆 
+
+[16-Jul-24 10:39 PM] archielvahr#0000
+Nah it would just be a really easy job
+
+
+[16-Jul-24 10:39 PM] hernanduer#0000
+probably add a transaction log
+
+
+[16-Jul-24 10:40 PM] hernanduer#0000
+the game already tracks it all anyways
+
+
+[16-Jul-24 10:40 PM] sidepipe#0000
+Corporate MOTS to send stuff from the shared WAR?
+
+
+[16-Jul-24 10:40 PM] hernanduer#0000
+nah that's really just a corporate WAR then
+
+
+[16-Jul-24 10:40 PM] sidepipe#0000
+Or to accept contracts sent to it? But I guess that’s pretty much me with extra steps
+
+
+[16-Jul-24 10:40 PM] hernanduer#0000
+shared would be more transparently accessed I think
+
+
+[16-Jul-24 10:40 PM] hernanduer#0000
+I think corporate context shows up when corporations can own things
+
+
+[16-Jul-24 10:41 PM] hernanduer#0000
+like CXs, or jumpgates or space elevators, and then can levy taxes on those things
+
+
+[16-Jul-24 10:41 PM] hernanduer#0000
+you need some kind of hierarchy to determine those taxes
+
+
+[16-Jul-24 10:41 PM] hernanduer#0000
+that's why I figured it'd show up after this next update, because they're clear that they're doing government owned things first
+
+
+[16-Jul-24 10:42 PM] hernanduer#0000
+I assumed that's because they don't wanna tack on the need to do the corporate context stuff in the same release
+
+
+[16-Jul-24 10:42 PM] hernanduer#0000
+so hopefully the release following (January?)
+
+
+[16-Jul-24 10:43 PM] hernanduer#0000
+right now there's just nothing for a corporation to own
+
+
+[16-Jul-24 10:43 PM] hernanduer#0000
+besides vanity buildings
+
+
+[16-Jul-24 10:44 PM] archielvahr#0000
+Hmm sure. It's tough to say because they say "the first iteration" a lot
+
+
+[16-Jul-24 10:45 PM] archielvahr#0000
+"The first iteration of multi-part contracts won't feature multi-part sell contracts" -> Doesn't imply the next thing they will work on is that
+
+
+[16-Jul-24 10:45 PM] archielvahr#0000
+Likewise for allowing governments to change currency
+
+
+[16-Jul-24 10:46 PM] archielvahr#0000
+Hard to say which things they mentioned in the gateway blog post will be coming in "the first iteration"
+
+
+[16-Jul-24 10:47 PM] hernanduer#0000
+true, they have a never ending backlog of things to `improve`
+
+
+[16-Jul-24 10:47 PM] hernanduer#0000
+that might take literal years to be acknowledged
+
+{Reactions}
+👆 
+
+[16-Jul-24 10:50 PM] archielvahr#0000
+I don't really have interest in recurring contracts, but some people are all about them
+
+
+[16-Jul-24 10:50 PM] archielvahr#0000
+and that one dates back to before my time I think
+
+
+[16-Jul-24 10:51 PM] hernanduer#0000
+they have a tendency to say "good enough" I think
+
+
+[16-Jul-24 10:51 PM] hernanduer#0000
+I'm not sure there's a lot of places where they just abandon an idea halfway
+
+
+[16-Jul-24 10:51 PM] hernanduer#0000
+rather, it just comes out half-baked instead
+
+
+[16-Jul-24 10:51 PM] archielvahr#0000
+I think it's an attempt to spread around the limited dev effort
+
+
+[16-Jul-24 10:51 PM] archielvahr#0000
+since there's something strange going on there with how their funding system works
+
+
+[16-Jul-24 10:51 PM] hernanduer#0000
+yeah
+
+
+[16-Jul-24 10:52 PM] archielvahr#0000
+I know they are also working on the airline sim
+
+
+[16-Jul-24 10:52 PM] archielvahr#0000
+But I wonder if they also do contract work or regular jobs too or something
+
+
+[16-Jul-24 10:52 PM] hernanduer#0000
+it doesn't seem like it, I think molp works this full time with counterpoint as a part-time project manager
+
+
+[16-Jul-24 10:52 PM] hernanduer#0000
+just because of how they talk about vacations
+
+
+[16-Jul-24 10:53 PM] archielvahr#0000
+Ah sure.
+
+
+[16-Jul-24 10:53 PM] hernanduer#0000
+though it being Germany, seems like there's a vacation every week 😄
+
+
+[16-Jul-24 10:53 PM] archielvahr#0000
+yeah heh
+
+
+[16-Jul-24 10:53 PM] archielvahr#0000
+Definitely a different work culture
+
+
+[16-Jul-24 10:54 PM] archielvahr#0000
+But sometimes the weekly dev blogs were like "oh we thought about this feature", or "oh we fixed this bug on monday". Which is what our game blogs would look like when we were part time on contract work
+
+
+[16-Jul-24 10:54 PM] hernanduer#0000
+could be because of an alternating schedule with the airlinesim and prun?
+
+
+[16-Jul-24 10:55 PM] archielvahr#0000
+I absolutely hated writing blog posts and tweets, so I would do three weeks of posts at a time and then auto post them
+
+
+[16-Jul-24 10:55 PM] archielvahr#0000
+Yeaaah that’s probably more likely
+
+
+[16-Jul-24 10:55 PM] hernanduer#0000
+my projects never have that kind of public exposure, so not familiar myself
+
+
+[16-Jul-24 10:56 PM] archielvahr#0000
+Yeaaah it’s rough. Cause you gotta do all the posts before people start reading the posts. But at first, you’re writing them and it seems like nobody is reading them.
+
+
+[16-Jul-24 10:57 PM] hernanduer#0000
+if you use Capital One though, you've used software I wrote 😛
+
+
+[16-Jul-24 10:57 PM] archielvahr#0000
+Ooh I do! But I never went to look for their dev blog 😁
+
+
+[16-Jul-24 10:58 PM] hernanduer#0000
+yeah, I'm sure it'd be terrible if they published one haha
+
+
+[16-Jul-24 10:59 PM] archielvahr#0000
+“ what’s new with your self service credit card login!”
+
+
+[16-Jul-24 11:00 PM] archielvahr#0000
+“ Please just show me my balance and don’t try to upsell me any card features”
+
+
+[16-Jul-24 11:00 PM] sidepipe#0000
+I’d read it just to be horrified at what was going wrong in the first place 😁
+
+{Reactions}
+😆 
+
+[16-Jul-24 11:03 PM] hernanduer#0000
+you'd be impressed
+
+
+[16-Jul-24 11:03 PM] hernanduer#0000
+so much falls back on manually fixing issues when something goes wrong, though to my understanding, CapOne is pretty good about it compared to some banks
+
+
+[16-Jul-24 11:03 PM] archielvahr#0000
+In the one live stream they did I did get a vague impression that Airline Sim was still the bigger game.  But I don’t remember why.
+
+
+[16-Jul-24 11:04 PM] sidepipe#0000
+I think it’s been around much longer - wasn’t it their first game?
+
+
+[16-Jul-24 11:04 PM] hernanduer#0000
+yeah, I think they said its revenue was significantly higher than prun
+
+
+[16-Jul-24 11:04 PM] hernanduer#0000
+looking at it, I can see why. You have to use airline credits for each day you play, and they're not cheap
+
+
+[16-Jul-24 11:04 PM] hernanduer#0000
+and they run various kinds of servers
+
+
+[16-Jul-24 11:05 PM] hernanduer#0000
+and they only last like 6 months max I think
+
+
+[16-Jul-24 11:05 PM] sidepipe#0000
+It looks cool, but I’ve heard it’s hard to get into and there’s lots of competition / PvP
+
+
+[16-Jul-24 11:05 PM] hernanduer#0000
+some will have speed x3, and be more expensive, that kind of stuff. Reminds me of old Tribal Wars
+
+
+[16-Jul-24 11:09 PM] archielvahr#0000
+If you get the right audience they can really really spend.
+
+
+[16-Jul-24 11:09 PM] archielvahr#0000
+Like the train simulator games on steam.
+
+
+[16-Jul-24 11:10 PM] archielvahr#0000
+I guess it’s probably cheaper than actual model trains.
+
+
+[16-Jul-24 11:11 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1262985022789648465/IMG_1452.png?ex=6814eeb6&is=68139d36&hm=3d1b733dac397f603841a84e7372967c55cb75a72ba9ca287b88b0c5c659a083&
+
+
+[16-Jul-24 11:11 PM] archielvahr#0000
+$20 a train…. 700 DLC items
+
+
+[16-Jul-24 11:12 PM] archielvahr#0000
+For flight sims DCS world is similarly priced I think.
+
+
+[16-Jul-24 11:12 PM] archielvahr#0000
+So I can totally imagine airline sim players dropping hundreds.
+
+
+[16-Jul-24 11:48 PM] .urpalhal#0000
+Or the Sims 4
+
+
+[16-Jul-24 11:49 PM] .urpalhal#0000
+All those DLCs are insane
+
+
+[16-Jul-24 11:49 PM] .urpalhal#0000
+Anywho a great train game is Derail Valley
+
+
+[17-Jul-24 01:27 AM] melon164#0000
+Ah.  Yes.  ICA.  😕
+
+
+[17-Jul-24 01:28 AM] melon164#0000
+Ah well, that's what the rainy-day IDC are for 😁
+
+
+[17-Jul-24 04:00 PM] shrewdsun_88540#0000
+Iv tried to get into it but as its direct competition, it is very difficult to break in because the players there have it down to a science so there is very little room to learn the game
+
+
+[18-Jul-24 01:22 AM] melon164#0000
+Well this is fun 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1263380285387444324/image.png?ex=68150d54&is=6813bbd4&hm=514e8cea72f80ff3f25ad76812665c1aa4cf94ded5f02558fbb8875b8087dfb6&
+
+
+[18-Jul-24 01:22 AM] melon164#0000
+Basically one dude wandering around the whole factory occasionally pulling levers 😁
+
+
+[18-Jul-24 01:46 AM] domicius#0000
+Basically the plot of Moon
+
+
+[18-Jul-24 05:46 AM] melon164#0000
+Can I have my 10M ICA back plz?
+
+
+[18-Jul-24 05:46 AM] melon164#0000
+https://tenor.com/bstmF.gif
+
+{Embed}
+https://tenor.com/view/begging-gif-19140051
+https://images-ext-1.discordapp.net/external/Tqd4H8gijUfA4cGbA8Pnhn74FqBefezhdegCt6IuICs/https/media.tenor.com/ptBL68XAxX8AAAAe/begging.png
+
+
+[18-Jul-24 05:47 AM] melon164#0000
+Minus some reasonable contribution to the project 🙂
+
+
+[18-Jul-24 03:31 PM] archielvahr#0000
+So the fee just finally came in. Guess there's up to a 1 day delay on them then.
+
+
+[18-Jul-24 03:31 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-07-18_15-31-43.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-07-18_15-31-43.png
+https://images-ext-1.discordapp.net/external/k2X6OfR056n0cdODbQK4XvH0JhCPs7dKhUPnqBglO0s/http/kortham.net/temp/firefox_2024-07-18_15-31-43.png
+
+
+[19-Jul-24 06:22 PM] archielvahr#0000
+Filled in OS-099d with 700 SET and 200 Tech
+
+
+[19-Jul-24 06:22 PM] archielvahr#0000
+sadly gonna be 6 days before they start to get jobs
+
+
+[19-Jul-24 11:31 PM] sidepipe#0000
+I've just sent a ship out to OS-099b to set up a lab base - should be 200 SET and 700 TEC at full capacity 🙂
+
+
+[19-Jul-24 11:31 PM] sidepipe#0000
+Should be there in 2 days and change
+
+
+[20-Jul-24 01:13 PM] archielvahr#0000
+I think I'm gonna run these 3 as manufacturing for a couple weeks until the population grows. Then we can probably do electronics.
+
+{Reactions}
+💸 
+
+[20-Jul-24 01:13 PM] sidepipe#0000
+can I get chemistry on OS-099b? 🙂
+
+
+[20-Jul-24 01:21 PM] archielvahr#0000
+Got it!
+
+{Reactions}
+🫶 
+
+[21-Jul-24 04:05 PM] melon164#0000
+Uh.... did someone need to press a button somewhere?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1264689791182569503/image.png?ex=68148ae7&is=68133967&hm=6b9a08b54ea1b98c6641b867ca5a8095dbe8e6da8fa540a33e51d52e29884486&
+
+
+[21-Jul-24 05:21 PM] archielvahr#0000
+hmm, the motion passed okay. Not sure what timed out there
+
+
+[21-Jul-24 05:22 PM] archielvahr#0000
+Ohh okay, you close it, then I probably forgot to click pay.
+
+
+[21-Jul-24 05:26 PM] archielvahr#0000
+ping me when you close it and I'll do it properly this time 😅
+
+
+[21-Jul-24 09:37 PM] hernanduer#0000
+Yeah they really make you be on top of your game here
+
+
+[21-Jul-24 09:37 PM] hernanduer#0000
+Especially since you have to change contexts like 3 times when paying yourself
+
+
+[22-Jul-24 01:16 AM] melon164#0000
+Poke 👉
+
+
+[22-Jul-24 01:18 AM] archielvahr#0000
+Got it!
+
+
+[22-Jul-24 01:19 AM] melon164#0000
+Thanks 🙂
+
+
+[24-Jul-24 09:29 AM] melon164#0000
+This is a fabulous graph 😁
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1265677368773705748/image.png?ex=6814d6e7&is=68138567&hm=cf47c1fc44f79f83c1f277c71c3240d9370a930e9cb472833f14f3d7212ebe36&
+
+
+[24-Jul-24 09:30 AM] melon164#0000
+all three tiers racing each other
+
+
+[24-Jul-24 09:45 AM] archielvahr#0000
+dang, look at em go!
+
+
+[24-Jul-24 10:02 AM] melon164#0000
+Ideally I’d like to put down similar bases on the other planets, but maybe I should wait a couple of weeks?
+
+
+[24-Jul-24 10:07 AM] archielvahr#0000
+POPI reports hit on the other two planets in a few hours. I think they will all be in similar shape
+
+
+[30-Jul-24 04:27 PM] hernanduer#0000
+So once I get kicked out of Nike governor, I'm gonna look into what planets make sense out here besides the 3 best ones
+
+
+[30-Jul-24 04:28 PM] hernanduer#0000
+so we can build a real secondary economy
+
+
+[30-Jul-24 04:28 PM] hernanduer#0000
+that's limited to only OOG or those willing to pay 10mil, bahahah
+
+
+[30-Jul-24 04:30 PM] archielvahr#0000
+😄
+
+
+[30-Jul-24 05:33 PM] melon164#0000
+I'm going to put a 1000-SET PPF base on OS-099b this week.  Hopefully there'll be enough SET by then that I won't create any vaccancies
+
+
+[30-Jul-24 05:40 PM] archielvahr#0000
+They all roll over tomorrow. I think SET count isn't too high so that's a good plan. It probably won't fill all 1000 but it won't cause vacancies for anyone else since their number is less than yours
+
+
+[30-Jul-24 05:40 PM] melon164#0000
+exactly
+
+
+[30-Jul-24 05:41 PM] archielvahr#0000
+all 4 planets are at 100% safety, health, comfort, and culture, so they should skyrocket (as much as they can, at least)
+
+
+[30-Jul-24 05:41 PM] archielvahr#0000
+art cafes are great 😄
+
+
+[31-Jul-24 11:19 AM] hernanduer#0000
+GM-332d - 8th best GAL production, 3rd best TIO production
+
+
+[31-Jul-24 11:28 AM] hernanduer#0000
+GM-332c - 2nd best LST production, 15th best HAL production (Halcyon is 20th for perspective)
+
+
+[31-Jul-24 11:30 AM] hernanduer#0000
+GM-212d - 2nd best FEO production
+
+
+[31-Jul-24 11:30 AM] hernanduer#0000
+GM-212a - 1st ZIR production (not sure about utility here, but cool it's 1st)
+
+
+[31-Jul-24 11:31 AM] hernanduer#0000
+GM-498a - 14th best H2O - liquid
+
+
+[31-Jul-24 11:33 AM] hernanduer#0000
+OS-476d - 8th best O - liquid
+
+
+[31-Jul-24 11:33 AM] akyantor#0000
+An interesting collection tbh
+
+
+[31-Jul-24 11:36 AM] hernanduer#0000
+it really is
+
+
+[31-Jul-24 11:38 AM] hernanduer#0000
+I am just looking at tap quality though, not whole output from a base, so liquid vs gas/solid isn't being factored in here
+
+
+[31-Jul-24 11:39 AM] hernanduer#0000
+doesn't matter for minerals and ore, but could for the "gas" category
+
+
+[31-Jul-24 11:40 AM] hernanduer#0000
+okay I fixed it - looks like that O was liquid too so that's great!
+
+
+[31-Jul-24 11:42 AM] hernanduer#0000
+GK-462b - 6th best BRM
+
+
+[31-Jul-24 11:44 AM] hernanduer#0000
+AU-605g - 3rd best HE
+
+
+[31-Jul-24 11:46 AM] hernanduer#0000
+GM-037a - 4th best ALO
+
+
+[31-Jul-24 11:47 AM] akyantor#0000
+Doesn't look like there's a good source of H, otherwise you could get a nice CL farm going 😛
+
+
+[31-Jul-24 11:48 AM] katinga#0000
+I have H.  Do you need H?
+
+
+[31-Jul-24 11:48 AM] akyantor#0000
+I meant over in the area of project 6115
+
+
+[31-Jul-24 11:48 AM] akyantor#0000
+Not specifically in need at the mo
+
+
+[31-Jul-24 11:49 AM] hernanduer#0000
+WU-882i is 11th best, and NJ-215f is still a pretty good tap (not gonna count that one's rank 🙂 )
+
+
+[31-Jul-24 11:49 AM] hernanduer#0000
+but yeah, nothing in the near vicinity, it looks like
+
+
+[31-Jul-24 11:50 AM] katinga#0000
+I have H on Ant2G.  LMK if you need some!
+
+
+[31-Jul-24 11:50 AM] hernanduer#0000
+Best Planets
+
+
+[31-Jul-24 11:55 AM] hernanduer#0000
+having solid ALO, TIO and FEO makes ASM product metallurgy super easy
+
+{Reactions}
+👍 
+
+[31-Jul-24 11:58 AM] shrewdsun_88540#0000
+Prefabs as well
+
+
+[31-Jul-24 11:59 AM] shrewdsun_88540#0000
+And it’s easy to ship it out to the CX after
+
+
+[31-Jul-24 11:59 AM] hernanduer#0000
+NJ-874e - 11th best AMM
+NJ-215e - 13th best AMM
+
+
+[31-Jul-24 11:59 AM] hernanduer#0000
+getting a bit far away though with NJ sector
+
+
+[31-Jul-24 11:59 AM] katinga#0000
+New Jersey?
+
+
+[31-Jul-24 11:59 AM] hernanduer#0000
+terrible place, do not recommend 😄
+
+
+[31-Jul-24 12:00 PM] katinga#0000
+it's best export is Bon Jovi
+
+{Reactions}
+🎤 
+
+[31-Jul-24 12:03 PM] katinga#0000
+Bobby & Gina's biggest advocate
+
+
+[31-Jul-24 12:26 PM] hernanduer#0000
+okay, reordered
+
+
+[31-Jul-24 12:26 PM] hernanduer#0000
+ALO    GM-037a - 4th    
+AMM    NJ-874e - 11th    NJ-215e - 13th
+AR    GM-332h - 16th    
+AUO    Lacking    
+BER    GM-037i - 10th    
+BOR    GM-498b - 6th    
+BRM    GK-462b - 6th    
+BTS    Lacking    
+CLI    OS-456a - 23rd    
+CUO    OS-803a - 22nd    
+F    OS-416e - 10th    
+FEO    GM-212d - 2nd    
+GAL    GM-332d - 8th    
+H    Lacking    
+H2O    GM-498a - 14th    
+HAL    GM-332c - 15th    
+HE    AU-605g - 3rd    
+HE3    Lacking    
+HEX    Lacking    
+LES    Lacking    
+LIO    GK-115c - 2nd    
+LST    GM-332c - 2nd    
+MAG    OS-189b - 15th    
+MGS    GK-439c - 16th    
+N    Lacking    
+NE    NJ-553g - 3rd - High Grav    
+O    OS-476d - 8th    
+SCR    GK-115i - 2nd    
+SIO    OS-057a - 12th    
+TAI    OS-189b - 35th    GM-037b - 32nd
+TCO    Lacking    
+TIO    GM-332d - 3rd    
+TS    Lacking    
+ZIR    GM-212a - 1st
+
+
+[31-Jul-24 12:37 PM] shrewdsun_88540#0000
+Is it the vision of the project to do some large scale colonisation?
+
+{Reactions}
+🚀 (2) 
+
+[31-Jul-24 12:38 PM] katinga#0000
+and they say H is the most common element in the universe
+
+{Reactions}
+👆 (2) 
+
+[31-Jul-24 12:54 PM] .urpalhal#0000
+But it is also used up in a lot of things like Water and carbon compounds and isn’t elemental H
+
+
+[31-Jul-24 12:56 PM] archielvahr#0000
+I think GM-498a is better than 14th best H2O planet. Were gas and solid H2O appropriately reduced?
+
+
+[31-Jul-24 01:01 PM] archielvahr#0000
+Yeah it's 14th in prunplanner, but PB-132c, which is first, is solid. So you have to cut that down by half. or more. I don't remember, I calculated it once and it was a big reduction in H2O per unit area.
+
+
+[31-Jul-24 01:02 PM] katinga#0000
+does the game have a process for splitting water into its elements?
+
+
+[31-Jul-24 01:04 PM] hernanduer#0000
+oh yeah, the true value on the liquid or gas/solid ones I didn't calculate, just went by fio
+
+
+[31-Jul-24 01:05 PM] hernanduer#0000
+sadly N isn't even nearby in any quantity, so it's really only O and H2O that need that consideration
+
+
+[31-Jul-24 01:05 PM] hernanduer#0000
+it's more like 6th best water, or something
+
+{Reactions}
+👍 
+
+[31-Jul-24 01:06 PM] hernanduer#0000
+and the O is technically 5th best
+
+
+[31-Jul-24 01:07 PM] hernanduer#0000
+lol no, GM-498a is actually 3rd best, damn
+
+
+[31-Jul-24 01:08 PM] hernanduer#0000
+I made a thread where further updates can be made
+
+
+[31-Jul-24 01:19 PM] .urpalhal#0000
+No electrolysis at the moment😩
+
+
+[31-Jul-24 01:24 PM] katinga#0000
+that would be so easy to add to the game, you would think
+
+
+[31-Jul-24 01:27 PM] .urpalhal#0000
+Yeah easy recipe in CHP or something
+
+
+[31-Jul-24 01:28 PM] melon164#0000
+Very hard to balance without energy though
+
+
+[31-Jul-24 01:29 PM] hernanduer#0000
+@archielvahr can you generate a map with planets that only need SEA? similar to the one from before that was only 3 green?
+
+
+[31-Jul-24 01:29 PM] hernanduer#0000
+trying to find where to plop down a metallurgy planet
+
+
+[31-Jul-24 01:30 PM] hernanduer#0000
+all TIO on 332d makes 500/d with RE COGC, hahahaha
+
+
+[31-Jul-24 01:43 PM] archielvahr#0000
+Probably!
+
+
+[31-Jul-24 01:45 PM] archielvahr#0000
+Actually this one:
+
+
+[31-Jul-24 01:45 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1268278390339801199/Untitled.png?ex=681512cb&is=6813c14b&hm=5cb758c296f5fd513178325d99fd6ac3502324ae70440e97e3cb215292ef0806&
+
+
+[31-Jul-24 01:45 PM] archielvahr#0000
+Color indicates number of planets that don't need a building material other than SEA or MCG
+
+
+[31-Jul-24 01:46 PM] katinga#0000
+https://tenor.com/view/dog-boss-cool-kool-sup-gif-9487924
+
+{Embed}
+https://tenor.com/view/dog-boss-cool-kool-sup-gif-9487924
+https://images-ext-1.discordapp.net/external/rSrVkzo-Ox6BbxeUettZXQGFgOvZAqsDwA8pcXror_Q/https/media.tenor.com/p29iBd9YL3gAAAAe/dog-boss.png
+
+
+[31-Jul-24 01:46 PM] katinga#0000
+Aaaah!
+
+
+[31-Jul-24 01:46 PM] archielvahr#0000
+lemme spot check to see if that's correct
+
+
+[31-Jul-24 01:49 PM] archielvahr#0000
+```***************************
+*  Searching near Near OS-099 (OS-099)
+***************************
+OS-099
+
+OS-099      Distance 0
+  OS-099a            HYF Base Cost: 2368k  High Temp (TSH), 
+  OS-099d            HYF Base Cost: 1688k  
+  OS-099c            HYF Base Cost: 1688k  
+  OS-099b            HYF Base Cost: 1688k  
+  OS-099e            HYF Base Cost: 2156k  Low Temp (INS), 
+
+OS-476      Distance 1
+  OS-476a            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-476c            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-476d            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-476b            HYF Base Cost: 2179k  Low Temp (INS), Low Press (SEA), 
+  OS-476e            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  OS-476f            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+
+OS-416      Distance 1
+  OS-416a            HYF Base Cost: 2391k  High Temp (TSH), Low Press (SEA), 
+  OS-416b            HYF Base Cost: 1960k  High Press (HSE), 
+  OS-416d            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  OS-416c            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-416e            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+
+OS-803      Distance 2
+  OS-803a            HYF Base Cost: 2179k  Low Temp (INS), Low Press (SEA), 
+  OS-803e            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-803b            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-803d            HYF Base Cost: 2156k  Low Temp (INS), 
+  OS-803c            HYF Base Cost: 2179k  Low Temp (INS), Low Press (SEA), 
+  OS-803f            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  OS-803i            HYF Base Cost: 2156k  Low Temp (INS), 
+  OS-803g            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  OS-803h            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+```
+
+
+[31-Jul-24 01:49 PM] archielvahr#0000
+```
+OS-550      Distance 2
+  OS-550a            HYF Base Cost: 2391k  High Temp (TSH), Low Press (SEA), 
+  OS-550d            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-550c            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-550b            HYF Base Cost: 2179k  Low Temp (INS), Low Press (SEA), 
+  OS-550e            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-550g            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  OS-550f            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+
+GM-332      Distance 2
+  GM-332a            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  GM-332c            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  GM-332d            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  GM-332b            HYF Base Cost: 2156k  Low Temp (INS), 
+  GM-332f            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  GM-332e            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  GM-332g            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  GM-332h            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+
+OS-456      Distance 2
+  OS-456b            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), 
+  OS-456a            HYF Base Cost: 2640k  High Temp (TSH), High Press (HSE), 
+  OS-456d            HYF Base Cost: 2480k  Low Temp (INS), Gas (AEF), 
+  OS-456c            HYF Base Cost: 2428k  Low Temp (INS), High Press (HSE), ```
+
+
+[31-Jul-24 01:49 PM] archielvahr#0000
+If you know your building count, I can get per planet prices. But  everything out there is HSE or AEF basically... plus ins
+
+
+[31-Jul-24 01:50 PM] archielvahr#0000
+distance 3: 
+ GM-212c            HYF Base Cost: 1960k  High Press (HSE), 
+  GM-212d            HYF Base Cost: 1960k  High Press (HSE),
+
+
+[31-Jul-24 01:51 PM] archielvahr#0000
+those are good candidates, HSE might be cheaper than INS
+
+
+[31-Jul-24 01:52 PM] archielvahr#0000
+especially if you did ASMs
+
+
+[31-Jul-24 02:00 PM] hernanduer#0000
+Looking to get a bunch of SMEs down on one and ASMs on another
+
+
+[31-Jul-24 02:01 PM] hernanduer#0000
+One of those is the FEO planet, so that's already gonna be more SMEs
+
+
+[31-Jul-24 02:01 PM] hernanduer#0000
+212d
+
+
+[31-Jul-24 02:03 PM] hernanduer#0000
+212c would make sense for ASMs that helps with intrasystem movement of FE, then maybe somewhere a bit farther for the 2nd SME base
+
+
+[31-Jul-24 02:04 PM] archielvahr#0000
+Mixing SMEs and ASMs might reduce back and forth shipping and make the population mix easier to achieve.
+
+
+[31-Jul-24 02:05 PM] hernanduer#0000
+Good points, so two half/half planets.
+
+
+[31-Jul-24 02:06 PM] hernanduer#0000
+GK-619d is sea only
+
+
+[31-Jul-24 02:09 PM] archielvahr#0000
+I can make a larger list if you want. Or filter it down
+
+
+[31-Jul-24 02:09 PM] hernanduer#0000
+Even just filtering down to nearest to 099 with a single red bar would be helpful
+
+
+[31-Jul-24 02:12 PM] archielvahr#0000
+https://gist.github.com/andykorth/8f4d0c98b00812f8138bf4b99afeee07
+
+{Embed}
+https://gist.github.com/andykorth/8f4d0c98b00812f8138bf4b99afeee07
+gist:8f4d0c98b00812f8138bf4b99afeee07
+GitHub Gist: instantly share code, notes, and snippets.
+https://images-ext-1.discordapp.net/external/7lesHV5TJfXV9rDct_prZ0T8dzM8AdALoVfer2-rnhs/https/github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png
+
+
+[31-Jul-24 02:12 PM] archielvahr#0000
+Sharper cutoff on "price"
+
+
+[31-Jul-24 02:13 PM] archielvahr#0000
+6 jumps gets pretty far away though, if you are planning on bringing it back and forth that way 🤷‍♂️
+
+
+[31-Jul-24 02:13 PM] hernanduer#0000
+Very nice
+
+
+[31-Jul-24 02:14 PM] hernanduer#0000
+For the metals, yeah not sure... It's almost all metallurgy working with ASM parts
+
+
+[31-Jul-24 02:15 PM] hernanduer#0000
+And there isn't any allotment for metallurgy on any of the 3 main planets
+
+
+[31-Jul-24 02:16 PM] archielvahr#0000
+Yeah. I guess you can dump ore into SME+ASM+SKF and end up with relatively small outputs.
+
+
+[31-Jul-24 02:16 PM] hernanduer#0000
+416b is good, but kind of opposite direction of the ore planets
+
+
+[31-Jul-24 02:16 PM] archielvahr#0000
+We could change those COGCs if we have a compelling enough use
+
+
+[31-Jul-24 02:17 PM] hernanduer#0000
+I think 1 electronics, 1 manufacturing and 1 metallurgy would be slick, then an intrasystem ship will really get all its worth
+
+
+[31-Jul-24 02:18 PM] hernanduer#0000
+But I'd recommend FS on that planet rather than ASM, to support the electronics and manufacturing
+
+
+[31-Jul-24 02:18 PM] hernanduer#0000
+Same with electronics, it should probably be mostly ELP or CLR, rather than SD or SEs
+
+
+[31-Jul-24 02:19 PM] hernanduer#0000
+And then manufacturing would be SCA and MCAs
+
+
+[31-Jul-24 02:19 PM] hernanduer#0000
+Only problem is lack of gold anywhere around
+
+
+[31-Jul-24 02:19 PM] hernanduer#0000
+Would have to truck in ore from Elon or something
+
+
+[31-Jul-24 02:20 PM] hernanduer#0000
+That's what I'd do though, not sure what everyone's thoughts are
+
+
+[31-Jul-24 02:24 PM] archielvahr#0000
+Here's a new map, they are colored by the number of single or zero red-bar planets. But it doesn't differenciate on type of red bar:
+
+
+[31-Jul-24 02:25 PM] archielvahr#0000
+So OS-803 looks amazing but it's a bunch of gas planets. Oh they are also cold
+
+
+[31-Jul-24 02:25 PM] archielvahr#0000
+that should be two "red bars"
+
+
+[31-Jul-24 02:26 PM] archielvahr#0000
+cause of the AEF
+
+
+[31-Jul-24 02:26 PM] archielvahr#0000
+lemme redo it
+
+
+[31-Jul-24 02:30 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1268289644856873050/Untitled.png?ex=68151d47&is=6813cbc7&hm=0dd9aebeaf1adda174d3b0f4e0d5cc5b0102de578ffe23d3b673c48dd34f3140&
+
+
+[31-Jul-24 02:30 PM] archielvahr#0000
+You can also click aroudn on this map:
+
+
+[31-Jul-24 02:30 PM] archielvahr#0000
+http://oog.kortham.net/map/
+
+{Embed}
+http://oog.kortham.net/map/
+Taiyi's Prosperous Universe Map For OOG
+Taiyi's Prosperous Universe Map - An interactive map for the Prosperous Universe game
+
+
+[31-Jul-24 02:30 PM] archielvahr#0000
+http://kortham.net/temp/firefox_uL5OkfCasq.png
+
+{Embed}
+http://kortham.net/temp/firefox_uL5OkfCasq.png
+https://images-ext-1.discordapp.net/external/RV5wMLKLh3YyRcjkuMz1XmWDIxz_FPIegKqdYDVR6xY/http/kortham.net/temp/firefox_uL5OkfCasq.png
+
+
+[31-Jul-24 02:31 PM] archielvahr#0000
+Each malus appears on the right, thermometer for cold, etc
+
+
+[31-Jul-24 02:31 PM] archielvahr#0000
+Gotta look at the cloud symbol for AEF
+
+
+[31-Jul-24 02:33 PM] hernanduer#0000
+Cool map, I'll have to look once I'm home
+
+
+[31-Jul-24 02:34 PM] hernanduer#0000
+The heat map has GM-844 looking pretty good and I guess it's not a terrible system
+
+
+[31-Jul-24 02:36 PM] hernanduer#0000
+099e is also only INS, that'd probably be worth something too
+
+
+[31-Jul-24 03:04 PM] archielvahr#0000
+2 TSH, 1 HSE planet 🤷‍♂️
+
+
+[31-Jul-24 11:34 PM] hernanduer#0000
+current plan
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1268426616170872956/image.png?ex=6814f417&is=6813a297&hm=1c77dcd4b97de9b6a443b05bb3fdbfd716c2b319160fdb85b19476296cee90c1&
+
+
+[31-Jul-24 11:34 PM] hernanduer#0000
+this will almost quadruple my AST and FET output
+
+
+[31-Jul-24 11:35 PM] hernanduer#0000
+actually I can fix that FE...
+
+
+[31-Jul-24 11:36 PM] hernanduer#0000
+better load balance
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1268427117167771719/image.png?ex=6814f48e&is=6813a30e&hm=b8f6971774f0f7ed6c3f9b6368bf70b0117f376566ccf490b443d499febc2939&
+
+
+[02-Aug-24 11:35 AM] akyantor#0000
+I suspect it might be best to not do it now to avoid attention, but for what it's worth I have a credit to name a system. If we get things going for project 6115, would be happy to use it to name OS-099 something fun, if folks were interested.
+
+
+[02-Aug-24 11:44 AM] sidepipe#0000
+Is there a greek god of capital management? 😄
+
+
+[02-Aug-24 11:47 AM] archielvahr#0000
+Ooh yeah save that naming right 😄
+
+
+[02-Aug-24 11:48 AM] akyantor#0000
+I'd think we'd want to be established before doing it, but happy to save it up
+
+
+[02-Aug-24 11:49 AM] akyantor#0000
+I'm sure we can come up with something creative and cool
+
+
+[02-Aug-24 11:50 AM] archielvahr#0000
+I wonder if there's a good theme for something far away, underworld themed or something unique
+
+
+[02-Aug-24 11:50 AM] archielvahr#0000
+https://greekgodsandgoddesses.net/gods/
+
+{Embed}
+GGG_admin
+https://greekgodsandgoddesses.net/gods/
+Greek Gods List • Names of the Greek Gods
+A complete A-Z list of the Greek gods of ancient mythology, their names and the areas of influence they had.
+
+
+[02-Aug-24 11:50 AM] archielvahr#0000
+flipped through that a bit
+
+
+[02-Aug-24 11:50 AM] akyantor#0000
+maybe something exploration or adventure related, might also fit
+
+
+[02-Aug-24 12:24 PM] akyantor#0000
+TARTARUS - The god of the deep abyss, a great pit in the depths of the underworld, and father of Typhon.
+
+
+[02-Aug-24 11:49 PM] .urpalhal#0000
+tartarus is also associated with Hell since he's the god of basically a afterlife prison
+
+
+[03-Aug-24 01:44 AM] akyantor#0000
+Ok, bad choice
+
+{Reactions}
+❓ 😈 
+
+[03-Aug-24 09:19 AM] archielvahr#0000
+There's a bunch of afterlife / hades themed gods that I think are unused in PRUN so far. If we go with a darkness or primodial theme:
+Erebus, Moros, Oneiroi, Tartarus, all on the darker side
+
+
+[03-Aug-24 10:43 AM] .urpalhal#0000
+Dark theme isn’t necessarily bad
+
+
+[03-Aug-24 11:24 AM] hernanduer#0000
+Do we want to clarify the COGC for the 099 planets? Now that we know about gates, I think we can more confidently say they can be other than just electronics
+
+
+[03-Aug-24 11:25 AM] hernanduer#0000
+I'm for:
+099a - Construction
+099b - Chemistry
+099c - Manufacturing
+099d - Electronics
+099e - Metallurgy
+
+
+[03-Aug-24 12:43 PM] archielvahr#0000
+Yeah that's a really good question. I don't really have an opinion about A or E. I'm likely going to keep mostly electronics on B and C. I actually put a ton of PPFs on C already to balance out the population
+
+
+[03-Aug-24 12:43 PM] archielvahr#0000
+Ah D and C are both manufacturing at the moment
+
+
+[03-Aug-24 12:44 PM] archielvahr#0000
+I have been expecting to change my building layout as the pop grows
+
+
+[03-Aug-24 12:44 PM] archielvahr#0000
+So I think I'll go with whatever works, as long es people are interested enough in each COGC out there.
+
+
+[03-Aug-24 12:44 PM] archielvahr#0000
+Electronics will always make sense.
+
+
+[03-Aug-24 12:45 PM] archielvahr#0000
+On Chemistry CHPs probably won't make much sense unless we add resource taps. LABs have lots of long running stuff so that'd be great.
+
+
+[03-Aug-24 12:48 PM] hernanduer#0000
+Yeah, typically those run on the planets where extraction occurs
+
+
+[03-Aug-24 12:48 PM] hernanduer#0000
+Was surprised it's there but I'm not against setting up some AML and LAB in the main system
+
+
+[03-Aug-24 12:49 PM] hernanduer#0000
+My plan is to start with resource extraction planets to build into the later ones, just because we still have a good amount of time before gateways are gonna be working
+
+
+[03-Aug-24 12:50 PM] hernanduer#0000
+Gonna need a couple new WCB ships for my needs, I'm working towards them myself
+
+
+[03-Aug-24 12:50 PM] archielvahr#0000
+EvoV makes ships and recently said he has like parts for 20 of them
+
+
+[03-Aug-24 12:51 PM] archielvahr#0000
+We could think about doing a bulk buy
+
+
+[03-Aug-24 12:51 PM] archielvahr#0000
+maybe a discount there.
+
+
+[03-Aug-24 12:52 PM] archielvahr#0000
+I've been thinking about selling ships on commission too. Someone gets 100k per ship they sell.. they can sell without the OOG tag. Once they seal the deal, the ship parts come from me
+
+
+[03-Aug-24 12:52 PM] archielvahr#0000
+Works if we have more suppliers especially
+
+
+[03-Aug-24 12:53 PM] shrewdsun_88540#0000
+That’s interesting!
+
+
+[03-Aug-24 12:55 PM] shrewdsun_88540#0000
+Or you sell them at a bulk price and they make their money if they are able to sell higher
+
+
+[03-Aug-24 12:55 PM] shrewdsun_88540#0000
+Im sure Dust would be very interested, all they do is trade
+
+
+[03-Aug-24 12:57 PM] shrewdsun_88540#0000
+They would either buy them for them or they would be able to turn them around
+
+
+[05-Aug-24 04:25 PM] archielvahr#0000
+I had too many Tech immigrations queued up I guess. So OS-099d might end up with more techs. I don't think I already used them up, there might be unemployed ones after this unless somone built a base there to use them
+
+
+[08-Aug-24 02:28 AM] melon164#0000
+I just misclicked and built a base on OS-099b, but didn't change the random base location.  No worries, I'll just demolish it and rebuild it at the pole like a normal obsessive.  "Insufficient cash".  Most expensive 15s base ever 🤦‍♂️ 😡
+
+
+[08-Aug-24 02:28 AM] melon164#0000
+Can I borrow 10M ICA for a few days?!!  😳
+
+
+[08-Aug-24 02:29 AM] melon164#0000
+(actually I only need 5M more)
+
+
+[08-Aug-24 07:33 AM] melon164#0000
+Ok, I scrounged up enough currency.  Now I just need my _twenty_ million back 😝
+
+
+[08-Aug-24 07:35 AM] sidepipe#0000
+hi neighbor 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1271084413773676654/image.png?ex=6814bc1b&is=68136a9b&hm=5659358ce01bb46bd8be14af2f66969a3b76fe4235bf182a5f4509cfa705e5c3&
+
+{Reactions}
+👋 
+
+[08-Aug-24 07:59 AM] archielvahr#0000
+hahahaha
+
+
+[09-Aug-24 04:52 PM] archielvahr#0000
+Somewhat related to Project-6115, at least in spirit... My HEX tap would be ready for a second base in about a week if anyone is interested. It's probably a terrible idea though. 
+
+It does have a 10m base establishment fee, which is refundable for OOG members.
+
+We could also grab other unoccupied HEX taps if anyone wants in on that.
+
+
+[09-Aug-24 04:52 PM] archielvahr#0000
+I am out of permits for silly shenanigans 😄
+
+
+[09-Aug-24 05:11 PM] archielvahr#0000
+20m sent. You can ping me to close the other end of the contract
+
+
+[09-Aug-24 05:11 PM] archielvahr#0000
+it totally takes a full day for those to appear it seems
+
+
+[16-Aug-24 10:35 AM] hernanduer#0000
+Newly minted ship, the Courteous, is on the way to GM-332c to setup my first base in a Chemistry series
+
+
+[16-Aug-24 10:35 AM] hernanduer#0000
+Includes parts for full 500/500 base and COGC, ADM and SST
+
+
+[16-Aug-24 10:35 AM] hernanduer#0000
+surprised it all fit tbh
+
+
+[16-Aug-24 10:47 AM] archielvahr#0000
+Woo
+
+
+[16-Aug-24 10:51 AM] archielvahr#0000
+I was slacking briefly on some of the need fulfillments, but they are fixed now. Got solid growth again on each planet
+
+
+[16-Aug-24 10:51 AM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-08-16_10-51-39.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-08-16_10-51-39.png
+https://images-ext-1.discordapp.net/external/peY_U4qQzCA-fvJuU6HJqb2JLnYyAAwV-rnKyyJTEwc/http/kortham.net/temp/firefox_2024-08-16_10-51-39.png
+
+
+[16-Aug-24 10:57 AM] archielvahr#0000
+We should probably look at finalizing those COGCs. I put down mostly electronics, but some chemistry on B and some manufacturing on D.
+
+Hern's suggestion was:
+
+099a - Construction
+099b - Chemistry
+099c - Manufacturing
+099d - Electronics
+099e - Metallurgy
+
+Sidepipe has chem and melon has manuf on B. Melon has manuf on C. I think it's just me on D right now.
+
+
+[16-Aug-24 10:58 AM] archielvahr#0000
+But it's easy to rework bases at this point
+
+
+[16-Aug-24 10:59 AM] sidepipe#0000
+As long as we end up with one electronics base, I’m happy 😄
+
+
+[16-Aug-24 10:59 AM] archielvahr#0000
+Also for people who are interested in getting involved in the system but aren't here yet: which ones do you want to see?
+
+
+[16-Aug-24 10:59 AM] sidepipe#0000
+I don’t mind retooling my base on B as needed
+
+
+[16-Aug-24 11:00 AM] archielvahr#0000
+I am still a bit enamored with the mega-electronics idea. But LABs and POLs have worked well. I don't reaaaallly imagine i'll do smelting out there
+
+
+[16-Aug-24 11:05 AM] sidepipe#0000
+Can we negotiate for 2 electronics bases? 😄
+
+
+[16-Aug-24 11:13 AM] hernanduer#0000
+099a for electronics 2?
+
+
+[16-Aug-24 11:14 AM] hernanduer#0000
+definitely want a chemistry base as one of them though
+
+
+[16-Aug-24 11:14 AM] hernanduer#0000
+construction is the one I care least about... hah
+
+
+[16-Aug-24 11:19 AM] archielvahr#0000
+What are your metallurgy plans in the region?
+
+
+[16-Aug-24 11:32 AM] archielvahr#0000
+(like construction is a good way to reduce the shipping weight of metallurgy stuff, but maybe you are just shipping raw metals out? You can't really use them up in manufacturing or anything else, can you?)
+
+
+[16-Aug-24 11:37 AM] archielvahr#0000
+Okay, so here's one propsal (will wait for a round of feedback from everyone ) 
+099a - Electronics (2nd)
+099b - Chemistry
+099c - Manufacturing
+099d - Electronics
+099e - Metallurgy
+GM-498a - H2O Extraction (already in place)
+GM-332c - ---chemistry--- resource extraction (LST)
+AU-605c - Food processing (already in place)
+
+
+[16-Aug-24 11:39 AM] archielvahr#0000
+GM-332c is INS and HSE, but GM-332b  is only INS. I aaume you need the LST?
+
+
+[16-Aug-24 02:42 PM] hernanduer#0000
+I'm making 332c RE rather than Chem
+
+
+[16-Aug-24 02:42 PM] hernanduer#0000
+because it's the #1 or #2 LST mine
+
+
+[16-Aug-24 02:42 PM] hernanduer#0000
+I don't wanna shy away from that, in case someone wants to do that
+
+
+[16-Aug-24 02:43 PM] hernanduer#0000
+and I'm mining the HAL, it has I think 10% more HAL than YK-005d
+
+
+[16-Aug-24 02:43 PM] hernanduer#0000
+metallurgy plans are to setup at least an AST/FET chain
+
+
+[16-Aug-24 02:43 PM] hernanduer#0000
+probably need to wait for gates for that
+
+
+[16-Aug-24 02:46 PM] hernanduer#0000
+so chemistry for now has me making GM-332c into RE for HAL, 099b will have some LAB, CHP and POL
+
+
+[16-Aug-24 02:47 PM] hernanduer#0000
+which I can then take back to ANT for construction on Aceland, or move TCL/PG over to 099c for KV/NL
+
+
+[16-Aug-24 02:47 PM] hernanduer#0000
+(planning to mix both, hence the mix of buildings)
+
+{Reactions}
+👍 
+
+[16-Aug-24 03:24 PM] archielvahr#0000
+Pinned a message.
+
+
+[18-Aug-24 11:33 AM] hernanduer#0000
+I managed to miscalculate the MCG by a little bit somehow and came up short a STO and 2 CHP lol
+
+
+[18-Aug-24 11:34 AM] akyantor#0000
+It's a classic. 😛
+
+
+[18-Aug-24 11:34 AM] akyantor#0000
+I doesn't matter how many times I check, it feels like 50% of the time I end up missing something. :S
+
+
+[18-Aug-24 11:34 AM] hernanduer#0000
+prun planner doesn't help with the POPI and planetary projects 😢
+
+
+[18-Aug-24 03:26 PM] archielvahr#0000
+I have extra mcg on all the OS099 planets if that helps
+
+
+[18-Aug-24 03:57 PM] hernanduer#0000
+nah it's fine, no pops for those things yet anyway
+
+
+[18-Aug-24 03:57 PM] hernanduer#0000
+I got the important bits down
+
+
+[18-Aug-24 04:08 PM] sidepipe#0000
+I’ll be resupplying OS-099b this week, so I’ll post a shipping offer here a few days in advance if anyone needs anything taken there
+
+
+[18-Aug-24 04:08 PM] sidepipe#0000
+Such as MCG, for example 😁
+
+
+[20-Aug-24 09:00 PM] Prosperous Bot#5834
+**ANT -> OS-099b** | 900.00t/1,300.00m³ | departing 20-Aug-24 09:01 PM
+Post ad on LM and set **autoprovision**
+10.00 AIC per t/m³
+
+Unallocated space: 900.00t/1,300.00m³
+
+
+[20-Aug-24 09:02 PM] Prosperous Bot#5834
+**ANT -> OS-099 System** | 900.00t/1,300.00m³ | departing 21-Aug-24 01:30 PM
+Post ad on LM and set **autoprovision**
+5.00 AIC per t/m³
+* melon164 | Melon Industries - 525.00t/250.00m³ - 2,625.00 AIC
+* melon164 | Melon Industries - 250.00t/250.00m³ - 1,250.00 AIC
+Unallocated space: 125.00t/800.00m³
+
+
+[21-Aug-24 07:34 AM] sidepipe#0000
+^ will wait another few hours to send this ship, so feel free to add stuff as long as the offer is open!
+
+
+[21-Aug-24 09:37 AM] hernanduer#0000
+Ship to 099b is on the way! POL/CHP/LAB base
+
+{Reactions}
+🎉 (2) 
+
+[21-Aug-24 11:22 AM] archielvahr#0000
+On 099c, I am tearing down  400 Techs of SD and adding 1000 settlers of PPF
+
+
+[21-Aug-24 11:22 AM] archielvahr#0000
+so there will be free techs
+
+
+[21-Aug-24 11:22 AM] archielvahr#0000
+also bringing OFF for the POPI  😬
+
+
+[22-Aug-24 02:32 PM] archielvahr#0000
+Similar shenanigans are occurring elsewhere:
+
+
+[22-Aug-24 02:32 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-08-22_14-32-17.png
+
+
+[22-Aug-24 02:33 PM] archielvahr#0000
+That's 9 electronics planets in one system, all with 10m base establishment fees
+
+
+[22-Aug-24 02:34 PM] mrsmith33#0000
+Nice retirement scheme
+
+
+[22-Aug-24 02:38 PM] katinga#0000
+Does he think that's the Beverly Hills of PrUn?
+
+
+[22-Aug-24 02:40 PM] archielvahr#0000
+Rise is doing it in LS-014, but it's in faction space so the base establishment fee is only 20k:
+
+
+[22-Aug-24 02:40 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-08-22_14-40-37.png
+
+
+[22-Aug-24 02:41 PM] archielvahr#0000
+FireFreak already has 10 IDC bases
+
+
+[22-Aug-24 02:44 PM] katinga#0000
+at least that's kind of reasonable
+
+
+[22-Aug-24 03:00 PM] hernanduer#0000
+yeah if you want a bunch of losers like Rise cramping your style
+
+
+[22-Aug-24 03:00 PM] hernanduer#0000
+10mil fees all the wayyyyyy
+
+
+[22-Aug-24 03:00 PM] hernanduer#0000
+speaking of which, can I do a quick swap loan for 10mil for landing on OS-099b 😄
+
+
+[22-Aug-24 03:01 PM] hernanduer#0000
+landing in 30 hours
+
+
+[22-Aug-24 03:03 PM] sidepipe#0000
+Are the fees in NCC? If so, I can do it
+
+
+[22-Aug-24 03:06 PM] hernanduer#0000
+ICA I think
+
+
+[22-Aug-24 03:07 PM] hernanduer#0000
+I have 5mil but it's just a quick swap with Archiel pretty much
+
+
+[22-Aug-24 03:07 PM] hernanduer#0000
+well they take 24 hours to show up in government coffers apparently
+
+
+[22-Aug-24 03:10 PM] sidepipe#0000
+Ah, okay - I could also do ICA, but it’s probably easier with Archy since he’s the gov
+
+
+[22-Aug-24 03:11 PM] archielvahr#0000
+uhg yeah it was a tie for ICA and AIC and somehow the computer picked ICA 😭
+
+
+[22-Aug-24 03:12 PM] archielvahr#0000
+uh apparently I don't have any ICA and I don't have any on the FX
+
+
+[22-Aug-24 03:13 PM] archielvahr#0000
+I turned it all into NCC, then turned the NCC into AIC, and made money both times
+
+
+[22-Aug-24 03:13 PM] archielvahr#0000
+uhg the fx is dumb though
+
+
+[22-Aug-24 03:19 PM] archielvahr#0000
+oh I had many millions of buy orders apparently
+
+
+[22-Aug-24 03:20 PM] archielvahr#0000
+Money is sent 🙂
+
+
+[23-Aug-24 08:55 AM] archielvahr#0000
+it's a....
+
+✨ Project 6115 Update! ✨ 
+
+Got some milestones! No open jobs on C (manuf) and D (electronics). Still lots of Jobs on B (chemistry). We are getting capped a little by life support, nothing we can do about that unfortunately. 
+
+Next steps: Planet D needs a university so we can get passive growth started for engs and scientists. I will put down a few SEs so the engineers have open jobs to move into. 
+
+If we want electronics on planet A, someone could start that, I'm out of permits for the moment.
+
+
+[24-Aug-24 10:33 AM] sidepipe#0000
+@melon164 - attempted fufillment on your second shipment on OS-099b
+
+
+[24-Aug-24 10:59 AM] hernanduer#0000
+Made OS-099b last night, next base is GM-332d for TIO production, already freed my permit from KW-602c
+
+
+[24-Aug-24 10:59 AM] hernanduer#0000
+then I'll release KI-401b and take OS-099e for Metallurgy
+
+
+[24-Aug-24 11:16 AM] Prosperous Bot#5834
+**OS-099 System -> ANT** | 1,900.00t/1,900.00m³ | departing 25-Aug-24 02:02 PM
+Post ad on LM and set **autoprovision**
+5.00 AIC per t/m³
+
+Unallocated space: 1,900.00t/1,900.00m³
+
+
+[24-Aug-24 11:16 AM] sidepipe#0000
+👆  i'll come pick up from different planets if you give me a heads-up!
+
+
+[25-Aug-24 03:10 AM] melon164#0000
+Try again?
+
+
+[27-Aug-24 12:19 AM] archielvahr#0000
+Do ongoing MM changes make us want to rethink any COGCs? I expect the answer is no, but open to thoughts
+
+
+[27-Aug-24 08:13 AM] hernanduer#0000
+I'm making real, big boy bases so no change from me
+
+{Reactions}
+😆 
+
+[27-Aug-24 08:26 AM] sidepipe#0000
+I still think 2 electronics could be valuable - I just might not make EDC bases for both 😁
+
+
+[27-Aug-24 08:27 AM] sidepipe#0000
+I might move my MHP operations out there at some point
+
+
+[28-Aug-24 11:30 AM] archielvahr#0000
+OS-099d now has a library! when i get some LUs I'll add a University too
+
+
+[28-Aug-24 11:31 AM] archielvahr#0000
+Library will help the education multiplier in the mean time though
+
+{Reactions}
+🎓 (2) 
+
+[30-Aug-24 09:13 AM] hernanduer#0000
+forgot to elect myself on GM-332d 😢
+
+{Reactions}
+😱 
+
+[30-Aug-24 09:32 AM] archielvahr#0000
+aww oh no
+
+
+[30-Aug-24 12:59 PM] .urpalhal#0000
+let me know if my UPFs can help you get those or HABs or similar
+
+
+[30-Aug-24 01:13 PM] archielvahr#0000
+My last LU is just about done, but if you run out of stuff to make in your UPFs, I might request some more of those
+
+
+[30-Aug-24 01:13 PM] .urpalhal#0000
+ok 👍  lets do some batches of those RDLs first
+
+
+[30-Aug-24 01:23 PM] archielvahr#0000
+Do you need PSL and PSM too?
+
+
+[30-Aug-24 01:24 PM] .urpalhal#0000
+yeah I will need to restock
+
+
+[30-Aug-24 01:24 PM] marat_sh#0000
+I am still cooking some psls and psms for Hal’s order
+
+{Reactions}
+givelove 
+
+[30-Aug-24 01:25 PM] marat_sh#0000
+Not much though but still
+
+
+[30-Aug-24 01:25 PM] archielvahr#0000
+I can send you SRDs for under the MM price, they are still kinda expensive, but I assume you can make it back with the RDLs
+
+
+[30-Aug-24 01:25 PM] .urpalhal#0000
+you can send them for what ever price is fair
+
+{Reactions}
+👍 
+
+[30-Aug-24 01:25 PM] marat_sh#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1279145058075021333/image.png?ex=68150e2b&is=6813bcab&hm=d9cb50de2136e8b120443e0c4c6b48594b24de9c97cc8e92ee9f73592c4f6775&
+
+
+[30-Aug-24 01:25 PM] marat_sh#0000
+I was waiting for saturday
+
+
+[30-Aug-24 01:26 PM] marat_sh#0000
+but if you need them now I can send now
+
+
+[30-Aug-24 01:28 PM] .urpalhal#0000
+nah just keep stockpiling
+
+{Reactions}
+👍 
+
+[30-Aug-24 01:28 PM] archielvahr#0000
+Okay I sent enough for 4 RDLs, except I was short a little on the PSMs.
+32 SRD, 150 (of 200) PSM, 120 PSL
+
+{Reactions}
+👍 
+
+[31-Aug-24 09:07 PM] archielvahr#0000
+I think I forgot to vote for myself on os-099b
+
+
+[31-Aug-24 09:07 PM] archielvahr#0000
+😬
+
+
+[31-Aug-24 09:13 PM] hernanduer#0000
+Oops sorry
+
+
+[31-Aug-24 09:14 PM] archielvahr#0000
+weirdly I had the other ones fine 🤷‍♂️
+
+
+[31-Aug-24 09:17 PM] sidepipe#0000
+Did we all forget to vote? 😄
+
+
+[31-Aug-24 09:35 PM] sidepipe#0000
+I’ll remember next time for sure
+
+
+[31-Aug-24 09:49 PM] archielvahr#0000
+Yeah my mistake was starting the planets ADMs one after another, should have done them all at the same time. Instead they are like 6 hrs apart
+
+
+[04-Sep-24 03:41 PM] archielvahr#0000
+Lots of growth in today's reports. Still have open jobs on B and C though.
+
+
+[10-Sep-24 03:11 PM] hernanduer#0000
+Ant -> EW-238c -> GM-498a -> OS-099
+
+
+[10-Sep-24 03:11 PM] hernanduer#0000
+EW-238c has a decent HAL site, 498a is the 3rd best H2O in universe
+
+
+[10-Sep-24 03:11 PM] hernanduer#0000
+both have small populations
+
+
+[10-Sep-24 03:11 PM] hernanduer#0000
+cost about uhhh 1 billion AIC
+
+
+[10-Sep-24 03:12 PM] archielvahr#0000
+lmao
+
+
+[10-Sep-24 03:12 PM] archielvahr#0000
+So.... #bank-of-oog  😆
+
+
+[10-Sep-24 03:14 PM] hernanduer#0000
+we need about 5k TSH, 2k ABH, 1k ASE/ADE/ATA...
+
+
+[10-Sep-24 03:14 PM] hernanduer#0000
+and tens of thousands of the new RHO
+
+
+[10-Sep-24 03:15 PM] hernanduer#0000
+let's GO 😄
+
+
+[10-Sep-24 03:16 PM] akyantor#0000
+EW-238c isn't a half bad FE planet either, not a bad connection for an area without many good FE options.
+
+
+[10-Sep-24 03:16 PM] akyantor#0000
+A good connection to have with only one jump to the CX
+
+
+[10-Sep-24 03:16 PM] hernanduer#0000
+yeah but just near GM-498a is the #1 FEO planet
+
+
+[10-Sep-24 03:17 PM] hernanduer#0000
+sorry, #2
+
+
+[10-Sep-24 03:17 PM] hernanduer#0000
+GM-212d
+
+
+[10-Sep-24 03:17 PM] archielvahr#0000
+Yeaaaaaaaaaah but no one wants to haul FEO _or_ FE
+
+
+[10-Sep-24 03:17 PM] akyantor#0000
+😛
+
+
+[10-Sep-24 03:17 PM] hernanduer#0000
+🥲
+
+
+[10-Sep-24 03:17 PM] archielvahr#0000
+At least RHO gets smaller when you smelt it, right?
+
+
+[10-Sep-24 03:17 PM] hernanduer#0000
+you would if you had a 5k/5k
+
+{Reactions}
+💯 👆 
+
+[10-Sep-24 03:17 PM] hernanduer#0000
+sooo much smaller
+
+
+[10-Sep-24 03:18 PM] archielvahr#0000
+15k/5k
+
+{Reactions}
+💯 
+
+[10-Sep-24 03:18 PM] hernanduer#0000
+102.4t RHO turns into 16t RHE
+
+
+[10-Sep-24 03:19 PM] hernanduer#0000
+if they're on planets with just abysmal taps though, it's gonna make sense to run RE rather than Metal COGC
+
+{Reactions}
+👍 
+
+[10-Sep-24 03:20 PM] hernanduer#0000
+`One of the rarest ores to be found throughout the known universe.` 🤔
+
+
+[10-Sep-24 03:20 PM] hernanduer#0000
+could be like 3planets, could be lots with basically no quality tap
+
+
+[10-Sep-24 03:20 PM] archielvahr#0000
+Once we know the ratios, we might want to set up a pair of bases then, or 2 EXTs + 1 SME base, so we can get experts going
+
+
+[10-Sep-24 03:21 PM] marat_sh#0000
+probably no quality tap
+
+
+[10-Sep-24 03:21 PM] marat_sh#0000
+just few planets doesn't make sense
+
+
+[10-Sep-24 03:21 PM] shrewdsun_88540#0000
+Why not?
+
+
+[10-Sep-24 03:21 PM] hernanduer#0000
+it does if they put them way out there
+
+
+[10-Sep-24 03:21 PM] hernanduer#0000
+requiring you to haul it
+
+
+[10-Sep-24 03:21 PM] hernanduer#0000
+maybe we'll get lucky and it'll be near OS
+
+
+[10-Sep-24 03:22 PM] marat_sh#0000
+So devs intentionally would make it hard for a already hard project? Plus political fights for the planets
+
+
+[10-Sep-24 03:22 PM] hernanduer#0000
+of course! you want our quality RHO tap, 1 of only 3 planets? Pay the 10mil 😄
+
+
+[10-Sep-24 03:22 PM] hernanduer#0000
+that'll fund some gates
+
+{Reactions}
+😅 
+
+[10-Sep-24 03:22 PM] shrewdsun_88540#0000
+How long after putting down the first base on a planet is the governor elected? Could we secure the sources?
+
+
+[10-Sep-24 03:23 PM] hernanduer#0000
+first ADM election is 3 days
+
+
+[10-Sep-24 03:23 PM] hernanduer#0000
+it resolves in 3 days
+
+
+[10-Sep-24 03:23 PM] shrewdsun_88540#0000
+So you don’t have to be first just have the most people?
+
+
+[10-Sep-24 03:23 PM] hernanduer#0000
+in those 3 days, yeah
+
+
+[10-Sep-24 03:24 PM] shrewdsun_88540#0000
+Cause if we wanted to take the competing route. We could set crazy taxes for everyone and take the profit?
+
+
+[10-Sep-24 03:24 PM] hernanduer#0000
+I like the way you're thinking
+
+
+[10-Sep-24 03:24 PM] hernanduer#0000
+that's basically what we're doing with this project anyways
+
+
+[10-Sep-24 03:25 PM] marat_sh#0000
+This is like setting your player base against each other... 👀
+
+
+[10-Sep-24 03:25 PM] hernanduer#0000
+it's competition
+
+
+[10-Sep-24 03:25 PM] hernanduer#0000
+😄
+
+
+[10-Sep-24 03:25 PM] katinga#0000
+I'll be setting up a base.  I am probably going to close down my base on Life.  RHO looks like a good alternative
+
+
+[10-Sep-24 03:25 PM] shrewdsun_88540#0000
+We can make it prohibitively expensive for others
+
+
+[10-Sep-24 03:25 PM] mrsmith33#0000
+Need to have 100t ship with ADM + CM resources ready
+
+
+[10-Sep-24 03:25 PM] hernanduer#0000
+I think 100t ship with HYR can get pretty ridiculous
+
+
+[10-Sep-24 03:25 PM] hernanduer#0000
+like from Ant to OS-099 in 8 hours?
+
+
+[10-Sep-24 03:26 PM] hernanduer#0000
+do you have one Smith?
+
+
+[10-Sep-24 03:26 PM] shrewdsun_88540#0000
+Not even, we don’t have to be first just the most in the first 3 days
+
+
+[10-Sep-24 03:26 PM] hernanduer#0000
+max speed 2k/2k still takes more than 3 days to get to the south of the map from the middle
+
+
+[10-Sep-24 03:26 PM] hernanduer#0000
+maybe if you pitstop and refuel from storage on FF?
+
+
+[10-Sep-24 03:26 PM] shrewdsun_88540#0000
+We’d have to see where the taps are
+
+
+[10-Sep-24 03:27 PM] hernanduer#0000
+yeah
+
+
+[10-Sep-24 03:27 PM] shrewdsun_88540#0000
+But I’m down to dedicate my ships for a week for that
+
+
+[10-Sep-24 03:27 PM] archielvahr#0000
+pre-station ships spaced evenly around our region 😄
+
+
+[10-Sep-24 03:27 PM] katinga#0000
+rho rho rho your boat gently down the stream
+
+
+[10-Sep-24 03:27 PM] hernanduer#0000
+that's what I was thinking
+
+
+[10-Sep-24 03:28 PM] mrsmith33#0000
+yea
+
+
+[10-Sep-24 03:28 PM] marat_sh#0000
+can you place a base through a shipping contract?
+
+
+[10-Sep-24 03:28 PM] archielvahr#0000
+Yeah. Build a warehouse. They are almost free.
+
+
+[10-Sep-24 03:29 PM] marat_sh#0000
+No I mean for sniping RHO planet 😅
+
+
+[10-Sep-24 03:29 PM] marat_sh#0000
+I assume there will be no warehouses
+
+
+[10-Sep-24 03:29 PM] shrewdsun_88540#0000
+If we are set on it, we can take all of them…
+
+
+[10-Sep-24 03:29 PM] archielvahr#0000
+Whoever gets to the planet first can drop a warehouse (WAR not STO), then contract stuff to other players to instantly build bases there
+
+
+[10-Sep-24 03:29 PM] shrewdsun_88540#0000
+We spread out some ships and rush once it revealed
+
+
+[10-Sep-24 03:30 PM] shrewdsun_88540#0000
+Each carrying several bases worth of stuff
+
+
+[10-Sep-24 03:30 PM] katinga#0000
+I keep some FF at Elon since it's close to Romulus
+
+
+[10-Sep-24 03:30 PM] hernanduer#0000
+I was meaning the ship carries its own fuel but not in FL storage
+
+
+[10-Sep-24 03:30 PM] hernanduer#0000
+but the LCB or whatever
+
+
+[10-Sep-24 03:30 PM] archielvahr#0000
+It doesn't really matter if you strand your ship getting onto the planet. We can send rescue ships.
+
+
+[10-Sep-24 03:31 PM] hernanduer#0000
+yeah, I just mean if it's all the way south, you'll hit 100% of fuel use trying to path there in 1 go
+
+
+[10-Sep-24 03:31 PM] hernanduer#0000
+meaning you go slower
+
+
+[10-Sep-24 03:31 PM] shrewdsun_88540#0000
+I can free up 3-5 permits of we want to make a serious go at it
+
+
+[10-Sep-24 03:31 PM] hernanduer#0000
+you want to close to 100% on a given path, drop from FTL, refuel, then go again
+
+
+[10-Sep-24 03:31 PM] hernanduer#0000
+we have a month or two probably, so no rush
+
+
+[10-Sep-24 03:31 PM] katinga#0000
+I just imagined an OOGer running out with a 5 gal gas can
+
+
+[10-Sep-24 03:32 PM] archielvahr#0000
+We should recruit up a bit too. I think we are a little light on shipbuilding efforts, so  adding people would be nice.
+
+
+[10-Sep-24 03:33 PM] archielvahr#0000
+I was waiting til I had better resources for new players
+
+
+[10-Sep-24 03:33 PM] archielvahr#0000
+Maybe I can rope someone else into writing "getting started bases in OOG".
+
+
+[10-Sep-24 03:35 PM] hernanduer#0000
+we normally save that for the new hires at my jobs
+
+{Reactions}
+😁 
+
+[10-Sep-24 03:35 PM] hernanduer#0000
+since they have to go through it most recently 😄
+
+
+[10-Sep-24 03:37 PM] shrewdsun_88540#0000
+I Hope this will bring out a bit of competition between corps
+
+
+[10-Sep-24 03:37 PM] shrewdsun_88540#0000
+We need more capitalism
+
+
+[10-Sep-24 03:56 PM] shrewdsun_88540#0000
+whats the max tax rate outside of Faction space?
+
+
+[10-Sep-24 04:00 PM] hernanduer#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1283170288795779132/image.png?ex=681489b5&is=68133835&hm=427dfbb2aed9f1fd2adb1cf2bf3428578a6b974010d79f2f9ad166c786524c0c&
+
+
+[10-Sep-24 04:00 PM] shrewdsun_88540#0000
+thats enough to lock down a planet lol
+
+
+[10-Sep-24 04:01 PM] shrewdsun_88540#0000
+even more than a 10mil fee
+
+
+[10-Sep-24 04:01 PM] shrewdsun_88540#0000
+we can just rembourse ourselves and split the excess
+
+
+[10-Sep-24 04:01 PM] hernanduer#0000
+yeah then you just have to remember the reimburse your allies
+
+
+[10-Sep-24 04:16 PM] sidepipe#0000
+Listed some FF on the LM at OS-099b - just in case anyone runs out by accident during the trip!
+
+{Reactions}
+🎉 
+
+[11-Sep-24 08:00 AM] hernanduer#0000
+@archielvahr I never did get my 5 mil back from 099b 😅
+
+{Reactions}
+🧐 
+
+[11-Sep-24 09:33 AM] archielvahr#0000
+omg yeah it has no governor at the moment 😬
+
+{Reactions}
+💀 (2) 
+
+[11-Sep-24 09:33 AM] archielvahr#0000
+I just went to check
+
+
+[11-Sep-24 09:34 AM] archielvahr#0000
+Election end in 17 days 11h
+
+
+[16-Sep-24 01:30 AM] melon164#0000
+I'll come put a CLR base on OS-099d to do MTC, soak up all those unused SET
+
+
+[16-Sep-24 11:57 AM] archielvahr#0000
+awesome 😄
+
+
+[16-Sep-24 07:10 PM] hernanduer#0000
+I've just realized there is a tiny weakness, which can be exploited if need be in the future
+
+
+[16-Sep-24 07:10 PM] hernanduer#0000
+In regards to the 10mil base fee
+
+
+[16-Sep-24 07:11 PM] hernanduer#0000
+If a group of players wait until the final 24 hours of an election and then put down all their bases, followed by voting for their own guy in that election, they'd be able to recover all of their funds
+
+
+[16-Sep-24 07:12 PM] hernanduer#0000
+Because you can't propose any motions in those final 24 hours, you can't take out the money they paid
+
+
+[16-Sep-24 07:32 PM] sidepipe#0000
+Yeah, that's one way to organize a planet-stealin' if you wanted to do that
+
+
+[16-Sep-24 07:32 PM] sidepipe#0000
+Archy and I were (semi-seriously) talking about organizing a maneuver like that on one of Firefreak's 10 IDC planets 😄
+
+
+[16-Sep-24 07:33 PM] sidepipe#0000
+but hopefully we'll have the OS-099 planets populated enough that it'll at least be very expensive fun for whoever wants to try and come take one - you'd still need to front all the money for it
+
+
+[16-Sep-24 07:35 PM] sidepipe#0000
+that, plus hopefully the physical distance will help discourage that
+
+
+[17-Sep-24 10:11 AM] zipatsu#0000
+Is there any downside to preemptively creating a bunch of payout motions the day before the election ends to counter that? E.g just creating eight 10m payout motions to Archiel and then cancelling them after the election each time? Or are you also not able to fulfil the conditions of motions anymore in that 24h either?
+
+
+[17-Sep-24 10:24 AM] archielvahr#0000
+they time out eventually
+
+
+[17-Sep-24 10:24 AM] hernanduer#0000
+you could do that though, I think
+
+
+[17-Sep-24 10:24 AM] hernanduer#0000
+if you think it's gonna happen
+
+
+[17-Sep-24 10:25 AM] hernanduer#0000
+doing it every month would be a PITA
+
+
+[17-Sep-24 10:42 AM] archielvahr#0000
+Yeah that's interesting
+
+
+[17-Sep-24 11:42 AM] shrewdsun_88540#0000
+Would come in handy in case of a play for monopoly of RHE planets
+
+
+[17-Sep-24 11:42 AM] shrewdsun_88540#0000
+In that case I can imagine people trying to snipe it
+
+
+[19-Sep-24 11:04 AM] archielvahr#0000
+Added a university to OS-099d. playin' the long game slowly getting engineers -> scientists
+
+
+[21-Sep-24 04:44 PM] archielvahr#0000
+It's a.... 
+
+Project-6115 update!
+
+* OS-099b Chemistry. We have extra pioneers and techs, really nice population growth. Probably ready for more people. I might need to add a PAR soon
+
+{Reactions}
+👍 
+
+[21-Sep-24 04:46 PM] archielvahr#0000
+* OS-099c: Manufacturing. We have 200 set and 300 techs that need jobs!
+* OS-099d: Electronics. I am slowly growing the engineers. This has the lowest population, but there are some unemployed techs and a ton of settlers. If you wanna build here, lemme know and we can plan for the population change. I am just slowly adding Eng buildings to keep up with the growth
+
+
+[22-Sep-24 09:23 AM] sidepipe#0000
+I'm going to take a look at what I'd need to make both BWS and MHP - if it makes sense, I might be able to move all the electonics stuff to OS-099d and maybe some of the inputs to OS-099c 🙂
+
+
+[22-Sep-24 12:28 PM] hernanduer#0000
+⚡synergy⚡
+
+
+[22-Sep-24 12:51 PM] sidepipe#0000
+question - do we have a shipyard in OS-099?
+
+
+[22-Sep-24 12:52 PM] sidepipe#0000
+depending on how the electronics works out, it might be useful to have one to haul between 099c and 099d. I can toss in some cash to build one if there's interest 🙂
+
+
+[22-Sep-24 02:27 PM] archielvahr#0000
+Not yet but I think we should make one
+
+
+[22-Sep-24 02:27 PM] archielvahr#0000
+Even just for unloading a pile on consumables in one system and having a puddle jumper to distribute them
+
+
+[22-Sep-24 02:30 PM] hernanduer#0000
+I'm using my GM-332d base as a sort of staging ground to further things along to OS-099. If I build a base even further into the GM sector I might move it to there
+
+
+[22-Sep-24 02:30 PM] hernanduer#0000
+so I stage one ship at that base perpetually, then another ferrys things between ANT and the base
+
+
+[22-Sep-24 02:33 PM] hernanduer#0000
+it saves the 8 hours, making the trip an easy even-2days instead of the 2days+8hours
+
+
+[22-Sep-24 02:36 PM] archielvahr#0000
+I am saving a permit for gateway stuff, but if I get another, I would add another electronics base on OS-099a
+
+
+[25-Sep-24 09:19 AM] sidepipe#0000
+I'm in the final stages of putting together my OS-099 BWS plan - looks like i'd need about 740 SET, 100 TEC on 099c and 200 SET, 200 TEC on 099d - do you think that would be workable? It doesn't matter if it takes some time to grow the pops, because these bases won't be perfectly balanced until they hit 5 experts anyway 😄
+
+
+[25-Sep-24 09:19 AM] sidepipe#0000
+Will gladly contribute cash for programs 🙂
+
+
+[25-Sep-24 09:24 AM] archielvahr#0000
+Yeah those are in place on c (move fast before the techs disappear, they have been dropping because of unemployment)
+
+
+[25-Sep-24 09:25 AM] archielvahr#0000
+and for d, that shoulld go pretty fast too.  Easy settelrs- those are already there. Techs shouldn't be too hard.
+
+
+[25-Sep-24 09:28 AM] sidepipe#0000
+Sweet, I should be out there in the next few days. Just trying to get my spreadsheet optimize the bases with order sizes < 7 days 😄
+
+
+[26-Sep-24 12:06 PM] hernanduer#0000
+Next week gonna drop 590 SET and 120 TECs on 099c
+
+
+[26-Sep-24 12:09 PM] hernanduer#0000
+excited to get my 5mil back from 099b soon too 😄
+
+{Reactions}
+🤣 
+
+[26-Sep-24 12:10 PM] melon164#0000
+Does anyone have a ship moving around in-system?  I have a pile of PG too much on `b` and I'm out on `c` 😭
+
+
+[26-Sep-24 12:11 PM] hernanduer#0000
+I can bring my ship over from 332d
+
+
+[26-Sep-24 12:13 PM] hernanduer#0000
+only takes like 8 hours
+
+
+[26-Sep-24 01:09 PM] archielvahr#0000
+Gotta get that shipyard build 😄
+
+
+[26-Sep-24 01:10 PM] archielvahr#0000
+2d 7h until we have a governor again
+
+
+[28-Sep-24 04:53 PM] sidepipe#0000
+ships are off to OS-099c/d 🥳
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1289706461282177135/image.png?ex=681495fd&is=6813447d&hm=bc04f83eb7a505709e696e43d9637ac40d1602129eddd916e7bdc6e6a0a58cdc&
+
+
+[28-Sep-24 04:54 PM] sidepipe#0000
+really excited for these two bases. the net import per day is really low, and it'll be really nice to have a consistent source of BWS for antares. and there's still 200ish area on the electronics base for other products
+
+{Reactions}
+🎉 
+
+[28-Sep-24 04:54 PM] sidepipe#0000
+so... if anyone wants to outsource some electronics to a trusted partner, let me know 😄
+
+
+[28-Sep-24 11:50 PM] archielvahr#0000
+OS-099b payouts sent!
+
+
+[28-Sep-24 11:50 PM] archielvahr#0000
+And Sidepipe, if you need ICA for the base fee, lemme know
+
+
+[28-Sep-24 11:52 PM] sidepipe#0000
+I've got 10M and the ships are getting there about 2 days apart, so I should be good!
+
+
+[30-Sep-24 07:11 PM] sidepipe#0000
+Could I get my 10M from OS-099c back in the next few days? Gonna turn right back around and pay it for 099d 🙂
+
+
+[30-Sep-24 07:24 PM] archielvahr#0000
+😭
+
+
+[30-Sep-24 07:24 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-09-30_19-24-36.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-09-30_19-24-36.png
+https://images-ext-1.discordapp.net/external/beJW_Tji1tFNzRTM8gY8Yjm_OOqKTw_YwP53OmdJ-gg/http/kortham.net/temp/firefox_2024-09-30_19-24-36.png
+
+{Reactions}
+😄 
+
+[30-Sep-24 07:25 PM] sidepipe#0000
+i choose only the most convenient times
+
+
+[30-Sep-24 07:27 PM] sidepipe#0000
+I'll just swap allocater some pretend money (NCC) for the other pretend money (ICA) 😄
+
+
+[01-Oct-24 12:51 PM] hernanduer#0000
+NCC is definitely the most pretendest of money
+
+
+[03-Oct-24 10:52 AM] archielvahr#0000
+All the base establishment fees have been returned now 😅
+
+{Reactions}
+🙌 (2) 
+
+[06-Oct-24 03:54 PM] archielvahr#0000
+Okay, I think we're ready for another round of bases from other OOG members!
+
+OS-099B is Chemistry
+OS-099C is Manufacturing
+OS-099D is electronics
+
+They all have unemployed population now. The system works well for things where the shipping requirements are low. Chemistry base works great for LABs, I make NR there, but any LAB and many CHP products are a good option.
+
+On c, manufacturing like PPFs are great. 
+
+On d, low tier workers are quite available, so there's lots of techs for SDs or the various electronics factories. I am slowly increasing ENG counts now.
+
+The base establishment fee is 10m ICA, but you get it back as soon as you ping me about it. If you are short on ICA, I can probably spot you the cash in advance.
+
+
+[06-Oct-24 04:52 PM] sidepipe#0000
+I’ll be adding some more workers on 099D shortly - dropped my base, but haven’t put down buildings yet since I need all the inputs from C 😁
+
+
+[06-Oct-24 04:52 PM] sidepipe#0000
+Speaking of which, @archielvahr - could I have my ICA back from 099d? 🙂
+
+{Reactions}
+👍 
+
+[06-Oct-24 04:53 PM] archielvahr#0000
+Sent!
+
+{Reactions}
+🫶 
+
+[06-Oct-24 04:53 PM] archielvahr#0000
+Yeah it really should give notifications or something when that much money comes in 😆
+
+
+[06-Oct-24 04:54 PM] sidepipe#0000
+I’m also happy to spot anyone the base fee, just let me know!
+
+
+[06-Oct-24 04:54 PM] marat_sh#0000
+I am looking at 6 days of round trip 😅
+
+
+[06-Oct-24 04:55 PM] archielvahr#0000
+I have more ships for sale 😉
+
+
+[06-Oct-24 04:56 PM] sidepipe#0000
+I’m gonna try and start posting more shipping offers here when I make trips as well
+
+
+[06-Oct-24 04:56 PM] archielvahr#0000
+Someone couuuuuuuld set up base teleports out here too.
+
+
+[06-Oct-24 04:56 PM] archielvahr#0000
+Send the whole base in a contract, plus 30d or 60d of consumables.
+
+
+[06-Oct-24 04:58 PM] marat_sh#0000
+I am too poor for that 😅
+
+
+[06-Oct-24 04:58 PM] marat_sh#0000
+Probably will ask for shipping in a future Still have a few plans in core worlds
+
+{Reactions}
+👍 
+
+[06-Oct-24 05:17 PM] akyantor#0000
+I could do with a full permit of labs somewhere… but need to finish paying back my last uber expansion first. 😉
+
+
+[06-Oct-24 05:19 PM] akyantor#0000
+Requires a new ship for me too, can’t afford for one to be awol for 6 days at a time.
+
+
+[06-Oct-24 08:45 PM] hernanduer#0000
+Took a couple extra days for the afabs but 099c ship will land Tuesday
+
+
+[06-Oct-24 08:56 PM] sidepipe#0000
+What would people think of putting together a list of bases in the OS-099 area? I'm kinda curious what folks are making (and what we spend the most m3/t shipping in) - there might be some opportunities to start a local economy in the future 😄
+
+
+[06-Oct-24 09:11 PM] archielvahr#0000
+OS-099 base list!
+
+
+[06-Oct-24 09:34 PM] marat_sh#0000
+can you edit that pinned message? 😅
+
+
+[06-Oct-24 09:35 PM] archielvahr#0000
+I'll replace it
+
+
+[06-Oct-24 09:41 PM] archielvahr#0000 (pinned)
+Project planets:
+
+099a - Electronics (2nd) (planned, not built)
+099b - Chemistry
+099c - Manufacturing
+099d - Electronics
+099e - Metallurgy (planned, not built)
+GM-498a - H2O Extraction 
+GM-332c - Resource extraction (LST, some HAL and LIO)
+GM-332d - Resource extraction (TIO)
+AU-605c - Food processing (already in place)
+
+
+[06-Oct-24 09:42 PM] archielvahr#0000
+Pinned a message.
+
+
+[06-Oct-24 09:42 PM] archielvahr#0000
+I feel like I'm missing a metallurgy planet Hern started or something
+
+
+[06-Oct-24 11:32 PM] hernanduer#0000
+Nah not yet, just 332 c and d
+
+
+[06-Oct-24 11:50 PM] hernanduer#0000
+Next new permit is probably gonna go to the best RHE base
+
+
+[06-Oct-24 11:50 PM] hernanduer#0000
+Or RHO I guess
+
+
+[07-Oct-24 01:10 AM] shrewdsun_88540#0000
+Waiting to see where they are, torn down my AL production so debaiting if I reserve my permits for that
+
+
+[07-Oct-24 01:10 AM] shrewdsun_88540#0000
+Or just Afabs
+
+
+[07-Oct-24 08:16 AM] hernanduer#0000
+I wouldn't save any more than a single permit
+
+
+[07-Oct-24 08:16 AM] hernanduer#0000
+All of the RHE products are only like 20% of a gateway's base area costs
+
+
+[07-Oct-24 04:10 PM] akyantor#0000
+What ship configuration are folks using to transport stuff out to 099? Can you get away with a medium FTL fuel bay?
+
+
+[07-Oct-24 04:11 PM] akyantor#0000
+I think the simulator seems to suggest yes, if you have a quick charge engine, and medium fuel bay, but it takes 2.5 days one way.
+
+
+[07-Oct-24 05:47 PM] archielvahr#0000
+I mostly use my FSE / HYR ships to go out there, they are large/large fuel tanks, but standard ships don't really have trouble, esp if you bring extra FF
+
+
+[07-Oct-24 07:11 PM] hernanduer#0000
+it'll be real slow without an LFL
+
+
+[07-Oct-24 08:24 PM] sidepipe#0000
+I’ve noticed that I usually use more than 50% fuel with medium tanks, but I bring a bunch of extra with me every trip
+
+
+[07-Oct-24 08:25 PM] sidepipe#0000
+(so @ me if anyone gets stranded - I have a few thousand fuel on each base!)
+
+
+[08-Oct-24 10:43 AM] hernanduer#0000
+Apparently these new base materials are almost 8mil in value? Idk how
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1293237446116642969/image.png?ex=6814e83a&is=681396ba&hm=c21663a7c3bd85f9ad39372376899c736cd00729d0441414bc173dc4b8989469&
+https://cdn.discordapp.com/attachments/1255916963109015704/1293237446569623622/image.png?ex=6814e83a&is=681396ba&hm=96550180f94f8fa6ffa802509a9c753339766e20361315af4dc67ef7c6761389&
+
+
+[08-Oct-24 10:46 AM] hernanduer#0000
+gotta be some weird price on some small electronic component
+
+
+[08-Oct-24 11:20 AM] archielvahr#0000
+1.6m of TCL
+
+
+[08-Oct-24 11:21 AM] archielvahr#0000
+Yeah could be the electronics
+
+
+[08-Oct-24 11:22 AM] hernanduer#0000
+I make 80/d and use most of it, so I forget how much it's worth 💀
+
+
+[08-Oct-24 11:22 AM] archielvahr#0000
+it's easy to make 2000 of something, then stop making it for a month and run out 😄
+
+
+[08-Oct-24 11:22 AM] hernanduer#0000
+yeahhhh I like to go the other way, have 10k excess and not understand why my wallet has sat at the same amount for 2 months
+
+
+[08-Oct-24 11:28 AM] hernanduer#0000
+I rarely change my orders
+
+
+[08-Oct-24 10:20 PM] hernanduer#0000
+099c base up just in time for the POPR
+
+{Reactions}
+😎 
+
+[08-Oct-24 10:27 PM] archielvahr#0000
+Watching for the base fee to show up, nothing yet
+
+
+[09-Oct-24 08:45 AM] hernanduer#0000
+huh never noticed
+
+
+[09-Oct-24 08:45 AM] hernanduer#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1293570022354194544/image.png?ex=6814cc76&is=68137af6&hm=08092dfdea8b1020238c34bf51fc529b2f104095cf8fa960e4c8000c16b74a7d&
+
+
+[09-Oct-24 08:45 AM] hernanduer#0000
+someone's done what we're doing before!
+
+
+[09-Oct-24 08:45 AM] hernanduer#0000
+also Katsumoto's account is almost 100 days older than firefreak and lowstrife, his offices don't even load
+
+
+[09-Oct-24 08:46 AM] hernanduer#0000
+it feels a little like exploring bygone relics 😮
+
+
+[09-Oct-24 09:03 AM] sidepipe#0000
+Yeah, I saw that too. I wonder what they did here 😄
+
+
+[09-Oct-24 10:13 AM] archielvahr#0000
+Yeah it was a burst of activity there. I assume that was in the same year, even though it doesn't show the year
+
+
+[09-Oct-24 10:17 AM] archielvahr#0000
+The 5/27 one is:
+Thursday, May 27, 2021 12:41:15.799 AM
+
+
+[09-Oct-24 10:45 AM] hernanduer#0000
+Interesting, so back when the universe was very young. That must've been terrible without upgraded ships
+
+
+[09-Oct-24 10:53 AM] melon164#0000
+Half your cargo would have to have been fuel 🤯
+
+
+[09-Oct-24 10:53 AM] melon164#0000
+Also sooooo long a journey…
+
+
+[09-Oct-24 11:02 AM] sidepipe#0000
+To be fair, it doesn’t seem like they stuck around 😄
+
+{Reactions}
+😅 (2) 
+
+[13-Oct-24 01:57 PM] sidepipe#0000
+FYI, posted a project in #orders  to drop a shipyard on one of the OS-099 planets!
+
+
+[13-Oct-24 01:57 PM] sidepipe#0000
+Unless anyone has any planet preferences, I'll drop it on 099c
+
+{Reactions}
+👍 
+
+[15-Oct-24 02:01 PM] akyantor#0000
+Are we still in the market for someone to use up Tech/Set on 099b? I need a full lab base, and trying to decide whether to go 099b or ZV-639d.
+
+
+[15-Oct-24 02:03 PM] akyantor#0000
+I'm pretty tempted to go 099b, as the ROI is a lot higher due to being all green. 🙂
+
+
+[15-Oct-24 02:09 PM] mrsmith33#0000
+LAB base would double the tech population on ZV-639d
+
+
+[15-Oct-24 02:09 PM] akyantor#0000
+Yeah, I'd have to fund some programmes and maybe popi there 🙂
+
+
+[15-Oct-24 02:09 PM] akyantor#0000
+I'll probably need to build a long range ship if I go 099b. 🤷‍♂️
+
+
+[15-Oct-24 02:09 PM] hernanduer#0000
+099b! 099b! 099b!
+
+
+[15-Oct-24 02:12 PM] akyantor#0000
+I guess 099b it is... 🙂
+
+
+[15-Oct-24 02:12 PM] akyantor#0000
+I'll probably need to borrow the money for the base establishment fee when the time comes. :S
+
+
+[15-Oct-24 02:14 PM] akyantor#0000
+What a rash... not AIC currency. 😒
+
+
+[18-Oct-24 08:15 AM] sidepipe#0000
+Shipyard is up and running on OS-099c!
+
+{Reactions}
+🎉 
+
+[18-Oct-24 08:17 AM] sidepipe#0000
+I can cover the base fee if you decide to go for it 🙂
+
+
+[18-Oct-24 12:29 PM] sidepipe#0000
+and BWS manufacturing is officially up and running 🥳
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1296887822157877298/image.png?ex=681500e7&is=6813af67&hm=bc546c4f53594903e5f6170fb32e434b1373d04090b392d246fdb3e3c394e294&
+
+{Reactions}
+🎉 
+
+[18-Oct-24 12:29 PM] sidepipe#0000
+(though that text alignment really hurts)
+
+
+[18-Oct-24 01:47 PM] mrsmith33#0000
+you can disable that text entirely in xit settings
+
+{Reactions}
+🤯 
+
+[18-Oct-24 01:59 PM] archielvahr#0000
+Yeah advanced mode hides the words under the mats
+
+
+[18-Oct-24 01:59 PM] archielvahr#0000
+can't live without it!
+
+
+[18-Oct-24 03:13 PM] sidepipe#0000
+wow, I can't believe I lived without this 😄
+
+
+[18-Oct-24 03:13 PM] sidepipe#0000
+probably a good way to memeorize all these MAT codes too
+
+
+[30-Oct-24 04:24 PM] akyantor#0000
+Still in the market for a cool name for the #project-6115 system. Have a system naming right burning a hole in my pocket. 😛
+
+
+[30-Oct-24 04:43 PM] archielvahr#0000
+I kinda liked Tartarus. Other good ones:  Erebus, Moros, Oneiroi. Did we have other ideas?
+
+
+[30-Oct-24 04:46 PM] .urpalhal#0000
+Uh Jigoku (地獄)?
+
+
+[30-Oct-24 04:48 PM] sidepipe#0000
+I’m trying to think of something Greek/roman that fits with the many planets theme, but no good ones so far
+
+
+[30-Oct-24 04:48 PM] .urpalhal#0000
+Let’s see
+
+
+[30-Oct-24 04:48 PM] .urpalhal#0000
+Uh Tooiba
+
+
+[30-Oct-24 04:48 PM] .urpalhal#0000
+遠い場
+
+
+[30-Oct-24 04:49 PM] .urpalhal#0000
+Or uh Enba
+
+
+[30-Oct-24 04:49 PM] .urpalhal#0000
+Idk
+
+
+[30-Oct-24 04:50 PM] archielvahr#0000
+If we name it with non ascii characters no one else could ever fly there 😆
+
+
+[30-Oct-24 04:50 PM] sidepipe#0000
+Translate for us poor monolinguals? (Or bilinguals who don’t speak the right language 😄)
+
+
+[30-Oct-24 04:50 PM] .urpalhal#0000
+Well name it in English
+
+
+[30-Oct-24 04:50 PM] akyantor#0000
+I feel like greek/roman fits the theme that's developed.
+
+
+[30-Oct-24 04:50 PM] .urpalhal#0000
+It means far place
+
+
+[30-Oct-24 04:50 PM] akyantor#0000
+Tartarus is probably my preference of the ideas so far.
+
+
+[30-Oct-24 04:50 PM] .urpalhal#0000
+There are a lot of Japanese names in the galaxy tbf
+
+
+[30-Oct-24 04:51 PM] sidepipe#0000
+https://en.m.wikipedia.org/wiki/Hyperborea
+
+{Embed}
+https://en.m.wikipedia.org/wiki/Hyperborea
+Hyperborea
+In Greek mythology, the Hyperboreans (Ancient Greek: ὑπερβόρε(ι)οι, romanized: hyperbóre(i)oi, pronounced [hyperbóre(ː)oi̯]; Latin: Hyperborei) were a mythical people who lived in the far northern part of the known world. Their name appears to derive from the Greek ὑπέρ Βορέᾱ, "beyond Boreas" (the God of the north wind) or "beyond Boreas". Some ...
+https://images-ext-1.discordapp.net/external/8PPCyfIEW6ZVLH4otfTYNx0of76Iylt5dRdhn6n72OI/https/upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mercator_Septentrionalium_Terrarum_descriptio.jpg/1200px-Mercator_Septentrionalium_Terrarum_descriptio.jpg
+
+
+[30-Oct-24 04:51 PM] archielvahr#0000
+https://translate.google.com/?sl=en&tl=el&text=faraway&op=translate
+
+{Embed}
+https://translate.google.com/?sl=en&tl=el&text=faraway&op=translate
+Google Translate
+Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages.
+
+
+[30-Oct-24 04:51 PM] archielvahr#0000
+wow that's a mouthful of a word right there
+
+
+[30-Oct-24 04:52 PM] akyantor#0000
+Nyx - goddess of the night
+
+
+[30-Oct-24 04:52 PM] archielvahr#0000
+Since it's very far to the south:
+https://en.m.wikipedia.org/wiki/Notus
+
+
+[30-Oct-24 04:53 PM] archielvahr#0000
+Notus is the greek god of the south wind
+
+
+[30-Oct-24 04:53 PM] archielvahr#0000
+I like the greek scheme too because it reenforces that this is an extension of antares
+
+
+[30-Oct-24 04:53 PM] akyantor#0000
+That's kind of fitting
+
+
+[30-Oct-24 04:54 PM] archielvahr#0000
+"Notus" isn't quite as good as "Nyx" or "Tartarus" as a word though, in my opinion. But It's nto bad.
+
+
+[30-Oct-24 04:54 PM] akyantor#0000
+Agreed
+
+
+[30-Oct-24 05:09 PM] exeler#0000
+Notus. We didn't build down there, it totally wasn't us.
+
+{Reactions}
+🤣 
+
+[31-Oct-24 06:00 AM] melon164#0000
+I really like Nyx.  Tartarus is also good but less unusual
+
+
+[31-Oct-24 02:57 PM] shinonomesciences#0000
+I don’t even have a base here, but Nyx sounds cooler
+
+
+[31-Oct-24 11:18 PM] hernanduer#0000
+I like Nyx
+
+
+[31-Oct-24 11:18 PM] hernanduer#0000
+reminds me of the carrier from Eve too
+
+
+[01-Nov-24 07:19 AM] archielvahr#0000
+I like Nyx too
+
+
+[01-Nov-24 07:20 AM] archielvahr#0000
+After we name the system, I will make sure it gets updated in PMMG. PMMG still doesn't have Romulan listed
+
+
+[01-Nov-24 11:24 AM] akyantor#0000
+It does seem like Nyx has a bit of momentum. I think I probably prefer how it sounds over Tartarus, if honest.
+
+
+[01-Nov-24 04:42 PM] akyantor#0000
+It's done. I wonder if it'll make more folks notice what we're up to 🙂
+
+{Reactions}
+🎉 
+
+[01-Nov-24 04:48 PM] archielvahr#0000
+🎉
+
+
+[12-Nov-24 04:16 PM] archielvahr#0000
+An update for new folks: All the planets in Nyx have open workers, and could support new bases. The COGC breakdown for planets in Project-6115 is here: 
+https://discord.com/channels/854795108720443393/1255916963109015704/1292678221053300899
+
+
+[12-Nov-24 04:17 PM] archielvahr#0000
+And if you are a looking for production ideas that work well out on Nyx, here's a list of what others are doing.
+
+
+[12-Nov-24 04:17 PM] archielvahr#0000
+https://discord.com/channels/854795108720443393/1255916963109015704/1292670665165635637
+
+
+[12-Nov-24 04:21 PM] akyantor#0000
+I'm going to get a base out there soon, just need my new ship which will be better setup for long range FTL
+
+
+[12-Nov-24 04:25 PM] sidepipe#0000
+I'll be filling out to a full 500/500 of LABs on Nyx B soon 🙂
+
+
+[12-Nov-24 04:25 PM] archielvahr#0000
+My puddlejumper will be done in 2 or 3 days, so I can move stuff around in system after that.
+
+
+[12-Nov-24 04:25 PM] archielvahr#0000
+Yeah it works great for labs
+
+
+[12-Nov-24 04:26 PM] sidepipe#0000
+I can't wait to get my own STL ship out there. right now I only move stuff between C and D once a week when I fly out there 🙃
+
+
+[12-Nov-24 04:26 PM] akyantor#0000
+Probably going to do labs first on Nyx b
+
+
+[12-Nov-24 04:26 PM] akyantor#0000
+but going to research options this weekend
+
+
+[18-Nov-24 10:10 AM] archielvahr#0000
+Anyone have some OFF they can bring to Nyx b and c?
+
+
+[18-Nov-24 10:13 AM] hernanduer#0000
+negative
+
+
+[18-Nov-24 11:04 AM] sidepipe#0000
+I’ve got 149 at ANT, but that’s probably not enough to be useful
+
+
+[18-Nov-24 11:04 AM] sidepipe#0000
+I can buy more and bring it out if that helps, but I’ve only got my slow ships near ANT right now, so it might take two days
+
+
+[18-Nov-24 11:13 AM] archielvahr#0000
+That's okay, if no one else has any, I can do that in the next couple days too.
+
+
+[18-Nov-24 11:15 AM] sidepipe#0000
+i can send you mine if you want to take it along 🙂
+
+
+[18-Nov-24 11:57 AM] archielvahr#0000
+Sure 🤷‍♂️
+
+
+[18-Nov-24 11:57 AM] archielvahr#0000
+I ran out of SFK so I guess I gotta send some stuff up anyway
+
+
+[20-Nov-24 09:54 AM] archielvahr#0000
+My Nyx puddlejumper is complete, so if anyone needs things shuffled around in system, I have plenty of capacity!
+
+{Reactions}
+🙌 (3) 
+
+[24-Nov-24 12:10 PM] shinonomesciences#0000
+Is there some sort of master plan for the COGCs of the surrounding planets?
+
+
+[24-Nov-24 12:10 PM] shinonomesciences#0000
+Many of them are double greens but completely uninhabited
+
+
+[24-Nov-24 12:10 PM] marat_sh#0000
+yeah, in pinned message
+
+
+[24-Nov-24 12:12 PM] shinonomesciences#0000
+Ah, rhanks
+
+{Reactions}
+👍 
+
+[24-Nov-24 01:37 PM] archielvahr#0000
+Yeah, I basically ran out of permits to start any of the others, but feel free to go for it!
+
+
+[24-Nov-24 01:40 PM] archielvahr#0000
+And 099a and 099e, since they haven't been built could change
+
+
+[24-Nov-24 08:50 PM] sidepipe#0000
+Posting a few deliveries back and forth between OS-099c and OS-099d if you have any spare capacity for your ship 🙂
+
+
+[24-Nov-24 08:52 PM] sidepipe#0000
+all on OS-099c LM. no worries if you cant take any!
+
+
+[24-Nov-24 09:07 PM] archielvahr#0000
+Can do!
+
+{Reactions}
+🙏 
+
+[03-Dec-24 03:38 PM] shinonomesciences#0000
+Are there any plans to build a gateway to Nyx?
+
+
+[03-Dec-24 04:32 PM] archielvahr#0000
+So the devs said that "in the future" you can make corp owned infrastructure, including gateways
+
+
+[03-Dec-24 04:32 PM] archielvahr#0000
+There's no idea when "in the future" will be when they say stuff like that
+
+
+[03-Dec-24 04:32 PM] archielvahr#0000
+But I think that's a better match for some of those projects in some ways.
+
+
+[03-Dec-24 04:33 PM] archielvahr#0000
+Like probably no one can steal a gateway from a planet on Nyx, so from a control perspective we're fine there.
+
+
+[03-Dec-24 04:33 PM] archielvahr#0000
+The intermediate gates.. 🤷‍♂️
+
+
+[03-Dec-24 04:33 PM] archielvahr#0000
+Also the costs and upkeep costs are bonkers, now that they came out with upkeep costs.. I really wasn't expecting that
+
+
+[03-Dec-24 04:34 PM] roche3950#0000
+Taking a look through here — is this some sort of deep space initiative? 😄
+
+
+[03-Dec-24 04:34 PM] archielvahr#0000
+So... it'd take like 3 or 4 gates each direction to get to Nyx. We'd need like 100 people there to even begin considering it
+
+
+[03-Dec-24 04:34 PM] roche3950#0000
+would ***love*** to get involved
+
+
+[03-Dec-24 04:34 PM] archielvahr#0000
+Yeah!
+
+
+[03-Dec-24 04:34 PM] archielvahr#0000
+We recently named the system Nyx
+
+
+[03-Dec-24 04:34 PM] roche3950#0000
+Are there any meaningful systems nearby? :o
+
+
+[03-Dec-24 04:35 PM] archielvahr#0000
+Take a look at the pin: https://discord.com/channels/854795108720443393/1255916963109015704/1292678221053300899
+
+
+[03-Dec-24 04:35 PM] roche3950#0000
+I know I blathered on about system names to you Archiel but I came up with Something Better™️
+
+
+[03-Dec-24 04:35 PM] roche3950#0000
+Thanks!
+
+
+[03-Dec-24 04:35 PM] archielvahr#0000
+basically Nyx (formerly OS-099) is the only system in the game to have 3 triple green planets
+
+
+[03-Dec-24 04:35 PM] roche3950#0000
+Oh wow
+
+
+[03-Dec-24 04:35 PM] roche3950#0000
+Yeah uh
+
+
+[03-Dec-24 04:36 PM] roche3950#0000
+this, this right here
+I’m in
+
+
+[03-Dec-24 04:36 PM] archielvahr#0000
+if you scroll though everything you can find discussions of other nearby resources, but after going over them there are a few options, basically we settled on the COGCs above.
+
+
+[03-Dec-24 04:37 PM] archielvahr#0000
+And I find it to be really good for low-shipping production. Labs, plastics / PPFs, and electronics
+
+
+[03-Dec-24 04:37 PM] archielvahr#0000
+There's a 10m base establishment fee, but we reimburse it
+
+
+[03-Dec-24 04:38 PM] archielvahr#0000
+Definitely happy to get more of our new folks out on the planets! Especially while you have cheap permits, it makes it easy 😄
+
+
+[03-Dec-24 04:39 PM] marat_sh#0000
+Upkeep is kinda wild not gonna lie. I assume that gate way will much closer to the planet (~5min to get to) and have near instant transfer speed (unless they already said something about speed)
+
+
+[03-Dec-24 04:40 PM] archielvahr#0000
+Yeah they said it will be "similar to a normal FTL jump". So I interpret that as... it saves 4 jumps of time by doing a single jump
+
+
+[03-Dec-24 04:40 PM] archielvahr#0000
+(or however many jumps were spanned)
+
+
+[03-Dec-24 04:40 PM] roche3950#0000
+I was actually looking at the PB sector for a deep space project way down the line, for funsies
+
+
+[03-Dec-24 04:48 PM] archielvahr#0000
+These are my setups, if you are looking for ideas
+
+
+[03-Dec-24 04:48 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1313637996339134546/image.png?ex=6814a2f8&is=68135178&hm=747b9419d2a467a386be24e5f9d85457a0441ff0f6fe0db6d43311870dabcbf0&
+
+
+[03-Dec-24 04:48 PM] archielvahr#0000
+come on down anytime 😉
+
+
+[03-Dec-24 04:48 PM] archielvahr#0000
+I have a STL ship in system, so I can ferry things between planets, just ping me
+
+
+[03-Dec-24 04:50 PM] archielvahr#0000
+I've been thinking about offering base teleports but I'v ebeen too busy to organize that, and plan out the production for them
+
+
+[03-Dec-24 04:54 PM] roche3950#0000
+martian medical
+
+
+[03-Dec-24 04:55 PM] roche3950#0000
+:ssun:
+
+
+[03-Dec-24 04:55 PM] roche3950#0000
+Are the next-door systems in wide use yet? Otherwise I may ask for an … arrangement with the devs ;p
+
+
+[03-Dec-24 05:00 PM] melon164#0000
+CST?!
+
+
+[03-Dec-24 05:00 PM] archielvahr#0000
+just need a lil bit
+
+
+[03-Dec-24 05:01 PM] archielvahr#0000
+I made some AFPs and then I made 40 STS and figured I better make something else, so I'm gonna make a few cryo units
+
+
+[03-Dec-24 05:02 PM] archielvahr#0000
+I guess we could build our immortality center
+
+
+[03-Dec-24 05:02 PM] archielvahr#0000
+they are pretty cheap these days
+
+
+[03-Dec-24 05:02 PM] archielvahr#0000
+I doubt they will ever do anything though 🤷‍♂️
+
+
+[03-Dec-24 05:05 PM] .urpalhal#0000
+Build it on the edge of the universe
+
+
+[03-Dec-24 05:07 PM] roche3950#0000
+Only thing that is nerve-wracking at a glance is no big source of TCO
+
+
+[03-Dec-24 05:07 PM] roche3950#0000
+And a lot of HSE planets
+
+
+[03-Dec-24 05:10 PM] archielvahr#0000
+Ah but I think the universe-wide requirement for TCO is pretty low, so I think it's more about finding one or two good chains than trying to be totally self sufficient out there.
+
+
+[03-Dec-24 05:11 PM] roche3950#0000
+Win conditions and all that 😄
+
+
+[03-Dec-24 07:56 PM] tyrandia#0000
+I love the system name.
+
+
+[04-Dec-24 08:53 AM] hernanduer#0000
+there's also this list here https://discord.com/channels/854795108720443393/1268241763886436394/1268254935988965428
+
+
+[04-Dec-24 08:53 AM] hernanduer#0000
+I've already populated 332c and 332d, I use 332d as a staging area to cut off 8-12 hours going all the way to Nyx and instead dump things from Ant there
+
+
+[04-Dec-24 08:53 AM] hernanduer#0000
+I have a ship that ferries between my 4 planets out there and that ship sits on 332d
+
+
+[04-Dec-24 12:03 PM] roche3950#0000
+Hey team — wanted to make a proposal. 
+
+@tyrandia and I are thinking of naming the planets in Nyx after some of the Slavic gods. It does break from the Greek theme we’ve tended to follow in Antares, however it could be a really cool addition and provide a bit of variety.
+
+Propose the following:
+Nyx b (chem) - **Svarog**
+Nyx c (mfg) - **Perun**
+Nyx d (elec) - **Veles**
+Ideas/suggestions/commentary? 😄 
+
+Note: yes, each player only gets one planet name by default, but we’d like to know if there is a third person that is interested in these planet names. Otherwise I might ask if the devs would kindly work with us on this.
+
+
+[04-Dec-24 12:14 PM] archielvahr#0000
+More names are always good! I googled em and they sound pretty cool. I am wondering about lining them up with the COGCs, but they don't have really strong associations. It says Svarog is associated with fire and blacksmithing. Not sure if that's closer to manufacturing or chemistry
+
+
+[04-Dec-24 12:14 PM] archielvahr#0000
+But yeah it sounds pretty cool to me
+
+
+[04-Dec-24 12:25 PM] roche3950#0000
+I mean, if we have a fourth person interested we could shift Svarog to a metallurgy world but I think it starts to be a very heavy ask with four people
+
+
+[04-Dec-24 12:25 PM] roche3950#0000
+four people who have *not yet whaled* asking them to whale
+
+
+[04-Dec-24 12:28 PM] roche3950#0000
+Unless I could strike some kind of deal to buy planet naming ‘tokens’ outright which I imagine would be met with a gracious but firm “no”
+
+
+[04-Dec-24 12:31 PM] archielvahr#0000
+Yeah it would be nice if they could do that, but they don't seem to be in a rush to allow people to gift a subscription, which seems more important.... so who knows
+
+
+[04-Dec-24 12:31 PM] archielvahr#0000
+wouldn't hurt to ask 😄
+
+
+[04-Dec-24 12:31 PM] archielvahr#0000
+But if you are willing to wait, someone with a name will probably show up at some point.
+
+
+[04-Dec-24 12:31 PM] roche3950#0000
+Would lead to a slippery slope of custom support deals, and I imagine they don’t want to spend a lot of time on that
+
+
+[04-Dec-24 12:32 PM] archielvahr#0000
+Also due to the shipping requirements with metals, we've mostly avoided metallurgy out there thus far
+
+
+[04-Dec-24 12:32 PM] roche3950#0000
+which makes sense
+
+
+[04-Dec-24 12:33 PM] katinga#0000
+https://tenor.com/view/whale-sighting-happily-surprising-scene-gif-4942416964390988474
+
+{Embed}
+https://tenor.com/view/whale-sighting-happily-surprising-scene-gif-4942416964390988474
+https://images-ext-1.discordapp.net/external/NgwBJf3cRzArPPuAiqQxLvAAfIYI7ftat9Q9LhAbEX0/https/media.tenor.com/RJb-CwZjqroAAAAe/whale-sighting-happily.png
+
+
+[04-Dec-24 12:34 PM] archielvahr#0000
+cause the ideal use case would be... EXT planet, SME planet, turn the metal into something small to ship to the CX. Might also need H2O planet + Agri planet + INC planet to help the SME along. Then what is the resulting product to ship back? maybe construction fabs? you'd probably also need chemistry. You could do AU and connectors, those ship great, but it's a lot of planets for a niche item.
+
+
+[04-Dec-24 12:35 PM] archielvahr#0000
+So you could ship up carbon and ship back SME products, but they aren't really rare/high margin enough to justify a 2d flight 🤷‍♂️
+
+
+[04-Dec-24 12:35 PM] archielvahr#0000
+But making NR out there is great 😄
+
+
+[04-Dec-24 12:35 PM] roche3950#0000
+Not to force my thinking onto it, but I’m largely imagining Nyx as a system where materials are being processed into final goods
+
+
+[04-Dec-24 12:35 PM] archielvahr#0000
+Yup
+
+
+[04-Dec-24 12:35 PM] roche3950#0000
+maybe the last two worlds which I am reading as “planned” to be Metallurgy and Construction?
+
+
+[04-Dec-24 12:39 PM] archielvahr#0000
+Yeah I think some people had ideas for using them. Maybe Hern? Or Melon?
+
+
+[04-Dec-24 12:40 PM] roche3950#0000
+Think construction also plays nicely with mfg for shipbuilding
+
+
+[04-Dec-24 12:40 PM] archielvahr#0000
+Hern has Titanium and potentially LST there?
+
+
+[04-Dec-24 12:41 PM] roche3950#0000
+Yeah I think I saw a crazy TIO source not far away
+
+
+[04-Dec-24 12:42 PM] roche3950#0000
+I’d also just generally argue against a second elec planet
+
+
+[04-Dec-24 12:42 PM] roche3950#0000
+I’ve just had the sense that there will be terrible cases of Dutch disease sooner rather than later
+
+
+[04-Dec-24 12:44 PM] roche3950#0000
+Yeah GM-332d is the one
+
+
+[04-Dec-24 12:46 PM] roche3950#0000
+should I take this as an indication of interest 😄
+
+
+[04-Dec-24 01:26 PM] hernanduer#0000
+I do mine all my TIO on 332d
+
+
+[04-Dec-24 01:27 PM] hernanduer#0000
+it's a very good TIO planet, I smelt a little there as well
+
+
+[04-Dec-24 01:27 PM] hernanduer#0000
+and TIO is pretty friendly for LCBs even
+
+
+[04-Dec-24 01:27 PM] archielvahr#0000
+Any plans to smelt it / use it in Nyx?
+
+
+[04-Dec-24 01:27 PM] hernanduer#0000
+that's the further plan
+
+
+[04-Dec-24 01:27 PM] hernanduer#0000
+either 099a or e
+
+
+[04-Dec-24 01:27 PM] archielvahr#0000
+We could make SFK products or plates on Nyx actually
+
+
+[04-Dec-24 01:28 PM] roche3950#0000
+😄
+
+
+[04-Dec-24 01:28 PM] archielvahr#0000
+LCBs are only 200t and use 1000t of AST. So it is a shipping saving
+
+
+[04-Dec-24 01:29 PM] hernanduer#0000
+yeah replacing Vulcan was kinda my hope (eventually)
+
+{Reactions}
+💯 
+
+[04-Dec-24 01:29 PM] hernanduer#0000
+then running ASMs out there with an SFK
+
+
+[04-Dec-24 01:29 PM] hernanduer#0000
+while the ASMs on Deimos deal with CTF and the like
+
+
+[04-Dec-24 01:33 PM] katinga#0000
+I mine and smelt TIO at SE-648
+
+
+[04-Dec-24 01:39 PM] roche3950#0000
+re: a construction planet
+Also consider people can expand using locally built materials. Maybe I’m just impatient, but I’d like not waiting two days to do a thing if I could help it 😄
+
+
+[04-Dec-24 06:01 PM] roche3950#0000
+Alternatively we could use **Mokosh** for a chemical world
+
+
+[04-Dec-24 06:03 PM] roche3950#0000
+but perhaps best for an agro-world down the line
+
+do stop me if I’m getting too rabbitholed, anyone 😄
+
+
+[04-Dec-24 06:04 PM] archielvahr#0000
+I will have to google that one when I get home
+
+
+[04-Dec-24 06:05 PM] roche3950#0000
+Only known through heavy inference to be sort of a life/nature goddess
+
+
+[04-Dec-24 06:11 PM] roche3950#0000
+And, fair warning, I am probably gonna get *way* too into encouraging colonization 😄
+
+
+[04-Dec-24 07:32 PM] shinonomesciences#0000
+If I settle on one of the undeveloped planets on Nyx, would anyone be willing to sponsor the planetary infrastructure costs?
+
+
+[04-Dec-24 07:47 PM] roche3950#0000
+that depends on the cogc you want :ablobgrin:
+
+
+[04-Dec-24 07:49 PM] roche3950#0000
+also I may or may not be planning like
+six months out
+lmfao
+
+
+[04-Dec-24 10:23 PM] archielvahr#0000
+You mean your production buildings? Probably! 
+
+I've been doing the POPI buildings so far on all 3 planets, and the upkeep, but it hasn't been very expensive
+
+
+[05-Dec-24 02:04 AM] shinonomesciences#0000
+I was hoping just PAC, COGC, and maybe a warehouse, but if you’re willing to sponsor the production buildings too I’ll take it!
+
+
+[05-Dec-24 05:48 AM] roche3950#0000
+What do you want to do on the planet? Just interested as I’m doodling up some plans and want to make sure we’re inline
+
+
+[05-Dec-24 06:05 AM] roche3950#0000
+clarifying: i’m just really excited to get out there, i don’t mean to put pressure on anyone
+
+
+[05-Dec-24 07:00 AM] archielvahr#0000
+Oh I missed the word “undeveloped” in your message
+
+
+[05-Dec-24 07:00 AM] archielvahr#0000
+Definitely can finish the other two
+
+
+[05-Dec-24 07:01 AM] roche3950#0000
+I still think a construction world would be really great 😄
+
+
+[05-Dec-24 07:02 AM] roche3950#0000
+I think if we can locally produce prefabs and redbar construction mats, it would be good for the area
+
+
+[05-Dec-24 12:30 PM] roche3950#0000
+Lots of potential mining worlds out there are just brutal, though 😦
+
+
+[05-Dec-24 12:44 PM] archielvahr#0000
+Yeah, I think having fabs up there has some value, but because you aren't constantly building / repairing, it's not too bad to ship them up. And I think you couldn't make all the variety everyone would need to be self sufficient (like all the bfabs, lfabs, rfabs, and afabs). Although it is a good way to "compress" metal. like if we set up AL out there and made lfabs, Rfabs need such a big mix of metals. that's what makes the SKFs appealing out there.
+
+
+[05-Dec-24 12:45 PM] archielvahr#0000
+Which planet and which cogc?  Nyx e and metallurgy?
+
+
+[05-Dec-24 12:45 PM] archielvahr#0000
+Nyx a is marked electronics, but with a compelling case I think we could change that
+
+
+[05-Dec-24 12:48 PM] roche3950#0000
+Could look into first making stuff for export before trying for self-sufficiency (again — my fixation, not something I am trying to force), yeah.
+
+
+[05-Dec-24 12:48 PM] roche3950#0000
+I may have spent a couple hours last night planning like 15-20 permits heh
+
+
+[05-Dec-24 12:50 PM] archielvahr#0000
+It's nice to have a plan 😄
+
+
+[05-Dec-24 12:52 PM] roche3950#0000
+Like I said, this was just something I was thinking about really hard in the first place.
+
+
+[05-Dec-24 12:52 PM] roche3950#0000
+I’d like to make a couple points for such a case 😄
+
+
+[05-Dec-24 12:53 PM] roche3950#0000
+We have quite a few really strong mining worlds within a few jumps
+
+
+[05-Dec-24 12:54 PM] roche3950#0000
+Having metallurgy and maybe construction on the last two planets would allow us to take advantage of those great natural resources
+
+
+[05-Dec-24 12:56 PM] roche3950#0000
+But there is a counterpoint to be made in just needing *so many* electronics buildings to integrate meaningfully
+
+
+[05-Dec-24 12:57 PM] roche3950#0000
+However, *discouraging* that (edit: that = single player electronics integration, encouraged by two worlds with elec cogcs) could encourage and provide gameplay opportunities for more people to come out to Nyx
+
+
+[05-Dec-24 01:07 PM] archielvahr#0000
+Oh mostly the electronics out there could support IDC and EDC farming, which needs no integration and almost no shipping, leaving closer worlds in ANT free for those other types of electronics work. Not sure if that really changes the math, just that was the initial thought.
+
+
+[05-Dec-24 01:07 PM] archielvahr#0000
+But yeah, I think everyone else should weigh in on their plans, cause we can definitely do more metal / const there, if there's enough interest
+
+
+[05-Dec-24 01:11 PM] roche3950#0000
+I think I mentioned my thoughts on I/EDC farming before 😛
+
+
+[05-Dec-24 01:19 PM] marat_sh#0000
+there is very little reason to go that distance for over 200t daily import/export
+
+
+[05-Dec-24 01:19 PM] marat_sh#0000
+IDC is like a no brainer
+
+
+[05-Dec-24 01:20 PM] marat_sh#0000
+maybe some chems and manufacturing
+
+
+[05-Dec-24 01:20 PM] roche3950#0000
+well the idea wouldn’t be to run back and forth from ANT every day but instead to develop local resources
+
+{Reactions}
+👍 (2) 
+
+[05-Dec-24 01:21 PM] roche3950#0000
+that’s kinda my whole pitch
+
+
+[05-Dec-24 01:27 PM] shinonomesciences#0000
+I'd really like a construction planet
+
+{Reactions}
+😄 
+
+[05-Dec-24 01:27 PM] shinonomesciences#0000
+That's kinda my specialization
+
+
+[05-Dec-24 01:28 PM] roche3950#0000
+care if I ask your opinion on the suggested planet names? :ablobgrin:
+
+
+[05-Dec-24 01:29 PM] roche3950#0000
+also my boss said nice things about me so Operation Name All The Things is a go
+
+
+[05-Dec-24 01:30 PM] shinonomesciences#0000
+Do you have some ideas for names somewhere?
+
+
+[05-Dec-24 01:30 PM] roche3950#0000
+https://discord.com/channels/854795108720443393/1255916963109015704/1313928677188436020
+
+
+[05-Dec-24 01:31 PM] roche3950#0000
+though Svarog would probably be reallocated to a metallurgy world if one is made
+
+
+[05-Dec-24 01:31 PM] shinonomesciences#0000
+I just realized Perun is the name of a Slavic diety
+
+
+[05-Dec-24 01:31 PM] shinonomesciences#0000
+I only know it from the defense youtuber
+
+
+[05-Dec-24 01:33 PM] roche3950#0000
+Hah
+
+
+[05-Dec-24 01:33 PM] roche3950#0000
+and a hell of a good one 🙂
+
+
+[05-Dec-24 01:37 PM] shinonomesciences#0000
+I think Svarog should be the name of the manufacturing world, as a nice sister planet to Hephaestus given their mythological association
+
+
+[05-Dec-24 01:38 PM] shinonomesciences#0000
+Well, I suppose metallury works too
+
+
+[05-Dec-24 01:39 PM] shinonomesciences#0000
+Perun seems better for electronics given that it's nominally electricity after all
+
+
+[05-Dec-24 01:40 PM] shinonomesciences#0000
+That's my two cents anyway
+
+
+[05-Dec-24 01:43 PM] roche3950#0000
+Ah, perhaps
+
+
+[05-Dec-24 01:44 PM] roche3950#0000
+I think Svarog is pretty on top for a metallurgy or mfg world, Perun is arguable for the electronics world
+
+
+[05-Dec-24 01:45 PM] roche3950#0000
+Veles for elec is more a play on magic and trickery
+
+
+[05-Dec-24 01:47 PM] roche3950#0000
+But I am open for rich, spirited debate to work out the very best schemes 😄
+
+
+[05-Dec-24 01:52 PM] roche3950#0000
+Perun for manufacturing may rest on starship components, a conventional “supreme goal”
+
+
+[05-Dec-24 02:05 PM] roche3950#0000
+Speaking of export/import — fuel resources besides GAL are the thing that we don’t seem to have strong extractors for in the area
+
+
+[05-Dec-24 02:09 PM] shinonomesciences#0000
+I think fuel is reasonably importable
+
+
+[05-Dec-24 02:09 PM] roche3950#0000
+I agree
+
+
+[05-Dec-24 02:10 PM] roche3950#0000
+Just had a think about preventing dead flights
+
+
+[05-Dec-24 08:06 PM] roche3950#0000
+also
+another cool idea for names, just sorta popped in my head; mythical creatures
+Pegasus, Chimera, Minotaur, etc. thoughts?
+
+
+[06-Dec-24 05:49 AM] roche3950#0000
+Would like to take an opinion poll on the planet names
+
+
+[06-Dec-24 05:49 AM] roche3950#0000
+Creatures or gods?
+
+{Reactions}
+🇬 🇨 (2) 
+
+[06-Dec-24 06:02 AM] roche3950#0000
+Creatures: Wyvern (maybe Dragon?), Hydra, Chimera, Manticore, Pegasus
+Gods: Svarog, Veles, Lada, Perun, Triglav
+
+
+[06-Dec-24 06:02 AM] roche3950#0000
+(a,b,c,d,e)
+
+
+[06-Dec-24 09:03 AM] melon164#0000
+Does anyone have TRU or LSE out at Nyx?  Reworking my Nyx b base to GF and it doesn't quite fit in my yacht 😭
+
+
+[06-Dec-24 09:37 AM] roche3950#0000
+(myself, I’m leaning towards the creatures now, but I’d like to start a project that the people want 😄)
+
+
+[06-Dec-24 10:57 AM] zipatsu#0000
+Creatures has my vote ✌️ (Saw the gods were all Slavic ones so quickly looked up some creatures: Azhdaya,  Stratim, Alkonost, Gamayun, Todorats. There's a bunch of nice looking names to be found there 😄 )
+
+
+[06-Dec-24 10:58 AM] roche3950#0000
+They are indeed Slavic gods ^^
+
+
+[06-Dec-24 10:59 AM] archielvahr#0000
+I have 137 TRU on B but no fabs
+
+
+[06-Dec-24 11:23 AM] archielvahr#0000
+Just lemme know how many you need
+
+
+[06-Dec-24 02:50 PM] melon164#0000
+I need 30.  Do you have any MCG there? 🙏   I only just remembered glass needs NA 😳
+
+
+[06-Dec-24 02:51 PM] archielvahr#0000
+Yep, got 1500 MCG
+
+
+[06-Dec-24 02:51 PM] archielvahr#0000
+and 24 NA!
+
+
+[06-Dec-24 02:53 PM] archielvahr#0000
+I occasionally make CL there, so you can definitely have my NA
+
+
+[06-Dec-24 07:56 PM] roche3950#0000
+Curious if you're importing water by the tanker-load or drilling locally
+
+
+[06-Dec-24 07:56 PM] roche3950#0000
+Local water supply isn't the best
+
+
+[06-Dec-24 08:15 PM] archielvahr#0000
+Ah it's only 12 water a day... 16t per week, no problem
+
+
+[06-Dec-24 09:03 PM] roche3950#0000
+Thanks for the insight 😄
+
+
+[06-Dec-24 09:04 PM] roche3950#0000
+I'm drawing up my Master Plan™️ for the millionth time
+
+
+[06-Dec-24 09:08 PM] roche3950#0000
+Figuring out what should be a genuine import vs. what I should actually try to produce locally
+
+
+[06-Dec-24 09:16 PM] roche3950#0000
+No gold nearby :dread:
+edit: nearest meaningful gold deposit's just at Elon :Shibalaugh:
+
+
+[06-Dec-24 10:57 PM] shinonomesciences#0000
+I set up a bunch of FS to produce BGO, and only realized afterwards how heavy gold was 😅 .
+
+
+[06-Dec-24 11:16 PM] archielvahr#0000
+But if you can make the connectors onsite 🧑‍🍳 🤌
+
+
+[06-Dec-24 11:48 PM] shinonomesciences#0000
+OH
+
+
+[11-Dec-24 12:24 PM] archielvahr#0000
+I have a ADM / COGC I can send to Nyx planet E
+
+
+[11-Dec-24 12:25 PM] archielvahr#0000
+I don't have plans for a base there though, so someone else will need a base there to take governorship
+
+
+[11-Dec-24 03:03 PM] shinonomesciences#0000
+I don't really have a good grasp on the Nyx economy, did you have anything specific in mind to produce on Nyx e?
+
+
+[11-Dec-24 03:21 PM] archielvahr#0000
+I was hoping you had a plan 😆
+
+
+[11-Dec-24 03:23 PM] archielvahr#0000
+I had construction in my head, because I thought you or someone suggested that.  But I don't have plans to do anything there.
+
+The original plan was: planet A -> electronics, planet e -> metallurgy.
+
+
+[11-Dec-24 03:27 PM] shinonomesciences#0000
+Oh I was thinking specifically about metallurgy, but if you don’t mind a different cogc, I’ll take a look around at construction
+
+
+[11-Dec-24 03:27 PM] archielvahr#0000
+I have enough for two so if you can do two permits you can do one of each
+
+
+[11-Dec-24 03:27 PM] archielvahr#0000
+whichever has larger area buildings should go on planet A
+
+
+[11-Dec-24 03:45 PM] roche3950#0000
+What’s the actual range of gateways, anyway? No reason 😇
+
+
+[11-Dec-24 03:53 PM] shinonomesciences#0000
+What's your price for a pond hopper on nyx?
+
+
+[11-Dec-24 03:55 PM] archielvahr#0000
+zeeeeeeeeeeeeeerooooo!
+
+{Reactions}
+🥳 
+
+[11-Dec-24 03:56 PM] archielvahr#0000
+25 parsecs. Hehe it takes 3 sets to get most of the way to Nyx. 4 if you want the whole route
+
+
+[11-Dec-24 04:29 PM] shinonomesciences#0000
+That sounds horrifically expensive
+
+
+[11-Dec-24 05:24 PM] roche3950#0000
+I want to connect Nyx to another part of space :)
+
+
+[11-Dec-24 05:24 PM] roche3950#0000
+The Antarean Empire grows :hist101:
+
+
+[11-Dec-24 05:28 PM] roche3950#0000
+Are people figuring out interstellar distance just by taking a known distance and scaling it?
+
+
+[11-Dec-24 05:28 PM] roche3950#0000
+or is there some calculation we can access somewhere
+
+
+[11-Dec-24 07:09 PM] archielvahr#0000
+You can use the gateway plotter on the OOG map
+
+
+[11-Dec-24 07:10 PM] archielvahr#0000
+I calculate it from the system stars payload from Fio.
+
+
+[11-Dec-24 07:10 PM] archielvahr#0000
+https://oogcapitalmanagement.com/map/
+
+
+[11-Dec-24 07:10 PM] archielvahr#0000
+The tool is rough so I hope you can figure it out without instructions 😄
+
+
+[11-Dec-24 09:35 PM] sidepipe#0000
+we did it again 😱
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1316609249291534468/image.png?ex=6814e62a&is=681394aa&hm=ad257551efd91fd8b9e1cf752a3ef082db1832908b2ed3a70d372d1d04fc814e&
+
+
+[11-Dec-24 09:35 PM] sidepipe#0000
+I really should make a cogc voting screen
+
+
+[11-Dec-24 09:36 PM] archielvahr#0000
+😭
+
+
+[11-Dec-24 09:36 PM] archielvahr#0000
+Also... I can't build a ADM/COGC without a base, forgot about that
+
+
+[12-Dec-24 01:41 AM] melon164#0000
+OS-099 <--> AU-709 <--> EW-238 <--> AntI or AntII
+
+
+[12-Dec-24 01:43 AM] melon164#0000
+23.98pc, 24.75pc and ~23pc respectively
+
+
+[12-Dec-24 01:44 AM] melon164#0000
+I'll happily pay for a gate on EW-238c
+
+
+[12-Dec-24 09:21 AM] archielvahr#0000
+woaaaaah nice find
+
+
+[12-Dec-24 09:21 AM] archielvahr#0000
+I always tried to go through WU, I think
+
+
+[12-Dec-24 09:22 AM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1316787211647320144/image.png?ex=6814e327&is=681391a7&hm=1e181f7f9039c826d8eaf78b1c4bfebea043703e80539f04c93c64c67b4b8780&
+
+
+[12-Dec-24 09:23 AM] archielvahr#0000
+I think the capital cost would be achievable for us, long term. But the 500k per week upkeep makes the long term viability tough
+
+{Reactions}
+👍 
+
+[12-Dec-24 09:25 AM] archielvahr#0000
+6 gates is 3m per week, so we'd need 100s of bases for the upkeep to be proportional to the time savings
+
+
+[12-Dec-24 09:53 AM] hernanduer#0000
+just the ZV-307 to EW-238 would save a bucket of time
+
+
+[12-Dec-24 11:57 AM] archielvahr#0000
+Yeah. There's probably a handful of other people who would use that jump also
+
+
+[12-Dec-24 04:03 PM] melon164#0000
+How do you make these multi-hop images?  Is it a composite?
+
+
+[12-Dec-24 04:20 PM] archielvahr#0000
+nope, the new update allows you to make multiple
+
+{Reactions}
+👀 
+
+[12-Dec-24 04:20 PM] archielvahr#0000
+https://oogcapitalmanagement.com/map/
+
+{Embed}
+https://oogcapitalmanagement.com/map/
+OOG Prosperous Universe Map
+OOG Prosperous Universe Map - An interactive map for the Prosperous Universe game
+https://images-ext-1.discordapp.net/external/ql9MbBt7a1i_ms-7vTDNkDlZrWIgdHpcbQtxx_tcYBw/https/oogcapitalmanagement.com/images/computer-console-narrow.png
+
+
+[12-Dec-24 04:20 PM] archielvahr#0000
+Click "Pathfinding", click the first system, click the second. It will draw the link.
+
+
+[12-Dec-24 04:20 PM] archielvahr#0000
+Now it keeps drawing links as you click more, but you can click "Clear Gateways" to reset them.
+
+
+[12-Dec-24 04:21 PM] archielvahr#0000
+So if you want to draw 8 gates and mess up the 7th one, you gotta start over, sorry 😆
+
+
+[12-Dec-24 04:21 PM] archielvahr#0000
+It's made in react and I really don't like react
+
+{Reactions}
+🤣 
+
+[12-Dec-24 07:50 PM] martin1194#0000
+How?
+
+
+[12-Dec-24 07:50 PM] martin1194#0000
+It have Jump Gate now?
+
+
+[12-Dec-24 08:57 PM] archielvahr#0000
+Nah they aren’t out. That’s just a proposed path
+
+
+[10-Jan-25 08:07 PM] sidepipe#0000
+@archielvahr are you still interested in having someone take over on some of the Nyx planets? I saw the election on B just started
+
+
+[10-Jan-25 08:09 PM] archielvahr#0000
+Yup!
+
+
+[10-Jan-25 08:09 PM] archielvahr#0000
+Go for it
+
+
+[10-Jan-25 08:10 PM] archielvahr#0000
+They work great as a package deal if you want all three 😁
+
+
+[12-Jan-25 11:38 AM] sidepipe#0000
+Sounds good, I’ll jump into the elections as they come up - I have 3 bases there, so I make enough trips out that I’ll have space for COGC stuff 😄
+
+
+[12-Jan-25 11:40 AM] archielvahr#0000
+Awesome thanks!
+
+
+[12-Jan-25 11:41 AM] archielvahr#0000
+I will have a supply of cogc mats too if you run out ever
+
+
+[12-Jan-25 11:41 AM] archielvahr#0000
+Just ping me cause I probably won’t watch heh
+
+
+[12-Jan-25 11:47 AM] sidepipe#0000
+This is probably a good excuse to finally get my own STL ship out there 😄
+
+
+[12-Jan-25 09:45 PM] roche3950#0000
+What are you building out there, Archi? NR, right?
+
+
+[13-Jan-25 11:03 AM] archielvahr#0000
+Yep NR on the chem planet, on the manufacturing planets I make DCS and other plastics
+
+
+[13-Jan-25 11:03 AM] archielvahr#0000
+and on the electronics planet I mostly make OS
+
+
+[13-Jan-25 12:05 PM] roche3950#0000
+I think I may want to make/name my megasystem near that. What are you generally importing? Maybe we can make it locally.
+
+
+[13-Jan-25 12:27 PM] archielvahr#0000
+I import everything into Nyx. Which is really just PG, NCS, and EPO, or I make a little EPO and import a tiny bit of HAL on Nyx b, just so the ships don't fly up empty 😅
+
+
+[13-Jan-25 12:27 PM] roche3950#0000
+Duly noted!
+
+
+[13-Jan-25 12:28 PM] roche3950#0000
+🙂
+
+
+[13-Jan-25 12:37 PM] hernanduer#0000
+I have bases on 332c and 332d that provide me HAL and TIO, so my chem planet in 099 uses HAL that's locally sourced only
+
+
+[13-Jan-25 01:15 PM] roche3950#0000
+Locally sourced, grass fed?
+
+
+[13-Jan-25 01:15 PM] roche3950#0000
+I assume setting up for some consumables and supplies would be greatly appreciated (not to mention encouraging colonization)
+
+
+[13-Jan-25 04:08 PM] katinga#0000
+non GMO and Cage Free?
+
+
+[13-Jan-25 04:10 PM] archielvahr#0000
+The cages have not been genetically modified
+
+
+[13-Jan-25 04:14 PM] roche3950#0000
+EXT-to-CHM
+
+
+[14-Jan-25 11:07 PM] hernanduer#0000
+Workforce materials really aren't a big deal, running these planets has an expectation of taking some ships. I permanently have two ships on my 4, one goes from ant to 332d  and the other goes from 332d to the other 3 planets
+
+
+[19-Jan-25 10:36 AM] sidepipe#0000
+@archielvahr looks like you’re gov on Nyx B for another term 😆
+
+
+[19-Jan-25 10:37 AM] sidepipe#0000
+But I’m shipping out COGC mats and stuff so I can start picking up that and the POPI upkeep on B
+
+
+[19-Jan-25 11:05 AM] archielvahr#0000
+😭
+
+
+[19-Jan-25 12:06 PM] sidepipe#0000
+i forgot there were two seats for the planet, or I would have reminded you to drop out of the race 😅
+
+
+[19-Jan-25 12:06 PM] sidepipe#0000
+but I'll try to pick up everything so you only need to be the benevolent figurehead
+
+
+[22-Jan-25 06:28 PM] sidepipe#0000
+@archielvahr could you toss in some PE to the COGC on Nyx B? I managed to bring everything else but that
+
+
+[22-Jan-25 06:33 PM] sidepipe#0000
+not a big rush, it's still 7 days and I can definitely get some PE there by then, just thought I'd see if you had any 🙂
+
+
+[22-Jan-25 06:45 PM] archielvahr#0000
+Got it
+
+{Reactions}
+🫶 
+
+[22-Jan-25 06:45 PM] archielvahr#0000
+yup I got lots
+
+
+[29-Jan-25 04:09 PM] sidepipe#0000
+@archielvahr  - anything to know about the POPI on the different Nyx planets? I'm noticing that they're all filled slightly differently. Should I just carry on as they are right now? (safety and inf on B, safety, inf and art cafe on C, safety only on D)?
+
+
+[29-Jan-25 04:14 PM] archielvahr#0000
+uhhh that's entirely on accident 😅
+
+
+[29-Jan-25 04:15 PM] archielvahr#0000
+since we aren't currently growing them, they probably don't need to go super hard
+
+
+[29-Jan-25 04:15 PM] archielvahr#0000
+but DW in the cafe is cheap and easy 🤷‍♂️
+
+
+[29-Jan-25 04:17 PM] sidepipe#0000
+OFF isn't too expensive either
+
+
+[29-Jan-25 04:17 PM] sidepipe#0000
+maybe I'll just keep OFF and DW stocked in those building for each
+
+
+[29-Jan-25 04:17 PM] archielvahr#0000
+We should recruit other OOG people to come out here though, it's pretty great 😉
+
+
+[29-Jan-25 04:17 PM] sidepipe#0000
+I'm gonna expand my operations out here to do BMF instead of BWS
+
+
+[29-Jan-25 04:17 PM] archielvahr#0000
+If I had more mental bandwidth, I'd probably sponsor bases out here
+
+
+[29-Jan-25 04:18 PM] sidepipe#0000
+since these are probably never gonna sell
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1334286524518371337/image.png?ex=68149be9&is=68134a69&hm=03e342b6900d23188c56fa60fad435929dc82dbc2dfb0e6c4876891308f88057&
+
+
+[29-Jan-25 04:18 PM] sidepipe#0000
+I'll definitely finance bases out here if anyone's interested!
+
+{Reactions}
+💯 
+
+[29-Jan-25 04:21 PM] archielvahr#0000
+I never get my BWS vs BMF ratio correct heh
+
+
+[29-Jan-25 04:22 PM] sidepipe#0000
+I think I can safely do 100% BMF for a few years before I run out of these 😅
+
+{Reactions}
+😆 
+
+[29-Jan-25 04:35 PM] archielvahr#0000
+I am finally whittling down my LFE collection. I had like 120 at peak
+
+
+[30-Jan-25 07:52 AM] zipatsu#0000
+How's the H2O situation looking like over there? 😄
+
+
+[30-Jan-25 10:05 AM] archielvahr#0000
+Well I think GM-498a sorta counts as a project-6115 planet.. sorta! Same area. But yeah that's it 😅
+
+{Reactions}
+😄 
+
+[03-Feb-25 08:44 AM] hernanduer#0000
+If GM-332 counts... 😄
+
+
+[03-Feb-25 11:58 AM] roche3950#0000
+If you wanna help me set up a medical supersystem :D 🏥
+
+
+[03-Feb-25 12:01 PM] archielvahr#0000
+I think it's a good system for a lot of what you need!
+
+
+[03-Feb-25 12:01 PM] archielvahr#0000
+got a chem, manuf, and electronics!
+
+
+[03-Feb-25 12:04 PM] roche3950#0000
+Would definitely build stuff in Nyx too 😄
+
+
+[10-Feb-25 04:39 PM] archielvahr#0000
+@sidepipe  Run on Nyx d?
+
+
+[10-Feb-25 04:40 PM] sidepipe#0000
+Done 🙂
+
+{Reactions}
+🎉 
+
+[14-Feb-25 09:01 AM] sidepipe#0000
+I’m considering zeroing out all the taxes on the Nyx planets for the time being - it’s not much income, but the costs of the planet are so low that it’s basically not worth collecting anything for now
+
+
+[14-Feb-25 09:07 AM] archielvahr#0000
+Yeah that'd be totally fine. I probably just didnt' want to type in a bunch of numbers
+
+
+[11-Mar-25 05:09 AM] melon164#0000
+Looool, forgot that Nyx taxes are ICA 😹
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1348961021707943998/image.png?ex=681499da&is=6813485a&hm=8b3d1a1d8c0c7f1af9c124279471725e47f90ec6d8c1a6a21c471fdafe3025f4&
+
+{Reactions}
+givelove (2) 
+
+[11-Mar-25 09:18 AM] zipatsu#0000
+https://tenor.com/view/the-boondocks-sign-statue-of-liberty-costume-taxes-gif-4998164
+
+{Embed}
+https://tenor.com/view/the-boondocks-sign-statue-of-liberty-costume-taxes-gif-4998164
+pay yo taxes
+https://images-ext-1.discordapp.net/external/CU381ERT8uH0QUertDbWikMbjN4FlxywSBhyXA-j6rs/https/media.tenor.com/E7gRGG93yOYAAAAe/the-boondocks-sign.png
+
+
+[11-Mar-25 09:59 AM] sidepipe#0000
+That reminds me, I need to zero out the rest of the taxes on the Nyx planets 😄
+
+
+[23-Mar-25 06:01 PM] archielvahr#0000
+Any thoughts on opening up Nyx a bit? the system hasn't seen much action lately.
+
+
+[24-Mar-25 12:16 PM] hernanduer#0000
+hmmm, just need more corps interaction I think
+
+
+[24-Mar-25 12:17 PM] hernanduer#0000
+but I guess any interaction is fine as long as they pay the toll 😄
+
+
+[24-Mar-25 12:44 PM] sidepipe#0000
+Yeah, maybe we need to advertise a bit more internally too
+
+
+[24-Mar-25 12:45 PM] sidepipe#0000
+Tax free IDC base on Nyx D anyone? 😄
+
+
+[24-Mar-25 12:46 PM] sidepipe#0000
+But if we do open up to externals, I might consider bringing taxes back
+
+
+[24-Mar-25 01:11 PM] archielvahr#0000
+Yeah I think so.
+
+
+[24-Mar-25 01:11 PM] archielvahr#0000
+Maybe we just gotta remind all the new folks that Nyx exists 😉
+
+
+[24-Mar-25 04:27 PM] superbadsounds#0000
+I've been meaning to get something figured out for this project. I've got some spare permits, so maybe I can make something make sense
+
+
+[24-Mar-25 05:14 PM] archielvahr#0000
+This setup has been working really well for me: http://kortham.net/temp/firefox_2025-03-24_17-14-34.png
+
+{Embed}
+http://kortham.net/temp/firefox_2025-03-24_17-14-34.png
+https://images-ext-1.discordapp.net/external/P6fnGCJIe6TyaaTje9KFyKMFTTA9JWFaLHQxQthv-Q0/http/kortham.net/temp/firefox_2025-03-24_17-14-34.png
+
+
+[16-Apr-25 06:23 PM] sidepipe#0000
+I forgot to run on Nyx D, so if anyone happens to drop a base there in the next month, hit me up and I can reimburse you out of my own account (and pay myself back from the gov account next term)
+
+
+[16-Apr-25 06:27 PM] sidepipe#0000
+I added the elections to my (increasingly crowded) Nyx superscreen so this doesn't happen again
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1362207699617714409/image.png?ex=6814ac08&is=68135a88&hm=6c55762818e878b475bf8c6700430e30fab5110add6fa2bbf962292a3056ba13&
+
+
+[19-Apr-25 11:31 AM] hernanduer#0000
+Ooo I have a 6115 superscreen
+
+
+[19-Apr-25 12:30 PM] pagy1234#0000
+how big is your damn screen😭
+
+
+[19-Apr-25 12:30 PM] pagy1234#0000
+whole ass 75 inch TV
+
+
+[19-Apr-25 12:34 PM] sidepipe#0000
+34” wide monitor - I got a few of them from work when we moved offices
+
+
+[19-Apr-25 12:35 PM] sidepipe#0000
+My dream is to get a heavy-duty mount and stack both of them but my wife would judge me 😅
+
+
+[19-Apr-25 12:35 PM] pagy1234#0000
+oh damn, thats sick
+
+
+[19-Apr-25 12:35 PM] .urpalhal#0000
+It’s ok she can judge
+
+
+[19-Apr-25 12:36 PM] pagy1234#0000
+I generally play on a roughly 13 inch laptop
+
+
+[19-Apr-25 12:36 PM] pagy1234#0000
+my screes get kinda cramped sometimes
+
+{Reactions}
+😭 
+
+[19-Apr-25 12:37 PM] pagy1234#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1363206772201885938/Screenshot_2025-04-20_at_1.36.55_AM.png?ex=681502bd&is=6813b13d&hm=a678e298fb15ce6d72128c13817cbc0aae456b7992b213df78029bfe7b0ade24&
+
+
+[19-Apr-25 12:37 PM] sidepipe#0000
+I’ve got a laptop but I avoid playing Prun on it if at all possible
+
+
+[19-Apr-25 12:37 PM] sidepipe#0000
+I’m too used to the screen space now 😄
+
+
+[19-Apr-25 12:38 PM] pagy1234#0000
+haha, I can imagines, I used to play on my home computer, but it really limits when I can access the game
+
+
+[19-Apr-25 12:38 PM] pagy1234#0000
+got used to smaller screen now
+
+
+[19-Apr-25 12:43 PM] akyantor#0000
+tbh, it's not too bad on a macbook with a retina screen. That said, I do prefer when I can dock it up to my dual screen setup at my desk. 😛 *My COGC screen of doom*
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255916963109015704/1363208496052441368/image.png?ex=68150458&is=6813b2d8&hm=c664970eb6090b4b9e240f9113551c6505e0db0d0c961badf1639bcad7b97c48&
+
+{Reactions}
+😭 
+
+==============================================================
+Exported 1,143 message(s)
+==============================================================

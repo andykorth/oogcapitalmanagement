@@ -1,0 +1,1832 @@
+==============================================================
+Guild: APEX Chat
+Channel: Antares (AI) / norwick
+==============================================================
+
+[20-Jan-24 01:27 AM] ApexChat#8127
+**marismols**:	Just calculated that if only the cheapest supply is provided for upkeep of each infrastructure building, then the weekly cost is 125k. Weekly income is 160k. But looking at the happines numbers, planet is clearly in slow decline. So occasional boost will be necessary. Thanks to Numsgil and jvaler for helping with warehouse expansion. And thanks to Agavan for donating supplies!
+
+
+[20-Jan-24 12:06 PM] ApexChat#8127
+**RiseofFilth**:	https://media2.giphy.com/media/111ebonMs90YLu/200.gif
+
+{Embed}
+https://media2.giphy.com/media/111ebonMs90YLu/200.gif
+https://images-ext-1.discordapp.net/external/xSIhUmdr-lyXBJJrQH8VsCet2KHjZn_lWttY6qa4dp0/%3Fcid%3D73b8f7b1i0f8r9ktamncvkrctxuitzgslny1lsgfe3gr250k%26ep%3Dv1_gifs_gifId%26rid%3Dgiphy_s.gif%26ct%3Dg/https/media2.giphy.com/media/111ebonMs90YLu/giphy_s.gif
+
+
+[22-Jan-24 08:17 AM] ApexChat#8127
+**marismols**:	taxes collected 168k
+
+
+[01-Feb-24 01:10 AM] ApexChat#8127
+**marismols**:	Ok, looks like situation with Tech people could be better. I"m running the Technitian immigration support program, but it ends in 7 hours. Not sure how it works, when exactly we get those. But after that I will run festivities again. That will stop techs leaving the planet. According to Archiel's governor helper we should have better happines numbers. Still trying to figure it out. Anyway, the problem is noted and solution is coming :)
+
+
+[01-Feb-24 01:23 AM] ApexChat#8127
+**Numsgil**:	we alway appreciate your openness
+
+
+[01-Feb-24 01:35 AM] ApexChat#8127
+**Numsgil**:	I think the population only changes during POPR events, so it'll probably be about another week before new ones come, but I could be wrong
+
+
+[01-Feb-24 01:35 AM] ApexChat#8127
+**Numsgil**:	(or technically the planet gets 200 PIO when someone first settles, but only the new base can use them)
+
+
+[01-Feb-24 08:21 AM] ApexChat#8127
+**Paris_In_Springtime**:	Both points above are correct: new POPs only appear when the new POPR comes out (which will be in 7 days).
+
+
+[01-Feb-24 08:23 AM] ApexChat#8127
+**Paris_In_Springtime**:	However, the POPR is deceptive: The "Open Jobs" number is how many open jobs there were BEFORE the "Change". That means there are only 69 open jobs on the planet at the moment.
+
+
+[01-Feb-24 08:24 AM] ApexChat#8127
+**Paris_In_Springtime**:	Festivities are the worst thing imo, since they don't change the actual happiness of the planet, and so can lead to a death-spiral of migration if used too frequently. Also, you get all types of POPs, not just the ones you want. We're already over-filled with PIOs & SETs, and we'll just get more useless eaters with a Festivity.
+
+
+[01-Feb-24 08:25 AM] ApexChat#8127
+**Paris_In_Springtime**:	You're better off using Immigration to get new TECHs, while stabilising happiness to maintain current TECHs.
+
+
+[01-Feb-24 08:25 AM] ApexChat#8127
+**Paris_In_Springtime**:	(I also like how you're slowly bleeding off PIOs & SETs, which is hard to do in a controlled manner)
+
+
+[01-Feb-24 09:21 AM] ApexChat#8127
+**marismols**:	What do you mean by usless eaters? Does extra jobless pop increase any expenses?
+
+
+[01-Feb-24 09:22 AM] ApexChat#8127
+**marismols**:	My idea was that there are two ways to increase Tech pop - one by direct migration and second by education. If we use education then we need more sett and pio which in turn will increase the number of tech. Or am I wrong?
+
+
+[01-Feb-24 11:16 AM] ApexChat#8127
+**xflqr_**:	yes, but the unemployed PIO & SET will need upkeep too
+
+
+[01-Feb-24 11:17 AM] ApexChat#8127
+**xflqr_**:	so the more unemployment you have, the more you're "wasting" your upkeep
+
+
+[01-Feb-24 11:18 AM] ApexChat#8127
+**xflqr_**:	which is why you'll want to lower unemployment to decrease the costs
+
+
+[01-Feb-24 11:34 AM] ApexChat#8127
+**marismols**:	I gues you're right
+
+
+[01-Feb-24 03:48 PM] ApexChat#8127
+**Numsgil**:	I think 10-20% unemployment is the sweet spot if you want to easily allow new bases to come.  Sub 10% is too easy to end up with shortfall, and more than 20% seems wasteful with upkeep expenses
+
+
+[01-Feb-24 03:48 PM] ApexChat#8127
+**Numsgil**:	I'm not a governor, so just my 2 cents
+
+
+[01-Feb-24 05:45 PM] ApexChat#8127
+**DraconisDomini**:	It does depend a little on the population of the planet.  On a low population planet you might want a larger buffer percentage wise, but on a planet like Norwick I think 10% unemployed is about right to keep a buffer for new people arriving without having excessive numbers
+
+
+[01-Feb-24 05:46 PM] ApexChat#8127
+**DraconisDomini**:	That's what I aim for at Nascent
+
+
+[01-Feb-24 05:51 PM] ApexChat#8127
+**Numsgil**:	If you're really on top of things you might be okay with 10%, but I've seen a lot of pop reports go from 10% to a shortfall in 2-3 weeks
+
+
+[01-Feb-24 05:52 PM] ApexChat#8127
+**Numsgil**:	eg: ZV-307b about 60 days ago, settlers went from 9.2% unemployment to 0.9% in a week, then to a shortfall the week after
+
+
+[01-Feb-24 05:53 PM] ApexChat#8127
+**DraconisDomini**:	That's why I said it depends on population.  On Norwick, that 23% unemployed for PIO is about 15000 pops
+
+
+[01-Feb-24 05:53 PM] ApexChat#8127
+**Numsgil**:	sure
+
+
+[01-Feb-24 05:54 PM] ApexChat#8127
+**Numsgil**:	but ZV-307b is similar population-wise
+
+
+[01-Feb-24 05:54 PM] ApexChat#8127
+**DraconisDomini**:	On Ant IIg, which I also manage, the unemployment rate is about 27%, but that is less than 2000 pops
+
+
+[01-Feb-24 05:54 PM] ApexChat#8127
+**Numsgil**:	in terms of, say, settlers
+
+
+[01-Feb-24 05:55 PM] ApexChat#8127
+**Numsgil**:	we have a ton of pioneers here at Norwick, which skews those numbers, but our settler and tech populations aren't very large
+
+
+[01-Feb-24 05:56 PM] ApexChat#8127
+**DraconisDomini**:	It does depend on which population group you are looking at
+
+
+[01-Feb-24 05:57 PM] ApexChat#8127
+**DraconisDomini**:	On Nascent I have 63% SET unemployment, but there are only 360 of them, lol
+
+
+[01-Feb-24 06:00 PM] ApexChat#8127
+***DraconisDomini** deleted this message.*
+
+
+[01-Feb-24 06:02 PM] ApexChat#8127
+**DraconisDomini**:	I think what marismols is doing now - running tech immigration and letting PIO and SET drop, is probably the right way to go
+
+
+[01-Feb-24 06:12 PM] ApexChat#8127
+**Numsgil**:	yeah, agreed
+
+
+[02-Feb-24 04:03 AM] ApexChat#8127
+***user389d29158f** left.*
+
+
+[02-Feb-24 06:31 AM] ApexChat#8127
+**marismols**:	Now I feel I shouldn't have started festivities. Not much to do now. Will try to decrease the PIO and SET further on.
+
+
+[02-Feb-24 02:04 PM] ApexChat#8127
+**RiseofFilth**:	honestly, everything looks fine to me. Just keep pumping techs in. I'll happily pay for it
+
+
+[02-Feb-24 02:04 PM] ApexChat#8127
+**RiseofFilth**:	if pio/sets drop a bit, thats not a bad thing
+
+
+[03-Feb-24 10:04 PM] ApexChat#8127
+***Puppyfromps2** joined.*
+
+
+[05-Feb-24 02:05 AM] ApexChat#8127
+**marismols**:	Taxes 158k
+
+
+[05-Feb-24 11:26 PM] ApexChat#8127
+***Emperyan** joined.*
+
+
+[07-Feb-24 11:27 AM] ApexChat#8127
+***Frosty802** joined.*
+
+
+[10-Feb-24 02:20 AM] ApexChat#8127
+***Arson_Bettino** left.*
+
+
+[12-Feb-24 01:11 AM] ApexChat#8127
+**marismols**:	Taxes 165k
+
+
+[12-Feb-24 01:13 AM] ApexChat#8127
+**marismols**:	The plan is to upgrade Wildlife park to level 2. Donations are welcome, as taxes can't cover it. Have to get those tech workers up to the speed.
+
+
+[12-Feb-24 02:54 AM] ApexChat#8127
+**Andy97**:	I don't use techs but I can cover the entire upgrade within the week
+
+
+[12-Feb-24 02:57 AM] ApexChat#8127
+**Andy97**:	Just bought everything. I should have it here in the next 4-5 days.
+
+
+[12-Feb-24 03:01 AM] ApexChat#8127
+**marismols**:	Thanks, great!!
+
+
+[12-Feb-24 03:02 AM] ApexChat#8127
+**Andy97**:	Not a problem!
+
+
+[12-Feb-24 02:13 PM] ApexChat#8127
+**RiseofFilth**:	Hey Maris, just a heads up, I expect there to be another 200 additional TECH demand if you are able to pump the programs. If you send me a contract requesting the cost of the fees for them, i will pay
+
+
+[12-Feb-24 02:32 PM] ApexChat#8127
+**marismols**:	Thanks, man. I will see what I can do.
+
+
+[14-Feb-24 09:00 PM] ApexChat#8127
+**RiseofFilth**:	bah, missed popr by 5 minutes :/
+
+
+[14-Feb-24 09:01 PM] ApexChat#8127
+**RiseofFilth**:	Maris, that should be good on techs for now, I got another 70 on deficit that will be sorted next week. Wont need any more programs for the minute <3
+
+
+[14-Feb-24 09:01 PM] ApexChat#8127
+**RiseofFilth**:	Thank ya sir
+
+
+[15-Feb-24 01:26 AM] ApexChat#8127
+**marismols**:	good to know !
+
+
+[19-Feb-24 05:04 PM] ApexChat#8127
+***Rune-Cailliau** left.*
+
+
+[19-Feb-24 05:28 PM] ApexChat#8127
+**ChineseEarthquake**:	o7 Rune-Cailliau
+
+
+[20-Feb-24 06:48 PM] ApexChat#8127
+**martinc1194**:	LM shipment ad up  154.8t/129m  4000AIC
+
+
+[22-Feb-24 01:33 AM] ApexChat#8127
+**marismols**:	Looking at the pop report, all seems in check. Last taxes were 169k. I decided on the strategy that I run festivities program all the time, but instead decrease the amount of resources spent. Somehow I have a feeling that its more effective. Festivities program increase happiness of all pops by 20%, which I think would be more expensive to achieve by extra supplies. To keep the pop levels in check if they get too high I will just cap the levels of buildings.
+
+
+[22-Feb-24 01:42 AM] ApexChat#8127
+**marismols**:	And thanks to Agavan Taste for donating to zoo animals!
+
+
+[24-Feb-24 12:56 AM] ApexChat#8127
+***xunlong** left.*
+
+
+[25-Feb-24 05:53 AM] ApexChat#8127
+**marismols**:	Just run out of RAT. Can somebody help? LM
+
+
+[25-Feb-24 06:03 AM] ApexChat#8127
+**xflqr_**:	yeah sure :)
+
+
+[25-Feb-24 06:03 AM] ApexChat#8127
+**marismols**:	thanks!
+
+
+[25-Feb-24 09:27 AM] ApexChat#8127
+***sidepipe** joined.*
+
+
+[26-Feb-24 12:39 PM] ApexChat#8127
+***FUC_Prozer** joined.*
+
+
+[01-Mar-24 08:18 AM] ApexChat#8127
+***Gravy** left.*
+
+
+[09-Mar-24 12:19 PM] ApexChat#8127
+***lukeskye** joined.*
+
+
+[15-Mar-24 02:15 AM] ApexChat#8127
+***Mai404** joined.*
+
+
+[15-Mar-24 05:17 AM] ApexChat#8127
+**marismols**:	bying some water (LM)
+
+
+[15-Mar-24 07:27 AM] ApexChat#8127
+***AedanDrake** left.*
+
+
+[18-Mar-24 06:15 PM] ApexChat#8127
+***user4e286954f6** left.*
+
+
+[19-Mar-24 12:52 AM] ApexChat#8127
+***kaosaur** joined.*
+
+
+[21-Mar-24 10:14 PM] ApexChat#8127
+**TuffyLess**:	buying on LM.  30 COF @ 800/u.
+
+
+[24-Mar-24 11:16 AM] ApexChat#8127
+***Cpt_BullDog** joined.*
+
+
+[28-Mar-24 12:29 PM] ApexChat#8127
+***ChineseEarthquake** left.*
+
+
+[30-Mar-24 09:50 AM] ApexChat#8127
+***Khendon_Kalmire** left.*
+
+
+[30-Mar-24 12:21 PM] ApexChat#8127
+***TheNoNinja** left.*
+
+
+[08-Apr-24 12:14 AM] ApexChat#8127
+***usera47b522386** left.*
+
+
+[08-Apr-24 05:48 AM] ApexChat#8127
+***Cherrybark** left.*
+
+
+[08-Apr-24 12:36 PM] ApexChat#8127
+**marismols**:	Hello, I'm planning to retire from the governors office after this term. So if anybody wants to sit in the chair, you have a good chance! If you have no experience, I will explain my method of running the planet. Good luck!!
+
+
+[08-Apr-24 12:38 PM] ApexChat#8127
+**marismols**:	Norwik needs you!! [Poster of Uncle Sam pointing a finger at you]
+
+
+[08-Apr-24 06:17 PM] ApexChat#8127
+**RiseofFilth**:	Thank you for your service marismol
+
+
+[12-Apr-24 03:03 AM] ApexChat#8127
+***appletalking** joined.*
+
+
+[12-Apr-24 03:19 PM] ApexChat#8127
+***australis** joined.*
+
+
+[13-Apr-24 08:09 AM] ApexChat#8127
+**Turlorn**:	i'm participating in the current elections as a candidate. i'll continue doing things just like my two predecessors did.
+
+
+[13-Apr-24 04:10 PM] ApexChat#8127
+**RiseofFilth**:	Thank you Turlorn for steppin up
+
+
+[13-Apr-24 05:59 PM] ApexChat#8127
+**Roh**:	@Turlorn feel free to boost taxes by 10% across the board, if you're running upkeep deficits weekly.
+
+
+[13-Apr-24 05:59 PM] ApexChat#8127
+**Roh**:	If you're good, then it's just EZ PZ routine stuff. :P
+
+
+[14-Apr-24 12:12 PM] ApexChat#8127
+**Turlorn**:	ok. i'll keep that in mind.
+
+
+[14-Apr-24 06:21 PM] ApexChat#8127
+**RiseofFilth**:	@Roh To be fair, it largely does not matter. He is in OOG. Changing taxes will not meaningfully increase his portion of the income
+
+
+[14-Apr-24 06:22 PM] ApexChat#8127
+**RiseofFilth**:	Hence the weakness of such a system
+
+
+[14-Apr-24 09:45 PM] ApexChat#8127
+**Churaviis**:	It results in lower taxes and is basically a way to subsidize the poorest in the corporation. We consider that a feature, not a bug.
+
+
+[14-Apr-24 11:41 PM] ApexChat#8127
+**RiseofFilth**:	Different strokes :)
+
+
+[15-Apr-24 09:24 PM] ApexChat#8127
+***LapsedNortonSubscription** joined.*
+
+
+[16-Apr-24 04:48 AM] ApexChat#8127
+**Roh**:	@RiseofFilth Ooph, I didn't notice the corp ticker.. :P
+
+
+[16-Apr-24 07:27 AM] ApexChat#8127
+**LapsedNortonSubscription**:	We need a new governor?
+
+
+[16-Apr-24 07:27 AM] ApexChat#8127
+**LapsedNortonSubscription**:	Ill only boost taxes by 9%
+
+
+[19-Apr-24 04:46 PM] ApexChat#8127
+**RiseofFilth**:	i feel like people underestimate how little taxes actually affect people, compared to how easy it is to make profit
+
+
+[19-Apr-24 06:12 PM] ApexChat#8127
+***LapsedNortonSubscription** deleted this message.*
+
+
+[19-Apr-24 06:12 PM] ApexChat#8127
+**LapsedNortonSubscription**:	Fine, taxes are going up to 105%
+
+
+[19-Apr-24 06:41 PM] ApexChat#8127
+**jvaler**:	hooray!
+
+
+[19-Apr-24 06:41 PM] ApexChat#8127
+**jvaler**:	btw sent u a dm
+
+
+[19-Apr-24 09:26 PM] ApexChat#8127
+**LapsedNortonSubscription**:	tyty
+
+
+[20-Apr-24 06:47 PM] ApexChat#8127
+**Roh**:	@RiseofFilth lets say that we cut-out the guesswork? I'm affected by only 50k in production taxes every week, with 8-10 mil in sales revenue, generated from such production. How about you?
+
+
+[20-Apr-24 06:53 PM] ApexChat#8127
+**Roh**:	For anyone else interested in these things, my facial tissue maths estimates daily base taxes, to be worth the weighted average (in POP terms) for your active production lines, times the established LR tax rate, rounded up. I'm fairly certain that's how it goes, even though I haven't seen it mentioned anywhere. I'm guessing it also depends on what you're doing. Tight margin/low profitability stuff might get incredibly sketchy with significant tax increases, in triple digit percentages, while those making stupid money might just not care at all. :/
+
+
+[21-Apr-24 01:51 PM] ApexChat#8127
+**RiseofFilth**:	@Roh Facial Tissue math, the nastier brother of Napkin math.
+
+
+[21-Apr-24 01:51 PM] ApexChat#8127
+***RiseofFilth** deleted this message.*
+
+
+[21-Apr-24 01:52 PM] ApexChat#8127
+**RiseofFilth**:	Children of "Paper Towel Math"
+
+
+[21-Apr-24 01:53 PM] ApexChat#8127
+**RiseofFilth**:	The sister is make up remover Math
+
+
+[21-Apr-24 01:54 PM] ApexChat#8127
+**RiseofFilth**:	Also, I got 300 techs and 700 pios at 160% efficency, so someone do that math on that. As for profit... lots? What kind of NERD actually squibbles over such pennies
+
+
+[21-Apr-24 01:55 PM] ApexChat#8127
+**RiseofFilth**:	All i know is im makin hand over fist money
+
+
+[21-Apr-24 08:16 PM] ApexChat#8127
+**Roh**:	its not like you have to plow the rice fields at harmonia, yourself.
+
+
+[04-May-24 02:01 AM] ApexChat#8127
+***trismo8** left.*
+
+
+[07-May-24 02:27 AM] ApexChat#8127
+**martinc1194**:	Looking for FF 30ea.  LMA YK-649b/770
+
+
+[07-May-24 02:28 AM] ApexChat#8127
+**martinc1194**:	in LM.
+
+
+[07-May-24 10:40 AM] ApexChat#8127
+**RiseofFilth**:	@Roh this is definitely not the game for anyone who dislikes the idea of capitalism 😂
+
+
+[09-May-24 05:56 AM] ApexChat#8127
+**Turlorn**:	the population is happy now and we got a small increase in pioneers, settlers and technicians.
+
+
+[10-May-24 02:59 PM] ApexChat#8127
+**Turlorn**:	i'm running again in the current election.
+
+
+[10-May-24 03:06 PM] ApexChat#8127
+**sidepipe**:	I’m voting again in the current election :)
+
+
+[10-May-24 03:10 PM] ApexChat#8127
+**Turlorn**:	thank you very much. :)
+
+
+[18-May-24 05:52 PM] ApexChat#8127
+***Hazzaah** joined.*
+
+
+[30-May-24 08:10 AM] ApexChat#8127
+**LapsedNortonSubscription**:	WTB 2 Power Tools 2.5k/each, ad up on LM
+
+
+[30-May-24 08:38 AM] ApexChat#8127
+**Churaviis**:	I got you
+
+
+[30-May-24 08:38 AM] ApexChat#8127
+**LapsedNortonSubscription**:	<3
+
+
+[30-May-24 08:38 AM] ApexChat#8127
+**LapsedNortonSubscription**:	tyty
+
+
+[30-May-24 10:43 AM] ApexChat#8127
+**jvaler**:	gourmet PT
+
+
+[30-May-24 12:15 PM] ApexChat#8127
+**LapsedNortonSubscription**:	savoring it rn
+
+
+[30-May-24 02:04 PM] ApexChat#8127
+**Turlorn**:	i'm letting happiness drop a bit to reduce unemployment.
+
+
+[30-May-24 03:03 PM] ApexChat#8127
+**Churaviis**:	Misery is an essential part of every productive peasants diet
+
+
+[03-Jun-24 11:32 AM] ApexChat#8127
+***DarkRain** left.*
+
+
+[05-Jun-24 01:25 PM] ApexChat#8127
+***DvorakDwarf** joined.*
+
+
+[08-Jun-24 09:33 AM] ApexChat#8127
+***roganartu** joined.*
+
+
+[08-Jun-24 04:53 PM] ApexChat#8127
+***Morduur** left.*
+
+
+[12-Jun-24 02:50 PM] ApexChat#8127
+***Frentic** joined.*
+
+
+[13-Jun-24 10:48 AM] ApexChat#8127
+***DarthBinks** joined.*
+
+
+[13-Jun-24 10:31 PM] ApexChat#8127
+***marchioro** joined.*
+
+
+[14-Jun-24 03:18 PM] ApexChat#8127
+**Turlorn**:	welcome to all the new players here.
+
+
+[14-Jun-24 03:19 PM] ApexChat#8127
+**marchioro**:	thanks, gov
+
+
+[14-Jun-24 03:22 PM] ApexChat#8127
+**Turlorn**:	we are lacking about 300 technicians. i'm running a technician immigration program. the rest should fill in through education after two weeks.
+
+
+[14-Jun-24 03:37 PM] ApexChat#8127
+**Frentic**:	hello o7
+
+
+[15-Jun-24 12:21 AM] ApexChat#8127
+***gbpack** joined.*
+
+
+[19-Jun-24 05:28 PM] ApexChat#8127
+**Hazzaah**:	Anyone have 4 RTA on world they can sell me before pop report?
+
+
+[21-Jun-24 12:27 PM] ApexChat#8127
+***cadillactica** joined.*
+
+
+[21-Jun-24 07:59 PM] ApexChat#8127
+**DvorakDwarf**:	Anybody have some AMM for sale ?
+
+
+[22-Jun-24 11:02 AM] ApexChat#8127
+**xflqr_**:	still need that RTA? just noticed i have exactly 4
+
+
+[22-Jun-24 11:49 AM] ApexChat#8127
+**Hazzaah**:	no, i got it in the next day, thanks though
+
+
+[26-Jun-24 07:59 AM] ApexChat#8127
+**LapsedNortonSubscription**:	This is one of the most important planets in the univers
+
+
+[26-Jun-24 08:00 AM] ApexChat#8127
+**LapsedNortonSubscription**:	Does OOG have a preference for a specific ticket, or is it a FFA rn
+
+
+[26-Jun-24 08:21 AM] ApexChat#8127
+**Hernanduer**:	We're looking to maintain existing governors where applicable, so Turlorn in this case
+
+
+[26-Jun-24 06:24 PM] ApexChat#8127
+**RiseofFilth**:	Turlorn would have my vote, were I not running to assist as a Parliamentarian. Existing governors who are competent, capable, and open to feedback should be supported.
+
+
+[30-Jun-24 09:31 AM] ApexChat#8127
+**Turlorn**:	our shortcoming of technicians is about to be amended in the coming week. we are currently lacking 81 technicians. down from 200+.
+
+
+[30-Jun-24 09:33 AM] ApexChat#8127
+**Turlorn**:	construction of a level 5 infirmary has commenced. this will allow us to achieve higher levels of health with simply providing office supplies.
+
+
+[01-Jul-24 04:32 PM] ApexChat#8127
+**Frentic**:	Is there anyone that can sell me 75 FIM for ask price? FIM.CI1? LM ad is up.
+
+
+[01-Jul-24 05:21 PM] ApexChat#8127
+**sidepipe**:	@Frentic yes, just did :)
+
+
+[01-Jul-24 05:33 PM] ApexChat#8127
+**Frentic**:	thank you so much!!!! :)
+
+
+[03-Jul-24 11:56 AM] ApexChat#8127
+**marchioro**:	some juicy shipping ads posted on ANT to deliver here
+
+
+[05-Jul-24 08:46 AM] ApexChat#8127
+**marchioro**:	ok, even juicier ads posted over there - with some bonus ad for the way back as well
+
+
+[05-Jul-24 10:13 AM] ApexChat#8127
+**marchioro**:	any good soul with some spare water willing to sell me some for 40 credits a unit?
+
+
+[05-Jul-24 10:13 AM] ApexChat#8127
+**marchioro**:	I have an ad up
+
+
+[05-Jul-24 10:30 AM] ApexChat#8127
+**marchioro**:	several ads up now, for 45
+
+
+[05-Jul-24 11:43 AM] ApexChat#8127
+**Churaviis**:	I got you
+
+
+[05-Jul-24 11:52 AM] ApexChat#8127
+**marchioro**:	thank you good sir, that relieves some of my pain
+
+
+[05-Jul-24 12:23 PM] ApexChat#8127
+***userf2345bc454** left.*
+
+
+[05-Jul-24 02:32 PM] ApexChat#8127
+**RiseofFilth**:	Just wanted to give a shout out to Turlorn. Ever since Marismol stepped aside, he has done a good job at managing things and I'd be happy to see him continue as Governor, and I'd be happy to serve alongside as a Parliamentarian. Please consider voting for him if he lacks the vote to get the top slot so he can continue his good work. Otherwise, I will happily take some votes as well!
+
+
+[05-Jul-24 09:13 PM] ApexChat#8127
+**TuffyLess**:	Marismols isnt even active anymore Rise.
+
+
+[05-Jul-24 09:15 PM] ApexChat#8127
+**TuffyLess**:	The politicking has become alittle thick as of late, no?
+
+
+[05-Jul-24 09:21 PM] ApexChat#8127
+**TuffyLess**:	Turlorn hasnt failed with his administration here.  The ousting attempt is obvious.
+
+
+[05-Jul-24 09:30 PM] ApexChat#8127
+**RiseofFilth**:	I... genuinely do not want to be governor here. I've made it clear where my priorities and that I stand behind Turlorn here, as I feel he is an effective governor.
+
+
+[05-Jul-24 09:31 PM] ApexChat#8127
+**RiseofFilth**:	I'm not sure how I can be more clear than that
+
+
+[05-Jul-24 09:31 PM] ApexChat#8127
+**Andy97**:	He seems to be a pretty straightforward guy. I imagine if he was trying to oust him he wouldn't be saying "Please consider voting for him if he lacks to vote to get the top slot so he can continue his good work."
+
+
+[05-Jul-24 09:31 PM] ApexChat#8127
+**Andy97**:	And I agree. Turlorn has done a good job.
+
+
+[05-Jul-24 09:35 PM] ApexChat#8127
+**RiseofFilth**:	Good governors should never be replaced usurped. Turlorn is good. My only wish here is to help and offer advice.
+
+
+[05-Jul-24 09:35 PM] ApexChat#8127
+**RiseofFilth**:	replaced/usurped
+
+
+[14-Jul-24 01:48 PM] ApexChat#8127
+**Roh**:	Keep good people whenever you can. A person in office who: communicates to their constituents regularly, starts needed POPR programs, and/or arranges/contributes to COGC/POPI needs, is a +100 in my book.
+
+
+[14-Jul-24 01:50 PM] ApexChat#8127
+**Roh**:	However, since voter turn-outs during election cycles have always been pretty much relegated to those who stay active in here, things can always change for the worse, when 61% of your voting base could actually vote, and pick someone else.
+
+
+[15-Jul-24 10:12 PM] ApexChat#8127
+**caskman**:	Just reading some earlier chat, I really don't understand how what Rise said could be misconstrued as trying to oust Turlorn.  That's some mind-bending logic
+
+
+[16-Jul-24 01:56 AM] ApexChat#8127
+***SFScorpio** joined.*
+
+
+[19-Jul-24 06:54 PM] ApexChat#8127
+***Spermatozoon_Saloon** joined.*
+
+
+[23-Jul-24 10:32 PM] ApexChat#8127
+**Spermatozoon_Saloon**:	Does anyone need a shipment taken to Harmonia or ANT? I've got a 450t / 450m³ departing in approx 24hrs available
+
+
+[23-Jul-24 10:36 PM] ApexChat#8127
+**Andy97**:	I'll send you a contract
+
+
+[23-Jul-24 10:37 PM] ApexChat#8127
+**Spermatozoon_Saloon**:	<3
+
+
+[23-Jul-24 10:39 PM] ApexChat#8127
+**Andy97**:	Sent
+
+
+[23-Jul-24 10:39 PM] ApexChat#8127
+**Andy97**:	400/400
+
+
+[31-Jul-24 01:45 PM] ApexChat#8127
+***user071a051676** left.*
+
+
+[02-Aug-24 01:38 PM] ApexChat#8127
+**Turlorn**:	unemployment of pioneers has sunken to 11%. i intend to keep it around that number. the unemployment for settlers has to decrease a little more.
+
+
+[02-Aug-24 01:41 PM] ApexChat#8127
+**RiseofFilth**:	I think Turlorn has continued to have done a great job, and am happy to see him continue as governor. I appreciate the votes and confidence so I can serve alongside in Parliament, but I very much advcocate that Turlorn be ensure of getting the top spot.
+
+
+[02-Aug-24 01:41 PM] ApexChat#8127
+**RiseofFilth**:	Thank you Turlorn for doing such a swell job, despite it being mostly thankless :)
+
+
+[02-Aug-24 01:42 PM] ApexChat#8127
+**Frentic**:	I can say the same, thank you Turlorn for a great job.
+
+
+[04-Aug-24 03:16 PM] ApexChat#8127
+***SurvivorBob** joined.*
+
+
+[07-Aug-24 11:51 PM] ApexChat#8127
+***Azean** joined.*
+
+
+[11-Aug-24 01:58 PM] ApexChat#8127
+***Fleetwood** joined.*
+
+
+[14-Aug-24 12:05 AM] ApexChat#8127
+***Numsgil** left.*
+
+
+[17-Aug-24 03:14 PM] ApexChat#8127
+***Zig88** joined.*
+
+
+[18-Aug-24 10:24 AM] ApexChat#8127
+***Razenpok** joined.*
+
+
+[21-Aug-24 09:47 PM] ApexChat#8127
+**Frentic**:	Hey homies, are there plans to increase max # of rented warehouse units? would love to use a bit more than 3 :) thanks o7
+
+
+[22-Aug-24 03:13 PM] ApexChat#8127
+**Turlorn**:	good catch. i'll upgrade the warehouse in the next few days.
+
+
+[22-Aug-24 03:48 PM] ApexChat#8127
+**Frentic**:	thanks Turlorn o7
+
+
+[24-Aug-24 05:01 AM] ApexChat#8127
+**Turlorn**:	warehouse has been upgraded from lvl 5 to lvl 7. fourth reantable unit has been unlocked.
+
+
+[24-Aug-24 08:24 AM] ApexChat#8127
+**Frentic**:	nice thank you!
+
+
+[24-Aug-24 08:39 AM] ApexChat#8127
+**Spermatozoon_Saloon**:	woot
+
+
+[26-Aug-24 05:25 PM] ApexChat#8127
+**Turlorn**:	is anyone extracting silicon ore on this planets?
+
+
+[26-Aug-24 08:59 PM] ApexChat#8127
+**LapsedNortonSubscription**:	god I hope not
+
+
+[26-Aug-24 11:44 PM] ApexChat#8127
+**RiseofFilth**:	Hyalos is for that!
+
+
+[26-Aug-24 11:44 PM] ApexChat#8127
+***RiseofFilth** deleted this message.*
+
+
+[26-Aug-24 11:44 PM] ApexChat#8127
+**RiseofFilth**:	but once upon a time, yes, i knew a pair of folks who did that
+
+
+[26-Aug-24 11:44 PM] ApexChat#8127
+**RiseofFilth**:	long ago
+
+
+[26-Aug-24 11:44 PM] ApexChat#8127
+**RiseofFilth**:	dark times
+
+
+[27-Aug-24 01:19 AM] ApexChat#8127
+***Laaxus** joined.*
+
+
+[30-Aug-24 10:01 AM] ApexChat#8127
+***userf6575a7bcb** left.*
+
+
+[03-Sep-24 08:15 AM] ApexChat#8127
+***Ravick** joined.*
+
+
+[03-Sep-24 09:12 AM] ApexChat#8127
+**Laaxus**:	If there's anybody with extra shipping capacity, I'd be glad to buy it. I'm having troubles to supply this base while my ship is comming back from Moria for its upgrade
+
+
+[03-Sep-24 09:13 AM] ApexChat#8127
+**Ravick**:	Hi all - just started here
+
+
+[03-Sep-24 09:13 AM] ApexChat#8127
+**Laaxus**:	hey
+
+
+[03-Sep-24 02:03 PM] ApexChat#8127
+**SillyOldJack**:	Hello!
+
+
+[03-Sep-24 04:33 PM] ApexChat#8127
+**Frentic**:	Hey @Ravick, welcome to our humble Food Processing planet.
+
+
+[03-Sep-24 05:54 PM] ApexChat#8127
+**Spermatozoon_Saloon**:	Welcome newcomers and may your RATs be succulent and juicy
+
+
+[04-Sep-24 12:08 PM] ApexChat#8127
+***Afka** left.*
+
+
+[05-Sep-24 09:34 AM] ApexChat#8127
+**Laaxus**:	Could anybody sell me 100 DW ?
+
+
+[05-Sep-24 09:34 AM] ApexChat#8127
+**Laaxus**:	put an add on the local market, it's above market rate (100/u)
+
+
+[05-Sep-24 09:40 AM] ApexChat#8127
+**Roh**:	someone already did
+
+
+[05-Sep-24 09:41 AM] ApexChat#8127
+**Laaxus**:	just put an add for rat
+
+
+[05-Sep-24 09:41 AM] ApexChat#8127
+**Laaxus**:	I also need a bit of rat to get my base started
+
+
+[05-Sep-24 09:41 AM] ApexChat#8127
+**Laaxus**:	I was out of input good for a while, and my pop consummed everything :sweat_smile:
+
+
+[05-Sep-24 09:42 AM] ApexChat#8127
+**Laaxus**:	Now that my ship finally upgraded, it should not happen again
+
+
+[05-Sep-24 09:48 AM] ApexChat#8127
+**Laaxus**:	well thank you both of you
+
+
+[05-Sep-24 09:48 AM] ApexChat#8127
+**Roh**:	you have your stuff :P
+
+
+[05-Sep-24 09:50 AM] ApexChat#8127
+**Laaxus**:	I can finally produce rat again
+
+
+[05-Sep-24 09:51 AM] ApexChat#8127
+***Laaxus** deleted this message.*
+
+
+[08-Sep-24 08:46 PM] ApexChat#8127
+***FrooduBigguns** left.*
+
+
+[16-Sep-24 01:52 PM] ApexChat#8127
+***SmartSquirel** joined.*
+
+
+[21-Sep-24 07:10 PM] ApexChat#8127
+***nano_xXx** left.*
+
+
+[24-Sep-24 09:29 AM] ApexChat#8127
+***JPL7913** joined.*
+
+
+[27-Sep-24 05:38 PM] ApexChat#8127
+**Turlorn**:	voting has started.
+
+
+[01-Oct-24 01:28 PM] ApexChat#8127
+**Frentic**:	hey guys, can we take care of the Technicians happiness, please? Are we shrinking pop on purpose?
+
+
+[01-Oct-24 03:23 PM] ApexChat#8127
+**Turlorn**:	we were shrinking population on purpose. now that unemployment is around 10% i'm going to stabilize it.
+
+
+[01-Oct-24 06:36 PM] ApexChat#8127
+**Frentic**:	thanks Turlorn o7
+
+
+[02-Oct-24 08:46 PM] ApexChat#8127
+**Frentic**:	now we are in this crappy situation where we have 181 technician open jobs. =/
+
+
+[02-Oct-24 08:48 PM] ApexChat#8127
+**Frentic**:	let me know if I can help somehow. o7
+
+
+[02-Oct-24 09:44 PM] ApexChat#8127
+**Turlorn**:	by current numbers it'll take two weeks to fill all your technician jobs. i'll see if i can accelerate it.
+
+
+[02-Oct-24 09:45 PM] ApexChat#8127
+**Frentic**:	It's not all mine btw. Some other base has shortages too.
+
+
+[03-Oct-24 05:16 AM] ApexChat#8127
+**Roh**:	You could run a TEC immigration program, for +100 TECs, which would basically smooth out the situation in a week.
+
+
+[03-Oct-24 05:17 AM] ApexChat#8127
+**Roh**:	It'll cost like 50k AIC or something like that.
+
+
+[03-Oct-24 05:57 PM] ApexChat#8127
+**Turlorn**:	i innitiated a vote on a TEC immigration program.
+
+
+[04-Oct-24 05:15 PM] ApexChat#8127
+**RiseofFilth**:	@frentic Been sick the last few days, but when there is excessive unemployment, happiness goes down. There was for techs, hence why population was being bleed off. That is not a bad thing, and is normal. Now that there is demand and open jobs, as you can see, happiness jumped 10% within a week. And that is the weighted average, so that means the true happiness is much higher. If ya just wait until next popr, you will see happiness will be in the mid-50s and the remaining open jobs will all be filled (unless someone makes more TECH buildings, but then that will drive happiness higher and we will see more immigration)
+
+
+[04-Oct-24 05:16 PM] ApexChat#8127
+**RiseofFilth**:	As long as a strong base is there, like ours with 3.3k techs, programs are rarely useful rather than just sufficient fulfillment and players creating jobs
+
+
+[04-Oct-24 05:22 PM] ApexChat#8127
+**marchioro**:	but doesn't such a low tec popi risk bases not having all their job filled in case new tec buildings are set up? like, 2 new bases dedicated to tec buildings only. I think that would be the main concern maybe?
+
+
+[04-Oct-24 07:27 PM] ApexChat#8127
+**Turlorn**:	you're right. that's when you inform your governor of your intentions so that measures can be deployed at the right time. :)
+
+
+[05-Oct-24 06:05 AM] ApexChat#8127
+**Roh**:	^
+
+
+[05-Oct-24 06:06 AM] ApexChat#8127
+**Roh**:	This involves the social aspect of gameplay, that Prun has.... Not too many people are interested in such things, from what I've seen.
+
+
+[05-Oct-24 07:46 AM] ApexChat#8127
+**SillyOldJack**:	Wait, there's a social aspect?
+
+
+[05-Oct-24 01:24 PM] ApexChat#8127
+**Turlorn**:	yeah, quite confusing considering the "huge" amount of players ;)
+
+
+[05-Oct-24 09:03 PM] ApexChat#8127
+**Roh**:	The only players that do matter, are the ones who are active, and who do participate :P
+
+
+[05-Oct-24 09:03 PM] ApexChat#8127
+**Roh**:	All others are just pure statistical figures.
+
+
+[06-Oct-24 11:44 AM] ApexChat#8127
+**Turlorn**:	wildlife park has been upgraded to level 3 to provide a bit more comfort for our technicians.
+
+
+[06-Oct-24 08:07 PM] ApexChat#8127
+***Puppyfromps2** left.*
+
+
+[07-Oct-24 03:48 AM] ApexChat#8127
+**Turlorn**:	infirmary has been upgraded to level 6
+
+
+[07-Oct-24 07:30 PM] ApexChat#8127
+***user6064ff91de** left.*
+
+
+[09-Oct-24 07:07 PM] ApexChat#8127
+**SillyOldJack**:	How luxurious!
+
+
+[12-Oct-24 11:16 AM] ApexChat#8127
+***Joukov** joined.*
+
+
+[17-Oct-24 12:24 AM] ApexChat#8127
+**Laaxus**:	anybody could sell me ove please ?
+
+
+[17-Oct-24 02:23 AM] ApexChat#8127
+**Laaxus**:	just 5 or so
+
+
+[17-Oct-24 02:25 AM] ApexChat#8127
+**Laaxus**:	put a LM AD
+
+
+[17-Oct-24 08:44 AM] ApexChat#8127
+**SillyOldJack**:	Got you.
+
+
+[17-Oct-24 09:47 AM] ApexChat#8127
+**Laaxus**:	tyvm !
+
+
+[17-Oct-24 01:31 PM] ApexChat#8127
+**Turlorn**:	the lack of technicians has now been resolved.
+
+
+[17-Oct-24 03:38 PM] ApexChat#8127
+**Frentic**:	yes thanks Turlorn o7
+
+
+[21-Oct-24 09:18 AM] ApexChat#8127
+***iCooper** joined.*
+
+
+[22-Oct-24 02:53 AM] ApexChat#8127
+***Roymundo** joined.*
+
+
+[22-Oct-24 03:01 AM] ApexChat#8127
+**Roymundo**:	Morning all.
+
+
+[22-Oct-24 11:14 AM] ApexChat#8127
+**Spermatozoon_Saloon**:	Evening all
+
+
+[22-Oct-24 01:27 PM] ApexChat#8127
+**Frentic**:	evening o7
+
+
+[25-Oct-24 02:09 AM] ApexChat#8127
+***allocater** left.*
+
+
+[25-Oct-24 11:59 PM] ApexChat#8127
+***Cpt_BullDog** left.*
+
+
+[27-Oct-24 06:50 AM] ApexChat#8127
+***tuxdelux** left.*
+
+
+[01-Nov-24 03:36 AM] ApexChat#8127
+**Roymundo**:	Morning all
+
+
+[01-Nov-24 06:07 AM] ApexChat#8127
+**Frentic**:	o7
+
+
+[02-Nov-24 12:49 AM] ApexChat#8127
+***Rento247** left.*
+
+
+[03-Nov-24 01:11 AM] ApexChat#8127
+**Spermatozoon_Saloon**:	Morning all! If anyone has a ship headed from ANT to Norwick with 3.8t of space, I have a couple of Norwick LM ads up that I'd appreciate if someone could pickup!
+
+
+[03-Nov-24 05:37 AM] ApexChat#8127
+**Turlorn**:	i took care of both shipments
+
+
+[03-Nov-24 06:41 AM] ApexChat#8127
+**Spermatozoon_Saloon**:	Absolute legend 🫂
+
+
+[03-Nov-24 06:41 AM] ApexChat#8127
+**Spermatozoon_Saloon**:	Thankyou
+
+
+[07-Nov-24 08:27 AM] ApexChat#8127
+***australis** left.*
+
+
+[16-Nov-24 01:35 PM] ApexChat#8127
+***Mai404** left.*
+
+
+[18-Nov-24 12:51 PM] ApexChat#8127
+**Laaxus**:	Anybody have 3 BBH and 3 BDE by anychance ? :)
+
+
+[19-Nov-24 08:38 PM] ApexChat#8127
+**TuffyLess**:	Yes - i have extras.
+
+
+[24-Nov-24 09:09 AM] ApexChat#8127
+***jelutz77** left.*
+
+
+[01-Dec-24 07:01 AM] ApexChat#8127
+***harveyG** joined.*
+
+
+[02-Dec-24 01:20 PM] ApexChat#8127
+**jvaler**:	anyone got MCG? posted LM ad
+
+
+[02-Dec-24 01:29 PM] ApexChat#8127
+**Turlorn**:	i took care of that.
+
+
+[02-Dec-24 01:29 PM] ApexChat#8127
+**jvaler**:	tyvm
+
+
+[02-Dec-24 09:16 PM] ApexChat#8127
+***trismo8** joined.*
+
+
+[03-Dec-24 11:11 AM] ApexChat#8127
+***Zolle** joined.*
+
+
+[04-Dec-24 03:04 AM] ApexChat#8127
+***superbadsounds** joined.*
+
+
+[05-Dec-24 06:59 PM] ApexChat#8127
+***Roche** joined.*
+
+
+[15-Dec-24 08:46 AM] ApexChat#8127
+**Laaxus**:	I put 2 shipping cont towards ANT if anybody comes back half empty
+
+
+[15-Dec-24 09:23 AM] ApexChat#8127
+**Laaxus**:	I put them on ANT LM instead
+
+
+[15-Dec-24 10:34 AM] ApexChat#8127
+***LiliDragon** joined.*
+
+
+[17-Dec-24 11:25 PM] ApexChat#8127
+***Magican1980** joined.*
+
+
+[19-Dec-24 12:19 PM] ApexChat#8127
+***Bobzor** joined.*
+
+
+[20-Dec-24 05:37 AM] ApexChat#8127
+***Roymundo** left.*
+
+
+[20-Dec-24 01:55 PM] ApexChat#8127
+**Turlorn**:	welcome to all the new people here.
+
+
+[21-Dec-24 09:15 PM] ApexChat#8127
+***user4752979ef5** left.*
+
+
+[24-Dec-24 09:40 PM] ApexChat#8127
+**TuffyLess**:	.
+
+
+[28-Dec-24 12:11 PM] ApexChat#8127
+***Cuendilar** joined.*
+
+
+[28-Dec-24 12:13 PM] ApexChat#8127
+**Cuendilar**:	Lo
+
+
+[28-Dec-24 01:41 PM] ApexChat#8127
+**Frentic**:	Welcome o7
+
+
+[01-Jan-25 01:57 PM] ApexChat#8127
+***Servognome** joined.*
+
+
+[03-Jan-25 06:03 AM] ApexChat#8127
+***lampr** joined.*
+
+
+[03-Jan-25 09:47 AM] ApexChat#8127
+***Umbers** joined.*
+
+
+[07-Jan-25 03:21 AM] ApexChat#8127
+**Spermatozoon_Saloon**:	I've got a load of ANT to Norwick ads up on the ANT LM, if anyone has space I'd appreciate it!
+
+
+[13-Jan-25 09:10 PM] ApexChat#8127
+***Freeloader** joined.*
+
+
+[16-Jan-25 09:19 AM] ApexChat#8127
+***ManhimOne** joined.*
+
+
+[16-Jan-25 08:14 PM] ApexChat#8127
+***Appletree23** joined.*
+
+
+[18-Jan-25 02:35 AM] ApexChat#8127
+**Appletree23**:	yo
+
+
+[18-Jan-25 02:35 AM] ApexChat#8127
+**Appletree23**:	dyeus i have a little space
+
+
+[18-Jan-25 02:36 AM] ApexChat#8127
+**Appletree23**:	oh nvm, that was 10 days ago
+
+
+[18-Jan-25 05:17 AM] ApexChat#8127
+**Dyeus_Phter**:	Lmao
+
+
+[18-Jan-25 05:47 AM] ApexChat#8127
+**Appletree23**:	if you need something small delivered i can do so, just lmk
+
+
+[18-Jan-25 06:17 AM] ApexChat#8127
+**Dyeus_Phter**:	How small are we talking. I could use some HOP to ferried over. Lmk how much room and I'll buy the right amount and send you a contract
+
+
+[18-Jan-25 07:54 AM] ApexChat#8127
+**Appletree23**:	well how much do you need?
+
+
+[18-Jan-25 07:54 AM] ApexChat#8127
+**Appletree23**:	I can adjust how much I take back and forth because its 95% H2O anyways
+
+
+[18-Jan-25 08:07 AM] ApexChat#8127
+**Dyeus_Phter**:	Contract sent :)
+
+
+[18-Jan-25 08:09 AM] ApexChat#8127
+**Appletree23**:	yep, accepted
+
+
+[18-Jan-25 08:09 AM] ApexChat#8127
+**Appletree23**:	thanks!
+
+
+[18-Jan-25 10:08 PM] ApexChat#8127
+**Appletree23**:	Anyone have a corporation with a HQ on Norwick?
+
+
+[19-Jan-25 12:56 AM] ApexChat#8127
+**Appletree23**:	Local Market Alert :
+
+
+[19-Jan-25 12:56 AM] ApexChat#8127
+**Appletree23**:	10 lots of 10 DW up for sale @105aic
+
+
+[19-Jan-25 01:00 AM] ApexChat#8127
+**Appletree23**:	Open to negotiation
+
+
+[19-Jan-25 01:15 AM] ApexChat#8127
+**Dyeus_Phter**:	Probably good put up ads larger than just 10 units of DW next time. My minions are thirsty sure, but that's a lot of menus for me to click through
+
+
+[19-Jan-25 01:15 AM] ApexChat#8127
+**Dyeus_Phter**:	Probably could*
+
+
+[19-Jan-25 01:49 AM] ApexChat#8127
+**Appletree23**:	oh lol, yeah I sure can, just didnt know if people wanted lots of DW or not
+
+
+[19-Jan-25 01:49 AM] ApexChat#8127
+**Appletree23**:	will put up more LM ads as soon as I can
+
+
+[19-Jan-25 01:52 AM] ApexChat#8127
+**Appletree23**:	there, 1 lot of 100 DW, all I can spare at the moment
+
+
+[19-Jan-25 02:26 AM] ApexChat#8127
+**Laaxus**:	to give you an idea, my base consumme 45 DW a day
+
+
+[19-Jan-25 02:26 AM] ApexChat#8127
+**Laaxus**:	so yeah, 10 DW isn't a lot
+
+
+[19-Jan-25 02:27 AM] ApexChat#8127
+**Laaxus**:	I would say that 100 DW is the bare minimum
+
+
+[19-Jan-25 02:27 AM] ApexChat#8127
+**Laaxus**:	this game is unfortunately menu heavy
+
+
+[19-Jan-25 02:27 AM] ApexChat#8127
+**Laaxus**:	meaning most won't bother doing things that aren't in bulk
+
+
+[19-Jan-25 02:56 AM] ApexChat#8127
+**Appletree23**:	alr, I see
+
+
+[19-Jan-25 02:57 AM] ApexChat#8127
+**Appletree23**:	will keep it to bulks of maybe 200-300
+
+
+[19-Jan-25 03:59 AM] ApexChat#8127
+**Appletree23**:	__________________market sale ::
+
+
+[19-Jan-25 04:01 AM] ApexChat#8127
+**Appletree23**:	200 DW @107 aic
+
+
+[19-Jan-25 04:18 AM] ApexChat#8127
+***shakk** joined.*
+
+
+[19-Jan-25 06:07 AM] ApexChat#8127
+**Appletree23**:	another 200 DW up for sale @107aic in the LM
+
+
+[19-Jan-25 07:53 AM] ApexChat#8127
+**Dyeus_Phter**:	There's a couple of Norwick -> ANT shipping ads up if anyone has spare room
+
+
+[19-Jan-25 10:11 PM] ApexChat#8127
+**Appletree23**:	200 DW for sale @107aic on LM
+
+
+[20-Jan-25 06:41 AM] ApexChat#8127
+**Appletree23**:	3 lots of 200 DW for sale @107 on LM
+
+
+[23-Jan-25 09:32 AM] ApexChat#8127
+**Appletree23**:	Lmk if anyone wants DW on the local market
+
+
+[23-Jan-25 09:32 AM] ApexChat#8127
+**Appletree23**:	Il start selling on LM by demand
+
+
+[23-Jan-25 07:44 PM] ApexChat#8127
+**Appletree23**:	1x 200DW @107aic
+
+
+[27-Jan-25 11:10 AM] ApexChat#8127
+***jab416171** joined.*
+
+
+[28-Jan-25 12:44 AM] ApexChat#8127
+**Appletree23**:	Wtf is that bill that just passed
+
+
+[28-Jan-25 12:48 AM] ApexChat#8127
+**Appletree23**:	cancel that, wrong plaent
+
+
+[31-Jan-25 11:55 PM] ApexChat#8127
+**Appletree23**:	2x 300DW @107 aic on LM
+
+
+[02-Feb-25 04:11 AM] ApexChat#8127
+***Paris_In_Springtime** left.*
+
+
+[02-Feb-25 04:36 AM] ApexChat#8127
+**Laaxus**:	I put shipping cont towards ANT on the ANT Local market, if anybody is interested
+
+
+[02-Feb-25 04:28 PM] ApexChat#8127
+**iCooper**:	listed 500 RAT on LM for 100/ea due to shipping backlog if anyone wants it
+
+
+[03-Feb-25 04:24 AM] ApexChat#8127
+***usera69a08cde3** left.*
+
+
+[03-Feb-25 08:48 AM] ApexChat#8127
+**Appletree23**:	Want to level up fast? 🚀 The Antares Development Initiative (ADI) is giving new players a 1,000,000 AIC grant (free money, no strings attached) to help you take your business to the next level! If you’re looking for advice or just want to chat, feel free to join our Discord community. https://discord.gg/9eY7mMgf4J
+
+
+[03-Feb-25 11:35 AM] ApexChat#8127
+**harveyG**:	posted some H2O ads on the LM
+
+
+[04-Feb-25 06:48 PM] ApexChat#8127
+***Roche** left.*
+
+
+[05-Feb-25 01:07 PM] ApexChat#8127
+***harveyG** left.*
+
+
+[08-Feb-25 02:10 AM] ApexChat#8127
+***Chalu** joined.*
+
+
+[09-Feb-25 02:29 AM] ApexChat#8127
+***Gladi099** joined.*
+
+
+[09-Feb-25 02:49 AM] ApexChat#8127
+**Gladi099**:	Anyone selling 160 RAT and DW ? forgot to bring that for the new base....
+
+
+[09-Feb-25 02:56 AM] ApexChat#8127
+**Appletree23**:	I can sell
+
+
+[09-Feb-25 02:57 AM] ApexChat#8127
+**Appletree23**:	check LM, put some offers up
+
+
+[09-Feb-25 03:17 AM] ApexChat#8127
+**Gladi099**:	thanks, accepted
+
+
+[09-Feb-25 04:49 AM] ApexChat#8127
+**Appletree23**:	mb, forgot to press auto provision
+
+
+[09-Feb-25 04:49 AM] ApexChat#8127
+**Appletree23**:	done now
+
+
+[09-Feb-25 09:47 AM] ApexChat#8127
+***Rebs** joined.*
+
+
+[10-Feb-25 03:15 PM] ApexChat#8127
+**Chalu**:	hi, would someone sell some OVE on the lokal market? thanks
+
+
+[10-Feb-25 03:19 PM] ApexChat#8127
+**Turlorn**:	i got you covered
+
+
+[10-Feb-25 03:34 PM] ApexChat#8127
+**Chalu**:	great, thanks
+
+
+[16-Feb-25 10:34 PM] ApexChat#8127
+**Dyeus_Phter**:	Some shipping contracts now available on the LM :)
+
+
+[21-Feb-25 12:00 PM] ApexChat#8127
+***evayoo** joined.*
+
+
+[21-Feb-25 09:46 PM] ApexChat#8127
+**Appletree23**:	helloooo
+
+
+[21-Feb-25 09:50 PM] ApexChat#8127
+**ManhimOne**:	hi
+
+
+[21-Feb-25 10:21 PM] ApexChat#8127
+**caskman**:	LM ad up for 75 DW, would help get me out of a bind
+
+
+[21-Feb-25 10:25 PM] ApexChat#8127
+**Andy97**:	I've got you
+
+
+[21-Feb-25 11:06 PM] ApexChat#8127
+**caskman**:	thank you kind sir
+
+
+[21-Feb-25 11:09 PM] ApexChat#8127
+**Andy97**:	Any time!
+
+
+[22-Feb-25 08:35 AM] ApexChat#8127
+**Frentic**:	o/
+
+
+[22-Feb-25 11:00 AM] ApexChat#8127
+***user9108465ae1** left.*
+
+
+[22-Feb-25 01:56 PM] ApexChat#8127
+***Nexfortisme** joined.*
+
+
+[23-Feb-25 12:20 AM] ApexChat#8127
+***Aaron987** joined.*
+
+
+[27-Feb-25 04:21 PM] ApexChat#8127
+***jcheung9941** joined.*
+
+
+[28-Feb-25 06:09 PM] ApexChat#8127
+***skulley5923** joined.*
+
+
+[01-Mar-25 01:07 PM] ApexChat#8127
+***user9ef82c2f5b** left.*
+
+
+[08-Mar-25 01:18 AM] ApexChat#8127
+***opie** joined.*
+
+
+[10-Mar-25 03:48 PM] ApexChat#8127
+***usereb8f3973a0** left.*
+
+
+[11-Mar-25 06:32 AM] ApexChat#8127
+***userfec9c7dcb3** left.*
+
+
+[17-Mar-25 08:46 AM] ApexChat#8127
+***harveyG** joined.*
+
+
+[18-Mar-25 02:47 PM] ApexChat#8127
+***user8a66232cce** left.*
+
+
+[19-Mar-25 07:21 AM] ApexChat#8127
+**Appletree23**:	Bundles of DW and RAT on LM, lmk if you need more than what is on offer :D
+
+
+[19-Mar-25 08:08 AM] ApexChat#8127
+**Dyeus_Phter**:	Why are they at CX prices? Yuck
+
+
+[19-Mar-25 08:52 AM] ApexChat#8127
+***user64812cb02f** left.*
+
+
+[19-Mar-25 11:22 AM] ApexChat#8127
+**Appletree23**:	bleh ok I lower
+
+
+[20-Mar-25 01:48 AM] ApexChat#8127
+***Stokovich** joined.*
+
+
+[20-Mar-25 01:19 PM] ApexChat#8127
+***Ragadais** joined.*
+
+
+[20-Mar-25 07:39 PM] ApexChat#8127
+**Appletree23**:	@Dyeus_Phter I made it lower
+
+
+[21-Mar-25 10:58 PM] ApexChat#8127
+***FastProducer** joined.*
+
+
+[22-Mar-25 12:23 AM] ApexChat#8127
+**FastProducer**:	Looking for a little H2O, put a local ad up.  Thanks if anyone can help
+
+
+[22-Mar-25 02:12 AM] ApexChat#8127
+**Appletree23**:	accepted
+
+
+[25-Mar-25 03:51 AM] ApexChat#8127
+**Appletree23**:	More DW and RAT on LM, this time its slightly discounted
+
+
+[26-Mar-25 12:18 PM] ApexChat#8127
+***allocater** joined.*
+
+
+[26-Mar-25 01:15 PM] ApexChat#8127
+***Sansemin** joined.*
+
+
+[26-Mar-25 09:27 PM] ApexChat#8127
+**FastProducer**:	Are we getting more TECs?
+
+
+[26-Mar-25 10:52 PM] ApexChat#8127
+**Appletree23**:	in last POPR we gained 94, and reduced employment from 21% to 0%
+
+
+[26-Mar-25 10:52 PM] ApexChat#8127
+**Appletree23**:	should gain alot more in next POPR
+
+
+[27-Mar-25 01:00 AM] ApexChat#8127
+**FastProducer**:	Gained 94, but doesn't it state there are now 852 open jobs, from 21% unemployment?
+
+
+[27-Mar-25 01:53 AM] ApexChat#8127
+**Appletree23**:	because everyone in the unemployment got jobs, and now there are too many jobs ]
+
+
+[27-Mar-25 03:18 AM] ApexChat#8127
+**FastProducer**:	So don't we need to run a program to increase the amount ot TECs?
+
+
+[27-Mar-25 04:04 AM] ApexChat#8127
+**Appletree23**:	it would be beneficial probably, since there is a massive influx of people building IVP's, but its not like we are loosing TECs anymore, since now there is actually a demand for them
+
+
+[27-Mar-25 06:47 AM] ApexChat#8127
+**sidepipe**:	@FastProducer - check the government screen, there’s a program being voted on now :)
+
+
+[27-Mar-25 07:25 AM] ApexChat#8127
+**FastProducer**:	Great, thank you!
+
+
+[27-Mar-25 08:08 AM] ApexChat#8127
+**sidepipe**:	Np! I'm not in the government, but Turlorn said that he's boosting TEC happiness as well. That should help with some of the deficit. Not much more you can do for a big demand spike like this afaik - we've gone from ~850 unemployed TECs to 852 open jobs, so that's about 1600 new TEC positions since last POPR if I'm reading that all correctly
+
+
+[27-Mar-25 08:09 AM] ApexChat#8127
+**sidepipe**:	so probably around 22 new IVP if I had to guess, based on MTP/MEA prices :D
+
+
+[27-Mar-25 10:01 PM] ApexChat#8127
+**FastProducer**:	I mean, 11 for me.  I looked p a food COCG planet with available TECs when I picked this planet, someone else must have done the same thing
+
+
+[28-Mar-25 02:14 PM] ApexChat#8127
+**Turlorn**:	we're having a shortage of technicians right now. i'm deploying meassures to alleviate that.
+
+
+[29-Mar-25 04:54 AM] ApexChat#8127
+**Appletree23**:	yay :D
+
+
+[03-Apr-25 07:24 AM] ApexChat#8127
+**FastProducer**:	There are even more open jobs for tecs than last week....
+
+
+[03-Apr-25 08:26 AM] ApexChat#8127
+**sidepipe**:	That's true, but there's also 218 more TECs than there were last week. There were 3879 jobs for TECs last POPR and now there's 4633 - that's a LOT of growth to catch up with
+
+
+[03-Apr-25 08:28 AM] ApexChat#8127
+**sidepipe**:	(by jobs I mean population + open jobs, I think that's the correct way to calculate it)
+
+
+[03-Apr-25 04:25 PM] ApexChat#8127
+**Turlorn**:	despite getting a few more technicians we got even more open jobs. i'm boosting their happiness even more.
+
+
+[03-Apr-25 04:25 PM] ApexChat#8127
+**Turlorn**:	the effect of the upgraded park kicks in as well now.
+
+
+[04-Apr-25 05:57 AM] ApexChat#8127
+**Dyeus_Phter**:	Woah, just a casual 20% increase in one week on an already established planet
+
+
+[06-Apr-25 11:20 AM] ApexChat#8127
+***DavikCo** joined.*
+
+
+[06-Apr-25 11:22 AM] ApexChat#8127
+**DavikCo**:	Anyone selling rat/dw?
+
+
+[06-Apr-25 11:24 AM] ApexChat#8127
+**Appletree23**:	I can spare some RAT, maybe 500 if you need
+
+
+[06-Apr-25 11:26 AM] ApexChat#8127
+**DavikCo**:	Im waiting for some items to land at HRT, once they do ill post a buy on the LM
+
+
+[06-Apr-25 11:29 AM] ApexChat#8127
+**Appletree23**:	il post a sell for RAT now, since i probably wont be awake in 30 minutes :D
+
+
+[06-Apr-25 11:29 AM] ApexChat#8127
+**Appletree23**:	then you can just accept it :D
+
+
+[06-Apr-25 11:30 AM] ApexChat#8127
+**DavikCo**:	Thank you
+
+
+[06-Apr-25 11:35 AM] ApexChat#8127
+**DavikCo**:	posted a DW buy for anyone. Should be paid today or tomorrow morning pending a Avalon>HRT delivery
+
+
+[07-Apr-25 01:34 AM] ApexChat#8127
+***KK14** joined.*
+
+
+[10-Apr-25 02:42 AM] ApexChat#8127
+**Bobzor**:	need more Technicians :)
+
+
+[10-Apr-25 07:49 PM] ApexChat#8127
+**DavikCo**:	ant>noreick up
+
+
+[11-Apr-25 07:57 AM] ApexChat#8127
+**DavikCo**:	Anyone coming from Ant soon?
+
+
+[11-Apr-25 08:28 AM] ApexChat#8127
+**Turlorn**:	we have increased our amount of technicians by 940. their happiness is at 93%. we still have 1240 open jobs so it will take two more weeks until all current positions are filled.
+
+
+[11-Apr-25 08:54 PM] ApexChat#8127
+**DavikCo**:	yall are doin good work. We thank you
+
+
+[12-Apr-25 01:04 AM] ApexChat#8127
+**Chalu**:	@DavikCo I think I'll send a ship tomorow, what do you need?
+
+
+[12-Apr-25 09:12 AM] ApexChat#8127
+**DavikCo**:	I messaged you, just have some contracts from ants to here. Some have been accepted but still have more up
+
+
+[14-Apr-25 05:54 AM] ApexChat#8127
+**DavikCo**:	Anyone selling DW or RAT? buy orders on LM
+
+
+[14-Apr-25 03:22 PM] ApexChat#8127
+**DavikCo**:	Anyone making RAT/DW?
+
+
+[14-Apr-25 07:38 PM] ApexChat#8127
+**Appletree23**:	sry, used to make DW and RAT here, but now only FIM
+
+
+[16-Apr-25 03:01 PM] ApexChat#8127
+***VizoR** joined.*
+
+
+[16-Apr-25 08:01 PM] ApexChat#8127
+**DavikCo**:	anyone of planet have spare scn?
+
+
+[16-Apr-25 08:02 PM] ApexChat#8127
+**DavikCo**:	If you do i posted some buys on plants for above market :D
+
+
+[17-Apr-25 06:52 PM] ApexChat#8127
+***Frentic** left.*
+
+
+[24-Apr-25 06:20 PM] ApexChat#8127
+**DavikCo**:	Ant>Norwick posted at trading market
+
+
+[27-Apr-25 05:39 PM] ApexChat#8127
+**DavikCo**:	norw>ant up
+
+
+[30-Apr-25 11:11 AM] ApexChat#8127
+***WeltKriegDrei** joined.*
+
+
+==============================================================
+Exported 455 message(s)
+==============================================================

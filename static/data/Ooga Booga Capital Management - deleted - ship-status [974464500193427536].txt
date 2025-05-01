@@ -1,0 +1,268 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: deleted / ship-status
+Topic: Our current ship production status
+==============================================================
+
+[13-May-22 12:15 PM] allocater#0000
+💸✅GDP STL Ship Refit Status - May 28
+📦BRS
+📦CQS
+📦GEN
+
+📦LCB
+📦SSL
+
+📦LHPx43
+📦SSCx40
+
+Completion: May 28
+
+
+[14-May-22 06:55 AM] allocater#0000
+💸✅OOG#2000 Ship Status - May 27
+📦BR1
+📦CQM
+📦FFC
+📦FSE
+📦QCR
+
+📦LFEx2
+📦MFEx2
+📦SFE
+
+📦LCB
+📦MFL
+📦MSL
+
+📦LHPx94
+📦SSCx128
+
+Completion: May 27
+
+
+[22-May-22 01:28 PM] allocater#0000
+✅OOG#2001 Ship Status - June 6
+📦BR1
+📦CQM
+📦FFC
+📦FSE
+📦QCR
+
+📦LFEx2
+📦MFEx2
+📦SFE
+
+📦LCB
+📦MFL
+📦MSL
+
+📦LHPx94
+📦SSCx128
+
+Completion: June 6th
+
+
+[31-May-22 12:10 PM] allocater#0000
+✅💸Glass STL Status - June 5
+📦BRS
+📦CQT
+📦GEN (?)
+
+📦SCB
+📦SSL
+
+📦LHPx43
+📦SSCx40
+
+Completion: June 7th (GEN)
+
+
+[05-Jun-22 07:02 AM] allocater#0000
+✅OOG#2002 Ship Status - June 22
+📦BR1
+📦CQM
+📦FFC
+📦FSE
+📦QCR
+
+📦LFEx2
+📦MFEx2
+📦SFE
+
+📦LCB
+📦MFL
+📦MSL
+
+📦LHPx94
+📦SSCx128
+
+Completion: June 22 (LHP)
+
+
+[12-Jun-22 01:59 AM] allocater#0000
+📜 on credit
+💰 payed
+📦 ready
+✅ delivered
+
+Completions: 
+✅💰  June 16 (BRS/LHP) - Pokter's STL
+✅💰 June 30 (LCB) - Dazzle Mining 2k
+✅💰 July 11 (CQS) - Domicius 3k 
+✅💰 July 11 (FSE) - Havaday 2k
+✅💰 July 12 - Thinking Machines 2k
+✅💰 July 19 - Pokter 2k
+✅💰 July 22 - Pokter STL
+✅💰 August 28 - Rune 2k
+✅💰 September 8 - VCB Pokter
+✅💰 September 13 - Pokter STL+
+✅💰 September 15 - VCB Domicius
+✅💰 September 27 - Yuen 2k
+✅💰 September 27 - Chainsawchild STL
+✅💰 October 1 - Rune 2k
+✅💰 October 6 - Dehzhas 2k
+✅💰 October 11 - jack 2k
+✅💰 October 22 - bojidar 2k
+✅💰 October 16 - Yuen STL
+✅💰 October 21 - Dehzhas STL
+✅💰 October 24 - Archiel 2k
+✅💰 October 26 - Yuen 2k
+✅💰 October 30 - Dehzhas 2k
+✅💰  Nov 3 - Erix 2k
+✅💰 Nov 6 - balbar stl
+✅💰 Nov 8 - Tuxdelux 2k
+✅💰 Nov 9 - Namthorn 2k
+✅💰 Nov 10 - jack 2k
+✅💰 Nov 15 - bojidar 2k
+✅💰 Nov 19 - yuen STL
+✅💰 Nov 21 - rune VCB
+✅💰 Nov 22 - bojidar 2k
+✅💰 Dec 2 - yuen 2k
+✅✖️ Dec 5 - ~~public auction~~
+✅💰 Dec 5 - yuen STL
+✅💰 Dec 7 - bojidar 2k
+✅💰 Dec 9 - dehzhas 2k
+✅💰 Dec 10 - jack VCB
+✅💰 Dec 16 - zipatsu 2k
+✅💰 Dec 18 - Archiel 2k
+✅💰 Dec 22 - bojidar 2k
+✅💰 Dec 26 - yuen 2k
+✅💰 Dec 29 - pax 2k
+
+
+[07-Jul-22 08:57 PM] bitcoin_ape#0000
+@allocater thanks for your continued updates in the channel. This is very valuable information that I have come to take for granted.
+
+{Reactions}
+☝️ (3) ❤️ (3) 
+
+[26-Jul-22 01:03 PM] allocater#0000
+Ship Upgrade - Mar 26
+
+📦WCB 400k -> Yuen
+📦LFE 320k -> Exeler
+📦BHPx16 50k -> Exeler
+📦SSCx25 7k -> Rune
+
+
+[01-Oct-22 12:54 PM] allocater#0000
+Shipyard Status - Mar 13
+📦 Components in stock
+
+3.5mil corp price (first 5 ships)
+5mil market price
+
+📦📦📦📦BR1 
+📦📦📦📦CQM 
+📦📦📦📦📦📦FFC
+
+📦📦📦📦LFEx2
+📦📦📦MFEx2 
+📦📦📦📦📦📦SFE 
+
+📦FSE
+📦📦📦QCR
+
+📦LCB
+MFL
+📦📦📦📦MSL
+
+📦📦LHPx94
+SSCx128
+
+Optional Mods:
+VCB instead of LCB: +400k
+WCB instead of LCB: -100k
+
+
+[26-Dec-22 02:36 AM] allocater#0000
+✅💰 Jan 4 - yuen 2k
+✅💰 Jan 7 - rune 2k
+✅💰 Jan 14 - neke 3k
+✅💰 Jan 14 - viggle stl
+✅💰 Jan 15 - balbar 2k
+✅💰 Jan 16 - bojidar 2k
+✅💰 Jan 19 - tux 2k
+✅💰 Jan 22 - yuen 2k
+✅💰 Jan 25 - jack 3k
+✅💰 Jan 28 - bojidar 2k
+✅📜 Feb 1 - rune 2k
+✅💰 Feb 3 - bojidar vcb
+✅📜 Feb 6 - dehzhas 2k
+✅💰 Feb 12 - viggle 2k
+✅💰 Feb 12 - allocater .25k
+✅💰 Feb 15 - erix 2k
+✅💰 Feb 20 - bojidar vcb
+✅💰 Feb 21 - archiel 2k
+✅💰 Feb 27 - jack 3k
+✅💰 Feb 28 - exeler comp
+✅💰 Feb 28 - pax 2k
+✅💰 Feb 28 - rune comp
+✅📜 Mar 4 - neth 2k
+✅💰 Mar 7 - forum sale 2k
+✅💰 Mar 9 - forum sale 2k
+✅💰 Mar 12 - bojidar 2k
+✅💰 Mar 15 - bojidar 2k
+✅💰 Mar 19 - pax 2k
+✅💰 Mar 21 - bojidar vcb
+✅💰 Mar 24 - bojidar 2k
+-end of production-
+future sales now by component direct from producer, see sheet below
+
+
+[22-Mar-23 01:19 PM] allocater#0000
+Component-Price-Producer Table: https://docs.google.com/spreadsheets/d/1HtR4S65W8Ja8X60kUJdfnnUGwG_ZysCPM4XsQSQKIng/edit#gid=2052649648
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1HtR4S65W8Ja8X60kUJdfnnUGwG_ZysCPM4XsQSQKIng/edit
+FTL ship
+tree
+
+value k,🔨,Domicius,habix
+BR1,1,UPF,70,direct pay,direct pay
+PSL,10,PPF,25,OS 40k,TIO 150
+PSM,20,PPF,30,DA 30k
+FET,10,ASM,15,WAI 80k
+NV1,1,APF,0,SNM 120k
+WS,1,APF,CU 1k
+DA,1,SE,LD 8k
+SAL,1,SD
+LD,1,SD
+ROM,1,SCA
+SA,1,SD
+BWS,1,ELP
+SNM,1,SL
+WAI,1,SL
+NN,1,SE
+BAI,SD
+MLI,SD
+ROM,1,SCA
+DV,1,SE
+IMM,1,SL
+https://images-ext-1.discordapp.net/external/lYaOetPjF-eG7xax9Jc26PnlYIAGX1dPTPHFhhEyd4k/https/lh5.googleusercontent.com/bZbTDq6aMbPmNiKDwxIEv_0WQlsfKAKaGfVucP5WiS8u6Xye2J7we4HP6Rr-fejJCdz0ebTLJLjxbQ%3Dw1200-h630-p
+
+
+==============================================================
+Exported 11 message(s)
+==============================================================

@@ -1,0 +1,419 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: 🚀 Logistics / gateways
+==============================================================
+
+[20-Dec-24 11:59 PM] archielvahr#0000
+I think we need a new channel for discussing in-corp gateway coordination!
+
+{Reactions}
+❤️ (2) 
+
+[21-Dec-24 12:00 AM] archielvahr#0000
+Also, a pretty good chunk of the ADI gateway coop, by percentage of shares is OOG members
+
+
+[21-Dec-24 12:01 AM] archielvahr#0000
+about 2/3rds
+
+
+[21-Dec-24 12:01 AM] archielvahr#0000
+## Ledger Update
+
+I have updated the ledger with the 3rd gateway, from Hekaton -> BEN. The ledger now shows progress towards each individual gateway, with pledged allocated from the first gateway to the last gateway.
+
+Our current pledged resources account for the following:
+
+* 97.8%    Heph -> Hekaton
+* 80.0%    Hekaton -> Heph
+* 9.9%    Hekaton -> BEN
+
+With the addition of the third gateway, more room for pledges has opened up!
+
+## Cash Contributions:
+
+With 130m donated, I have begun spending the cash contributions to fill out materials. Only 15.6m has been spent so far, because I've been aggressively responsible with contributed cash. My fiduciary duty means I must buy at good prices to ensure donators get a good quantity of shares for their donations.  I do have open buy orders pending on various CXes.
+
+
+[21-Dec-24 12:01 AM] archielvahr#0000 (pinned)
+https://docs.google.com/spreadsheets/d/1oET7LURFw6m-3iKu_5n8iT2SWS4PU-P-hiH6fMazWmU/edit?gid=0#gid=0
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1oET7LURFw6m-3iKu_5n8iT2SWS4PU-P-hiH6fMazWmU/edit?gid=0
+ADI Gateway Co-op
+https://images-ext-1.discordapp.net/external/FJ-8dzz28sOMwdrn4NygyN29jxMyHkpxGi4QszWfHsc/https/lh7-us.googleusercontent.com/docs/AHkbwyJa-hqMh0DgWfLt7JbFPCeLMezBr363_VyiV7eepJT8e6d2K1nJ21zQQVjF0cw2TOr7HKsnJlc-8N43nSRvlIyP5aI2lhxv0GWyZgvC5KSNvh9DKWI7%3Dw1200-h630-p
+
+
+[21-Dec-24 12:01 AM] archielvahr#0000
+Pinned a message.
+
+
+[21-Dec-24 12:01 AM] archielvahr#0000
+So there's a little of everything left on the ledger again!
+
+
+[24-Dec-24 08:29 AM] katinga#0000
+Any materials you need, let me know.  I have a couple of permits I'm not using
+
+
+[24-Dec-24 01:40 PM] exeler#0000
+I haven't build a new base in ages, so I have a couple permits to spare. My HQ also isn't needing afabs yet, and I'm sitting on 30m cash plus who knows how much stashed in giant CX buy orders. 
+
+Anything interesting I could build to help move gateways along? I have tons and tons of C to spare since I produce 10x what I currently need.
+
+I also have a ton of ships to haul heavy stuff around already so logistics isn't a bottleneck currently for me.
+
+
+[24-Dec-24 02:55 PM] archielvahr#0000
+So after launch we will need a few extraction bases for the new metal. Then process it in SMEs and ASMs as quickly as possible.
+
+
+[24-Dec-24 02:56 PM] archielvahr#0000
+Prior to launch SP and LIT are interesting items that are still kind of short. So that might be CUO or NE on the extraction side.
+
+
+[24-Dec-24 02:57 PM] archielvahr#0000
+Also I don’t know anyone in ANT making vortex fuel yet.
+
+
+[24-Dec-24 02:59 PM] archielvahr#0000
+The vortex fuel recipe is here. https://oogcapitalmanagement.com/posts/what-we-know-about-gateways/ about halfway down
+
+{Embed}
+https://oogcapitalmanagement.com/posts/what-we-know-about-gateways/
+What we know about Gateways | OOG Capital Management
+Everything we know about gateways- so far.
+https://images-ext-1.discordapp.net/external/RZAB_xXIeAXn1u6PSETRmtOPvqCuSjPqNJILNR6cWQo/https/oogcapitalmanagement.com/images/jumpgate-header.png
+
+
+[28-Dec-24 12:00 AM] archielvahr#0000
+Okay anyone who wants to help out, SP is in the shortest supply. I got some more cash donations- so if you want cash instead of shares, I have SP orders up at 3100/u
+
+
+[28-Dec-24 12:01 AM] archielvahr#0000
+I have an obligation to spend the delivered cash!
+
+
+[28-Dec-24 03:36 AM] evov#0000
+How many do you need? I kind of want to build up a stockpile up to my goal amount before I start unloading too much of it. After that I''m happy to sell into whatever's needed really.
+
+
+[28-Dec-24 08:36 AM] archielvahr#0000
+About another 10k total, but I expect others to continue to contribute.
+
+
+[28-Dec-24 08:36 AM] archielvahr#0000
+This chart fills the leftmost gateway first, and shows progress of each material for each planned gateway:
+
+
+[28-Dec-24 08:36 AM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1319907050268135505/1322573932842188921/image.png?ex=6814d875&is=681386f5&hm=916dc8c694c43a8a50473e6107b4da29a7341310aff8eb42f53b53ef70e05c55&
+
+
+[28-Dec-24 08:37 AM] archielvahr#0000
+So first gateway is totally done, second gateway has 66.63% of the SP (and is close to having everything else pledged), etc
+
+
+[05-Jan-25 02:04 AM] allocater#0000
+I am still working on my pledged SP 😄
+
+
+[05-Jan-25 10:25 AM] archielvahr#0000
+Yeah SP will be one of the tough ones. I have been buying some on the CX also. But once we have a bit more SP the first two gates will be fully pledged
+
+
+[05-Jan-25 10:26 AM] archielvahr#0000
+I got another 50m of cash from @neth_havoc  (thanks!) So any of our new folks who want to contribute, happy to send you cash!
+
+
+[05-Jan-25 10:29 AM] archielvahr#0000
+The SP rate is a little on the low side compared to the current CX prices. But I have bids up at 3100 for SP
+
+
+[05-Jan-25 10:30 AM] mrsmith33#0000
+I am now making SP full time on my only ECA
+
+{Reactions}
+🎉 (2) 
+
+[05-Jan-25 11:48 AM] archielvahr#0000
+New most wanted items, sorted by total shares needed (top is most needed)
+
+
+[05-Jan-25 11:48 AM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1319907050268135505/1325521255863947336/image.png?ex=6815055e&is=6813b3de&hm=41bc005d19abd4d9c72b0bf4b6d0ac2599c2f4f8bcb27aa6af1bd78887cec5b8&
+
+
+[05-Jan-25 11:52 AM] mrsmith33#0000
+I am making TSH in 2 PP4 non-stop. I have 200 already
+
+
+[06-Jan-25 12:28 PM] hernanduer#0000
+I'll increase my TSH to 900, I'm at almost 500 stock
+
+
+[06-Jan-25 12:29 PM] archielvahr#0000
+I just got like 1800 more SP yesterday!
+
+
+[06-Jan-25 03:14 PM] shinonomesciences#0000
+Are you buying ABH at 50k/u?
+
+
+[06-Jan-25 03:27 PM] archielvahr#0000
+ABH is at $42,295  right now.
+
+
+[06-Jan-25 03:27 PM] archielvahr#0000
+If we run way short (which I don't really expect), then I can bump that up
+
+
+[12-Feb-25 01:49 PM] archielvahr#0000
+First round of gateway pledge reminders has gone out
+
+
+[13-Feb-25 05:58 AM] evov#0000
+For most of the parts, I've completed all I need for 1 full gate so I've shut down the production of those parts.
+
+If anyone wants to buy any, I can sell them now and just start producing again as needed. Shout out if there's any parts in particular people might want to buy.
+
+ Some of the parts I've got stored up that are maybe less available in bulk from the CX ->  (Stock values as at last week)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1319907050268135505/1339566402960363580/image.png?ex=6814b36e&is=681361ee&hm=fb13016056167ea148d56f21f722429d496cc50ad755fb30f138c7f7c3490781&
+
+
+[21-Feb-25 12:01 PM] martin1194#0000
+When need it
+
+
+[21-Feb-25 12:02 PM] martin1194#0000
+Is that game dev still haven't gateway up?
+
+
+[21-Feb-25 12:02 PM] martin1194#0000
+my TRU is waiting at ANT. : D
+
+
+[21-Feb-25 12:03 PM] .urpalhal#0000
+Is that why Archiel had a large buy order going on at Ant?
+
+
+[21-Feb-25 01:27 PM] archielvahr#0000
+Probably!
+
+
+[21-Feb-25 01:27 PM] archielvahr#0000
+I have been collecting pledges, we had a few people who pledged that quit, so when I do the next monthly update I will try to get new pledges to replace them
+
+
+[21-Feb-25 01:27 PM] archielvahr#0000
+still no idea when gateways will come out 🤷‍♂️
+
+
+[21-Feb-25 01:31 PM] bookliko#0000
+Say a contributor quits after transferring the materials or funds. Will those shares be divided by the remaining contributors?
+
+
+[21-Feb-25 01:34 PM] archielvahr#0000
+There is a survivorship rule in place:
+
+
+[21-Feb-25 01:34 PM] archielvahr#0000
+If a co-op shareholder leaves the game, their shares will move to their designated survivor. If they have not mentioned one, or their choice is not available, it will move to their corp. If no corp representative is available, the shares are eliminated and everyone’s shares are recalculated without the eliminated shares included.
+
+
+[21-Feb-25 01:35 PM] archielvahr#0000
+So yeah, essentially divided out if we can't reattribute it to someone else
+
+
+[21-Feb-25 01:35 PM] archielvahr#0000
+But so far everyone who has ditched has left before contributing 😆
+
+
+[02-Mar-25 12:27 PM] emperyan11#0000
+You still taking donations for the gateways?
+
+
+[02-Mar-25 04:14 PM] archielvahr#0000
+Yup, I am!
+
+
+[02-Mar-25 04:16 PM] emperyan11#0000
+Just like a 1 H2O contract?
+
+
+[02-Mar-25 04:17 PM] archielvahr#0000
+Yup, and I will log it on the sheet
+
+
+[02-Mar-25 04:17 PM] archielvahr#0000
+I think I am a bit behind on spending, so I can probably get the contribution spent pretty quickly
+
+
+[03-Mar-25 09:40 AM] emperyan11#0000
+Contract sent!
+
+
+[04-Mar-25 03:28 PM] emperyan11#0000
+So, what else can I get up to to help out? We still need a Vortex Fuel provider?
+
+
+[04-Mar-25 04:25 PM] archielvahr#0000
+I am not aware of anyone making vortex fuel
+
+
+[04-Mar-25 04:25 PM] archielvahr#0000
+So that might be great. Cause my personal plan was to ignore it. 😆
+
+
+[04-Mar-25 04:26 PM] archielvahr#0000
+We have no idea how much fuel it will use.
+
+
+[04-Mar-25 04:26 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1319907050268135505/1346609665835798619/gateway-new-fuel.png?ex=68149dbb&is=68134c3b&hm=6c4e40058d78439f6e31af1e8f72c1b3be64ee4a183f635aa92e8489549f9d82&
+
+
+[04-Mar-25 04:26 PM] archielvahr#0000
+It takes KR, which isn't released yet. But we know it's gonna take a ton of EEP time. almost more EEP time than REF time.
+
+
+[04-Mar-25 04:27 PM] archielvahr#0000
+But.. is it too early to make a lot of EEPs? Probably. You can start early and make a ton of EES for other stuff. But the ES itself will go really fast
+
+
+[04-Mar-25 04:28 PM] archielvahr#0000
+Other than that.. we are pretty low on RBH and RSE. some of those people dropped out
+
+
+[04-Mar-25 09:20 PM] emperyan11#0000
+Good advice thanks! Yeah, I could use some RFabs mesself
+
+
+[04-Mar-25 09:21 PM] emperyan11#0000
+I'll probably try to make the VF when the time comes though 🙂
+
+{Reactions}
+🎉 
+
+[18-Mar-25 12:28 AM] archielvahr#0000
+https://oogcapitalmanagement.com/posts/gateway-update-mar-2025/
+
+{Embed}
+https://oogcapitalmanagement.com/posts/gateway-update-mar-2025/
+Gateway Update, March 2025 | OOG Capital Management
+Pledge collection proceeds. See our most wanted items and join the cooperative!
+https://images-ext-1.discordapp.net/external/bVhx6k1HqAjugBUF1oMR9iKijuSgg2vNPyz_h1a34Xc/https/oogcapitalmanagement.com/images/gateway-march-2025-narrow.png
+
+
+[18-Mar-25 12:28 AM] archielvahr#0000
+Got an update posted! Will share it publically tomorrow
+
+
+[26-Apr-25 04:58 PM] swatacular#0000
+Hi Gateway people, Id like to get involved.. I have a decent amount of Afabs that may be helpful. do we have any sort of expectation on what the fees would amount to? or is it a total guess?
+
+
+[26-Apr-25 04:59 PM] swatacular#0000
+also, considering the new fuel needs does anyone have a project planned to make said fuel?
+
+
+[26-Apr-25 05:02 PM] archielvahr#0000
+Yeah we still don't have info on the fuel and transit fees- we aren't sure how fast the gateways will be or how much fuel gets used per jumps
+
+
+[26-Apr-25 05:03 PM] archielvahr#0000
+We don't know the rarity of the new metals or the Krypton uet for the fuel, since it isn't in game yet
+
+
+[26-Apr-25 05:03 PM] archielvahr#0000
+I don't think anyone in corp has plans to make fuel
+
+
+[26-Apr-25 05:03 PM] archielvahr#0000
+Mostly that would be somewhere with a ton of EEP buildings, since they are really small and really large buildings
+
+
+[26-Apr-25 05:04 PM] swatacular#0000
+hmmmmm 🧐
+
+
+[26-Apr-25 05:07 PM] archielvahr#0000
+There's a list of what we need here: https://docs.google.com/spreadsheets/d/1oET7LURFw6m-3iKu_5n8iT2SWS4PU-P-hiH6fMazWmU/edit?gid=0#gid=0
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1oET7LURFw6m-3iKu_5n8iT2SWS4PU-P-hiH6fMazWmU/edit?gid=0
+ADI Gateway Co-op
+https://images-ext-1.discordapp.net/external/3f9ohykp655jJwCsaRDCh2NMG0CUzkXc0FMD_n8dv8Q/https/lh7-us.googleusercontent.com/docs/AHkbwyIV-p6ZHILTthvdpdFHw9dFsdj7Kquw7f_Z61mYS0K9I5wQakX20dlyxCxxy9-DLbxhTmH-84gOVkBwwLnBWCsT-ZNXxPvthxBvmMa9ev53uKAOylHV%3Dw1200-h630-p
+
+
+[26-Apr-25 05:07 PM] archielvahr#0000
+Lots of stuff is pledged and I need to sort through some of those pledges to make sure they are still happening
+
+
+[26-Apr-25 05:08 PM] archielvahr#0000
+The shortages in rfabs in particular.....
+
+
+[26-Apr-25 05:08 PM] archielvahr#0000
+I wonder if the rfabs market will decrease without IDC.. good question for @allocater . Maybe everyone will just want afabs instead for HQs instead of rfabs for SLs
+
+
+[27-Apr-25 12:42 AM] allocater#0000
+I have seen some downward pressure, but so far it's relatively stable
+
+
+[28-Apr-25 08:40 AM] weltkriegdrei#0000
+I don't make much LDE but I'd say I could pledge 20 if you take small amounts.
+
+
+[28-Apr-25 09:17 AM] archielvahr#0000
+Yep, definitely. I can pay for that too (out of the cash contributions), since you probably need cash more than you need project shares
+
+{Reactions}
+👍 
+
+[28-Apr-25 10:01 AM] weltkriegdrei#0000
+Absolutely
+
+
+[28-Apr-25 03:01 PM] melon164#0000
+Screenshot in the devlog suggests gateways will eat SPT as upkeep consumables 🤔
+
+
+[28-Apr-25 03:08 PM] archielvahr#0000
+Yeah I think it's been SPT for a while, though they reduced the amount of SP and POW a while ago
+
+
+[28-Apr-25 03:08 PM] archielvahr#0000
+plus 1 KV -> 100 SPT so I think that'll be okay
+
+
+[28-Apr-25 04:57 PM] melon164#0000
+Yeah, I changed the scream emoji when I realised the output multiplier
+
+
+[28-Apr-25 04:57 PM] melon164#0000
+10 KV a week would be no joke
+
+
+[29-Apr-25 09:51 AM] allocater#0000
+SP upkeep or SP construction costs?
+
+
+[29-Apr-25 09:53 AM] archielvahr#0000
+For the upkeep
+
+{Reactions}
+😌 
+
+==============================================================
+Exported 87 message(s)
+==============================================================

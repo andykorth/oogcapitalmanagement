@@ -1,0 +1,59 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: 🏠Public and Welcome / shareholders-welcome
+==============================================================
+
+[09-Feb-24 11:22 AM] archielvahr#0000
+🎉 
+
+*Congrats on becoming a shareholder and full member of OOG!*
+
+In addition to the rules and information found in #public-welcome, here are some resources available to full members:
+
+
+💸  Corp Pricing:
+There are several items we sell internally that have fixed prices. Check the corporate sheet for information on what other players may have available for you. Please add yourself to the company price sheet. You are not required to match the prices on the sheet if it is not profitable for you, but feel free to utilize corp pricing to bolster yourself as a company. 
+
+💵  Auctions and Orders:
+To sell large quantities of a material and allow multiple corp members a chance at the piece of the pie, use the #auctions channel, and the /auction command. Likewise, if you want to buy something from the corp, use the #orders channel and the /orders command.
+
+🚀  Ship Construction:
+Our current model for ship construction has the ship-builder purchase all of the components individually from corp members. You can coordinate your purchases in the #ship-building channel. If you want to help make ship components, that's great. Discuss it in the channel and add yourself as a supplier to the corp shipbuilding sheet. Most ship building components have a few suppliers in OOG. Redundancy is good though!
+
+
+[09-Feb-24 11:22 AM] archielvahr#0000
+and:
+
+⛴️  Shipping:
+We have two shipping channels #shipping is for coordinating one-off shipments, often using our bot's /shipping-offer command. #route-board can be used if you have a regular shipping path where you can take extra cargo, or regularly need cargo moved.
+
+🏦  Bank of OOG: The corp "bank" is not a formal bank, but members of the corp are encouraged to request expansion financing from veteran members of the corp in the Bank of OOG Discord channel, particularly for bases that produce materials in high demand such as RATs, AL, or C.  Loans are available from the bank and can repaid interest free over periods from 20-60 days.  Opportunities to repay with materials produced versus cash may be available.  Other special financing may be available and the corporation may proactively offer loans for specific high-need projects as well (for example, a new HE base).  If you have any questions, feel free to ask in the bank channel or message any officer.
+
+
+[09-Feb-24 11:22 AM] archielvahr#0000
+Sheets:
+
+Corporate Sheet:
+https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit?usp=sharin
+
+Shipbuilding Sheet:
+https://docs.google.com/spreadsheets/d/1HtR4S65W8Ja8X60kUJdfnnUGwG_ZysCPM4XsQSQKIng/edit#gid=2052649648
+
+
+[06-Jul-24 09:08 AM] akyantor#0000
+For further notes on the corp, see the [OOG New Starter Introduction Guide](https://docs.google.com/document/d/1Ry14xONeuXAE1Sc0n6PA-V9vuX8s9DHXGtVJ7sP-YaQ/edit). *Existing members or new members, feel free to suggest improvements.*
+
+
+[20-Nov-24 09:11 PM] archielvahr#0000
+The starter guide can now be found on the website, split up among these articles: https://oogcapitalmanagement.com/shareholders/
+
+{Embed}
+https://oogcapitalmanagement.com/shareholders/
+Shareholders | OOG Capital Management
+For shareholding members of OOG
+https://images-ext-1.discordapp.net/external/hiivP5cQuGcN5YAYcXAZ5Xbe3mBuCboUTM6cXdvWudM/https/oogcapitalmanagement.com/images/OOGOpenGraph.png
+
+
+==============================================================
+Exported 5 message(s)
+==============================================================

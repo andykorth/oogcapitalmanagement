@@ -1,0 +1,1095 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: 🪐Planets / ⛽romulan-system
+==============================================================
+
+[27-Jun-24 01:08 PM] archielvahr#0000
+So I have some PSL on Heph, I know other people were looking for some too. I'll move it to ANT to help out with the various projects
+
+
+[27-Jun-24 01:25 PM] hernanduer#0000
+I have a lot of HSE and TSH if needed
+
+
+[27-Jun-24 02:04 PM] katinga#0000
+waiting on the PSL from Exospace.  I gotta go pick up some prefabs
+
+
+[27-Jun-24 02:56 PM] katinga#0000
+is anyone currently on 382c?
+
+
+[27-Jun-24 02:58 PM] tuffyless#0000
+not i.  a & g myself
+
+
+[27-Jun-24 03:00 PM] katinga#0000
+g is  a good spot
+
+
+[27-Jun-24 03:00 PM] katinga#0000
+we will need some folks on c though.  ngl
+
+
+[27-Jun-24 05:35 PM] katinga#0000
+Do you want G once I put an admin there?
+
+
+[27-Jun-24 05:54 PM] tuffyless#0000
+I dunno.  Prolly not right away.  Dont want to get myself swamped.  Ill reassess the workload after awhile
+
+{Reactions}
+👍 
+
+[28-Jun-24 12:34 AM] neth_havoc#0000
+If you want I can start as governor on G. I'm filling the COGC upkeep there anyway.
+
+
+[28-Jun-24 01:01 AM] katinga#0000
+That'd be cool.  I have a ship on the way with materials.  hoping to get the Admin Center up tomorrow afternoon
+
+
+[28-Jun-24 03:34 PM] katinga#0000
+@neth_havoc  or @tuffyless I'm short on a few materials for the Admin Center.  Can you contribute any?  this is on 382g
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255946904093720637/1256347023725035580/image.png?ex=68152c58&is=6813dad8&hm=839a3290eb0918ef86061f019a187b33d5e8c71b899bf7f77bdccc7065702024&
+
+
+[28-Jun-24 03:37 PM] archielvahr#0000
+I probably have all those on ANT, you can send for them if you can't get them elsewhere sooner
+
+
+[28-Jun-24 03:40 PM] katinga#0000
+I have a ship that'll be at ANT in about 4 hours
+
+
+[28-Jun-24 03:51 PM] katinga#0000
+game crashed on me.  made some orders in the Discord.  Do you have some basic b prefabs or MCG?  I might as well load up the ship that's going out there.  using my WCB
+
+
+[28-Jun-24 04:37 PM] katinga#0000
+g does not have an Infirmary.  putting in /orders for the mats for it.  C has a safety station and an infirmary
+
+
+[28-Jun-24 04:38 PM] katinga#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255946904093720637/1256363016631488603/image.png?ex=6814927d&is=681340fd&hm=ae1c68101c7ede6ff658b9804bf935b829a5b2f8eda193760b20c1e60ecb2718&
+
+
+[28-Jun-24 04:38 PM] archielvahr#0000
+I got the BDE and TRU, but not the other stuff
+
+
+[28-Jun-24 04:40 PM] katinga#0000
+I have the OFF for the upkeep.  I'll worry about the other 2 later.  I got 8 days on that.  I mainly need the prefabs
+
+
+[28-Jun-24 04:40 PM] .urpalhal#0000
+I might have BBH and BSE and BTA
+
+
+[28-Jun-24 04:41 PM] archielvahr#0000
+Honestly you'll only need the OFF in the INF and the DW in the SST for a whole
+
+
+[28-Jun-24 04:42 PM] archielvahr#0000
+maybe won't even need to keep those totally full, depending on how much you want to optimize
+
+
+[28-Jun-24 04:42 PM] katinga#0000
+I'm running a little low on AIC.  moving some stuff to liquidate
+
+
+[28-Jun-24 04:42 PM] archielvahr#0000
+I see 8k people
+
+
+[28-Jun-24 04:43 PM] katinga#0000
+don't you need the infrastructure and upkeep to attract the pop?
+
+
+[28-Jun-24 04:44 PM] katinga#0000
+make your PIOs happy by giving them access to bandaids!
+
+
+[28-Jun-24 04:45 PM] .urpalhal#0000
+I was told that 70% happiness is enough?
+
+
+[28-Jun-24 04:46 PM] katinga#0000
+happy to take any contributions
+
+
+[28-Jun-24 04:46 PM] .urpalhal#0000
+Idk what “enough” means tho
+
+
+[28-Jun-24 04:46 PM] .urpalhal#0000
+Ok I’ll check in an hour
+
+
+[28-Jun-24 04:49 PM] archielvahr#0000
+Under 50% happiness you lose pop, above 70% you gain pop. Between 50% and 70% there are no immigration changes
+
+{Reactions}
+givelove 
+
+[28-Jun-24 04:50 PM] katinga#0000
+any little bit helps.  and that's part of developing these planets
+
+
+[28-Jun-24 04:51 PM] katinga#0000
+tbh, I'm learning as I go with this development project
+
+
+[28-Jun-24 05:01 PM] archielvahr#0000
+Yeah take a look at this whole big thing:
+https://docs.google.com/document/d/1pDvP3Iz-MDIa_uoQPsJDDOHn72dK7T02k1oAa94K2W0/edit
+
+{Embed}
+https://docs.google.com/document/d/1pDvP3Iz-MDIa_uoQPsJDDOHn72dK7T02k1oAa94K2W0/edit
+Archiel's Good Governance
+A Prosperous Universe Guide Archiel’s Good Governance An OOG Production December 04, 2023 Responsibilities of a Governor Generally the responsibilities of a newly elected governor falls into these categories, roughly in order of importance: Maintain the COGC Maintain the population via population...
+https://images-ext-1.discordapp.net/external/hrJfqoWFEotbBlFg0NQ0BnEy4xMJ5nZXDrQtLdQfjys/https/lh7-us.googleusercontent.com/docs/AHkbwyKUifIL3c9g28sO2pujWpZgiSFo4eLsmKRq2Niq6iMEUgkvLyxGNtmRgiuuFX6diUT0Yn0cijqU3PVt37xzSErbUx5BVQha9GKf8zN93rtadJzImssu%3Dw1200-h630-p
+
+
+[28-Jun-24 05:02 PM] archielvahr#0000
+Once you get goin'. No rush to learn all of it
+
+
+[28-Jun-24 05:20 PM] katinga#0000
+I feel like part of it is taking a good look at what's already there, or not there, and identifying easy opportunities
+
+
+[28-Jun-24 05:28 PM] katinga#0000
+do you have AEF?
+
+
+[28-Jun-24 05:46 PM] archielvahr#0000
+I just have 10 AEF
+
+
+[28-Jun-24 05:55 PM] katinga#0000
+ok.  i'll get that later
+
+
+[28-Jun-24 05:55 PM] archielvahr#0000
+Other people in corp make it though
+
+
+[28-Jun-24 11:08 PM] tuffyless#0000
+Plenty of LSE + TCS but ohh so little PP3 time.  😦
+So much INS needed to build + repair.
+
+
+[28-Jun-24 11:19 PM] katinga#0000
+How much HSE do you have at ANT?
+
+
+[29-Jun-24 12:32 AM] hernanduer#0000
+More than 200
+
+
+[29-Jun-24 12:33 AM] hernanduer#0000
+That's why I have 5 pp3 for only 3 pp4
+
+
+[29-Jun-24 12:34 AM] hernanduer#0000
+Then 1 pp2 for AEF and LDE, and 2 wel and that's my whole Nike lol
+
+
+[29-Jun-24 01:13 PM] katinga#0000
+@domicius Hey there!  Let me know if you have any questions about the project.  In a nutshell, I want to develop QJ-382 into a SF refining system to combat the CX prices.  All of the ingredients are there.  So the C and G planets become RE planets to harvest the ingredients and probably i becomes the Refining hub.  Presently, 382c is On Strike, so I am running for Governor to get that planet sorted out and run some PIO programs.  I am going to need help with funding for the upkeep, and some folks (voters) to put some bases on C.  C also needs a Local Market.  I think there's only 1 person there.  G, I am working to get an Admin Center there and an Infirmary.  I have placed a Core Module on G already.  Rise is currently running A, which is fine.  Any contributions in materials and funding would be greatly appreciated.
+
+
+[30-Jun-24 11:22 PM] katinga#0000
+Admin Center is online in G!  Running for gov 🙂
+
+{Reactions}
+🎉 (3) 
+
+[30-Jun-24 11:26 PM] katinga#0000
+Infirmary online!
+
+
+[01-Jul-24 11:09 AM] katinga#0000
+Don't panic!  The QJ-382 system now has a name!  G now has a name, as well!
+
+
+[01-Jul-24 11:22 AM] archielvahr#0000
+woah big news
+
+
+[01-Jul-24 11:55 AM] katinga#0000
+I wish I could name the I planet Remus
+
+
+[01-Jul-24 01:50 PM] katinga#0000
+until the elections on C and G conclude, the pops on both planets are kinda stuck.  in the meantime, the next steps in the project will be to install some basic infrustructure on Romulan I (what I'm calling Remus from now on), and add warehousing to Romulan C
+
+
+[03-Jul-24 10:18 AM] katinga#0000
+Admin Center, safety station, and infirmary are online at Remus
+
+{Reactions}
+📈 🎉 
+
+[03-Jul-24 11:46 AM] katinga#0000
+I might have found help with some logistics.
+
+
+[03-Jul-24 02:05 PM] katinga#0000
+@tuffyless or @neth_havoc do either of you have spare TRU on Romulus?
+
+
+[03-Jul-24 02:28 PM] neth_havoc#0000
+Nope
+
+
+[03-Jul-24 02:39 PM] tuffyless#0000
+nope.
+
+
+[03-Jul-24 05:05 PM] katinga#0000
+no worries.  I've ordered some.  almost ready to send another shipment of materials out there
+
+
+[03-Jul-24 08:06 PM] katinga#0000
+Warehouse is online on C.  In another day and a half, the election will be over and I can set the price
+
+
+[04-Jul-24 12:11 AM] katinga#0000
+Folks, I have control of Romulus as a Governor.  I've already lowered the warehouse rental fee, set a base fee, and fiddled with production fees for RE bases.  Head to Romulus, folks.  Also Romulan C isn't far behind.  I have another day and a half before I have governmental control there.
+
+
+[04-Jul-24 06:25 PM] katinga#0000
+Are there OOG players that would be interested in setting up bases in the Romulan system?
+
+
+[04-Jul-24 06:27 PM] hernanduer#0000
+I'll probably make a WPL base on A
+
+
+[04-Jul-24 06:27 PM] katinga#0000
+I don't have a presence on A.  Another player holds that, for now.  A is a good start though
+
+
+[04-Jul-24 06:31 PM] katinga#0000
+looks like I have the COGC on C fixed.  it's no longer On Strike
+
+
+[04-Jul-24 07:34 PM] tuffyless#0000
+I worked with lukeskye when he was still around to build the infra on A.
+Have a 7 WPL / 5 PPF base on A, which the SET's came pretty quick for.
+The current gov there is a RoF puppet.
+
+
+[04-Jul-24 10:08 PM] archielvahr#0000
+Which planet was going to be fuel production COGC?
+
+
+[04-Jul-24 10:09 PM] archielvahr#0000
+And what's the ratio of fuel production bases to EXT bases?
+
+
+[04-Jul-24 11:17 PM] katinga#0000
+i'm setting up Remus as the REF planet.  so players harvest C and Romulus for the ingredients of the short recipe.
+
+
+[05-Jul-24 09:52 AM] katinga#0000
+new POPR is available on Rom C. looks like things are are headed in the right direction
+
+
+[05-Jul-24 05:33 PM] katinga#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255946904093720637/1258913766733643918/8w26e7.jpg?ex=68149f8f&is=68134e0f&hm=e793b938b4a3e5ac99f6fcff95e7a3d5fc756d99d3ddead5bd95b810c4486f53&
+https://cdn.discordapp.com/attachments/1255946904093720637/1258913767035764888/8w260b.jpg?ex=68149f8f&is=68134e0f&hm=8374d024f9b1c0c04ab75d6a7151755ae208d3aff32ba7b87566a73f13fbdb94&
+
+
+[06-Jul-24 10:22 AM] katinga#0000
+Alright, I've got full control of Remus, running some Immigration programs
+
+
+[09-Jul-24 12:28 PM] katinga#0000
+The new POPR for Romulus came out last night.  The POP has gone up and population programs are in effect.  This fuel project will be in need of more players to extract AMM and Hydrogen.  Will need some players on C, as well, to mine GAL
+
+
+[09-Jul-24 01:32 PM] katinga#0000
+POP programs are in effect on 382c
+
+
+[10-Jul-24 06:48 AM] katinga#0000
+Remus has its first POPR!
+
+{Reactions}
+🔥 (2) 
+
+[10-Jul-24 08:37 AM] hernanduer#0000
+I'm set down on A now
+
+{Reactions}
+👍 
+
+[16-Jul-24 06:00 AM] katinga#0000
+Now POPR on Romulus
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255946904093720637/1262725446005424169/image.png?ex=6814a5b6&is=68135436&hm=ae16efa386b1c0d720830b17d6d16a22155f824c89914ce1a499adc505a9b459&
+
+
+[16-Jul-24 06:07 AM] katinga#0000
+We need some harvesters on Romulus
+
+
+[17-Jul-24 09:51 AM] katinga#0000
+New POPR out for Remus
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255946904093720637/1263146058079277056/image.png?ex=6814dbf0&is=68138a70&hm=f72f0e0248f9bf09a7c10f55fc66a148599340b76f03d3212c948d4e77a7b2cd&
+
+
+[17-Jul-24 09:55 AM] katinga#0000
+My REF base on Remus is fully staffed on PIO.  operating at 103%.  If someone wanted to set up a REF base there, I'm running 13 REF with 2 STO.  The Settlers are trickling in.
+
+
+[17-Jul-24 10:28 AM] archielvahr#0000
+https://tenor.com/baiRH.gif
+
+{Embed}
+https://tenor.com/view/these-go-to11-spinal-tap-gif-14809787
+https://images-ext-1.discordapp.net/external/_Jf4IBBfVnSQg33CA2gnybcuDFphzlcu1Kvz7ta3GEE/https/media.tenor.com/hLVZC4qxNBUAAAAe/these-go-to11-spinal-tap.png
+
+
+[17-Jul-24 11:07 AM] katinga#0000
+huh?
+
+
+[17-Jul-24 11:08 AM] archielvahr#0000
+Must be before your time!
+
+
+[17-Jul-24 11:08 AM] archielvahr#0000
+There was this band called Spinal Tap, and they have guitar amps where the volume goes from 1 to 11
+
+
+[17-Jul-24 11:08 AM] archielvahr#0000
+most other guitar amps volume only goes up to 10
+
+
+[17-Jul-24 11:08 AM] archielvahr#0000
+but theirs go to 11
+
+
+[17-Jul-24 11:11 AM] archielvahr#0000
+https://youtu.be/uMSV4OteqBE?si=twzThB3MnfOzFGQc&t=80
+
+{Embed}
+dovenol
+https://www.youtube.com/watch?v=uMSV4OteqBE&start=80
+Amp. goes to 11 (This is Spinal Tap)
+Nigel explains how he can get that little extra if he needs it.
+https://images-ext-1.discordapp.net/external/Jy06xmTtRKj0sPGNyvgxt5z_Xzx4rzz_ggrLtrVpRc4/https/i.ytimg.com/vi/uMSV4OteqBE/hqdefault.jpg
+
+
+[17-Jul-24 11:18 AM] katinga#0000
+I'm an 80s kid.  so not before my time.  Spinal Tap wasn't something that held my interest at the time, though
+
+
+[17-Jul-24 11:28 AM] katinga#0000
+also not sure how the reference applies to my POPR update
+
+
+[17-Jul-24 11:38 AM] archielvahr#0000
+Oh just that you were at over 100%
+
+{Reactions}
+📈 
+
+[17-Jul-24 11:38 AM] archielvahr#0000
+😄
+
+
+[17-Jul-24 11:38 AM] archielvahr#0000
+I mean all our bases are > 100%, but, it still seemed relevant, haha
+
+
+[18-Jul-24 06:59 AM] katinga#0000
+*taps the mic* Is this thing on?  Looking for some neighbors in the Romulan system.  I'm willing to help defray some of the cost of two or three new bases on the planets I govern.
+
+
+[18-Jul-24 09:08 AM] archielvahr#0000
+I think the unemployment could hold some bases. I'm totally out of permits but if you make a post on UFO, make sure to mention the COGCs and the unique synergies
+
+
+[18-Jul-24 09:14 AM] katinga#0000
+which channel should I post in though?
+
+
+[18-Jul-24 09:26 AM] archielvahr#0000
+I think antares-general would be good
+
+
+[18-Jul-24 09:27 AM] archielvahr#0000
+won't get buried there
+
+{Reactions}
+👍 
+
+[18-Jul-24 09:37 AM] katinga#0000
+Ah Ha!  I had to join that!
+
+
+[18-Jul-24 09:44 AM] archielvahr#0000
+ahhh in that case the lounge might get more views, not sure how many ANT people aren't in there
+
+
+[18-Jul-24 12:21 PM] katinga#0000
+ant general will work
+
+
+[19-Jul-24 08:49 AM] katinga#0000
+new POPR out for Rom C.  It could certainly sustain one or two new neighbors now
+
+
+[19-Jul-24 09:10 AM] katinga#0000
+There!  Made a post in UFO
+
+
+[21-Jul-24 08:01 PM] archielvahr#0000
+I'm adding a manufacturing base on Romulan a!
+
+
+[21-Jul-24 08:02 PM] archielvahr#0000
+gonna be 820 SET and 50 Techs
+
+
+[21-Jul-24 08:02 PM] archielvahr#0000
+which should come pretty quick I'd say
+
+
+[22-Jul-24 01:06 PM] katinga#0000
+need some folks on the planets I've been developing.  A is Taiwan, and the rest is China
+
+{Reactions}
+🟥 
+
+[23-Jul-24 10:33 AM] hernanduer#0000
+wait, are you saying you want to be China?
+
+
+[23-Jul-24 10:34 AM] katinga#0000
+no.  though I do like egg fu yung
+
+{Reactions}
+🍳 (2) 
+
+[20-Aug-24 09:15 AM] sidepipe#0000
+@katinga fyi, I’ve been helping out ChobbyChock in ADI - gave them a loan for an LCB for their fuel refining bases. It seems like they might be interested in making more fuel, so I did point them towards the romulan system 🙂
+
+{Reactions}
+👍 
+
+[20-Aug-24 09:16 AM] sidepipe#0000
+Just wanted to let you know in case they message you about it!
+
+
+[22-Aug-24 06:49 AM] katinga#0000
+Not sure folks have noticed but elections on Romulus started yesterday
+
+
+[27-Aug-24 09:33 AM] marat_sh#0000
+@katinga Do you have a surplus of H on Romulus?
+
+
+[27-Aug-24 09:34 AM] marat_sh#0000
+I am planing to plase a BMP base on Romulan a
+
+
+[27-Aug-24 09:34 AM] marat_sh#0000
+in a few days
+
+
+[27-Aug-24 09:34 AM] marat_sh#0000
+I might start buying it from you there and ship it to Romulan a
+
+
+[27-Aug-24 09:36 AM] katinga#0000
+I do not harvest H on Romulus.  I harvest it on Ant2G.  I harvest AMM on Romulus
+
+
+[27-Aug-24 09:37 AM] marat_sh#0000
+I see Thanks for info
+
+
+[27-Aug-24 09:38 AM] marat_sh#0000
+It's closer then CX so Ant2G works too Are you using all of the H from Ant2g?
+
+
+[27-Aug-24 09:51 AM] katinga#0000
+I have some surplus
+
+
+[27-Aug-24 09:51 AM] marat_sh#0000
+Awesome! Thank you for letting me know 🙏
+
+
+[03-Sep-24 10:03 AM] marat_sh#0000
+Election on Romulan-a has started
+
+
+[03-Sep-24 10:05 AM] archielvahr#0000
+Oh I started running
+
+
+[03-Sep-24 10:05 AM] archielvahr#0000
+Uhh I think Rise was filling it although apparently I was governor
+
+
+[03-Sep-24 10:06 AM] marat_sh#0000
+I was confused when I saw it 😅
+
+
+[03-Sep-24 10:07 AM] archielvahr#0000
+He's got those cheap OFFs, heh
+
+
+[03-Sep-24 10:07 AM] archielvahr#0000
+I guess it all worked out
+
+
+[03-Sep-24 10:07 AM] marat_sh#0000
+OFF at 85/u used to be negative. Now it's not that bad
+
+
+[10-Sep-24 06:46 PM] marat_sh#0000
+@archielvahr are you planning to keep romulan a under your control? or do you want to offload it to rise?
+
+
+[10-Sep-24 07:23 PM] archielvahr#0000
+Offloading governor to rise, watching as an MP
+
+
+[10-Sep-24 07:24 PM] marat_sh#0000
+election ends in 14 h You got 4 Votes, he got 2 votes One of your votes is mine
+
+
+[10-Sep-24 07:43 PM] archielvahr#0000
+Yeah I voted for him, heh
+
+
+[10-Sep-24 07:43 PM] archielvahr#0000
+gotta keep my governorships to a decent level
+
+
+[10-Sep-24 07:43 PM] archielvahr#0000
+oh actually we definitely want to stop xepiov
+
+
+[10-Sep-24 07:43 PM] archielvahr#0000
+so... anything we can do to stop that 😬
+
+
+[10-Sep-24 07:44 PM] marat_sh#0000
+how many people on romulan a?
+
+
+[10-Sep-24 07:44 PM] marat_sh#0000
+I think most of them are us
+
+
+[10-Sep-24 07:45 PM] archielvahr#0000
+yeaaaaah, but I think we only have like 3 or 4
+
+
+[10-Sep-24 07:45 PM] marat_sh#0000
+I will talk with razenpok
+
+
+[10-Sep-24 07:46 PM] archielvahr#0000
+awesome, thanks
+
+
+[14-Sep-24 11:29 AM] akyantor#0000
+I actually need a bunch of SET on QJ-382a (romulan a), and there's currently a small deficit (20 open jobs)... sent a message to rise to find out what he wants to do.
+
+
+[16-Sep-24 12:44 PM] akyantor#0000
+Rise isn’t being all that responsive to my messages via DM. I’ve shipped materials to upgrade either the INF or the SST. Looks like health satisfaction is already at >90%. So figure I should upgrade the SST which should push the happiness for SET above 70% and cause some migrations. Any thoughts?
+
+
+[16-Sep-24 12:52 PM] sidepipe#0000
+If we've learned anything from Life, all we need to do is run against him on the planet and he'll suddenly be very responsive 😄
+
+
+[16-Sep-24 02:02 PM] archielvahr#0000
+How many settlers did you add this report?
+
+
+[16-Sep-24 02:03 PM] archielvahr#0000
+Ahh dang I started a motion and forgot to actually finish it
+
+
+[16-Sep-24 02:16 PM] archielvahr#0000
+Okay we got 600 SET coming next time
+
+
+[16-Sep-24 02:17 PM] archielvahr#0000
+snuck it in before the report
+
+
+[16-Sep-24 02:45 PM] akyantor#0000
+630
+
+
+[16-Sep-24 02:45 PM] akyantor#0000
+So that should get pretty close to filling th gap
+
+
+[16-Sep-24 06:24 PM] draconisdomini#0000
+Indeed, now that I'm an MP on Life things mysteriously get done...
+
+
+[16-Sep-24 11:53 PM] akyantor#0000
+I did get a response last night, it sounds like he discussed it with Archiel.
+
+
+[17-Sep-24 09:38 AM] archielvahr#0000
+Looks like we nailed the population
+
+
+[17-Sep-24 09:38 AM] katinga#0000
+how many blue pills did that take?
+
+
+[17-Sep-24 09:39 AM] archielvahr#0000
+A whole festival worth
+
+
+[17-Sep-24 09:51 AM] hernanduer#0000
+I was thinking matrix and didn't understand
+
+
+[17-Sep-24 10:05 AM] archielvahr#0000
+Yeah I don't remember which color pills did what in the movie
+
+
+[17-Sep-24 10:16 AM] marat_sh#0000
+If I remember correctly Blue to stay in simulation and red to wake up in real world
+
+
+[17-Sep-24 10:18 AM] marat_sh#0000
+Also if I am gonna plan my WLP base on romulan a Do I also need to coordinate it with festivals? 😅
+
+
+[17-Sep-24 10:24 AM] archielvahr#0000
+it'll probably be okay going forward
+
+
+[17-Sep-24 10:24 AM] archielvahr#0000
+just had big bases in one popi
+
+
+[17-Sep-24 10:24 AM] marat_sh#0000
+I want a grand opening ceremony too 😅
+
+
+[17-Sep-24 10:24 AM] marat_sh#0000
+The whole planet to celebrate
+
+
+[17-Sep-24 10:25 AM] hernanduer#0000
+🎉
+
+
+[17-Sep-24 10:30 AM] katinga#0000
+little blue pills... maybe that's a US thing?
+
+
+[17-Sep-24 10:30 AM] hernanduer#0000
+as a young man, not really a thing for me to worry about 😄
+
+
+[17-Sep-24 10:31 AM] hernanduer#0000
+I was also thinking you meant X, not little blue pills
+
+
+[17-Sep-24 10:31 AM] hernanduer#0000
+though I think they both result in similar parties
+
+
+[17-Sep-24 10:32 AM] katinga#0000
+well, the context was Archiel 'nailing the population'
+
+{Reactions}
+🫠 (2) 😳 (2) 
+
+[17-Sep-24 10:42 AM] marat_sh#0000
+https://tenor.com/view/spongebob-you-what-what-did-you-do-spongebob-meme-spongebob-squarepants-gif-19389913
+
+{Embed}
+https://tenor.com/view/spongebob-you-what-what-did-you-do-spongebob-meme-spongebob-squarepants-gif-19389913
+https://images-ext-1.discordapp.net/external/QKJbFwlTIRMT_uHS51KAY5flJtk-3A_Y-CDa5jf2ueA/https/media.tenor.com/LYgG6pY86K8AAAAe/spongebob-you-what.png
+
+
+[17-Sep-24 10:42 AM] marat_sh#0000
+What he did to population?
+
+
+[17-Sep-24 10:43 AM] archielvahr#0000
+ohhhhhhhhhhhhhhhhhhh
+
+
+[17-Sep-24 10:43 AM] archielvahr#0000
+yeah I was thinking ecstacy or whatever the kids are into these days at festivals
+
+
+[17-Sep-24 10:43 AM] marat_sh#0000
+Kids are wild these days (I am 28) 😅
+
+
+[17-Sep-24 10:46 AM] katinga#0000
+trust me to find innuendo in something 😄
+
+
+[25-Sep-24 01:22 PM] katinga#0000
+Anyone in the Romulan system need AMM?  I got too much of it.  lol
+
+
+[25-Sep-24 05:07 PM] tuffyless#0000
+@neth_havoc Romulus CoGC on strike.  I dont have mats onsite.  😦
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255946904093720637/1288622852161015859/image.png?ex=6814994d&is=681347cd&hm=8a617b9d6ba9c11e5cb8028dd50145958637a88afd2a1374984df17c12ba7b5a&
+
+
+[25-Sep-24 05:11 PM] tuffyless#0000
+I'll bring some my next trip but its gunna be few days
+
+
+[26-Sep-24 06:26 AM] katinga#0000
+I got everything there but the MCG
+
+
+[26-Sep-24 06:36 AM] neth_havoc#0000
+MCG added, totally missed it this time. 😓
+
+
+[13-Nov-24 06:49 AM] katinga#0000
+@neth_havoc the election started at Romulus.  Are you running?  Right now it's me and Xepiov
+
+
+[14-Nov-24 01:52 PM] neth_havoc#0000
+That is ok for me! You have my vote.
+
+
+[27-Nov-24 09:16 AM] tuffyless#0000
+Anyone need 2k H @ 59.8/u  and can take immediate delivery on Romulus (QJ-382g)?    I made a booboo.
+2k warehouse rents for $400, which I'll pay for. 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1255946904093720637/1311349954975109187/image.png?ex=6814e1d0&is=68139050&hm=27a92bb659d9cf08664b708cad16050b6b68da1545c681eb1710f3b729b4e670&
+
+
+[27-Nov-24 09:43 AM] mrsmith33#0000
+send me a contract. Ship is underway
+
+
+[27-Nov-24 09:44 AM] sidepipe#0000
+If you need to offload more, let me know! Happy to come pick up from Romulus 🙂
+
+
+[27-Nov-24 09:45 AM] katinga#0000
+I have extra AMM on Romulus.  H on Ant2G, as well
+
+
+[27-Nov-24 09:46 AM] tuffyless#0000
+tyty!  Huge pressure relief in the STO's.  😆
+
+
+[27-Nov-24 09:47 AM] mrsmith33#0000
+Don't let it leak back into the atmosphere
+
+{Reactions}
+🤣 
+
+[27-Nov-24 09:54 AM] tuffyless#0000
+Sent you a H contd too.  Happy Thanksgiving!  🦃
+
+
+[27-Nov-24 10:07 AM] sidepipe#0000
+What’s your going rate for AMM? I might pick some up once I empty out my new Romulus warehouse 🙂
+
+
+[27-Nov-24 10:18 AM] katinga#0000
+80 per unit
+
+
+[07-Dec-24 11:57 AM] archielvahr#0000
+This one is fuel, eh? ⛽
+
+
+[07-Dec-24 01:25 PM] hernanduer#0000
+I have manufacturing on A
+
+
+[08-Dec-24 12:23 PM] katinga#0000
+fuel refining is on Remus
+
+
+[08-Dec-24 12:24 PM] katinga#0000
+You can suck up the ingredients for SF on 2 of the other planets
+
+
+[08-Dec-24 01:26 PM] archielvahr#0000
+Yeah I also do manufacturing, but I'll mark it fuel cause it's uniquely fuel and we need variety in the icons 😆
+
+
+[08-Dec-24 10:02 PM] katinga#0000
+hyalos is a diamond?
+
+
+[09-Dec-24 07:30 AM] roche3950#0000
+“crystal” of some sort
+
+
+[14-Dec-24 11:03 AM] katinga#0000
+election started on Romulus
+
+
+[07-Mar-25 05:22 PM] lax9552#0000
+Does anyone need anything from or on Romulus? I can expand but don't really have the transportation to scale here yet.
+
+
+[10-Mar-25 12:28 PM] katinga#0000
+are you still running with starter ships?
+
+
+[10-Mar-25 12:31 PM] katinga#0000
+I can help with some materials to upgrade one of your ships.  I believe Archiel helps newer players upgrade their HQ so you can get more permits.  I set up infrastructure on Rom C, Romulus, and Remus for SF operations.
+
+
+[10-Mar-25 12:57 PM] archielvahr#0000
+Yup those first 15 permits are pretty cheap!
+
+
+[11-Mar-25 09:18 AM] lax9552#0000
+I am on starter ships. They are now beginning to be my bottlenecks. Would love to at least get their cargo bays up.
+
+
+[11-Mar-25 09:19 AM] lax9552#0000
+That would be great. I get hq 4 today.  I would love to be able to scale dirt cheap fuel for us all.
+
+
+[11-Mar-25 09:25 AM] katinga#0000
+Archiel, and I believe a few others, make ship parts to build/upgrade ships
+
+
+[11-Mar-25 09:26 AM] .urpalhal#0000
+There is also the ship upgrade kit in ADI
+
+
+[11-Mar-25 09:26 AM] .urpalhal#0000
+It provides everything to upgrade starter ships to a WCB and such
+
+
+[11-Mar-25 09:30 AM] katinga#0000
+WCB is best for hauling ores and heavy cargo.  Your decision, Laxy, but you might want to go with a general 2k/2k cargo bay
+
+
+[11-Mar-25 09:31 AM] .urpalhal#0000
+I would agree that WCB is better for Ore and Metals and other heavy stuffs, but it is the easiest upgrade from the starter ship
+
+
+[11-Mar-25 09:32 AM] .urpalhal#0000
+Financially i think it makes more sense to just buy a new LCB ship rather than upgrade to one
+
+
+[11-Mar-25 09:33 AM] katinga#0000
+considering that you're upgrading the fuel tanks and possibly the engines, i agree.  you're rebuilding the ship anyway
+
+
+[11-Mar-25 09:34 AM] .urpalhal#0000
+On top of that you have to upgrade the Crew Quarters for the LCB where as for an upgrade to WCB you don’t need a new Crew Quarters
+
+
+[11-Mar-25 09:36 AM] katinga#0000
+It's your choice which route you'd rather go with a ship
+
+
+[11-Mar-25 09:36 AM] katinga#0000
+might be better to upgrade the starters to 1k/1k ships and then build a 2k/2k from scratch
+
+
+[11-Mar-25 09:38 AM] .urpalhal#0000
+3k/1k >> 1k/1k and there is almost no difference in the bill of materials to upgrade to a WCB vs a MCB
+
+{Reactions}
+👆 
+
+[11-Mar-25 10:40 AM] lax9552#0000
+I play alot, and I don't think that will change, so I think we can route  it this way. 
+Starter 
+WCB (ADI assistance) 
+New LCB (work toward). 
+
+This kinda hits my sweet spot.
+
+
+[11-Mar-25 10:41 AM] lax9552#0000
+Keep the starter as a ferry
+
+
+[11-Mar-25 10:44 AM] lax9552#0000
+But simultaneously I need to plan expansion. The AMM on romulus is good for integrating my raw but the roi sucks. 
+
+I could also, start to move my ref operation off Deimos and onto a fuel cogc.
+
+
+[11-Mar-25 10:44 AM] pagy1234#0000
+Cost of LCB and WCB is almost equal, but WCB has 2k more tonnage, basically no reason not to do it. Even if you think theres no point for you (I thought the same at one point) there will come a time where you will use thst extra space, even just slightly, and be happy that you got it.
+
+
+[11-Mar-25 10:44 AM] katinga#0000
+Remus has a fuel refi COGC.  that's where I refine
+
+
+[11-Mar-25 10:45 AM] lax9552#0000
+With more cargo that's probably long term solution.
+
+
+[11-Mar-25 10:45 AM] lax9552#0000
+Then I can ship straight to ANT.
+
+
+[11-Mar-25 10:47 AM] katinga#0000
+I mine the Gal on Rom C (there's your WCB job), the AMM on Rom, and refine on Remus.  I get the H on Ant2G.
+
+
+[11-Mar-25 10:48 AM] lax9552#0000
+Okay, I will need to hit prunplaner hard tonight.
+
+
+[11-Mar-25 10:50 AM] katinga#0000
+I also have a warehouse at Origo.  the Rom system has a fairly high micrometeor factor that will beat up your ship going planet to planet.  I warp out to Origo and then back in to another planet to avoid that damage.
+
+
+[11-Mar-25 10:51 AM] lax9552#0000
+I already ct with TREE for 10k FF/d so income is steady.
+
+
+[11-Mar-25 10:52 AM] lax9552#0000
+Im a big risk management guy, so I may move a little slow.
+
+
+[11-Mar-25 10:53 AM] katinga#0000
+Once you get your fleet to how you want it, I can easily sell you the H you need if you're cooking SF
+
+
+[11-Mar-25 10:54 AM] lax9552#0000
+I will cook anything, call me Heisenburg
+
+
+[11-Mar-25 10:55 AM] lax9552#0000
+Romulus is crazy for H.
+
+
+[11-Mar-25 10:55 AM] katinga#0000
+Yeah but I need the AMM from there more than the H
+
+
+[11-Mar-25 10:56 AM] lax9552#0000
+I see. AMM that hard to come by?
+
+
+[11-Mar-25 10:56 AM] katinga#0000
+where's it's convenient to get it to Remus, yes
+
+
+[11-Mar-25 10:56 AM] lax9552#0000
+Got ya.
+
+
+[11-Mar-25 10:58 AM] lax9552#0000
+I have space, 500 on my trips to romulus if you need me to bring AMM
+
+
+[11-Mar-25 10:58 AM] lax9552#0000
+ANT - ROMu
+
+
+[11-Mar-25 10:58 AM] katinga#0000
+I got 1800 at Remus atm
+
+{Reactions}
+👍 
+
+[11-Mar-25 11:00 AM] katinga#0000
+Don't forget to check your BRA from time to time
+
+
+[11-Mar-25 11:01 AM] lax9552#0000
+Unfamiliar with acronym
+
+
+[11-Mar-25 11:02 AM] katinga#0000
+Building Repair Assistant.  your bases deteriorate over time.  just as your ships do
+
+
+[11-Mar-25 11:03 AM] lax9552#0000
+So sorry, didn't mean to ignore this. Thank you!
+
+
+[11-Mar-25 11:04 AM] lax9552#0000
+Oh yes, checked few days ago.
+
+
+[11-Mar-25 11:26 AM] pagy1234#0000
+Alg😁👍
+
+
+[12-Mar-25 04:42 PM] lax9552#0000
+@katinga how much sf do you need out here/d?
+
+
+[12-Mar-25 05:31 PM] lax9552#0000
+I'm going to move my Deimos REFs to ZV-759e, 
+
+While that is happening i need to decide in ship path. 
+
+then expand my he3 production in IY-206i.  The roi is too enticing on ZV-759e. 
+
+Long term I want to get more ref for the rim in romulan.
+
+
+[12-Mar-25 05:32 PM] lax9552#0000
+I still will be pit to romulus multiple times a week if you need fuel.
+
+
+[01-Apr-25 09:42 AM] lax9552#0000
+Can anybody spare some RAT on Romulus? I am 12 hrs out and could use 15 in a bad way. Willing to put up 5k bounty for it.
+
+
+[01-Apr-25 09:52 AM] archielvahr#0000
+Ahh I'm on Romulan A, but not Romulus
+
+
+[01-Apr-25 09:53 AM] katinga#0000
+bounty?  is it on the run after jumping bail?
+
+{Reactions}
+🚨 🦹 🤣 
+
+[01-Apr-25 12:30 PM] lax9552#0000
+Yeah, some tough guy is holding up the whole base for 15 rat.
+
+
+[24-Apr-25 11:44 AM] katinga#0000
+the PIOs on Remus are at 90% happy, it's a good time to set up a base
+
+
+==============================================================
+Exported 249 message(s)
+==============================================================

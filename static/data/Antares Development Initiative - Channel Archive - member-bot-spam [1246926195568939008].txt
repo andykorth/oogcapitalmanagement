@@ -1,0 +1,1059 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Channel Archive / member-bot-spam
+==============================================================
+
+[20-Jun-24 07:23 PM] .urpalhal#0000
+$fit PG 500t/500m3
+
+
+[20-Jun-24 07:23 PM] FIDO#2937
+
+{Embed}
+Max Units
+249999 PG
+Remaining Weight
+0.00t
+Remaining Volume
+250.00m³
+
+
+[21-Jun-24 11:39 AM] .urpalhal#0000
+$fit HAL 2000t/2000m3
+
+
+[21-Jun-24 11:39 AM] FIDO#2937
+
+{Embed}
+Max Units
+921 HAL
+Remaining Weight
+1.43t
+Remaining Volume
+1,079.00m³
+
+
+[22-Jun-24 11:31 PM] tanda#0000
+$fit AR 3000t/1000m3
+
+
+[22-Jun-24 11:31 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 AR
+Remaining Weight
+1,216.00t
+Remaining Volume
+0.00m³
+
+
+[22-Jun-24 11:38 PM] tanda#0000
+$ift PE 3000t/1000m3
+
+
+[22-Jun-24 11:38 PM] tanda#0000
+$fit PE 3000t/1000m3
+
+
+[22-Jun-24 11:39 PM] FIDO#2937
+
+{Embed}
+Max Units
+100000 PE
+Remaining Weight
+2,000.00t
+Remaining Volume
+0.00m³
+
+
+[22-Jun-24 11:59 PM] .urpalhal#0000
+$fit AR 2000t/2000m3
+
+
+[22-Jun-24 11:59 PM] FIDO#2937
+
+{Embed}
+Max Units
+1121 AR
+Remaining Weight
+0.14t
+Remaining Volume
+879.00m³
+
+
+[23-Jun-24 10:43 AM] avalock#0000
+!roles
+
+
+[23-Jun-24 10:43 AM] Sapphire#8184
+
+{Embed}
+Roles Information
+> **Count:** `44`
+Sorted by position
+>>> `44` | @Sapphire
+`43` | @Invite Tracker
+`42` | @FIDO
+`41` | @Project Automation
+`40` | @Project Administrator
+`39` | @Server Booster
+`38` | @Project Coordinator
+`37` | @Project Member
+`36` | @Project Associate
+`35` | @Project Airlock
+`34` | @Archive Viewer
+`33` | @|⁣⁣⁣⁣⁣⁣⁣     ⁣⁣⁣⁣⁣         Role⁣⁣⁣⁣⁣     ⁣⁣⁣⁣⁣         |
+`32` | @Deimos
+`31` | @Vulcan
+`30` | @Nike
+`29` | @Griffonstone
+`28` | @Phobos
+`27` | @Harmonia
+`26` | @Nascent
+`25` | @Life
+`24` | @Hephaestus
+`23` | @Aceland
+`22` | @Elon
+`21` | @Astraeus
+`20` | @Norwick
+`19` | @Proxion
+`18` | @Katoa
+`17` | @Gibson
+`16` | @Promitor
+`15` | @Avalon
+Sorted by member count
+>>> This information is currently unavailable.
+Page 1/2
+
+
+[23-Jun-24 10:43 AM] avalock#0000
+ah shit idk how to add/remove my plants
+
+
+[23-Jun-24 10:43 AM] avalock#0000
+Was gonna do Nascent and Nike
+
+
+[23-Jun-24 10:44 AM] avalock#0000
+and remove harmonia
+
+
+[23-Jun-24 10:47 AM] avalock#0000
+*got it*
+
+
+[23-Jun-24 10:57 AM] uncle_leslie69#0000
+!planethephaestus
+
+
+[23-Jun-24 10:57 AM] Sapphire#8184
+:success: You have successfully toggled the "Hephaestus" role.
+
+
+[23-Jun-24 10:57 AM] igfloz#0000
+!planethephaestus
+
+
+[23-Jun-24 10:57 AM] Sapphire#8184
+:success: You have successfully toggled the "Hephaestus" role.
+
+
+[23-Jun-24 10:57 AM] igfloz#0000
+!planetnascent
+
+
+[23-Jun-24 10:57 AM] Sapphire#8184
+:success: You have successfully toggled the "Nascent" role.
+
+
+[23-Jun-24 10:58 AM] igfloz#0000
+cool
+
+
+[24-Jun-24 10:11 AM] razesdark#0000
+!planethephaestus
+
+
+[24-Jun-24 10:11 AM] Sapphire#8184
+:success: You have successfully toggled the "Hephaestus" role.
+
+
+[24-Jun-24 10:11 AM] razesdark#0000
+!planetKI-840c
+
+
+[24-Jun-24 10:11 AM] Sapphire#8184
+
+{Embed}
+:error: Command not found
+> There's no command called `planetki-840c`.
+
+
+[24-Jun-24 10:11 AM] razesdark#0000
+😉
+
+
+[24-Jun-24 10:12 AM] akyantor#0000
+!planethephaestus
+
+
+[24-Jun-24 10:12 AM] Sapphire#8184
+:success: You have successfully toggled the "Hephaestus" role.
+
+
+[26-Jun-24 02:21 PM] archielvahr#0000
+!planethephaestus
+
+
+[26-Jun-24 02:21 PM] Sapphire#8184
+:success: You have successfully toggled the "Hephaestus" role.
+
+
+[29-Jun-24 09:24 AM] razenpok#0000
+!planetharmonia
+
+
+[29-Jun-24 09:24 AM] Sapphire#8184
+:success: You have successfully toggled the "Harmonia" role.
+
+
+[03-Jul-24 02:04 AM] razenpok#0000
+!planetelon
+
+
+[03-Jul-24 02:04 AM] Sapphire#8184
+:success: You have successfully toggled the "Elon" role.
+
+
+[03-Jul-24 02:06 AM] jcheung#0000
+!planethephaestus
+
+
+[03-Jul-24 02:06 AM] Sapphire#8184
+:success: You have successfully toggled the "Hephaestus" role.
+
+
+[03-Jul-24 02:06 AM] jcheung#0000
+!planetdeimos
+
+
+[03-Jul-24 02:06 AM] Sapphire#8184
+:success: You have successfully toggled the "Deimos" role.
+
+
+[06-Jul-24 05:16 PM] chobbycock#0000
+!planetEos
+
+
+[06-Jul-24 05:16 PM] Sapphire#8184
+
+{Embed}
+:error: Command not found
+> There's no command called `planeteos`.
+
+
+[06-Jul-24 05:16 PM] chobbycock#0000
+!planetnike
+
+
+[06-Jul-24 05:16 PM] Sapphire#8184
+:success: You have successfully toggled the "Nike" role.
+
+
+[06-Jul-24 05:16 PM] chobbycock#0000
+!planetharmonia
+
+
+[06-Jul-24 05:16 PM] Sapphire#8184
+:success: You have successfully toggled the "Harmonia" role.
+
+
+[08-Jul-24 01:43 AM] puncher23#0000
+!planetnike
+
+
+[08-Jul-24 01:43 AM] Sapphire#8184
+:success: You have successfully toggled the "Nike" role.
+
+
+[08-Jul-24 01:43 AM] puncher23#0000
+!planetdeimos
+
+
+[08-Jul-24 01:43 AM] Sapphire#8184
+:success: You have successfully toggled the "Deimos" role.
+
+
+[12-Jul-24 10:37 AM] sidepipe#0000
+$fit GRN 500t/500m3
+
+
+[12-Jul-24 10:38 AM] FIDO#2937
+
+{Embed}
+Max Units
+500 GRN
+Remaining Weight
+50.00t
+Remaining Volume
+0.00m³
+
+
+[12-Jul-24 04:05 PM] sidepipe#0000
+$fit DW 2000t/2000m3
+
+
+[12-Jul-24 04:05 PM] FIDO#2937
+
+{Embed}
+Max Units
+20000 DW
+Remaining Weight
+0.00t
+Remaining Volume
+0.00m³
+
+
+[13-Jul-24 11:13 AM] tanda#0000
+`size 261 CL
+
+
+[13-Jul-24 11:14 AM] Invite Tracker#0478
+
+{Embed}
+Invite Tracker's Help Page
+Invite Tracker is a powerful Discord bot which offers many features such as invite tracking, giveaways, messages tracking and more.
+
+**[Dashboard](https://invite-tracker.com/)** - **[Documentation](https://docs.invite-tracker.com/)** - **[Vote](https://top.gg/bot/720351927581278219/vote)**
+
+You can configure the bot on the **[dashboard](https://invite-tracker.com/)**.
+🔧 **Administration**
+`syncinvites`, `permscheck`, `deleteinvite`, `cleanup`, `massban`, `exportleaderboard`
+📚 **General**
+`about`, `ping`, `add`, `support`, `dashboard`, `vote`, `variables`, `documentation`, `serverinfo`, `roleinfo`, `leaderboard`, `stats`, `userinfo`, `inviter`, `invitedlist`, `findlink`, `invitecodes`, `invites`, `messages`
+🎉 **Giveaways**
+`giveaway`
+🗂 **Management**
+`addinvites`, `removeinvites`, `resetinvites`, `addbonus`, `removebonus`, `addfakeinvites`, `removefakeinvites`, `addmessages`, `removemessages`, `resetmessages`
+✨ **Premium**
+`premium`
+🔓 **Verification**
+`verify`, `forceverify`
+Use /help <command> for more information on a command.
+
+
+[13-Jul-24 11:14 AM] tanda#0000
+$fit CL 3000t/1000m3
+
+
+[13-Jul-24 11:14 AM] FIDO#2937
+
+{Embed}
+Max Units
+937 CL
+Remaining Weight
+1.60t
+Remaining Volume
+63.00m³
+
+
+[13-Jul-24 01:53 PM] jvaler#0000
+`space 261 cl
+
+
+[13-Jul-24 01:53 PM] FIDO#2937
+
+{Embed}
+Weight Total
+835.20t
+Volume Total
+261.00m³
+Weight Remaining
+-335.20t
+Volume Remaining
+239.00m³
+
+
+[13-Jul-24 01:53 PM] jvaler#0000
+fyi
+
+
+[13-Jul-24 01:53 PM] tanda#0000
+ah, I knew it was something like that
+
+
+[17-Jul-24 10:03 AM] jvaler#0000
+`fitratio 5 na 10 sio 300m 500t
+
+
+[17-Jul-24 10:03 AM] FIDO#2937
+
+{Embed}
+Ratio
+20
+Material Counts
+_na_: 100
+_sio_: 200
+Weight Total
+455.00t
+Volume Total
+300.00m³
+Weight Remaining
+45.00t
+Volume Remaining
+0.00m³
+
+
+[20-Jul-24 11:08 AM] tanda#0000
+`space 80000 PE
+
+
+[20-Jul-24 11:08 AM] FIDO#2937
+
+{Embed}
+Weight Total
+800.00t
+Volume Total
+800.00m³
+Weight Remaining
+-300.00t
+Volume Remaining
+-300.00m³
+
+
+[20-Jul-24 02:16 PM] tanda#0000
+`fit AL 3000t/1000m3
+
+
+[20-Jul-24 02:16 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 AL
+Remaining Weight
+300.00t
+Remaining Volume
+0.00m³
+
+
+[20-Jul-24 02:17 PM] tanda#0000
+`fit AL 500t/500m3
+
+
+[20-Jul-24 02:17 PM] FIDO#2937
+
+{Embed}
+Max Units
+185 AL
+Remaining Weight
+0.50t
+Remaining Volume
+315.00m³
+
+
+[22-Jul-24 01:04 PM] realharvey#0000
+`findmat HAL
+
+
+[22-Jul-24 01:04 PM] FIDO#2937
+
+{Embed}
+Error
+GroupId not specified or set.
+
+
+[22-Jul-24 01:04 PM] realharvey#0000
+`findmat HAL Halcyon
+
+
+[22-Jul-24 01:04 PM] FIDO#2937
+
+{Embed}
+Error
+GroupId not specified or set.
+
+
+[22-Jul-24 01:10 PM] realharvey#0000
+`fit HAL 3000t/1000m3
+
+
+[22-Jul-24 01:10 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 HAL
+Remaining Weight
+830.00t
+Remaining Volume
+0.00m³
+
+
+[22-Jul-24 01:11 PM] realharvey#0000
+`fit HAL 2000t/2000m3
+
+
+[22-Jul-24 01:11 PM] FIDO#2937
+
+{Embed}
+Max Units
+921 HAL
+Remaining Weight
+1.43t
+Remaining Volume
+1,079.00m³
+
+
+[26-Jul-24 08:09 AM] razenpok#0000
+!help
+
+
+[26-Jul-24 08:09 AM] Sapphire#8184
+
+{Embed}
+:emote: Available commands
+> Use `!help <command>` to get more information
+ 
+> `!report`
+> `!warns`
+> `!help`
+> `!info`
+> `!list`
+> `!ping`
+> `!avatarinfo`
+> `!bannerinfo`
+> `!guildbannerinfo`
+> `!guildiconinfo`
+> `!guildmembercount`
+> `!guildsplashinfo`
+> `!roleinfo`
+> `!searchdocumentation`
+> `!stickerpackinfo`
+Page 1/3
+
+
+[26-Jul-24 08:09 AM] razenpok#0000
+`help
+
+
+[26-Jul-24 08:09 AM] FIDO#2937
+
+{Embed}
+Help
+Listing all top-level commands and groups. Specify a command to see more information.
+Commands
+`blame`, `bui`, `build`, `clearcache`, `cx`, `findbui`, `findburn`, `findconsumer`, `findcurrency`, `findmaterial`, `findpotentialconsumer`, `findpotentialproducer`, `findproducer`, `findrepair`, `findshiprepair`, `fit`, `fitratio`, `help`, `jumpcount`, `jumproute`, `mat`, `math`, `pli`, `setdefaultgroupid`, `space`, `sysi`
+
+
+[26-Jul-24 08:09 AM] razenpok#0000
+`clearcache
+
+
+[26-Jul-24 08:09 AM] FIDO#2937
+Invalid or no groupid specified.
+
+
+[26-Jul-24 08:09 AM] razenpok#0000
+`help clearcache
+
+
+[26-Jul-24 08:09 AM] FIDO#2937
+
+{Embed}
+Help
+`clearcache`: Clear the cache for a group id (falling back to default groupid). Example: `clearcache 123456
+Arguments
+`clearcache [remainingText...]`
+`remainingText (string)`: Group Id
+
+
+[26-Jul-24 08:11 AM] razenpok#0000
+$clearcache
+
+
+[26-Jul-24 08:11 AM] FIDO#2937
+Invalid or no groupid specified.
+
+
+[10-Aug-24 10:07 AM] tanda#0000
+`fit PE 3000t 1000m3
+
+
+[10-Aug-24 10:07 AM] FIDO#2937
+
+{Embed}
+Max Units
+100000 PE
+Remaining Weight
+2,000.00t
+Remaining Volume
+0.00m³
+
+
+[23-Aug-24 04:11 PM] razesdark#0000
+`fit TIO 3000t 1000m3
+
+
+[23-Aug-24 04:11 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 TIO
+Remaining Weight
+1,420.00t
+Remaining Volume
+0.00m³
+
+
+[23-Aug-24 04:27 PM] razesdark#0000
+`fit CUO 3000t 1000m3
+
+
+[23-Aug-24 04:27 PM] FIDO#2937
+
+{Embed}
+Max Units
+748 CUO
+Remaining Weight
+0.52t
+Remaining Volume
+252.00m³
+
+
+[23-Aug-24 05:04 PM] razesdark#0000
+`fit LST 3000t 1000m3
+
+
+[23-Aug-24 05:04 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 LST
+Remaining Weight
+270.00t
+Remaining Volume
+0.00m³
+
+
+[29-Aug-24 10:25 AM] .urpalhal#0000
+`fit PG 2000t/500m3
+
+
+[29-Aug-24 10:25 AM] FIDO#2937
+
+{Embed}
+Max Units
+499999 PG
+Remaining Weight
+1,000.00t
+Remaining Volume
+0.00m³
+
+
+[03-Sep-24 03:15 PM] razesdark#0000
+`fit H 1000t/3000m3
+
+
+[03-Sep-24 03:15 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 H
+Remaining Weight
+2,930.00t
+Remaining Volume
+0.00m³
+
+
+[03-Sep-24 03:16 PM] razesdark#0000
+`fit H 1000t/3000m3
+
+
+[03-Sep-24 03:16 PM] FIDO#2937
+
+{Embed}
+Max Units
+3000 H
+Remaining Weight
+790.00t
+Remaining Volume
+0.00m³
+
+
+[05-Sep-24 07:25 AM] tanda#0000
+`fit FE 3kt/1km3
+
+
+[05-Sep-24 07:25 AM] FIDO#2937
+
+{Embed}
+Error: Arguments
+Invalid arguments specified.
+
+
+[05-Sep-24 07:25 AM] tanda#0000
+`fit FE 3000t / 1000m3
+
+
+[05-Sep-24 07:25 AM] FIDO#2937
+
+{Embed}
+Max Units
+381 FE
+Remaining Weight
+0.01t
+Remaining Volume
+619.00m³
+
+{Reactions}
+😭 
+
+[15-Sep-24 03:41 PM] tanda#0000
+`fit CLI 719m3 2600t
+
+
+[15-Sep-24 03:41 PM] FIDO#2937
+
+{Embed}
+Max Units
+719 CLI
+Remaining Weight
+860.02t
+Remaining Volume
+0.00m³
+
+
+[15-Sep-24 03:43 PM] tanda#0000
+`fit O 500m3 500t
+
+
+[15-Sep-24 03:43 PM] FIDO#2937
+
+{Embed}
+Max Units
+438 O
+Remaining Weight
+0.24t
+Remaining Volume
+62.00m³
+
+
+[16-Sep-24 06:27 PM] sidepipe#0000
+`fit LST 3500m3/3500t
+
+
+[16-Sep-24 06:27 PM] FIDO#2937
+
+{Embed}
+Max Units
+1282 LST
+Remaining Weight
+0.14t
+Remaining Volume
+2,218.00m³
+
+
+[18-Sep-24 02:21 PM] razesdark#0000
+`fit TIO 3000t/1000m3
+
+
+[18-Sep-24 02:21 PM] FIDO#2937
+
+{Embed}
+Max Units
+632 TIO
+Remaining Weight
+1.44t
+Remaining Volume
+2,368.00m³
+
+
+[18-Sep-24 02:21 PM] razesdark#0000
+`fit TIO 3000t/1000m3
+
+
+[18-Sep-24 02:21 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 TIO
+Remaining Weight
+1,420.00t
+Remaining Volume
+0.00m³
+
+
+[21-Sep-24 06:04 PM] tanda#0000
+`fitratio 1 FE 2 HE 3000t 1000m3
+
+
+[21-Sep-24 06:04 PM] FIDO#2937
+
+{Embed}
+Ratio
+333
+Material Counts
+_FE_: 333
+_HE_: 666
+Weight Total
+2,718.61t
+Volume Total
+999.00m³
+Weight Remaining
+281.39t
+Volume Remaining
+1.00m³
+
+
+[24-Sep-24 03:09 AM] laaxus#0000
+`fitratio 1 CU 3000t 1000m
+
+
+[24-Sep-24 03:09 AM] FIDO#2937
+
+{Embed}
+Ratio
+336
+Material Counts
+_CU_: 336
+Weight Total
+2,997.12t
+Volume Total
+336.00m³
+Weight Remaining
+2.88t
+Volume Remaining
+664.00m³
+
+
+[24-Sep-24 03:09 AM] laaxus#0000
+`fitratio 1 CU 2000t 2000m
+
+
+[24-Sep-24 03:09 AM] FIDO#2937
+
+{Embed}
+Ratio
+224
+Material Counts
+_CU_: 224
+Weight Total
+1,998.08t
+Volume Total
+224.00m³
+Weight Remaining
+1.92t
+Volume Remaining
+1,776.00m³
+
+
+[24-Sep-24 03:12 AM] jvaler#0000
+`fit auo 3000t 1000m
+
+
+[24-Sep-24 03:12 AM] FIDO#2937
+
+{Embed}
+Max Units
+777 AUO
+Remaining Weight
+0.78t
+Remaining Volume
+223.00m³
+
+
+[24-Sep-24 12:53 PM] razesdark#0000
+`fit H 2000t 2000m3
+
+
+[24-Sep-24 12:53 PM] FIDO#2937
+
+{Embed}
+Max Units
+2000 H
+Remaining Weight
+1,860.00t
+Remaining Volume
+0.00m³
+
+
+[30-Sep-24 06:20 AM] razesdark#0000
+`fit SIO 3000m3 1000t
+
+
+[30-Sep-24 06:20 AM] FIDO#2937
+
+{Embed}
+Max Units
+558 SIO
+Remaining Weight
+1.18t
+Remaining Volume
+2,442.00m³
+
+
+[30-Sep-24 06:45 AM] laaxus#0000
+`fitratio 1 c 1 h 1 cl 1 o 3000t 1000m
+
+
+[30-Sep-24 06:45 AM] FIDO#2937
+
+{Embed}
+Ratio
+250
+Material Counts
+_c_: 250
+_h_: 250
+_cl_: 250
+_o_: 250
+Weight Total
+1,665.25t
+Volume Total
+1,000.00m³
+Weight Remaining
+1,334.75t
+Volume Remaining
+0.00m³
+
+
+[06-Oct-24 06:52 AM] laaxus#0000
+`fitratio 4 hal 10 lio 3000t 1000m
+
+
+[06-Oct-24 06:52 AM] FIDO#2937
+
+{Embed}
+Ratio
+71
+Material Counts
+_hal_: 284
+_lio_: 710
+Weight Total
+2,568.78t
+Volume Total
+994.00m³
+Weight Remaining
+431.22t
+Volume Remaining
+6.00m³
+
+
+[12-Oct-24 10:42 AM] tanda#0000
+`fit AR 2000t 2000m
+
+
+[12-Oct-24 10:42 AM] FIDO#2937
+
+{Embed}
+Max Units
+1121 AR
+Remaining Weight
+0.14t
+Remaining Volume
+879.00m³
+
+
+[12-Oct-24 05:31 PM] mancules#0000
+‘fit ALL 500t 500m
+
+
+[12-Oct-24 05:31 PM] mancules#0000
+‘fit AL 500t 500m
+
+
+[12-Oct-24 05:33 PM] mancules#0000
+`fit AL 500t 500m
+
+
+[12-Oct-24 05:33 PM] FIDO#2937
+
+{Embed}
+Max Units
+185 AL
+Remaining Weight
+0.50t
+Remaining Volume
+315.00m³
+
+
+[18-Oct-24 11:44 PM] .urpalhal#0000
+`fit TIO 3000t/1000m3
+
+
+[18-Oct-24 11:44 PM] FIDO#2937
+
+{Embed}
+Max Units
+1000 TIO
+Remaining Weight
+1,420.00t
+Remaining Volume
+0.00m³
+
+{Reactions}
+👍 
+
+[26-Oct-24 09:46 AM] pxlfox.#0000
+`fit C 3000t 1000m
+
+
+[26-Oct-24 09:46 AM] FIDO#2937
+
+{Embed}
+Max Units
+1000 C
+Remaining Weight
+750.00t
+Remaining Volume
+0.00m³
+
+
+[09-Nov-24 01:02 PM] superbadsounds#0000
+`fitratio 1 bea 1 nut 1 grn 3000t 1000m
+
+
+[09-Nov-24 01:02 PM] FIDO#2937
+
+{Embed}
+Ratio
+333
+Material Counts
+_bea_: 333
+_nut_: 333
+_grn_: 333
+Weight Total
+865.80t
+Volume Total
+999.00m³
+Weight Remaining
+2,134.20t
+Volume Remaining
+1.00m³
+
+
+[09-Nov-24 01:02 PM] superbadsounds#0000
+`fitratio 1 bea 1 nut 1 grn 2000t 2000m
+
+
+[09-Nov-24 01:02 PM] FIDO#2937
+
+{Embed}
+Ratio
+666
+Material Counts
+_bea_: 666
+_nut_: 666
+_grn_: 666
+Weight Total
+1,731.60t
+Volume Total
+1,998.00m³
+Weight Remaining
+268.40t
+Volume Remaining
+2.00m³
+
+
+==============================================================
+Exported 147 message(s)
+==============================================================

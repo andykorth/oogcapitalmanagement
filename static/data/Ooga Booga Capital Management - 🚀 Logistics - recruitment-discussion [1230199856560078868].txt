@@ -1,0 +1,1729 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: 🚀 Logistics / recruitment-discussion
+==============================================================
+
+[17-Apr-24 12:02 PM] sidepipe#0000
+~~just copying this over and pinning it:~~ nevermind - can't pin messages
+
+
+[17-Apr-24 12:10 PM] archielvahr#0000 (pinned)
+Top section for sharing:
+**Recruitment Spiel:**
+
+Share this page:
+https://oogcapitalmanagement.com/shareholders/joining/
+
+------------------
+
+How we *internally evaluate* candidates on those guidelines:
+
+* 30 Days of overall game experience
+* Current Pro License and plans to maintain it
+* 80% of bases in Antares sphere of influence
+* The ability to communicate in English
+* A team player attitude
+* Active in other PRUN discords
+
+Nice to have:
+* Decent growth to company age ratio
+* They have an interest in governance.
+* They have cool side projects (maintain tools, run in-game  development projects, well known to the community, etc)
+* They're already a governor somewhere.
+
+{Embed}
+https://oogcapitalmanagement.com/shareholders/joining/
+Interested in Joining OOG? | OOG Capital Management
+Learn more about joining OOG, Antares premier corporation
+https://images-ext-1.discordapp.net/external/PVzxc9GhxHA48n_y0YIgFU5hKGLsMKiDSAfBsgkbZSk/https/oogcapitalmanagement.com/images/big-round-table-2-narrow.png
+
+{Reactions}
+🙌 
+
+[17-Apr-24 12:10 PM] archielvahr#0000
+Pinned a message.
+
+
+[17-Apr-24 12:11 PM] sidepipe#0000
+Anyway - wanted to put forward two names for an invite: Hal98 | FREM and Uncle_Leslie69 | IRA. Both are >90 days and pretty active in the ADI discord. They buy and sell a lot there, and help out a lot of the newer players that join. All antares bases, too.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1230204006672892146/image.png?ex=6814fcc3&is=6813ab43&hm=7c11229ae76880fa59a42fb6851123ef46dc263d54a6b9a3e1d13e9027701f44&
+
+
+[17-Apr-24 12:12 PM] sidepipe#0000
+I noticed that Uncle_Leslie69 is in a two-person corp, but they may still want to join without hopping in the in-game corp
+
+
+[17-Apr-24 12:14 PM] archielvahr#0000
+I think they both look great. `SecretAce` is the other one in Uncle Leslie's corp . I don't see any other particular red flags on them, although maybe a bit less active
+
+
+[17-Apr-24 12:14 PM] churavis#0000
+I think we should be more vague in our publicly posted candidates. For example, instead of "80% of bases in Antares sphere of influence" we should say "Majority Antares Bases"
+
+This will give us more flexibility and also prevent anyone from trying to do stuff just to get into the corp
+
+
+[17-Apr-24 12:15 PM] archielvahr#0000
+The stuff under the ------ line is intended for our use only.
+
+{Reactions}
+👍 
+
+[17-Apr-24 12:15 PM] archielvahr#0000
+Ah I lost my bullets at some point, let me fix that
+
+
+[17-Apr-24 12:21 PM] sidepipe#0000
+I'll leave this up for a bit so people can see, but if there's no concerns I can go ahead and approach them tonight or tomorrow sometime
+
+{Reactions}
+👍 
+
+[17-Apr-24 02:42 PM] allocater#0000
+Not sure about the pro license, maybe we should move it to nice to have. Since some members currently don't have one (i.e. me 🙈)
+
+{Reactions}
+🤨 
+
+[17-Apr-24 02:46 PM] zipatsu#0000
+Maybe just Basic so that they're able to receive and accept contracts at least?
+
+
+[17-Apr-24 02:46 PM] exeler#0000
+Maybe say pro or basic preferred?
+
+Hard to coordinate with someone who can't send or receive contravts
+
+
+[17-Apr-24 02:49 PM] archielvahr#0000
+Yeah I forgot about basic, mentioning that might help. I think as long as one side of the transaction has pro it’s fine. If we get a lot of people without pro it will get rough to conduct trades. I wouldn’t remove a good member who lost pro. So maybe publicly strongly encourage it but be flexible on an individual basis?
+
+
+[17-Apr-24 04:22 PM] churavis#0000
+The purpose of requiring pro is to make sure that the player has committed to playing for a while and isn't going to just drop off right away. Those who only somewhat enjoy this very niche game aren't going to keep buying pro, plus the inconveniences of not having pro will push them away as well.
+
+This obviously doesn't apply to current members who don't have a license but are still playing.
+
+
+[17-Apr-24 04:22 PM] churavis#0000
+More broadly, there's no reason why we would have to apply new recruiting standards to current members.
+
+
+[18-Apr-24 08:20 AM] hernanduer#0000
+Agreed with Churavis, requirement should be pro to come in, but of course you'd drop to basic in here without too much issue.
+
+
+[18-Apr-24 08:21 AM] churavis#0000
+We can't have too many players on basic as that makes it harder to trade between corp players
+
+
+[18-Apr-24 08:22 AM] hernanduer#0000
+Yeah, true, I think most people who drop would end up dropping the game entirely. melon and allocator are the special ones 😛
+
+{Reactions}
+😊 
+
+[18-Apr-24 08:25 AM] mrsmith33#0000
+Yeah, game ux is pretty tiring atm, to many clicks and typing needed. Not enough automation/templating
+
+
+[18-Apr-24 09:32 AM] archielvahr#0000
+There was some discussion yesterday that suggested molp would be okay with some sort of multi-buy tool. It's okay if it fills out buffers, as long as it doesn't submit them. It's okay if it opens a few buffers, just not a ton of them.
+
+{Reactions}
+👀 
+
+[18-Apr-24 09:34 AM] mrsmith33#0000
+Bulk item transfer would be nice. Like trasfer all items to fulfill a burn of a specific base
+
+{Reactions}
+💯 
+
+[18-Apr-24 09:34 AM] churavis#0000
+So someone could conceivably make a tool that adds a button to make your buy or sell price whatever needed to make the sale go through immediately?
+
+
+[18-Apr-24 09:35 AM] mrsmith33#0000
+there is already such a button
+
+
+[18-Apr-24 09:35 AM] mrsmith33#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1230527190035071006/image.png?ex=6814d840&is=681386c0&hm=242cd33ab21df215c9d59825eb969848b3c55edbb2531fa989cb8e05a839bde3&
+
+
+[18-Apr-24 09:36 AM] churavis#0000
+No, if the lowest sell doesn't have enough volume to cover your order then you won't get 100% of your order immediately
+
+
+[18-Apr-24 09:37 AM] mrsmith33#0000
+I see what you mean
+
+
+[18-Apr-24 09:38 AM] churavis#0000
+Actually, I think the button we really need is a REFUEL one. That's a lot of clicking and there are very few times when I want to add less than the maximum amount of fuel
+
+{Reactions}
+💯 (7) 
+
+[18-Apr-24 09:40 AM] mrsmith33#0000
+I want item transfer to be `drag + input + enter` instead of `drag + click (focus input) + input + click (change) + click(transfer) + click(close window)`
+
+
+[18-Apr-24 09:42 AM] churavis#0000
+You can use tab to be able to fill out the transfer window without as much clicking. This is especially useful for multiple items at once, although the "Action Successful" notification does cover everything up and is not dissmissable without a mouse click
+
+
+[18-Apr-24 11:07 AM] exeler#0000
+This is actually one area where I think the mobile UI is better than the desktop one.
+
+{Reactions}
+💯 
+
+[18-Apr-24 12:39 PM] hernanduer#0000
+this yes, but also open base inventory from ship inventory
+
+
+[18-Apr-24 05:16 PM] sidepipe#0000
+Any final thoughts on these two? If not I can go ahead and invite them 🙂
+
+
+[18-Apr-24 05:47 PM] Deleted User#0000
+I vouch for both.
+
+
+[18-Apr-24 11:53 PM] hernanduer#0000
+discord first, of course 🙂
+
+
+[20-Apr-24 02:55 AM] neth_havoc#0000
+Yes, invite them!
+
+
+[29-Apr-24 09:39 AM] archielvahr#0000
+Anyone know anything about Nutnic? Looks like they don't have much in ANT- are they interested in moving?
+
+{Reactions}
+🤔 
+
+[30-Apr-24 04:57 PM] tuffyless#0000
+He was here earlier this year:
+https://discord.com/channels/854795108720443393/980889170614554634/1197969885838454905
+
+
+[30-Apr-24 04:59 PM] archielvahr#0000
+Oh wow good find, I missed that. That was before we had the channel restrictions in
+
+
+[30-Apr-24 04:59 PM] archielvahr#0000
+Yeah seems like he's still in non-ANT space 🤷‍♂️
+
+
+[30-Apr-24 04:59 PM] archielvahr#0000
+That's fine though, we can have guests in the public channels
+
+
+[30-Apr-24 05:20 PM] draconisdomini#0000
+Regarding Uncle_Leslie69, I think naming your company after a terrorist organisation should probably be a bar to corp membership
+
+
+[30-Apr-24 05:22 PM] churavis#0000
+Is there a terrorist organization called  "Irish Republican Space Army" ?
+
+
+[30-Apr-24 05:22 PM] draconisdomini#0000
+🙄 You know what I mean
+
+
+[30-Apr-24 05:23 PM] churavis#0000
+I do not, that's why I ask
+
+
+[30-Apr-24 05:23 PM] draconisdomini#0000
+The Irish Republican Army is a terrorist organisation
+
+
+[30-Apr-24 05:23 PM] churavis#0000
+Are they in space yet?
+
+
+[30-Apr-24 05:23 PM] draconisdomini#0000
+Not that I am aware of
+
+
+[30-Apr-24 05:23 PM] churavis#0000
+Then I don't see the problem
+
+
+[30-Apr-24 05:24 PM] draconisdomini#0000
+Would we be happy with a company called Space Hamas, or Space Al-Qaeda, or the Space KKK?
+
+
+[30-Apr-24 05:28 PM] churavis#0000
+I would be very surprised if any of them ever made it to space either
+
+
+[30-Apr-24 05:46 PM] Deleted User#0000
+i was also personally against the name to begin with due to being personally affected at some point by said organization but the person themselves is perfectly fine, they act in good conduct
+
+
+[30-Apr-24 05:46 PM] Deleted User#0000
+don't think it should be taken too seriously
+
+
+[30-Apr-24 05:54 PM] draconisdomini#0000
+Likewise.  I grew up in London and am familiar with IRA bomb threats
+
+
+[30-Apr-24 06:06 PM] sidepipe#0000
+I think that's probably a fair rule (going forward). There are definitely some usernames / corp names that I wouldn't have been comfortable inviting in any case - part of why I posted here was to gauge how comfortable everyone was with it. But as a player, they've been excellent and friendly in my own experience
+
+
+[30-Apr-24 06:08 PM] melon164#0000
+I think it’s in fairly poor taste, and I would respect other people’s right to object more strongly, but I think we would need to think quite carefully before being more restrictive than the rules/standards of the game itself.
+
+
+[30-Apr-24 06:11 PM] melon164#0000
+I wouldn’t give much benefit-of-the-doubt, but their behaviour doesn’t need me to.
+
+{Reactions}
+👆 
+
+[30-Apr-24 06:16 PM] draconisdomini#0000
+I don't know whether the game rules/standards allow it, tbh.  I just messaged molp about it
+
+
+[30-Apr-24 06:23 PM] draconisdomini#0000
+I realise this is partly on me for not noticing when Sidepipe posted about it originally
+
+
+[30-Apr-24 06:24 PM] sidepipe#0000
+I don't think anything's on anyone - discussing recruitment is what this channel is for 😄
+
+
+[30-Apr-24 06:27 PM] archielvahr#0000
+Molp can rename companies, he has done it before at people's request.
+
+
+[30-Apr-24 06:34 PM] draconisdomini#0000
+That is probably the solution
+
+
+[30-Apr-24 06:46 PM] sidepipe#0000
+If it's against the game rules / standards, or in general?
+
+
+[30-Apr-24 06:47 PM] archielvahr#0000
+In general, https://discord.com/channels/350171287785701388/562636398671298574/1222216321236865085
+
+
+[30-Apr-24 06:47 PM] archielvahr#0000
+and a few other times
+
+
+[30-Apr-24 06:55 PM] sidepipe#0000
+Yes, sorry - I mean is renaming the company the solution in this case? I can certainly understand asking someone to do that if it's against the game rules. I have no problem with changing the rules for recruitment going forward either. I'm just not sure how comfortable I am asking someone to do that if it's against the corp rules since they already joined, and did the trial period
+
+
+[30-Apr-24 06:56 PM] sidepipe#0000
+I probably should have done a better job pointing out the name when I made the original post, for sure
+
+
+[30-Apr-24 06:57 PM] archielvahr#0000
+I've been reading https://en.wikipedia.org/wiki/The_Troubles which is something we don't really learn about in school in the US, so I had heard of it but wasn't really aware
+
+
+[30-Apr-24 06:57 PM] archielvahr#0000
+everything I know about the UK I learned through harry potter
+
+
+[30-Apr-24 06:58 PM] archielvahr#0000
+well, I suppose first step is seeing what @uncle_leslie69 's thoughts are
+
+
+[30-Apr-24 07:04 PM] uncle_leslie69#0000
+I mean, it’s always just been an inside joke tbh, like my discord was like that to annoy an arma group I used to play in because it was just a joke. 
+
+Like any game I’ve played I’ve just carried it over tbh, idk why, just have. 
+When I used to play stellaris I called my faction the same, Irish republican space army, again, just for a joke. 
+
+There’s no true motive behind it, nor do I support/endorse the group or it’s activities in the past. Was just always intended to be a meme? 🤷🏼‍♂️
+
+
+[30-Apr-24 07:05 PM] uncle_leslie69#0000
+I mean, when I set up my company i don’t remember their being any rules/regulations to making a company name, otherwise I would have chosen something else, hence why it made it this 🤷🏼‍♂️
+
+
+[30-Apr-24 07:06 PM] uncle_leslie69#0000
+I mean, if you really want me to change the name of it I can that molp guy, I just genuinely have no clue what else to call it atm tbh 🤷🏼‍♂️🤷🏼‍♂️
+
+
+[30-Apr-24 07:07 PM] uncle_leslie69#0000
+Ig I just wasn’t expecting it to ever be an issue since it hasn’t been thus far in multiple servers
+
+
+[30-Apr-24 07:07 PM] uncle_leslie69#0000
+I can see your points though 🤷🏼‍♂️
+
+
+[30-Apr-24 07:10 PM] draconisdomini#0000
+The thing with inside jokes is that they only work in the group for which they were created.  I would very much prefer you to get the name changed.  It leaves a bad taste in my mouth.
+
+
+[30-Apr-24 07:10 PM] uncle_leslie69#0000
+Like, I work in an airport in the UK and deal with this kind of stuff on flights daily so I don’t really understand this part 🤷🏼‍♂️
+
+
+[30-Apr-24 07:11 PM] uncle_leslie69#0000
+And I lived in Glasgow for many year’s and dealt with very serious stuff too in regards to this but I didn’t let it bother me, but then again that’s just me 🤷🏼‍♂️
+
+
+[30-Apr-24 07:12 PM] draconisdomini#0000
+Different people have different perspectives when they are directly affected by these things
+
+
+[30-Apr-24 07:12 PM] uncle_leslie69#0000
+I guess I’m just not phased 🤷🏼‍♂️
+And I know not everyone is the same way, totally get it
+
+
+[30-Apr-24 07:16 PM] uncle_leslie69#0000
+Well idk what everyone else has to say 🤷🏼‍♂️
+
+
+[30-Apr-24 07:22 PM] uncle_leslie69#0000
+Like I said before, if keeping the group members happy means trying to get my name changed then so be it. 
+Whether thats possible idk 🤷🏼‍♂️
+
+
+[30-Apr-24 07:23 PM] sidepipe#0000
+I guess from my perspective - I should have mentioned the company name more prominently when I posted originally. The whole point was to avoid a situation like this in the first place. I think going forward we can be a bit more careful about this sort of thing when recruiting. I'm not comfortable _requiring_ @uncle_leslie69 to change the name since we let them in and did the whole trial period and everything - since this came up afterwards, it feels unfair to change the terms of their joining. If they don't have a problem changing it, I'm sure that would be appreciated
+
+
+[30-Apr-24 07:24 PM] sidepipe#0000
+But for what it's worth, I feel like this is on me more than it's on @uncle_leslie69  or @draconisdomini. I didn't realize there were strong feelings about it
+
+
+[30-Apr-24 07:26 PM] Deleted User#0000
+having lost family members in that time period and due to that organization it 100% leaves a bad taste in my mouth as well, but this is the internet, and since there aren't, as far as i know, any written rules within PrUn and prior in the discord about names, i don't think there should be much action on it in terms of leslie
+
+
+[30-Apr-24 07:26 PM] Deleted User#0000
+it wasn't a rule here when he joined and i don't think asking him to change it is quite fair when he joined under the assumption it was fine
+
+
+[30-Apr-24 07:27 PM] archielvahr#0000
+Well if you’re willing to change it, think up a new one and I am pretty sure molp will have no problem with it. I think given the situation he will be totally on board.
+
+
+[30-Apr-24 07:27 PM] archielvahr#0000
+In general the Prun audience is a lot different from arms I’m sure. Haha.
+
+
+[30-Apr-24 07:28 PM] uncle_leslie69#0000
+Right, give me a day or 2 to be creative and I’ll think of something to change it to
+
+{Reactions}
+👍 
+
+[30-Apr-24 07:28 PM] Deleted User#0000
+molp would definitely change it if asked
+
+
+[30-Apr-24 07:29 PM] uncle_leslie69#0000
+Then no more bad tasting mouths or balaclava space bandits
+
+
+[30-Apr-24 07:34 PM] draconisdomini#0000
+Thanks Uncle_Leslie
+
+
+[01-May-24 10:33 AM] hernanduer#0000
+I don't really think that's fair at all to impose that on someone else
+
+
+[01-May-24 10:34 AM] hernanduer#0000
+and I am 100% against any kind of naming rules for companies in the corp - if they are good people, then that should be enough
+
+
+[01-May-24 11:40 AM] Deleted User#0000
+it's a reasonable enough request
+
+
+[01-May-24 11:41 AM] Deleted User#0000
+i was against enforcing it against Leslie due to him joining before any rule was even discussed, but in the future I definitely think naming rules could be a good idea
+
+
+[01-May-24 11:42 AM] Deleted User#0000
+if not having an offensive name is a bit too much to ask, maybe they'd be better of elsewhere
+
+
+[01-May-24 11:45 AM] archielvahr#0000
+I mean... I think a choice of a name is a behavioral choice, in a much more exaggerated example, we surely wouldn't admit someone using the N word in their name
+
+
+[01-May-24 11:54 AM] hernanduer#0000
+I don't like arbitrary rules left up to whoever feels most offended by a name at any given time, and yeah that's an extreme example but let me counter with signing up for Prun through Steam doesn't allow you to choose your name
+
+
+[01-May-24 11:55 AM] hernanduer#0000
+so if you're PonyFucker9000 on Steam as a joke or whatever, then too bad
+
+
+[01-May-24 11:55 AM] hernanduer#0000
+you'd have to make a new prun account (or maybe molp could change it)
+
+
+[01-May-24 11:55 AM] hernanduer#0000
+but arbitrary rules are why the 1st amendment exists for all cases except threats
+
+
+[01-May-24 11:56 AM] hernanduer#0000
+(which I realize international audience and all that, but still it's just my feelings on it)
+
+
+[01-May-24 12:01 PM] sidepipe#0000
+I guess to me it comes down to the persons behavior - in our recruitment pitch, we say we want to make a supportive and welcoming environment for players to play. I think that gives us leeway to get a vibe check of someone based off the persons corp / username. I was okay with Leslie because I think he has created that environment here, and did in the ADI discord before (and I think him being willing to change his name is proof of that, not that I think anyone was questioning that).
+
+
+[01-May-24 12:02 PM] sidepipe#0000
+That is, I don’t think we necessarily need an explicit rule. I think we can just take it case by case - we don’t invite too many players anyway 😄
+
+
+[01-May-24 12:03 PM] archielvahr#0000
+Yeah, I don't think it needs a specific rule, like Sidepipe said, it's just one part of evaluating if a person is a good culture match
+
+
+[01-May-24 12:03 PM] hernanduer#0000
+Yeah, I'm fine to use it as a simple judge, just no rule about it - of course judgements are personal so not everyone necessarily has to agree with them, unlike a rule
+
+
+[01-May-24 12:09 PM] Deleted User#0000
+well since I'm new to the Corp and have contributed basically nothing I understand my opinions being less than valid on how the Corp should be ran. if people don't consider it an issue I'll drop it
+
+
+[01-May-24 12:15 PM] churavis#0000
+If anyone does want to change their company name, I have some good alternatives:
+DirtyOreMining
+FatBassFoods
+HindenburgerRations
+FookHingTrading
+ThaiTanicProvisions
+OreChildIndustries
+SamAndEllaFoodstuffs
+JittersCoffee
+PassmoreGasCo
+InBreadRations
+ExpertsExchange
+PowergenItaliaLtd
+TheCodfatherFishCo
+TempleOfVroomShipbuilders
+AnuSwitchManufacturing
+
+{Reactions}
+🤔 (3) 😂 (6) 
+
+[01-May-24 12:19 PM] archielvahr#0000
+I have a friend who buys his arcade cabinet switches from: https://anuswitch.com/ great manufacturing company name
+
+{Embed}
+https://anuswitch.com/
+Manufacturer of Pushbutton Switches, Indicator Lights, Emergency Stops
+ANU Switch
+
+{Reactions}
+🐶 🧹 
+
+[01-May-24 12:21 PM] churavis#0000
+It has been added to the list
+
+
+[01-May-24 04:42 PM] uncle_leslie69#0000
+I've dm'd Molp about changing it, just need to see what he says ig
+
+
+[01-May-24 04:42 PM] churavis#0000
+What are you changing it to?
+
+
+[01-May-24 04:43 PM] uncle_leslie69#0000
+was thinking 'Quarry Junction Industries'
+
+
+[01-May-24 04:43 PM] uncle_leslie69#0000
+iykyk
+
+
+[01-May-24 04:44 PM] uncle_leslie69#0000
+not only that, fits kinda well because i mine a shittonne LST and MGS
+
+
+[01-May-24 04:44 PM] churavis#0000
+You'll do much more in the future
+
+
+[01-May-24 04:44 PM] uncle_leslie69#0000
+nah like i do lots rn, i run PG and building fabs, but i mine far too much MGS and LST so it's fitting
+
+
+[01-May-24 04:59 PM] katinga#0000
+You could always sell it to the chinese.  they put MGS in all their dishes 😄
+
+
+[01-May-24 05:00 PM] uncle_leslie69#0000
+💀
+
+
+[01-May-24 05:01 PM] katinga#0000
+or is that just in the USA?
+
+
+[01-May-24 05:28 PM] zipatsu#0000
+That'd be MSG :p
+
+{Reactions}
+🧂 
+
+[01-May-24 05:38 PM] archielvahr#0000
+The LD50 for MSG is actually higher than table salt. It takes 16,600 mg/kg of body weight of MSG to kill you, but only 3000mg/kg of table salt
+
+
+[01-May-24 05:41 PM] sidepipe#0000
+MSG stands for Makes Stuff Good 🙂
+
+
+[01-May-24 05:44 PM] zipatsu#0000
+I wonder if your body would even allow you to consume those quantities before side effects occur
+
+
+[01-May-24 05:46 PM] sidepipe#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1235361722194333788/image.png?ex=6814a282&is=68135102&hm=8a7350122a782961f17fb7b619896f0c21212e2598f16947a6210eb31be4e0f9&
+
+{Reactions}
+🏉 
+
+[01-May-24 05:46 PM] sidepipe#0000
+.42 kg of MSG? or 1 NFL football for us Americans 😄
+
+
+[01-May-24 07:00 PM] katinga#0000
+anything to keep us from using the metric system?
+
+{Reactions}
+🇺🇸 
+
+[02-May-24 04:08 AM] uncle_leslie69#0000
+name changed
+
+
+[02-May-24 04:08 AM] uncle_leslie69#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1235518239589797938/image.png?ex=68148b87&is=68133a07&hm=8f13c39dd4e91351e866491ffaa28129d1e14ef15c4b2ed60c31843a74f24963&
+
+{Reactions}
+🎉 
+
+[02-May-24 06:29 AM] sidepipe#0000
+Now you practically have to become the #1 LST producer in the galaxy 😄
+
+{Reactions}
+😂 
+
+[11-May-24 06:48 PM] sidepipe#0000
+Wanted to put forward a name again for recruitment - I originally reached out to Hal98 and they mentioned they weren't interested in joining a corp, but they recently mentioned that they were interested in joining. I do a lot of business with them in the ADI discord, and they're quite friendly (as their corp name implies) and helpful there, so I think they'd be a good fit here 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1239001336209477632/image.png?ex=6814b12a&is=68135faa&hm=9d168d8ad476f01b828090f60ccf4683636c5be0f1005171544f2cc666b2d574&
+
+
+[11-May-24 06:53 PM] churavis#0000
+Are they the type of friend to be super cool right up until they murder you and your crewmates in their sleep?
+
+{Reactions}
+🤖 
+
+[11-May-24 07:09 PM] sidepipe#0000
+Only if you try to jeopardize the mission 😄
+
+
+[11-May-24 07:11 PM] churavis#0000
+What are we supposed to do if he doesn't open the bay doors?
+
+
+[11-May-24 07:15 PM] sidepipe#0000
+Depends on why you need to open them 😉
+
+
+[11-May-24 08:35 PM] archielvahr#0000
+Hal seems cool to me! Active in various discords and always pleasant
+
+
+[13-May-24 07:51 PM] sidepipe#0000
+Any final thoughts on Hal98? If not, I can invite them tomorrow if that works 🙂
+
+{Reactions}
+👍 (3) 
+
+[13-May-24 10:23 PM] churavis#0000
+Just don't leave the habitat without your suit helmet
+
+
+[02-Jun-24 08:30 PM] archielvahr#0000 (pinned)
+Public recruitment post:
+
+**🚀  About OOG**:
+
+We are the premier corporation in Antares space and the largest governance organization in the universe. As a corporation, we work to ensure the stability of the Antares region, as well as creating a fun and engaging place for our members to enjoy Prosperous Universe. Our corporation includes weekly dividends in excess of 200k AIC, governance training and support, shipbuilding, planetary and regional development, a discord-based internal auction/order system and preferential material access and prices. The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones.
+
+OOG was formed in early 2021, and now governs over 1 million citizens in ANT space. We've been a major funder of the SE-110 development project in coordination with FICSIT and the Antares Development Initiative.  Prospective members should be based in ANT or be willing to relocate. Relocation support can be provided for the right people.
+
+**📈   Recruitment Guidelines**:
+
+OOG is a highly selective corp with limited available positions. Each member will be internally discussed, then a 7 day trial is offered, followed by the full corp invite.
+
+We're looking for members who:
+
+* 🤝  Interested in being a team player and being active in the corp and community
+* :antares:  Are primarily based in ANT space
+* 💰  Have a Pro License and plan to maintain it
+* 🏛️  Bonus: Interest in planetary governance, or are already a governor.
+
+Established players are particularly welcome! Leave behind your old inactive corp and find true and lasting friendship!
+
+Contact me via discord PM, and include a little about yourself and your plans.
+
+
+[02-Jun-24 08:30 PM] archielvahr#0000
+Pinned a message.
+
+
+[02-Jun-24 08:31 PM] archielvahr#0000
+Okay everyone, we have a recruitment post here: https://discord.com/channels/855488309802172469/1246999162294239262
+
+
+[02-Jun-24 08:31 PM] archielvahr#0000
+that's the UFO server, you might need to `!join recruitment` to see it.
+
+
+[03-Jun-24 10:27 AM] archielvahr#0000
+I got two potential recruits that contacted me. First is Akyan. Looks like he ticks all of our internal recruitment criteria, he's very active in ADI discords, which is a good sign for sticking aroudn and contributing to a corp. Here's his message to me
+
+
+[03-Jun-24 10:27 AM] archielvahr#0000
+http://kortham.net/temp/Discord_A4p5vCFEZw.png
+
+{Embed}
+http://kortham.net/temp/Discord_A4p5vCFEZw.png
+https://images-ext-1.discordapp.net/external/-7wBa1KBoka2uvf0taUPU84CCdC_mnWNCFbq4Kp0dVs/http/kortham.net/temp/Discord_A4p5vCFEZw.png
+
+
+[03-Jun-24 10:27 AM] archielvahr#0000
+Figured others who have interacted with him might chime in.
+
+
+[03-Jun-24 10:29 AM] archielvahr#0000
+Second user is Grey Swan, `co STWG` , user spaceangel. He's very very new but soudns great. He is going to COLIQ to ANT and probably buy pro. So I think we keep an eye on him, but it's probably too early to make a determination right now.
+
+{Reactions}
+👍 (5) 
+
+[03-Jun-24 11:15 AM] sidepipe#0000
+Akyan is good people. I interact with him a good amount in ADI and I probably would have recommended him for an invite at some point 🙂
+
+{Reactions}
+✅ 
+
+[03-Jun-24 11:17 AM] churavis#0000
+45 days in is probably about the sweet spot for recruiting
+
+
+[03-Jun-24 11:18 AM] .urpalhal#0000
+I like Akyan
+
+
+[03-Jun-24 12:57 PM] uncle_leslie69#0000
+Akyan is chill, always talks to me and i've been helping him out a fair bit providing building mats to help him expand.
+
+
+[03-Jun-24 05:22 PM] katinga#0000
+what is ADI?
+
+
+[03-Jun-24 05:36 PM] .urpalhal#0000
+Antares Development Initiative
+
+{Reactions}
+👍 
+
+[03-Jun-24 05:51 PM] archielvahr#0000
+https://discord.gg/WCvQDkrp
+
+
+[04-Jun-24 03:16 PM] archielvahr#0000
+Well I think I'll message Akyan about our trial!
+
+{Reactions}
+🙌 (2) 
+
+[25-Jun-24 09:32 AM] sidepipe#0000
+Tanda in the ADI discord was mentioning being interested in governance. Maybe a candidate for recruitment?
+
+
+[25-Jun-24 09:45 AM] churavis#0000
+Tanda already has a corporation
+
+
+[25-Jun-24 09:46 AM] sidepipe#0000
+Yeah, CULT right?
+
+
+[25-Jun-24 09:47 AM] sidepipe#0000
+That’s just a smaller group of folks in ADI that wanted to put down an HQ somewhere. I’m not sure if they have any long-term plans
+
+
+[25-Jun-24 09:47 AM] sidepipe#0000
+But on the other hand, we can’t recruit everyone 😄
+
+
+[25-Jun-24 09:47 AM] churavis#0000
+Wht not?'
+
+
+[25-Jun-24 09:48 AM] sidepipe#0000
+I could just throw out that OOG is recruiting if they’re interested in governing and leave it at that
+
+
+[25-Jun-24 09:55 AM] sidepipe#0000
+Because we need to maintain our image as an exclusive, invite-only club - what could be more important than that? 😂
+
+
+[25-Jun-24 10:11 AM] archielvahr#0000
+Maybe the other people in CULT want to join too? 😄
+
+
+[25-Jun-24 12:34 PM] .urpalhal#0000
+they did toss their HQ down on Elon to help with their PG projects they've got
+
+
+[25-Jun-24 05:26 PM] archielvahr#0000
+I'd say reach out and ask them if they have any interest
+
+
+[25-Jun-24 05:27 PM] archielvahr#0000
+I don't think the UFO recruiting channels have been getting too much attention, and to maintain numbers it would be nice to find ~2 more people in the short term
+
+
+[25-Jun-24 05:27 PM] archielvahr#0000
+Anyone who wants is welcome to post somewhere and mention the thread
+
+
+[26-Jun-24 12:31 PM] archielvahr#0000
+Does anyone know MaxKalina? `co UC` Used to play a long time ago and has just recently returned?
+
+
+[26-Jun-24 12:33 PM] sidepipe#0000
+I talked to them and they sounded interested, but wanted to wait for the new gov meta to shake out. Just said to let me know if they're ever interested 🙂
+
+{Reactions}
+👍 
+
+[26-Jun-24 12:34 PM] sidepipe#0000
+I wouldn't be surprised if they came around eventually. They like CULT, but that's the corp within ADI and they don't necessarily do a whole lot
+
+
+[26-Jun-24 12:58 PM] archielvahr#0000
+I like MaxKalina so far, but mostly based outside of ANT so it might not be a good fit
+
+
+[26-Jun-24 02:15 PM] archielvahr#0000
+Another potential person to reach out to `USR LancerCaster` they were the governor of Astraeus, seems to have run themselves. Fairly quiet on discord but is active in the AA group, just not as a corp member... and I don't think that was a proxy governor run but I'm not sure.
+
+
+[26-Jun-24 02:15 PM] archielvahr#0000
+Anyone know them?
+
+
+[29-Jun-24 03:16 PM] archielvahr#0000
+How about ShrewdSun / `usr ShrewdSun1` I remember them from before. Recently returned, has 4 bases and a handful of loans. Not sure why the name is so familiar to me
+
+
+[29-Jun-24 03:17 PM] archielvahr#0000
+Pretty active in community discords recently
+
+
+[30-Jun-24 04:22 PM] archielvahr#0000
+Encouraging to see MaxKalina moving bases over, sounds like we'll hear more once those are in place.
+
+{Reactions}
+👍 
+
+[30-Jun-24 04:22 PM] archielvahr#0000
+Haven't reached out to either of the others yet
+
+
+[03-Jul-24 01:12 PM] katinga#0000
+Hey, y'all!  What do you guys think of ShrewdSun1?  he has potential
+
+
+[03-Jul-24 01:44 PM] hernanduer#0000
+Archiel mentioned him, sounds like he's worth talking to at least
+
+
+[03-Jul-24 01:46 PM] archielvahr#0000
+He is hanging out in our public-general while he decides if he wants to go ahead for a trial membership
+
+
+[03-Jul-24 01:46 PM] archielvahr#0000
+I'm feeling pretty good about our most recent batch of recruits!
+
+
+[03-Jul-24 02:16 PM] akyantor#0000
+I put together these notes when I joined. Worth expanding, or sharing with the two new people? 
+https://docs.google.com/document/d/1Ry14xONeuXAE1Sc0n6PA-V9vuX8s9DHXGtVJ7sP-YaQ/edit#heading=h.ckzwxrkgex2p
+
+
+[03-Jul-24 04:12 PM] archielvahr#0000
+Oh yeah let's make that official. There were a few unfinished notes, maybe I can fill in any questions on there still
+
+
+[03-Jul-24 04:12 PM] archielvahr#0000
+You did a great job with it
+
+
+[03-Jul-24 04:28 PM] akyantor#0000
+I can either make it editable by anyone, or send an invite to edit if preferred. Or for that matter you can take a copy and stick it somewhere more official, if we have a spot.
+
+
+[03-Jul-24 04:39 PM] archielvahr#0000
+I don't think we have a better spot
+
+
+[03-Jul-24 08:44 PM] katinga#0000
+Anyone here have an opinion on the player SecretAce?
+
+
+[03-Jul-24 09:33 PM] archielvahr#0000
+The only thing I look for that I don't see is activity on discord, so maybe they just aren't in any PRUN discords or are using a different name
+
+
+[04-Jul-24 09:29 AM] katinga#0000
+So, when happyness is hovering right at 69%, what's the best way to nudge that past 70%?
+
+{Reactions}
+🇳 🇮 🇨 🇪 
+
+[04-Jul-24 09:30 AM] hernanduer#0000
+the amount of migration is tied to the happiness, so just past 70% won't do a whole lot if the population is small
+
+
+[04-Jul-24 09:30 AM] hernanduer#0000
+`num migrated = (X% - 70%) * current pop`
+
+
+[04-Jul-24 09:31 AM] hernanduer#0000
+so 71% will only migrate you 1% of the current population, which may only be like 20 people
+
+
+[04-Jul-24 09:32 AM] hernanduer#0000
+but the answer to increasing happiness accurately, is to use Archiel's chart. If you just wanna heavy hand it, then add more POPI mats
+
+
+[04-Jul-24 10:09 AM] katinga#0000
+I am lost on that chart
+
+
+[04-Jul-24 06:02 PM] katinga#0000
+he told me he's on AA and ADI.  I don't know the latter server
+
+
+[04-Jul-24 06:07 PM] archielvahr#0000
+ADI is the Antares development initiative. They do the grants.
+
+
+[04-Jul-24 06:07 PM] archielvahr#0000
+I see his account there but no messages
+
+
+[04-Jul-24 06:08 PM] katinga#0000
+i don't see him on AA
+
+
+[04-Jul-24 06:09 PM] archielvahr#0000
+Me either
+
+
+[23-Jul-24 10:51 AM] archielvahr#0000
+Checking in about our pending recruits and candidates:
+
+SecretAce - Haven't really heard anything from SecretAce, not sure if they were interested in the trial or not, they've been pretty quiet in discord but they are active in-game/
+
+JeanPaulMarat | PJI - 6 day account, joined a few days ago, no messages yet in discord. No pro yet, so I think they are still thinking about it. Will keep an eye on em.
+
+MaxKalina - last I heard was considering moving to ANT space but hasn't so far.
+
+TimurOm - In trial period, one base on Prom, one on Vulcan. I think technically it's been more than 7 days, so make it official..?
+
+New pending invitee: Nanoengineer / Shinonome Sciences - new player on Phobos. They have pro but are only a couple days old. I sent them an discord guest invite and suggested they stick around a bit until they have enough experience for us to see if we are a good match for each other.
+
+
+[25-Jul-24 10:44 PM] archielvahr#0000
+Another potential recruit reached out, company code XTC  `usr Droxx69`, I sent them to ADI as a pre-trial-trial. They are pretty early so we'll see how their ADI experience goes
+
+
+[25-Jul-24 10:45 PM] archielvahr#0000
+I also find tha the ADI grants I send out are a nice way to screen players and get to know them before considering them as recruits. If you think about it 750k is pretty cheap for a potential recruit.. and they don't even know they are getting screened for OOG at that point, they just think they are getting free money 😎
+
+
+[25-Jul-24 10:56 PM] hernanduer#0000
+hard to turn down the free money
+
+
+[25-Jul-24 11:30 PM] zipatsu#0000
+*Archiel right after handing out a grant to a new player*:
+
+
+[25-Jul-24 11:30 PM] zipatsu#0000
+https://tenor.com/view/senator-palpatine-anakin-skywalker-phantom-menace-gif-10607636
+
+{Embed}
+https://tenor.com/view/senator-palpatine-anakin-skywalker-phantom-menace-gif-10607636
+https://images-ext-1.discordapp.net/external/0QHjpgHKPBY3U_LLjMhPJqiYEvMTxJZTy5VnKsWvltY/https/media.tenor.com/NVOT1Ai2ju4AAAAe/senator-palpatine-anakin-skywalker.png
+
+{Reactions}
+💯 (3) 😀 (2) 
+
+[25-Aug-24 12:24 AM] archielvahr#0000
+Droxx69, `CO XTC`  is interested in joining, looks like he's the one I mentioned above, heh
+
+
+[25-Aug-24 08:04 AM] archielvahr#0000
+Droxx seems pretty active in ADI so unless I hear anything in here I'm inclined to offer a trial
+
+{Reactions}
+👍 (6) 
+
+[18-Sep-24 07:18 AM] katinga#0000
+There's a possible on Nike.  SpaceMartin, though he seems like a genuinely new player
+
+
+[18-Sep-24 07:21 AM] katinga#0000
+looks like he's on Deimos, too
+
+
+[18-Sep-24 07:23 AM] katinga#0000
+Founded 3 days ago and he has 2 bases already?  How'd he do that?
+
+
+[18-Sep-24 08:03 AM] shrewdsun_88540#0000
+I spoke to him a bit
+
+
+[18-Sep-24 08:03 AM] shrewdsun_88540#0000
+He used the ADI grant
+
+
+[18-Sep-24 08:03 AM] shrewdsun_88540#0000
+Was in HRT, reset to be on Nike and asked me for a loan
+
+
+[18-Sep-24 08:04 AM] shrewdsun_88540#0000
+Told him to go see them as he didn’t need a loan yet if he hadn’t taken the grant
+
+
+[18-Sep-24 08:27 AM] katinga#0000
+He says he has a PRO acct too
+
+
+[18-Sep-24 08:30 AM] marat_sh#0000
+Hal gave him ADI grant, people helped him out filling fabs orders
+
+
+[18-Sep-24 03:19 PM] archielvahr#0000
+👍
+
+
+[06-Oct-24 10:53 PM] archielvahr#0000
+Does anyone know `USR Volcania_Industries` ? They keep selling me ship components. Might make a good recruit. They are entirely in ANT
+
+
+[07-Oct-24 11:25 PM] archielvahr#0000
+Here is a new recruiting page you can send to prospective folks:
+
+
+[07-Oct-24 11:25 PM] archielvahr#0000 (pinned)
+https://oogcapitalmanagement.com/shareholders/joining/
+
+{Embed}
+https://oogcapitalmanagement.com/shareholders/joining/
+Interested in Joining OOG? | OOG Capital Management
+Learn more about joining OOG, Antares premier corporation
+https://images-ext-1.discordapp.net/external/PVzxc9GhxHA48n_y0YIgFU5hKGLsMKiDSAfBsgkbZSk/https/oogcapitalmanagement.com/images/big-round-table-2-narrow.png
+
+
+[07-Oct-24 11:26 PM] archielvahr#0000
+Pinned a message.
+
+
+[13-Oct-24 09:15 AM] katinga#0000
+i'd be interested in buying from them.  Rise can be 3+ weeks on his ship parts
+
+
+[13-Oct-24 10:36 AM] archielvahr#0000
+I messaged them and they never replied 🤷‍♂️
+
+
+[13-Oct-24 09:06 PM] archielvahr#0000
+Does anyone know Gamgee? The new person who arrived in the public-general today?
+
+
+[13-Oct-24 09:06 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1295206110189584434/image.png?ex=6814d170&is=68137ff0&hm=34f6100663a8fa87807c121d7b0d87fddaefd1cbcb53c606de8b7b17b4453f5c&
+
+
+[13-Oct-24 09:07 PM] archielvahr#0000
+I see just a small handful of messages on the other channels, looks like English might not be their primary language
+
+
+[13-Oct-24 09:10 PM] marat_sh#0000
+20h account? if they want to get into corp it's better if they restart in ANT and go through ADI first
+
+
+[13-Oct-24 09:11 PM] archielvahr#0000
+oh geez, I didn't notice that. i saw messages back from May so I figured th at wasn't the case
+
+
+[13-Oct-24 09:11 PM] marat_sh#0000
+well I assume it's them
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1295207426802585620/image.png?ex=6814d2aa&is=6813812a&hm=0fa7f7766862b849b222086cc5ae4b21d3a9917515e8e749063ffe7c0cf9d319&
+
+
+[13-Oct-24 09:13 PM] archielvahr#0000
+Yeah I think you're right, I didn't have APEX open so I didn't check
+
+
+[13-Oct-24 09:13 PM] archielvahr#0000
+Okay, I sent them a reply with that suggestion, it is good advice.
+
+{Reactions}
+👍 
+
+[27-Oct-24 07:45 PM] archielvahr#0000
+Sent out some recruitment messages. If anyone joins #public-general, and I'm  not around, say Hi and ask them: "tell us about yourself", or something similar 🙂
+
+{Reactions}
+👍 link_cool 
+
+[01-Nov-24 06:23 AM] akyantor#0000
+Is it worth adding our corp description to this doc? https://discord.com/channels/350171287785701388/816625580610027520/1301143518823186442
+May be a way to get visibility of our group.
+
+
+[01-Nov-24 07:14 AM] sidepipe#0000
+AGM-114 was asking about joining the corp - is it alright if I send him the link?
+
+
+[01-Nov-24 08:47 AM] archielvahr#0000
+Awesome yeah that’s be great
+
+
+[01-Nov-24 08:48 AM] archielvahr#0000
+Couldn’t hurt!
+
+
+[01-Nov-24 01:00 PM] sidepipe#0000
+sent a link - they said EV1L has been pretty quiet since xensored quit, so they were hoping for a more active group 🙂
+
+
+[01-Nov-24 01:12 PM] archielvahr#0000
+Ahh it looks like Gilith ( Glitched Machines ISC ) is inactive too now
+
+
+[01-Nov-24 01:13 PM] archielvahr#0000
+I tihnk he might be the only one left in EV1L
+
+
+[01-Nov-24 04:20 PM] akyantor#0000
+I've added a bit of our about us from the website in the doc.
+
+{Reactions}
+👍 
+
+[01-Nov-24 04:20 PM] archielvahr#0000
+Awesome thanks
+
+
+[02-Nov-24 12:36 AM] archielvahr#0000
+Sounds like AGM-114 is on basic, but I think I'd be okay making an exception in this case since it's someone has been around a lot
+
+
+[02-Nov-24 12:37 AM] marat_sh#0000
+Agree 👍
+
+
+[02-Nov-24 12:37 AM] archielvahr#0000
+I messaged him that we will discuss an exception
+
+{Reactions}
+👍 
+
+[02-Nov-24 12:37 AM] archielvahr#0000
+I didn't want to mention that in general since then everyone will ask 😛
+
+
+[02-Nov-24 12:39 AM] archielvahr#0000
+He's mostly in CI space, but I guess Etherwind and Malahat count as Antares 😆
+
+{Reactions}
+🤣 
+
+[02-Nov-24 12:39 AM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-11-02_00-38-16.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-11-02_00-38-16.png
+https://images-ext-1.discordapp.net/external/evbpciGzPe2UNpvIFcZHk2v06x-LTM_GAYbDiYGX0Og/http/kortham.net/temp/firefox_2024-11-02_00-38-16.png
+
+
+[02-Nov-24 12:39 AM] archielvahr#0000
+I'll give everyone else a few hours to chime in overnight
+
+
+[02-Nov-24 08:50 AM] marat_sh#0000
+CI is an ANT province. If he is fine that we dealing business only in ANT space, I don't see an issue where they get their items from
+
+{Reactions}
+😆 👍 (2) 
+
+[02-Nov-24 05:51 PM] sidepipe#0000
+Maybe a little late to the discussion, but I’m in favor. He’s had a 3 permit EDC base with us since before I even was part of the bank
+
+
+[12-Nov-24 04:00 PM] archielvahr#0000
+Pretty pleased with my current and previous discussions with superbadsounds
+
+
+[12-Nov-24 04:00 PM] archielvahr#0000
+base distribution:
+
+
+[12-Nov-24 04:00 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1230199856560078868/1306015732265517096/image.png?ex=681497af&is=6813462f&hm=6d591e1a974f295f6a001ed1abbfef06bbc7570e2d0dd7335adc427e3b1f089f&
+
+
+[12-Nov-24 04:02 PM] sidepipe#0000
+I see Antares in the list, so it works for me 😄
+
+{Reactions}
+👍 (2) 
+
+[12-Nov-24 04:10 PM] akyantor#0000
+A friendly face who might benefit from support in increasing their presence in the warm southern climate. 🤣
+
+
+[18-Nov-24 12:51 PM] shrewdsun_88540#0000
+If i can add to this, I have exchanged alot with him over loans and he seems pretty smart and have a good grasp of what he does
+
+{Reactions}
+👍 
+
+[30-Nov-24 11:12 AM] katinga#0000
+looks like there's a newbie on Harm
+
+
+[30-Nov-24 11:52 AM] archielvahr#0000
+Ah I don't have a base there anymore, go ahead and say Hi, see if they have a discord and such
+
+
+[07-Jan-25 10:51 AM] archielvahr#0000
+I updated the internal recruitment guidelines that are pinned at the top of this channel: https://discord.com/channels/854795108720443393/1230199856560078868/1230203707233276017
+
+
+[07-Jan-25 10:52 AM] archielvahr#0000
+And also cleaned up some references to dividends and some old stuff in the public-welcome channel
+
+{Reactions}
+👍 (2) 
+
+[07-Jan-25 11:16 AM] tyrandia#0000
+Sounds good. ❤️
+
+
+[09-Jan-25 12:11 AM] .urpalhal#0000
+lol did someone invite Alt4 guy?
+
+
+[09-Jan-25 10:26 AM] archielvahr#0000
+I think he found the open invite
+
+
+[09-Jan-25 10:26 AM] archielvahr#0000
+there's a link on the website for the public channels
+
+
+[09-Jan-25 10:27 AM] archielvahr#0000
+looks like he joined overnight, cause he messaged me and he joined before I replied
+
+
+[09-Jan-25 10:27 AM] archielvahr#0000
+I enjoy his enthusiasm- he is like only 6 days into the game at the moment
+
+
+[09-Jan-25 10:27 AM] archielvahr#0000
+I did give him and ADI grant so we'll see how that goes, if he can set that up, that's great
+
+
+[09-Jan-25 10:28 AM] archielvahr#0000
+my inclination is usually to  wait, we generally target people who have 30d experience
+
+
+[09-Jan-25 10:28 AM] archielvahr#0000
+I like his enthusiasm though, heh
+
+
+[09-Jan-25 10:28 AM] archielvahr#0000
+any other thoughts? Should I direct towards the guideline "30 Days of overall game experience"
+
+
+[09-Jan-25 10:36 AM] zipatsu#0000
+6 days in, already got pro and is actively looking for a corp to join? That's about as good as you can hope for in a promising new member for this game I'd say ✌️
+
+{Reactions}
+hesrightyouknow (3) ❤️ 
+
+[09-Jan-25 11:21 AM] marat_sh#0000
+I got in here with 6 days in as well 😅
+
+
+[09-Jan-25 11:24 AM] sidepipe#0000
+I guess I can’t talk because I also joined at 6 days 😄
+
+
+[09-Jan-25 11:25 AM] sidepipe#0000
+There’s probably no harm in waiting a few days if you wanna get a better read on them, but maybe not the whole 24 days
+
+
+[09-Jan-25 05:48 PM] .urpalhal#0000
+I got no problem with him
+
+
+[09-Jan-25 05:48 PM] .urpalhal#0000
+I also saw his ADI plan doing AL on Deimos
+
+
+[04-Feb-25 01:55 PM] bookliko#0000
+Appltee23 seems very eager to learn and progress. I believe he would thrive with some warm mentoring at OOG. He will also double the chat rate 🤣
+
+{Reactions}
+🤣 
+
+[04-Feb-25 02:23 PM] sidepipe#0000
+He’s been pretty active in the ADI too, seems pretty cool - if he’s able to buy PRO, I’d be in favor of inviting him!
+
+
+[04-Feb-25 02:43 PM] superbadsounds#0000
+I have some keys left to generate if any one needs pro time or a free path to a basic license.  Every account is limited to one key redemption, but I'm happy to help how I can. 
+
+I'm happy to offer them for free to fellow OOG, but would also accept in-game donations in return if the receiver felt so inclined.
+
+
+[04-Feb-25 02:44 PM] superbadsounds#0000
+They're just being wasted as is, so I'd love to help people grow
+
+
+[04-Feb-25 02:45 PM] .urpalhal#0000
+Yeah the key thing is quite interesting
+
+
+[04-Feb-25 02:49 PM] bookliko#0000
+I am sure Appltee is running on a gift PRO right now
+
+{Reactions}
+👆 (2) 
+
+[04-Feb-25 02:56 PM] archielvahr#0000
+It's good to have the activity hehe
+
+
+[04-Feb-25 02:56 PM] archielvahr#0000
+I think when the keys expire you go back to free, rather than basic, right?
+
+
+[04-Feb-25 03:04 PM] sidepipe#0000
+Yeah, that's right
+
+
+[05-Feb-25 03:25 PM] archielvahr#0000
+So for Appltee, I think things look really good. Hoping they end up with Pro/Basic first though. I haven't seen a need to rush into it
+
+
+[05-Feb-25 03:30 PM] archielvahr#0000
+New in the general chat is Shokanshi- not too much activity in UFO, a little in the PRUN server. He has two bases, both in ANT (etherwind counts 😉 )
+
+
+[05-Feb-25 03:32 PM] archielvahr#0000
+But it seems like the chat is going good. Sending him to ADI for some free money to see how that goes
+
+
+[05-Feb-25 03:32 PM] archielvahr#0000
+I welcome any other thoughts!
+
+
+[06-Feb-25 07:38 AM] tyrandia#0000
+Uhm, ADI is good. Free money is always nice!
+
+
+[06-Feb-25 07:39 AM] tyrandia#0000
+For appltee, I'd be happy to throw a license key their way if they seem promising.
+
+
+[06-Feb-25 09:59 AM] archielvahr#0000
+Yeah I wish they had license gifting in general
+
+{Reactions}
+👆 
+
+[09-Feb-25 10:49 AM] .urpalhal#0000
+I gave him his first one so I could get him a grant in ADI
+
+
+[09-Feb-25 10:49 AM] .urpalhal#0000
+Can you receive multiple keys?
+
+
+[09-Feb-25 10:49 AM] .urpalhal#0000
+Otherwise idk what imma do with all me keys
+
+
+[09-Feb-25 12:07 PM] allocater#0000
+each account can only use 1 key
+
+
+[03-Mar-25 05:39 AM] pagy1234#0000
+HAHA
+
+
+[03-Mar-25 05:39 AM] pagy1234#0000
+not wrong lol
+
+
+[03-Mar-25 05:40 AM] bookliko#0000
+Engagement is 🔥
+
+
+[03-Mar-25 05:45 AM] pagy1234#0000
+:D
+
+
+[05-Mar-25 03:23 PM] .urpalhal#0000
+OH
+
+
+[05-Mar-25 03:24 PM] .urpalhal#0000
+I gave Laxy an invite
+
+
+[05-Mar-25 03:24 PM] .urpalhal#0000
+he seems interested in Romulon system stuffs
+
+
+[05-Mar-25 03:24 PM] .urpalhal#0000
+so ye
+
+
+[05-Mar-25 03:24 PM] .urpalhal#0000
+he's got two bases
+
+
+[05-Mar-25 03:24 PM] .urpalhal#0000
+one on deimos an one in romulon
+
+
+[05-Mar-25 03:24 PM] katinga#0000
+which Rom?
+
+
+[05-Mar-25 03:24 PM] .urpalhal#0000
+romulus
+
+
+[05-Mar-25 03:25 PM] .urpalhal#0000
+his company code is LOCK
+
+
+[05-Mar-25 03:25 PM] .urpalhal#0000
+63 day old company
+
+
+[05-Mar-25 03:25 PM] .urpalhal#0000
+just got a grant from ADI
+
+
+[05-Mar-25 03:27 PM] katinga#0000
+he just appeared in Romulus' local chat about 2 weeks ago.  cool
+
+
+[05-Mar-25 03:29 PM] .urpalhal#0000
+looks like he is interested in fuel refining
+
+
+[05-Mar-25 03:39 PM] katinga#0000
+If they join, I don't mind helping to sponsor a couple bases for him in the Rom system
+
+{Reactions}
+DancieBoi 
+
+[05-Mar-25 05:02 PM] .urpalhal#0000
+Lemme go copy and paste the shpill
+
+{Reactions}
+💖 
+
+[05-Mar-25 07:20 PM] .urpalhal#0000
+What exactly should I copy paste for the shpill?
+
+
+[05-Mar-25 07:24 PM] archielvahr#0000
+I was hoping you had something in mind, hehe
+
+
+[05-Mar-25 07:24 PM] archielvahr#0000
+Sometimes I just send them this link, cause the introduction information is all there:
+
+
+[05-Mar-25 07:24 PM] archielvahr#0000
+https://oogcapitalmanagement.com/shareholders/joining/
+
+{Embed}
+https://oogcapitalmanagement.com/shareholders/joining/
+Interested in Joining OOG? | OOG Capital Management
+Learn more about joining OOG, Antares premier corporation
+https://images-ext-1.discordapp.net/external/PVzxc9GhxHA48n_y0YIgFU5hKGLsMKiDSAfBsgkbZSk/https/oogcapitalmanagement.com/images/big-round-table-2-narrow.png
+
+
+[05-Mar-25 07:25 PM] archielvahr#0000
+There's some pinned messages in this channel too
+
+
+[05-Mar-25 07:25 PM] archielvahr#0000
+or if you write something up, we can pin it.
+
+
+[05-Mar-25 07:25 PM] archielvahr#0000
+if I'm DMing something, I usually personalize a short message then include the link
+
+
+[05-Mar-25 07:25 PM] archielvahr#0000
+"hey I thought you would be a good fit, I saw you trading X on Y... or I saw you were interested in building X"
+
+
+[05-Mar-25 07:26 PM] archielvahr#0000
+If it's sorta a cold message, I have used this:
+
+
+[05-Mar-25 07:26 PM] archielvahr#0000
+Hi, I'm Archiel from OOG. I noticed you're primarily based in ANT space and wanted to know if you were interested learning more about OOG. 
+
+Custom line: ----->
+I see that you've also got some governing experience and are active in discord communities, which are both great!
+----- 
+
+OOG is the premier corp in ANT space and we feature governance training and support, shipbuilding, planetary and regional development, a discord-based internal auction/order system, and preferential material access and prices. The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones.
+
+We're currently recruiting and it seems like you could be a good match. We've got a one week trial period where we see if it's a good fit for both parties. 
+
+Let me know if you're interested, and there's a bit more info on the UFO recruitment post here:
+
+
+[05-Mar-25 07:27 PM] archielvahr#0000
+then link either the UFO post or the webpage
+
+
+[05-Mar-25 07:27 PM] archielvahr#0000
+🤷‍♂️
+
+
+[06-Mar-25 12:38 AM] .urpalhal#0000
+I just sent the link
+
+
+[06-Mar-25 12:39 AM] .urpalhal#0000
+And said like hey I see you’re interested in fuel refining come check out the server if you think it’s good, someone is interested helping you get a bigger foothold in Romulan
+
+
+[06-Mar-25 12:39 AM] .urpalhal#0000
+They said they would check it out
+
+
+[06-Mar-25 12:39 AM] .urpalhal#0000
+I might need to resend a discord invite for them tho
+
+{Reactions}
+👍 
+
+[06-Mar-25 09:47 PM] .urpalhal#0000
+Laxy is the one I invited
+
+
+[11-Mar-25 08:53 PM] archielvahr#0000
+Anyone have any thoughts on JerryM?
+
+
+[11-Mar-25 08:53 PM] archielvahr#0000
+I think he's quiet but I don't really have any more questions
+
+
+[11-Mar-25 09:03 PM] .urpalhal#0000
+:RSZeroShrugIDK:
+
+
+[23-Mar-25 10:21 PM] .urpalhal#0000
+in deimos planet chat
+
+
+[23-Mar-25 10:21 PM] .urpalhal#0000
+tarrant | TRT is looking for a corp
+
+
+[23-Mar-25 10:21 PM] .urpalhal#0000
+he got a grant too i believe
+
+
+[23-Mar-25 10:22 PM] .urpalhal#0000
+but he's like new new
+
+
+[23-Mar-25 10:22 PM] .urpalhal#0000
+so maybe a watch and see kinda thing?
+
+
+[23-Mar-25 10:56 PM] archielvahr#0000
+Seems promising from his messages in ADI
+
+
+[24-Mar-25 01:06 AM] pagy1234#0000
+he seemed very keen in my short intereaction with him yesterday
+
+
+[24-Mar-25 01:06 AM] pagy1234#0000
+learns fast aswell
+
+
+[24-Mar-25 12:25 PM] archielvahr#0000
+Either of you can feel free to reach out to him 🙂
+
+
+[15-Apr-25 08:00 PM] archielvahr#0000
+I'm feeling pretty good about WeltKriegDrei
+
+
+[15-Apr-25 08:00 PM] archielvahr#0000
+Anyone else have comments?
+
+
+[15-Apr-25 08:01 PM] archielvahr#0000
+Oh, and did anyone followup on Tarrant | TRT? I sort of forgot about that
+
+
+[15-Apr-25 08:13 PM] sidepipe#0000
+No notes! Seems pretty cool from what I’ve seen 🙂
+
+{Reactions}
+👍 
+
+[16-Apr-25 02:36 AM] pagy1234#0000
+they still seem to play, just that they dont talk too much in discord
+
+
+[16-Apr-25 02:36 AM] pagy1234#0000
+il check with them
+
+
+[16-Apr-25 09:21 AM] archielvahr#0000
+Thanks!
+
+
+[16-Apr-25 06:44 PM] katinga#0000
+Anyone have any thoughts on Lapras?  They're on Deimos.  They're so new that they're discussing faction contracts.
+
+
+[16-Apr-25 06:49 PM] katinga#0000
+Registered 9 days ago
+
+
+[16-Apr-25 11:07 PM] archielvahr#0000
+Try to get them to join ADI, and if they do well there, we can move forward
+
+
+[16-Apr-25 11:07 PM] archielvahr#0000
+Good way to be sure they have a discord account and such
+
+
+[16-Apr-25 11:10 PM] archielvahr#0000
+I posted an ADI spiel in the Deimos COM
+
+{Reactions}
+👍 
+
+[17-Apr-25 10:30 AM] pagy1234#0000
+no response from Tarrant still..
+
+
+[17-Apr-25 10:31 AM] pagy1234#0000
+should I try again?
+
+
+[17-Apr-25 12:15 PM] archielvahr#0000
+🤷‍♂️  If they aren't regularly on discord it probably won't be a good match
+
+
+[17-Apr-25 12:16 PM] pagy1234#0000
+yeah, probably
+
+
+[26-Apr-25 10:05 AM] sidepipe#0000
+Not sure who invited Swatacular, but they seem cool 😄
+
+
+[26-Apr-25 10:25 AM] archielvahr#0000
+Yep he messaged me
+
+
+[26-Apr-25 10:25 AM] archielvahr#0000
+the name is familiar from my starting days
+
+
+[26-Apr-25 10:25 AM] archielvahr#0000
+Company GlowyStone
+
+
+[26-Apr-25 10:27 AM] archielvahr#0000
+Oh yeah, that's some good chatting! I am just catching up
+
+
+[01-May-25 01:30 PM] bookliko#0000
+Does SanityCat look like a interesting invite? They just won an MP spot on ISA and seem pretty active.
+
+
+[01-May-25 01:47 PM] sidepipe#0000
+They’re in the ADI as well, and I’ve had good experiences with them there
+
+
+[01-May-25 03:25 PM] archielvahr#0000
+Cool, go ahead and invite them to the discord 🙂
+
+
+==============================================================
+Exported 369 message(s)
+==============================================================

@@ -1,0 +1,26 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Channel Archive / associate-information
+==============================================================
+
+[30-Mar-24 11:55 AM] Deleted User#0000
+Welcome to the Antares Development Initiative!
+
+If you are reading this there's a high liklihood you are currently an **Associate** which could mean the following:
+
+- you lack a pro or basic license, which is needed for the vast majority of cooperation within ADI;
+- you are not within the Antares region;
+- you are not interested in directly participating.
+
+As an associate you have access to several channels;
+
+#associate-office - a general communication area that is specifically for more on-topic discussion towards PrUn.
+#associate-planning - an area to share project ideas, base ideas and ask for help.
+#associate-offtopic - an area of communication that is open to any topic, game related or not, created to keep the other channels clear of unrelated clutter.
+#internal-offers  - a channel where the internal market of ADI can be found listing the prices of our commodities for sale.
+#trading - used for all manner of trading, shipping and market related activities.
+
+
+==============================================================
+Exported 1 message(s)
+==============================================================

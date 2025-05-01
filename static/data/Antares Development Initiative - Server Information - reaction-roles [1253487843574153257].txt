@@ -1,0 +1,28 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Server Information / reaction-roles
+==============================================================
+
+[23-Jun-24 10:39 PM] Sapphire#8184
+## Collect optional roles here!
+* 📜 Archive Viewer
+  * Access to view archived channels.
+* 📊 Polls
+  * Get pinged for any polls going on.
+* 🚨 Market Alerts
+  * Get pinged for notices about noteworthy market activity.
+
+{Reactions}
+📜 (20) 📊 (31) 🚨 (36) 
+
+[25-Jun-24 05:58 PM] jvaler#0000
+## How to self-assign planet roles:
+* First, you need to check what planet roles are available. This is done by running the command `!roles` in #bot-spam 
+* Using that list as a guide, run the `!planet[planet name]` command for any planets you see that you're also on.
+ * The custom command used doesn't accept spaces, keep the entire thing one word.
+ * Example: `!planeticestationalpha`
+
+
+==============================================================
+Exported 2 message(s)
+==============================================================

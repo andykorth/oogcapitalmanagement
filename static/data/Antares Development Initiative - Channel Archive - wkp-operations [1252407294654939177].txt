@@ -1,0 +1,2155 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Channel Archive / wkp-operations
+==============================================================
+
+[20-Jun-24 01:28 PM] jvaler#0000
+news for @WKP:
+the finances sheet is functional now, so y'all can get an idea of how much you will owe.
+once you get ready to pay back the loan it will be up to you to keep track of how much you have repaid and how much you still owe. you will use the checkboxes in the "Data Input" tab to mark off what you've paid. note that we currently do not have a concrete price for SSC yet, so make sure not to pay that back yet.
+i have posted the sheet link in #wkp-information
+
+
+[20-Jun-24 01:29 PM] jvaler#0000
+i totally didn't just modify my personal debt sheet for this :P
+
+
+[20-Jun-24 01:29 PM] igfloz#0000
+Awesome Sauce !
+
+
+[20-Jun-24 01:44 PM] jvaler#0000
+oops i forgot to allow edits
+
+
+[20-Jun-24 01:44 PM] jvaler#0000
+should be good now
+
+
+[20-Jun-24 01:45 PM] .shiva.#0000
+Thanks for setting it up. I should've waited on LHP lol, oh well
+
+
+[20-Jun-24 01:46 PM] jvaler#0000
+nono you just made it slightly easier for us lol
+
+
+[20-Jun-24 01:54 PM] akyantor#0000
+How will we send the money over? 1 RAT contracts to you?
+
+
+[20-Jun-24 01:57 PM] jvaler#0000
+like this
+fulfill, then just terminate the contract
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1253423477042450502/image.png?ex=68151594&is=6813c414&hm=e5dd4321f2e067c261c999cb25d0d96986eb4060bea94575084ffa1879876f6e&
+
+
+[20-Jun-24 01:58 PM] jvaler#0000
+or you could just do a cont for 1 SF
+
+
+[20-Jun-24 01:58 PM] jvaler#0000
+doesn't really matter
+
+
+[20-Jun-24 01:58 PM] jvaler#0000
+idk why RAT is the standard though, people are more likely to keep SF on ANT. plus it's cheaper
+
+{Reactions}
+🐀 
+
+[20-Jun-24 01:59 PM] akyantor#0000
+That's fine. Thanks.
+
+
+[20-Jun-24 02:19 PM] .shiva.#0000
+Rat is the default item when you make a contract im pretty sure
+
+
+[20-Jun-24 02:21 PM] flor2081#0000
+honestly putting it to the core module is just too much work
+
+
+[20-Jun-24 02:21 PM] flor2081#0000
+I really never mind if I have to pay that one SF/RAT to make the cont go away immediately
+
+{Reactions}
+👆 
+
+[20-Jun-24 04:05 PM] jvaler#0000
+SF > RAT
+
+{Reactions}
+👍 💯 
+
+[20-Jun-24 04:05 PM] jvaler#0000
+at the end of the day i don't really care :P
+
+
+[20-Jun-24 04:05 PM] jvaler#0000
+i just don't personally stockpile RAT so i'd have to CXPO it
+
+
+[20-Jun-24 06:02 PM] cptcoleslaw#0000
+I've got a little bit of LHP headed for ANT, more on Vulcan. Where are we selling these? ANT? or Deimos?
+
+
+[20-Jun-24 06:04 PM] jvaler#0000
+i was gonna keep it all on ANT, then i can either take it to hephaestus or let them ship it themselves
+
+{Reactions}
+👍 
+
+[20-Jun-24 06:04 PM] jvaler#0000
+cause heph WAR isn't big enough to keep *everything*, but it can keep a couple kits
+
+
+[20-Jun-24 06:04 PM] jvaler#0000
+and my base STO are pretty full there
+
+
+[20-Jun-24 06:09 PM] cptcoleslaw#0000
+Deimos is a fairly bit warehouse and it has a shipyard. Vulcan also has big warehouse and I could build a shipyard if desired...
+
+
+[20-Jun-24 06:10 PM] jvaler#0000
+no don't build a 3rd shipyard right next to ANT 😭
+
+
+[20-Jun-24 06:11 PM] jvaler#0000
+wait no 4th, nike
+
+
+[20-Jun-24 06:15 PM] cptcoleslaw#0000
+wait wat? I didn't even realize Nike had one
+
+
+[20-Jun-24 06:15 PM] cptcoleslaw#0000
+and I was just joking
+
+
+[20-Jun-24 06:15 PM] cptcoleslaw#0000
+governors in KAWA have been building Shipyards everywhere lately and I'm like... why?
+
+
+[20-Jun-24 06:15 PM] jvaler#0000
+lmfao
+
+
+[20-Jun-24 06:15 PM] cptcoleslaw#0000
+that said...
+
+
+[20-Jun-24 06:15 PM] cptcoleslaw#0000
+I might build one on Katoa 😆
+
+
+[20-Jun-24 06:16 PM] cptcoleslaw#0000
+cause the only shipyard in the Benten system is on [currently] unpopulated planet...
+
+
+[20-Jun-24 06:16 PM] cptcoleslaw#0000
+(we're about to build it up though)
+
+
+[20-Jun-24 06:16 PM] jvaler#0000
+tf
+
+
+[20-Jun-24 06:16 PM] cptcoleslaw#0000
+yeah idk
+
+
+[20-Jun-24 06:16 PM] jvaler#0000
+that's so weird
+
+{Reactions}
+💯 
+
+[20-Jun-24 06:17 PM] cptcoleslaw#0000
+There's one on Proxion, which is close enough and where most people here sell ships
+
+
+[20-Jun-24 06:17 PM] cptcoleslaw#0000
+But is just feels like there should be one on Katoa
+
+
+[20-Jun-24 06:17 PM] jvaler#0000
+i guess it has 0 atmo so no extra damage... but also only a single WAR
+
+
+[20-Jun-24 06:18 PM] cptcoleslaw#0000
+for now...
+
+{Reactions}
+🧐 
+
+[20-Jun-24 06:18 PM] cptcoleslaw#0000
+(we're about to build ADM, CoGC, warehouses, and set it up as a fuel planet...)
+
+
+[20-Jun-24 06:18 PM] jvaler#0000
+ooh nice
+
+
+[20-Jun-24 06:19 PM] cptcoleslaw#0000
+Governed by a fellow KAWA member who has voted against me on Katoa CoGC literally every week since they started playing, lol. So I just said "go get your own planet" then helped him build it, lol
+
+
+[20-Jun-24 06:21 PM] jvaler#0000
+i sympathize with wanting to align the fuel starter to fuel... but manufacturing's just too good
+
+
+[20-Jun-24 06:29 PM] jvaler#0000
+oh and it's also it's own starting profession too so... lol
+
+{Reactions}
+💯 
+
+[20-Jun-24 06:54 PM] cptcoleslaw#0000
+yeah, I think a fuel CoGC is a trap anyway... if I could ever be convince to vote for another CoGC for the benefit of new players, it would be RE. Katoa is good for fuel because of it's AMM and GAL. Gravy is one of the biggest SF producers in the game and they use Katoa for GAL, Biogenesis for AMM, Umbra for NAB, and make the fuel elsewhere. The only thing missing in the Benten system is a Fuel CoGC in the system, and RE CoGC on Katoa.
+
+
+[20-Jun-24 06:55 PM] cptcoleslaw#0000
+the problem is that the universe doesn't that much fuel 😆 margins are already too slim to push that far
+
+
+[20-Jun-24 07:01 PM] .urpalhal#0000
+Ergo we *need* nuclear reactor to make tritium for FF fuel. Super efficient
+
+{Reactions}
+😆 
+
+[20-Jun-24 07:16 PM] cptcoleslaw#0000
+I'll just build a fleet of those super fast ships that consume like 1200 fuel per trip and burn it all up till it's profitable again 😆
+
+
+[21-Jun-24 02:49 AM] akyantor#0000
+I'm definitely going to feel the benefit of these upgrades when availabile. It's started to get to the point my two little ships are constantly moving to keep up with resupplies. 😛
+
+
+[21-Jun-24 11:13 AM] akyantor#0000
+I realised that buying 30 days of supplies means more than one trip in a starter ship. 😛
+
+
+[21-Jun-24 12:46 PM] razesdark#0000
+I know the feeling.
+I'm struggling as it is (though much of it is by my own design). Im even renting a ship from another new player friend of mine that is constantly ferrying me resources 😉
+
+
+[21-Jun-24 01:20 PM] acramernc#0000
+just picked up 2 upgrade kits today, so now i won't have shipping capacity problems but will instead have to struggle to fill the ships
+
+
+[21-Jun-24 01:21 PM] acramernc#0000
+i can only imagine how expensive enough carbon to fill a WCB costs :Aware:
+
+
+[21-Jun-24 01:21 PM] .urpalhal#0000
+1000 C
+
+
+[21-Jun-24 01:21 PM] .urpalhal#0000
+So
+
+
+[21-Jun-24 01:21 PM] .urpalhal#0000
+700,000
+
+
+[21-Jun-24 01:22 PM] acramernc#0000
+huh, more achievable than i thought tbh
+
+
+[21-Jun-24 01:39 PM] razesdark#0000
+Hopefully by next week Ill have enough capital to buy a kit from Shaitr and get one of my starters converted
+
+
+[21-Jun-24 01:40 PM] razesdark#0000
+Though, I got a few thousand tons of ore I need moving if your ships are idle. 2-3 days for the return trip from ANT station 😉
+
+
+[21-Jun-24 02:29 PM] acramernc#0000
+where's your ore at lol, my ship still has to make the return trip from Moria
+
+
+[21-Jun-24 02:38 PM] razesdark#0000
+KI-840c
+
+
+[21-Jun-24 02:45 PM] acramernc#0000
+ah yeah thats a bit far out of the way for me rn
+
+
+[21-Jun-24 02:46 PM] razesdark#0000
+Yep
+
+
+[22-Jun-24 06:33 AM] uncle_leslie69#0000
+I built a 3rd ship but now I need to pay back 5mil 🫠🫠
+
+
+[22-Jun-24 06:34 AM] uncle_leslie69#0000
+Tbf, it’s not too bad. Very thankful for the 3rd one
+
+
+[25-Jun-24 05:32 PM] jvaler#0000
+@WKP announcement:
+the first batch of kits is going to be ready in a few days and we had decided to use a random number generator to determine who gets the first 3 of 12 kits, however i've noticed a few players seem to have a more pressing need for WCBs than others.
+
+one thing that should be easy to do is exclude @neeko.cat from this first raffle as they've received an advance on both of their kits by RiseOfFilth. these kits can be provided lastly in order to pay back rise, leaving 3/5 participants getting kits this round.
+
+if any of you feel like you have a less urgent need for logistics please let me know so that others can be more likely(or even guaranteed) to get a kit early. note that if you forfeit your kit this batch it is still guaranteed to be provided next batch, just as if you had simply lost the raffle.
+
+
+[25-Jun-24 06:02 PM] neeko.cat#0000
+^^
+
+
+[26-Jun-24 01:28 AM] akyantor#0000
+I think from memory there's a 10 day gap, ish, between batches. I've had some assistance from a corp mate that's lessened my need in the very short term, as such I would be ok being in the second batch, if other folks have a pressing need.
+
+
+[26-Jun-24 05:07 AM] nyanism#0000
+same as Akyan, if i dont win the lotto on 1st batch, @evany. will do the shipping since he's the one coming up with RNGsus
+
+{Reactions}
+😂 
+
+[01-Jul-24 06:57 PM] jcheung#0000
+👀 what's the wait time for group 2?
+
+
+[01-Jul-24 06:58 PM] jvaler#0000
+quite a while... this is feeling slower than i expected
+
+
+[01-Jul-24 06:58 PM] jvaler#0000
+batch 1/4 of group 1 should be ready soon
+
+
+[01-Jul-24 06:58 PM] jvaler#0000
+i'll be sending out my LCB shortly
+
+
+[02-Jul-24 05:34 PM] jvaler#0000
+@WKP I've recieved the first 3 kits! My ship is en-route and will likely be back at ANT within the next 4 days. Now's the time to run the random number generator, so to be clear it doesn't seem like anyone's forfeiting their "ticket" right now?
+
+{Reactions}
+pog (2) 
+
+[02-Jul-24 05:41 PM] neeko.cat#0000
+I can be the last one to receive them as you pointed out already
+
+
+[02-Jul-24 05:50 PM] jvaler#0000
+right, aside from u i mean lol
+
+
+[02-Jul-24 06:52 PM] jcheung#0000
+Maybe I'm misreading, but didn't  akyan volunteer to forfeit this round?
+
+
+[02-Jul-24 07:01 PM] jvaler#0000
+oh i was under the impression akyan was stretched for logi but yeah, looks like they did
+
+
+[02-Jul-24 07:01 PM] jvaler#0000
+okay
+
+
+[03-Jul-24 01:04 AM] akyantor#0000
+Yeah, fine to be in the second group
+
+
+[03-Jul-24 01:40 AM] riseoffilth#0000
+Did you clear this purchase and import with the Antares Shipbuilder'S'authority? 
+
+The details for ASS can be found here: @riseoffilth
+
+
+[03-Jul-24 01:51 AM] jcheung#0000
+would it be in the hole at the middle?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1257951830500048997/image.png?ex=68151430&is=6813c2b0&hm=05089c92a74cc5bf86603aa79d644ddb833a30c5815c7122575d8a23b46792ab&
+
+
+[03-Jul-24 01:53 AM] riseoffilth#0000
+I think the whole thing is ASS
+
+
+[03-Jul-24 12:49 PM] cptcoleslaw#0000
+@jvaler you need LHP yet?
+
+
+[03-Jul-24 12:59 PM] jvaler#0000
+not atm, the stuff i'm importing from MOR will cover this batch
+
+{Reactions}
+👍 
+
+[03-Jul-24 02:23 PM] cptcoleslaw#0000
+do you know how much more total you'll need? KAWA uses it in CI space, but I want to stock ANT with whatever you'll need
+
+
+[07-Jul-24 11:27 AM] jvaler#0000
+sorry for the delay, it'll be 312 LHP
+
+
+[07-Jul-24 11:29 AM] jvaler#0000
+okay i have the kits! running the poll now
+1 - igfloz
+2 - SecretAce
+3 - lelisa
+4 - Nyannism
+
+
+[07-Jul-24 11:30 AM] jvaler#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1259547047678443582/image.png?ex=6814f319&is=6813a199&hm=13aee22c016a54e1dae53865e699b8c1a3198c24fda460c0ecaebd1cc3e0ff35&
+https://cdn.discordapp.com/attachments/1252407294654939177/1259547048148074616/image.png?ex=6814f319&is=6813a199&hm=548c2aae62dd089e970d4ab8a2a859b353e7cc8b9072fcd461ade7baff6befde&
+https://cdn.discordapp.com/attachments/1252407294654939177/1259547048764506212/image.png?ex=6814f319&is=6813a199&hm=22f0ee9b9c69ec48cfe72168b799fc4345f6d9a32fccb3c7e77cb5b04ce28d9f&
+
+
+[07-Jul-24 11:31 AM] jvaler#0000
+@igfloz @chobbycock @.shiva. please send me 0 AIC buy conts @ ANT for HALF of what is listed in your part of the finances sheet
+
+
+[07-Jul-24 11:49 AM] igfloz#0000
+damn ! a RAT cont fell through - I'll re-send
+
+
+[07-Jul-24 11:49 AM] jvaler#0000
+wait wait i'm sorry
+
+
+[07-Jul-24 11:50 AM] jvaler#0000
+can you resend for 1 kit? i only have 3
+
+
+[07-Jul-24 11:50 AM] jvaler#0000
+that's my fault for bad instructions
+
+
+[07-Jul-24 11:51 AM] igfloz#0000
+oh, just reject em all, I'll re-send for 1 kit
+
+
+[07-Jul-24 11:58 AM] igfloz#0000
+You want 32 SSC back ?
+
+
+[07-Jul-24 11:59 AM] jvaler#0000
+i've got all the SSC, you can keep that
+
+{Reactions}
+👍 
+
+[07-Jul-24 01:30 PM] nyanism#0000
+@evany. Congratulation evan, now you get to haul most of my stuff until the next batch arrived :KEKW:
+
+{Reactions}
+🤣 
+
+[07-Jul-24 01:45 PM] evany.#0000
+https://tenor.com/view/not-me-the-devil-jason-sudeikis-saturday-night-live-wasnt-me-gif-23602956
+
+{Embed}
+https://tenor.com/view/not-me-the-devil-jason-sudeikis-saturday-night-live-wasnt-me-gif-23602956
+https://images-ext-1.discordapp.net/external/-TK76VaRCVPyKUtLZ01fBMJ59RP6ggMhGumP9FpY7qE/https/media.tenor.com/qMCVo-Tkq00AAAAe/not-me-the-devil.png
+
+
+[07-Jul-24 03:03 PM] chobbycock#0000
+@jvaler thats my lot of the contracts sent over
+
+
+[07-Jul-24 03:12 PM] chobbycock#0000
+Would you guys suggest upgrading the engine at the same time?
+
+
+[07-Jul-24 03:12 PM] chobbycock#0000
+To a fuel saving one
+
+
+[07-Jul-24 03:18 PM] evany.#0000
+from your starter? @chobbycock 
+i think the general advice is no - theres no reason to
+
+
+[07-Jul-24 03:18 PM] evany.#0000
+fuel usage is such a minor component that it would have to run for years before there would be any cost-benefit
+
+
+[07-Jul-24 03:19 PM] evany.#0000
+i haven't done the numbers personally, but from when i asked the same question when i was new kid- that was what i was told
+
+
+[07-Jul-24 03:27 PM] jcheung#0000
+Don't they also improve thrust?
+
+
+[07-Jul-24 03:27 PM] jcheung#0000
+Protentially less time in transit, no?
+
+
+[07-Jul-24 03:28 PM] sidepipe#0000
+I don't know if the FSE does, but you can test it out by making different blueprints and using the BTF buffer
+
+
+[07-Jul-24 03:29 PM] jcheung#0000
+I'm 80% sure they do, but I'm also not trying to do that on mobile
+
+
+[07-Jul-24 03:30 PM] jcheung#0000
+No idea on roi for time though
+
+
+[07-Jul-24 03:30 PM] jcheung#0000
+Probably still really long
+
+
+[07-Jul-24 03:30 PM] sidepipe#0000
+but in most cases, improved thrust = lower fuel efficiency which probably isn't worth it at this stage
+
+
+[07-Jul-24 03:31 PM] sidepipe#0000
+you can totally throw HYR and fastest engines possible on a 500/500 ship if you wanna amazon prime stuff around the galaxy, but they eat fuel like no one's business
+
+
+[07-Jul-24 04:11 PM] chobbycock#0000
+ah ok, yea there's no improvement to thrust on that engine, just thought fuel saving would maybe be worth it, but I'll just stick with standard
+
+
+[07-Jul-24 05:01 PM] jvaler#0000
+no, it's very wasteful. the ROI period on that upgrade(because it voids the original engine) is so long as to be pointless. use a FSE on new constructions, not upgrades.
+
+plus, FSE has less thrust than a starter anyways
+
+
+[07-Jul-24 05:07 PM] razenpok#0000
+Use GEN for new ships, fuel is cheap :thanoshdaddy:
+
+
+[07-Jul-24 05:10 PM] razenpok#0000
+iirc the cost difference between GEN and ENG is ~300 fuel-days
+
+
+[07-Jul-24 05:17 PM] jvaler#0000
+iirc GEN has less thrust tho
+
+
+[07-Jul-24 05:24 PM] razenpok#0000
+Yep, you would need to put more fuel to reach similar speeds
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1259636246897102878/image.png?ex=68149d6c&is=68134bec&hm=54bd4ef6dbcfa3c529591fcdfa2ea07da1637367935fcc9e610c91aa2d8916c1&
+
+
+[07-Jul-24 05:26 PM] razenpok#0000
+Still, fuel cheap :clueless:
+
+
+[07-Jul-24 05:28 PM] razenpok#0000
+There's a fun difference though - GEN spends more time in atmospheric maneuvers, so the ship sustains more damage during those
+
+
+[08-Jul-24 02:22 AM] riseoffilth#0000
+JOST BABY TRAPPED SCARLET! still upset to this day
+
+
+[08-Jul-24 10:11 AM] chobbycock#0000
+Would you guys suggest repairing my ship before upgrading? Or does it automatically get repaired when it upgrades anyway?
+
+
+[08-Jul-24 10:12 AM] chobbycock#0000
+And does the condition of a ship work the same as buildings, where the effectiveness goes down the more wear it has?
+
+
+[08-Jul-24 10:16 AM] igfloz#0000
+AFAIK - better to repair the ship before upgrade, and yes ship flight speed decreases once below 80% I think
+
+
+[08-Jul-24 01:07 PM] .shiva.#0000
+Was out of town last weekend, will sort the contracts out in a bit
+
+
+[08-Jul-24 08:22 PM] riseoffilth#0000
+IF you are making the ship larger, you should absolutely repair before upgrading. If you are changing to a cheap hull plate, consider waiting until after to repair.
+
+
+[09-Jul-24 07:00 PM] .shiva.#0000
+Alright, upgrade started! Thanks for coordinating this!
+
+{Reactions}
+😁 
+
+[10-Jul-24 11:37 AM] igfloz#0000
+Just fuelled mine up, let the hauling begin !
+
+
+[10-Jul-24 05:34 PM] jvaler#0000
+@.shiva. uh i appreciate the repayment but i don't have an easy way to input half of what you owe into the sheet because everything is itemized
+
+
+[10-Jul-24 05:34 PM] jvaler#0000
+could you maybe hold onto the money for now?
+
+
+[10-Jul-24 05:34 PM] .shiva.#0000
+ah ok, yeah no worries
+
+
+[11-Jul-24 09:25 AM] jvaler#0000
+@nyanism @akyantor i just got the 2nd batch! it will be here within the next 3-5 days, so please send conts with a 7 day deadline with the same instructions as the others
+
+{Reactions}
+🥳 (2) 
+
+[11-Jul-24 09:29 AM] jvaler#0000
+but now i have 1 extra kit to raffle off...
+
+
+[11-Jul-24 09:30 AM] jcheung#0000
+👀
+
+
+[11-Jul-24 09:31 AM] jvaler#0000
+using the order of entry into the spreadsheet(skipping nala.cat) it looks like akyan wins it?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1260966603269607537/image.png?ex=6814d729&is=681385a9&hm=c7525fc7868e61417f59b762a7e5df05a53e2141060732cc46e94084409c3b94&
+
+
+[11-Jul-24 09:31 AM] jvaler#0000
+karma for being patient i suppose
+
+{Reactions}
+😂 
+
+[11-Jul-24 09:31 AM] jvaler#0000
+@akyantor send me conts for your second kit too!
+
+
+[11-Jul-24 10:04 AM] nyanism#0000
+:cat_rage:
+
+
+[11-Jul-24 10:58 AM] akyantor#0000
+Sod’s law I win the ship upgrade lottery while away from home. I’ll send the contracts tomorrow.
+
+{Reactions}
+🤣 
+
+[11-Jul-24 10:58 AM] akyantor#0000
+Awesome news though
+
+
+[12-Jul-24 10:46 AM] akyantor#0000
+Ok, I'm back. Need to figure out these contracts. 😛
+
+
+[12-Jul-24 10:56 AM] akyantor#0000
+Ok, @jvaler I've sent over one set of contracts for both kits. I hope that's ok. Figured that was simpler than doubling up.
+
+
+[12-Jul-24 10:59 AM] jvaler#0000
+gonna wait to accept those for a bit, that deadline is kinda close
+
+
+[12-Jul-24 11:01 AM] akyantor#0000
+Doh, forgot they were still to be shipped. :S
+
+
+[12-Jul-24 11:02 AM] akyantor#0000
+Should have made them 7 day :S
+
+
+[12-Jul-24 11:02 AM] akyantor#0000
+I can resend if you prefer.
+
+
+[12-Jul-24 11:26 AM] jvaler#0000
+nono it's fine
+
+
+[15-Jul-24 03:25 PM] spermatozoon_saloon#0000
+Helloo, registering my interest for the future as I'll be soon shipping raw ag products from Harmonia (& later Life) to Norwick
+
+
+[17-Jul-24 09:08 AM] jvaler#0000
+noted! ty
+
+{Reactions}
+🤌 
+
+[23-Jul-24 02:24 PM] jvaler#0000
+@nyanism you recieved your kit right? i've got one sitting at ANT for some reason
+
+{Reactions}
+👀 
+
+[23-Jul-24 08:55 PM] nyanism#0000
+nope,  i didnt win any dice roll lol
+
+
+[23-Jul-24 10:50 PM] jvaler#0000
+you didn't need to... 2 batches of 3 = 6 kits, so everyone should have at least 1
+
+
+[23-Jul-24 10:50 PM] jvaler#0000
+you were pinged here to send conts for a kit lol https://discord.com/channels/1183243037430796339/1252407294654939177/1260965260978950335
+
+
+[23-Jul-24 10:58 PM] nyanism#0000
+I did? That one was when you found 1 extra kit collecting dust, and the dice rolled on Akyan side
+
+
+[23-Jul-24 10:59 PM] nyanism#0000
+Well, guess ill send cont for them now then
+
+
+[23-Jul-24 10:59 PM] jvaler#0000
+no that extra kit was in addition to those 2 i told y'all to take
+
+
+[23-Jul-24 10:59 PM] jvaler#0000
+it was after i sent that message
+
+
+[23-Jul-24 10:59 PM] nyanism#0000
+Then its my own poor reading skills lol, ill check what need to be request then send them
+
+
+[23-Jul-24 11:00 PM] jvaler#0000
+alright! sorry you didn't get your kit for so long :/
+
+
+[23-Jul-24 11:00 PM] nyanism#0000
+Its ok, i still blame @evany. hahahaha
+
+{Reactions}
+🤣 
+
+[23-Jul-24 11:01 PM] nyanism#0000
+And rise land me on a workforce shortage planet, so the situation wasnt that dire (but still bad lul) :KEKW:
+
+
+[23-Jul-24 11:20 PM] nyanism#0000
+@jvaler sent cont for half of everything on the list, kindly lemme know if i messed up any thing more lol
+
+
+[23-Jul-24 11:21 PM] jvaler#0000
+fulfilled ✅
+
+{Reactions}
+GatoXD 
+
+[25-Jul-24 10:29 PM] cptcoleslaw#0000
+More LHP is available whenever you need it 😊 no rush, I've got what I need in Benten so I'm just piling it up on ANT now
+
+{Reactions}
+🙏 
+
+[26-Jul-24 11:40 AM] jvaler#0000
+recieved another batch! sending my ship out now to retrieve it
+
+
+[02-Aug-24 12:42 AM] jvaler#0000
+okay i have the batch sitting at ANT, but the last one just finished a day ago so i'm gonna go grab that and then just distribute everything instead of doing another RNG roll
+
+{Reactions}
+_kek_ 
+
+[02-Aug-24 02:46 AM] akyantor#0000
+FYI - I've sent a repayment contract for the MSL & SSC on my two kits to Jvaler.
+
+
+[02-Aug-24 09:45 AM] akyantor#0000
+Btw, fixed up formula on column H of the first summary sheet so it properly shows amount paid back: https://docs.google.com/spreadsheets/d/1_5AORkSfF-w2M5W51y6FrAqH8_YxgTwjH8etOP4WJEc/edit?gid=945418939#gid=945418939
+
+
+[02-Aug-24 10:02 AM] jvaler#0000
+oh didn't know it was broken, thx!
+
+
+[02-Aug-24 10:31 AM] akyantor#0000
+To be fair, first time there's been a repayment, so would be hard to spot.
+
+
+[02-Aug-24 01:28 PM] cptcoleslaw#0000
+@jvaler if your plan is to discontinue this project I'd like to take it over ¯\_(ツ)_/¯ I think I could provide the materials, though I might change the parts and queue system a bit
+
+
+[02-Aug-24 01:28 PM] cptcoleslaw#0000
+Was side sidepipe providing the loans?
+
+
+[02-Aug-24 01:40 PM] sidepipe#0000
+I don’t think there were any plans to discontinue the WKP, but jvaler would the the ultimate source. Jvaler and I funded it 50/50
+
+
+[08-Aug-24 03:53 PM] kudagit#0000
+Hi, next edition is planed?
+
+
+[08-Aug-24 03:57 PM] tanda#0000
+if you personally are interested, as a stop gap measure you should reach out to Schaitr on UFO. I think this program is in hiatus, potentially being moved over to something else
+
+
+[08-Aug-24 03:57 PM] tanda#0000
+https://discord.com/channels/855488309802172469/1202257500213366804
+
+
+[08-Aug-24 03:58 PM] tanda#0000
+https://discord.gg/Jwqa9N4G
+
+
+[08-Aug-24 04:14 PM] cptcoleslaw#0000
+I think @evany. had some plans for trying to make them internally? but that will take time to set up. KAWA will also be able to help in the future if that's still not enough for demand. But both are not ready for delivery yet so Shaitr is probably your best bet, though they're also pretty backed up last I heard...
+
+
+[08-Aug-24 04:24 PM] evany.#0000
+even if supply was good to go (it isn't) 
+
+the project isn't open right now
+further much like others there is weeks of delays
+
+Will hopefully have some news next week to share
+
+
+[14-Aug-24 02:06 PM] .shiva.#0000
+Just wondering if these ended up back at ANT?
+
+
+[14-Aug-24 03:20 PM] jvaler#0000
+OH yes omg
+
+
+[14-Aug-24 03:20 PM] jvaler#0000
+i totally forgot to distribute didn't i
+
+{Reactions}
+🤣 
+
+[14-Aug-24 03:20 PM] jvaler#0000
+lemme get on that
+
+
+[15-Aug-24 06:26 AM] nyanism#0000
+:Badcat:
+
+
+[15-Aug-24 06:02 PM] jvaler#0000
+@igfloz @chobbycock @.shiva. @nyanism could you all please send conts for your last WCB kit?
+
+
+[15-Aug-24 06:11 PM] igfloz#0000
+oooh,  this is exciting
+
+
+[15-Aug-24 06:25 PM] igfloz#0000
+conts sent - I don't need SSC, you gave me double last time 🙂
+
+
+[15-Aug-24 06:28 PM] igfloz#0000
+Oh gawd, I should really think about paying some of this back  😳
+
+
+[15-Aug-24 06:36 PM] chobbycock#0000
+Conts sent
+
+
+[15-Aug-24 06:59 PM] jcheung#0000
+Congrats, you thought about it
+
+{Reactions}
+🤣 
+
+[15-Aug-24 09:30 PM] revoric#0000
+is there a list to be added to the next wave, if there is one?
+
+
+[15-Aug-24 09:39 PM] jcheung#0000
+i think this particular program may be getting sunset, but another option may be getting spun up in the near future.
+
+
+[15-Aug-24 09:41 PM] revoric#0000
+okie :), im excited for the shipbuilding aspect.  looks expensive but i see the aloure
+
+
+[16-Aug-24 04:11 PM] igfloz#0000
+@jvaler any chance of fulfilling the conts I have sent ? I have a ship ready for upgrade 🙂
+
+
+[16-Aug-24 04:11 PM] jvaler#0000
+yup lemme get on
+
+
+[16-Aug-24 04:13 PM] igfloz#0000
+You're awesome ! tysm
+
+
+[17-Aug-24 12:03 PM] igfloz#0000
+@jvaler I've sent 3 conts for part payment. Please accept and we can terminate once I have paid
+
+
+[18-Aug-24 02:41 AM] jvaler#0000
+@nyanism did you get your kit? i see conts for the other 3 but not you
+
+
+[18-Aug-24 02:44 AM] nyanism#0000
+i'll try to get it tongiht, got a bit busy boss
+
+
+[18-Aug-24 02:44 AM] jvaler#0000
+no worries
+
+
+[18-Aug-24 02:44 AM] jvaler#0000
+just wanna make sure ur not left out
+
+
+[23-Aug-24 09:42 AM] cptcoleslaw#0000
+Where is planning for this happening? I'd love to help how I can, and maybe supply some kits in the short term
+
+
+[23-Aug-24 10:15 AM] jvaler#0000
+i'm not gonna be running it, just partly financing. you can ask @evany. for details
+
+
+[23-Aug-24 10:18 AM] cptcoleslaw#0000
+It's hard for me to help ADI financially, easier to help with materials, so I'm happy to help with this project
+
+
+[23-Aug-24 10:21 AM] jcheung#0000
+What materials can you offer and for what?
+
+
+[23-Aug-24 11:30 AM] evany.#0000
+I’ll be posting whole thing shortly
+
+{Reactions}
+🎉 
+
+[23-Aug-24 05:16 PM] cptcoleslaw#0000
+right now we're overproducing LHP, LFE, SSC, and MFL, in that order. Our bottleneck is the WCBs, but we're catching up there a bit. KAWA's upgrade pack is usually: WCB, MFL, LFE, 26 SSC, and 64 LHP
+
+
+[23-Aug-24 05:16 PM] cptcoleslaw#0000
+once we're caught up with enough upgrade kits for all of our new members, I can start sending excess material to ANT
+
+
+[23-Aug-24 05:18 PM] jcheung#0000
+Well, having a source for LFE might not be bad. Delays need for electronics mfg
+
+
+[23-Aug-24 05:20 PM] jcheung#0000
+Lhp and ssc we'll need to source
+
+
+[23-Aug-24 05:24 PM] jcheung#0000
+May i also ask what the overproduction looks like per time? Or is that something tbat isn't really known
+
+
+[23-Aug-24 06:36 PM] cptcoleslaw#0000
+hard to say with the SSC and LHP since they're used for repairs too and that's pretty inconsistent, but I'm sitting on 1100 LHP right now, and 3k SSC, and that's after dumping a few hundred on CX recently... we pretty intentionally went big with LHP early on in our shipbuilding project because we knew the excess would sell easily to help fund the rest of the project. Now that everything is mostly up and running, there's still just a ton more LHP production than we'll ever need and I'd love to send it towards this. The LFE and MFL might *eventually* run out once our production balances out a bit, but what we have could last a while
+
+
+[23-Aug-24 07:26 PM] evany.#0000
+@cptcoleslaw its been posted under planning now 
+
+We have no real plans for LHP / SSC at the moment so if you have excess or anything else listed would be happy to work with you
+
+
+[23-Aug-24 07:32 PM] tanda#0000
+I do already produce LHP, but not SSC
+
+
+[23-Aug-24 07:33 PM] jcheung#0000
+i think KZ_Kawasaki also makes SSC
+
+
+[23-Aug-24 07:35 PM] evany.#0000
+yes theres a few people in here that produce LHP and SSC so not really concerned about that part of it
+
+
+[23-Aug-24 07:35 PM] evany.#0000
+its also simple in comparison so.
+
+
+[23-Aug-24 07:35 PM] evany.#0000
+https://tenor.com/view/whatever-idc-i-dont-care-no-thanks-no-one-care-gif-16772865
+
+{Embed}
+https://tenor.com/view/whatever-idc-i-dont-care-no-thanks-no-one-care-gif-16772865
+https://images-ext-1.discordapp.net/external/RfmfacrD74sJnacOJlcqGVbv_sYrGE_wMRJXyWlcqKc/https/media.tenor.com/FBqmmYQDL88AAAAe/whatever-idc.png
+
+{Reactions}
+😆 
+
+[23-Aug-24 07:38 PM] cptcoleslaw#0000
+what kits to you plan to make?
+
+
+[23-Aug-24 07:38 PM] cptcoleslaw#0000
+that can affect the needed LHP/SSC a lot
+
+
+[23-Aug-24 07:39 PM] jcheung#0000
+WCB, MSL, LFL
+
+
+[23-Aug-24 07:40 PM] jcheung#0000
+i can see why you chose to go with MFL instead of LFL though
+
+
+[23-Aug-24 07:40 PM] jcheung#0000
+ZR sucks
+
+
+[23-Aug-24 07:41 PM] cptcoleslaw#0000
+yeah, and honestly the SSL is plenty for most empires, especially early on. the small *fast fuel* tank though can be very limiting for longer trips, like CX to CX
+
+
+[23-Aug-24 07:41 PM] cptcoleslaw#0000
+so I usually just upgrade people to MFL and that's plenty for a long time
+
+
+[23-Aug-24 07:41 PM] cptcoleslaw#0000
+I ran 14 bases and all my ships still only have SSL, MFL
+
+
+[23-Aug-24 07:41 PM] jcheung#0000
+...actually. evayoo, we could offer MFL slightly cheaper. would take some of the strain off ASMs if those are chosen instead of LFL.
+
+
+[23-Aug-24 07:42 PM] jcheung#0000
+uses half the RM input, and 3/4 the final time to build
+
+
+[23-Aug-24 07:42 PM] cptcoleslaw#0000
+not only is the MFL cheaper than MSL+LFL, but it also *greatly* reduces the LHP and SSC needs for the upgrade
+
+
+[23-Aug-24 07:42 PM] jcheung#0000
+does it?
+
+
+[23-Aug-24 07:42 PM] evany.#0000
+WCB, LFL MSL LFE
+
+
+[23-Aug-24 07:43 PM] cptcoleslaw#0000
+I think that for starter ship upgrades, providing just the essentials for as cheap as possible is what's important for new players
+
+
+[23-Aug-24 07:43 PM] evany.#0000
+I didn't look at MFL to be honest, I know there was some discussion around that
+
+
+[23-Aug-24 07:43 PM] jcheung#0000
+it's 1 more LHP, and same SSC count difference between MFL and LFL
+
+
+[23-Aug-24 07:43 PM] evany.#0000
+Ultimately the goal was to target t he existing ship(s) which I just targeted WKP
+
+
+[23-Aug-24 07:45 PM] jcheung#0000
+oh. and another 3 LHP / ~~4~~ 6 SSC for the STL tank
+
+
+[23-Aug-24 07:49 PM] cptcoleslaw#0000
+starter upgrade to MFL, WCB, LHP:
+1 WCB, 1 LFE, 1 MFL, 26 SSC, 64 LHP
+
+starter upgrade to LFL, MSL, WCB, LHP:
+1 WCB, 1 LFE, 1 LFL, 1 MSL, 32 SSC, 68 LHP
+
+so the cost difference is:
+1 MSL
+6 SSC
+4 LHP
+LHL - MFL
+
+
+[23-Aug-24 07:49 PM] jcheung#0000
+those SSC numbers are wrong
+
+
+[23-Aug-24 07:49 PM] jcheung#0000
+78 SSC is for the whole ship
+
+
+[23-Aug-24 07:49 PM] cptcoleslaw#0000
+you right, jsut a sec
+
+
+[23-Aug-24 07:50 PM] jcheung#0000
+need to do 78-46
+
+
+[23-Aug-24 07:50 PM] jcheung#0000
+try again
+
+
+[23-Aug-24 07:50 PM] jcheung#0000
+should be 32 not 52
+
+
+[23-Aug-24 07:50 PM] cptcoleslaw#0000
+gimme a sec, I've had a mimosa and it's late. I can do this, lol
+
+
+[23-Aug-24 07:50 PM] jcheung#0000
+haha
+
+
+[23-Aug-24 07:50 PM] jcheung#0000
+https://tenor.com/bWNK1.gif
+
+{Embed}
+https://tenor.com/view/mihlali-pour-drink-drinking-alcohol-gif-26368281
+https://images-ext-1.discordapp.net/external/aoxcZv1aXJajLLFkERoutefUf5tfm2Zfzn0wMlRNqhg/https/media.tenor.com/RDN-PFpEHk8AAAAe/mihlali-pour-drink.png
+
+
+[23-Aug-24 07:51 PM] jcheung#0000
+just a "little" drink
+
+
+[23-Aug-24 07:52 PM] cptcoleslaw#0000
+Just "one"
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1276705645156110479/rn_image_picker_lib_temp_82cd1364-bfb0-4dbd-949a-a2e47918510f.jpg?ex=6814c009&is=68136e89&hm=7aa6d0187ae2cd0f6bb13da3ec25d846232911e50a6f26ef19fc1b3fec0e4f48&
+
+
+[23-Aug-24 07:52 PM] jcheung#0000
+anyhow. i think one of the considerations for adding a MSL would be that you lose MFEs if you don't upgrade STL tanks
+
+
+[23-Aug-24 07:52 PM] jcheung#0000
+and that's expensive
+
+
+[23-Aug-24 07:53 PM] cptcoleslaw#0000
+hmm... that's fair, but again, it's a pretty long term kind of thinking. I think for new players, the goal is "best ship for least money"
+
+
+[23-Aug-24 07:53 PM] jcheung#0000
+the MFE is like half the price of the MSL
+
+
+[23-Aug-24 07:53 PM] jcheung#0000
+oaky, fair
+
+
+[23-Aug-24 07:53 PM] jcheung#0000
+yes, it is farther down the line
+
+
+[23-Aug-24 07:53 PM] cptcoleslaw#0000
+also 6 SSC and 4 LHP also slightly increases repair cost, which is long term too
+
+
+[23-Aug-24 07:55 PM] jcheung#0000
+sure, but that's manageable
+
+
+[23-Aug-24 07:55 PM] jcheung#0000
+i would set aside SSC and LHP costs for this comparison, it's like what, 20k?
+
+
+[23-Aug-24 07:55 PM] jcheung#0000
+err. additional SSC and LHP costs*
+
+
+[23-Aug-24 07:56 PM] jcheung#0000
+so the real consideration will be the cost of the MSL, cost difference between LFL and MFL
+
+
+[23-Aug-24 07:56 PM] jcheung#0000
+....whatever those "costs" may be, i don't think we got that far
+
+
+[23-Aug-24 07:57 PM] cptcoleslaw#0000
+MSL averages like 160k+
+LFL 235k - MFL 200k = 35k
+6 SSC is 900
+LHP is 4k
+
+so a difference of ~200k
+
+
+[23-Aug-24 07:57 PM] jcheung#0000
+that's market right?
+
+
+[23-Aug-24 07:58 PM] cptcoleslaw#0000
+the first 2 are. I'm offering fixed prices for SSC and LHP so I'm just using those, since I'll provide that regardless of what blueprint we use
+
+
+[23-Aug-24 07:58 PM] jcheung#0000
+our price will be lower than market, i know that much
+
+
+[23-Aug-24 07:58 PM] cptcoleslaw#0000
+at this point I think we need a full part list with prices... is it spreadsheet time?
+
+
+[23-Aug-24 07:59 PM] jcheung#0000
+maybe not what Schaitr offers, but somewhere between that and market
+
+
+[23-Aug-24 07:59 PM] jcheung#0000
+reference on Schaitr
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1276707375994114079/image.png?ex=6814c1a6&is=68137026&hm=e0cff11e15d84954b8c492ddcc35b9449cf5edffc4cde1271e136e8bd2b5f97f&
+
+
+[23-Aug-24 07:59 PM] cptcoleslaw#0000
+I think his prices may have gone up too, idk
+
+
+[23-Aug-24 08:00 PM] jcheung#0000
+that's what i picked up from him at a week or two ago
+
+{Reactions}
+👍 
+
+[23-Aug-24 08:00 PM] jcheung#0000
+though i talked to them for a bit and they said they're taking a loss at these prices
+
+{Reactions}
+💯 (2) 
+
+[23-Aug-24 08:00 PM] cptcoleslaw#0000
+what is that a screenshot from?...
+
+
+[23-Aug-24 08:00 PM] jcheung#0000
+when i picked up my WCB kit
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1276707747366436974/image.png?ex=6814c1ff&is=6813707f&hm=5d07f08c2515281a203d53706b8f9134430bca11e0b8ce46dbc2a72aa6c41dc8&
+
+
+[23-Aug-24 08:01 PM] cptcoleslaw#0000
+oh nice. I thought you just had a really beautiful spreadsheet set up 😆
+
+
+[23-Aug-24 08:01 PM] jcheung#0000
+hahaha. no. i did alter evayoo's sheet a bit
+
+
+[23-Aug-24 08:01 PM] jcheung#0000
+but i wouldn't call my alterations pretty
+
+
+[23-Aug-24 08:02 PM] jcheung#0000
+here, soemthing for you to review
+https://docs.google.com/spreadsheets/d/14QoSbgemUH7iiVs7eSXTk9-qDdG5PNVvknvpTfXvmM0/edit?gid=1744189449#gid=1744189449&range=A1
+
+{Embed}
+https://docs.google.com/spreadsheets/d/14QoSbgemUH7iiVs7eSXTk9-qDdG5PNVvknvpTfXvmM0/edit?gid=1744189449
+ADI Shippening?
+https://images-ext-1.discordapp.net/external/OX31i1az1JxGdz6LzLFBgALIVEoJVquaiaT7nuOY9r0/https/lh7-us.googleusercontent.com/docs/AHkbwyJll8oy91R6KzbSBXRfOTYdczMcSesXyNFI6LLqc503R8XWCxivlr07RU6F5pcKBdLqjmD2gvwZGbx3dfBgbr0ID7nePW7p5AbPxu6nfLvkLXLu6L5b%3Dw1200-h630-p
+
+
+[23-Aug-24 08:02 PM] jcheung#0000
+uhm... it's a bit messy
+
+
+[23-Aug-24 08:02 PM] jcheung#0000
+i've made alterations on tab...
+
+
+[23-Aug-24 08:02 PM] jcheung#0000
+base 2
+
+
+[23-Aug-24 08:03 PM] jcheung#0000
+added tab testing cost - theory crafting
+added tab I/O calculator - i think it works, but i might be off on a few things
+
+
+[23-Aug-24 08:03 PM] jcheung#0000
+added tab notes
+
+
+[23-Aug-24 08:03 PM] cptcoleslaw#0000
+oh that's cool
+
+
+[23-Aug-24 08:04 PM] jcheung#0000
+it needs validation
+
+
+[23-Aug-24 08:04 PM] jcheung#0000
+anyways
+
+
+[23-Aug-24 08:04 PM] jcheung#0000
+if you see something stupid i did, call me out on it
+
+
+[23-Aug-24 08:06 PM] cptcoleslaw#0000
+😅 I doubt I'll have time to look too thoroughly, but this is nice. I don't have a lot of time for planning any more, I just kinda throw around money and some mediocre advice where it seems most wanted, lol.
+
+
+[23-Aug-24 08:07 PM] jcheung#0000
+i didn't at all spend 5 days working on this when i should have been doing other stuff
+
+
+[23-Aug-24 08:07 PM] cptcoleslaw#0000
+just looking at your deltas on the right of that tab, I can help provide FLX if needed. And W is super cheap on CX usually
+
+
+[23-Aug-24 08:07 PM] evany.#0000
+5 days?
+
+
+[23-Aug-24 08:07 PM] evany.#0000
+no we spent a lot more than 5 days on that sir
+
+
+[23-Aug-24 08:07 PM] jcheung#0000
+yeah. someone convinced me W was bad to make
+
+
+[23-Aug-24 08:08 PM] jcheung#0000
+shh. i'm trying to make us not look crazy
+
+
+[23-Aug-24 08:08 PM] cptcoleslaw#0000
+😆 I feel that. You have no idea how much time we spent on the prep for KAWA full shipbuilding project... I wrote my first python code just to help sort out the needed buildings, lol
+
+
+[23-Aug-24 08:08 PM] evany.#0000
+https://tenor.com/view/crazy-yes-gif-24735185
+
+{Embed}
+https://tenor.com/view/crazy-yes-gif-24735185
+https://images-ext-1.discordapp.net/external/aHvakkLaWqxVZQxg_-mztFFrLLCOITgQiEbK0pYjCx0/https/media.tenor.com/obD4czvJ1A4AAAAe/crazy-yes.png
+
+
+[23-Aug-24 08:08 PM] cptcoleslaw#0000
+*weeks*... and we're *still* building that up
+
+
+[23-Aug-24 08:08 PM] jcheung#0000
+considering this is a tiny portion of what a full shipbuilding project would need, i think i feel your pain
+
+
+[23-Aug-24 08:09 PM] evany.#0000
+i did consider coding something for it too.
+
+
+[23-Aug-24 08:09 PM] evany.#0000
+none of the existing tools seem to 'support' that kind of scope
+
+
+[23-Aug-24 08:09 PM] jcheung#0000
+though
+
+
+[23-Aug-24 08:10 PM] jcheung#0000
+i built the I/O calc with the intention to one day get bored enough to throw every single piece of production into it
+
+
+[23-Aug-24 08:10 PM] jcheung#0000
+so it could be toggled on/off
+
+
+[23-Aug-24 08:16 PM] cptcoleslaw#0000
+they didn't when we made it. PRUNplanner now has a tool that does what we wrote ours to do, mostly. Our code took a list of outputs (the final ship parts we wanted), and broke it down into a CSV of every single material needed all the way down the supply chain, how much per day was needed, the buildings they are made at, and the industry those buildings are classified as. This allowed us to break the whole project down by CoGC bonus and make a big sheet where people can claim what they want to make. It was pretty cool. My code was super simple, but a very talented member of KAWA make a much more impressive version that help *so* much with figuring out where to even *begin* with shipbuilding
+
+
+[23-Aug-24 08:17 PM] jcheung#0000
+RM extraction, of course
+
+
+[23-Aug-24 08:17 PM] jcheung#0000
+i kid
+
+
+[23-Aug-24 08:23 PM] archielvahr#0000
+I can provide SSC. It gets produced incredibly quickly
+
+
+[23-Aug-24 08:23 PM] archielvahr#0000
+Just ping me with an amount and a price
+
+
+[23-Aug-24 08:42 PM] jcheung#0000
+noted
+
+
+[24-Aug-24 02:07 AM] jvaler#0000
+@neeko.cat did rise supply you with LHP & SSC? or did i? i forgor
+
+
+[24-Aug-24 02:08 AM] jvaler#0000
+currently sending conts to reimburse rise
+
+
+[24-Aug-24 04:36 PM] neeko.cat#0000
+i never got a ship part from you, idk whether or not you talked to him :(
+
+
+[24-Aug-24 04:36 PM] neeko.cat#0000
+oh
+
+
+[24-Aug-24 04:36 PM] neeko.cat#0000
+missreaded it
+
+
+[24-Aug-24 04:37 PM] neeko.cat#0000
+yes rise gave me all the ship parts
+
+
+[24-Aug-24 04:37 PM] neeko.cat#0000
+but
+
+
+[24-Aug-24 04:38 PM] neeko.cat#0000
+anyway since i clearly cant talk nor read, this is the remains of the shipyard project
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1277019193690161253/image.png?ex=6814928d&is=6813410d&hm=ee2ce427f5d218f389f7974fea4ed28c71232069b01942ad1f84e52551c0385b&
+
+
+[24-Aug-24 05:31 PM] scintillating_iridescence#0000
+That looks like it's ready to be built.
+
+
+[24-Aug-24 05:41 PM] jcheung#0000
+I would guess already built
+
+
+[24-Aug-24 05:46 PM] neeko.cat#0000
+your guess is right, it's... complicated
+
+
+[24-Aug-24 05:47 PM] neeko.cat#0000
+been built for some weeks now
+
+
+[24-Aug-24 05:51 PM] scintillating_iridescence#0000
+Ahh, they didn't press the "Start" button... It happens, I guess. I do it all the time, since your FLT buffer gets filled by the date of finished ship construction (I like to stay organized).
+
+
+[24-Aug-24 05:52 PM] jcheung#0000
+What? This shows like this still after the ships have left the slip
+
+
+[24-Aug-24 05:52 PM] jcheung#0000
+It's a historical log, kinda like all those fulfilled CONTs you can't get rid of
+
+
+[24-Aug-24 05:53 PM] neeko.cat#0000
+^^
+
+
+[24-Aug-24 05:53 PM] neeko.cat#0000
+more than historical log, the dev was lazy to remove that
+
+
+[25-Aug-24 03:30 AM] jvaler#0000
+so... that's a yes rise gave you SSC+LHP?
+
+
+[25-Aug-24 04:11 AM] neeko.cat#0000
+Yup, why do you ask?
+
+
+[25-Aug-24 04:13 AM] jvaler#0000
+so i know what to give back to rise lol
+
+
+[25-Aug-24 04:19 AM] neeko.cat#0000
+👍
+
+
+[25-Aug-24 04:19 AM] neeko.cat#0000
+Thanks!
+
+
+[25-Aug-24 04:04 PM] cptcoleslaw#0000
+are you paying Rise cash or giving back materials?
+
+
+[25-Aug-24 04:04 PM] cptcoleslaw#0000
+if it's mateerials I've got LHP/SSC
+
+
+[25-Aug-24 04:04 PM] jvaler#0000
+giving back materials
+
+
+[25-Aug-24 04:05 PM] jvaler#0000
+it's partly LHP i had bought off of you :P
+
+
+[25-Aug-24 04:05 PM] cptcoleslaw#0000
+😆 then the rest is *definitely* on me. How much you need?
+
+{Reactions}
+🚫 
+
+[25-Aug-24 04:05 PM] jvaler#0000
+what had happened was nala.cat got an advance on the WCB kits from rise, and so i repaid rise for said kits
+
+
+[25-Aug-24 04:05 PM] jvaler#0000
+so it's the same kits, they just got them early and rise temporarily ate the cost
+
+
+[25-Aug-24 04:05 PM] jvaler#0000
+but everything's sorted out now
+
+{Reactions}
+👍 
+
+[25-Aug-24 05:25 PM] jcheung#0000
+what was the full kit price again for the previous program? like 800k each?
+
+
+[25-Aug-24 05:41 PM] tanda#0000
+according to the info post, expected range was 750k to 900k
+
+
+[25-Aug-24 05:41 PM] tanda#0000
+which was mostly caused due to LHP issues
+
+
+[25-Aug-24 05:43 PM] jvaler#0000
+it came out to ~800k on the nose, yeah
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1252407294654939177/1277397855165747262/image.png?ex=6814a1b5&is=68135035&hm=f375a6c2a3e91060c2586b3d5808f36981fdf7b48ab37b177eacccfa50c5f004&
+
+
+[25-Aug-24 05:43 PM] jvaler#0000
+each of those entries are 2 kits each
+
+
+[25-Aug-24 05:43 PM] jvaler#0000
+so
+
+
+[25-Aug-24 05:43 PM] igfloz#0000
+👆 Thats exactly what I was gonna post 😄
+
+
+[25-Aug-24 05:45 PM] jvaler#0000
+yup, that's where 90% of the price variability came from. cause the actual ship parts were consistent from schaitr, and the SSC is neglible
+
+
+[25-Aug-24 05:46 PM] tanda#0000
+well, it's a lot more stable now, since CptColeslaw offered 1k LHP for the project
+
+
+[25-Aug-24 05:47 PM] jvaler#0000
+is PSK the same as WKP? this is confusing...
+
+
+[25-Aug-24 05:48 PM] tanda#0000
+well, WKP is done, right? with PSK being the spiritual successor?
+
+
+[25-Aug-24 05:49 PM] jvaler#0000
+mhm
+
+
+[25-Aug-24 05:49 PM] tanda#0000
+I still hope we can call it ARISE
+
+
+[25-Aug-24 05:49 PM] jvaler#0000
+yoo
+
+
+[25-Aug-24 05:49 PM] jvaler#0000
+what's that a backronym for?
+
+
+[25-Aug-24 05:50 PM] tanda#0000
+https://discord.com/channels/1183243037430796339/1246543290854146058/1270170045711909056
+
+
+[25-Aug-24 05:51 PM] jvaler#0000
+oooh
+
+
+[25-Aug-24 05:51 PM] jvaler#0000
+though WCBs aren't just for metallurgy and resource extraction...
+
+
+[25-Aug-24 05:51 PM] jvaler#0000
+what about "ship expansion"?
+
+
+[25-Aug-24 05:51 PM] tanda#0000
+yeah, I would definitely say the last bit needs some work
+
+
+[25-Aug-24 05:52 PM] jvaler#0000
+antares refit initiative: ship expansion
+
+
+[25-Aug-24 05:52 PM] jvaler#0000
+that's pretty good
+
+
+[25-Aug-24 05:54 PM] cptcoleslaw#0000
+Antares Refurbished Ships Endeavor
+
+
+[25-Aug-24 05:56 PM] jvaler#0000
+mmmm
+
+
+[25-Aug-24 05:56 PM] cptcoleslaw#0000
+Advanced Starter Ships
+
+
+[25-Aug-24 05:56 PM] jcheung#0000
+that's ASS
+
+
+[25-Aug-24 05:57 PM] cptcoleslaw#0000
+https://tenor.com/view/smile-qurky-grin-dog-happy-gif-15246667
+
+{Embed}
+https://tenor.com/view/smile-qurky-grin-dog-happy-gif-15246667
+https://images-ext-1.discordapp.net/external/C3C3Di2Uxb28WAcIVQM85o3HknT3LFrjhhQH7inv3e0/https/media.tenor.com/Snp1eV9CAzMAAAAe/smile-qurky.png
+
+
+[25-Aug-24 05:58 PM] cptcoleslaw#0000
+who started this acronym obsession anyway? Bobemor? 😆
+
+
+[25-Aug-24 05:58 PM] cptcoleslaw#0000
+KAWA doesn't use a single acronym...
+
+
+[25-Aug-24 05:58 PM] jvaler#0000
+wait omg yeah, this all started with DNPC didn't it
+
+
+[25-Aug-24 05:58 PM] jvaler#0000
+lool
+
+
+[25-Aug-24 05:59 PM] jvaler#0000
+hey wait a minute, what does "KAWA" mean?
+
+
+[25-Aug-24 05:59 PM] cptcoleslaw#0000
+Kawakawa Inc. is the full corp name, so KAWA is just an abreviation, not an acronym
+
+
+[25-Aug-24 05:59 PM] jvaler#0000
+err what does kawakawa mean*
+
+
+[25-Aug-24 05:59 PM] cptcoleslaw#0000
+it's a type of tuna
+
+
+[25-Aug-24 05:59 PM] jvaler#0000
+ohhhhh
+
+
+[25-Aug-24 06:00 PM] cptcoleslaw#0000
+(it's also Polish for coffee)
+
+
+[25-Aug-24 06:00 PM] jvaler#0000
+lmao
+
+
+[25-Aug-24 06:00 PM] cptcoleslaw#0000
+AHI (and specifically PiBoy) were a huge part of helping KAWA get started, so they picked a logo and name based on AHI, another type of tuna
+
+
+[25-Aug-24 06:04 PM] tanda#0000
+I blame astra and whole heartedly support the acronyms
+
+
+[25-Aug-24 06:04 PM] tanda#0000
+because it's part of the fun, lol
+
+
+[25-Aug-24 06:05 PM] sidepipe#0000
+BIPOF 🙂
+
+
+[25-Aug-24 06:05 PM] tanda#0000
+and sometimes you get a Kevin
+
+
+[25-Aug-24 06:05 PM] .urpalhal#0000
+hey
+
+
+[25-Aug-24 06:05 PM] sidepipe#0000
+I like to imagine its Keeping Everyone Very INsulated
+
+{Reactions}
+👆 👀 
+
+[25-Aug-24 06:05 PM] .urpalhal#0000
+KEVIN is great
+
+
+[25-Aug-24 06:05 PM] cptcoleslaw#0000
+we love kevin
+
+
+[25-Aug-24 06:06 PM] tanda#0000
+we could have had CUTEAF
+
+{Reactions}
+💯 😿 
+
+[25-Aug-24 06:06 PM] .urpalhal#0000
+but kevin 🥺
+
+
+[25-Aug-24 06:09 PM] .urpalhal#0000
+democracy decided for us
+
+
+[25-Aug-24 06:09 PM] .urpalhal#0000
+https://tenor.com/view/i-love-it-gif-18812641
+
+{Embed}
+https://tenor.com/view/i-love-it-gif-18812641
+https://images-ext-1.discordapp.net/external/Hx-bnARm56wMHLhX6iLVquFbce6-C_npuwHGdCZbtdg/https/media.tenor.com/wMZnKU7tz2AAAAAe/i-love-it.png
+
+
+[25-Aug-24 06:09 PM] jvaler#0000
+https://tenor.com/view/democracy-i-hate-democracy-i-love-democracy-palpatine-star-wars-gif-11735791915859151746
+
+{Embed}
+https://tenor.com/view/democracy-i-hate-democracy-i-love-democracy-palpatine-star-wars-gif-11735791915859151746
+https://images-ext-1.discordapp.net/external/5WSBc5boRF_GX4yTN3DpknBN6OtfDHQdyOsRZlEdMOw/https/media.tenor.com/ot3okY6vi4IAAAAe/democracy-i-hate-democracy.png
+
+
+[25-Aug-24 06:09 PM] cptcoleslaw#0000
+🤣
+
+
+[25-Aug-24 06:09 PM] .urpalhal#0000
+😂
+
+
+[25-Aug-24 06:10 PM] cptcoleslaw#0000
+that was incredible
+
+
+[25-Aug-24 06:10 PM] cptcoleslaw#0000
+I'm glad I could be here to witness that
+
+
+[25-Aug-24 06:10 PM] igfloz#0000
+rofl - I love the kevin project, and that timing was awesome with the double drop gifs
+
+
+[25-Aug-24 06:10 PM] jvaler#0000
+that was so lucky lmao
+
+
+[25-Aug-24 06:11 PM] .urpalhal#0000
+do we share brain cells?
+
+
+[25-Aug-24 06:12 PM] jvaler#0000
+possibly...
+
+
+[25-Aug-24 06:12 PM] .urpalhal#0000
+😬
+
+
+[25-Aug-24 06:12 PM] jvaler#0000
+you're dissing my braincells???
+
+
+[25-Aug-24 06:12 PM] igfloz#0000
+who's got the other one ?
+
+
+[25-Aug-24 06:15 PM] .urpalhal#0000
+no
+
+
+[25-Aug-24 06:15 PM] .urpalhal#0000
+bc that would be dissing my braincells to
+
+{Reactions}
+😆 
+
+[25-Aug-24 06:15 PM] jvaler#0000
+wait true 🤯
+
+{Reactions}
+😆 
+
+[25-Aug-24 06:16 PM] cptcoleslaw#0000
+I was about to say, "braincell**s**" plural might be too much credit, I'm just borrowing 1
+
+
+[25-Aug-24 06:16 PM] jvaler#0000
+i get 2, as a treat
+
+{Reactions}
+😆 💯 
+
+[25-Aug-24 06:21 PM] jcheung#0000
+you have brain cells?!
+
+
+[25-Aug-24 06:25 PM] tanda#0000
+you guys have cells?
+
+
+[25-Aug-24 06:27 PM] jcheung#0000
+https://tenor.com/bMeh2.gif
+
+{Embed}
+https://tenor.com/view/cell-membrane-soap-gif-23848664
+https://images-ext-1.discordapp.net/external/Q8PVmFMexEz8hv4xlDZ2YogdcraAvOajOmAgehpI4ao/https/media.tenor.com/fLo8P50TumEAAAAe/cell-membrane.png
+
+
+[25-Aug-24 06:29 PM] sidepipe#0000
+You guys have brain??
+
+
+[25-Aug-24 06:30 PM] igfloz#0000
+only for breakfast
+
+{Reactions}
+🤔 
+
+[25-Aug-24 06:30 PM] cptcoleslaw#0000
+I'm actually just a computer
+
+
+[25-Aug-24 06:33 PM] sidepipe#0000
+I’m also a computer, but they forgot to make me Turing complete
+
+
+[25-Aug-24 06:36 PM] tanda#0000
+They forgot to make me a computer!
+
+
+[25-Aug-24 06:37 PM] tanda#0000
+instead I just have this Turk inside of me
+
+{Reactions}
+😆 
+
+[25-Aug-24 06:41 PM] jcheung#0000
+wanna play chess?
+
+
+[26-Aug-24 02:12 PM] scintillating_iridescence#0000
+Per the poll/bulletin, I'd like to say that this program should start off slow, especially if you can't garner timely purchase orders. You can always purchase basic input materials (ores, gases, carbon, flux), off the CX, with mostly sure confidence that the market will resupply itself in a week. It'll also limit the permit contribution needed for the entire group.
+
+The daily/weekly expenses will grow, according the size of the project, and since it's largely a retail market, you may not have many purchase orders per week initially. If you minimise your operational profile, you'll minimise your risk of failure. This, of course, can always expand should you/we gain market confidence/exposure, through time.
+
+Just my two cents.
+
+
+[26-Aug-24 02:22 PM] jcheung#0000
+it's hard to start small
+
+
+[26-Aug-24 02:23 PM] jcheung#0000
+we can trim one of the ASM bases sure, but what do we do with the AML base? build half of it and then do the other half in a month?
+
+
+[26-Aug-24 02:24 PM] jcheung#0000
+or to go even smaller, run all of the smelting operations out of one base? scaling up will be a pain in the balls
+
+
+[26-Aug-24 02:24 PM] scintillating_iridescence#0000
+You look in LEADS for AML outputs, and send out sales questions.
+
+
+[26-Aug-24 02:24 PM] scintillating_iridescence#0000
+AMLs can retool for custom orders, if they're not retooling for internal stuff.
+
+
+[26-Aug-24 02:24 PM] jcheung#0000
+are you going to finance this? because AMLs cut a massive amount of the expenses
+
+
+[26-Aug-24 02:25 PM] scintillating_iridescence#0000
+I know they do... But I'm running my own internal FTL shipbuilding, so nah. I'm not funding this, rather just providing ideas.
+
+
+[26-Aug-24 02:26 PM] jcheung#0000
+we can't outright buy stuff at CX price
+
+
+[26-Aug-24 02:26 PM] jcheung#0000
+it's not tennable
+
+
+[26-Aug-24 02:26 PM] jcheung#0000
+not if our goal is to be relatively cheap
+
+
+[26-Aug-24 02:27 PM] jcheung#0000
+we can't match the offer that schaitr does, but we can do better than market
+
+
+[26-Aug-24 02:28 PM] scintillating_iridescence#0000
+Schaitr's stuff ages out most players, who would like more FTL ships, even just WCB ones.
+
+
+[26-Aug-24 02:28 PM] jcheung#0000
+we're not offering full ships. only conversion kits.
+
+
+[26-Aug-24 02:28 PM] scintillating_iridescence#0000
+It's an inherent limitation, that he put in, to cut off subsequent demand, that fits his production profile.
+
+
+[26-Aug-24 02:28 PM] jcheung#0000
+discarding AMLs from the plans instantly adds roughly 250k to the price if we have to buy at market
+
+
+[26-Aug-24 02:29 PM] scintillating_iridescence#0000
+Where's the plan data (looking).
+
+
+[26-Aug-24 02:29 PM] jcheung#0000
+you'll have to ask evayoo for access
+
+
+[26-Aug-24 02:30 PM] scintillating_iridescence#0000
+Nah.
+
+
+[26-Aug-24 02:30 PM] scintillating_iridescence#0000
+Try cutting out the ASM, SKF, and extraction opertations, temporarily.
+
+
+[26-Aug-24 02:32 PM] jcheung#0000
+that adds about ~~a million plus~~ 1.4m to the kit cost
+
+
+[26-Aug-24 02:32 PM] scintillating_iridescence#0000
+Or, do something of a hybrid nature... They have high thorough puts... You can cut them out for additional marginal gains per PPU, unless you get enough sales for weekly production.
+
+
+[26-Aug-24 02:32 PM] scintillating_iridescence#0000
+I'm going off a buffer-type production.
+
+
+[26-Aug-24 02:33 PM] jcheung#0000
+define buffer type production
+
+
+[26-Aug-24 02:33 PM] scintillating_iridescence#0000
+Get all of those SME outputs on site, for an ASM/SKF/whatever, and then run such ASM/SKF for what's being sold.
+
+
+[26-Aug-24 02:34 PM] scintillating_iridescence#0000
+Unless you get a minimal, ratio based production sort of thing, which will involve partial, 1-permit bases.
+
+
+[26-Aug-24 02:34 PM] jcheung#0000
+in what world does what you said make any sort of sense?
+
+
+[26-Aug-24 02:35 PM] scintillating_iridescence#0000
+My world? 🙂
+
+
+[26-Aug-24 02:36 PM] jcheung#0000
+you want us to cut out ASM SKF and EXT, but you also want us to run ASM / SKF
+
+
+[26-Aug-24 02:36 PM] jcheung#0000
+those operations can't both work at the same time
+
+
+[26-Aug-24 02:36 PM] scintillating_iridescence#0000
+If you have the sales orders.
+
+
+[26-Aug-24 02:36 PM] scintillating_iridescence#0000
+Else, running constant operations doesn't make sense, in the long term (sales arent guaranteed).
+
+
+[26-Aug-24 02:38 PM] scintillating_iridescence#0000
+What you'll get, without being competitive (Schaitr's doing new bro business, and I don't think a large project like this can compete with what they're doing in-house [less than break-even PPUs]), over say a handful of weeks or months --- without sales orders, is just a growing inventory, in the AIC equivalent of millions per week.
+
+
+[26-Aug-24 02:40 PM] scintillating_iridescence#0000
+This potential surplus, will just make people anxious, it will confer below-break-even competition with Schaitr, on such upgrade kits, and it will burn people out... It's why I recommend something small (a product trial, if you will)..
+
+
+[26-Aug-24 02:41 PM] jcheung#0000
+again, going too small has its own complications
+
+
+[26-Aug-24 02:41 PM] scintillating_iridescence#0000
+It does...
+
+
+[26-Aug-24 02:41 PM] scintillating_iridescence#0000
+But just on base values, an easy WCB/MSL/MFL turnover of ~2 days, per SKF plant.
+
+
+[26-Aug-24 02:42 PM] jcheung#0000
+cool, now where do you source the raw materials to run the SKF
+
+
+[26-Aug-24 02:43 PM] scintillating_iridescence#0000
+CX --> SME --> ASM --> SKF. AML has it's own concerns, since it's niche. It's just considerations.
+
+
+[26-Aug-24 02:43 PM] jcheung#0000
+you just told me to cut it out
+
+
+[26-Aug-24 02:44 PM] scintillating_iridescence#0000
+If it makes sense on Prunplanner.
+
+
+[26-Aug-24 02:44 PM] scintillating_iridescence#0000
+^ forgot to add that detail
+
+
+[26-Aug-24 02:44 PM] scintillating_iridescence#0000
+sometimes, the CXs become inefficient, and cheap
+
+
+[26-Aug-24 02:45 PM] jcheung#0000
+hmmm. reading back my mistake, my brain read this as "get rid of all those"
+
+
+[26-Aug-24 02:45 PM] jcheung#0000
+rolling back
+
+
+[26-Aug-24 02:45 PM] jcheung#0000
+you also told me here to cut out ASMs
+
+
+[26-Aug-24 02:46 PM] jcheung#0000
+but you want ASMs here
+
+
+[26-Aug-24 02:49 PM] scintillating_iridescence#0000
+Temporarily. Batch production. From my own base designs, SME's take up like 90% of a base area, that's geared for ASM inputs, and I'd need like 1-2 ASMs, to fill it out fully, with SKFs running on a batch production basis. I've got very limited permit availability, however the math will take a similar approach when taken in mass.
+
+
+[26-Aug-24 02:49 PM] jcheung#0000
+so you want to roll all the way up to here then. okay
+
+
+[26-Aug-24 02:51 PM] scintillating_iridescence#0000
+Do an aggressive marketing campaign, reach out to potential buyers, do surveys/etc. That'll give you better metrics of what you need done. But building out entire production chains, hoping for potential buyers, WHILE, competing with given low-ball metrics (via the competition) could result in a failure of the business project.
+
+
+[26-Aug-24 02:52 PM] scintillating_iridescence#0000
+I'm not your project coordinator, btw.
+
+
+[26-Aug-24 02:52 PM] scintillating_iridescence#0000
+Just suggestion. Applicable? Maybe not.
+
+
+[26-Aug-24 02:52 PM] jcheung#0000
+we have a market.
+
+
+[26-Aug-24 02:52 PM] scintillating_iridescence#0000
+Hit it hard and fast.
+
+
+[26-Aug-24 02:53 PM] jcheung#0000
+you can't hit it hard and fast and also do small tests at the same time
+
+
+[26-Aug-24 02:53 PM] jcheung#0000
+which do you want us to do
+
+
+[26-Aug-24 02:53 PM] scintillating_iridescence#0000
+Okay.... Sales....
+
+
+[26-Aug-24 02:53 PM] scintillating_iridescence#0000
+A market != sales.
+
+
+[26-Aug-24 02:54 PM] scintillating_iridescence#0000
+If you have sales, yes you can hit it hard and fast... But a general market? That's a vague term, isn't it?
+
+
+[26-Aug-24 02:54 PM] jcheung#0000
+the market is called ADI
+
+
+[26-Aug-24 02:54 PM] jcheung#0000
+secondary market is rise, though we haven't hashed out precise deals yet with him for surplus
+
+
+[26-Aug-24 02:55 PM] jcheung#0000
+i know for a fact that ASM production is something rise lacks
+
+
+[26-Aug-24 02:55 PM] jcheung#0000
+he's said it multiple times
+
+
+[26-Aug-24 02:55 PM] scintillating_iridescence#0000
+For reasons.
+
+
+[26-Aug-24 02:56 PM] scintillating_iridescence#0000
+Hmm, try to incorporate production costs (repair + consumables) with a small margin. Maybe he'll be willing to accept that, or accept something along those lines, rather than pushing for a straight, break-even PPU, per upgrade kit.
+
+
+[26-Aug-24 02:56 PM] scintillating_iridescence#0000
+Idk what your metrics include, btw.
+
+
+[26-Aug-24 02:56 PM] scintillating_iridescence#0000
+<-- Doesn't need to know.
+
+
+[26-Aug-24 02:57 PM] jcheung#0000
+i don't have repair costs included, that is true.
+
+
+[26-Aug-24 02:57 PM] jcheung#0000
+consumables are factored though
+
+
+[26-Aug-24 02:57 PM] scintillating_iridescence#0000
+It's valid for long-term stuff.
+
+
+[26-Aug-24 09:10 PM] insulacrisium#0000
+I totally skimmed this conversation, but if you guys have surplus AML output, I'm going to be buying ZR probably for a while, since I need some on hand for fuel tank production of my own.
+
+
+==============================================================
+Exported 489 message(s)
+==============================================================

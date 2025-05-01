@@ -1,0 +1,53 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Channel Archive / gov-internal-offers
+Topic: This is an internal market channel similar to #internal-offers, however it is specialized to governance-related items only.
+==============================================================
+
+[02-Aug-24 12:03 AM] riseoffilth#0000
+Items for sale: (putting some stuff in now, will update later)
+
+Unit-Prefabs:
+HAB 70k, WOR 95k, LU upon request.
+
+POPI Inputs:
+-OFF 80/u
+-DW 80/u
+-SOI 400/u, PFE 450/u
+-UTS 3650/u
+-GL 200/u
+-HOG 4000/u
+-HD 2500/u
+
+
+[02-Aug-24 08:46 AM] cptcoleslaw#0000
+## KAWA Governing Team Offers
+*supply may be limited and most materials are at BEN, so if you need them shipped order early. These items are only available for governing use*
+```POPI/CoGC UPKEEP
+OFF 75/u
+DW  65/u
+PE  7/u
+MCG 25/u
+FOD 250/u
+PFE 430/u
+STR 1450/u
+UTS 3500/u
+SUN 330/u
+
+WH UPGRADES
+BSE 1100/u
+BDE 1500/u
+BBH 1600/u
+TRU 275/u```
+
+
+[09-Oct-24 05:06 PM] Sapphire#8184
+### Please keep discussion of offer details to https://discord.com/channels/1183243037430796339/1183249253439639592 for the sake of visibility. 
+* This is an internal market channel similar to https://discord.com/channels/1183243037430796339/1183249045624471582, however it is specialized to governance-related items only.
+  * This includes things like CoGC upkeep, POPI upkeep, POPI construction materials, and Planetary Project construction materials.
+  * Please only purchase construction materials for their POPI and Planetary Project purposes. For normal building purposes see https://discord.com/channels/1183243037430796339/1183249045624471582.
+
+
+==============================================================
+Exported 3 message(s)
+==============================================================

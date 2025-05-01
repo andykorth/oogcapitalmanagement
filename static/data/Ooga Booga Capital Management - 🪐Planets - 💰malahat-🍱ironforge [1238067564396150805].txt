@@ -1,0 +1,4597 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: 🪐Planets / 💰malahat-🍱ironforge
+==============================================================
+
+[09-May-24 04:58 AM] allocater#0000
+no government program last week 😱
+
+
+[09-May-24 04:59 AM] allocater#0000
+all ENG are now employed
+
+{Reactions}
+🎉 
+
+[09-May-24 06:44 AM] katinga#0000
+Do I look okay in this Malahat?  I'm thinking I should go with a bowler or a beret.  What do y'all think?
+
+
+[09-May-24 07:08 AM] allocater#0000
+the hat looks bad! if it would look good it would be called Benehat? 😄
+
+{Reactions}
+🎩 
+
+[09-May-24 11:46 AM] archielvahr#0000
+I kicked off engineer immigration last night. we are in such a weird situation
+
+
+[09-May-24 11:46 AM] archielvahr#0000
+We gained 278 engineers from education... then 279 engineers educated themselves into scientists
+
+
+[09-May-24 11:46 AM] archielvahr#0000
+so we net lost one engineer
+
+
+[09-May-24 11:47 AM] churavis#0000
+Everybody wants the good life
+
+
+[09-May-24 11:47 AM] archielvahr#0000
+despite the 81.9% -> 60% happiness between those tiers
+
+
+[09-May-24 12:01 PM] allocater#0000
+now I wonder what happiness percentages we need so that 30% education gives more than 50 ENG 🤔
+
+
+[09-May-24 12:03 PM] archielvahr#0000
+I ran it the last two week,s you can check it out
+
+
+[09-May-24 12:03 PM] katinga#0000
+Engineers love problems to solve.  Install more escape rooms
+
+
+[09-May-24 12:03 PM] allocater#0000
+2.7% TEC became ENG
+1.4% ENG became SCI
+
+
+[09-May-24 12:03 PM] archielvahr#0000
+instead of 278 it was ~500
+
+
+[09-May-24 12:04 PM] allocater#0000
+yeah for net -5
+
+
+[09-May-24 12:04 PM] katinga#0000
+I didn't realize a citizen class could evolve into another
+
+
+[09-May-24 12:04 PM] archielvahr#0000
+yep
+
+
+[09-May-24 12:04 PM] archielvahr#0000
+The "Rate" is actually higher for engineers than for scientists
+
+
+[09-May-24 12:04 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-05-09_12-04-39.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-05-09_12-04-39.png
+https://images-ext-1.discordapp.net/external/N9ZPOZLPQyEkfgKVJYO7Kx40Wj0n6Hy4YgtEgtEIh0w/http/kortham.net/temp/firefox_2024-05-09_12-04-39.png
+
+
+[09-May-24 12:04 PM] katinga#0000
+is it a level up evolution?  a stone evolution?  or do I need to turn my console upside down and then trade?
+
+
+[09-May-24 12:05 PM] archielvahr#0000
+We just need more people with technician buildings really
+
+
+[09-May-24 12:05 PM] allocater#0000
+we would need to get SCI to half of ENG, which might not be possible
+
+
+[09-May-24 12:06 PM] allocater#0000
+unless SCI drop below 50%
+
+
+[09-May-24 12:06 PM] allocater#0000
+which is also unlikely since people keep building IDC bases
+
+
+[09-May-24 12:06 PM] katinga#0000
+Oooo!  So I can take a settler on a walk for 10,000 steps and he'll learn to walk upright?!
+
+
+[09-May-24 12:06 PM] allocater#0000
+"How many steps must a TE-EC go, before you can call him a ENG?" 🎵 😄
+
+
+[09-May-24 12:07 PM] katinga#0000
+I play way too much pokemon
+
+
+[09-May-24 12:09 PM] archielvahr#0000
+Yeah, and there's no real way to pull down the happiness of scientists exclusively except by growing them until unemployment is even higher
+
+
+[09-May-24 12:13 PM] melon164#0000
+So basically there are _no_ levers the governor can pull to increase ENG?
+
+
+[09-May-24 12:13 PM] melon164#0000
+That might be worth a forum post if so, the devs might be interested
+
+
+[09-May-24 12:13 PM] archielvahr#0000
+Ehhh I think it's working as intended
+
+
+[09-May-24 12:13 PM] archielvahr#0000
+Malahat is a weird edge case in a lot of ways
+
+
+[09-May-24 12:15 PM] archielvahr#0000
+In general, there's no way to grow a high tier population while avoiding low tier growth. I think the needs matrix was designed to make that happen on purpose. Especially the capping behavior. (Otherwise, I'd feed education and zero safety/health)
+
+
+[09-May-24 12:16 PM] archielvahr#0000
+The "too many scientists, not enough engineers" was probably unforeseen but wouldn't be surprising
+
+
+[09-May-24 12:17 PM] archielvahr#0000
+Since ostensibly the unemployment -> happiness math "fixes" that. I just don't want to solve it by having 40% unemployed scientists
+
+
+[09-May-24 12:29 PM] allocater#0000
+yeah we might have to convert all OOG EDC bases to IDC
+
+
+[09-May-24 12:39 PM] sidepipe#0000
+I hear more contracts in my future 😄
+
+
+[09-May-24 01:13 PM] archielvahr#0000
+I hear the return is a bit higher for IDC, right?
+
+
+[09-May-24 02:06 PM] katinga#0000
+IDC = I don't care, right? 🙂
+
+{Reactions}
+💯 
+
+[09-May-24 02:10 PM] katinga#0000
+I am pretty sure Sidepipe is filling up those EDC with adult vids 😛
+
+
+[09-May-24 02:13 PM] churavis#0000
+No wonder the government is willing to buy an infinite amount of them
+
+
+[09-May-24 02:29 PM] allocater#0000
+yup, 200k profit vs 300k
+
+
+[11-May-24 12:01 PM] allocater#0000
+is it possible to know what the instant-assign SCI pool is this week?
+
+
+[11-May-24 12:04 PM] archielvahr#0000
+the worker pool should be 10% of the current unemployed 2275 scientists
+
+
+[11-May-24 12:06 PM] archielvahr#0000
+possibly plus the added 279. Those might be available for instant, mid-week assignment
+
+
+[11-May-24 12:06 PM] archielvahr#0000
+so I guess like 490ish?
+
+
+[11-May-24 12:11 PM] archielvahr#0000
+If you got big plans, I'll pop Festival 3
+
+
+[12-May-24 01:19 AM] allocater#0000
+I think we can get ENG to 100% happiness without festival, and that's the only real bottleneck
+
+
+[12-May-24 01:20 AM] allocater#0000
+but if it is impossible to get net ENG, because the SCI are stealing all, I guess we have no other choice but to build SCI bases 😄
+
+
+[16-May-24 11:09 AM] allocater#0000
+there appears to be no way to increase ENG, so we have to switch to SCI
+
+
+[16-May-24 11:40 AM] katinga#0000
+dammit Jim!  I'm an ENG, not a SCI!  😄
+
+{Reactions}
+🤣 (2) 
+
+[16-May-24 03:04 PM] archielvahr#0000
+Eventually unemployed scientists will get so unhappy that the education from eng->sci will slow down, but it's not really feasible to wait for that.
+
+Increasing employed technicians will help too, but we'd have to do like... 20k more technicians for that to move that needle
+
+
+[19-May-24 12:29 PM] sidepipe#0000
+competition on Malahat 👀
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1241804932311679126/image.png?ex=681500f7&is=6813af77&hm=b0abe6f8280ca7d0c1e964cbcc3dbbd6223822c83b01cf0b779470cde8fae4b1&
+
+
+[19-May-24 01:24 PM] uncle_leslie69#0000
+what's the big thing with malahat?
+
+
+[19-May-24 01:25 PM] uncle_leslie69#0000
+i see people talking about a base that practically prints money or something?
+
+
+[19-May-24 01:25 PM] .urpalhal#0000
+EDC
+
+
+[19-May-24 01:28 PM] uncle_leslie69#0000
+ahh, is it some electronic thing?
+
+
+[19-May-24 01:31 PM] .urpalhal#0000
+Yeah and all the factions buy it
+
+
+[19-May-24 01:31 PM] .urpalhal#0000
+And it doesn’t have any inputs either
+
+
+[19-May-24 01:37 PM] uncle_leslie69#0000
+oh, perhaps i should change my phobos base up if it's electronics
+
+
+[19-May-24 04:48 PM] katinga#0000
+people are loading up these EDCs with PrUnHub videos 🙂
+
+{Reactions}
+👀 (2) 🤣 (2) 
+
+[19-May-24 06:16 PM] archielvahr#0000
+Ah didn't see that in the channel, but he did DM me
+
+
+[19-May-24 06:16 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-05-19_18-16-25.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-05-19_18-16-25.png
+https://images-ext-1.discordapp.net/external/eyt4aww2eZVZC2OFj27kzgegFNxxlpvaJmczszVNz_4/http/kortham.net/temp/firefox_2024-05-19_18-16-25.png
+
+
+[19-May-24 06:16 PM] archielvahr#0000
+So I think it's a friendly thing
+
+
+[19-May-24 06:16 PM] archielvahr#0000
+oh he is running though
+
+
+[19-May-24 06:17 PM] archielvahr#0000
+iiiiiiinteresting
+
+
+[19-May-24 06:17 PM] archielvahr#0000
+no body say anything, I dont' want to have a big thing about the engineer deficit
+
+{Reactions}
+🫡 (4) 
+
+[19-May-24 07:33 PM] archielvahr#0000
+To answer a question about Festivities 3 vs. Education 3 on Malahat, I'm running the numbers.. and I made a math fix on the governor helper.
+
+
+[19-May-24 07:33 PM] archielvahr#0000
+No project:
+
+
+[19-May-24 07:33 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-05-19_19-32-58.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-05-19_19-32-58.png
+https://images-ext-1.discordapp.net/external/oXsjyWUW80H2rh920BMjJwq8ZxjzQd3rblA0fmVLpME/http/kortham.net/temp/firefox_2024-05-19_19-32-58.png
+
+
+[19-May-24 07:33 PM] archielvahr#0000
+Festivities 3:
+
+
+[19-May-24 07:33 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-05-19_19-33-26.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-05-19_19-33-26.png
+https://images-ext-1.discordapp.net/external/kh4j1YvgfRjtmkkYisFv4kloZyC269bKjU7OXzog7us/http/kortham.net/temp/firefox_2024-05-19_19-33-26.png
+
+
+[19-May-24 07:33 PM] archielvahr#0000
+Education 3:
+
+
+[19-May-24 07:33 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-05-19_19-33-46.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-05-19_19-33-46.png
+https://images-ext-1.discordapp.net/external/fvAKBd_TMBU72NSA8i984dNqatPhV6bftFJ0MuFS5XA/http/kortham.net/temp/firefox_2024-05-19_19-33-46.png
+
+
+[19-May-24 07:35 PM] archielvahr#0000
+Two points:
+1) Actually, happiness will be a bit higher because they are all near 100% fulfillment right now and the averaged happiness is quickly ramping towards that
+2) There's an open question about how festival boosts interact with 100% happiness for purposes of education In calculations
+
+
+[19-May-24 07:37 PM] archielvahr#0000
+I already queued up festival 3 which was probably a mistake 😛 oh well. Pumping engineer immigration might be the best program to run, oddly enough. 
+
+Still would be nice to grow the tech population, but that might not be practically achievable
+
+
+[19-May-24 07:38 PM] archielvahr#0000
+But I did swap from to IDCs so that's 540 free engineers... if they actually return to the pool like they are supposed to
+
+
+[19-May-24 07:40 PM] churavis#0000
+There are so few technicians that the education program actually results in fewer engineers than no program
+
+{Reactions}
+👆 😮 
+
+[20-May-24 02:10 AM] allocater#0000
+I am really curious if the ENG shortage will ever take ENG from the 1 permit bases, so far it seems only to take from the 3 permit bases
+
+
+[20-May-24 02:11 AM] allocater#0000
+Also the irony that we wanted to destroy the EDC market by raising FIM and r-fab prices, but now destroy it by reducing the ENG count 😄
+
+
+[20-May-24 02:21 AM] allocater#0000
+we could mention that ENG are in a death spiral, no matter what program runs. I don't think we should get +50 ENG when we could get +100 SCI. It seems the era of ENG is over and everybody should switch to SCI.
+
+
+[20-May-24 02:26 AM] allocater#0000
+education gives the most overall amount
+
+
+[20-May-24 02:27 AM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1242015777553383536/image.png?ex=68151c94&is=6813cb14&hm=718873125b0df22fe27bb90732b120e299e2b42934a846330d01f4eeed18e0b0&
+
+
+[20-May-24 06:02 PM] archielvahr#0000
+I think maybe "round robin" means it tries to give everyone the same number, so only the people who need like 1000 ENG are losing some
+
+
+[20-May-24 07:36 PM] hernanduer#0000
+yeah
+
+
+[21-May-24 01:46 AM] allocater#0000
+that would actually be good, punish those inefficient bases even more 😄
+
+
+[21-May-24 01:47 AM] allocater#0000
+but so far old 1-permit bases and new 1-permit bases have not gotten the same amount, maybe they will at some point
+
+
+[21-May-24 12:24 PM] allocater#0000
+@Malahat so we came up with an IDC-base process. IDC bases will be available as self-service bases, where you send contracts to me, to request the building materials and supplies for free. In exchange you can sell IDC for 5000, which is 135k income per day. Is anybody interested in upgrading?
+
+{Reactions}
+👍 
+
+[21-May-24 12:26 PM] archielvahr#0000
+"self-service" just means that the person running the bases is in charge of sending contracts?
+
+
+[21-May-24 12:26 PM] allocater#0000
+yup
+
+
+[21-May-24 12:27 PM] sidepipe#0000
+So more clicking, but you keep more money by cutting out the middleman (me) 😄
+
+
+[21-May-24 12:27 PM] sidepipe#0000
+Especially since the middleman is probably near his open contract limit
+
+{Reactions}
+😬 (3) 
+
+[21-May-24 12:33 PM] katinga#0000
+self service means something else in my world.  haha
+
+{Reactions}
+😆 
+
+[21-May-24 12:34 PM] allocater#0000
+= you have to get your food, instead of having it delivered to you
+
+
+[21-May-24 12:35 PM] archielvahr#0000
+You get your food delivered to you, but you have to call the take out restaurant yourself
+
+{Reactions}
+👍 
+
+[21-May-24 12:37 PM] churavis#0000
+The food is spooned directly into your mouth for you but you have to "CHEEP-CHEEP-CHEEP" for it incessantly
+
+
+[21-May-24 01:08 PM] sidepipe#0000
+That’s both highly disturbing and pretty much accurate 😄
+
+{Reactions}
+🐤 (5) 
+
+[23-May-24 09:35 AM] allocater#0000
+very nice TEC growth. Do we want to sponsor more TEC bases to keep them?
+
+
+[23-May-24 10:14 AM] melon164#0000
+I would be happy to run an SD base if someone can supply me with consumables there at corp prices
+
+
+[23-May-24 10:15 AM] melon164#0000
+I just don’t have the shipping capacity to run a base so far away
+
+
+[25-May-24 02:50 AM] allocater#0000
+So to hold ENG, we actually need an equilibrium between TEC and SCI. The more SCI we get, the more TEC we need to counter balance. Otherwise ENG will approach 0 🤔
+
+{Reactions}
+🤔 
+
+[26-May-24 09:34 PM] archielvahr#0000
+Got more people contacting me about IDC bases. So at least one more of those coming
+
+
+[26-May-24 09:42 PM] archielvahr#0000
+So that'll be 650 scientists.. But adding 400 a week, I doubt we'll use them all up
+
+
+[27-May-24 10:45 AM] allocater#0000
+what are they writing to you about IDC bases?
+
+
+[27-May-24 04:50 PM] archielvahr#0000
+Asking about the population mostly. And wanted a loan to make a malahat base. Which works out nice cause it was at a good rate
+
+
+[27-May-24 04:51 PM] archielvahr#0000
+Had a lot of tech growth too.  So hopefully we keep that going
+
+
+[28-May-24 02:28 PM] archielvahr#0000
+I'm doing a public writeup for malahat. It seems like we added like 16 EDC bases.. but the population is probably only like an extra 3000 engineers employed? Which is more like 6 bases or something?
+
+
+[28-May-24 02:31 PM] sidepipe#0000
+do you mean 16 bases through the bank, or in total? it could also depend on what time period you're looking at. not all the bases are fully staffed yet
+
+
+[28-May-24 02:32 PM] sidepipe#0000
+if it helps, I can gather the employed ENGs from some of our more recent bases
+
+
+[28-May-24 03:04 PM] archielvahr#0000
+Malahat governance update:
+
+
+[28-May-24 03:04 PM] archielvahr#0000
+https://discord.com/channels/855488309802172469/859103045233410118/1245105384541130843
+
+
+[28-May-24 03:06 PM] melon164#0000
+What channel is that?
+
+
+[28-May-24 03:06 PM] archielvahr#0000
+Oh the Malahat-general one
+
+
+[28-May-24 03:06 PM] archielvahr#0000
+you might have to #join malahat
+
+
+[28-May-24 03:07 PM] archielvahr#0000
+err whatever the bot command is
+
+
+[28-May-24 03:07 PM] archielvahr#0000
+Malahat governance update pasted here
+
+
+[31-May-24 05:00 AM] allocater#0000
+sweet, +53 ENG with Education
+
+
+[31-May-24 10:37 AM] archielvahr#0000
+Yeah gotta lean into the happiness delta between engineers and scientists. Still need more tech jobs really though
+
+
+[31-May-24 10:37 AM] archielvahr#0000
+oof 1900 open jobs 😭
+
+
+[01-Jun-24 08:32 AM] katinga#0000
+do we resupply these EDC bases ourselves?
+
+
+[01-Jun-24 09:19 AM] sidepipe#0000
+Nope, I’ll send you contracts when it’s time 🙂
+
+
+[01-Jun-24 09:23 AM] katinga#0000
+oh good.  I don't have enough of the right currency to buy from BEN
+
+
+[24-Jun-24 12:03 PM] archielvahr#0000
+I posted this short update to the local malahat COM channel:
+
+
+[24-Jun-24 12:03 PM] archielvahr#0000
+Short Malahat update: Our plan to grow technicians has been working fantastically. Right now Engineer happiness has been pegged to 100%, meaning engineer growth will be 30% of the tech population each week. Thus growing our technicians is the best way to shore up the engineer shortage. Technician employment continues to grow, thanks to many who have stepped up to help with sponsored Tech bases. Next week, engineer growth will outpace the scientist upgrade rate. Employment at the high tiers has grown susbstantially thanks to our team efforts!
+
+In ~2 days the update will land, so anticipate some changes in the weeks following that. The plan for POPI will continue- pushing engineer growth, and accepting the 2500ish unemployed pio and settlers as a cost of the high tier growth. With the new government changes, there may be new opportunities to help contiribute to upkeep on Malahat. That could mean the government will buy your upkeep items, especially TUB, PFE, and SOI. More info on that will come once the update meta stabilizes.
+
+
+[26-Jun-24 10:11 AM] .urpalhal#0000
+was not expecting the switch to CIS on Malahat
+
+
+[26-Jun-24 10:35 AM] archielvahr#0000
+Yeah what a hassle
+
+
+[26-Jun-24 10:35 AM] sidepipe#0000
+I’ve got 6M CIS if anyone needs any in a hurry
+
+
+[26-Jun-24 10:57 AM] archielvahr#0000
+Nice little financial report. No income yet on Malahat.
+
+
+[26-Jun-24 10:57 AM] archielvahr#0000
+http://kortham.net/temp/firefox_IJm5IVW8pP.png
+
+{Embed}
+http://kortham.net/temp/firefox_IJm5IVW8pP.png
+https://images-ext-1.discordapp.net/external/sSLBRoUYId9JWPTGm01MYbloZMKZtIC2tz6EIN09Ltk/http/kortham.net/temp/firefox_IJm5IVW8pP.png
+
+
+[26-Jun-24 09:25 PM] katinga#0000
+I can't sustain the base on Malahat then.  I don't have the CIS to keep feeding the taxes for the EDC production
+
+
+[26-Jun-24 09:26 PM] sidepipe#0000
+I’ve got CIS, I can swap you 1:1
+
+
+[26-Jun-24 09:26 PM] sidepipe#0000
+Just send contracts whenever you need it. I keep it on hand for the renters that pay in CIS
+
+
+[26-Jun-24 09:29 PM] katinga#0000
+I can send you EDC conts for CIS.  small ones
+
+
+[26-Jun-24 09:40 PM] sidepipe#0000
+Does it work if I just send you the standard 175 EDC one? You get 525k CIS upfront and can just fill the EDC whenever 🙂
+
+
+[26-Jun-24 09:41 PM] katinga#0000
+No cuz I need the AIC more.  there's a reason I moved out of BEN.  the split currencies were killing me.  I needed to focus on 1 pot for a while.  Etherwind, I'm getting a pass on cuz there are no taxes or warehouse rentals there.
+
+
+[26-Jun-24 09:42 PM] sidepipe#0000
+k, then just terminate after I send you the CIS
+
+
+[26-Jun-24 09:42 PM] sidepipe#0000
+too much work to figure out more contracts and that'll keep you printing for a bit 😄
+
+
+[26-Jun-24 09:45 PM] katinga#0000
+thanks!
+
+
+[26-Jun-24 11:05 PM] archielvahr#0000
+Since I just did a POPI upkeep I am gonna throw this in here until I make a sheet
+
+
+[29-Jun-24 12:56 PM] archielvahr#0000
+My spiel about upkeep on Malahat:
+
+
+[29-Jun-24 12:56 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-06-29_12-55-27.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-06-29_12-55-27.png
+https://images-ext-1.discordapp.net/external/ZAcC5YbkyXRCAjrsHvHquRRCteREa0OeYbTNYzgEBxM/http/kortham.net/temp/firefox_2024-06-29_12-55-27.png
+
+
+[01-Jul-24 12:38 AM] archielvahr#0000
+This is what I was roughly intending to do with Malahat
+
+
+[01-Jul-24 12:38 AM] archielvahr#0000
+https://docs.google.com/spreadsheets/d/13VFEPNafq8B6fRprOOSw96a5Zm5abWNvJjd0jsKExkY/edit?gid=0#gid=0
+
+{Embed}
+https://docs.google.com/spreadsheets/d/13VFEPNafq8B6fRprOOSw96a5Zm5abWNvJjd0jsKExkY/edit?gid=0
+Malahat Governance
+Sheet1
+
+
+Malahat Governance Report
+Ledger,Balance Sheet
+Date,Person,Type,Mat,Quantity,Price,Specific $,Total,Notes,Name,Contributions,Payouts,Due
+2024-06-27,Archiel,Contribution,1,,$100,000,$100,000,Archiel,$9,617,685.60,-$10.00,$9,617,675.60
+2024-07-01,Archiel,POPI,IDC,75,$16,200.00,$1,215,000,<...
+https://images-ext-1.discordapp.net/external/VSLXlvklWb2Hc4ok1kbqjkzO6d6Ny9uYPJGWIeNYxm8/https/lh7-us.googleusercontent.com/docs/AHkbwyJD29eJ2q9BVPxDdx4tvPDeUly0pcxFExL1V215SFxIZXFR7ja4hWNA5vd7t3EhS-4peNS5oKtjEQPU6ars0PGJs_48BkE0Bw8LOH0gc4N3jXeyzXwZ%3Dw1200-h630-p
+
+
+[01-Jul-24 12:38 AM] archielvahr#0000
+feel free to copy for your planet
+
+
+[01-Jul-24 12:38 AM] archielvahr#0000
+prices probably need some work
+
+
+[01-Jul-24 02:20 AM] akyantor#0000
+A cool. This is a better version of something I'd started to cook up for WU
+
+
+[03-Jul-24 12:36 PM] archielvahr#0000
+I have a LM ad on Malahat to buy 1 LBH that I forgot to ship
+
+{Reactions}
+✅ 
+
+[04-Jul-24 05:45 PM] archielvahr#0000
+Let's try to get a third OOGer on Malahat.
+
+
+[04-Jul-24 05:45 PM] archielvahr#0000
+External scrutiny of the finances will invite Rise to complain 😛
+
+
+[04-Jul-24 06:45 PM] sidepipe#0000
+Anyone interested?
+
+
+[04-Jul-24 06:46 PM] sidepipe#0000
+The person in 3rd right now is mast3rd3mon and that guy _never_ stops complaining
+
+{Reactions}
+💯 
+
+[04-Jul-24 06:47 PM] sidepipe#0000
+All you have to do is be on Malahat and vote yes 😄
+
+
+[04-Jul-24 06:59 PM] .urpalhal#0000
+I can
+
+{Reactions}
+🙌 
+
+[04-Jul-24 10:45 PM] archielvahr#0000
+Woah I'm surprised he ended up with 4 votes, it was only 1 earlier today
+
+
+[05-Jul-24 05:43 PM] katinga#0000
+Here!  Just for Archiel!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1258916108526682162/Malahat_meme.png?ex=6814a1bd&is=6813503d&hm=ff5bdbe539fff8b255a6f740be3cb0098e9b516c090d673c548854d4d8d53344&
+
+{Reactions}
+🎉 (2) 😁 (3) 😂 
+
+[06-Jul-24 03:51 PM] archielvahr#0000
+This is the stuff I am currently buying on malahat from the public:
+
+
+[06-Jul-24 03:52 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-07-06_15-36-39.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-07-06_15-36-39.png
+https://images-ext-1.discordapp.net/external/JRAln2dVSkkptIg3yFLuKTqIGrL7GlrTg9orbewtaxw/http/kortham.net/temp/firefox_2024-07-06_15-36-39.png
+
+
+[06-Jul-24 03:53 PM] sidepipe#0000
+that makes me wonder if I should spin up a TUB factory 😄
+
+
+[06-Jul-24 03:54 PM] akyantor#0000
+I started making some TUB... wasn't sure if there would be takers, but when I auctioned it yesterday it was snapped up almost immediately. 😛
+
+
+[06-Jul-24 03:54 PM] archielvahr#0000
+Yeah TUB and OFF is gonna go fast
+
+
+[06-Jul-24 03:56 PM] archielvahr#0000
+So far since June 26th I've spent $12,980,517.00 on Malahat upkeep ( the starting amount on June 26th counted the past couples weeks or whatever). 
+
+Income so far is about 5m. 
+
+I'm thinking about doing a withdrawl now, but I'm not sure if that should wait til after the election ends in 6 days.
+
+
+[06-Jul-24 03:56 PM] akyantor#0000
+Jeeze... that's a huge turnover
+
+
+[06-Jul-24 03:57 PM] sidepipe#0000
+I figure it'll probably be okay as long as you provide some brief accounting of what you're withdrawing for
+
+
+[06-Jul-24 03:57 PM] archielvahr#0000
+Yeah really want to get those open engineer jobs covered.
+
+
+[06-Jul-24 03:57 PM] sidepipe#0000
+folks will probably appreciate that you spent 13M and are withdrawing less than that 😄
+
+{Reactions}
+👍 💯 
+
+[06-Jul-24 03:57 PM] akyantor#0000
+I'm starting to think that nearly every planet has been running at a deficit all this time... has anyone come across one yet that had balanced books?
+
+
+[06-Jul-24 03:58 PM] archielvahr#0000
+Bobemor used to run his planet exactly at net 0 cost.
+
+
+[06-Jul-24 03:58 PM] archielvahr#0000
+It didn't really work 😬
+
+
+[06-Jul-24 03:58 PM] akyantor#0000
+I guess if you have a corp with one planet, then you could at least tell. If you've more than one you can't
+
+
+[06-Jul-24 03:59 PM] archielvahr#0000
+Yeah.
+
+
+[06-Jul-24 03:59 PM] archielvahr#0000
+I think Malahat will be positive once the contributions settle down
+
+
+[07-Jul-24 06:24 AM] katinga#0000
+https://tenor.com/view/scrubber-bath-bathtub-disney-donald-gif-23955105
+
+{Embed}
+https://tenor.com/view/scrubber-bath-bathtub-disney-donald-gif-23955105
+https://images-ext-1.discordapp.net/external/r1zJmzPO4wg9IXVT5j7VlinoWD3jbVi_2hFXdrQ4B7A/https/media.tenor.com/BWerZOmMB4oAAAAe/scrubber-bath.png
+
+
+[08-Jul-24 07:09 PM] draconisdomini#0000
+I have started making TUB on WU-070a if anyone wants them
+
+{Reactions}
+🥰 
+
+[08-Jul-24 08:00 PM] archielvahr#0000
+If you get to a lot (like several thousand) I can come pick them up on WU, otherwise I can grab them on ANT.
+
+
+[10-Jul-24 03:04 PM] archielvahr#0000
+1 or 2 more votes for Hal in the Malahat election will get us 3 spots in the parliament. Would be lovely 😄 Might run into some last minutes shifts though, since there is some vote splitting for 3rd place already.
+
+
+[10-Jul-24 03:04 PM] archielvahr#0000
+I shifted my vote to Hal for the moment. We have 2d 1hr left
+
+{Reactions}
+👀 
+
+[10-Jul-24 03:07 PM] .urpalhal#0000
+I should maybe say something in chat?
+
+
+[10-Jul-24 03:22 PM] allocater#0000
+3 people at 4 votes now
+
+
+[10-Jul-24 03:59 PM] archielvahr#0000
+Well two lines of thought- don't want to say anything publically cause it draws attention to a soon-to-conclude election. Or can you say something and actually flip someone voting for a non-oog candidate to an oog candidate? I suspect the two non-oog candidates are collecting the voters who don't want a straight oog ticket, so they won't flip
+
+{Reactions}
+👍 🫡 
+
+[10-Jul-24 04:27 PM] melon164#0000
+When’s the election end?
+
+
+[10-Jul-24 04:33 PM] archielvahr#0000
+2days 0 hours ish
+
+
+[11-Jul-24 09:26 AM] sidepipe#0000
+looks like we might have Malahat this time around 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1260965334815608852/image.png?ex=6814d5fb&is=6813847b&hm=d920b103ddd3fbf1a4b542cfc84fb901a7abf33fa40a4cfb03628f48773b8b4b&
+
+{Reactions}
+🗳️ 
+
+[11-Jul-24 09:32 AM] melon164#0000
+I can vote again after their maintenance patch 😁
+
+{Reactions}
+💯 
+
+[11-Jul-24 10:41 AM] archielvahr#0000
+Heh that's kind of a doozy of a bug, lol
+
+
+[11-Jul-24 10:41 AM] archielvahr#0000
+Then I'll ping @allocater  to vote for Hal too on Malahat
+
+{Reactions}
+🗳️ 
+
+[11-Jul-24 10:46 AM] archielvahr#0000
+Then there's a nice buffer for last minute shenanigans
+
+
+[12-Jul-24 04:42 PM] archielvahr#0000
+Lovely results of the Malahat election 😄
+
+{Reactions}
+😂 (2) 
+
+[12-Jul-24 04:43 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-07-12_16-43-02.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-07-12_16-43-02.png
+https://images-ext-1.discordapp.net/external/tlwO65lysF09aFlfRA_V7qLQj6jRx-6mqMSfqFmr4mg/http/kortham.net/temp/firefox_2024-07-12_16-43-02.png
+
+
+[15-Jul-24 11:11 AM] melon164#0000
+Can I get someone who's running SEs to make me 20 DD and 20 DV?
+
+
+[15-Jul-24 11:11 AM] melon164#0000
+I have the inputs for the DD on-site
+
+
+[15-Jul-24 01:39 PM] domicius#0000
+I can do that, just not on Malahat
+
+
+[15-Jul-24 01:40 PM] archielvahr#0000
+We should have a lot of SE-people on malahat. Sidepipe should know them 😄
+
+
+[15-Jul-24 02:05 PM] sidepipe#0000
+We do indeed - @katinga , are you still making EDC on Malahat? And if so, would you be able to make those things for melon?
+
+
+[15-Jul-24 02:06 PM] sidepipe#0000
+And if yes, lmk how long it takes and I can pay you for the lost EDC time 🙂
+
+
+[15-Jul-24 02:07 PM] sidepipe#0000
+I’d do it myself, but I’m running SL instead now
+
+
+[15-Jul-24 02:08 PM] domicius#0000
+I have 4 IMM on ANT and 5 DD
+
+
+[15-Jul-24 03:14 PM] katinga#0000
+?
+
+
+[15-Jul-24 03:16 PM] sidepipe#0000
+Can you make 20 DD and 20 DV for melon164 if he provides you the inputs?
+
+
+[15-Jul-24 03:16 PM] sidepipe#0000
+I'll pay you for the lost EDC time
+
+
+[15-Jul-24 03:16 PM] katinga#0000
+ok
+
+
+[15-Jul-24 03:17 PM] sidepipe#0000
+How long would one DD and one DV each take if you queued them up?
+
+
+[15-Jul-24 03:18 PM] katinga#0000
+a day
+
+
+[15-Jul-24 03:18 PM] katinga#0000
+they have a run time a 1 day
+
+
+[15-Jul-24 03:18 PM] sidepipe#0000
+cool, and how many SEs do you have? was it 12?
+
+
+[15-Jul-24 03:19 PM] katinga#0000
+18
+
+
+[15-Jul-24 03:20 PM] sidepipe#0000
+so back of the envelope math says 40 days split between 18 labs is 2.2222 days - so call it 3 days? how much EDC do you make per day?
+
+
+[15-Jul-24 03:21 PM] katinga#0000
+runtime on those is 16.39 hrs
+
+
+[15-Jul-24 03:22 PM] sidepipe#0000
+you wouldn't happen to have PMMG installed? 😄
+
+
+[15-Jul-24 03:22 PM] katinga#0000
+I do.  it doesn't work anymore
+
+
+[15-Jul-24 03:23 PM] sidepipe#0000
+ah cool, then some less back of the envelope math it is 😄
+
+
+[15-Jul-24 03:23 PM] katinga#0000
+none of those exterior tools work that well.  2 don't work at all
+
+
+[15-Jul-24 03:24 PM] sidepipe#0000
+24/16.39 = 1.4643 EDC / lab / day, so 1.4643 * 3 * 18 * 3000 = 237,217.8158 AIC 🙂
+
+
+[15-Jul-24 03:24 PM] sidepipe#0000
+so I'll send you 250k to cover the machine time. @melon164 , can you send Katinga the materials?
+
+
+[15-Jul-24 03:26 PM] sidepipe#0000
+If that works for you, that is, Katinga
+
+
+[15-Jul-24 03:27 PM] katinga#0000
+just let me know.  meanwhile my paladin is knee deep in harpies
+
+{Reactions}
+⚔️ (2) 
+
+[15-Jul-24 04:36 PM] melon164#0000
+I need someone else to send the contracts.  But I can pay for the time.
+
+
+[18-Jul-24 01:16 PM] allocater#0000
+So malahat can now sustain 1 new EDC base and 1 new IDC base per week! 🥳
+
+{Reactions}
+🎉 (2) 
+
+[18-Jul-24 02:05 PM] shrewdsun_88540#0000
+Wait how much does an EDC base make?!
+
+
+[18-Jul-24 02:06 PM] shrewdsun_88540#0000
+250k for 16hrs?
+
+
+[18-Jul-24 02:10 PM] archielvahr#0000
+My IDC base produces 477,112 AIC on inputs of 148,278 per day.
+
+
+[18-Jul-24 02:10 PM] allocater#0000
+We currently have a EDC base as 200k per day profit
+
+
+[18-Jul-24 02:11 PM] archielvahr#0000
+I think those XIT FIN numbers I h ave don't count depreciation which is significant
+
+
+[18-Jul-24 02:11 PM] archielvahr#0000
+but yeah, it's good money 😉 🙂
+
+
+[18-Jul-24 02:13 PM] sidepipe#0000
+We also offer EDC bases through the bank of OOG - we handle all the repairs and consumables, and you get a fixed price on your EDC. That’s what that 250k / 2.2 days figure comes from above
+
+
+[18-Jul-24 02:15 PM] archielvahr#0000
+everyone should have one!
+
+{Reactions}
+💯 
+
+[18-Jul-24 02:16 PM] shrewdsun_88540#0000
+I really dislike the idea of a money printer tho… but the money is enticing
+
+
+[18-Jul-24 02:17 PM] shrewdsun_88540#0000
+Why wouldn’t someone just put down 20 EDC bases at his point
+
+
+[18-Jul-24 02:19 PM] allocater#0000
+I think there are only 5 planets suitable for EDC bases (Electronics, free ENGs) but yeah, people do it
+
+
+[18-Jul-24 02:19 PM] allocater#0000
+best we can do it give R-fab producers and FIM producers a bigger chunk of the profits
+
+
+[18-Jul-24 02:23 PM] shrewdsun_88540#0000
+What do you mean?
+
+
+[18-Jul-24 02:24 PM] sidepipe#0000
+EDC requires lots of Rfabs and FIM as consumables (for repairs and workforce) so more EDC -> higher demand for those things -> higher prices for Rfabs, FIM, etc
+
+
+[18-Jul-24 02:24 PM] shrewdsun_88540#0000
+Ah
+
+
+[18-Jul-24 02:25 PM] shrewdsun_88540#0000
+Well I’m just about to setup Rfab production so you guys let me know if you want me to set some aside
+
+
+[18-Jul-24 02:25 PM] shrewdsun_88540#0000
+Also I guess it’s hard to colonize planets specifically for EDCs
+
+
+[18-Jul-24 02:25 PM] allocater#0000
+I usually buy all R-fabs on all CXs if you like that price
+
+
+[18-Jul-24 02:26 PM] shrewdsun_88540#0000
+If there is that much demand, I can make it so I produce more of it
+
+
+[18-Jul-24 02:28 PM] allocater#0000
+I think you will have no trouble selling it, if we just build the weekly EDC and IDC base that is already 
+
+348    RBH
+144    RDE
+372    RSE
+60    RTA
+
+per week
+
+
+[18-Jul-24 02:28 PM] allocater#0000
+not the speak of the repairs of the 17 existing bases
+
+
+[18-Jul-24 02:28 PM] shrewdsun_88540#0000
+Geez well then,I’ll revise my plans, I was holding back because I was worried about overproduction
+
+{Reactions}
+⚙️ (2) 
+
+[18-Jul-24 02:35 PM] shrewdsun_88540#0000
+Should be able to make 6-12 Rfab/day depending on the type
+
+
+[18-Jul-24 02:36 PM] shrewdsun_88540#0000
+Tried to ratio them based on what you stated as needs
+
+
+[18-Jul-24 02:36 PM] allocater#0000
+nice
+
+
+[18-Jul-24 02:36 PM] shrewdsun_88540#0000
+If you ever want me to set some aside just let me know
+
+
+[18-Jul-24 02:37 PM] allocater#0000
+simplest way is to just keep selling on the CX, if I am the highest bidder good, if someone else bids higher, fair game
+
+
+[18-Jul-24 02:37 PM] shrewdsun_88540#0000
+Sure
+
+
+[18-Jul-24 03:16 PM] shrewdsun_88540#0000
+In the same vein as project 6115, as there ever been a project to build a OOG exclusive EDC planet
+
+
+[18-Jul-24 03:17 PM] shrewdsun_88540#0000
+Or is it just to wildly expensive^
+
+
+[18-Jul-24 03:17 PM] sidepipe#0000
+Yes - it’s project 6115 🙂
+
+
+[18-Jul-24 03:18 PM] shrewdsun_88540#0000
+ah
+
+
+[18-Jul-24 03:18 PM] shrewdsun_88540#0000
+didnt realise it was explicitly that
+
+
+[18-Jul-24 03:18 PM] shrewdsun_88540#0000
+still onboarding myself as you can see
+
+{Reactions}
+😂 
+
+[18-Jul-24 03:21 PM] sidepipe#0000
+Well, that’s maybe not the true end goal. But it was the original answer to the question “what do we use a system with three habitable planets at the end of the galaxy for?”
+
+
+[18-Jul-24 03:22 PM] shrewdsun_88540#0000
+i see the reasoning
+
+
+[23-Jul-24 02:00 PM] allocater#0000
+We have materials for an IDC base laying around on Malahat, also unemployed SCI. Does anybody want the base?
+
+
+[23-Jul-24 02:02 PM] allocater#0000
+also upgrade from EDC possible
+
+
+[23-Jul-24 03:02 PM] shrewdsun_88540#0000
+Whats the difference between the 2
+
+
+[23-Jul-24 03:03 PM] .urpalhal#0000
+One uses Eng and the other (IDC) uses sci so makes more money
+
+
+[23-Jul-24 03:04 PM] shrewdsun_88540#0000
+im looking at the prunplanner for EDC and i have 11m... is that really the price
+
+
+[23-Jul-24 03:04 PM] allocater#0000
+for EDC you get all the contracts and make ~75k/day. for IDC you have to send all the contracts and get ~120k per day
+
+
+[23-Jul-24 03:05 PM] shrewdsun_88540#0000
+In what sense, so you pay for the base basicly and get a share of the profits^
+
+
+[23-Jul-24 03:05 PM] allocater#0000
+we have EDC base at 15mil and IDC base at 25mil, because it comes with 50days of supplies
+
+
+[23-Jul-24 03:06 PM] allocater#0000
+yeah you use the permit and get a share of the base profits.
+
+
+[23-Jul-24 03:08 PM] shrewdsun_88540#0000
+Thats interesting, yeah id be down. How long is the agreement for
+
+
+[23-Jul-24 03:09 PM] allocater#0000
+It can run forever, but we need at least 70d to recoup the investment
+
+
+[23-Jul-24 03:10 PM] shrewdsun_88540#0000
+Sure, id be down for the full IDC then. Id need like a day or 2 to get a base permit
+
+
+[23-Jul-24 03:10 PM] .urpalhal#0000
+What level are you rn?
+
+
+[23-Jul-24 03:11 PM] shrewdsun_88540#0000
+11
+
+
+[23-Jul-24 03:11 PM] allocater#0000 (pinned)
+sounds good, when you are ready, buy 6 warehouses on Malahat and request these materials (via Local Market) for 1 AIC (for free):
+
+1988    MCG
+168    TRU
+164    LDE
+4    LSE
+124    LTA
+12    PSL
+24    ABH
+24    ADE
+16    ASE
+16    ATA
+240    RBH
+240    RSE
+
+1400    MEA
+200    WIN
+40    LC
+10    WS
+20    NST
+2000    DW
+100    MED
+
+
+[23-Jul-24 03:11 PM] allocater#0000
+Pinned a message.
+
+
+[23-Jul-24 03:12 PM] shrewdsun_88540#0000
+Then for the running of it I sell you the EDC
+
+
+[23-Jul-24 03:13 PM] allocater#0000 (pinned)
+yes, this gives this base and you sell all IDC for 2500 to me (any currency you like)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1265401404156149800/image.png?ex=68152764&is=6813d5e4&hm=e524e5630956e09254a21b52ceed577f96cf635410dbf65110dce8dae08d7b32&
+
+
+[23-Jul-24 03:13 PM] allocater#0000
+Pinned a message.
+
+
+[23-Jul-24 03:14 PM] shrewdsun_88540#0000
+Got it
+
+
+[23-Jul-24 03:14 PM] shrewdsun_88540#0000
+Sure, ill start sending the contracts over now. Ill put down the base in a day or two like i said
+
+
+[23-Jul-24 03:16 PM] allocater#0000
+contracts are quite tedious for a 1 time deal, LM is easier
+
+
+[23-Jul-24 03:17 PM] shrewdsun_88540#0000
+oh sure, ill finish this one then switch over to the LM
+
+
+[23-Jul-24 03:18 PM] shrewdsun_88540#0000
+damint
+
+
+[23-Jul-24 03:18 PM] allocater#0000
+124 of each is too much 😄
+
+
+[23-Jul-24 03:19 PM] shrewdsun_88540#0000
+its been a long day haha
+
+
+[23-Jul-24 03:19 PM] allocater#0000
+no stress, I also need 2 days or the final materials
+
+
+[23-Jul-24 03:22 PM] shrewdsun_88540#0000
+All sent
+
+
+[23-Jul-24 03:23 PM] shrewdsun_88540#0000
+Also, my PP3 have been running for a few days, ill start supplyinh Rfabs now
+
+
+[23-Jul-24 03:23 PM] shrewdsun_88540#0000
+So should help with the sourcing
+
+{Reactions}
+❤️ 
+
+[23-Jul-24 03:25 PM] shrewdsun_88540#0000
+One of the contracts is for 1 day, ill extend it no worries, just assumed you had everythins set aside
+
+
+[23-Jul-24 03:27 PM] allocater#0000
+If I combine with sidepipe storages we have everything, except 20 LDE are missing 😦
+
+
+[23-Jul-24 03:28 PM] allocater#0000
+if you have the permit earlier, you can request 140 LDE and build 80% of the base
+
+
+[23-Jul-24 03:28 PM] shrewdsun_88540#0000
+Just so i fit within your plans, how often do you expect the IDC deliveries, like 1 per week
+
+
+[23-Jul-24 03:28 PM] allocater#0000
+up to you how fast you want to turn it into money
+
+
+[23-Jul-24 03:29 PM] allocater#0000
+I accept any interval you send 😄
+
+
+[23-Jul-24 03:29 PM] shrewdsun_88540#0000
+got it thanks
+
+
+[23-Jul-24 03:29 PM] shrewdsun_88540#0000
+this will greatly help me with all those loan payments
+
+{Reactions}
+👍 😁 
+
+[24-Jul-24 05:38 AM] shrewdsun_88540#0000
+Permit is done so whenever you are ready I’m good to go
+
+{Reactions}
+💯 
+
+[24-Jul-24 10:29 AM] shrewdsun_88540#0000
+all but the last SL are built
+
+{Reactions}
+RSNoice 
+
+[30-Jul-24 07:41 PM] hernanduer#0000
+@archielvahr do you need SOI or PFE? I can sell all my outputs to you since Nike won't be using them
+
+
+[30-Jul-24 07:41 PM] hernanduer#0000
+Or OLF
+
+
+[30-Jul-24 07:42 PM] hernanduer#0000
+The 3 pinks, I say
+
+
+[30-Jul-24 07:42 PM] archielvahr#0000
+oh shoot, @.urpalhal  and @sidepipe  can you run again on malahat?
+
+
+[30-Jul-24 07:42 PM] .urpalhal#0000
+Yes
+
+
+[30-Jul-24 07:42 PM] archielvahr#0000
+MemoryAlpha is gonna start shit for the next election.
+
+
+[30-Jul-24 07:42 PM] archielvahr#0000
+I see he just started his run
+
+
+[30-Jul-24 07:43 PM] archielvahr#0000
+@hernanduer  Yeah those are great. These are the government's prices for them:
+
+
+[30-Jul-24 07:43 PM] archielvahr#0000
+OLF    $900.00
+PFE    $670.00
+SOI    $400.00
+
+
+[30-Jul-24 07:43 PM] archielvahr#0000
+The olf might sell higher on the CX
+
+
+[30-Jul-24 07:43 PM] archielvahr#0000
+But that pulls them into sort of similar $/satisfaction numbers
+
+
+[30-Jul-24 07:43 PM] hernanduer#0000
+If it helps you it's fine by me
+
+{Reactions}
+👍 
+
+[30-Jul-24 07:49 PM] sidepipe#0000
+Archiel, would it help if I took care of some things like bringing bulk DW, OFF or one-off POPI upgrades like you mentioned? You could basically contract it out to me at Malahat prices and I can make the stuff appear
+
+
+[30-Jul-24 07:49 PM] sidepipe#0000
+I could even do the bookkeeping etc if I had edit permissions on the sheet
+
+
+[30-Jul-24 07:50 PM] sidepipe#0000
+It might help reduce the mental load a bit, but it’s really up to what you think would work for you
+
+
+[30-Jul-24 07:50 PM] archielvahr#0000
+you had me at "bookkeeping" 😄
+
+
+[30-Jul-24 07:51 PM] archielvahr#0000
+Send me an edit request for the sheet
+
+
+[30-Jul-24 07:53 PM] .urpalhal#0000
+Let me know what I can do to help too 😊
+
+
+[30-Jul-24 07:53 PM] .urpalhal#0000
+I’m going to add a STO to my base there so
+
+
+[30-Jul-24 07:55 PM] archielvahr#0000
+Filling COGC is definitely something that anyone could do. Cause it can't be overfilled. Then we just punch that into the sheet and do a payout.
+
+I am kind of wishy-washy about which POPI I put in. I have a plan, but sometimes I change it based on what's available or what's in stock. So that's hard to coordinate.
+
+Infrastructure upgrades could be a good division too. It is pretty delegatable and I rarely have extra prefabs of my own I want to liquidate. And it's rarely urgent. Also a bunch of them were half upgraded.
+
+
+[30-Jul-24 07:55 PM] archielvahr#0000
+The INF could use a level or two, so I don't have to add stretchers. SST continues to seem fine.
+
+
+[30-Jul-24 07:56 PM] .urpalhal#0000
+Ok 🫡 I will bring FABs 😊
+
+{Reactions}
+👍 
+
+[30-Jul-24 07:56 PM] archielvahr#0000
+The passive bonuses on the education buildings make them all pretty handy if we want to continue to pump up the planet 🙂
+
+
+[31-Jul-24 06:06 AM] katinga#0000
+Six days left of consumables on my EDC base, @sidepipe
+
+
+[31-Jul-24 11:18 AM] sidepipe#0000
+Yup, we’ve got you on the list for this week 😎
+
+
+[31-Jul-24 04:50 PM] archielvahr#0000
+I was sort of hoping to not start a conversation on Malahat
+
+
+[31-Jul-24 04:52 PM] archielvahr#0000
+Maybe this isn't true, but I sort of feel like less noise is better. A big back-and-forth draws more attention to the cause of the non-incumbents. I'll state my position tomorrow like 6 hr before the election starts.
+
+
+[31-Jul-24 04:52 PM] archielvahr#0000
+Like right now mast3rd3mon is just straight up trolling, so I wouldn't respond to that one
+
+
+[31-Jul-24 04:52 PM] archielvahr#0000
+I guess he can fight with Frenetic because he doesn't have an OOG tag
+
+
+[31-Jul-24 04:53 PM] archielvahr#0000
+But it looks a little bad if we wade into the mud with those two
+
+
+[31-Jul-24 04:54 PM] archielvahr#0000
+They actually both sound nuts right now so that's good, lol
+
+
+[31-Jul-24 04:57 PM] sidepipe#0000
+Yeah, makes sense. I wanted to engage a bit because I can't help but feed the trolls, but I'll stay out 😄
+
+
+[31-Jul-24 05:18 PM] sidepipe#0000
+it sure is fun to read though
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1268331929984569476/image.png?ex=68149be8&is=68134a68&hm=6fe7305abe9a52c9c852c2fb9a0337b198736c9b651806cf38e4e96bda3d1f6f&
+
+{Reactions}
+😂 (2) 
+
+[31-Jul-24 05:22 PM] akyantor#0000
+No discord relay for Malahat. 😦
+
+
+[31-Jul-24 05:23 PM] hernanduer#0000
+It's delayed I think
+
+
+[31-Jul-24 05:23 PM] hernanduer#0000
+Need more screenshots 😄
+
+
+[31-Jul-24 05:23 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-07-31_17-23-42.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-07-31_17-23-42.png
+https://images-ext-1.discordapp.net/external/F28zWy2KKLSOCubR0QLThu58fhR2mGmYHtDQgc0VSMs/http/kortham.net/temp/firefox_2024-07-31_17-23-42.png
+
+
+[31-Jul-24 05:23 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-07-31_17-23-55.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-07-31_17-23-55.png
+https://images-ext-1.discordapp.net/external/f7sIhACgUX3TsLR0b2LCg8m5TS_H1vToT7yvp4PedTU/http/kortham.net/temp/firefox_2024-07-31_17-23-55.png
+
+
+[31-Jul-24 05:24 PM] akyantor#0000
+https://tenor.com/view/thriller-michael-jackson-eating-popcorn-watching-gif-5577709
+
+{Embed}
+https://tenor.com/view/thriller-michael-jackson-eating-popcorn-watching-gif-5577709
+https://images-ext-1.discordapp.net/external/utzbxPK1cARg-0kKoFF8mnqSunu8YggtXyUjKKo-HHM/https/media.tenor.com/L8nQOHAF3VYAAAAe/thriller-michael-jackson.png
+
+
+[31-Jul-24 05:24 PM] archielvahr#0000
+oh oops
+
+
+[31-Jul-24 05:24 PM] archielvahr#0000
+I think I don't really need to get involved now, so I'll wait 12 hours
+
+
+[31-Jul-24 05:24 PM] archielvahr#0000
+I think he's just mad about Phobos so he's come to start shit on malahat
+
+{Reactions}
+👍 
+
+[31-Jul-24 05:28 PM] hernanduer#0000
+Fun fun
+
+
+[31-Jul-24 05:30 PM] shrewdsun_88540#0000
+It does seem like he’s just pissed
+
+
+[31-Jul-24 05:30 PM] shrewdsun_88540#0000
+Sorry about the quiet part; got roped in
+
+
+[31-Jul-24 05:31 PM] akyantor#0000
+Definitely got out of bed on the wrong side this morning
+
+
+[31-Jul-24 05:32 PM] akyantor#0000
+It’s not a good look suggesting that the taxes could be reduced by 50%, and repeatedly failing to suggest a single change they’d make to balance the books.
+
+
+[31-Jul-24 05:33 PM] akyantor#0000
+If it truly was the case then surely they’d be able to list 2-3 suggested changes.
+
+
+[31-Jul-24 05:40 PM] archielvahr#0000
+Heh no worries. I think it worked out well
+
+
+[31-Jul-24 05:40 PM] archielvahr#0000
+I left a nice little note, then I won't respond for a while
+
+
+[31-Jul-24 05:41 PM] archielvahr#0000
+Hopefully we will go for a triple OOG this election. That is tough to pull off
+
+
+[31-Jul-24 05:41 PM] archielvahr#0000
+Very much unlike the winner take all elections in the US
+
+
+[31-Jul-24 05:42 PM] archielvahr#0000
+It's easy to get a minority block into the parliament with this system. Then he'll make failed motions like these and we'll ignore them
+
+
+[31-Jul-24 05:42 PM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-07-31_17-42-31.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-07-31_17-42-31.png
+https://images-ext-1.discordapp.net/external/JsawiHD5ds5o8QArqj-X7pABJXK6qTaw4qkIRDe54c4/http/kortham.net/temp/firefox_2024-07-31_17-42-31.png
+
+
+[31-Jul-24 05:47 PM] shrewdsun_88540#0000
+lol that’s why he’s mad
+
+{Reactions}
+💯 
+
+[31-Jul-24 07:09 PM] shrewdsun_88540#0000
+This guy is really ticked off lol
+
+
+[31-Jul-24 08:24 PM] draconisdomini#0000
+I remember those two kicking up a fuss on Malahat previously
+
+
+[31-Jul-24 08:27 PM] archielvahr#0000
+When the currency changed previously mast3 allegedly was so upset he refused to run his buildings, and idled them all
+
+
+[31-Jul-24 08:27 PM] archielvahr#0000
+I don't really understand that logic
+
+
+[31-Jul-24 08:28 PM] archielvahr#0000
+I offered to cover his taxes too
+
+
+[31-Jul-24 08:31 PM] sidepipe#0000
+yeah, that seems like a losing move imo. stopping your 2-300k/day profit EDC production over 380/u of taxes?
+
+
+[31-Jul-24 08:32 PM] sidepipe#0000
+the math doesn't math
+
+
+[31-Jul-24 08:33 PM] archielvahr#0000
+Yeah totally. I think he said he was semi-retired or something, not exactly sure what. I mean he only has two bases so that was half his income
+
+
+[31-Jul-24 08:33 PM] archielvahr#0000
+The other one is Jeetiyu
+
+
+[01-Aug-24 07:59 AM] sidepipe#0000
+Looks like MemoryAlpha is:
+1. Still going 
+2. Doing a good job of spending any goodwill he might have had
+
+
+[01-Aug-24 08:00 AM] sidepipe#0000
+It’s really nice to see people critically engaging with his ideas though. I feel like that’s a positive
+
+
+[01-Aug-24 08:37 AM] hernanduer#0000
+Looking at the numbers Archiel posts, I don't see how it's possible for him to do anything he's talking about
+
+
+[01-Aug-24 08:38 AM] hernanduer#0000
+And comparing to jeetiya when the ratios are way more skewed is just silly.
+
+{Reactions}
+👆 
+
+[01-Aug-24 09:10 AM] archielvahr#0000
+okay posted my spiel. That'll probably be my last thing before voting starts in 7hr
+
+{Reactions}
+🫶 
+
+[01-Aug-24 03:50 PM] shrewdsun_88540#0000
+Im staying out of it this time lol
+
+
+[01-Aug-24 03:58 PM] archielvahr#0000
+I think it looks good sitting there with GTU and other non OOG tags defending
+
+
+[01-Aug-24 03:58 PM] archielvahr#0000
+so we'll let it sit there 🙂
+
+
+[01-Aug-24 03:59 PM] archielvahr#0000
+I love ogrebeef's message "Am I the only one who thinks taxes should be higher?"
+
+{Reactions}
+💪 (2) 
+
+[01-Aug-24 03:59 PM] archielvahr#0000
+lol
+
+
+[01-Aug-24 04:17 PM] sidepipe#0000
+I kinda agree with Gravy and Ogrebeef. I think it would be totally fair for govs to collect some tax revenue for themselves in the grand scheme of things - it seems unfair to expect people to work for free. But I imagine that would be a pretty unpopular opinion (and I can understand why)
+
+{Reactions}
+💯 
+
+[01-Aug-24 04:19 PM] archielvahr#0000
+Yeah. If someone is gonna claim to work for free, then they win the election, so as a result, everyone does it for free 🤷‍♂️
+
+
+[01-Aug-24 04:19 PM] sidepipe#0000
+I'm not saying we should do that on Malahat. But if a third-party gov on a planet I was on suggested that, I wouldn't be upset
+
+
+[01-Aug-24 04:20 PM] sidepipe#0000
+anyway, the election is officially open! guess we'll see how things go 🙂
+
+
+[01-Aug-24 04:29 PM] akyantor#0000
+If you assume that a planet pays out the market-ish price for any upkeep goods, then the margin between that price and how much you actually pay is a kind of recompense for the effort made to procure and deliver them. At least in my head.
+
+
+[01-Aug-24 04:31 PM] akyantor#0000
+That works both for a governor who supply’s them, or if it’s via an open submission scheme
+
+
+[01-Aug-24 04:31 PM] akyantor#0000
+If someone is unhappy at the size of that margin then go drive the market price down…
+
+
+[01-Aug-24 04:38 PM] akyantor#0000
+That said, probably works better on a planet with less complex needs than somewhere like Malahat
+
+
+[01-Aug-24 04:56 PM] draconisdomini#0000
+I have the Nascent material reimbursement costs set a little below the CX price, so I'm still making a profit, just less than if I were selling on the CX.  Nascent is much simpler though, being almost all PIO
+
+
+[01-Aug-24 05:00 PM] akyantor#0000
+Ditto on WU, but with mostly SET
+
+
+[01-Aug-24 05:51 PM] .urpalhal#0000
+ok I need to bring 15 BBH, 60 BDE, and 300 BTA to Malahat
+
+
+[01-Aug-24 05:51 PM] .urpalhal#0000
+since I'll have more space @archielvahr let me know what else I need to take to Malahat
+
+
+[01-Aug-24 05:54 PM] archielvahr#0000
+Yeah I don't think I have anything specific in mind. Other than those buildings. We'll wait til after the election for the upgrades 😛
+
+
+[01-Aug-24 06:40 PM] sidepipe#0000
+so... how much DW do you need at Malahat? 😄
+
+
+[01-Aug-24 06:40 PM] sidepipe#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1268714937912393839/image.png?ex=6814af1c&is=68135d9c&hm=b51671d721e12347790e6bf243730d7e7ef361c337698d2c44ca96e17a1468d0&
+
+
+[01-Aug-24 06:41 PM] archielvahr#0000
+Heh. I think I have about 10k there right now.
+
+
+[01-Aug-24 06:42 PM] archielvahr#0000
+It goes into everything but I’d have to check my sheet for how much it uses a week probably only a couple 1000
+
+
+[01-Aug-24 06:42 PM] archielvahr#0000
+So… up to you how much you want to bring
+
+
+[01-Aug-24 06:46 PM] sidepipe#0000
+Another 10k sound good?
+
+
+[01-Aug-24 06:46 PM] sidepipe#0000
+I can send you a contract for it and add it to the sheet. I think you should have gotten an access request from me
+
+
+[01-Aug-24 07:15 PM] archielvahr#0000
+Sure
+
+
+[01-Aug-24 07:15 PM] archielvahr#0000
+Yup I did accept that
+
+
+[01-Aug-24 07:18 PM] sidepipe#0000
+oh, i checked with the wrong google account
+
+
+[02-Aug-24 09:10 AM] akyantor#0000
+Top tip... if you want to see the chat on a planet not replayed onto discord you can do so using the [FIO API page](https://doc.fnar.net/#/). *The Malahat chat was unncessarily unhinged last night, focused way more on history than anything looking forward. *
+
+
+[02-Aug-24 12:24 PM] sidepipe#0000
+marchioro for the win on Malahat
+
+
+[02-Aug-24 12:56 PM] archielvahr#0000
+ah maybe lost my cool
+
+
+[02-Aug-24 12:56 PM] archielvahr#0000
+but maybe people appreciate the honestyy
+
+
+[02-Aug-24 12:57 PM] sidepipe#0000
+dude, if losing your cool after being yelled at for 3 days straight makes you a bad governor, we should all find different games to play
+
+{Reactions}
+😂 
+
+[02-Aug-24 01:04 PM] archielvahr#0000
+I mean I kinda just want to let him have it then open 5 more IDC bases there and see how they deal with it
+
+{Reactions}
+👍 
+
+[02-Aug-24 01:04 PM] archielvahr#0000
+It's not a money maker, and it's not really fun right now
+
+
+[02-Aug-24 01:10 PM] akyantor#0000
+I’ve an unused permit 🤔
+
+
+[02-Aug-24 01:12 PM] akyantor#0000
+Just don’t love the obligation of such a large debt
+
+
+[02-Aug-24 01:19 PM] shrewdsun_88540#0000
+As much as I want you to keep it, there is something to be said about not losing your sanity with these people
+
+
+[02-Aug-24 01:20 PM] shrewdsun_88540#0000
+But I don’t think he’s winning much sympathy right now
+
+
+[02-Aug-24 01:20 PM] archielvahr#0000
+I might just stop reading it. But it’s really hard to stop reading.
+
+
+[02-Aug-24 01:21 PM] archielvahr#0000
+Well, the Malahat bases aren’t really organized like a loan. You just have to not quit the game immediately after taking all the materials. 😁
+
+
+[02-Aug-24 01:21 PM] shrewdsun_88540#0000
+I know, it’s kinda of a train wreck. I’m both having fun engaging with him but I’m losing so much of my time over this nonsense
+
+
+[02-Aug-24 01:21 PM] .urpalhal#0000
+you wanna know the best part
+
+
+[02-Aug-24 01:22 PM] .urpalhal#0000
+SEND has two memebers MemoryAlpha and Ogerbeef
+
+
+[02-Aug-24 01:22 PM] .urpalhal#0000
+Orgerbeef says taxes should be higher and disagrees with just about everything that comes out of MemoryOmega's mouth
+
+
+[02-Aug-24 01:24 PM] sidepipe#0000
+what? I thought once you were in a corp, you all magically agreed on everything!
+
+
+[02-Aug-24 01:24 PM] sidepipe#0000
+that's how it works here, after all
+
+
+[02-Aug-24 01:25 PM] akyantor#0000
+Did you not get the OOG mind meld?
+
+
+[02-Aug-24 01:25 PM] akyantor#0000
+Quick get him!
+
+
+[02-Aug-24 01:26 PM] .urpalhal#0000
+:mombonk:
+
+
+[02-Aug-24 01:26 PM] shrewdsun_88540#0000
+Im just a OOG slave , paying my dues un Malahat
+
+
+[02-Aug-24 02:23 PM] akyantor#0000
+Good to know. Sign me up. 😉
+
+
+[02-Aug-24 02:24 PM] archielvahr#0000
+Just request these from allocater: https://discord.com/channels/854795108720443393/1238067564396150805/1265400929688223768 Make 1 Cm, 4 HB5, 20 SL. Then sell him the IDC at 5000 when you get it (like every 100 or something)
+
+{Reactions}
+💯 
+
+[02-Aug-24 03:47 PM] akyantor#0000
+@allocater Do you have stock to do this now? Would it possible to convert a float from AIC to CIS to enable me to pay the production taxes?
+
+
+[02-Aug-24 03:47 PM] archielvahr#0000
+I can do the currency conversion 1:1, just send a pair of contracts
+
+
+[02-Aug-24 03:51 PM] akyantor#0000
+Sent 80k AIC for 80k CIS to get me started.
+
+
+[02-Aug-24 05:57 PM] sidepipe#0000
+last election vs this election on malahat
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1269066655179345972/image.png?ex=6814a52c&is=681353ac&hm=029ac46ae5e61d676b351fc8f69960f2a65ecdc7d6be645452296442b62e7ed9&
+https://cdn.discordapp.com/attachments/1238067564396150805/1269066655435067553/image.png?ex=6814a52c&is=681353ac&hm=cb2bbb7ae2df009cb65191091f4af30f1cc71f28691c4eb26aa29370b084bc8c&
+
+
+[03-Aug-24 07:01 AM] katinga#0000
+@sidepipe how long on those medical kits?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1269263988680560745/image.png?ex=6814b434&is=681362b4&hm=996446ebc57c4befd23d161576e439e2fe68891668a199004349f4d1cbb1e17a&
+
+
+[03-Aug-24 07:10 AM] sidepipe#0000
+Sent, just missed it on the first go. Too many contracts
+
+
+[03-Aug-24 11:16 PM] allocater#0000
+Yes, let me know when the request is on the LM, I will accept it all.
+
+
+[04-Aug-24 04:28 AM] akyantor#0000
+Thanks. I've placed all the orders on the local market.
+
+
+[04-Aug-24 05:49 AM] akyantor#0000
+Oh, for the love of multi-material contracts... how much easier would it be. :S
+
+{Reactions}
+💯 
+
+[04-Aug-24 06:04 AM] akyantor#0000
+Does it make sense to wait for the MED & MEA before building the production facilitaties?
+
+
+[04-Aug-24 06:04 AM] akyantor#0000
+I've all of the contstruction materials, so have built the base and habs
+
+
+[04-Aug-24 06:30 AM] allocater#0000
+without it, it will probably be 50% efficiency and not profitable. MEA will arrive in ~24h
+
+
+[04-Aug-24 06:30 AM] akyantor#0000
+np, just as well I asked.
+
+
+[04-Aug-24 06:34 AM] akyantor#0000
+And one last question about the arrangement. The first 50 days of consumables are provided, are they re-supplied, or do I refill them? *Just so I know if I should be reserving some of the income to resupply.*
+
+
+[04-Aug-24 06:35 AM] allocater#0000
+the resupply will come every 50d and the repair supply every 90d 🙂
+
+
+[04-Aug-24 06:36 AM] akyantor#0000
+Ok, cool. Didn't want to get carried away using the income and discover that I couldn't resupply. 😛
+
+
+[04-Aug-24 06:36 AM] allocater#0000
+of course you can quit anytime if you return the demolish refunds 😄
+
+
+[04-Aug-24 06:36 AM] akyantor#0000
+That's fine. Thanks
+
+
+[04-Aug-24 09:36 AM] allocater#0000
+actually, if you request 300 MEA you can start the base today
+
+
+[04-Aug-24 09:37 AM] akyantor#0000
+Sure, let me create a new local market contract
+
+
+[04-Aug-24 09:38 AM] akyantor#0000
+done
+
+
+[04-Aug-24 09:38 AM] akyantor#0000
+Just waiting for sidepipe to fulfil the MED contract, and then I'll get production going.
+
+{Reactions}
+📈 😅 
+
+[04-Aug-24 09:52 AM] sidepipe#0000
+done. sorry, got sidetracked on the Malahat ledger!
+
+
+[04-Aug-24 09:53 AM] akyantor#0000
+Np
+
+
+[04-Aug-24 09:55 AM] akyantor#0000
+And we're cooking.
+
+
+[04-Aug-24 09:57 AM] akyantor#0000
+Ergh, won't be at full speed until the pop fills out, have a good chunk but not all of the workforce required
+
+
+[05-Aug-24 02:52 AM] akyantor#0000
+allocator: Should I terminate the existing MEA contract which is for 1,400, and send a new one for 1,100? *To reflect the initial 300 you've already provided.*
+
+
+[05-Aug-24 10:49 AM] allocater#0000
+yes that would be great for sync and book-keeping
+
+
+[07-Aug-24 12:54 PM] archielvahr#0000
+Sorry @.urpalhal  and @sidepipe , I was late passing a workforce program on Malahat. If you could vote in the next handful of hours it would be helpful so I can start it before the next POPI 😬
+
+{Reactions}
+✅ 🙏 
+
+[07-Aug-24 01:09 PM] sidepipe#0000
+Voted, paid, started 🙂
+
+
+[07-Aug-24 01:13 PM] archielvahr#0000
+Thank you!
+
+
+[08-Aug-24 02:21 PM] archielvahr#0000
+I have a Malahat survey I will share publicly, shortly
+
+
+[08-Aug-24 02:21 PM] archielvahr#0000
+https://forms.gle/5DqyF4vUJcTExqri6
+
+{Embed}
+https://forms.gle/5DqyF4vUJcTExqri6
+Malahat Survey
+Share your thoughts on how Malahat is run. Many questions have an "Other" option, so feel free to be creative in those items. There's also a long-form comment box at the bottom of the form. Thank you for your feedback! This form does not collect names or emails, so if you want to include that, add it to the comment form.
+https://images-ext-1.discordapp.net/external/c_rcIjOIKXeMZ2qeGxWms025HKAXyGqZCda57wRmrFs/https/lh6.googleusercontent.com/VALF9XxEJwKzK6mY3Ll92nVZMydarEUDe_L0WBa6UA4smWPXvgUOvit8-AbLDE9H9e2_Lgs80xs%3Dw1200-h630-p
+
+{Reactions}
+🗳️ 
+
+[08-Aug-24 02:21 PM] archielvahr#0000
+But first let me know if there is anything I should change
+
+
+[08-Aug-24 02:30 PM] archielvahr#0000
+There's maybe one snarky question in there, not sure if it's too snarky 😄
+
+
+[08-Aug-24 02:41 PM] sidepipe#0000
+I can't figure out which one is the snarky one, so it must not be too snarky 😄
+
+{Reactions}
+👆 
+
+[08-Aug-24 02:44 PM] archielvahr#0000
+hahaha it's "How upset would you be if the majority of people chose a different currency than you chose, and then the planet adopted that currency instead of the one you wanted?"
+
+
+[08-Aug-24 02:45 PM] archielvahr#0000
+I was gonna make 1-5.. where 1 is "I would start a harassment campaign"
+
+{Reactions}
+😂 
+
+[08-Aug-24 02:45 PM] sidepipe#0000
+i think masterdemon would vote -3
+
+
+[08-Aug-24 02:47 PM] .urpalhal#0000
+Good soup right there
+
+
+[08-Aug-24 02:48 PM] sidepipe#0000
+But I feel like this is a good thing to do anyway, just to get an idea of where people stand
+
+
+[08-Aug-24 02:52 PM] archielvahr#0000
+Hehehehe 😄
+
+
+[08-Aug-24 02:52 PM] archielvahr#0000
+Yeah, I think the opinons of the very vocal folks doesn't necessarily match the majority
+
+{Reactions}
+👍 
+
+[08-Aug-24 02:52 PM] archielvahr#0000
+And either way, when you've got some numbers on the books, you can point to that as justiication
+
+
+[08-Aug-24 03:26 PM] archielvahr#0000
+messages away, thank you all 😊
+
+
+[09-Aug-24 04:19 PM] sidepipe#0000
+new government time!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1271578731030380615/image.png?ex=68148e3a&is=68133cba&hm=1eb5412a41ea6062badc11b1dc34f171abacbf7c8a48cc1569c8314f867ad73e&
+
+
+[09-Aug-24 04:20 PM] sidepipe#0000
+can't wait to vote no on all sorts of new and exciting tax structures
+
+
+[09-Aug-24 04:23 PM] archielvahr#0000
+😄
+
+
+[09-Aug-24 04:24 PM] archielvahr#0000
+ooh I see there was a last minute vote swap to mast3
+
+
+[09-Aug-24 04:24 PM] archielvahr#0000
+didn't matter though
+
+
+[09-Aug-24 04:26 PM] sidepipe#0000
+oh yeah, so there was. probably trying to make sure they had more votes than Hal
+
+
+[09-Aug-24 04:27 PM] sidepipe#0000
+that's probably a good thing to keep in mind for next time. eventhough i kinda don't like the optics of switching votes last minute
+
+
+[09-Aug-24 11:28 PM] archielvahr#0000
+At your leisure, there is a payout for the remaining POPI balances. Exciting to have it all at 0
+
+
+[09-Aug-24 11:29 PM] archielvahr#0000
+I expect memoryalpha will ignore it so it'll take the full day
+
+
+[09-Aug-24 11:30 PM] archielvahr#0000
+Then we can go ahead with the pending uprgade we were talking earlier, Hal.
+
+
+[10-Aug-24 12:41 AM] .urpalhal#0000
+Ok 👍
+
+
+[10-Aug-24 12:41 AM] .urpalhal#0000
+I’ll stop selling all my fabs
+
+
+[10-Aug-24 12:51 AM] .urpalhal#0000
+Is there anywhere to see how much each level of POPI buildings cost to build?
+
+
+[10-Aug-24 09:30 AM] archielvahr#0000
+Hmm, well going over everything we've got. The INF upgrade is almost done:
+
+
+[10-Aug-24 09:30 AM] archielvahr#0000
+http://kortham.net/temp/firefox_2024-08-10_09-30-07.png
+
+{Embed}
+http://kortham.net/temp/firefox_2024-08-10_09-30-07.png
+https://images-ext-1.discordapp.net/external/8GN7Uz-CcAjyupkcXgrOeaNr3T610i7Lxa4vS_IsMmY/http/kortham.net/temp/firefox_2024-08-10_09-30-07.png
+
+
+[10-Aug-24 09:31 AM] archielvahr#0000
+We could add a total of 3 levels to the INF and that would stop using TUB. I don't really think that's a super high priority
+
+
+[10-Aug-24 09:33 AM] archielvahr#0000
+hum I don't really think I see anything else that needs an upgrade. I thought I had a different conclusion last time I looked
+
+
+[11-Aug-24 02:03 AM] akyantor#0000
+@allocater I accidently did the previous contract the wrong way around (buy rather than sell IDC). Sent another contract to reverse it, and sell the originally intended amount. :S
+
+
+[11-Aug-24 02:03 AM] allocater#0000
+Nice, but that contract was about RAT 😄
+
+
+[11-Aug-24 02:05 AM] akyantor#0000
+Doh.
+
+
+[11-Aug-24 07:54 PM] draconisdomini#0000
+@sidepipe I was on vacation last week so I missed the consumables contracts
+
+
+[11-Aug-24 07:54 PM] sidepipe#0000
+no worries, will resend 🙂
+
+
+[11-Aug-24 07:54 PM] draconisdomini#0000
+Thanks!
+
+
+[14-Aug-24 12:00 AM] archielvahr#0000
+If anyone has anything to throw into the Virtual Reality Theatre, that'd be great. Seems like I'm out
+
+
+[15-Aug-24 12:43 PM] melon164#0000
+Can I offload these to anyone?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1273698593840173118/image.png?ex=68150440&is=6813b2c0&hm=61ed5d94414814e7c1db2df5b836e3f959516476ffa662ec7a2221ddd1c4dc6a&
+
+{Reactions}
+😱 
+
+[15-Aug-24 12:43 PM] allocater#0000
+you mean store or convert to money? In both cases, yes 😄
+
+
+[15-Aug-24 12:45 PM] melon164#0000
+Convert to money
+
+
+[15-Aug-24 12:45 PM] melon164#0000
+wasn't planning on going out to Malahat for another few weeks
+
+
+[15-Aug-24 12:46 PM] melon164#0000
+But we need a broker 🤔
+
+
+[15-Aug-24 12:46 PM] allocater#0000
+in that case @sidepipe can request them
+
+
+[15-Aug-24 12:46 PM] sidepipe#0000
+Gosh, if only we knew someone on Malahat who did that sort of thing 😛
+
+
+[15-Aug-24 12:47 PM] sidepipe#0000
+I can buy them off @melon164 at MM price and pass them on to allocater 🙂
+
+
+[15-Aug-24 12:47 PM] sidepipe#0000
+Do you want everything in AIC?
+
+
+[15-Aug-24 01:15 PM] melon164#0000
+yes please
+
+
+[15-Aug-24 01:34 PM] archielvahr#0000
+We have 1k engineers and 2k scientists available for work
+
+{Reactions}
+😮 
+
+[15-Aug-24 01:36 PM] allocater#0000
+and that was before the new growth
+
+
+[15-Aug-24 02:48 PM] sidepipe#0000
+We should be adding another 2 EDC bases soon 😎
+
+{Reactions}
+🎉 
+
+[15-Aug-24 02:49 PM] sidepipe#0000
+I’ll send you the contracts once I’m back at my PC 🙂
+
+{Reactions}
+👍 
+
+[16-Aug-24 03:21 AM] melon164#0000
+Er, you sent me a contract at ANT 😕
+
+
+[16-Aug-24 06:31 AM] sidepipe#0000
+Ugh, me and contracts aren’t friends right now - will resend
+
+
+[16-Aug-24 06:38 AM] sidepipe#0000
+Resent!
+
+
+[16-Aug-24 09:36 AM] allocater#0000
+*trailervoice* In a world... without piracy... a small courier ship...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1274013935141519402/image.png?ex=6814d870&is=681386f0&hm=bd3d1343149bcc9de2439fadb45bb74d3ba84123ecfce00e46afdba046a38eee&
+
+{Reactions}
+🤯 (4) 💵 (4) 
+
+[16-Aug-24 09:39 AM] sidepipe#0000
+90M in one ship 😄
+
+
+[16-Aug-24 09:40 AM] marat_sh#0000
+Not gonna lie IDC feels like a money cheat...
+
+
+[16-Aug-24 09:41 AM] allocater#0000
+That's why more people have to do it, so it declines in profitability
+
+
+[16-Aug-24 09:42 AM] allocater#0000
+all the profit should shift to r-fab and consumables producers
+
+
+[16-Aug-24 09:42 AM] marat_sh#0000
+it's at MM
+
+
+[16-Aug-24 09:42 AM] sidepipe#0000
+yeah, but more people doing it drives up the price of the inputs
+
+
+[16-Aug-24 09:42 AM] marat_sh#0000
+I see what you mean
+
+
+[16-Aug-24 09:42 AM] allocater#0000
+if the r-fab and consumable producers take more of the pie, the passive IDC bases will get less
+
+
+[16-Aug-24 09:42 AM] marat_sh#0000
+Still feels cheaty
+
+
+[16-Aug-24 09:44 AM] sidepipe#0000
+I'm assuming they'll probably nerf the MMs in the future again too. And I get what you're saying - it's an imperfect solution for increasing the demand for goods that otherwise don't have a huge demand
+
+
+[16-Aug-24 09:45 AM] marat_sh#0000
+I guess gov contracts are money cheats IRL as well
+
+
+[16-Aug-24 09:46 AM] sidepipe#0000
+I think part of the problem is that there's very few ENG / SCI products that have a broad use in the economy, at least from my (limited) knowledge. There's some shipbuilding and electronics, but the playerbase is small enough that the demand for those is pretty infrequent. And there's HQ upgrades, of course
+
+
+[16-Aug-24 09:47 AM] sidepipe#0000
+We've probably put 100s of millions of bank money into EDC and IDC. Eventhough the returns are high, the costs are also high, so the ROI on most of those bases is 50-60 days. There could be investments with a much better ROI, but there's not many sectors of the economy you can sink that kind of money into without absolutely tanking returns
+
+
+[16-Aug-24 09:49 AM] marat_sh#0000
+I guess the game is still in early access stage. But free passive money makers shouldn't exist in economic game no matter the reasons
+
+
+[16-Aug-24 09:50 AM] sidepipe#0000
+I'm guessing by free you mean risk-free? 😄
+
+
+[16-Aug-24 09:51 AM] marat_sh#0000
+yeah risk free
+
+
+[16-Aug-24 09:51 AM] allocater#0000
+it turns FIM and R-fabs into money. It's so profitable because people keep selling FIM and r-fabs for so cheap.
+
+
+[16-Aug-24 09:53 AM] allocater#0000
+there is some progress, EDC bases make 200k/day and farmbases used to be 10k/day. Now it is 200k vs 50k
+
+
+[16-Aug-24 09:53 AM] allocater#0000
+at some point inflation will make it so every base makes 100k/day
+
+
+[16-Aug-24 09:53 AM] marat_sh#0000
+if everyone is rich, nobody is
+
+
+[16-Aug-24 09:54 AM] allocater#0000
+yeah, it will just be a more balanced economy
+
+
+[16-Aug-24 09:55 AM] allocater#0000
+people won't even build 50k/day bases anymore, because 50k is not worth much
+
+
+[16-Aug-24 09:55 AM] sidepipe#0000
+I think it would probably help if they raised the MMs on some of the goods like bfabs as well. But in general I feel like people like to provide downward pressure on most prices in the game
+
+
+[16-Aug-24 09:56 AM] sidepipe#0000
+...myself included 😄
+
+
+[16-Aug-24 09:56 AM] marat_sh#0000
+I guess the time scale for ROI changed since old times. Like I am a new player and ROI > 15 d not worth producing
+
+
+[16-Aug-24 09:57 AM] shrewdsun_88540#0000
+But that’s because you are new and poor
+
+
+[16-Aug-24 09:57 AM] shrewdsun_88540#0000
+At some point there is also saturation if everyone does the same thing. The economy self balances, it just lags a bit
+
+
+[16-Aug-24 09:58 AM] sidepipe#0000
+well, I think a lot of the lower ROI options are quite cheap, as well
+
+
+[16-Aug-24 09:58 AM] sidepipe#0000
+so it's not as much worth it for more wealthy players because you're getting a 15day ROI on a 1M investment, but you have 50M in the bank
+
+
+[16-Aug-24 09:59 AM] sidepipe#0000
+(just made up numbers)
+
+
+[16-Aug-24 10:00 AM] marat_sh#0000
+Yeah, on large scale it matters less and less
+
+
+[16-Aug-24 10:00 AM] sidepipe#0000
+heck, i've been doing FX stuff for a 1.5% ish return just because I have some idle money
+
+
+[16-Aug-24 10:04 AM] sidepipe#0000
+anyway, I 100% agree with you that there shouldn't be any risk-free money makers. I think it'd be super interesting if the game had a central bank instead for a small fixed return like treasury bills in real life. I just think that the one redeeming feature of EDC/IDC is that it increases demand for rfabs, fim etc which impact big portions of the economy
+
+
+[16-Aug-24 10:04 AM] sidepipe#0000
+and i personally think that would work better if they nerfed EDC and make IDC more profitable to drive demand for the really high tier goods, since those themselves require more bases to make
+
+
+[16-Aug-24 10:07 AM] sidepipe#0000
+(i also clearly benefit a lot from edc and idc, so take what I say with as many grains of salt as needed 😄 )
+
+
+[16-Aug-24 10:08 AM] marat_sh#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1274021887000711178/image.png?ex=6814dfd8&is=68138e58&hm=f89b7c80b0300035bfad70298c3f33173d4ecddae2215e13934b96b40e328974&
+
+
+[16-Aug-24 10:08 AM] marat_sh#0000
+make it like this
+
+
+[16-Aug-24 10:08 AM] sidepipe#0000
+just like real life 😄
+
+
+[16-Aug-24 10:29 AM] shrewdsun_88540#0000
+Agreed, i trickles all the way down to keep those bases fed
+
+
+[17-Aug-24 03:22 AM] melon164#0000
+They could go a long way just by increasing the consumption rate of some of the SCI consumables
+
+
+[17-Aug-24 08:57 AM] hernanduer#0000
+Seriously, the fact LC are consumed at like .1/100/month is insane
+
+
+[18-Aug-24 03:34 PM] melon164#0000
+Lol at the survey respondant who thought they were paying a 40% tax rate 😂
+
+{Reactions}
+🤣 (3) 
+
+[18-Aug-24 03:40 PM] sidepipe#0000
+That must have been memory alpha 😁
+
+
+[21-Aug-24 01:39 PM] archielvahr#0000
+I'm planning on applying this tax cut on Malahat, now that we seem to have a very solid surplus. Income actually has been up 20% in the last month
+
+
+[21-Aug-24 01:40 PM] archielvahr#0000
+Now it's at 5.3m per week. Expenses should be around 2.4m
+
+
+[21-Aug-24 01:40 PM] archielvahr#0000
+http://kortham.net/temp/firefox_yPm4U771f3.png
+
+{Embed}
+http://kortham.net/temp/firefox_yPm4U771f3.png
+https://images-ext-1.discordapp.net/external/z0umDAyTcmBSE-5pS19N0zqqinMd8KvAnyiCcfnQwQw/http/kortham.net/temp/firefox_yPm4U771f3.png
+
+
+[21-Aug-24 01:40 PM] archielvahr#0000
+So that's about a 20% tax cut, a little more for engineers. Should still have a solid surplus
+
+
+[21-Aug-24 01:40 PM] .urpalhal#0000
+🙌🏻
+
+
+[21-Aug-24 01:40 PM] archielvahr#0000
+and we can also brag that we are 1/2 to 1/3rd the tax rate of Rise's planets
+
+
+[21-Aug-24 01:40 PM] sidepipe#0000
+oh man, now that's a good talking point 😄
+
+
+[21-Aug-24 01:40 PM] archielvahr#0000
+http://kortham.net/temp/firefox_rxPpQ3vxEC.png
+
+{Embed}
+http://kortham.net/temp/firefox_rxPpQ3vxEC.png
+https://images-ext-1.discordapp.net/external/F-ssMs-VuPPAPCdRXW_HdQP5TajpygveINvGkAS20Ow/http/kortham.net/temp/firefox_rxPpQ3vxEC.png
+
+
+[21-Aug-24 01:41 PM] sidepipe#0000
+I'm in favor 🙂
+
+
+[21-Aug-24 01:41 PM] archielvahr#0000
+Which tend to be 800 / 1200 or 1400 for scientists
+
+
+[21-Aug-24 01:41 PM] archielvahr#0000
+which is why I wanted to hit 400 😄
+
+
+[21-Aug-24 01:42 PM] sidepipe#0000
+do you think MemoryAlpha will vote yes? 😄
+
+
+[21-Aug-24 01:45 PM] allocater#0000
+300 would be a nicer rounder number 😄
+
+
+[21-Aug-24 01:49 PM] archielvahr#0000
+I'm not sure if MemoryAlpha is just going to continue protest-abstaining to slow things down or not
+
+
+[21-Aug-24 01:50 PM] archielvahr#0000
+I was eyeballing the math to keep the ratios similar to EDC vs. IDC taxes. (although I think we want to encourage IDC because scientists are currently easier than engineers)
+
+
+[21-Aug-24 01:50 PM] archielvahr#0000
+once you hit scientist, you can't learn anything else. you reached the peak of your career
+
+
+[21-Aug-24 01:52 PM] allocater#0000
+do ENG have a long term stable future or will they go into decline again after the TEC fall below the SCI?
+
+
+[21-Aug-24 01:53 PM] allocater#0000
+then we should indeed tax ENG a bit more because they are like a "pop-valley"
+
+
+[21-Aug-24 01:53 PM] archielvahr#0000
+Yeah I dropped Techs because I want more people to do tech bases. I don't really think people make decisions like that.. esp for tech bases on an electronics planet. No one wants SEs.
+
+
+[21-Aug-24 01:54 PM] allocater#0000
+you mean SD?
+
+{Reactions}
+👍 
+
+[21-Aug-24 01:54 PM] archielvahr#0000
+It will kind of continue to be a fight. Since when they are happy they will turn from ENGs to SCIs.
+
+
+[21-Aug-24 01:54 PM] archielvahr#0000
+ah yeah, yep
+
+
+[21-Aug-24 01:54 PM] allocater#0000
+ENG also cost more because they need unemployed TEC to be sustained
+
+
+[21-Aug-24 01:55 PM] archielvahr#0000
+Yeah
+
+
+[21-Aug-24 01:55 PM] allocater#0000
+that can be added to their tax rate
+
+
+[21-Aug-24 01:56 PM] archielvahr#0000
+Yeaaah
+
+
+[21-Aug-24 01:56 PM] archielvahr#0000
+well maybe too late now, already made the motion 😛
+
+
+[21-Aug-24 01:56 PM] archielvahr#0000
+But next time
+
+{Reactions}
+👍 
+
+[21-Aug-24 01:56 PM] archielvahr#0000
+And I might also make a proclamation to try to attract more tech bases again. That worked pretty well, except for the loan to Hazzaahh
+
+
+[21-Aug-24 02:44 PM] shrewdsun_88540#0000
+Through Shrewdbank, I know a couple of new players that would possibly be interested in having a sponsored bases. Let me know if you want me to reach out to them
+
+
+[21-Aug-24 03:03 PM] archielvahr#0000
+Hm so if they want a sponsored tech base, the options are kinda: 12 labs (840 techs) or 16 SD, (800 techs). In both cases I don't really care what they make. For similar setups where I provide everything I pay like $200k/w 
+
+For a random new player it maybe makes sense for me to subsidize construction and just leave them to it.
+
+
+[24-Aug-24 05:17 AM] akyantor#0000
+Anyone have 1 unit of an upkeep good I can put into the popi on malahat? I've a faction mission, so want to get my 5 rep. 🙂
+
+
+[24-Aug-24 10:41 AM] archielvahr#0000
+hehe I can send you a DW
+
+
+[24-Aug-24 10:47 AM] akyantor#0000
+Thanks
+
+
+[24-Aug-24 10:47 AM] akyantor#0000
+I now realise I could probably have just done that
+
+
+[24-Aug-24 10:47 AM] akyantor#0000
+Doh
+
+
+[26-Aug-24 02:04 PM] akyantor#0000
+https://com.prosperousuniverse.com/t/release-notes-maintenance-2024-03/6565
+IDC / EDC - MM price reduction
+
+
+[26-Aug-24 02:04 PM] akyantor#0000
+IDC 16200 → 15300
+EDC 11500 → 11100
+
+{Reactions}
+😮 
+
+[26-Aug-24 02:06 PM] marat_sh#0000
+Fuel at 18 👀
+
+
+[26-Aug-24 02:08 PM] archielvahr#0000
+woah that wasn't in the blog
+
+
+[26-Aug-24 02:08 PM] archielvahr#0000
+wow tons of MM changes in there
+
+
+[26-Aug-24 02:09 PM] akyantor#0000
+Yeah, quite a large set of changes, effective in september.
+
+
+[26-Aug-24 02:09 PM] marat_sh#0000
+I guess there will be a huge dump of IDCs
+
+
+[26-Aug-24 02:10 PM] allocater#0000
+sell everything!
+
+
+[26-Aug-24 02:10 PM] archielvahr#0000
+Reminder to sell before the patch!
+
+
+[26-Aug-24 02:10 PM] archielvahr#0000
+yeah haha
+
+
+[26-Aug-24 02:10 PM] archielvahr#0000
+Don't be stuck with 1000 IDC in transit anywhere
+
+
+[26-Aug-24 02:10 PM] akyantor#0000
+I'd suggest setting a day for everyone to trade for a final shipment to the CX prior to the change.
+
+
+[26-Aug-24 02:11 PM] akyantor#0000
+For those with sponsored bases
+
+
+[26-Aug-24 02:13 PM] archielvahr#0000
+Will CC be the new market maker meta??
+
+
+[26-Aug-24 02:13 PM] akyantor#0000
+That's a darn sight harder to make that IDC/EDC. 😛
+
+
+[26-Aug-24 02:14 PM] marat_sh#0000
+Is that what it's like to be an inside trader 😅  (even though info publicly available)
+
+
+[26-Aug-24 02:14 PM] shrewdsun_88540#0000
+yeah was looking throught it to see what are the new opportunities
+
+
+[26-Aug-24 02:15 PM] akyantor#0000
+SF going up to 18 isn't nothing either... we hit the MM quite a bit in the last week. Will potentially make SF more profitable
+
+
+[26-Aug-24 02:15 PM] archielvahr#0000
+Pretty small boost to CBL. Interesting how big the boost to FFC is...
+
+
+[26-Aug-24 02:16 PM] allocater#0000
+that cbl boost got the profit of a base from 80k to 300k 😮
+
+
+[26-Aug-24 02:16 PM] shrewdsun_88540#0000
+what are the odds those things are going to be used for gates and the want to start encouraging production
+
+{Reactions}
+🧠 
+
+[26-Aug-24 02:17 PM] akyantor#0000
+https://tenor.com/btkMO.gif
+
+{Embed}
+https://tenor.com/view/3d-chess-star-trek-tng-chess-data-gif-19345404
+https://images-ext-1.discordapp.net/external/gtxapSeEuE557nxzbkACEWHZ7Lmr9MrWIzMG2blM1Fo/https/media.tenor.com/QRGtsC_tf_oAAAAe/3d-chess-star-trek.png
+
+
+[26-Aug-24 02:17 PM] allocater#0000
+I am pumping LI prices up to 1600
+
+
+[26-Aug-24 02:17 PM] allocater#0000
+get the LI mines running! 😄
+
+
+[26-Aug-24 02:17 PM] archielvahr#0000
+I suspect the new fuel type happens in a REF too. So the SF change might tie into that nicely
+
+
+[26-Aug-24 02:18 PM] marat_sh#0000
+imagine if it would use CBL with other element for fuel gates
+
+
+[26-Aug-24 02:19 PM] shrewdsun_88540#0000
+Seeing what on that list, my going theory is that its gate things
+
+
+[26-Aug-24 02:19 PM] marat_sh#0000
+Just a few days ago I was talking to someone how Li will be good in a future
+
+
+[26-Aug-24 02:19 PM] marat_sh#0000
+😅
+
+
+[26-Aug-24 02:20 PM] shrewdsun_88540#0000
+NV1/2, CBL/CBM
+
+
+[26-Aug-24 02:22 PM] shrewdsun_88540#0000
+How much of a gamble would it be to try to setup some of those things,.. worst thing than can happen is it’s sold to mm. Best case it’s a stockpile ready to go
+
+
+[26-Aug-24 02:23 PM] allocater#0000
+have to math it, but I think NV1/2 is still not profitable at that MM. But CBL/M is.
+
+
+[26-Aug-24 02:24 PM] archielvahr#0000
+You mean this lithium mine? 😄
+
+
+[26-Aug-24 02:24 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1277710290477125713/firefox_qMrX1ntnNQ.png?ex=68151bef&is=6813ca6f&hm=9085807b0e4eafbec8aa82e92d147e82209da09f6008d6ca4818b583c7812384&
+
+{Reactions}
+🤣 
+
+[26-Aug-24 02:26 PM] archielvahr#0000
+I do have a lot of HCC also just laying around
+
+
+[26-Aug-24 02:26 PM] archielvahr#0000
+22,000 HCC 😆
+
+{Reactions}
+🤑 
+
+[26-Aug-24 02:36 PM] sidepipe#0000
+I think our EDC operations will still be profitable until 9800
+
+
+[26-Aug-24 02:39 PM] allocater#0000
+breakeven is 6000 or something
+
+
+[26-Aug-24 02:40 PM] allocater#0000
+at that's still 50k/day for the operator
+
+
+[26-Aug-24 07:48 PM] hernanduer#0000
+FFC might actually be a pretty decent route, curious on those numbers
+
+
+[26-Aug-24 07:50 PM] hernanduer#0000
+Or LOG if you want even simpler
+
+
+[27-Aug-24 02:38 AM] melon164#0000
+FFC is not that hard to make, no
+
+
+[27-Aug-24 02:39 AM] melon164#0000
+I'm slightly tempted to look at drones again, haven't made them for ages
+
+
+[29-Aug-24 04:23 PM] akyantor#0000
+Let the election begin
+
+
+[29-Aug-24 04:24 PM] akyantor#0000
+https://tenor.com/view/autos-locos-gif-18741495
+
+{Embed}
+https://tenor.com/view/autos-locos-gif-18741495
+https://images-ext-1.discordapp.net/external/O0OgeJR-SZSE4H2q-Cml61DnNN-iwVSHRcGqEdfIiIU/https/media.tenor.com/WD2dWe1CMqYAAAAe/autos-locos.png
+
+
+[29-Aug-24 04:31 PM] sidepipe#0000
+always dreading election season on malahat 😄
+
+
+[29-Aug-24 04:32 PM] sidepipe#0000
+It'll be interesting to see how the vote develops - I'm concerned MemoryAlpha might try to coordinate a vote split between him and mast3rd3mon, though I don't know how likely that is
+
+
+[29-Aug-24 06:42 PM] archielvahr#0000
+Hopefully no one says anything in the chat. That makes things a lot smoother when they just vote and that’s it.
+
+{Reactions}
+👍 
+
+[10-Sep-24 01:15 PM] sidepipe#0000
+Kind of interesting - today is the 1000th day of the COGC on Malahat 😄
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1283128707040677898/IMG_8517.png?ex=68150bbb&is=6813ba3b&hm=fceece54ddc6f6039f2151f96a75f4bdf2f09ddb22c738786150f76ba7d49049&
+
+{Reactions}
+🎉 (2) 
+
+[11-Sep-24 02:30 PM] allocater#0000
+we are like 6 IDC bases behind 😭  2500 unemployed SCI
+
+{Reactions}
+😭 
+
+[11-Sep-24 02:38 PM] sidepipe#0000
+I could offer an upgrade to Tanda?
+
+
+[11-Sep-24 03:03 PM] allocater#0000
+we kinda don't have a solid business model. a 50d deal is a loss of 10mil now 🤔
+
+
+[11-Sep-24 03:03 PM] archielvahr#0000
+😬  do we gotta tweak prices?
+
+
+[11-Sep-24 03:03 PM] archielvahr#0000
+How many bases are in the EDC and IDC programs?
+
+
+[11-Sep-24 03:04 PM] shrewdsun_88540#0000
+Iv had a lot of demand through Shrewdbank so interest is still there
+
+
+[11-Sep-24 03:04 PM] archielvahr#0000
+I have peeked at the bank sheet but can't always make sense of it 😄
+
+
+[11-Sep-24 03:04 PM] shrewdsun_88540#0000
+But I think people wanna do it on there own
+
+
+[11-Sep-24 03:04 PM] shrewdsun_88540#0000
+So maybe a better model would be selling the packages and get the profit up front
+
+
+[11-Sep-24 03:05 PM] archielvahr#0000
+Well the main goal was getting the capital making money
+
+
+[11-Sep-24 03:06 PM] allocater#0000
+10 EDC + 7 IDC bases under managment
+
+{Reactions}
+👍 
+
+[11-Sep-24 03:06 PM] archielvahr#0000
+unless the capital is just to fund rfab bases so we have fabs to sell
+
+
+[11-Sep-24 03:07 PM] shrewdsun_88540#0000
+My point is more that instead of sponsoring the bases, it can just be in the form of a loan. And you make money but on the sale and the interest
+
+
+[11-Sep-24 03:07 PM] shrewdsun_88540#0000
+Also, not offering the consumables reduces the price tag and makes it more appealing
+
+
+[11-Sep-24 03:07 PM] allocater#0000
+yeah but you still need to trust the players to play for 90d+ days
+
+
+[11-Sep-24 03:07 PM] shrewdsun_88540#0000
+Indeed
+
+
+[11-Sep-24 03:08 PM] shrewdsun_88540#0000
+That is the main risk
+
+
+[11-Sep-24 03:08 PM] shrewdsun_88540#0000
+But that’s always the risk
+
+
+[11-Sep-24 03:09 PM] shrewdsun_88540#0000
+Regardless of how it’s structured
+
+
+[11-Sep-24 03:09 PM] archielvahr#0000
+Ohhh yeah I misunderstood. I see what you are saying.
+
+
+[11-Sep-24 03:09 PM] shrewdsun_88540#0000
+Would it be worth it to expand to another planet? Instead of putting it all on Malahat. 
+That way once you have someone solid you can setup 2 bass instead of one
+
+
+[11-Sep-24 03:10 PM] allocater#0000
+that could be a way, still leaves unemployed SCI on malahat though
+
+
+[11-Sep-24 03:10 PM] archielvahr#0000
+What’s our default rate on the current way it is run?
+
+
+[11-Sep-24 03:11 PM] archielvahr#0000
+Jeetiyu has a lot of sci now. They are mimicking the Malahat growth. But I can chill on malahat if we want. To some extent I can’t stop sci growth but I can stop eng growth, and slow sci.
+
+
+[11-Sep-24 03:11 PM] allocater#0000
+you mean ROI for the bank? at 90d it's still a loss of 6mil, since a new consumables pack has to be delivered
+
+
+[11-Sep-24 03:13 PM] archielvahr#0000
+The rate of people defaulting on the base agreement- like people who build a base and just disappear
+
+
+[11-Sep-24 03:14 PM] allocater#0000
+that's was only 1, so 5%, but a lot end the deal after 50d and go solo
+
+
+[11-Sep-24 03:14 PM] archielvahr#0000
+Hmm yeah I guess it's not _always underwater_ but there's a long time before it's solid profit
+
+
+[11-Sep-24 03:14 PM] archielvahr#0000
+ahhh
+
+
+[11-Sep-24 03:15 PM] shrewdsun_88540#0000
+70 days no?
+
+
+[11-Sep-24 03:15 PM] archielvahr#0000
+honestly I forgot about that part 😅
+
+
+[11-Sep-24 03:15 PM] shrewdsun_88540#0000
+I mean. I love you guys but if I’m payed off I’ll take my IDC
+
+
+[11-Sep-24 03:16 PM] shrewdsun_88540#0000
+But pretty sure it’s 70. I had put a reminder for it
+
+
+[11-Sep-24 03:17 PM] archielvahr#0000
+lol I've been running mine (EDC then IDC) for over a year probably
+
+
+[11-Sep-24 03:20 PM] archielvahr#0000
+Do you know the total number of bases build through the lifetime of the program?
+
+
+[11-Sep-24 03:20 PM] allocater#0000
+good question
+
+
+[11-Sep-24 03:20 PM] archielvahr#0000
+Psychologically there's some sort of  difference between the loan model and the sponsored base model. I don't know how it moves the needle on defaults. I would feel a bit nervous with a bunch of 30m contracts out, that's probably colored by Hazzaah, especially since some of those loans were supposed to be for IDC bases
+
+
+[11-Sep-24 03:21 PM] allocater#0000
+Should be ~30 if we kept track of the ex-bases correctly
+
+{Reactions}
+👍 
+
+[11-Sep-24 03:22 PM] shrewdsun_88540#0000
+If we don’t cover the consumables, that’s 15-20 mil
+
+{Reactions}
+👍 
+
+[11-Sep-24 03:24 PM] allocater#0000
+https://tenor.com/view/i-declare-bakruptcy-bankrupt-yelling-announce-declare-gif-15663557
+
+{Embed}
+https://tenor.com/view/i-declare-bakruptcy-bankrupt-yelling-announce-declare-gif-15663557
+https://images-ext-1.discordapp.net/external/1jS7keu5U37gh35cKHYbtBQLEiyuFvC86nBqI-K4L9A/https/media.tenor.com/3RiZ8BuGMIEAAAAe/i-declare-bakruptcy-bankrupt.png
+
+
+[11-Sep-24 03:24 PM] allocater#0000
+yeaaah I think there is no ROI for the bank with the current model.
+
+
+[11-Sep-24 03:31 PM] archielvahr#0000
+Yeah I think if it's a money losing thing on average, we should find funner ways to lose the money 😄
+
+{Reactions}
+🤣 
+
+[11-Sep-24 03:31 PM] archielvahr#0000
+✨ ✨ ✨ ✨ ✨  Gateways! ✨ ✨ ✨ ✨ ✨ ✨
+
+
+[11-Sep-24 03:50 PM] melon164#0000
+Can the bank afford a gateway?  😁
+
+
+[11-Sep-24 03:51 PM] archielvahr#0000
+As my wife would say "can we afford NOT to buy a gateway"?
+
+
+[11-Sep-24 03:51 PM] archielvahr#0000
+except it's not gateways, it's air duct cleaning and really big bags of chocolate at sams club
+
+
+[11-Sep-24 03:52 PM] archielvahr#0000
+I think the co-op model might actually work, then people are putting in their products, rather than some entity paying out tons of cash
+
+{Reactions}
+👍 
+
+[15-Sep-24 06:02 AM] allocater#0000
+I stealth re-launched the deal as a 27mil contract over 9 weeks: https://discord.com/channels/855488309802172469/1231168997345460286/1231168997345460286
+
+
+[15-Sep-24 08:30 PM] archielvahr#0000
+Nice. What's the markup / interest rate?
+
+
+[16-Sep-24 09:33 AM] allocater#0000
+10% over 9 weeks, so 1.11% per week
+
+{Reactions}
+👍 
+
+[16-Sep-24 04:38 PM] sidepipe#0000
+~~@katinga you sent one of your EDC contracts backwards, filled the other one though!~~ I misread it and just sent you 600 EDC by accident - sent you a new contract for the original EDC, plus what I just sent you, at the correct price. My bad
+
+
+[17-Sep-24 09:38 AM] allocater#0000
+got a first customer: mrmaxpower again 😄
+
+
+[17-Sep-24 09:48 AM] sidepipe#0000
+tell him welcome back 😎
+
+
+[17-Sep-24 11:00 AM] allocater#0000
+sent him this 😄
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1285631374627307582/image.png?ex=6814ec05&is=68139a85&hm=adf31a640e08b061a6acac39e9b0d54d8d96509f68307674d7cd39fe60fbaecc&
+
+
+[18-Sep-24 03:14 PM] melon164#0000
+Ooops
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1286057864515027036/image.png?ex=681527b8&is=6813d638&hm=5039ff0434fb4662043ebf1024a0f0eb077a2b2812c9569ce05af31362f643c9&
+
+{Reactions}
+😬 (2) 
+
+[18-Sep-24 03:15 PM] melon164#0000
+Can I buy a few million CIS from someone?
+
+
+[18-Sep-24 03:19 PM] allocater#0000
+sure
+
+
+[22-Sep-24 02:28 AM] akyantor#0000
+For a OOG sponsored base am I supposed to ask for a resupply? Just noticed I'm down to a day of water:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1287314470309330994/image.png?ex=68151cc6&is=6813cb46&hm=acca98b5a6a30e8a629cdfa4625583ac7490f1f6cb97bcaca22cfa77ff3295fe&
+
+
+[22-Sep-24 08:28 AM] sidepipe#0000
+Yep, for the IDC you can send the contracts directly to allocater 🙂
+
+{Reactions}
+☝️ 
+
+[22-Sep-24 08:32 AM] allocater#0000
+here is the list to request:
+
+1400    MEA
+200    WIN
+40    LC
+20    WS
+20    NST
+2000    DW
+100    MED
+
+{Reactions}
+👍 
+
+[26-Sep-24 09:26 PM] archielvahr#0000
+Malahat election is live!
+
+
+[28-Sep-24 02:17 PM] sidepipe#0000
+The election is looking good so far - I hope Frentic manages to keep Memory and Mast3r out 🙂
+
+{Reactions}
+👍 (3) 
+
+[01-Oct-24 02:46 PM] allocater#0000
+let us know, if Archiel is save enough so we can tac-switch to Frentic
+
+
+[01-Oct-24 02:49 PM] archielvahr#0000
+Yeah I’ve been watching it for the same reason 😁
+
+
+[01-Oct-24 02:50 PM] allocater#0000
+or I guess even Archiel and sidepipe have to be save
+
+
+[01-Oct-24 02:56 PM] akyantor#0000
+Yeah, my vote is already with sidepipe to ensure he's in the top 3
+
+
+[01-Oct-24 03:36 PM] shrewdsun_88540#0000
+Voted for frentic as that vote was pushing out memory but I can switch my vote if needed
+
+
+[01-Oct-24 03:37 PM] archielvahr#0000
+I think it's perfect, we just gotta watch for last day shenanigans
+
+
+[04-Oct-24 04:18 PM] akyantor#0000
+👋 MemoryAlpha
+
+{Reactions}
+🤣 
+
+[04-Oct-24 04:20 PM] sidepipe#0000
+https://tenor.com/view/kiryu-kicks-door-yakuza-enter-kiryu-gif-19648375
+
+{Embed}
+https://tenor.com/view/kiryu-kicks-door-yakuza-enter-kiryu-gif-19648375
+https://images-ext-1.discordapp.net/external/goVkmAY4wv8pHuZ2LXhwfMVCDgMQQdQiLfWd6eioZ0c/https/media.tenor.com/z_Q0HOCIWosAAAAe/kiryu-kicks-door-yakuza.png
+
+{Reactions}
+🤣 
+
+[04-Oct-24 05:39 PM] marat_sh#0000
+Now I want to play Yakuza again
+
+
+[30-Oct-24 01:48 PM] akyantor#0000
+@allocater The buildings for my sponsored base on Malahat are at 87 days since construction. Do you want to continue with this base too? Let me know, and I can either deconstruct or send whatever contracts are approprite for the repairs.
+
+
+[30-Oct-24 01:51 PM] allocater#0000
+yes, send the repair request 
+36    RBH
+54    RDE
+54    RSE
+18    RTA
+720    MCG
+36    TRU
+
+{Reactions}
+👍 
+
+[30-Oct-24 01:52 PM] allocater#0000
+or if it's IDC base:
+800    MCG
+80    TRU
+80    LDE
+60    LTA
+120    RBH
+120    RSE
+
+
+[30-Oct-24 02:23 PM] akyantor#0000
+Done. Back to 176% efficiency. 🥳
+
+{Reactions}
+🤑 
+
+[01-Nov-24 08:40 AM] shrewdsun_88540#0000
+My malahat base is now at 196%, anyone knows any bonus I could apply or is that the max?
+
+
+[01-Nov-24 11:57 AM] allocater#0000
+in theory you can go forever by getting permits and then not building bases with them (Company Headquarters Buff)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1301953375377686599/image.png?ex=6814f991&is=6813a811&hm=6d47e058dc7a5e26174ccd510241f8b952d3366837e5ac6846d01dba86e55909&
+
+
+[01-Nov-24 11:58 AM] shrewdsun_88540#0000
+hum good point
+
+
+[01-Nov-24 11:58 AM] shrewdsun_88540#0000
+I guess for now i dont see myself having free permits so itll be my max
+
+{Reactions}
+👍 
+
+[01-Nov-24 12:04 PM] archielvahr#0000
+You can double it by opening a Jeetiyu base too 😆
+
+{Reactions}
+🤣 
+
+[01-Nov-24 12:50 PM] shrewdsun_88540#0000
+well i alreadyhave all main 4 IDC planets setup haha
+
+
+[01-Nov-24 12:50 PM] shrewdsun_88540#0000
+Unless I ruin Firefreaks day, cant get many more SL
+
+
+[01-Nov-24 12:50 PM] sidepipe#0000
+I do think we should organize a planet-stealing on one of his personal IDC planets sometime
+
+
+[01-Nov-24 12:51 PM] sidepipe#0000
+It'd be nice to get more space for SL
+
+
+[01-Nov-24 12:51 PM] shrewdsun_88540#0000
+im not opposed imo
+
+
+[01-Nov-24 12:51 PM] sidepipe#0000
+and if we wanted to be really antagonistic, we could just hike the taxes on him since they're outside of faction space 😛
+
+
+[01-Nov-24 12:51 PM] shrewdsun_88540#0000
+i thought about it but doing it (at least the settling there) but im afraid of the fall out
+
+
+[01-Nov-24 12:52 PM] shrewdsun_88540#0000
+but im all for competition
+
+
+[01-Nov-24 12:52 PM] sidepipe#0000
+yeah, I've thought about that too
+
+
+[01-Nov-24 12:52 PM] sidepipe#0000
+but I think we should be pretty safe now that we have a pretty significant population on our OS-099 planets (i think)
+
+
+[01-Nov-24 12:53 PM] sidepipe#0000
+_especially_ since they are far out and not suitable for SL yet
+
+
+[01-Nov-24 12:53 PM] sidepipe#0000
+so it would be a big upfront investment in ICA to take over the planet, but all it does is open up a triple green electronics / manufacturing planet miles away from anywhere
+
+
+[01-Nov-24 12:54 PM] sidepipe#0000
+anyway, I'd gladly volunteer a permit and a ship once the time comes. I think Archiel said we'd just need to land in the last 24 hours of an election so he can't transfer the base fee to his personal account
+
+
+[01-Nov-24 02:00 PM] archielvahr#0000
+I'd be up for doing it as a proof of concept, not to be malicious. If we all drop the bases the day before a vote ends, we can all vote for ourselves and get our money back, probably without anyone even noticing until the election ends
+
+
+[01-Nov-24 02:06 PM] allocater#0000
+I am intrigued
+
+
+[01-Nov-24 02:06 PM] allocater#0000
+which planet are we invading?
+
+
+[01-Nov-24 02:11 PM] sidepipe#0000
+To be clear, I wasn’t saying I was up for hiking the taxes - just a thought I had. No point in setting an awful precedent 😄
+
+
+[01-Nov-24 02:19 PM] archielvahr#0000
+I dunno which, but here's the list. I think they are all electronics:
+
+
+[01-Nov-24 02:19 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1301988992203489320/image.png?ex=68151abd&is=6813c93d&hm=c40b2eb2647616154b9ba98977bda18bcde682a1d8eb36c6c110535a76e78683&
+
+
+[01-Nov-24 02:39 PM] allocater#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1301993937963061259/image.png?ex=68151f58&is=6813cdd8&hm=a046e8164b44549cf1f7f86cad05b5d44cb5420154c476c0eafbf7fd9e870778&
+
+
+[01-Nov-24 02:40 PM] allocater#0000
+and we only need 1 ship with materials for 5 CMs?
+
+
+[01-Nov-24 02:41 PM] allocater#0000
+then 4 people request base teleports
+
+
+[01-Nov-24 02:41 PM] allocater#0000
+maybe the government account even has money in it we can loot 😄
+
+
+[01-Nov-24 02:41 PM] archielvahr#0000
+🤣
+
+
+[01-Nov-24 02:41 PM] allocater#0000
+(in addition to the base fees)
+
+
+[01-Nov-24 06:05 PM] shrewdsun_88540#0000
+Im up for it
+
+
+[01-Nov-24 06:05 PM] shrewdsun_88540#0000
+Im in mor already if we need a ship
+
+
+[02-Nov-24 01:39 AM] allocater#0000
+next planet is YA-646b, in 4 days, 2 people are enough to capture it
+
+
+[02-Nov-24 01:41 AM] allocater#0000
+if you load your ship with 5 base kits (+ TSH!) and send me 1 base kit on location, we are go
+
+
+[02-Nov-24 01:43 AM] allocater#0000
+he might request a supporter to also land, so the more people we are and the closer we do it to the deadline the higher the success chance
+
+
+[02-Nov-24 01:52 AM] allocater#0000
+or do we need 4 people, so we get 2 x 2 votes for the 2 parliament seats? what does the government do if it is 1v1 deadlocked?
+
+
+[02-Nov-24 02:26 AM] melon164#0000
+Governor wins ties
+
+
+[02-Nov-24 03:01 AM] allocater#0000
+then 2 votes are enough
+
+
+[02-Nov-24 09:12 AM] archielvahr#0000
+Yeah. Hours before the election ends is best.
+
+
+[02-Nov-24 10:02 AM] shrewdsun_88540#0000
+That might be doable. im gonna check were my ships are and let you guys know
+
+
+[02-Nov-24 10:02 AM] shrewdsun_88540#0000
+Who is in so I know how many CM kits to bring?
+
+{Reactions}
+☝️ 
+
+[02-Nov-24 10:15 AM] sidepipe#0000
+I’m in if I can get a free permit in time!
+
+
+[02-Nov-24 10:15 AM] shrewdsun_88540#0000
+This being said, how hard would it be to take over and turn into an elec planet XD-005c? Would it be more money efficient
+
+
+[02-Nov-24 10:16 AM] shrewdsun_88540#0000
+or in general another planet that would have close to the required pops
+
+
+[02-Nov-24 10:19 AM] sidepipe#0000
+I don’t think it’s too hard to make an electronics planet, I know some of the planets in Nyx are destined for that
+
+
+[02-Nov-24 10:19 AM] sidepipe#0000
+But this will make a better story 😁
+
+
+[02-Nov-24 10:20 AM] shrewdsun_88540#0000
+for sure but firefreaks planet dont have unused pops... so its the same as starting over
+
+
+[02-Nov-24 10:26 AM] mrsmith33#0000
+The growth will be quicker than on empty planet
+
+
+[02-Nov-24 10:36 AM] shrewdsun_88540#0000
+YA-471a would be a much nicer target and the next election is only in 9 days
+
+
+[02-Nov-24 10:37 AM] shrewdsun_88540#0000
+I can take care of the deliveries there but I dont have the knowledge to run the planet well
+
+
+[02-Nov-24 10:37 AM] sidepipe#0000
+That’ll give me more time to organize a permit 😄
+
+
+[02-Nov-24 10:37 AM] shrewdsun_88540#0000
+It currently has 200 free eng as well
+
+
+[02-Nov-24 10:37 AM] shrewdsun_88540#0000
+and a beginning of SCI
+
+
+[02-Nov-24 11:53 AM] allocater#0000
+YA-471 a even has a "casus belli": "we just wanted to employ the ENG" 😄
+
+
+[02-Nov-24 11:54 AM] allocater#0000
+that being said, I thought it's just a quick knock for fun, go in and out, 10 minute adventure. Or do we want to stay longterm?
+
+
+[02-Nov-24 11:57 AM] sidepipe#0000
+I think there could be value in opening up one of the planets to everyone
+
+{Reactions}
+👍 
+
+[02-Nov-24 12:18 PM] sidepipe#0000
+But we can take a vote among the people participating
+
+
+[02-Nov-24 12:18 PM] sidepipe#0000
+Since we’re all gonna feel the fallout of whatever we do 😄
+
+
+[02-Nov-24 03:59 PM] shinonomesciences#0000
+Using the base establishment fee to lock people out from planets is pretty scummy
+
+
+[02-Nov-24 04:00 PM] marat_sh#0000
+it's one of the type of 'warfare' in this game
+
+
+[02-Nov-24 04:05 PM] shinonomesciences#0000
+It will be hilarious if they implement the ability to apply trade tariffs
+
+
+[02-Nov-24 04:05 PM] akyantor#0000
+And people say you can't have wars in the game. Nonsense, economic combat or planetary control is where its at
+
+
+[02-Nov-24 04:05 PM] akyantor#0000
+Just because you can't have ships blowing stuff up doesn't mean you can't have conflict.
+
+
+[02-Nov-24 04:07 PM] sidepipe#0000
+Unless we do it 😇
+
+
+[02-Nov-24 04:07 PM] akyantor#0000
+Just don't look too close at Nyx. 😛
+
+
+[02-Nov-24 04:08 PM] sidepipe#0000
+But it’s not like anyone was colonizing there anyway
+
+
+[02-Nov-24 04:08 PM] sidepipe#0000
+Even if we had 0 fees I don’t think any non-OOG folks would join for a long time
+
+
+[02-Nov-24 04:09 PM] shinonomesciences#0000
+😳
+
+
+[02-Nov-24 04:10 PM] akyantor#0000
+Yeah, it's a bit of a niche project out there
+
+
+[02-Nov-24 04:10 PM] sidepipe#0000
+To be fair I agree with you in principle, and this will be a good example of how those base fee barriers can be broken down if there’s enough people who want to / a good enough reason to
+
+
+[02-Nov-24 04:11 PM] sidepipe#0000
+I assume people might make a move on Nyx eventually. But we have a good population there, and no one can make IDC there yet, so I think we’ll be safe for a bit 😄
+
+
+[02-Nov-24 07:50 PM] archielvahr#0000
+I have a permit available. I'll probably wipe the base after a few weeks, because I need another gateway base soon.
+
+
+[02-Nov-24 07:50 PM] archielvahr#0000
+Lemme know if you need cash for the project
+
+
+[02-Nov-24 07:53 PM] shrewdsun_88540#0000
+Depends on what are @allocater with his deposits
+
+
+[03-Nov-24 02:10 AM] allocater#0000
+I can pay everybody's 10mil fee, if we get government control, we can get it back anyway
+
+{Reactions}
+🎉 (2) 
+
+[09-Nov-24 04:30 PM] archielvahr#0000
+I'm thinking of using my free permit soon, unless anyone has plans for doing this soon
+
+
+[10-Nov-24 01:00 PM] allocater#0000
+depends on if somebody parks a 5 base kit freighter in orbit
+
+
+[10-Nov-24 01:01 PM] allocater#0000
+but YA-471 a is out for now, since it's 24h left
+
+
+[16-Nov-24 01:14 AM] shinonomesciences#0000
+What are the loan conditions for a malahat IDC base?
+
+
+[16-Nov-24 01:16 AM] shinonomesciences#0000
+@allocater
+
+
+[16-Nov-24 01:19 AM] allocater#0000
+in the corp scheme there is no loan, you just get everything for free and sell the IDC back for 5000/IDC.
+
+if you want to operate more independently, you can do it with a 27mil loan and sell the IDC for 15,300/IDC see: https://discord.com/channels/855488309802172469/1231168997345460286
+
+
+[16-Nov-24 01:21 AM] shinonomesciences#0000
+I'll take the corp route if you have the resources on hand
+
+
+[16-Nov-24 01:22 AM] allocater#0000
+great! I do have everything ready. You can find the full request list also in this channel as pinned post
+
+
+[16-Nov-24 01:23 AM] shinonomesciences#0000
+Cool, I'll send it as soon as I get another permit
+
+{Reactions}
+👍 
+
+[16-Nov-24 01:26 AM] shinonomesciences#0000
+https://tenor.com/view/money-printer-gif-6699448061706491662
+
+{Embed}
+https://tenor.com/view/money-printer-gif-6699448061706491662
+https://images-ext-1.discordapp.net/external/tLYkz3nu_knf0otluvw5tO7D9PuRkJUhS1PaJr6ZUNg/https/media.tenor.com/XPk4hFUx1w4AAAAe/money-printer.png
+
+{Reactions}
+🤣 (2) 
+
+[19-Nov-24 06:03 PM] shinonomesciences#0000
+@allocater I put the contracts on the LM
+
+{Reactions}
+👍 
+
+[20-Nov-24 02:10 AM] allocater#0000
+Food and Water will arrive in 24h
+
+
+[20-Nov-24 02:18 AM] shinonomesciences#0000
+https://tenor.com/view/goofy-hungry-starving-sad-so-hungry-gif-12828284
+
+{Embed}
+https://tenor.com/view/goofy-hungry-starving-sad-so-hungry-gif-12828284
+https://images-ext-1.discordapp.net/external/OYXgivJmuJBwUuR1u-wRHjKLTHCpeZteOgyVe9uAo8A/https/media.tenor.com/An7Wa0GeuesAAAAe/goofy-hungry.png
+
+{Reactions}
+🤣 
+
+[22-Nov-24 12:07 PM] shinonomesciences#0000
+@allocater Did you need more time to ship the remaining supplies? I'll terminate the contract to extend the deadline if you need.
+
+
+[22-Nov-24 12:14 PM] allocater#0000
+is there still something missing? 😮
+
+
+[22-Nov-24 12:15 PM] allocater#0000
+ok, I shipped it but forgot to click the button 😄
+
+{Reactions}
+👍 
+
+[26-Nov-24 06:00 PM] shinonomesciences#0000
+It sucks that Malahat takes taxes in CIS
+
+{Reactions}
+💯 
+
+[26-Nov-24 06:03 PM] shinonomesciences#0000
+"Having behind us the commercial interests and the laboring interests and all the toiling masses, we shall answer their demands for CIS by saying to them, you shall not press down upon the brow of labor this crown of thorns. You shall not crucify mankind upon a cross of Sol."
+     -William Jennings Bryan probably
+
+
+[26-Nov-24 06:05 PM] archielvahr#0000
+Sounds like a good article for the prosperous turnip! Or the OOG site
+
+
+[26-Nov-24 06:08 PM] archielvahr#0000
+For prosperous turnip I think it's Kovus (but also Saganaki)
+
+
+[26-Nov-24 06:09 PM] archielvahr#0000
+For OOG, just send it to me.. if anyone writes anything they want posted, I'll post it
+
+
+[26-Nov-24 06:09 PM] archielvahr#0000
+Both sites use Hugo, so you just write it in markdown
+
+
+[26-Nov-24 06:09 PM] archielvahr#0000
+which is essentially plain text
+
+
+[26-Nov-24 07:29 PM] evov#0000
+Sounds like a good reason to invest in Antarean infrastructure, build up more local high tier workforce capacity.
+
+
+[26-Nov-24 08:01 PM] archielvahr#0000
+Gotta get more people moving to Nyx!
+
+
+[27-Nov-24 05:43 PM] archielvahr#0000
+Malahat election closes in a day. I would favor Fenetic over "ThreeE" who I haven't heard of. Probably doesn't matter much since Sidepipe and I have solid leads
+
+
+[27-Nov-24 05:44 PM] archielvahr#0000
+Although honestly we could probably get Hal in the parliament and have a trifecta!
+
+
+[27-Nov-24 06:01 PM] .urpalhal#0000
+Muhaha
+
+
+[27-Nov-24 06:01 PM] .urpalhal#0000
+Well let me know I don’t care either way
+
+
+[27-Nov-24 10:11 PM] superbadsounds#0000
+I voted for Hal
+
+
+[27-Nov-24 10:12 PM] .urpalhal#0000
+I ran?
+
+
+[27-Nov-24 10:16 PM] superbadsounds#0000
+You are in last with my one vote.. but yes 😆
+
+
+[27-Nov-24 10:18 PM] sidepipe#0000
+flipped my own vote to Frentic - I've still got 5 votes, so that's probably enough to prevent any shenanigans
+
+{Reactions}
+👍 
+
+[27-Nov-24 10:25 PM] archielvahr#0000
+Sounds good
+
+
+[27-Nov-24 10:25 PM] archielvahr#0000
+That's probably the best outcome unless we rustle up a few more Hal votes.
+
+
+[27-Nov-24 10:26 PM] archielvahr#0000
+My vote its on Frenetic right now too unless Hal gets closer
+
+
+[27-Nov-24 10:26 PM] sidepipe#0000
+I'll keep an eye out, and if Hal gets close enough, I'll give Frentic the boot 👢
+
+{Reactions}
+👍 
+
+[27-Nov-24 10:27 PM] archielvahr#0000
+likewise, just gimme a ping!
+
+
+[28-Nov-24 01:52 AM] melon164#0000
+I voted for Hal 😁
+
+
+[28-Nov-24 02:44 AM] allocater#0000
+maybe it's good not to be too obvious about the take-over and keep Frentic as a token rando 😄
+
+{Reactions}
+👆 
+
+[08-Dec-24 03:22 AM] cptboby#0000
+hello, does the pinned post offer still stand , is it only for proper corp members? @allocater
+
+
+[08-Dec-24 03:32 AM] allocater#0000
+still stands, you can do the pinned option even if not in the corp, or the indy-option from the UFO discord for 135000/IDC: https://discord.com/channels/855488309802172469/1231168997345460286
+
+
+[08-Dec-24 03:48 AM] cptboby#0000
+LM stands for local market?
+
+
+[08-Dec-24 03:49 AM] allocater#0000
+yup
+
+
+[08-Dec-24 03:56 AM] cptboby#0000
+i prefer the pinned version , could run it for a long time. do i need to allocate a ship to this base?
+
+
+[08-Dec-24 03:57 AM] allocater#0000
+you never have to visit the base with a ship, you can get all supplies from me and sell all output to me.
+
+
+[08-Dec-24 03:57 AM] cptboby#0000
+excellent
+
+{Reactions}
+👍 
+
+[08-Dec-24 04:05 AM] cptboby#0000
+do i just post ad buying each material?
+
+
+[08-Dec-24 04:06 AM] allocater#0000
+yes, for 1 AIC, so for free
+
+
+[08-Dec-24 04:07 AM] cptboby#0000
+and when im selling back IDC does it also go on LM?
+
+
+[08-Dec-24 04:08 AM] cptboby#0000
+someone could snipe it
+
+
+[08-Dec-24 04:08 AM] allocater#0000
+as you prefer, but since it is a recurring sale, it's less clicks if you do a CONTD for it
+
+
+[08-Dec-24 04:09 AM] allocater#0000
+ah right, yeah LM only works for the 13500 version, so 5000 has to be via contract
+
+
+[08-Dec-24 04:09 AM] cptboby#0000
+rgr
+
+
+[08-Dec-24 04:16 AM] cptboby#0000
+2more stuff just had to start building ,was running out of WH space
+
+
+[08-Dec-24 04:16 AM] cptboby#0000
+DW and MED left
+
+
+[08-Dec-24 04:16 AM] allocater#0000
+oh, I thought 6 is enough, I might have to update the post with a higher number 😄
+
+
+[08-Dec-24 04:17 AM] cptboby#0000
+didnt actually check but was quite full and 2k DW felt high weight
+
+
+[08-Dec-24 04:17 AM] allocater#0000
+happy printing!
+
+
+[08-Dec-24 04:17 AM] cptboby#0000
+hmm lol ,cant start more than 2 coz i got no CIS xD
+
+{Reactions}
+🙀 
+
+[08-Dec-24 04:18 AM] cptboby#0000
+where is the currency exchange
+
+
+[08-Dec-24 04:18 AM] allocater#0000
+sell 1 DW to me for 500k CIS
+
+
+[08-Dec-24 04:18 AM] cptboby#0000
+on LM?
+
+
+[08-Dec-24 04:18 AM] allocater#0000
+sure
+
+
+[08-Dec-24 04:18 AM] allocater#0000
+nobody else will buy that 😄
+
+
+[08-Dec-24 04:21 AM] cptboby#0000
+is there a guide how to post an order project , want to upgrade my hq but seems difficult a bit
+
+
+[08-Dec-24 04:23 AM] allocater#0000
+good question for @archielvahr the command is /project but I never used it
+
+
+[08-Dec-24 04:23 AM] cptboby#0000
+also does IDC really take 23days?
+
+
+[08-Dec-24 04:23 AM] allocater#0000
+did you produce 20 in one go?
+
+
+[08-Dec-24 04:23 AM] cptboby#0000
+no
+
+
+[08-Dec-24 04:24 AM] cptboby#0000
+20 says 465
+
+
+[08-Dec-24 04:24 AM] cptboby#0000
+days
+
+{Reactions}
+😮 
+
+[08-Dec-24 04:24 AM] cptboby#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1315262713169182830/image.png?ex=68149d5b&is=68134bdb&hm=b45c578ffd26fbbe83c2435f9ae2eb88a21621fc909d4b8d6c60516d7b5629de&
+
+
+[08-Dec-24 04:24 AM] allocater#0000
+what does your base look like?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1315262723147300914/image.png?ex=68149d5d&is=68134bdd&hm=62c533b79696ac506aa315c30bd6bdc87d19a81368b8c75f3244bb7a08f65cc0&
+
+
+[08-Dec-24 04:24 AM] allocater#0000
+built HB5?
+
+
+[08-Dec-24 04:25 AM] cptboby#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1315262997035487242/image.png?ex=68149d9e&is=68134c1e&hm=4a691cfe52ffaabe91e14a31473e2312859eeed6a9876f6eac90ef35cbaff3f7&
+
+{Reactions}
+🤔 
+
+[08-Dec-24 04:26 AM] cptboby#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1315263126052274206/image.png?ex=68149dbd&is=68134c3d&hm=26e66efa2b7135968b14e30923bb2e457a0a89a2b67766451d4980e24fe98902&
+
+
+[08-Dec-24 04:26 AM] cptboby#0000
+no scientists
+
+
+[08-Dec-24 04:26 AM] allocater#0000
+crazy, there should be a few 100 arriving instantly and the rest during the population update on thursday
+
+
+[08-Dec-24 04:27 AM] mrsmith33#0000
+Page refresh might help
+
+
+[08-Dec-24 04:27 AM] cptboby#0000
+ok jeez nvm had half of supplies in WH still, moved them to inventory and now its 22h each
+
+{Reactions}
+🥳 
+
+[08-Dec-24 04:28 AM] cptboby#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1315263694439055421/image.png?ex=68149e45&is=68134cc5&hm=bccde4a49a6df07171c0c9829d14f3e1d5ba4dca77abb4e19f7772ea802ec3a8&
+
+
+[08-Dec-24 04:28 AM] allocater#0000
+that's more like it
+
+
+[08-Dec-24 04:29 AM] cptboby#0000
+should i cancel the WH space lest this happen again?
+
+
+[08-Dec-24 04:30 AM] allocater#0000
+yeah, the WH is no longer needed
+
+{Reactions}
+👍 
+
+[08-Dec-24 09:23 AM] archielvahr#0000
+Another malahat base, excellent 😁
+
+
+[08-Dec-24 09:24 AM] archielvahr#0000
+For /project if you just type the command and hit return it will give you instructions on how to format the material string
+
+
+[08-Dec-24 09:24 AM] archielvahr#0000
+You can also do /order instead especially if it’s only a couple items. That one has instructions on the web page
+
+
+[08-Dec-24 09:25 AM] archielvahr#0000
+At early HQ upgrade levels you can do a few at a time too
+
+
+[09-Dec-24 03:36 AM] tyrandia#0000
+@allocater Hey, is this base sponsorship still available? I'd be interested in getting this set up for you. 🙂
+
+{Reactions}
+❤️ 
+
+[09-Dec-24 04:48 AM] allocater#0000
+yes, I am currently replenishing the stock, but you can already request all materials as in the pinned post
+
+
+[09-Dec-24 11:46 AM] archielvahr#0000
+lmao
+
+
+[09-Dec-24 11:46 AM] archielvahr#0000
+https://prosperousturnip.com/post/3024/12/09-malahat-cis-protest/
+
+{Embed}
+https://prosperousturnip.com/post/3024/12/09-malahat-cis-protest/
+Malahat CEOs Rally Against "CIS Tyranny," Demand Right to Pay Taxes...
+MALAHAT, RC-040 - In what observers are calling the largest gathering since the Great Electronics Embargo of 2289, dozens of corporate executives assembled in the Malahat Administrative Complex yesterday, demanding the right to pay their planetary taxes in “honest AIC” rather than what protesters termed “oppressive CIS credits.”
+https://images-ext-1.discordapp.net/external/SlheMFAgaK3ZDn6CHDdrpAcYRg2enaGR6JF_sT7zNao/https/prosperousturnip.com/img/prop-turnip-ad.png
+
+
+[09-Dec-24 11:50 AM] roche3950#0000
+CIS = Credit of Inferior Stature
+
+{Reactions}
+🤣 (2) 
+
+[09-Dec-24 01:45 PM] tyrandia#0000
+Will do. ❤️
+
+
+[09-Dec-24 01:49 PM] tyrandia#0000
+How long should I put the ads up for?
+
+
+[09-Dec-24 01:51 PM] allocater#0000
+standard 3 days
+
+
+[15-Dec-24 03:17 PM] sidepipe#0000
+@draconisdomini sending over repairs for your EDC base!
+
+
+[18-Dec-24 02:06 PM] draconisdomini#0000
+Can you send the contracts again? I was travelling and missed them before they expired
+
+
+[18-Dec-24 07:46 PM] sidepipe#0000
+sent 🙂
+
+
+[20-Dec-24 09:07 AM] draconisdomini#0000
+Probably because it was left a bit too long I need a bit more for repairs. 16 RBH, 18 RDE, 18 RSE, 18 RTA and 16 TRU
+
+{Reactions}
+👍 
+
+[21-Dec-24 05:28 AM] draconisdomini#0000
+@sidepipe I think you did the contracts the wrong way around
+
+
+[21-Dec-24 08:03 AM] roche3950#0000
+good morning @allocater 
+is there still capacity on your side for a Malahat base?
+
+
+[21-Dec-24 08:08 AM] allocater#0000
+yes, I can make it happen before Christmas. Do you want the corp-deal, where you sell for 5000/IDC?
+
+
+[21-Dec-24 08:17 AM] allocater#0000
+in any case you can already request all materials on the LM
+
+
+[21-Dec-24 08:23 AM] roche3950#0000
+yes, I’ll take that
+I’ll set up LM ads shortly
+
+{Reactions}
+👍 
+
+[21-Dec-24 08:39 AM] roche3950#0000
+those are up
+
+
+[21-Dec-24 08:43 AM] roche3950#0000
+boo-ding
+boo-ding
+boo-ding
+boo-ding
+
+😄
+
+{Reactions}
+🤣 
+
+[21-Dec-24 08:45 AM] allocater#0000
+final delivery in ~36h
+
+
+[21-Dec-24 08:45 AM] roche3950#0000
+:ack:
+
+
+[21-Dec-24 08:45 AM] roche3950#0000
+tyvm
+
+
+[21-Dec-24 08:46 AM] allocater#0000
+it will be 5 days anyway until new scientists arrive, so no rush
+
+
+[21-Dec-24 10:30 AM] sidepipe#0000
+😭 resending
+
+
+[21-Dec-24 05:59 PM] roche3950#0000
+One question about this -- are consumables and repairs serviced for the duration of the deal, or are they out-of-pocket for the operator beyond the initial package?
+
+
+[21-Dec-24 11:07 PM] allocater#0000
+as long as you keep selling for 5000/IDC, full repair and consumables are provided for free every 50d/90d.
+
+
+[22-Dec-24 03:43 AM] roche3950#0000
+Understood tyvm
+
+
+[22-Dec-24 02:42 PM] draconisdomini#0000
+Thanks.  Still need 2 more RBH and 18 TRU
+
+
+[22-Dec-24 02:53 PM] sidepipe#0000
+I’m still waiting on the TRU from allocater
+
+
+[22-Dec-24 02:54 PM] sidepipe#0000
+So once the resupply is done, I’ll ask for an updated BOM just to make sure we get it right the third time 😅
+
+
+[22-Dec-24 02:54 PM] draconisdomini#0000
+Haha, cool
+
+
+[22-Dec-24 08:38 PM] archielvahr#0000
+I have 2 RBH and 18 TRU
+
+
+[22-Dec-24 08:38 PM] archielvahr#0000
+oops that's on a different planet, nevermind!
+
+
+[23-Dec-24 03:00 PM] sidepipe#0000
+@draconisdomini repair mats are in - if you can send me a screenshot of the BRA and your inventory whenever you have time, I'll send whatever else you need
+
+
+[23-Dec-24 03:01 PM] sidepipe#0000
+just make sure to set the repair window to 48 hours 😄
+
+
+[23-Dec-24 04:39 PM] draconisdomini#0000
+@sidepipe Thanks, still need 2 RBH and 2 TRU
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1320883493869326439/image.png?ex=6814a0dd&is=68134f5d&hm=eb6a7b4be39adbff06077760fa1d7263057893bbda05c0fe1775422392ef2476&
+https://cdn.discordapp.com/attachments/1238067564396150805/1320883494129242151/image.png?ex=6814a0dd&is=68134f5d&hm=8846b15fd1fcedd50a071b95a65936d8f5fa7db09f85239840765907106e93c1&
+https://cdn.discordapp.com/attachments/1238067564396150805/1320883494410387538/image.png?ex=6814a0dd&is=68134f5d&hm=ac862e6425ddefd0682da2f2cc86f034413d2c6c78514e76c3ff62d6b3bf69b7&
+
+
+[24-Dec-24 12:48 PM] sidepipe#0000
+sent - merry christmas (eve)!
+
+
+[24-Dec-24 04:07 PM] draconisdomini#0000
+Wrong way around again!
+
+{Reactions}
+😭 
+
+[24-Dec-24 05:27 PM] sidepipe#0000
+I usually have a sell contract at the top of my CONTD, but I made a new one for the first round of stuff I sent you and it's been messing me up ever since. I sent you the real, actual, final set of contracts
+
+
+[24-Dec-24 05:28 PM] sidepipe#0000
+sorry about all the contracts
+
+
+[26-Dec-24 05:02 AM] akyantor#0000
+Looks like sidepipe needs another vote to maintain the status quo governance structure on Malahat. As it stands ThreeE will take his spot as MP, and OOG will lose effective control.
+
+{Reactions}
+😮 
+
+[26-Dec-24 10:06 AM] archielvahr#0000
+Shuffled my vote around
+
+
+[26-Dec-24 10:06 AM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1321871816263864452/image.png?ex=6814ed90&is=68139c10&hm=58bd6d2b69b668872ad219d2f5ee381929499da246aad1bc3a740dcca4aa30b5&
+
+
+[29-Dec-24 09:49 PM] sidepipe#0000
+@draconisdomini - sending you consumables for the base as well 🙂
+
+
+[29-Dec-24 09:51 PM] sidepipe#0000
+@agm114, you're up next for both repairs and consumables. I think the tracker might be out of sync for your base, so if you could send me a screenshot of the BRA for malahat, I can get you sorted
+
+
+[01-Jan-25 06:12 AM] draconisdomini#0000
+Got them, thanks!
+
+
+[21-Jan-25 08:52 AM] tyrandia#0000
+As an fyi I only have 5 days of supplies left on my Malahat base.
+
+
+[21-Jan-25 01:08 PM] allocater#0000
+oh, request new supplies via local market or contracts, how you like it best. List is pinned
+
+
+[23-Jan-25 08:25 PM] tyrandia#0000
+MAterials requested from you. ❤️
+
+
+[25-Jan-25 12:09 PM] sidepipe#0000
+@katinga - sent over repairs for malahat!
+
+
+[25-Jan-25 12:10 PM] sidepipe#0000
+I think today is the repair date, so just send me a screenshot of the repair assistant if you need more parts
+
+
+[31-Jan-25 04:59 PM] archielvahr#0000
+I'm running a new survey on Malahat with very similar questions to the Aug 2024 survey. Please feel free to fill it out. 
+https://docs.google.com/forms/d/e/1FAIpQLSfOwtNZWF0LWTLZOQYobpZuQDvg1b7YWVTTossQDWMuMERLgQ/viewform?usp=dialog
+
+{Embed}
+https://docs.google.com/forms/d/e/1FAIpQLSfOwtNZWF0LWTLZOQYobpZuQDvg1b7YWVTTossQDWMuMERLgQ/viewform?usp=dialog
+Malahat Survey 2025
+Our last survey was August 2024. I want to ask similar questions as last time to gain insights as Malahat grows.
+
+Share your thoughts on how Malahat is run. Many questions have an "Other" option, so feel free to be creative in those items. There's also a long-form comment box at the bottom of the form. Thank you for your feedback! This form does...
+https://images-ext-1.discordapp.net/external/W-MmaKug1v0dBn38NcO-u6HMILHhTWSEVOfpsGSLfpw/https/lh4.googleusercontent.com/u7aVT9mEyaQDqwFls2Q2wpiQnCqtfVpzoqocgOLsPWYM7z89JBvWIS4Nggm7UaLsP8T4z-l9zL0%3Dw1200-h630-p
+
+{Reactions}
+👍 🗳️ 
+
+[31-Jan-25 05:00 PM] archielvahr#0000
+I will share a report in a few weeks with the results
+
+
+[10-Feb-25 12:42 PM] archielvahr#0000
+Does anyone have ~150 MCG to throw into the COGC? I have 7 days and I have some coming up but I don't want to forget 😬
+
+
+[10-Feb-25 12:48 PM] allocater#0000
+done
+
+
+[10-Feb-25 12:50 PM] archielvahr#0000
+Thanks!
+
+
+[14-Feb-25 07:24 PM] archielvahr#0000
+Frenetic is not running again on Malahat
+
+
+[02-Mar-25 09:46 PM] archielvahr#0000
+New survey results are done!
+
+
+[02-Mar-25 09:46 PM] archielvahr#0000
+https://oogcapitalmanagement.com/posts/2025-malahat-survey/
+
+{Embed}
+https://oogcapitalmanagement.com/posts/2025-malahat-survey/
+2025 Malahat Survey | OOG Capital Management
+March 2025, Malahat Citizen Survey Results
+https://images-ext-1.discordapp.net/external/AA5KaqpCmj4GukmvMJ4HfEvo9zYxqU-yos7FgR9QYk0/https/oogcapitalmanagement.com/images/malahat-2025.png
+
+
+[02-Mar-25 11:35 PM] bookliko#0000
+Some of the bar charts have no legend 🫣
+
+
+[02-Mar-25 11:36 PM] bookliko#0000
+making it difficult to understand what "1" is and what "5" means
+
+
+[02-Mar-25 11:36 PM] archielvahr#0000
+ohh yeah, it does present them that way. I noticed that about this one
+
+
+[02-Mar-25 11:36 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1345993225458155560/malahat-2025-7.png?ex=681502a0&is=6813b120&hm=069137cf1ef161df6192331bb84611e60dbc9268b88071cdd4cc7cfd1d2a5725&
+
+
+[02-Mar-25 11:36 PM] archielvahr#0000
+7 means open jobs
+
+
+[02-Mar-25 11:36 PM] archielvahr#0000
+🤷‍♂️
+
+
+[02-Mar-25 11:36 PM] archielvahr#0000
+Maybe I'll tweak the paragraph above to make it clearer
+
+
+[02-Mar-25 11:38 PM] bookliko#0000
+Also 2x same image at bottom
+
+
+[02-Mar-25 11:53 PM] archielvahr#0000
+oops! thanks
+
+
+[02-Mar-25 11:57 PM] archielvahr#0000
+Fixed those and annotated the most egregious chart
+
+
+[02-Mar-25 11:57 PM] archielvahr#0000
+Thanks for proofreading 😅
+
+
+[09-Mar-25 06:34 PM] tyrandia#0000
+At what point should I be asking for supplies for the repair on the Malahat base?
+
+
+[09-Mar-25 10:09 PM] .urpalhal#0000
+At about 80 days maybe
+
+
+[10-Mar-25 08:21 PM] tyrandia#0000
+OH, I need repairs then probably.
+
+
+[11-Mar-25 05:44 AM] tyrandia#0000
+Yeah I'd say so.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1348969807407616041/image.png?ex=6814a208&is=68135088&hm=ba77fe60786af450776fc1765cf7132ecac6d4187cbe2d0cf865bfc842a6186f&
+
+
+[11-Mar-25 05:45 AM] tyrandia#0000
+Should I just request these materials from you @allocater ?
+
+
+[11-Mar-25 12:13 PM] allocater#0000
+yes, go ahead
+
+
+[28-Mar-25 08:34 PM] katinga#0000
+@sidepipe are you out there?
+
+{Reactions}
+💸 
+
+[18-Apr-25 12:53 PM] allocater#0000
+With the new MM prices there will be less profit in EDC/IDC bases. I think we can still maintain them for a modest profit, but if you have ideas for more profitable permits, now might be a good opportunity to give up the base.
+
+The bases will give you:
+EDC base: 45k / day (bank pays 1500/EDC)
+IDC base: 60k / day (bank pays 2000/IDC)
+
+Plus you can get an extra +15k/day (+500 per EDC/IDC) bonus if you send out the contracts to request supplies and sell the output.
+(Otherwise sidepipe will send you contracts and take the 15k/day)
+
+
+[18-Apr-25 01:13 PM] akyantor#0000
+🫠 Good luck governors will all the IDC/EDC bases disappearing
+
+
+[19-Apr-25 04:54 AM] allocater#0000
+In order to ensure the security and continuing stability, the Ironforge COGC will be reorganised into the first Food Production Empire! For a safe and secure printing society!
+
+
+[27-Apr-25 06:24 AM] akyantor#0000
+@archielvahr FYI - in case you don't see it in planet chat. I'm pulling down my sponsored IDC base on Phobos.
+
+
+[27-Apr-25 08:30 AM] swatacular#0000
+Hey. When do you think you’ll be doing this? I may want to recoup some of those workers at the same time
+
+
+[27-Apr-25 08:30 AM] akyantor#0000
+It's already done.
+
+
+[27-Apr-25 08:31 AM] akyantor#0000
+I had to move quickly when I realised I'd already hit 90 days since the last repair. Wanted to maximise the mats I'd return to allocater who runs the programme.
+
+
+[27-Apr-25 09:03 AM] archielvahr#0000
+Thanks!
+
+
+[27-Apr-25 09:03 AM] archielvahr#0000
+Yep, there will be lots of workers for you
+
+
+[27-Apr-25 02:12 PM] sidepipe#0000
+@katinga - is your base on Malahat needing repairs? I think I sent you some sort of supply or repair pack recently, but didn't mark it on the spreadsheet
+
+
+[27-Apr-25 04:39 PM] katinga#0000
+It's at 78%.  the last cont was consumables
+
+
+[27-Apr-25 04:46 PM] sidepipe#0000
+Ty, will send along repairs next then!
+
+
+[27-Apr-25 04:47 PM] katinga#0000
+I'm not in a rush
+
+
+[27-Apr-25 04:48 PM] katinga#0000
+I'm so busy between work and my channel that PU is down the list for my attention
+
+
+[30-Apr-25 12:39 PM] swatacular#0000
+@allocater What do you think of this?
+
+It seems very not profitable. but i guess it depends on what inputs cost
+
+
+[30-Apr-25 12:39 PM] swatacular#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1367193642761982022/image.png?ex=6815034d&is=6813b1cd&hm=ba4837610b57aef8479804690b91c2ead978a7bb0a03e26ed1eba7f578477237&
+
+{Reactions}
+👀 
+
+[30-Apr-25 12:43 PM] allocater#0000
+yikes, I started this plan when every FP base made 100k
+
+
+[30-Apr-25 12:44 PM] allocater#0000
+https://prunplanner.org/tools/roi FP
+
+{Embed}
+https://prunplanner.org/tools/roi
+PRUNplanner
+Prosperous Universe Empire and Base Planning tool. Plan your empire and projects, dominate the markets.
+
+
+[30-Apr-25 12:44 PM] allocater#0000
+MTP is dragging it down, set MTP to 3000, or only FIM
+
+
+[30-Apr-25 12:49 PM] swatacular#0000
+MTP is at 3000, I think HER is super high though
+
+
+[30-Apr-25 12:49 PM] marat_sh#0000
+HER will drop
+
+
+[30-Apr-25 12:50 PM] archielvahr#0000
+Woah someone dumped some cheap HER
+
+
+[30-Apr-25 12:50 PM] archielvahr#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1367196392736428123/image.png?ex=681505dd&is=6813b45d&hm=fb8e760ae1907239225dfddb6445665cb155a23752a523a02e87130da754d7ef&
+
+
+[30-Apr-25 12:50 PM] swatacular#0000
+thats why my profitable numbers just went way up for a second
+
+
+[30-Apr-25 12:50 PM] swatacular#0000
+actually viable for about 2 minutes
+
+
+[30-Apr-25 12:50 PM] swatacular#0000
+so confusing
+
+
+[30-Apr-25 12:50 PM] swatacular#0000
+did you nab it?
+
+
+[30-Apr-25 12:51 PM] archielvahr#0000
+Yeah @swatacular  that screenshot you posted is with HER at 2835
+
+
+[30-Apr-25 12:51 PM] archielvahr#0000
+Unfortunately not me 😆
+
+
+[30-Apr-25 12:51 PM] archielvahr#0000
+might have been @allocater though
+
+
+[30-Apr-25 12:51 PM] swatacular#0000
+He be like that
+
+
+[30-Apr-25 12:51 PM] swatacular#0000
+wheres a good planet for HER base?
+
+
+[30-Apr-25 12:51 PM] archielvahr#0000
+Also that Prunplanner has MTP at 5501
+
+
+[30-Apr-25 12:52 PM] archielvahr#0000
+which is probably not what anyone would actually pay if they were buying it on the CX
+
+
+[30-Apr-25 12:52 PM] archielvahr#0000
+so they are just funny numbers
+
+
+[30-Apr-25 12:52 PM] archielvahr#0000
+uhh not really sure on the actual value of MTP though
+
+
+[30-Apr-25 12:52 PM] archielvahr#0000
+Harmonia and Demeter in ANT space
+
+
+[30-Apr-25 12:56 PM] allocater#0000
+yes got 1000 at 2800 now the price band is bugged
+
+
+[30-Apr-25 12:56 PM] swatacular#0000
+this is so bad:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1367197955639214210/image.png?ex=68150751&is=6813b5d1&hm=1055330543b30b81089abb101a14d49aebcd836d994619558af19d35b222910c&
+
+
+[30-Apr-25 12:58 PM] allocater#0000
+this is what ROI tells me
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1238067564396150805/1367198350339997898/image.png?ex=681507b0&is=6813b630&hm=112225a4283fd3aa22516e7908cb7b8fe528580f0302fec7c6d3c1efcae72223&
+
+
+[30-Apr-25 01:00 PM] allocater#0000
+ah you are HER now. That's should be around 60k at 2800
+
+
+[30-Apr-25 01:00 PM] sidepipe#0000
+It’ll look better with 5 experts
+
+
+[30-Apr-25 01:00 PM] sidepipe#0000
+But yeah, HER prices are weird atm
+
+
+[30-Apr-25 01:03 PM] allocater#0000
+can you buy 1 HER for 3000? maybe it fixes the price band
+
+
+[30-Apr-25 01:06 PM] sidepipe#0000
+Just placed a bid!
+
+
+[30-Apr-25 01:08 PM] allocater#0000
+thanks, worked. MM wall is back in place
+
+
+[30-Apr-25 01:10 PM] swatacular#0000
+It seems like there’s just a huge RAT and DW shortage these days
+
+
+[30-Apr-25 01:11 PM] swatacular#0000
+Or atleast inflation finally caught up
+
+
+[30-Apr-25 01:11 PM] swatacular#0000
+I would think FIM prices are going to keep dropping as people lose their IDC/EDC bases
+
+
+[30-Apr-25 01:12 PM] swatacular#0000
+I don’t know that I really think now is a good time to get into FIM, except that I use it myself
+
+
+[30-Apr-25 01:12 PM] swatacular#0000
+But my ticker thing is showing it as not profitable and yours is
+
+
+[30-Apr-25 01:12 PM] swatacular#0000
+So somethings up
+
+
+[30-Apr-25 01:13 PM] allocater#0000
+the thing about FP is, you are not committing, since you can switch between DW,RAT,FIM,MEA,etc easily
+
+
+[30-Apr-25 01:14 PM] allocater#0000
+and for some reason FP bases have been at 100k/day for a long time. Even though they are cheap to build and ROI in 1 week
+
+
+[30-Apr-25 01:16 PM] swatacular#0000
+Well I’m committing if I’m on Iron forge though right? Cause there’s no water? Or do I have that wrong
+
+
+[30-Apr-25 01:16 PM] swatacular#0000
+Is FP step 2 and Water is needed for Step 1
+
+
+[30-Apr-25 01:17 PM] allocater#0000
+depends on what you can ship in as inputs
+
+
+[30-Apr-25 01:17 PM] allocater#0000
+from Moria
+
+
+[30-Apr-25 01:17 PM] sidepipe#0000
+Seems like no one wants to build FP unless they’re insanely profitable. Which ends up making them pretty profitable 😄
+
+
+[30-Apr-25 01:18 PM] swatacular#0000
+I mean I’ll build one. I just gotta see numbers and check where I’m gonna source inputs etc.. like any base
+
+
+[30-Apr-25 01:18 PM] allocater#0000
+of course
+
+
+[30-Apr-25 01:19 PM] swatacular#0000
+I’m trying really hard to not make bases that require shipping
+
+
+[30-Apr-25 01:21 PM] allocater#0000
+that's totally valid
+
+
+[30-Apr-25 01:24 PM] allocater#0000
+btw I have TRU here
+
+
+[30-Apr-25 01:26 PM] swatacular#0000
+Sweet. I’ll place a cont
+
+
+==============================================================
+Exported 1,011 message(s)
+==============================================================

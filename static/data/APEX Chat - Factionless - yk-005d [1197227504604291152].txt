@@ -1,0 +1,1126 @@
+==============================================================
+Guild: APEX Chat
+Channel: Factionless / yk-005d
+==============================================================
+
+[29-Jan-24 05:31 AM] ApexChat#8127
+***nano_xXx** joined.*
+
+
+[03-Feb-24 11:22 PM] ApexChat#8127
+***Septin** joined.*
+
+
+[04-Feb-24 04:48 PM] ApexChat#8127
+***sidepipe** joined.*
+
+
+[19-Feb-24 05:04 PM] ApexChat#8127
+***Rune-Cailliau** left.*
+
+
+[26-Feb-24 05:21 PM] ApexChat#8127
+***TuffyLess** joined.*
+
+
+[09-Mar-24 12:54 PM] ApexChat#8127
+**lukeskye**:	Hello all, I am seeking to establish another chemistry planet for refining Halite. Would anyone be interested in investing or governing? YK-024 a and b both have normal temp, I can see potential for both to be chem planets.
+
+
+[09-Mar-24 01:02 PM] ApexChat#8127
+**MrSmith33**:	I'm already a governor, but I like the idea of doing chemistry there
+
+
+[09-Mar-24 04:05 PM] ApexChat#8127
+**RiseofFilth**:	@lukeskye within the next couple weeks, im making a chem base on LS-300B
+
+
+[09-Mar-24 04:05 PM] ApexChat#8127
+**RiseofFilth**:	welcome to join or start it first
+
+
+[09-Mar-24 04:34 PM] ApexChat#8127
+**lukeskye**:	Thanks for the invite, but at least for Halite, I think that YK-024 a/b are better. One extractor base on this planet is more than enough to supply both. The chlorine could then be shipped to griffonstone 3x more efficiently than Halite.
+
+
+[09-Mar-24 04:36 PM] ApexChat#8127
+**lukeskye**:	The normal temp would also save on initial and repair costs
+
+
+[09-Mar-24 05:14 PM] ApexChat#8127
+**Hernanduer**:	there are already quite a few chem planets
+
+
+[09-Mar-24 05:14 PM] ApexChat#8127
+**Hernanduer**:	at least 7
+
+
+[09-Mar-24 05:17 PM] ApexChat#8127
+**lukeskye**:	True, but none as close as YK-024, and of the 8 chem planets within 6 jumps of here, 4 have extreme temps.
+
+
+[10-Mar-24 12:34 AM] ApexChat#8127
+**roganartu**:	electronica is 3 jumps away and is probably the best option, griff is the other most common one
+
+
+[10-Mar-24 12:34 AM] ApexChat#8127
+**roganartu**:	chem is so profitable that, generally, adverse planet conditions aren't really a problem
+
+
+[10-Mar-24 12:36 AM] ApexChat#8127
+**roganartu**:	a 500 area PG or EPO base makes 150k+ profit per day, INS adds about 250-300k per 90d repair cycle, it's pretty insignificant in the scheme
+
+
+[10-Mar-24 12:39 AM] ApexChat#8127
+**roganartu**:	also it's worth pointing out POP takes a long time. You should expect it to take upwards of 3 months and probably at least a few million investment to go from zero pop on a planet with no infrastructure to anything remotely useful. You will also need to burn a permit to do it, and maintain open jobs pressure (which means upkeep for no return) to speed up the process
+
+
+[10-Mar-24 12:40 AM] ApexChat#8127
+**roganartu**:	it's doable, which is why rise is doing it, but it's expensive and slow
+
+
+[10-Mar-24 12:42 AM] ApexChat#8127
+**roganartu**:	you came in with grand plans for elon, didn't listen to anyone, and then bailed after a single term to allegedly go start up a manufacturing planet nearby. It sounds like that lasted one term, too, so you'll forgive me if I'm skeptical that this proposal goes anywhere
+
+
+[10-Mar-24 09:33 AM] ApexChat#8127
+**lukeskye**:	@roganartu You have the right to be skeptical, but your last paragraph is composed of false allegations. First I will address the one that "I didn't listen to anyone". My proposal at Elon was accompanied by a week of discussion, during which I received and incorporated many useful suggestions. Next, I did not "bail" on Elon. At the suggestion of Firefreak, I tested and confirmed a bug that allowed me to be governor of two planets at once. Lastly, my governorship at QJ-382a is not over, I intend to continue building it up. My proposal here was to seek more governors and funds for the two planets mentioned.
+
+
+[10-Mar-24 02:41 PM] ApexChat#8127
+**Higgsy**:	I can help build infrastructure at YK-024
+
+
+[10-Mar-24 02:45 PM] ApexChat#8127
+**roganartu**:	the ability to be governor of two planets is a very well known bug, I'm not sure what exactly you were trying to confirm. I know several people who have been in that position, it allows you to become governor of both but does not allow you to perform any governing actions until the previous office term expires
+
+
+[10-Mar-24 02:54 PM] ApexChat#8127
+**roganartu**:	re bailing on elon, I'm not sure how you define it such that you think you didn't, but to be clear you came in with a proposal to massively hike taxes claiming it was necessary to improve the planet in the long-term, were told very clearly by many different people with a lot of governing experience that what you proposed was simply not necessary, still jacked up taxes (less, but still more than necessary), and then left after a single term
+
+
+[10-Mar-24 04:43 PM] ApexChat#8127
+**lukeskye**:	If this bug is well known, where is the documentation for it? The only page on it I found in a search was one called "farewell to double governance" stating that it had been fixed.
+
+
+[10-Mar-24 04:43 PM] ApexChat#8127
+**lukeskye**:	Or rather, that Molp hoped he fixed it. https://prosperousuniverse.com/blog/2023/03/06/farewell-to-double-governance-376
+
+{Embed}
+https://prosperousuniverse.com/blog/2023/03/06/farewell-to-double-governance-376
+Farewell to Double Governance - Development Log #376 | Prosperous U...
+The next maintenance release is schedule for this Wednesday!
+https://images-ext-1.discordapp.net/external/0pedjdziNwd9MBVn_Mn8gHU7Z8vXXrfYJeSeYSXwmfM/https/cdn.prosperousuniverse.com/website/og_image/asteroid-day-2016.jpg
+
+
+[10-Mar-24 05:08 PM] ApexChat#8127
+**lukeskye**:	@Higgsy thanks for your offer of help, please message me here or in private what you are willing to contribute and for which planet. I plan to contribute a significant portion as well.
+
+
+[10-Mar-24 05:10 PM] ApexChat#8127
+**roganartu**:	where's the documentation for anything in prun?
+
+
+[11-Mar-24 09:53 PM] ApexChat#8127
+**RiseofFilth**:	online wiki
+
+
+[27-Apr-24 08:54 AM] ApexChat#8127
+***caskman** joined.*
+
+
+[01-May-24 05:08 PM] ApexChat#8127
+**sidepipe**:	Hi everyone, I'm running for gov to replace Higgsy, as they retired from playing Prun a few weeks back. I don't plan to change any taxes and would appreciate your vote :)
+
+
+[01-May-24 10:52 PM] ApexChat#8127
+**TuffyLess**:	Definitely getting my vote over that other guy!
+
+
+[02-May-24 09:18 AM] ApexChat#8127
+**Hernanduer**:	uhhhh I can't vote
+
+
+[02-May-24 09:18 AM] ApexChat#8127
+**Hernanduer**:	oh, cause it's not for 17 days
+
+
+[02-May-24 09:18 AM] ApexChat#8127
+**Hernanduer**:	you guys get me all excited to go click buttons :)
+
+
+[02-May-24 09:23 AM] ApexChat#8127
+**sidepipe**:	Yeah, I realized that shortly after the message - I’ll try and remind everyone when you can actually vote :D
+
+
+[15-May-24 10:44 AM] ApexChat#8127
+***Kayron_Jarvis** joined.*
+
+
+[16-May-24 09:20 AM] ApexChat#8127
+***lol_beckie** joined.*
+
+
+[16-May-24 09:28 AM] ApexChat#8127
+**lol_beckie**:	I put in a bunch of resources to make infirmary still need a few more if anyone is happy to contribute. I do have upkeep for it once its built :)
+
+
+[17-May-24 08:46 AM] ApexChat#8127
+**RiseofFilth**:	For the record, the OFF input is the cheapest
+
+
+[17-May-24 08:46 AM] ApexChat#8127
+**RiseofFilth**:	That is the most cost efficient way to support the SST
+
+
+[18-May-24 11:04 AM] ApexChat#8127
+**sidepipe**:	@lol_beckie I'll try to bring the rest of the mats next time my ship visits. Any reason in particular you're building an INF - are you looking for more SET?
+
+
+[18-May-24 08:28 PM] ApexChat#8127
+**RiseofFilth**:	Xepiov, Please dont try and change the COGC away from RES. This is the best planet for extraction of HAL. There are many other chemistry worlds that you can do chem work on
+
+
+[18-May-24 08:39 PM] ApexChat#8127
+**lol_beckie**:	I do have settlers and I'm not worried about efficiency
+
+
+[18-May-24 08:40 PM] ApexChat#8127
+**lol_beckie**:	Don't worry about the mats I had ship just land but thanks
+
+
+[18-May-24 08:55 PM] ApexChat#8127
+**TuffyLess**:	Casted a vote for ResExt, against Xepiov's nutty craziness.
+
+
+[18-May-24 09:44 PM] ApexChat#8127
+**RiseofFilth**:	@lol_beckie You will find OFF tends to be the cheapest input for the IFN
+
+
+[18-May-24 09:44 PM] ApexChat#8127
+**RiseofFilth**:	INF*
+
+
+[19-May-24 07:13 AM] ApexChat#8127
+**lol_beckie**:	came to this planet to make OFF but i'm not too worried about the costs i'll just use what I have on hand, thx for letting me know tho
+
+
+[19-May-24 10:50 AM] ApexChat#8127
+**RiseofFilth**:	*MAKE* OFF on a Resource COGC planet...??? I say this for comedic effect and not trying to be mean...
+
+
+[19-May-24 10:50 AM] ApexChat#8127
+**RiseofFilth**:	BUT IS YOU DUMB?
+
+
+[19-May-24 10:50 AM] ApexChat#8127
+**RiseofFilth**:	go find a manufacturing planet my man
+
+
+[19-May-24 10:50 AM] ApexChat#8127
+**RiseofFilth**:	Thats like going to Promitor and doing software
+
+
+[19-May-24 09:50 PM] ApexChat#8127
+**lol_beckie**:	I don't care about efficiency and my goal is to make a bunch of stuff with as little bases as possible
+
+
+[19-May-24 09:51 PM] ApexChat#8127
+**lol_beckie**:	and being somewhat self sufficient
+
+
+[19-May-24 10:42 PM] ApexChat#8127
+**RiseofFilth**:	If efficiency doesnt matter, then take all the Rats and DW out of your bases
+
+
+[20-May-24 09:02 AM] ApexChat#8127
+**lol_beckie**:	so mean ;(
+
+
+[20-May-24 11:34 AM] ApexChat#8127
+**roganartu**:	cogc alignment aside, why come to this planet to make OFF? Are you doing the full HAL->CL->EPO->OFF chain in a single base here or something?
+
+
+[20-May-24 07:45 PM] ApexChat#8127
+**RiseofFilth**:	@lol_beckie Not trying to be mean, but you are playing a game literally designed around efficiency bonuses and production chains. COGCs. Experts. Luxury consumables like COF and PWO. All to get more efficency and produce things faster and cheaper.
+
+
+[20-May-24 07:46 PM] ApexChat#8127
+**RiseofFilth**:	Play the game the way you want, but there is no shame in playing to a planet's strength. Its just being smart.
+
+
+[20-May-24 07:56 PM] ApexChat#8127
+**lol_beckie**:	@roganartu yes im doing the HAL - OFF here i see it easier than shipping everything when it can be contained in one base and yes i know this game has ton of efficiency stuff but I don't plan on producing stuff super fast and in large quantity.
+
+
+[22-May-24 04:18 PM] ApexChat#8127
+***VenomCorp** left.*
+
+
+[23-May-24 11:41 PM] ApexChat#8127
+***Hal98** joined.*
+
+
+[23-May-24 11:43 PM] ApexChat#8127
+**Hal98**:	woot woot finally got my ship here
+
+
+[24-May-24 04:18 PM] ApexChat#8127
+**Turlorn**:	hi and welcome
+
+
+[24-May-24 05:17 PM] ApexChat#8127
+**Hal98**:	lol thanks :)
+
+
+[26-May-24 10:22 PM] ApexChat#8127
+***Churaviis** joined.*
+
+
+[28-May-24 01:17 PM] ApexChat#8127
+***FreshFromage** joined.*
+
+
+[28-May-24 01:21 PM] ApexChat#8127
+**FreshFromage**:	hello hello
+
+
+[28-May-24 01:21 PM] ApexChat#8127
+**FreshFromage**:	here to mine HAL to feed my CHPs on griffonstone and sell the excess
+
+
+[28-May-24 01:22 PM] ApexChat#8127
+**FreshFromage**:	hopefully there's still some left for me here, you greedy goblins haven't mined the planet hollow have you?
+
+
+[28-May-24 04:34 PM] ApexChat#8127
+**Hal98**:	Maybe 🤔
+
+
+[28-May-24 04:51 PM] ApexChat#8127
+**Hal98**:	I mine all the HAL :)
+
+
+[28-May-24 07:54 PM] ApexChat#8127
+**Hal98**:	Welcome to Halcyon everyone
+
+
+[28-May-24 07:55 PM] ApexChat#8127
+**Hal98**:	hopefully the profits are stonks
+
+
+[28-May-24 09:26 PM] ApexChat#8127
+**caskman**:	omg now I can rename this planet in my tooling yessssssss
+
+
+[28-May-24 09:26 PM] ApexChat#8127
+**caskman**:	all hail @Hal98!
+
+
+[29-May-24 02:15 AM] ApexChat#8127
+**FreshFromage**:	oh thank christ this planet has a name now
+
+
+[29-May-24 09:09 AM] ApexChat#8127
+**Hal98**:	hopefully its a good one 😣 tryna go for HAL theme
+
+
+[31-May-24 04:16 PM] ApexChat#8127
+**nano_xXx**:	@Hal98 you saved that planet from bein named "Le Bob" >:C
+
+
+[31-May-24 05:00 PM] ApexChat#8127
+**RiseofFilth**:	*shivers in fear*
+
+
+[31-May-24 10:37 PM] ApexChat#8127
+**Hal98**:	bober?
+
+
+[04-Jun-24 01:09 AM] ApexChat#8127
+***Paris_In_Springtime** joined.*
+
+
+[04-Jun-24 01:13 AM] ApexChat#8127
+**Paris_In_Springtime**:	Rejoice for I have arrived!
+
+
+[04-Jun-24 10:08 AM] ApexChat#8127
+**Turlorn**:	hi paris!
+
+
+[04-Jun-24 10:34 AM] ApexChat#8127
+**Hernanduer**:	heyo
+
+
+[04-Jun-24 01:18 PM] ApexChat#8127
+**RiseofFilth**:	About time Pari
+
+
+[10-Jun-24 06:51 AM] ApexChat#8127
+**FreshFromage**:	33 shipping contracts up on the ANT LM, get them while you can!
+
+
+[10-Jun-24 02:14 PM] ApexChat#8127
+***Moke.** joined.*
+
+
+[12-Jun-24 08:00 AM] ApexChat#8127
+***cadillactica** joined.*
+
+
+[13-Jun-24 06:46 PM] ApexChat#8127
+**Hal98**:	anyone wanna ship some SUN and OFF here for me?
+
+
+[13-Jun-24 08:07 PM] ApexChat#8127
+**lol_beckie**:	I can make both how soon do you want them?
+
+
+[14-Jun-24 12:27 AM] ApexChat#8127
+**Hal98**:	I've got some, but will always take more
+
+
+[14-Jun-24 12:27 AM] ApexChat#8127
+**Hal98**:	a week is fine
+
+
+[14-Jun-24 01:00 AM] ApexChat#8127
+**FreshFromage**:	I've always got space on my ships coming here
+
+
+[14-Jun-24 01:00 AM] ApexChat#8127
+**FreshFromage**:	could upgrade some stuff too if needed
+
+
+[14-Jun-24 01:08 AM] ApexChat#8127
+**FreshFromage**:	I'll bring over 5k OFF in 18h
+
+
+[14-Jun-24 09:27 AM] ApexChat#8127
+**lol_beckie**:	I'm assuming this is for population upkeep? I can supply sun
+
+
+[14-Jun-24 09:52 AM] ApexChat#8127
+**Hal98**:	yep! I can pay you for your efforts :) Its only right as the governor
+
+
+[15-Jun-24 02:27 AM] ApexChat#8127
+**lol_beckie**:	Cool! I'll start producing a bunch
+
+
+[15-Jun-24 02:33 AM] ApexChat#8127
+**lol_beckie**:	I can also provide stretches?
+
+
+[15-Jun-24 03:58 AM] ApexChat#8127
+**FreshFromage**:	got 5k OFF here
+
+
+[15-Jun-24 10:42 AM] ApexChat#8127
+**Hal98**:	sure! STR would be nice!
+
+
+[15-Jun-24 03:52 PM] ApexChat#8127
+**RiseofFilth**:	@HAL98 SUN is the most expensive of inputs for the SST. I dont recommend it. You should use only OFF, and upgrade the SST until OFF alone is sufficient. If the start up cost of doing so is... prohibitive for you, DW is the 2nd cheapest input
+
+
+[15-Jun-24 03:53 PM] ApexChat#8127
+**RiseofFilth**:	STR is also wildly overpriced and should be avoided. OFF is better
+
+
+[15-Jun-24 03:53 PM] ApexChat#8127
+**RiseofFilth**:	For the INF
+
+
+[15-Jun-24 03:54 PM] ApexChat#8127
+**RiseofFilth**:	As of right now, you have safety and health vastly higher than they need to be. Realistically, you should never be putting in inputs for POPI so that fulfillment is above 70%. You are just wasting money.
+
+
+[15-Jun-24 03:58 PM] ApexChat#8127
+**FreshFromage**:	^ this man is proposing budget cuts to police and healthcare, completely disregards the welfare of the working class in the service of maximising profit
+
+
+[15-Jun-24 03:58 PM] ApexChat#8127
+**FreshFromage**:	sad!
+
+
+[15-Jun-24 05:19 PM] ApexChat#8127
+**Hal98**:	@RiseofFilth by upgrade the SST you mean add more of them?
+
+
+[15-Jun-24 08:34 PM] ApexChat#8127
+**lol_beckie**:	I can provide stretches and sun for free if cost is such a problem ?
+
+
+[15-Jun-24 08:51 PM] ApexChat#8127
+**roganartu**:	but why? the point was that using them at all is pointless
+
+
+[15-Jun-24 08:52 PM] ApexChat#8127
+**roganartu**:	generally speaking, unless you're on a big planet (like a starter) you just don't have to feed more than one POPI upkeep item for everything except maybe the SST
+
+
+[15-Jun-24 08:53 PM] ApexChat#8127
+**roganartu**:	look at hephaestus, Rise's biggest planet. 120k pop and SST is the only thing with double upkeep, everything else is just upgraded until single upkeep is enough
+
+
+[15-Jun-24 08:55 PM] ApexChat#8127
+**roganartu**:	this requires more of whatever the inputs are, but you get the same satisfaction from it. It allows you to feed just the cheapest option, which is almost always OFF (perhaps DW at if you get it cheap enough, but making OFF cheaper is easy if you have a personal BMP planet like most people probably should :D )
+
+
+[16-Jun-24 12:08 AM] ApexChat#8127
+**lol_beckie**:	Upgrading would cost a lot? Yes be beneficially long term but short term, it doesn't cost me anything to make sun and str, we could balance the short and long term and only upgrade as we have to? Unless upgrading to max is cheaper than by all means go for it ?
+
+
+[16-Jun-24 01:48 AM] ApexChat#8127
+**roganartu**:	who said anything about upgrading to max?
+
+
+[16-Jun-24 01:48 AM] ApexChat#8127
+**roganartu**:	it just needs one level
+
+
+[16-Jun-24 01:48 AM] ApexChat#8127
+**roganartu**:	it's not promitor, it doesn't need max anything
+
+
+[16-Jun-24 01:49 AM] ApexChat#8127
+**roganartu**:	that upgrade costs approximately nothing, certainly less than whatever you're pointlessly wasting by putting SUN and STR in, anyway
+
+
+[16-Jun-24 01:49 AM] ApexChat#8127
+**FreshFromage**:	we could create a worker's paradise here people, complete with 4D arcades, safari parks and universities
+
+
+[16-Jun-24 01:49 AM] ApexChat#8127
+**roganartu**:	but I dunno, this happens every time we try and educate people about POPI mechanics so like do whatever you want, I'm sure you will anyway :)
+
+
+[16-Jun-24 01:57 AM] ApexChat#8127
+**roganartu**:	if you want to understand why this is wasteful, but need to see it yourself instead of being told, try modeling it in archiel's governing sheet. It tells you exactly what the satisfaction is and the projected happiness
+
+
+[16-Jun-24 01:59 AM] ApexChat#8127
+**roganartu**:	safety, with all three inputs fed, is 144% satisfied lol. The DW and SUN being plowed into it is doing nothing but flushing money down the drain, no matter how "free" you think it is (it's not free just because you made it yourself, that's silly)
+
+
+[16-Jun-24 07:58 AM] ApexChat#8127
+**lol_beckie**:	@FreshFromage I agree I think our people need the best recreational services
+
+
+[16-Jun-24 08:46 AM] ApexChat#8127
+**Hal98**:	so safety and health only need to be at 70%
+
+
+[16-Jun-24 09:42 AM] ApexChat#8127
+**roganartu**:	if you're using archiel's sheet, use happiness as a target and only look at needs fulfillment when the happiness targets aren't being hit. I personally find it easier to reason about this way. Aim for around 50-70% happiness with no unemployment
+
+
+[16-Jun-24 09:43 AM] ApexChat#8127
+**roganartu**:	under 50% happiness and you'll lose pops, over 70% and you'll gain pops. High unemployment provides downwards happiness pressure, and open jobs applies upwards happiness pressure
+
+
+[16-Jun-24 09:44 AM] ApexChat#8127
+**Churaviis**:	This game is very Malthusian
+
+
+[16-Jun-24 09:45 AM] ApexChat#8127
+**roganartu**:	the happiness target I personally use depends on the pop tier and what the current pop is. This planet, for example, is almost all PIO and SET is currently quite overpop. At 35% unemployment, no matter how much you fight it SET happiness is going to keep tanking until that unemployment number comes down
+
+
+[16-Jun-24 09:46 AM] ApexChat#8127
+**roganartu**:	you just gotta remember whatever you do it takes a while to take effect. Happiness is a weighted average of the last 5 weeks so it can take a while to swing
+
+
+[17-Jun-24 12:45 AM] ApexChat#8127
+**Hal98**:	cool :)
+
+
+[17-Jun-24 12:45 AM] ApexChat#8127
+**Hal98**:	I'll grab his sheet and give it a look
+
+
+[17-Jun-24 01:23 PM] ApexChat#8127
+***Agavan** joined.*
+
+
+[19-Jun-24 11:49 AM] ApexChat#8127
+***CovfefeFeatherbottom** joined.*
+
+
+[21-Jun-24 08:16 PM] ApexChat#8127
+**UnknownUserName**:	Halcyon Global Site Owners
+
+
+[23-Jun-24 11:40 AM] ApexChat#8127
+***JoeRider85** joined.*
+
+
+[26-Jun-24 10:49 AM] ApexChat#8127
+**Hal98**:	Ok shameless plug time I guess
+
+
+[26-Jun-24 10:50 AM] ApexChat#8127
+**Hal98**:	I hope yall will vote for me as Governor again for this wonderful planet :)
+
+
+[26-Jun-24 06:17 PM] ApexChat#8127
+**RiseofFilth**:	If I wasnt voting for me, I'd vote for our glorious leader @Hal98. Look forward to working with ya and helping out and offering advice where I can.
+
+
+[26-Jun-24 07:36 PM] ApexChat#8127
+**Hal98**:	joyous day
+
+
+[26-Jun-24 07:37 PM] ApexChat#8127
+**Hal98**:	anywho good news we got our first dollars since the update!
+
+
+[26-Jun-24 07:37 PM] ApexChat#8127
+**Hal98**:	special thanks to all your hardworking pioneers
+
+
+[26-Jun-24 08:21 PM] ApexChat#8127
+**RiseofFilth**:	Praise be!
+
+
+[13-Jul-24 09:59 PM] ApexChat#8127
+**Hal98**:	payout for OFF to FreshFromage
+
+
+[14-Jul-24 01:05 AM] ApexChat#8127
+**RiseofFilth**:	Hail to the king bby
+
+
+[14-Jul-24 02:06 AM] ApexChat#8127
+**FreshFromage**:	no payout needed, see it as a charitable donation
+
+
+[14-Jul-24 01:28 PM] ApexChat#8127
+**sidepipe**:	Hey everyone, since the election has started, I just wanted to mention that I'm running for MP to support our great leader Hal and would appreciate your vote! If elected, I will try to get a salt / Hal pun into every motion title possible.
+
+
+[14-Jul-24 05:07 PM] ApexChat#8127
+**Hal98**:	take ze money :)
+
+
+[14-Jul-24 07:01 PM] ApexChat#8127
+***MegaSaberEXE** joined.*
+
+
+[15-Jul-24 01:37 AM] ApexChat#8127
+**Paris_In_Springtime**:	omg that is a campaign promise I can get behind!
+
+
+[15-Jul-24 04:45 PM] ApexChat#8127
+**Hal98**:	Glorious NEWS fellow salt miners. A ship with essential supplies to the expnaion of the Warhouses on Halcyon is enroute. We will now have 3 whole warhouses per company to store our glorious salt
+
+
+[15-Jul-24 04:46 PM] ApexChat#8127
+**Hal98**:	Soon the warhouse will be lvl 20
+
+
+[15-Jul-24 04:53 PM] ApexChat#8127
+**JoeRider85**:	The Gods have smiled upon us!
+
+
+[17-Jul-24 02:37 AM] ApexChat#8127
+**Paris_In_Springtime**:	All praise the Gods of Salt, and may their heralds always be showered with glory!
+
+
+[19-Jul-24 06:11 PM] ApexChat#8127
+***userb0ea4fb71f** left.*
+
+
+[01-Aug-24 06:44 PM] ApexChat#8127
+**sidepipe**:	I realize I can't keep my campaign promise of salt puns in MOT titles since I don't write them. But just pretend the title was  'these WAR fees are salty' :D
+
+
+[07-Aug-24 10:55 PM] ApexChat#8127
+**Hal98**:	I've been doing good on salt puns
+
+
+[07-Aug-24 10:56 PM] ApexChat#8127
+**Hal98**:	anywho the planet upkeep is should be good on just OFF (archiel's governace sheet says so) So that's all I will reimburse for POPI upkeep wise. Hope you all enjoyed the salt puns for the motions :)
+
+
+[13-Aug-24 12:53 PM] ApexChat#8127
+***Akyan** joined.*
+
+
+[17-Aug-24 09:49 PM] ApexChat#8127
+***lol_beckie** left.*
+
+
+[25-Aug-24 06:16 AM] ApexChat#8127
+***sn3k** joined.*
+
+
+[04-Sep-24 12:08 PM] ApexChat#8127
+***Afka** left.*
+
+
+[04-Sep-24 03:14 PM] ApexChat#8127
+**Hal98**:	the WAR now fits 921 HAL :D
+
+
+[04-Sep-24 03:14 PM] ApexChat#8127
+**Hal98**:	we are reaching the goal of being able to fit 1k HAL
+
+
+[04-Sep-24 03:22 PM] ApexChat#8127
+**sidepipe**:	\o/
+
+
+[13-Sep-24 10:07 AM] ApexChat#8127
+***Vention** joined.*
+
+
+[14-Sep-24 11:27 AM] ApexChat#8127
+**Hal98**:	If anyone has 4 extra INS here I would love to buy :D
+
+
+[21-Sep-24 04:20 AM] ApexChat#8127
+***Razenpok** joined.*
+
+
+[23-Sep-24 09:17 PM] ApexChat#8127
+***Vention** deleted this message.*
+
+
+[24-Sep-24 04:59 PM] ApexChat#8127
+***Archiekun** left.*
+
+
+[08-Oct-24 12:12 PM] ApexChat#8127
+***kynadre** joined.*
+
+
+[16-Oct-24 10:42 AM] ApexChat#8127
+**Hal98**:	woah look
+
+
+[16-Oct-24 10:42 AM] ApexChat#8127
+**Hal98**:	lvl 9 war
+
+
+[16-Oct-24 10:43 AM] ApexChat#8127
+**Hal98**:	enjoy being able to fit 1k HAL in your WARs now :)
+
+
+[16-Oct-24 11:18 AM] ApexChat#8127
+**Hernanduer**:	all this ----space----
+
+
+[16-Oct-24 12:28 PM] ApexChat#8127
+**kynadre**:	<3
+
+
+[16-Oct-24 12:28 PM] ApexChat#8127
+**kynadre**:	bless you sir
+
+
+[16-Oct-24 01:06 PM] ApexChat#8127
+**Hal98**:	OH and we turned the INF off and added one more SST so that should make it cheaper to run the planet and keep things going
+
+
+[16-Oct-24 01:14 PM] ApexChat#8127
+**kynadre**:	yay! I had fun looking at the figures and history on that... hope it helps
+
+
+[16-Oct-24 01:14 PM] ApexChat#8127
+**kynadre**:	we'll see over the next report or two!
+
+
+[16-Oct-24 08:28 PM] ApexChat#8127
+**Hal98**:	Oh well it going down is fine, unemployment causes unhappiness and so no unemployment should bring overall happiness up to 70% and give no further drain to stuff
+
+
+[16-Oct-24 11:08 PM] ApexChat#8127
+**kynadre**:	Yeah, settlers I think'd be used by people making one of their first bases, so pop need isn't high anyway. Most important is stopping that migration from PIO to SET heh
+
+
+[16-Oct-24 11:08 PM] ApexChat#8127
+**kynadre**:	we'll see if it works, I look forward to the data
+
+
+[16-Oct-24 11:08 PM] ApexChat#8127
+**kynadre**:	SET will keep slowly creeping up over time anyway, but hopefully more slowly
+
+
+[17-Oct-24 12:48 PM] ApexChat#8127
+**Hal98**:	Most people shouldn't need SET here bc most people will be using EXT which only use PIO
+
+
+[17-Oct-24 10:25 PM] ApexChat#8127
+**kynadre**:	right, just thinking about newbros who combine bases at first, then split later. There's little demand at best
+
+
+[17-Oct-24 10:26 PM] ApexChat#8127
+**kynadre**:	it'll take a few weeks for healthcare to fully drop off, hopefully cuts the education migration in half
+
+
+[24-Oct-24 12:21 PM] ApexChat#8127
+**kynadre**:	@hal98 I thought idea was to stop fueling healthcare so SET stops stealing PIO?
+
+
+[24-Oct-24 12:21 PM] ApexChat#8127
+**kynadre**:	or it needs it to keep 70% happy?
+
+
+[24-Oct-24 12:21 PM] ApexChat#8127
+**kynadre**:	thought life support & security would be enough
+
+
+[24-Oct-24 12:22 PM] ApexChat#8127
+**kynadre**:	I see the unemployed PIO dropped pretty hard tho
+
+
+[24-Oct-24 12:23 PM] ApexChat#8127
+**kynadre**:	new bases etc.
+
+
+[26-Oct-24 01:35 PM] ApexChat#8127
+**Hal98**:	base happiness with the INF and 0% unemployment is only 70% which cannot account for the natural education of SET. Also there are some people here with bases that use SET otherwise that populations' unemplyment would be 25%. So some measures are needed to maintaine the that population IE the INF
+
+
+[26-Oct-24 01:35 PM] ApexChat#8127
+**Hal98**:	sorry without*
+
+
+[26-Oct-24 01:35 PM] ApexChat#8127
+**Hal98**:	That being said we're going to wait a week see how it goes then add more SST if needed
+
+
+[26-Oct-24 01:38 PM] ApexChat#8127
+**kynadre**:	Yeah totally understood, we'd discussed in Discord, thanks for patience with me trying to learn this stuff
+
+
+[26-Oct-24 01:46 PM] ApexChat#8127
+**Hal98**:	no yeah that was more of a PSA to everyone else
+
+
+[26-Oct-24 01:47 PM] ApexChat#8127
+**Hal98**:	anywho Happyiness should sit at about 75% with the way things are (granted if I mathed right)
+
+
+[26-Oct-24 01:53 PM] ApexChat#8127
+**kynadre**:	Sweet, and agree on SET; some folks will hybrid base to save permits
+
+
+[26-Oct-24 01:53 PM] ApexChat#8127
+**kynadre**:	otherwise it'd be 100% unemploy
+
+
+[26-Oct-24 02:09 PM] ApexChat#8127
+**Vention**:	I am one of those people that use SET
+
+
+[26-Oct-24 02:09 PM] ApexChat#8127
+**Vention**:	And yeah it's a hybrid - I'm pulling enough HAL out of here for more than one CL planet, but no spare permits for a second CL base. So I process the excess HAL here since I do need as much CL as I can manage
+
+
+[26-Oct-24 02:13 PM] ApexChat#8127
+**kynadre**:	Aye aye it makes a ton of sense early
+
+
+[26-Oct-24 02:17 PM] ApexChat#8127
+**Vention**:	Less an early thing, and more a permit budgeting thing - had 9 permits to use to get to Afab production, and just couldn't afford to use more than 2 for CL. another CL world is on my short list though, so won't processing here forever
+
+
+[26-Oct-24 02:20 PM] ApexChat#8127
+**kynadre**:	=) That's what I meant by early, sorry, permit conservation when you don't NEED full-bore output
+
+
+[26-Oct-24 02:34 PM] ApexChat#8127
+**Vention**:	aha my bad :P  And yeah - long and short though is I won't be messing up the pop report permanently
+
+
+[26-Oct-24 02:35 PM] ApexChat#8127
+**kynadre**:	not "messing it up" at all. They populate themselves, glad to see them being useful :D
+
+
+[31-Oct-24 12:24 PM] ApexChat#8127
+**Hal98**:	Report #105 looks good happiness is above 70% so we gained more PIO than we lost to SET education. We will give it another week to see if we need more SST or something
+
+
+[31-Oct-24 01:22 PM] ApexChat#8127
+**kynadre**:	niice
+
+
+[02-Nov-24 06:18 AM] ApexChat#8127
+**Akyan**:	I've posted a HAL sell order for 100u at 0.01AIC total, if someone would like to help me out by taking it. Thanks
+
+
+[02-Nov-24 06:29 AM] ApexChat#8127
+***Akyan** left.*
+
+
+[06-Nov-24 09:09 PM] ApexChat#8127
+***JeanPaulMarat** joined.*
+
+
+[14-Nov-24 10:28 AM] ApexChat#8127
+***shakk** joined.*
+
+
+[21-Nov-24 06:20 PM] ApexChat#8127
+***Akare** joined.*
+
+
+[24-Nov-24 12:02 AM] ApexChat#8127
+***Laaxus** joined.*
+
+
+[01-Dec-24 10:03 PM] ApexChat#8127
+**Hal98**:	hopefully the only problem from turkey day is my waist line not the unfilled POPR
+
+
+[01-Dec-24 10:03 PM] ApexChat#8127
+**Hal98**:	:/
+
+
+[23-Dec-24 12:26 PM] ApexChat#8127
+**MegaSaberEXE**:	Lol
+
+
+[02-Jan-25 06:37 AM] ApexChat#8127
+***Shrewdsun1** joined.*
+
+
+[05-Jan-25 03:19 AM] ApexChat#8127
+***harveyG** joined.*
+
+
+[05-Jan-25 04:54 AM] ApexChat#8127
+***FreshFromage** left.*
+
+
+[23-Jan-25 11:31 AM] ApexChat#8127
+**Akare**:	got a small shipmentANT>Halycon for 2K if someone is heading this way and wants to grab some easy cash, thanks
+
+
+[31-Jan-25 06:42 AM] ApexChat#8127
+***Paris_In_Springtime** left.*
+
+
+[20-Feb-25 03:27 AM] ApexChat#8127
+***Umbers** joined.*
+
+
+[24-Feb-25 09:21 PM] ApexChat#8127
+***Aaron987** joined.*
+
+
+[26-Feb-25 02:32 PM] ApexChat#8127
+**Hal98**:	Heyo don't forget to vote in the election :)
+
+
+[26-Feb-25 02:32 PM] ApexChat#8127
+**Hal98**:	or run if you wanna toss your hat in
+
+
+[01-Mar-25 01:08 PM] ApexChat#8127
+***appletalking** left.*
+
+
+[04-Mar-25 05:48 PM] ApexChat#8127
+***Appletree23** joined.*
+
+
+[04-Mar-25 05:51 PM] ApexChat#8127
+**Appletree23**:	Helllooooo
+
+
+[04-Mar-25 05:51 PM] ApexChat#8127
+**Appletree23**:	5th base here :D
+
+
+[04-Mar-25 10:41 PM] ApexChat#8127
+**Hal98**:	woot woot
+
+
+[05-Mar-25 03:06 AM] ApexChat#8127
+**Laaxus**:	hello :D
+
+
+[05-Mar-25 06:25 AM] ApexChat#8127
+**Appletree23**:	on the last POPR, there was 0% unemployment for PIO, now that I have set up a base here, will some more PIO's migrate here to fill the demand? my base has 356 open jobs rn and thats about to go up to 656 so this whole base kinda hinges on migration D:
+
+
+[05-Mar-25 06:26 AM] ApexChat#8127
+***Appletree23** deleted this message.*
+
+
+[05-Mar-25 06:27 AM] ApexChat#8127
+**Appletree23**:	would kinda suck if I have to wait 2 weeks to get this base fully going after I spent 100k extra to get materials in time for this POPR D:
+
+
+[05-Mar-25 03:26 PM] ApexChat#8127
+**Hal98**:	you should be fine
+
+
+[06-Mar-25 10:08 AM] ApexChat#8127
+**Appletree23**:	nice, lots of new PIO's filled all my requirement :D
+
+
+[06-Mar-25 12:51 PM] ApexChat#8127
+**Hal98**:	heh
+
+
+[06-Mar-25 12:52 PM] ApexChat#8127
+**Hal98**:	lets go :)
+
+
+[06-Mar-25 12:52 PM] ApexChat#8127
+**Hal98**:	hope you enjoy halcyon
+
+
+[11-Mar-25 04:07 AM] ApexChat#8127
+**Appletree23**:	Thanks :D
+
+
+[11-Mar-25 06:32 AM] ApexChat#8127
+***userfec9c7dcb3** left.*
+
+
+[19-Mar-25 04:11 AM] ApexChat#8127
+**Laaxus**:	For anybdy interested, I put many buying LM ad for HAL
+
+
+[19-Mar-25 04:13 AM] ApexChat#8127
+**Laaxus**:	the price is current ANT ASK minus the shipping cost using darkfuel as reference (30k per WCB trip)
+
+
+[19-Mar-25 04:13 AM] ApexChat#8127
+**Laaxus**:	AKA 250/u
+
+
+[19-Mar-25 07:19 AM] ApexChat#8127
+**Appletree23**:	how is 30k the cost for shipping?
+
+
+[19-Mar-25 07:50 AM] ApexChat#8127
+**Laaxus**:	This is what darkfuel ask
+
+
+[19-Mar-25 07:50 AM] ApexChat#8127
+**Laaxus**:	maybe you could find someone ready to do a ANT - > Halcyon -> ANT for less
+
+
+[19-Mar-25 07:50 AM] ApexChat#8127
+**Laaxus**:	but it is unlikely or at the very least, unreliable
+
+
+[19-Mar-25 11:22 AM] ApexChat#8127
+**Appletree23**:	yeah just curious
+
+
+[19-Mar-25 12:13 PM] ApexChat#8127
+**Laaxus**:	price is the market rate, always
+
+
+[19-Mar-25 12:13 PM] ApexChat#8127
+**Laaxus**:	and 30k is roughly how much you have to put for someone to ship it for you
+
+
+[26-Mar-25 08:44 AM] ApexChat#8127
+***sn3k** left.*
+
+
+[30-Mar-25 08:30 AM] ApexChat#8127
+**Laaxus**:	Hello, I put new buy bids for you hal, don't hesitate to sell it to me !
+
+
+[02-Apr-25 12:49 PM] ApexChat#8127
+***ManhimOne** joined.*
+
+
+[06-Apr-25 06:30 PM] ApexChat#8127
+**Hal98**:	Hi all
+
+
+[06-Apr-25 06:30 PM] ApexChat#8127
+**Hal98**:	I am upgrading the STS one level
+
+
+[06-Apr-25 06:31 PM] ApexChat#8127
+**Hal98**:	Based on a fair market rate it will cost 464,957.60 AIC for 60 BBH, 60 BDE, 30 BSE, 15 BTA, 746 MCG, and 25 TRU
+
+
+[06-Apr-25 06:32 PM] ApexChat#8127
+**Hal98**:	This will help keep population levels at its current level and allow for some extra pops if people would like to build more bases here
+
+
+[07-Apr-25 04:12 PM] ApexChat#8127
+**Laaxus**:	do you feel like the planet need more infrastructure ?
+
+
+[07-Apr-25 04:12 PM] ApexChat#8127
+**Laaxus**:	I'd love to participate
+
+
+[07-Apr-25 05:49 PM] ApexChat#8127
+**Hal98**:	No I don't think at the moment that it really needs anything more at the moment
+
+
+[07-Apr-25 05:51 PM] ApexChat#8127
+**Hal98**:	Anywho the SST has just been upgraded
+
+
+[17-Apr-25 08:38 AM] ApexChat#8127
+***Magican1980** joined.*
+
+
+[19-Apr-25 01:54 PM] ApexChat#8127
+***ZekeMorrin** joined.*
+
+
+[19-Apr-25 01:59 PM] ApexChat#8127
+**ZekeMorrin**:	Hi everyone o/
+
+
+[20-Apr-25 05:10 AM] ApexChat#8127
+**Turlorn**:	welcome
+
+
+[20-Apr-25 08:14 AM] ApexChat#8127
+**ZekeMorrin**:	thank you :)
+
+
+[24-Apr-25 07:39 AM] ApexChat#8127
+**ZekeMorrin**:	Hello, is it possible to attract pioneers here a bit more?
+
+
+[24-Apr-25 07:52 AM] ApexChat#8127
+**ZekeMorrin**:	one or two more levels in infirmary should be nothing for a veteran player and can attract lots of new pioneers :)
+
+
+[28-Apr-25 06:38 PM] ApexChat#8127
+**Hal98**:	SST would do more for PIO than INF would
+
+
+[28-Apr-25 06:40 PM] ApexChat#8127
+**Hal98**:	I will compare the effects in my sheet
+
+
+[28-Apr-25 06:45 PM] ApexChat#8127
+**Hal98**:	but also with the SST upgrade 9 days ago the happiness should do better and be above 70%
+
+
+[28-Apr-25 06:46 PM] ApexChat#8127
+**Hal98**:	I also need to consider how it will affect SET bc if they get too happy then there will be too much education out for those cutting into how many PIOs we get
+
+
+[28-Apr-25 06:47 PM] ApexChat#8127
+**Hal98**:	Let me know if you didn't get enough PIO with that last POPR 4 days ago tho! and we can work on something quicker i the meantime
+
+
+[30-Apr-25 08:56 AM] ApexChat#8127
+***lguth3728** joined.*
+
+
+==============================================================
+Exported 278 message(s)
+==============================================================

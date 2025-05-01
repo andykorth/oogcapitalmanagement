@@ -1,0 +1,161 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Project Ship Kit / psk-information
+==============================================================
+
+[12-Sep-24 07:57 AM] jvaler#0000
+Placeholder: https://discord.com/channels/1183243037430796339/1192951755462410271/1276695793528475669
+
+
+[12-Sep-24 01:41 PM] evany.#0000
+```
++----------+----------+------+--------+
+|          | Required | Have | Active |
++----------+----------+------+--------+
+| SKF Base |        1 |    1 |   1    | evayoo
++----------+----------+------+--------+
+| ASM Base |        2 |    2 |   2    | jcheung9941, Tanda
++----------+----------+------+--------+
+| AML Base |        2 |    2 |   2    | Hal98, Spermatozoon
++----------+----------+------+--------+
+| ECA      |        1 |    1 |        | 
++----------+----------+------+--------+
+| SME      |        2 |    2 |   1    | igfloz
++----------+----------+------+--------+
+| EXT      |        2 |    1 |   1    | 
++----------+----------+------+--------+
+|      BER |          |    1 |   1    | bobzor
++----------+----------+------+--------+
+|      TIO |          |    1 |   1    | igfloz
++----------+----------+------+--------+
+```
+
+last updated 11/9/24
+
+
+[12-Sep-24 01:53 PM] evany.#0000
+> Prices internally for provided units will be like this in an effort to reach our target price of 950k (including LHP & SSC provided externally)
+> 
+> Please understand these are all subject to change
+> 
+> AST 1900
+> FET    1950
+> TI    1500
+> TIO    180
+> ZIR    250
+> ZR    7700
+> BE 2000
+> CTF 15000
+> 
+> Things like AL and C used in a lot of components I woule encourage people to use internal markets where available 
+> If you can't get your hands on any feel free to reach out, I sometimes have stocks that i'm happy to sell for projects sake!
+> Any questions or concerns feel free to dm or ask in #psk-operations
+
+
+[12-Sep-24 01:54 PM] evany.#0000
+The important part is to get starting tec/eng bases down as they will take a week or two to fill and allow us to start building a stock of material(s)
+
+
+[31-Oct-24 05:55 PM] jcheung#0000
+Additional project pricing - temporary until permanent:
+```
+TKR    -  PPU
+AL     -  700
+CU     -  1500
+FE     -  500
+FEO    -  60
+O      -  85
+SI     -  1500
+SIO    -  100
+W      -  5500
+```
+
+
+[31-Oct-24 06:23 PM] jcheung#0000
+Consumables for project use only
+```
+jcheung - MED - 1000
+jcheung - SC  - 800
+```
+
+
+[09-Nov-24 11:17 AM] evany.#0000
+This will be updated but at the moment we are looking for someone to EXT ZIR
+
+We also need 
+W / SI / BER
+If someones interested in extracting or already has a base on LS-231b please reach out to me or jcheung
+
+
+[12-Nov-24 02:06 PM] evany.#0000
+WTB 1x SME. DM me or @jcheung we can sort loans or anything necessary
+
+
+[10-Dec-24 03:28 PM] evany.#0000
+For peoples looking for ship kits
+
+tag me here / DM me - feel free to do both and i'll probably get to it quicker if its tagged here as my DM's always has 30 spammers in it seemingly. 
+
+What will happen is 
+Jvaler will send you a loan for the amount
+I will send you conts for the ship kit
+You will pay the shipkit amount with the loaned money from jvaler
+
+the upgrade will look like this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282880035761684604/1316154602550202538/image.png?ex=6814903e&is=68133ebe&hm=de86639c7dff4430b29000acf6118e2be57053f8dd8f3415b0bb06420951fd6b&
+
+{Reactions}
+❤️ (2) red insitor insitor 
+
+[24-Dec-24 10:47 AM] jcheung#0000
+Each package currently costs 1.35m. See below for an example of the loan repayment schedule.
+
+
+[04-Feb-25 03:53 PM] jvaler#0000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282880035761684604/1336454501271470180/image.png?ex=681495ff&is=6813447f&hm=0d8961bc92542a226d8d496614a32db3e3639d28932fcfb0954cc4eba20db4a8&
+
+{Reactions}
+red 
+
+[28-Mar-25 12:13 PM] evany.#0000
+It's been talked about a bunch and more will come as we hit bottlenecks, but nearly everything is being built at this stage to do a complete WCB kit.
+I've been kind of quiet about it as it doesn't require thousands of components or anything (it does) and I wasn't sure how close i'd get, in the last 3-4 months i've spun up 7 bases and had a ton of help from certain individuals with another 6 or 7 bases that I will let them out themselves if they so please
+
+Truth is I don't have firm costs and can't really firm up prices yet, What I can tell you is that i expect the first set of ships to be final production sometime early next week. There can and will still be gaps and certainly some opportunity for anyone looking to get involved
+from a variety of things that I may or may not need more reliable amounts of 
+
+fab
+LHP
+SSC
+
+smelting
+AU
+CU
+AL
+SI
+CF
+
+smithys
+RGO
+BRO
+
+electronics
+DA
+WAI
+OS
+
+This is just for WCB's which are currently planned to round out the count, however HCB is relatively straight forward and will likely be the next goal some of you have asked already but at least at this time I don't have any gumption to pursue LCB kits, if someone wants to take on a pet project that soaks up hours though feel free to hit me up.
+
+Coming up, i'd expect in the next two or three weeks the first ten or so ships should be ready and I hope to be able to share pricing at that time too.
+feel free to ask any questions in #psk-operations or DM me 
+
+Thanks
+
+
+==============================================================
+Exported 12 message(s)
+==============================================================

@@ -1,0 +1,63 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Server Information / prun-resources
+==============================================================
+
+[10-Nov-24 01:23 AM] jvaler#0000
+# Websites
+* Refined PrUn
+  * Chrome https://chromewebstore.google.com/detail/refined-prun/coabeheneafgglpakallmkienlidgaof
+  * Firefox https://addons.mozilla.org/en-US/firefox/addon/refined-prun/
+  * PMMG migration explanation here: https://discord.com/channels/350171287785701388/816625580610027520/1310954082197831771
+* PRUNplanner https://prunplanner.org/
+  * PRUNplanner tutorial by @lord3001  https://www.youtube.com/watch?v=Vi-i6rLZMaQ
+* FIO https://fio.fnar.net/
+  * FIO documentation https://doc.fnar.net/
+  * New FIO documentation in development https://api.fnar.net/index.html
+* PrUn Community Derived Information https://pct.fnar.net/
+* Yet Another PrUn Tool (YAPT) https://aeryen23.github.io/yapt/#/planetsearch
+* Taiyi's Prosperous Universe Map https://universemap.duckdns.org/
+* PRUNStats https://prunstats.com/
+* OOG Good Governance Post https://oogcapitalmanagement.com/posts/good-governance/
+* Archiel's Good Governance Document https://docs.google.com/document/d/1pDvP3Iz-MDIa_uoQPsJDDOHn72dK7T02k1oAa94K2W0/edit?tab=t.0
+
+* Discord Markdown Guide https://gist.github.com/matthewzring/9f7bbfd102003963f9be7dbcf7d40e51
+* 3v.fi - Discord Timestamp Generator https://r.3v.fi/discord-timestamps/
+* Desmos Scientific Calculator https://www.desmos.com/scientific
+* Desmos Graphing Calculator https://www.desmos.com/calculator
+
+
+[16-Jan-25 04:21 PM] jvaler#0000
+# Spreadsheets
+* PrUn repair guide https://docs.google.com/spreadsheets/d/1ELsfw4ii1hQFWDd-BL4JzwqHc-wGVXbJtvAeprv0pZ0
+* Loan Calculator https://docs.google.com/spreadsheets/d/1Dj6Es_6FVpwllBFigpGL_PgX-K7xCvd9Eavj7LOY6VA
+* PU Community Start Demand https://docs.google.com/spreadsheets/d/1UUmjz8XNgLJ6y_XJa_hn7JPc9FWftqR2Lx9McZi-X-0/edit
+  * This sheet is outdated. Don't rely on it's advice, it is just here for information
+* PrUn - Illumilite (Ignition) Planet Survey https://docs.google.com/spreadsheets/d/1DEdjT23XCx8BmLvc_lihKkYY3qLR-HZxe5KkNqMqWWo/edit?gid=1905179033
+  * This sheet allows public edits, but please do not do this. Make your own copy of it and edit it privately. This way any accidents don't affect the main sheet.
+* Archiel's Governor Helper https://docs.google.com/spreadsheets/d/19mg6DKaGi_cfjLNyb8AeS00oddgMbepTDf9RIkOMocw
+
+
+[16-Jan-25 04:21 PM] jvaler#0000
+# Servers
+* Prosperous Universe https://discord.com/invite/QpXfzVr
+  * Official server for the game.
+* PrUn Community Tools https://discord.gg/ZT9VJDt
+  * Server related to 3rd party PrUn tools. 
+  * Most tool devs are in here for you to ask questions to.
+* United Faction Operations https://discord.gg/vwcUJx8HHP
+  * Unofficial server for community organizing. 
+  * Forum boards with many trade deal and group recruitment ads.
+
+
+[16-Jan-25 04:22 PM] jvaler#0000
+# Currency symbols for copy+pasting
+**AIC** ```₳```
+**CIS** ```₡```
+**ICA** ```ǂ```
+**NCC** ```₦```
+
+
+==============================================================
+Exported 4 message(s)
+==============================================================

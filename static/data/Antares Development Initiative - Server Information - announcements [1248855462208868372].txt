@@ -1,0 +1,324 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: Server Information / announcements
+==============================================================
+
+[15-Jun-24 11:02 PM] jvaler#0000
+okay @WKP, the order for 12 WCB kits is in. it will be broken up into 4 batches of 3, that way the existing queue schaitr has can continue to move along. they expect the first batch of 3 to be completed by 02-Jul-24 11:00 PM. the plan is to wait until 6 are ready to bring them down to ANT because up to 6 kits can fit in an LCB at a time, and 6 divides well into the 6 people waiting on kits.
+
+it could be possible to make extra trips and bring the 3 of 6 kits down early, but i wouldn't know how to fairly split it amongst everyone. if anyone has any ideas let me know, otherwise i'll be waiting until the second batch to bring them to ANT.
+
+for @sidepipe specifically: i'll work on drafting up the finances of the project in the next few days so don't worry about that yet.
+
+{Reactions}
+🙌 (3) 👍 (2) blobheart 
+
+[15-Jun-24 11:10 PM] jvaler#0000
+
+
+[16-Jun-24 04:57 PM] jvaler#0000
+
+{Reactions}
+Badcat 
+
+[16-Jun-24 04:57 PM] jvaler#0000
+@WKP ^
+
+
+[16-Jun-24 04:58 PM] jvaler#0000
+also please don't let this end in a tie i hate having to make decisions 😭
+
+{Reactions}
+💖 
+
+[16-Jun-24 04:58 PM] akyantor#0000
+Thread
+
+
+[01-Aug-24 11:51 PM] jvaler#0000
+Hello @everyone! @riseoffilth has requested to have a governance support category created in ADI, and so we now have 3 new channels! You can find a brief overview of their functions in https://discord.com/channels/1183243037430796339/1254862461719416943/1268790867347374101.
+
+Given that one of the main purposes of ADI is player onboarding, I think this category should be a good fit in the server.
+
+
+[06-Aug-24 12:07 PM] jvaler#0000
+I've done some thinking with evayoo, and I'm considering both removing the airlock channel and redefining the Associate/Member role distinction.
+
+Because ADI is not a public server, I have never seen a single spam bot in my entire time here. I think removing this barrier to entry will improve recruitment rates into ADI.
+Though maybe the airlock has another purpose besides spam bots, but I don't see one. If you do, @ me in #associate-office.
+
+edit: One point made in https://discord.com/channels/1183243037430796339/1183248948543098992/1270429328559308931 was that the airlock serves as a reading comprehension and instruction-following test. And I actually kind of agree, though having a welcome message is a somewhat recent addition since I took over the server. So that wasn't the original intention of the airlock by australis, but I don't see why it couldn't be the new intention now.
+
+And secondly on the role distinction, I think limiting member role to only those who are participants in named ADI projects is far too restrictive. If I recall correctly, the original distinction was that members were anyone in Antares, and associates were anyone outside of Antares that just wanted to chat or trade. I think we should go back to that, and I will retroactively give every Antares player here member role.
+
+I'm gonna make 2 polls for y'all to decide.
+
+
+[06-Aug-24 12:07 PM] jvaler#0000
+
+
+[06-Aug-24 12:08 PM] jvaler#0000
+
+
+[06-Aug-24 12:09 PM] jvaler#0000
+@everyone reading and polls for you to vote on ^
+
+
+[07-Aug-24 12:07 PM] jvaler#0000
+
+{Embed}
+poll_question_text
+Should #server-airlock be removed?
+victor_answer_votes
+24
+total_votes
+33
+victor_answer_id
+2
+victor_answer_text
+No.
+victor_answer_emoji_name
+🚫
+
+
+[07-Aug-24 12:08 PM] jvaler#0000
+
+{Embed}
+poll_question_text
+Should the Associate/Member role distinction be redefined as explained above?
+victor_answer_votes
+26
+total_votes
+34
+victor_answer_id
+1
+victor_answer_text
+Yes.
+victor_answer_emoji_name
+✅
+
+
+[10-Aug-24 01:20 PM] jvaler#0000
+Tanda made an interesting idea, I'd like y'alls opinion on it. https://discord.com/channels/1183243037430796339/1183248948543098992/1271870897107763292
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1248855462208868372/1271895999870275740/image.png?ex=68150cf5&is=6813bb75&hm=e06139022d981e719323b4a398c5136e76d8365ccf1c6a9243cdca58b242e1c5&
+
+
+[10-Aug-24 01:21 PM] jvaler#0000
+
+
+[10-Aug-24 01:25 PM] jvaler#0000
+@everyone sorry for the pings, this will be the last one. i've just made an opt-in @Polls role to ping in the future. go grab it in #reaction-roles if you'd like
+
+
+[10-Aug-24 01:31 PM] jvaler#0000
+i'll get on re-assigning member roles to everyone soon, i'm just kinda dreading how tedious it will be lmao sorry
+
+{Reactions}
+🫶 (8) 
+
+[10-Aug-24 02:36 PM] akyantor#0000
+Read only for all
+
+
+[11-Aug-24 01:21 PM] jvaler#0000
+
+{Embed}
+poll_question_text
+Should the rest of the server be made read-only to airlock users?
+victor_answer_votes
+17
+total_votes
+32
+victor_answer_id
+1
+victor_answer_text
+Become a glass fishtank.
+victor_answer_emoji_name
+🐟
+
+
+[24-Aug-24 02:27 PM] jvaler#0000
+@everyone
+
+@evany. and @jcheung are currently organizing a WCB upgrade kit production project. if you would like to participate please see https://discord.com/channels/1183243037430796339/1192951755462410271/1276695793528475669 and it's attached thread.
+
+{Reactions}
+👍 (6) maxwell 
+
+[25-Aug-24 03:50 PM] jvaler#0000
+reminder for anyone interested in the above project to answer this poll indicating such: https://discord.com/channels/1183243037430796339/1276695793528475669/1276696140045352992
+
+
+[26-Aug-24 01:05 PM] jvaler#0000
+## We have increased the AGP grant amount to 1mil AIC each!
+This should help get new players much closer to filling out their first bases, or even make it much more viable to go straight into making a 2nd base.
+I will update the ADI UFO posts to reflect this once PiBoy fixes the perms there.
+
+{Reactions}
+🎉 (7) 
+
+[09-Sep-24 08:52 PM] jvaler#0000
+WKP channels have been moved to the archive as PSK is in the process of getting up and running.
+
+
+[08-Oct-24 11:48 AM] jvaler#0000
+Hello ADI!
+
+I'd like to compile a list of useful resources for players in #prun-resources, similar to the tools list in PCT. I'm making a thread here for people to suggest things to be added to it so that I don't miss anything.
+
+
+[31-Oct-24 08:55 AM] jvaler#0000
+I've added a new staff role to be used instead of coordinator. Coordinator role can now be used for actually showing who coordinates projects. I went through and tried to update who has coordinator role accordingly, but I may have missed some people.
+
+If you had coordinator you've automatically been given the new staff role, because that's basically what it was.
+
+
+[08-Nov-24 09:17 PM] jcheung#0000
+With the recent rampant market manipulation and several people expressing a desire to start C production, I would like to gauge interest in a cooperative C production program.*
+
+Individually, if you were to do GRN burn using harmonia to produce grain, you can use 2 permits to produce around 200 C per day, purchasing water (cost roughly 10 C worth @750/u), selling GRN (roughly 17 C)
+-# 103 per permit (repair costs not calculated)
+
+As a group, we could produce around 1200 C/d with triple burn using harmonia for GRN and HYFs for MAI and HCP with 8 permits (requires at least 3 different people for harmonia and another set of 3 for HYF [can be same people]), purchasing water and NS (~ -274 C), selling excess GRN/HCP/MAI (~ +50 C) 
+-# 122/permit (repair costs not calculated)
+- The cost of purchased goods can be reduced by using another permit for H2O production (full consumption) 
+-# still ~ 122/permit (repair costs not calculated)
+
+Further scaling can be done with more permits.
+
+Disclaimer: I will not be contributing a base to this effort, but I will, should nobody else wish to, coordinate this project and assist with shipping*
+
+-# *this will be a long term project, requiring some amount of time to spin up. this program may not help with the short term price gouging in effect.
+-# *shipping will likely  have a small cost associated with it
+
+
+[08-Nov-24 09:18 PM] jcheung#0000
+
+
+[08-Nov-24 09:20 PM] jcheung#0000
+@Polls
+
+
+[08-Nov-24 10:45 PM] jcheung#0000
+C project discussion thread
+
+
+[10-Nov-24 04:21 AM] jvaler#0000
+#prun-resources now has content... after like a month .-.
+
+be sure to ping me if you have any additions to suggest
+
+
+[15-Nov-24 09:18 PM] jcheung#0000
+
+{Embed}
+poll_question_text
+Interest?
+victor_answer_votes
+6
+total_votes
+8
+victor_answer_id
+4
+victor_answer_text
+Worst idea ever known to man
+
+{Reactions}
+😬 (2) 😭 
+
+[14-Dec-24 03:36 AM] jvaler#0000
+updated #server-information to reflect the new projects/programs that have been started. had to repost it as a separate message for character length, sorry for the extra pings :x
+
+
+[14-Dec-24 01:31 PM] jvaler#0000
+reposting piboy's announcement:
+
+
+[14-Dec-24 01:31 PM] jvaler#0000
+Ho ho ho, it's that time of year again! PrUN Secret Santa is here. Sign up to give a gift to a random PrUN member and receive a gift from a random PrUN member. Your gifts can range anywhere from a few materials to something worth millions. It's a great way to have fun in the game around the holiday times. The form closes soon on this Sunday the 22nd! https://forms.gle/7JgiDL3j8sHSysqUA
+
+{Embed}
+https://forms.gle/7JgiDL3j8sHSysqUA
+PrUn Secret Santa 2024
+Sign up to give a gift and receive a gift from a random PrUn player! Your gift can be of any size. Worth 1 or 1,000,000 currency.
+https://images-ext-1.discordapp.net/external/S1Vksr0n22sBZgtgLdEcatuan8k5Xv2qK_PB9X_lWQs/https/lh3.googleusercontent.com/sYvSatothAacAeATUDWYyYFvCS5ZbtVc1tp3-JOcQdAiAUpLvoXJR7OosskJD3C_QpFI9T5a07g%3Dw1200-h630-p
+
+{Reactions}
+🤔 
+
+[17-Dec-24 04:28 PM] jvaler#0000
+
+
+[17-Dec-24 04:28 PM] jvaler#0000
+@Polls
+
+
+[17-Dec-24 04:50 PM] jvaler#0000
+@everyone 
+@Market Alerts is now available as an opt-in role! Anyone can ping it, and it's to be used for notifying people of any noteworthy market activity such as shortages or unusual prices.
+
+You can collect the role from #reaction-roles.
+
+{Reactions}
+simoff (2) 
+
+[18-Dec-24 04:28 PM] jvaler#0000
+
+{Embed}
+poll_question_text
+Delete "Member" channels for server neatness? They're barely used and only seem to serve to separate server activity.
+victor_answer_votes
+19
+total_votes
+28
+victor_answer_id
+1
+victor_answer_text
+Yes
+victor_answer_emoji_name
+✅
+
+{Reactions}
+🔪 (5) 
+
+[20-Dec-24 05:45 AM] jvaler#0000
+okay it's done
+
+
+[20-Dec-24 05:45 AM] jvaler#0000
+i think i'm gonna make an antares scheming channel to replace it, but idk which category to put it in...
+
+
+[20-Dec-24 05:46 AM] jvaler#0000
+where were u when member is kil
+
+{Reactions}
+💔 (2) FeelsRainMan blobsad 
+
+[25-Dec-24 04:53 PM] riseoffilth#0000
+https://tenor.com/view/merry-christmas-and-happy-new-year-gif-10243613807061247659
+
+{Embed}
+https://tenor.com/view/merry-christmas-and-happy-new-year-gif-10243613807061247659
+https://images-ext-1.discordapp.net/external/Xi4R7iiZLxxEr_27sbX9zeg_VIb31j_dF9ETHK1poRo/https/media.tenor.com/jiigfAosJqsAAAAe/merry-christmas-and-happy-new-year.png
+
+{Reactions}
+🎄 (5) 
+
+[30-Mar-25 07:39 PM] jvaler#0000
+Are you an AGP grant recipient? Come join the discussion on possibly raising the grant amount for future recipients, we need your input! https://discord.com/channels/1183243037430796339/1254643011980234863/1356062710512746557
+
+
+[27-Apr-25 04:00 AM] laaxus#0000
+I created the ADI corporation
+Headquarter will be on Hephaestus
+Feel free to ping me if you want to join
+
+{Reactions}
+‼️ (3) 🔥 (4) 🎉 (3) 
+
+==============================================================
+Exported 44 message(s)
+==============================================================

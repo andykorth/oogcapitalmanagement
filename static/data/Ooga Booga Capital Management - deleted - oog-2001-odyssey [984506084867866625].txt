@@ -1,0 +1,214 @@
+==============================================================
+Guild: Ooga Booga Capital Management
+Channel: deleted / oog-2001-odyssey
+==============================================================
+
+[10-Jun-22 09:54 AM] namthorn#0000
+@allocater you wanna fill this thing up with BER? Can sell you it at a bulk discount on se-648b
+
+
+[10-Jun-22 09:55 AM] namthorn#0000
+2k/2k should fit at least 1k BER
+
+
+[10-Jun-22 10:35 AM] allocater#0000
+I can stop by some time. Atm it's not critical because I have a stockpile of 500, unless your storage is overflowing 😄
+
+
+[10-Jun-22 10:36 AM] namthorn#0000
+nah plenty of storage space left
+
+{Reactions}
+👍 
+
+[10-Jun-22 09:35 PM] bitcoin_ape#0000
+@allocater I have a line on 400 ZIR (1940t) to bring to Phobos
+
+
+[10-Jun-22 09:35 PM] bitcoin_ape#0000
+Are you up for a flight to KI-401b?
+
+
+[10-Jun-22 09:51 PM] bitcoin_ape#0000
+If so, `The Gravy Company` has agreed to sell 400 ZIR @80000 AIC (200 AIC unit price)
+
+
+[10-Jun-22 09:52 PM] bitcoin_ape#0000
+he will accept a 20-day delivery contract on the local market there
+
+
+[11-Jun-22 01:53 AM] allocater#0000
+I am up for it, this will be in 20d?
+
+
+[11-Jun-22 01:55 AM] allocater#0000
+shouldn't he put up a sell contract, so I can pick up into the ship?
+
+
+[11-Jun-22 09:18 AM] bitcoin_ape#0000
+I can ask him to post a sell offer now on the same terms, sure
+
+
+[11-Jun-22 09:21 AM] allocater#0000
+not that familiar yet with big cargo logistics, is this how it works @insensless72 ?
+
+
+[11-Jun-22 09:21 AM] allocater#0000
+won't fit into warehouse for sure
+
+
+[11-Jun-22 09:21 AM] bitcoin_ape#0000
+~~I think the game is smart enough to make the delivery work~~ as long as at least 1 inventory has enough capacity. There are still a few ways to get it wrong though, it is good to be cautious.
+
+
+[11-Jun-22 09:25 AM] insensless72#0000
+Dont make the same mistake i have in the past. If you cant fit a shipment in a WAR then have the other party post a sell offer. It will remain in their inv. If its more that your WAR capactcity its going to be a breached contract
+
+
+[11-Jun-22 09:30 AM] bitcoin_ape#0000
+Gravy company on KI-401b has countered with this offer:
+
+
+[11-Jun-22 09:30 AM] bitcoin_ape#0000
+post 4x buy offers of 100 ZIR each. i think this is worse because you both need to be online while your ship is on planet. Ill tell him this
+
+{Reactions}
+☝️ 
+
+[11-Jun-22 09:33 AM] bitcoin_ape#0000
+I have told him again that we prefer a single large sell offer, because the sell offer provisioning mechanic protects the contract from breaching
+
+
+[11-Jun-22 03:19 PM] domicius#0000
+You have to use a sell contract for large cargo, so that the buyer chooses when /where to fulfil. Otherwise it can only filful to WAR
+
+
+[11-Jun-22 03:20 PM] domicius#0000
+Me and @insensless72 spent a good hour on this...
+
+
+[11-Jun-22 03:20 PM] namthorn#0000
+multiple small batches technically works too, but you both have to be online during fulfillment
+
+
+[11-Jun-22 03:21 PM] namthorn#0000
+party a fills 500t buy contract  -> you move it from war to ship -> rinse repeat
+
+
+[11-Jun-22 03:32 PM] domicius#0000
+Yup
+
+
+[11-Jun-22 03:40 PM] insensless72#0000
+You would think so bu this is what threw us for so long. its best to avoid the WAR all together in my shipping experience. If you have a WAR it HAS to go there. If you have no WAR and accept a sell offer, the items stay in the sellers inv instead of yours theyre just "blocked"
+
+
+[11-Jun-22 03:41 PM] insensless72#0000
+In the case between @domicius and I, I was trying to buy 360 BRM but couldnt fit it all in the WAR. So I tore the WAR down, accepted his sell offer and it stayed in his INV until the 3000 landed. Even with a ship on planet you cannot skip the WAR if you have it established... which is BS
+
+
+[11-Jun-22 04:59 PM] namthorn#0000
+yea, it does, I wasn't disputing that functionality. But small batch buys do in fact work. e.g. i have 2500t of goods i want to buy, i put up 5 buy ads for 500t each. seller fills ad 1, warehouse is now full. i move ad 1 goods from war to ship to free up that 500t again. seller fills ad 2, warehouse is now full again, i move ad 2 goods from war to ship. I wasn't disputing the sell ad for large amounts being preferable. But if you're trading on say, Phobos, you cant go ahead and put up a massive sell contract for 1AIC in fear of sniping.
+
+
+[11-Jun-22 05:01 PM] insensless72#0000
+This could all be fixed with a "fill to ship" button
+
+
+[11-Jun-22 05:01 PM] namthorn#0000
+oh totally
+
+
+[11-Jun-22 05:02 PM] namthorn#0000
+but we dont know how the backend looks like
+
+
+[11-Jun-22 05:03 PM] namthorn#0000
+base/war inventories evidently have different properties than ship inventories. I'm not sure on the complexity of making that work without introducing more problems
+
+
+[11-Jun-22 05:06 PM] insensless72#0000
+I think it could be very complex. Even if there was an assign to ship function based on the existing ad, you run into the problem of which ship since all players have at least 2, then you run into need ship ID which is excessive and etc
+
+
+[11-Jun-22 05:08 PM] namthorn#0000
+yea, i was just thinking of something simple like keeping track of which planet the ship inventory is assigned to, every inventory is assigned to a place aside from ship ones which are their own microcosm
+
+{Reactions}
+🧠 
+
+[10-Jul-22 01:01 PM] bitcoin_ape#0000
+@allocater how is your ship? Can I schedule a local flight?
+
+
+[10-Jul-22 01:01 PM] bitcoin_ape#0000
+this is not urgent, it could be done within a week or so. Harmonia -> Nike
+
+
+[10-Jul-22 01:03 PM] allocater#0000
+no problem, it's currently in ANT
+
+
+[10-Jul-22 01:03 PM] allocater#0000
+post the shipment(s)
+
+
+[10-Jul-22 01:09 PM] insensless72#0000
+ads are up on Nike, no rush on those
+
+{Reactions}
+👍 
+
+[10-Jul-22 01:14 PM] bitcoin_ape#0000
+thanks @allocater
+
+
+[11-Jul-22 01:01 AM] allocater#0000
+1 shipment is not provisioned (100t)
+
+
+[11-Jul-22 10:24 AM] allocater#0000
+@insensless72 👆
+
+
+[11-Jul-22 10:37 AM] insensless72#0000
+im 130 DW short now
+
+
+[11-Jul-22 10:37 AM] allocater#0000
+request it
+
+
+[11-Jul-22 10:37 AM] allocater#0000
+but also more, or else they starve!
+
+
+[11-Jul-22 10:39 AM] insensless72#0000
+I have 70 ready in 30mins then 70 more in 3hrs
+
+
+[11-Jul-22 10:41 AM] insensless72#0000
+Alright you should be good to go on my end now
+
+
+[11-Jul-22 10:44 AM] allocater#0000
+hold your bucephalus, I will only arrive in 5h 🤣
+
+{Reactions}
+😂 
+
+[11-Jul-22 10:44 AM] insensless72#0000
+LOL
+
+
+[11-Jul-22 10:45 AM] insensless72#0000
+like I said earlier, theres no rush to these
+
+
+[11-Jul-22 11:41 AM] insensless72#0000
+I realize what I did wrong, I posted an ad for 210 extra DW instead of ALE
+
+
+==============================================================
+Exported 49 message(s)
+==============================================================

@@ -1,0 +1,57 @@
+==============================================================
+Guild: Antares Development Initiative
+Channel: CULT / corgi-information
+==============================================================
+
+[26-Feb-25 04:13 AM] laaxus#0000
+# PROJECT CORGI - Construction Optimization for Rapid Growth and Infrastructure
+
+The reason I started this project is that I believe fabs are too expensive on the market, limiting the growth of every Antarean—something I find entirely unacceptable.
+Faster growth benefits everyone, especially newer players.
+
+Another benefit is that, with lower fabs price, every base becomes more profitable.
+
+1. The goal is to increase fab production to lower their CX price.
+2. The project improves efficiency by coordinating the production of fabs and input goods.
+3. All transactions are conducted on the CX, except for local transfers (e.g., CL → EPO on Origon).
+
+
+[26-Feb-25 04:25 AM] laaxus#0000
+# Price targets
+
+As this project is about reducing the **market** price of fabs, price control won't work. The only way to reduce the price is to increase production.
+This means that you should sell your production at the price you desire. What matters is that you **produce**. 
+The price targets are my goals as project manager,  not the price you should sell your production at.
+
+You can see the progress and the price targets in real time on this [spreadsheet](https://docs.google.com/spreadsheets/d/1Va_vxukexQ4R3txjIWKJjv4NYSM8isHDzty952uRidk/edit?usp=sharing)
+
+{Embed}
+https://docs.google.com/spreadsheets/d/1Va_vxukexQ4R3txjIWKJjv4NYSM8isHDzty952uRidk/edit?usp=sharing
+Project CORGI
+https://images-ext-1.discordapp.net/external/QpiQv15p_lPSLWu-LKLwelfd1NSSIr0GsM4wpl0tY34/https/lh7-us.googleusercontent.com/docs/AHkbwyLa5Mmwynxw0OvRkr1ulUWRX1POPeym6-UMT-fC86i6zQ_Hou8ywmYUSn5dOIYn60OrPArzcK4x4SVdlVR60FlAftogCluiZr1H05MS9sHz85S5o6yC%3Dw1200-h630-p
+
+
+[26-Feb-25 04:38 AM] laaxus#0000
+# How to participate
+
+If you want to participate, the only thing asked of you is to increase production, you're free to sell at whatever price suits you, the price targets are just an indication, not a restriction.
+
+RFabs : I believe there's enough production for now, no need for a PP3 base
+
+LFabs : You can put a PP2 base on many planets : Aceland, Nike, Antares II a, Antares III b, Kevin. [PP base](https://prunplanner.org/shared/7711eb93-b804-4f87-8adf-130f535852ec)
+
+HAL : You can put an EXT base on halcyon. [PP base](https://prunplanner.org/shared/ff6c6505-f960-45a4-89ed-d6f665cfe3c4) 
+The main concern of this base is shipping, but I'll test how reliable is darkfuel
+
+CL : You can put a CHP base on many planets : Electronica, Griffonstone, Origo, KI-840c. [PP base](https://prunplanner.org/shared/b20a068f-d2f2-403a-8426-9331db6846ae)
+
+EPO : You can put a POL base on many planets : Electronica, Griffonstone, Origo, KI-840c. [PP base](https://prunplanner.org/shared/d3ea9fe9-d416-420f-819a-27d3de9a04b3)
+
+One Hal base, can feed a little bit more than 2 CL bases, and 1 CL base feed 1 EPO base, meaning you can have an EXT base on Halcyon, 2 CHP base on Electronica Griffonstone, and 2 POL bases on Origo and KI-840c. This is the current setup I have.
+
+Last update : 26-Feb-25 04:14 AM
+
+
+==============================================================
+Exported 3 message(s)
+==============================================================
