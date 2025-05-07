@@ -1,11 +1,11 @@
 ---
 title: "What we know about Gateways"
-date: 2024-09-23T11:10:36+08:00
+date: 2025-05-05T11:10:36+08:00
 draft: false
 language: en
 featured_image: images/jumpgate-header.png
-summary: Everything we know about gateways- so far.
-description: Everything we know about gateways- so far.
+summary: Everything we know about gateways. Updated May 2025!
+description: Everything we know about gateways. Updated May 2025!
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
@@ -82,23 +82,17 @@ Due to the high costs of a gateway, materials are also measured in Base-Area-Day
 
 {{< foldoutLinkImage title="Gateway cost total, with intermediate steps" image="/images/gateway-cost-total.png" >}}
 
+## Upkeep
+
+Gateway upkeep was announced and [rebalanced in a recent dev post](https://com.prosperousuniverse.com/t/gateway-upkeep/6929/6?u=archiel). Currently, weekly upkeep is now:
+
+![Weekly upkeep table](upkeep.png)
+
+This is probably something around 145k of items per week at current prices. We don't really know how fees will be collected, but we are hopeful this is tenable!
+
 
 ## Antares Gateway Planning
 
 Te Antares Development Initiative is organizing gateway planning in the best region of space in the universe. It's important to consider both sides of a gateway in planning, the reusability of a gateway as a destination for multiple gateways, and the cost per jump saved, given the upgrades chosen.
 
 [![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
-
-## Potential routes
-
-Various routes have been discussed, a leading contender for ANT begins with the LS-231 Transport Union Gateway Hub.
-
-![LS-231 Transport Union Gateway Hub](/images/LS231Hub.png)
-
-
-## Gateway Jumper
-
-The shipyard engineers of OOG have designed the Gateway Jumper. At internal prices, this could be as low as 2m AIC with a 1000/1000 cargo bay. 
-
-![Ship design ](/images/gateway-jumper.png)
-
