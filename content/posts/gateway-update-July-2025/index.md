@@ -2,9 +2,9 @@
 title: "Gateway Update, July 2025"
 date: 2025-07-21T17:10:36+08:00
 language: en
-featured_image: images/gateway-march-2025-narrow.png
-summary: The project grows as universe gateway links are planned.
-description: The project grows as universe gateway links are planned.
+featured_image: images/gateway-july-2025-narrow.png
+summary: The project grows the universe gateway network is planned.
+description: The project grows as the universe gateway network is planned.
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
