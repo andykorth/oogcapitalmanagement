@@ -31,15 +31,18 @@ These changes result in a central loop like this:
 
 Of these gates, The ADI Gateway Cooperative is building the following:
 
-[![Gateway List](gatewayList.png)](gatewayList.png)
+[![Gateway List](firefox_2025-07-27_00-07-17.png)](firefox_2025-07-27_00-07-17.png)
 
-BEN Gateway planning is being lead by CptColeslaw, and organized on [this sheet](https://docs.google.com/spreadsheets/d/15ho6zu_fic6sz5avIv1_O1sLVHjDpRGbbkZEgb8152s/edit?gid=65369777#gid=65369777).
+# Other Regional Efforts 
 
-MOR region gates are being organized by realbandit of Supernova Foundries.
+* BEN Gateway planning is being lead by *CptColeslaw*, and organized on [this sheet](https://docs.google.com/spreadsheets/d/15ho6zu_fic6sz5avIv1_O1sLVHjDpRGbbkZEgb8152s/edit?gid=65369777#gid=65369777).
+* MOR region gates are being organized by *realbandit* of Supernova Foundries.
+  * Additional non-cx gates are planned, including Circe <-> MOR.
+* HRT region gates are organized by *Filefolders*. 
+  * Additional non-cx gates are planned, including towards Boucher.bat90dewFace
+* EvoV is constructing and running the gate from IA-158 to HRT.
 
-EvoV is constructing and running the gate from IA-158 to HRT.
-
-The extra links (IA-158 to Antares V and New Antares to Nova) will be added last, if demand necessitates them.
+The redundant links (such as IA-158 to Antares V and New Antares to Nova) will be added last, if demand necessitates them.
 
 ## Join the efforts
 
