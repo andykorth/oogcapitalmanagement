@@ -15,7 +15,7 @@ The ADI Gateway cooperative is a regional organization dedicated to the construc
 {{< focusedtext heading="Rules of the Cooperative" >}}
 
 * Anyone in ANT who wants to join the co-op is welcome.
-* We track the contributions, and each contributing member has a percentage of the gateway assigned to them. Thus you become a partial shareholder of the gateway.
+* We track the contributions, and each contributing member has a percentage of the entire gateway project assigned to them. Thus you become a partial shareholder of the project.
 * The co-op maintains a sheet tracking contributed materials, and also "planned materials"- materials intended to be contributed, in an effort to avoid accidentally making too many of a particular gateway material.
 * Gateway income (from transit fees), are distributed propotionally according to shares.
 * All members agree to elect members of the co-op for the government of the gateway planet. They may pick a candidate of their own choice from the co-op, as long as it ensures a co-op member wins.
@@ -28,6 +28,8 @@ Since we need to make at least two gateways for functional travel, we should poo
 
 Why use this model? At the moment, any gateway constructed falls under the control of the government of the planet it is build around. A hostile but coordinated group could seize the gateway from the group that constructed it. By bringing many stakeholders to the table, the co-op model incentivizes the good behavior of a large number of members. This allows the entire interested Antares community to participate and act as a self-interested voting block. 
 
+Shareholders own a portion of the entire network, because each gateway in the network becomes more valuable each time the network is extended. Assigning individual contributions to specific gateways is impractical and unfair, because some gateways are likely to be more profitable than others. 
+
 # The Spreadsheet:
 
 Material pledges, cash contributions, and all gateway business is managed on this sheet. You can add your pledges directly to this sheet:
@@ -35,7 +37,6 @@ Material pledges, cash contributions, and all gateway business is managed on thi
 [ADI Gateway Cooperative Spreadsheet](https://docs.google.com/spreadsheets/d/1oET7LURFw6m-3iKu_5n8iT2SWS4PU-P-hiH6fMazWmU/edit?gid=0#gid=0)
 
 # Questions
-
 
 ### How do pledges work?
 
@@ -51,7 +52,7 @@ Because we don't know the gateway release date, and some gateway materials can't
 
 ### When are materials collected?
 
-As of Jan 1st, 2025, we haven't heard the devs fly a ship through a gateway. I personally take this as a sign we have a few more months before release. My hope is to collect pledges about a month before release. 
+As of Jan 1st, 2025, we haven't heard the devs fly a ship through a gateway. I personally take this as a sign we have a few more months before release. My hope is to have all pledges of released materials collected prior to the release of gateways. Of course, unreleased materials will be collected upon release.
 
 Materials purchased with cash contributions are already sitting in my ANT warehouse.
 
@@ -77,12 +78,12 @@ If you like buying things at good prices, and would like to be a Cash Manager, c
 
 ### Upkeep and Fuel
 
-Gateways have significant upkeep costs, and we don't know what the fuel costs are. Gateway upkeep is paid for first out of usage tolls, before any payouts are made. 
+Gateways have significant upkeep costs, and we don't know what the fuel costs are. Gateway upkeep and fuel is paid for first out of usage tolls, before any payouts are made. 
 
 ### How do payouts work?
 
-Once a month, the gateway planet's governor, (or an appointed representative) will calculate how much income each gateway has made, then assign it to each gateway shareholder in proportion to the number of shares. Shareholder profits will be logged in a running ledger. If a person's assigned profit exceeds some threshold ($25,000?), a payout will be made. 
+Once a month, the gateway planet's governor, (or an appointed AGC representative) will calculate how much income each gateway has made, then assign it to each gateway shareholder in proportion to the number of shares. Shareholder profits will be logged in a running ledger. If a person's assigned profit exceeds some threshold ($25,000?), a payout will be made. 
 
 ### Survivorship of Shares
 
-If a co-op shareholder leaves the game, their shares will move to their designated survivor. If they have not mentioned one, or their choice is not available, it will move to their corp. If no corp representative is available, the shares are eliminated and everyone's shares are recalculated without the eliminated shares included. 
+If a co-op shareholder leaves the game, their shares will move to their designated survivor. If they have not mentioned one, or their choice is not available, it will move to their corp, via a corp representative. If no corp representative is available, the shares are eliminated and everyone's shares are recalculated without the eliminated shares included. 
