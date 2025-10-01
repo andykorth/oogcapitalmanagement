@@ -103,14 +103,31 @@ menu:
       name: Universe Map
       url: /map/
       weight: 20
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
+    - identifier: posts
+      name: Articles
+      url: /posts/
+      weight: 30
+    - identifier: credit
+      name: Credit Bureau
+      url: /credit-bureau/
+      weight: 40
     - identifier: posts
       name: Articles
       url: /posts/
       weight: 50
+    - identifier: shipbuilding
+      name: Premium Shipbuilding
+      url: /shipbuilding/
+      weight: 90
+    - identifier: joining
+      name: Joining OOG
+      url: /joining/
+      weight: 100
+#    - identifier: shareholders
+#      name: Shareholders🔒
+#      # name: Shareholders
+#      url: /shareholders/
+#      weight: 100
 
   footer:
     - identifier: home
@@ -121,9 +138,9 @@ menu:
       name: Articles
       url: /posts/
       weight: 20
-    - identifier: contact
-      name: Contact
-      url: /contact/
+    - identifier: joining
+      name: Joining OOG
+      url: /joining/
       weight: 50
 
 markup:

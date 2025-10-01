@@ -35,7 +35,6 @@ The corporation operates an internal market for goods, offering preferential acc
 
 OOG doesn't dictate any prices. When choosing a price, common techniques include looking in discord for previous auction prices or looking at bid or ask prices on the ANT CX. 
 
-
 Our old [Corp Google Sheet, on the Prices tab](https://docs.google.com/spreadsheets/d/1ElN228qfp6zBqv6srr_sXLwlicnvUcvJqCcA8dPWH-s/edit#gid=489658022) contains historical pricing info, but it is pretty out of date now, and should only be used as a historical reference.
 
 

@@ -5,7 +5,6 @@ summary: OOG Credit Bureau is a public data collection agency that consolidates 
 description: OOG Credit Bureau is a public data collection agency that consolidates information on borrowers and provides it to potential lenders.
 omit_header_text: true
 type: page
-menu: main
 ---
 
 # OOG Credit Bureau

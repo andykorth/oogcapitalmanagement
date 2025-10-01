@@ -4,7 +4,6 @@ language: en
 description: For shareholding members of OOG
 omit_header_text: true
 type: page
-menu: main
 ---
 
 ## Shareholder Tools:

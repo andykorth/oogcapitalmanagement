@@ -1,0 +1,5 @@
+#Protect Directory
+#AuthName "Dialog prompt"
+#AuthType Basic
+#AuthUserFile /home/oog_capital_management/oogcapitalmanagement.com/shareholders/.htpasswd
+#Require valid-user

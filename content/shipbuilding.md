@@ -3,7 +3,6 @@ title: "Premium Shipbuilding"
 featured_image: 'images/conceptShipbuildingNarrowest.png'
 omit_header_text: true
 type: page
-menu: main
 fullWidthArticle: true
 ---
 
