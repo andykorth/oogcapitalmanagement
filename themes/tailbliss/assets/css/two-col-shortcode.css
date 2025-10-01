@@ -1,0 +1,43 @@
+
+/*
+	Required for twoCol shortcode
+*/
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr; /* one column by default */
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.two-col.items-center {
+  align-items: center;
+}
+
+.two-col.items-top {
+  align-items: start;
+}
+
+/* At large breakpoint, switch to two columns */
+@media (min-width: 1024px) {
+  .two-col {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+  }
+  .two-col .col {
+    grid-column: span 6;
+  }
+  .two-col .order-first {
+    order: -1;
+  }
+  .two-col .order-last {
+    order: 1;
+  }
+}
+
+.content-image {
+  max-width: 40vw; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

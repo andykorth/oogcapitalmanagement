@@ -1,7 +1,10 @@
 <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
     <div class="px-4 not-prose">
         <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
-            {{ range .Paginator.Pages }}
+            {{ $pages := where .Site.RegularPages "Params.accessCategories" "Posts" }}
+            {{ $pages = $pages.ByTitle }}
+
+            {{ range (.Paginate $pages 12).Pages }}
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
                 <a href="{{.Permalink}}">
                     {{ with .Params.featured_image }}

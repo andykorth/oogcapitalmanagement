@@ -1,45 +1,50 @@
-
 <!-- twoColImage.html -->
 {{- $verticalClass := "items-top" -}}
 {{- if eq (.Get "verticalCenter") "true" -}}
     {{- $verticalClass = "items-center" -}}
 {{- end -}}
 
-{{- $orderOne := "lg:order-first" -}}
-{{- $orderTwo := "lg:order-last" -}}
+{{- $orderOne := "order-first" -}}
+{{- $orderTwo := "order-last" -}}
 {{- if eq (.Get "right") "true" -}}
-    {{- $orderOne = "lg:order-last" -}}
-    {{- $orderTwo = "lg:order-first" -}}
+    {{- $orderOne = "order-last" -}}
+    {{- $orderTwo = "order-first" -}}
 {{- end -}}
 
-<div class="grid {{ $verticalClass }} gap-8 mb-8 py-4 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-    <div class="{{ $orderOne }} col-span-6 text-left sm:mb-6 lg:mb-0">
-        {{ .Inner | markdownify }}
+<div class="two-col {{ $verticalClass }}">
+    <div class="col {{ $orderOne }}">
+        {{ .Inner | markdownify  }}
     </div>
-    <div class="{{ $orderTwo }} col-span-6">
+    <div class="col {{ $orderTwo }}">
         {{- $src := .Get "imageURL" -}}
         {{- $image := .Page.Resources.GetMatch $src -}}
 
-        {{ if $image }}
-            <!-- Use Page Bundle Resource if found -->
-            <A HREF="{{ $image.RelPermalink }}">
-            <img
-                src="{{ $image.RelPermalink }}"
-                alt="{{ .Get "alt" }}"
-                width="{{ $image.Width }}"
-                height="{{ $image.Height }}"
-                class="max-w-xl mx-auto rounded-lg"
-            />
-            </A>
-        {{ else }}
-            <!-- Fallback to static resource if not found -->
-            <A HREF="{{$src}}">
+        {{- $srcVid := .Get "videoURL" -}}
+        {{- $vidResource := .Page.Resources.GetMatch $srcVid -}}
+
+        {{ if $vidResource }}
+        <video width=100% autoplay loop muted alt="{{ .Get "alt" }}">
+            <source src="{{ $vidResource.RelPermalink }}" type="video/webm">
+            Your browser does not support the video tag.  
+        </video>
+       {{ else if $image }}
+            <a href="{{ $image.RelPermalink }}">
                 <img
-                src="{{ $src }}"
-                alt="{{ .Get "alt" }}"
-                class="max-w-xl mx-auto rounded-lg"
-            />
-            </A>
+                    src="{{ $image.RelPermalink }}"
+                    alt="{{ .Get "alt" }}"
+                    width="{{ default $image.Width (.Get "forceWidth") }}"
+                    height="{{ $image.Height}}"
+                   class="content-image"
+                />
+            </a>
+        {{ else }}
+            <a href="{{$src}}">
+                <img
+                    src="{{ $src }}"
+                    alt="{{ .Get "alt" }}"
+                    class="content-image"
+                />
+            </a>
         {{ end }}
     </div>
 </div>

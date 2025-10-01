@@ -11,9 +11,9 @@ authorimage: images/archiel.png
 accessCategories: Posts
 tags: Guides
 ---
-{{< center >}}
+{{< centerspan >}}
 # The Naming of Planets and Systems in Antares
-{{< /center >}}
+{{< /centerspan >}}
 
 ## A History:
 

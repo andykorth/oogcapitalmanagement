@@ -11,10 +11,10 @@ authorimage: images/archiel.png
 accessCategories: Posts
 tags: Guides
 ---
-{{< center >}}
+{{< centerspan >}}
 # Getting started in Antares
 #### Subtitle: Promitor is actually fairly mediocre.
-{{< /center >}}
+{{< /centerspan >}}
 
 Promitor is often considered "the best start". While it's true that Promitor has the highest fertility, how does it compare to other starting industries? Turns out that with a modest investment, there are plenty of starter builds in ANT that will double the daily income of farming on Promitor.
 

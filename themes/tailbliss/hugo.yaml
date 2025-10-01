@@ -6,7 +6,16 @@ enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
 canonifyURLs: true
-paginate: 9
+
+# I think this doesn't do anything.
+paginate: 12
+
+# this is the built in hugo paginator
+pagination:
+  disableAliases: false
+  pagerSize: 12
+  path: 'page'
+
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true

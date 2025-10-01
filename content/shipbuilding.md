@@ -35,7 +35,7 @@ Create a ship blueprint that matches the above image. Rent 4 warehouses on Hepha
 
 {{< /twoColImage >}}
 
-{{< center >}}
+{{< centerspan >}}
 ![Premium Shipbuilding Logo](/images/oog_premium_shipbuilding.png)
-{{< /center >}}
+{{< /centerspan >}}
 

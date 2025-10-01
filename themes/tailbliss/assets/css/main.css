@@ -1,4 +1,7 @@
 /* assets */ 
+
+@import url("two-col-shortcode.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

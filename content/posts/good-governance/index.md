@@ -49,9 +49,9 @@ If you don't fill it, players will get a notification that their workers are on 
 ## Understanding the POPR Screen
 The Population Report, on the POPR buffer is the next most important screen to watch as a governor:
 
-{{< center >}}
+{{< centerspan >}}
 ![POPR Buffer](popr.png)
-{{< /center >}}
+{{< /centerspan >}}
 
 Read each item and the (i) tooltip for each. Your primary responsibility as governor is to ensure all the players on your planet are getting the workers they need, so that means striving towards zero Open Jobs. This is achieved by boosting the Happiness of a given worker tier to encourage Migration (for pioneers and settlers), and education (for higher tiers). 
 Happiness of the population is based on their needs fulfillment. Different tiers of workers benefit at different rates for different needs. For example Pioneers and Settlers care predominantly about Safety and Health, but Scientists need them all. 
@@ -115,15 +115,15 @@ After creating a motion for a program, you have to wait for that motion to pass.
 
 ## Capped Satisfaction:
 
-{{< center >}}
+{{< centerspan >}}
 ![Capped Satisfaction](capped.png)
-{{< /center >}}
+{{< /centerspan >}}
 
 While this article doesn't explain every aspect of the [Population Infrastructure](https://pct.fnar.net/population-infrastructure/), take special note of the [satisfaction caps](https://pct.fnar.net/population-infrastructure/#capping-of-higher-tier-needs). Your education is limited by the lower of your comfort and culture. Your comfort and culture is limited by the lower of your safety and health. So if you see a planet where the education is the same as the culture, you can safely assume a bunch of education was lost due to the cap.  This is common for education, since Universities have easy upkeep materials and make a lot of education, while it's easy to run low on comfort and culture. 
 
-{{< center >}}
+{{< centerspan >}}
 ![This is capped education](capped2.png)
-{{< /center >}}
+{{< /centerspan >}}
 
 # Governance Strategies:
 Your governance strategy will depend on your goal for the planet. 
@@ -194,25 +194,25 @@ It is up to the governor to choose and communicate his adopted style or style va
 This style is characterized by a singular player or a group of players investing in the development and upkeep of a planet, without accepting a payout or a direct return on investment. Having a sufficient and stable population supply, its resources and COGC bonus is the only thing the Philanthropist desires. The governor might even have own production of the upkeep materials and is happy to accept the opportunity cost in return for what the planet provides. In some cases there might not even be the need for an Administration Centre. Once an Administration Centre is established though, the Philanthropist might find it reasonable to even lower the production fees compared to the default. 
 Next to the obvious financial disadvantage to the philanthropist due to the opportunity cost, the rest of the bases on the same planet heavily benefit due to reduced fees despite the available workforce, COGC boost and other infrastructure. The philanthropist on the other hand can spend his valuable time and headspace on profitable ventures in his private enterprise, rather than optimizing the government finances of the planet in question. A Philanthropist governor might adopt the following tabulated style.
 
-{{< center >}}
+{{< centerspan >}}
 ![Philanthropist](philanthropist.png)
-{{< /center >}}
+{{< /centerspan >}}
 
 
 ### Classical liberal:
 The classical liberal aims to have a financially self-sufficient planet, with as low as possible taxes and no debt. The initial investment should be paid out in a reasonable term to the investor thanks to balanced fees on said planet. An Administration Centre is required as the liberal will want to ensure an optimal POP balance and sufficient capital is generated for further investments while allowing payout for the contributing parties. The payout is based on the CX market price as the contributing parties should be compensated for the opportunity cost. There might even be a margin on top, representing the effort going in optimising this well balanced and healthy government. 
 With this style all bases share in the upkeep and development of the planet proportionally through the fees. A low population planet will have relatively high fees to cover all the expenses, but will provide a well balanced workforce that does not cost more than strictly necessary. As soon as the workforce grows, the taxes will be lowered. A Classical liberal governor might adopt the following tabulated style.
 
-{{< center >}}
+{{< centerspan >}}
 ![Classical](classical.png)
-{{< /center >}}
+{{< /centerspan >}}
 
 ### Rheinlander:
 This style looks at the common good, while maintaining a less zealous relation with the opportunity cost of developing a planet. The aim is for the planet to be self-sufficient with as low as possible taxes and no debt. The initial investment should be paid out to the investor in a reasonable term. The Rheinlander accepts some opportunity cost by providing the upkeep materials for a reduced fee compared to CX prices. For example at Bid rather than Ask or even with a further discount based on the governors own production. 
 With this style all bases share in the upkeep and development of the planet proportionally through the fees. A low population planet will have somewhat high fees to cover all the expenses, but will provide a well balanced workforce that does not cost more than strictly necessary. As soon as the workforce grows, the taxes can be lowered. A Rheinlander governor might adopt the following tabulated style.
 
-{{< center >}}
+{{< centerspan >}}
 ![Rheinlander](rheinlander.png)
-{{< /center >}}
+{{< /centerspan >}}
 
 
