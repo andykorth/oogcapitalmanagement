@@ -56,6 +56,190 @@ const otherBuildings = {
   },
 };
 
+const scalableBuildings  = {
+  SST: {
+    label: "SST",
+    baseMaterials: {
+      BBH: 24,
+      BDE: 24,
+      BSE: 12,
+      BTA: 6,
+      MCG: 300,
+      TRU: 10,
+    },
+  },
+  SDP: {
+    label: "SDP",
+    baseMaterials: {
+      RBH: 16,
+      RDE: 16,
+      RSE: 10,
+      RTA: 8,
+      MCG: 300,
+      TRU: 8,
+      ADS: 1,
+      DOU: 1,
+      BMF: 1,
+    },
+  },
+  EMC: {
+    label: "EMC",
+    baseMaterials: {
+      BTA: 16,
+      LBH: 32,
+      LDE: 32,
+      LSE: 24,
+      MCG: 300,
+      DOU: 1,
+      TCU: 1,
+    },
+  },
+  INF: {
+    label: "INF",
+    baseMaterials: {
+      BBH: 24,
+      BDE: 24,
+      BSE: 16,
+      BTA: 12,
+      MCG: 300,
+      TRU: 10,
+    },
+  },
+  HOS: {
+    label: "HOS",
+    baseMaterials: {
+      RBH: 24,
+      RDE: 20,
+      RSE: 20,
+      RTA: 16,
+      MCG: 400,
+      TRU: 16,
+      SU: 1,
+      DOU: 1,
+      TCU: 1,
+    },
+  },
+  WCE: {
+    label: "WCE",
+    baseMaterials: {
+      LBH: 36,
+      LDE: 36,
+      LSE: 32,
+      LTA: 24,
+      MCG: 500,
+      TRU: 16,
+      DEC: 40,
+      FLO: 12,
+    },
+  },
+  PAR: {
+    label: "PAR",
+    baseMaterials: {
+      BBH: 16,
+      BDE: 16,
+      BSE: 20,
+      BTA: 10,
+      MCG: 300,
+      HAB: 5,
+      SOI: 100,
+    },
+  },
+  "4DA": {
+    label: "4DA",
+    baseMaterials: {
+      LBH: 42,
+      LDE: 42,
+      LSE: 42,
+      LTA: 24,
+      MCG: 600,
+      TRU: 40,
+      ADS: 1,
+      BMF: 2,
+      FUN: 10,
+      LIT: 2,
+    },
+  },
+  ACA: {
+    label: "ACA",
+    baseMaterials: {
+      RBH: 16,
+      RDE: 24,
+      RSE: 24,
+      RTA: 12,
+      MCG: 300,
+      TRU: 20,
+      DEC: 32,
+    },
+  },
+  ART: {
+    label: "ART",
+    baseMaterials: {
+      LBH: 24,
+      LDE: 32,
+      LSE: 32,
+      LTA: 16,
+      MCG: 300,
+      TRU: 20,
+      DEC: 10,
+      WOR: 2,
+    },
+  },
+  VRT: {
+    label: "VRT",
+    baseMaterials: {
+      RBH: 24,
+      RDE: 32,
+      RSE: 32,
+      RTA: 12,
+      MCG: 500,
+      TRU: 30,
+      ADS: 1,
+      DEC: 20,
+    },
+  },
+  PBH: {
+    label: "PBH",
+    baseMaterials: {
+      RBH: 16,
+      RDE: 24,
+      RSE: 24,
+      RTA: 12,
+      MCG: 300,
+      TRU: 30,
+      ADS: 1,
+      COM: 1,
+    },
+  },
+  LIB: {
+    label: "LIB",
+    baseMaterials: {
+      ABH: 8,
+      ADE: 12,
+      ASE: 12,
+      ATA: 6,
+      MCG: 250,
+      TRU: 20,
+      COM: 1,
+      LOG: 1,
+    },
+  },
+  UNI: {
+    label: "UNI",
+    baseMaterials: {
+      ABH: 12,
+      ADE: 16,
+      ASE: 16,
+      ATA: 12,
+      MCG: 400,
+      TRU: 30,
+      BMF: 2,
+      LU: 4,
+      LOG: 1,
+    },
+  },
+};
+
+
 const startWarehouseLevelInput = document.getElementById("startWarehouseLevel");
 const endWarehouseLevelInput = document.getElementById("endWarehouseLevel");
 const endCapEl = document.getElementById("endCap");
@@ -86,6 +270,34 @@ function calculateFactor(start, end) {
   }
   return factor;
 }
+
+function fillUI(){
+  const scalableContainer = document.getElementById("scalableBuildings");
+  for (const [key, building] of Object.entries(scalableBuildings)) {
+    scalableContainer.insertAdjacentHTML("beforeend", `
+      <label>
+        <span class="tableLabel"> ${building.label}:</span>
+        <input type="number" id="start_${key}" min="0" max="10" value="0"> →
+        <input type="number" id="end_${key}" min="0" max="10" value="0">
+      </label>
+    `);
+
+    // add listeners for start and end inputs
+    const startInput = document.getElementById(`start_${key}`);
+    const endInput   = document.getElementById(`end_${key}`);
+    [startInput, endInput].forEach(el => el.addEventListener("input", update));
+  }
+}
+
+function calculateLevelCost(base, start, end) {
+  let total = 0;
+  for (let level = start + 1; level <= end; level++) {
+    total += Math.round(base * Math.pow(1.15, level - 1));
+  }
+  // console.log(`base ${base} totals ${total}`)
+  return total;
+}
+
 function update() {
   let start = clamp(+startWarehouseLevelInput.value, 0, 20);
   let end = clamp(+endWarehouseLevelInput.value, 0, 20);
@@ -97,13 +309,13 @@ function update() {
 
   const totals = {};
 
-  // Warehouse scaling
+  // warehouse scaling
   const factor = calculateFactor(start, end);
   for (const [name, { baseValue }] of Object.entries(warehouseMaterials)) {
     totals[name] = (totals[name] || 0) + baseValue * factor;
   }
 
-  // Other buildings
+  // other buildings
   for (const [key, building] of Object.entries(otherBuildings)) {
     if (buildingCheckboxes[key].checked) {
       for (const [mat, amount] of Object.entries(building.materials)) {
@@ -112,14 +324,43 @@ function update() {
     }
   }
 
-  // Update results table
+  // scalable buildings
+  for (const [key, building] of Object.entries(scalableBuildings)) {
+    const start = clamp(+document.getElementById(`start_${key}`).value, 0, 10);
+    const end   = clamp(+document.getElementById(`end_${key}`).value, 0, 10);
+   
+    if(start != end){
+      // console.log(`key ${key} start ${start} to ${end}`)
+
+      for (const [mat, base] of Object.entries(building.baseMaterials)) {
+        // console.log(`base ${base} mat ${mat}`)
+        totals[mat] = (totals[mat] || 0) + calculateLevelCost(base, start, end);
+      }
+    }
+  }
+
+  // ---- update table with pricing ----
   tableBody.innerHTML = "";
+  let grandTotal = 0;
   for (const [mat, amount] of Object.entries(totals)) {
     if (amount > 0) {
-      const row = `<tr><td>${mat}</td><td>${amount}</td></tr>`;
+      const price = priceData[mat] || 0;
+      const subtotal = price * amount;
+      grandTotal += subtotal;
+      const priceFormatted = parseFloat(price.toFixed(2)).toLocaleString('en-US'); //sorry not sorry
+      const subtotalFormatted = parseFloat(subtotal.toFixed(2)).toLocaleString('en-US');
+
+      const row = `
+        <tr>
+          <td>${mat}</td>
+          <td>${amount}</td>
+          <td>${priceFormatted}</td> 
+          <td>${subtotalFormatted}</td>
+        </tr>`;
       tableBody.insertAdjacentHTML("beforeend", row);
     }
   }
+  document.getElementById("grandTotal").innerText = parseFloat(grandTotal.toFixed(2)).toLocaleString();
 
   // Emoji logic, very important for Antares supremacy
   if (originSelect.value === "Antares Station Warehouse") {
@@ -164,6 +405,48 @@ function update() {
 }
 
 
+// ---- pricing storage ----
+let priceData = {};
+
+async function fetchPricing() {
+  const cacheKey = "pricingData";
+  const cached = localStorage.getItem(cacheKey);
+
+  if (cached) {
+    const { timestamp, data } = JSON.parse(cached);
+    const age = Date.now() - timestamp;
+    if (age < 3600 * 1000) { // 1 hour
+      priceData = data;
+      return;
+    }
+  }
+
+  // Fetch fresh data
+  const url = "https://api.prunplanner.org/csv/exchange?api_key=ByuqgmEiyzSZ4EvnqUBipp_4xddAyOVj";
+  const res = await fetch(url);
+  const text = await res.text();
+
+  const freshData = {};
+  const lines = text.trim().split("\n").slice(1); // skip header
+  for (const line of lines) {
+    const [tickerExchange, ticker, exchangecode, ask, bid, avg, supply, demand, traded] =
+      line.split(",");
+
+    if (exchangecode === "PP7D_UNIVERSE" && avg) {
+      freshData[ticker] = parseFloat(avg);
+    }
+  }
+
+  priceData = freshData;
+
+  localStorage.setItem(cacheKey, JSON.stringify({
+    timestamp: Date.now(),
+    data: freshData
+  }));
+}
+
+
+
 // event listeners
 [
   startWarehouseLevelInput,
@@ -182,5 +465,9 @@ copyBtn.addEventListener("click", () => {
   });
 });
 
-// initial run
-update();
+// ---- initial run ----
+(async () => {
+  fillUI();
+  await fetchPricing();
+  update();
+})();

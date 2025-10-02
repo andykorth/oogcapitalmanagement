@@ -1,12 +1,17 @@
 ---
 title: "Calc"
-featured_image: 'images/Concept-fakeConsole.png'
-summary: OOG Credit Bureau is a public data collection agency that consolidates information on borrowers and provides it to potential lenders.
-description: OOG Credit Bureau is a public data collection agency that consolidates information on borrowers and provides it to potential lenders.
+featured_image: 'images/planetary-infrastructure-calculator.png'
+summary: Calculate and export materials for various planetary infrastructure improvements.
+description: Calculate and export materials for various planetary infrastructure improvements.
 omit_header_text: true
+fullWidthArticle: true
 ---
 
-# Building Upgrade Calculator
+# Infrastructure Upgrade Calculator
+
+Calculate and export materials for various planetary infrastructure improvements. Enter your start and end values for each building you'd like to upgrade.
+
+At the bottom of the page, you may export your list to XIT ACTION, which will auto buy your mats and load onto a ship.
 
 {{< calc >}}
 
