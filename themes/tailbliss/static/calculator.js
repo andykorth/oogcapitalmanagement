@@ -86,27 +86,24 @@ function calculateFactor(start, end) {
   }
   return factor;
 }
-
 function update() {
   let start = clamp(+startWarehouseLevelInput.value, 0, 20);
   let end = clamp(+endWarehouseLevelInput.value, 0, 20);
-  //if (start >= end) end = start + 1;
 
   startWarehouseLevelInput.value = start;
   endWarehouseLevelInput.value = end;
 
   endCapEl.innerText = Math.ceil(end / 2) * 500;
 
-  // ---- calculate total material costs ----
   const totals = {};
 
-  // 1) Warehouse scaling
+  // Warehouse scaling
   const factor = calculateFactor(start, end);
   for (const [name, { baseValue }] of Object.entries(warehouseMaterials)) {
     totals[name] = (totals[name] || 0) + baseValue * factor;
   }
 
-  // 2) Other buildings (if toggled on)
+  // Other buildings
   for (const [key, building] of Object.entries(otherBuildings)) {
     if (buildingCheckboxes[key].checked) {
       for (const [mat, amount] of Object.entries(building.materials)) {
@@ -115,16 +112,23 @@ function update() {
     }
   }
 
-  // ---- update the table ----
+  // Update results table
   tableBody.innerHTML = "";
   for (const [mat, amount] of Object.entries(totals)) {
-    if(amount > 0){
+    if (amount > 0) {
       const row = `<tr><td>${mat}</td><td>${amount}</td></tr>`;
       tableBody.insertAdjacentHTML("beforeend", row);
     }
   }
 
-  // Update JSON
+  // Emoji logic, very important for Antares supremacy
+  if (originSelect.value === "Antares Station Warehouse") {
+    originEmoji.innerText = "😀";
+  } else {
+    originEmoji.innerText = "😢";
+  }
+
+  // Export JSON
   const exportJson = {
     actions: [
       {
@@ -140,7 +144,7 @@ function update() {
         type: "MTRA",
         name: "TransferAction",
         group: "A1",
-        origin: "Antares Station Warehouse",
+        origin: originSelect.value,
         dest: "Configure on Execution",
       },
     ],
@@ -159,12 +163,17 @@ function update() {
   jsonOutput.value = JSON.stringify(exportJson);
 }
 
+
 // event listeners
-[startWarehouseLevelInput, endWarehouseLevelInput, 
- buildingCheckboxes.planetaryAdmin, buildingCheckboxes.cogc, buildingCheckboxes.shipyard, buildingCheckboxes.localMarket
-].forEach((el) =>
-  el.addEventListener("input", update)
-);
+[
+  startWarehouseLevelInput,
+  endWarehouseLevelInput,
+  buildingCheckboxes.planetaryAdmin,
+  buildingCheckboxes.cogc,
+  buildingCheckboxes.shipyard,
+  buildingCheckboxes.localMarket,
+  originSelect
+].forEach((el) => el.addEventListener("input", update));
 
 copyBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(jsonOutput.value).then(() => {
