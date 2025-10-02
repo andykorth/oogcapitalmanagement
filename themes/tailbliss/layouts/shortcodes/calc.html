@@ -1,0 +1,35 @@
+
+
+    <style>
+        input{
+            background-color: rgb(17 24 39);
+            margin: 5px;
+            padding: 5px;
+            padding-left: 10px;
+        }
+    </style>
+
+    <label>
+        Start Warehouse Level:
+        <input id="startWarehouseLevel" type="number" min="0" max="20" value="0">
+    </label>
+    <label>
+        End Warehouse Level:
+        <input id="endWarehouseLevel" type="number" min="1" max="20" value="1">
+    </label>
+    
+    <p>
+        Warehouse Capacity: <span id="endCap">500</span>
+    </p>
+    
+    <table id="results">
+        <thead>
+            <tr>
+                <th>Material</th>
+                <th>Total Cost</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+  <script src="/calculator.js"></script>
