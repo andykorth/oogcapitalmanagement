@@ -111,6 +111,10 @@ menu:
       name: Credit Bureau
       url: /credit-bureau/
       weight: 40
+    - identifier: infra
+      name: Infrastructure Calc
+      url: /calc/
+      weight: 45
     - identifier: posts
       name: Articles
       url: /posts/
