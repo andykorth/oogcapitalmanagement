@@ -1,35 +1,76 @@
+<style>
+    input[type="number"], textarea {
+        background-color: rgb(17 24 39);
+        margin: 5px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    textarea {
+        resize: none;
+        width: 100%;
+    }
+    label { display: block; margin-top: 8px; }
+</style>
 
+<label>
+    Start Warehouse Level:
+    <input id="startWarehouseLevel" type="number" min="0" max="20" value="0">
+</label>
+<label>
+    End Warehouse Level:
+    <input id="endWarehouseLevel" type="number" min="0" max="20" value="0">
+</label>
 
-    <style>
-        input{
-            background-color: rgb(17 24 39);
-            margin: 5px;
-            padding: 5px;
-            padding-left: 10px;
-        }
-    </style>
+<p>
+    Warehouse Capacity: <span id="endCap">0</span>
+</p>
 
-    <label>
-        Start Warehouse Level:
-        <input id="startWarehouseLevel" type="number" min="0" max="20" value="0">
-    </label>
-    <label>
-        End Warehouse Level:
-        <input id="endWarehouseLevel" type="number" min="1" max="20" value="1">
-    </label>
-    
-    <p>
-        Warehouse Capacity: <span id="endCap">500</span>
-    </p>
-    
-    <table id="results">
-        <thead>
-            <tr>
-                <th>Material</th>
-                <th>Total Cost</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    
-  <script src="/calculator.js"></script>
+<h3>Other Buildings</h3>
+<label>
+  <input type="checkbox" id="togglePlanetaryAdmin">
+  Planetary Administration Center
+</label>
+<label>
+  <input type="checkbox" id="toggleCOGC">
+  Chamber of Global Commerce
+</label>
+<label>
+  <input type="checkbox" id="toggleShipyard">
+  Shipyard
+</label>
+<label>
+  <input type="checkbox" id="toggleLocalMarket">
+  Local Market
+</label>
+
+<table id="results">
+    <thead>
+        <tr>
+            <th>Material</th>
+            <th>Total Cost</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h3>Export to XIT ACTION</h3>
+
+<h3>Export Options</h3>
+<label>
+  Origin:
+  <select id="originSelect">
+    <option>Antares Station Warehouse</option>
+    <option>Moria Station Warehouse</option>
+    <option>Arclight Station Warehouse</option>
+    <option>Benten Station Warehouse</option>
+    <option>Hortus Station Warehouse</option>
+    <option>Hubur Station Warehouse</option>
+  </select>
+  <span id="originEmoji">😀</span>
+</label>
+
+<textarea id="jsonOutput" readonly></textarea>
+<br/>
+<button class="px-5 py-2 mt-4 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10" id="copyBtn">Copy JSON</button>
+
+<script src="/calculator.js"></script>
