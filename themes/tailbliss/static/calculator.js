@@ -421,19 +421,15 @@ async function fetchPricing() {
     }
   }
 
-  // Fetch fresh data
-  const url = "https://api.prunplanner.org/csv/exchange?api_key=ByuqgmEiyzSZ4EvnqUBipp_4xddAyOVj";
+  // Fetch fresh data from JSON endpoint
+  const url = "https://api.prunplanner.org/data/exchanges";
   const res = await fetch(url);
-  const text = await res.text();
+  const json = await res.json();
 
   const freshData = {};
-  const lines = text.trim().split("\n").slice(1); // skip header
-  for (const line of lines) {
-    const [tickerExchange, ticker, exchangecode, ask, bid, avg, supply, demand, traded] =
-      line.split(",");
-
-    if (exchangecode === "PP7D_UNIVERSE" && avg) {
-      freshData[ticker] = parseFloat(avg);
+  for (const row of json) {
+    if (row.ExchangeCode === "PP7D_UNIVERSE" && row.PriceAverage) {
+      freshData[row.MaterialTicker] = row.PriceAverage;
     }
   }
 

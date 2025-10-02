@@ -1,5 +1,5 @@
 ---
-title: "Calc"
+title: "Planetary Infrastructure Calculator"
 featured_image: 'images/planetary-infrastructure-calculator.png'
 summary: Calculate and export materials for various planetary infrastructure improvements.
 description: Calculate and export materials for various planetary infrastructure improvements.
