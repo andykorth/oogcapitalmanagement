@@ -1,6 +1,5 @@
 /* assets */ 
 
-@import url("two-col-shortcode.css");
 
 .singleArticle img {
   max-width: 90vw;  
@@ -41,6 +40,3 @@ EmojiSymbols;
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
     color: white !important;
 }
-
-/* Custom CSS end */
-@import url("style.css");
