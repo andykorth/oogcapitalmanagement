@@ -1,2 +1,55 @@
-{{ $imgData := dict "Page" .Page "URL" .Destination "Alt" .Text "Caption" .Title }}
-{{ partial "image-renderer.html" $imgData }}
+
+{{- $optimizeImg := .Page.Site.Params.optimizeImg | default true -}}
+
+{{- $altText := .Text -}}
+{{- $caption := .Title -}}
+
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+
+{{- $excludeTypes := slice "svg" -}}
+{{- if not hugo.IsExtended -}}
+  {{- $excludeTypes = $excludeTypes | append "webp" -}}
+{{- end -}}
+
+
+
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+
+	{{- if and $optimizeImg (not (in $excludeTypes .MediaType.SubType)) -}}
+		{{- with .Resize (printf "%dx%d webp q90" .Width .Height) -}}
+			{{- $src := .RelPermalink  -}}
+		{{- end -}}
+	{{- else -}}
+
+		{{- $src = .RelPermalink -}}
+		{{- with $u.RawQuery -}}
+			{{- $src = printf "%s?%s" $src . -}}
+		{{- end -}}
+		{{- with $u.Fragment -}}
+			{{- $src = printf "%s#%s" $src . -}}
+		{{- end -}}
+	{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{ if $caption }}<figure>{{ end }}
+
+
+{{ if $src }}
+  <img src="{{ $src }}" alt="{{ $altText }}"
+  {{- with .Title -}} title="{{ . }}" {{- end -}}
+
+  {{- range $k, $v := .Attributes -}}
+    {{- if $v -}}
+      {{- printf " %s=%q" $k ($v | transform.HTMLEscape) | safeHTMLAttr -}}
+    {{- end -}}
+  {{- end -}}
+  >
+{{ else }}
+ {{ warnf "Image renderer was unable to find [%s, %s, %s] See ''%s'' at %s" .Destination $u $src .Page.Name .Page.Path   }} 
+{{ end }}
+
+{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption></figure>{{ end }}

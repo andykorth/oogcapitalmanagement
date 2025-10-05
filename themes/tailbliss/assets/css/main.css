@@ -2,7 +2,6 @@
 
 @import url("two-col-shortcode.css");
 
-
 .singleArticle img {
   max-width: 90vw;  
   max-height: 90vh;  
@@ -44,3 +43,4 @@ EmojiSymbols;
 }
 
 /* Custom CSS end */
+@import url("style.css");

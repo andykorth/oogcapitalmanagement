@@ -52,7 +52,7 @@ We have stats for gateways and their upgrades. Observations about these values:
 * 1500 max ship volume by default. This fits a starter ship (963 m3), a WCB (1488 m3), but not a standard 2k (2675m). One size upgrade allows all 2k ship configurations.
 * Distance starts at 10 parsecs and with 3 upgrades goes to a max of 25 parsecs.
 
-![Draft Gateway Stats ](/images/gateway-choices.png)
+![Draft Gateway Stats ](gateway-choices.png)
 
 ## How far is 25 Parsecs?
 
@@ -68,9 +68,9 @@ We have additional python tools that can brute force jump distances.
 
 Costs have been well covered in discussion on discord. We now have a pretty solid look at the materials for each upgrade cost. It seems the two distance upgrades adds a few hundred of each afab and 240 LIT. We don't know the cost of the new materials, but since it doesn't add TSH/RSH/PSH, it's pretty cheap, proportionally. Here are some of the new materials:
 
-![New materials](/images/gateway-new-materials.png)
+![New materials](gateway-new-materials.png)
 
-![New fuel types](/images/gateway-new-fuel.png)
+![New fuel types](gateway-new-fuel.png)
 
 Based on my work with the map distances, I think increased distance is a must-have upgrade. Every time you add 5 parsecs, you drastically increase the area under the gateway's circle, and the number of systems you could reach. 
 
