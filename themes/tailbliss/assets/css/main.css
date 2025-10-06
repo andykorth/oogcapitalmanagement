@@ -1,20 +1,6 @@
 /* assets */ 
 
 
-.singleArticle img {
-  max-width: 90vw;  
-  max-height: 90vh;  
-  width: auto;       /* let image use its natural width unless it exceeds max */
-  height: auto;      /* preserve aspect ratio */
-  object-fit: contain;
-  display: block;    /* avoids inline spacing */
-  margin: 0 auto;    /* optional: centers the image */
-
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

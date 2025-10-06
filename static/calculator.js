@@ -349,9 +349,14 @@ function update() {
       grandTotal += subtotal;
       const priceFormatted = parseFloat(price.toFixed(2)).toLocaleString('en-US'); //sorry not sorry
       const subtotalFormatted = parseFloat(subtotal.toFixed(2)).toLocaleString('en-US');
+        
+      const isMissing = !price || missingPrices.includes(mat);
+      const isWarning = warningPrices.includes(mat);
+      
+      const rowClass = isMissing ? 'missing-price' : (isWarning ? 'warning-price' : '');
 
       const row = `
-        <tr>
+        <tr class="${rowClass}">
           <td>${mat}</td>
           <td>${amount}</td>
           <td>${priceFormatted}</td> 
@@ -407,6 +412,8 @@ function update() {
 
 // ---- pricing storage ----
 let priceData = {};
+let missingPrices = [];
+let warningPrices = [];
 
 async function fetchPricing() {
   const cacheKey = "pricingData";
@@ -426,11 +433,38 @@ async function fetchPricing() {
   const res = await fetch(url);
   const json = await res.json();
 
+
   const freshData = {};
+  missingPrices = [];
+  warningPrices = [];
+
+  // Group rows by material for easy lookup
+  const grouped = {};
   for (const row of json) {
-    if (row.ExchangeCode === "PP7D_UNIVERSE" && row.PriceAverage) {
-      freshData[row.MaterialTicker] = row.PriceAverage;
+    if (!grouped[row.MaterialTicker]) grouped[row.MaterialTicker] = {};
+    grouped[row.MaterialTicker][row.ExchangeCode] = row.PriceAverage;
+  }
+
+  // Try to find the best available price for each material
+  for (const [ticker, exchanges] of Object.entries(grouped)) {
+    const candidates = [
+      exchanges.PP7D_UNIVERSE,
+      exchanges.PP30D_UNIVERSE,
+      exchanges.PP7D_AI1,
+      exchanges.AI1
+    ];
+
+    const validPrice = candidates.find(p => p && p > 0);
+
+    if (validPrice) {
+      freshData[ticker] = validPrice;
+      if(validPrice > 0){
+        warningPrices.push(ticker);
+      }
+    } else {
+      missingPrices.push(ticker);
     }
+    console.log(missingPrices);
   }
 
   priceData = freshData;
