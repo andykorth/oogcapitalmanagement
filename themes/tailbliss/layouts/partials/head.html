@@ -19,26 +19,5 @@
         document.documentElement.classList.remove('dark')
     }
 </script>
-{{ $styles := resources.Get "/css/style.css" | postCSS }}
-{{ if hugo.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-{{ end }}
 
-{{ $styles := resources.Get "/css/two-col-shortcode.css" | postCSS }}
-{{ if hugo.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-{{ end }}
-
-{{ $styles := resources.Get "/css/custom.css" | postCSS }}
-{{ if hugo.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-{{ end }}
+{{partial "head/css.html"}}

@@ -1,0 +1,42 @@
+
+
+<!-- style.css is generated from main.css using PostCSS  -->
+ 
+{{- 
+$cssFiles := slice 
+    "/css/two-col-shortcode.css"
+    "/css/custom.css"
+	"/css/style.css"
+ -}}
+    
+{{- range $css := $cssFiles -}}
+  {{- $res := resources.Get $css | postCSS -}}
+  {{- if hugo.IsServer -}}
+    <link rel="stylesheet" href="{{ $res.RelPermalink }}">
+  {{- else -}}
+    {{- $res = $res | minify | fingerprint | resources.PostProcess -}}
+    <link rel="stylesheet" href="{{ $res.RelPermalink }}" integrity="{{ $res.Data.Integrity }}">
+  {{- end -}}
+{{- end -}}
+
+
+<!-- style.css is generated from main.css using PostCSS  -->
+{{ with (templates.Defer (dict "key" "global")) }}
+  {{ with resources.Get "css/main.css" }}
+    {{ $opts := dict
+      "minify" hugo.IsProduction
+      "inlineImports" true
+      "skipInlineImportsNotFound" false
+    }}
+    {{ with . | css.TailwindCSS $opts }}
+      {{ if hugo.IsProduction }}
+        {{ with . | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+        {{ end }}
+      {{ else }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
