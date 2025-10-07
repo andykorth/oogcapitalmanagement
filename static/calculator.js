@@ -445,7 +445,6 @@ async function fetchPricing() {
     grouped[row.MaterialTicker][row.ExchangeCode] = row.PriceAverage;
   }
 
-  // Try to find the best available price for each material
   for (const [ticker, exchanges] of Object.entries(grouped)) {
     const candidates = [
       exchanges.PP7D_UNIVERSE,
@@ -454,17 +453,34 @@ async function fetchPricing() {
       exchanges.AI1
     ];
 
-    const validPrice = candidates.find(p => p && p > 0);
+    const candidateKeys = [
+      "PP7D_UNIVERSE",
+      "PP30D_UNIVERSE",
+      "PP7D_AI1",
+      "AI1"
+    ];
+
+    let validPrice = null;
+    let chosenKey = null;
+
+    for (let i = 0; i < candidates.length; i++) {
+      if (candidates[i] && candidates[i] > 0) {
+        validPrice = candidates[i];
+        chosenKey = candidateKeys[i];
+        break;
+      }
+    }
 
     if (validPrice) {
       freshData[ticker] = validPrice;
-      if(validPrice > 0){
+
+      // Add to warning list if it is a less reliable data source
+      if (chosenKey === "PP7D_AI1" || chosenKey === "AI1") {
         warningPrices.push(ticker);
       }
     } else {
       missingPrices.push(ticker);
     }
-    console.log(missingPrices);
   }
 
   priceData = freshData;
