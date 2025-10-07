@@ -15,7 +15,7 @@
   </header>
   <div class="max-w-4xl mx-auto mt-8 mb-2">
 
-    <div class="px-6">
+    <div class="px-6 heroImage">
       {{ with .Params.featured_image }}
       {{ with resources.Get . }}
       {{ $small := (.Resize "400x webp q80").RelPermalink }}
