@@ -338,7 +338,12 @@ function update() {
       }
     }
   }
-
+  // remove zeros so they don't end up in the json
+for (const [key, value] of Object.entries(totals)) {
+  if (value === 0) {
+    delete totals[key];
+  }
+}
   // ---- update table with pricing ----
   tableBody.innerHTML = "";
   let grandTotal = 0;
