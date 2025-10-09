@@ -367,19 +367,40 @@ function update() {
   }
   document.getElementById("grandTotal").innerText = parseFloat(grandTotal.toFixed(2)).toLocaleString();
 
+
+  var cxID = "NC1"
   // Emoji logic, very important for Antares supremacy
   if (originSelect.value === "Antares Station Warehouse") {
     originEmoji.innerText = "😀";
   } else {
     originEmoji.innerText = "😢";
   }
-
+  
+  if (originSelect.value === "Antares Station Warehouse") {
+    cxID = "AI1"
+  } else 
+  if (originSelect.value === "Moria Station Warehouse") {
+    cxID = "NC1"
+  } else 
+  if (originSelect.value === "Arclight Station Warehouse") {
+    cxID = "CI2"
+  } else 
+  if (originSelect.value === "Benten Station Warehouse") {
+    cxID = "CI1"
+  } else 
+  if (originSelect.value === "Hortus Station Warehouse") {
+    cxID = "IC1"
+  } else 
+  if (originSelect.value === "Hubur Station Warehouse") {
+    cxID = "NC2"
+  }
+  
   // Export JSON
   const exportJson = {
     actions: [
       {
-        group: "A1",
-        exchange: "AI1",
+        group: "Items",
+        exchange: cxID,
         priceLimits: {},
         buyPartial: false,
         useCXInv: true,
@@ -389,7 +410,7 @@ function update() {
       {
         type: "MTRA",
         name: "TransferAction",
-        group: "A1",
+        group: "Items",
         origin: originSelect.value,
         dest: "Configure on Execution",
       },
@@ -400,7 +421,7 @@ function update() {
     groups: [
       {
         type: "Manual",
-        name: "A1",
+        name: "Items",
         materials: totals,
       },
     ],
