@@ -30,6 +30,7 @@ const otherBuildings = {
       LDE: 16,
       LSE: 24,
       BMF: 1,
+      LTA: 32,
       SP: 32,
       BWS: 16,
     },
