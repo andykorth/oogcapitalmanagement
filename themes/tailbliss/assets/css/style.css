@@ -2005,15 +2005,6 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-
-/* Custom CSS */
-
-.prose :where(h1):not(:where([class~="not-prose"] *)) {
-  color: white !important;
-}
-
-/* Custom CSS end */
-
 .dark\:prose-invert:is(.dark *) {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
