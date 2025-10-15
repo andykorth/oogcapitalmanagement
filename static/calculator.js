@@ -340,25 +340,37 @@ function update() {
     }
   }
   // remove zeros so they don't end up in the json
-for (const [key, value] of Object.entries(totals)) {
-  if (value === 0) {
-    delete totals[key];
+  for (const [key, value] of Object.entries(totals)) {
+    if (value === 0) {
+      delete totals[key];
+    }
   }
-}
   // ---- update table with pricing ----
   tableBody.innerHTML = "";
   let grandTotal = 0;
+  let totalWeight = 0;
+  let totalVolume = 0;
+
   for (const [mat, amount] of Object.entries(totals)) {
     if (amount > 0) {
       const price = priceData[mat] || 0;
       const subtotal = price * amount;
       grandTotal += subtotal;
-      const priceFormatted = parseFloat(price.toFixed(2)).toLocaleString('en-US'); //sorry not sorry
+
+      // Look up material info
+      const matInfo = materialData[mat] || {};
+      const weight = (matInfo.weight || 0) * amount;
+      const volume = (matInfo.volume || 0) * amount;
+      totalWeight += weight;
+      totalVolume += volume;
+
+      const priceFormatted = parseFloat(price.toFixed(2)).toLocaleString('en-US');
       const subtotalFormatted = parseFloat(subtotal.toFixed(2)).toLocaleString('en-US');
-        
+      const weightFormatted = parseFloat(weight.toFixed(2)).toLocaleString('en-US');
+      const volumeFormatted = parseFloat(volume.toFixed(2)).toLocaleString('en-US');
+
       const isMissing = !price || missingPrices.includes(mat);
       const isWarning = warningPrices.includes(mat);
-      
       const rowClass = isMissing ? 'missing-price' : (isWarning ? 'warning-price' : '');
 
       const row = `
@@ -367,12 +379,22 @@ for (const [key, value] of Object.entries(totals)) {
           <td>${amount}</td>
           <td>${priceFormatted}</td> 
           <td>${subtotalFormatted}</td>
+          <td>${weightFormatted}</td>
+          <td>${volumeFormatted}</td>
         </tr>`;
       tableBody.insertAdjacentHTML("beforeend", row);
     }
   }
-  document.getElementById("grandTotal").innerText = parseFloat(grandTotal.toFixed(2)).toLocaleString();
 
+  // Update totals
+  document.getElementById("grandTotal").innerText =
+    "$" + parseFloat(grandTotal.toFixed(2)).toLocaleString();
+
+  document.getElementById("totalWeight").innerText =
+    parseFloat(totalWeight.toFixed(2)).toLocaleString() + " t";
+
+  document.getElementById("totalVolume").innerText =
+    parseFloat(totalVolume.toFixed(2)).toLocaleString() + " m3";
 
   var cxID = "NC1"
   // Emoji logic, very important for Antares supremacy
@@ -518,6 +540,46 @@ async function fetchPricing() {
   }));
 }
 
+let materialData = {};
+
+async function fetchMaterials() {
+  const cacheKey = "materialData";
+  const cached = localStorage.getItem(cacheKey);
+
+  if (cached) {
+    const { timestamp, data } = JSON.parse(cached);
+    const age = Date.now() - timestamp;
+    if (age < 3600 * 12000) { // 12 hours
+      materialData = data;
+      return;
+    }
+  }
+
+  // Fetch fresh data from endpoint
+  const url = "https://rest.fnar.net/material/allmaterials";
+  const res = await fetch(url);
+  const json = await res.json();
+
+  // Convert to lookup by ticker
+  const freshData = {};
+  for (const mat of json) {
+    if (mat.Ticker) {
+      freshData[mat.Ticker] = {
+        name: mat.Name,
+        category: mat.CategoryName,
+        weight: mat.Weight,
+        volume: mat.Volume
+      };
+    }
+  }
+
+  materialData = freshData;
+
+  localStorage.setItem(cacheKey, JSON.stringify({
+    timestamp: Date.now(),
+    data: freshData
+  }));
+}
 
 
 // event listeners
@@ -542,5 +604,6 @@ copyBtn.addEventListener("click", () => {
 (async () => {
   fillUI();
   await fetchPricing();
+  await fetchMaterials();
   update();
 })();
