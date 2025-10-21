@@ -1,0 +1,101 @@
+<style>
+    input[type="number"], textarea, select {
+        background-color: rgb(255 255 255);
+        padding: 2px;
+        padding-left: 10px;
+    }
+
+    .dark input[type="number"], .dark textarea, .dark select {
+        background-color: rgb(17 24 39);
+        padding: 2px;
+        padding-left: 10px;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+    }
+    label {  
+        display: block;
+        margin-top: 1px; }
+    .two-col label {
+        display: inline-block;
+    }
+    .tableLabel {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    tfoot td { font-weight: bold; }
+    th {
+        text-align: left;
+    }
+
+  #material-matcher .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  #material-matcher .input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px; /* keeps it tidy on mobile */
+  }
+
+  #material-matcher .input-row span {
+    flex: 0 0 130px; /* fixed label width for alignment */
+    text-align: right;
+    margin-right: 0.5rem;
+  }
+
+  #material-matcher .input-row input {
+    flex: 1;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+</style>
+<div id="material-matcher" class="calculator">
+  <h3>Shipping Peeper</h3>
+  <div class="inputs">
+    <label class="input-row">
+      <span>Total Weight (t):</span>
+      <input type="number" id="inputWeight" placeholder="e.g. 100" step="any">
+    </label>
+
+    <label class="input-row">
+      <span>Total Volume (m³):</span>
+      <input type="number" id="inputVolume" placeholder="e.g. 200" step="any">
+    </label>
+
+    <button
+      id="calcButton"
+      class="px-5 py-2 mt-4 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
+      Find Possible Materials
+    </button>
+  </div>
+
+  <table id="resultTable" style="margin-top: 1em; display: none;">
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Weight Each</th>
+        <th>Volume Each</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p id="noResults" style="display: none;">No exact material matches found.</p>
+</div>
+
+<script type="module" src="/material-finder.js"></script>

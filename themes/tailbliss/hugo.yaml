@@ -113,7 +113,7 @@ menu:
       weight: 40
     - identifier: infra
       name: Infrastructure Calc
-      url: /calc/
+      url: /infrastructure-calc/
       weight: 45
     - identifier: posts
       name: Articles
