@@ -9,7 +9,7 @@ description: We begin collecting pledges as our 4th gateway is planned.
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
-tags: Posts
+tags: News
 ---
 
 The ADI Gateway Cooperative is an Antares-based regional group focused on constructing gateways. By contributing resources to the gateways, members earn ownership shares proportional to their contributions. By banding together, [co-op members ensure the smooth operation of gateways](/adi-gateway-cooperative/) in Antares and beyond!

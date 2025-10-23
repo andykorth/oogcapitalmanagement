@@ -9,7 +9,7 @@ description: The ADI Gateway project currently has 71% of resources pledged!
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
-tags: Posts
+tags: News
 fullWidthArticle: true
 ---
 

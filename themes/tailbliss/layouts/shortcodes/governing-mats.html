@@ -1,0 +1,98 @@
+<style>
+    input[type="number"], textarea, select {
+        background-color: rgb(255 255 255);
+        padding: 2px;
+        padding-left: 10px;
+    }
+
+    .dark input[type="number"], .dark textarea, .dark select {
+        background-color: rgb(17 24 39);
+        padding: 2px;
+        padding-left: 10px;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+    }
+    label {  
+        display: block;
+        margin-top: 1px; }
+    .two-col label {
+        display: inline-block;
+    }
+    .tableLabel {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    tfoot td { font-weight: bold; }
+    th {
+        text-align: left;
+    }
+
+    #gov-efficiency-tool .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  #gov-efficiency-tool .input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px; /* keeps it tidy on mobile */
+  }
+
+  #gov-efficiency-tool .input-row span {
+    flex: 0 0 130px; /* fixed label width for alignment */
+    text-align: right;
+    margin-right: 0.5rem;
+  }
+
+  #gov-efficiency-tool .input-row input {
+    flex: 1;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .gov-efficiency-tool td {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
+</style>
+
+<div class="gov-efficiency-tool max-w-3xl mx-auto p-4 text-center">
+ 
+  <label for="utilityType" class="block mb-2 text-lg font-medium">Choose Need Type:</label>
+  <select id="utilityType" class="p-2 rounded mb-4">
+    <option value="Safety">Safety</option>
+    <option value="Health">Health</option>
+    <option value="Comfort">Comfort</option>
+    <option value="Culture">Culture</option>
+    <option value="Education">Education</option>
+  </select>
+
+  <table id="efficiencyTable" class="table-auto w-full border-collapse mt-6 hidden">
+    <thead>
+      <tr >
+        <th class="px-2 py-1">Building</th>
+        <th class="px-2 py-1">Material</th>
+        <th class="px-2 py-1">Price (PP7d Universe)</th>
+        <th class="px-2 py-1">Qty/Day</th>
+        <th class="px-2 py-1">Satisfaction</th>
+        <th class="px-2 py-1">Efficiency (Utility / Price)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p id="noResults" class="text-red-600 mt-4 hidden">No results found for that Need type.</p>
+</div>
+
+<script type="module" src="/governing-mats.js"></script>

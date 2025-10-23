@@ -107,14 +107,10 @@ menu:
       name: Articles
       url: /posts/
       weight: 30
-    - identifier: credit
-      name: Credit Bureau
-      url: /credit-bureau/
+    - identifier: tools
+      name: Tools
+      url: /tools/
       weight: 40
-    - identifier: infra
-      name: Infrastructure Calc
-      url: /infrastructure-calc/
-      weight: 45
     - identifier: posts
       name: Articles
       url: /posts/
@@ -127,11 +123,7 @@ menu:
       name: Joining OOG
       url: /joining/
       weight: 100
-#    - identifier: shareholders
-#      name: Shareholders🔒
-#      # name: Shareholders
-#      url: /shareholders/
-#      weight: 100
+
 
   footer:
     - identifier: home

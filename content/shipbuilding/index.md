@@ -17,7 +17,7 @@ To streamline the process of buying a new ship, we offer a single model with imm
 * Lightweight hull plates improve acceleration
 * STS comes standard for immunity to gravitational damage- protect your entire fleet so you don't have to worry which ship is protected! 
 
-{{< twoColImage right="true" imageURL="/images/OOG2k2025.png">}}
+{{< twoColImage right="true" imageURL="OOG2k2025.png">}}
 
 ## Availability
 See our [discord post on the UFO discord](https://discord.com/channels/855488309802172469/1235430108127432754) for up to date stock information.

@@ -9,7 +9,7 @@ description: Everything we know about gateways. Updated May 2025!
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
-tags: Posts
+tags: News
 fullWidthArticle: true
 ---
 

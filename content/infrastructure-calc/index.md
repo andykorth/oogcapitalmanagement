@@ -5,6 +5,13 @@ summary: Calculate and export materials for various planetary infrastructure imp
 description: Calculate and export materials for various planetary infrastructure improvements.
 omit_header_text: true
 fullWidthArticle: true
+tags: tool
+type: page
+
+language: en
+author: Archiel
+authorimage: images/archiel.png
+fullWidthArticle: true
 ---
 
 # Infrastructure Upgrade Calculator
