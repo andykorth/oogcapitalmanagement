@@ -100,18 +100,34 @@ function calculateEfficiency() {
 
   for (const row of utilityData) {
     const price = priceData[row.mat];
-    if (!price || !row[utilityType] || row[utilityType] === 0) continue;
+    const utilityValue = row[utilityType];
+
+    if (!price || !utilityValue || utilityValue === 0) continue;
 
     const totalPrice = price * row.qtyPerDay;
-    const efficiency = row[utilityType] / totalPrice;
+
+    // Check if this material provides *any* other type of utility > 0
+    const otherUtilities = ["Safety", "Health", "Comfort", "Culture", "Education"]
+      .filter(u => u !== utilityType && row[u] && row[u] > 0);
+
+    // Base efficiency calculation
+    let dollarsPerUtility = totalPrice / utilityValue;
+    let utilityDisplay = utilityValue.toFixed(1);
+
+    if (otherUtilities.length > 0) {
+      utilityDisplay += " *";     // mark with an asterisk
+      dollarsPerUtility /= 2;           // double efficiency for multi-utility materials
+    }
 
     results.push({
       ...row,
       price,
-      utility: row[utilityType],
-      efficiency
+      utility: utilityDisplay,
+      efficiency: dollarsPerUtility,
+      otherUtilities
     });
   }
+
 
   if (results.length === 0) {
     noResults.classList.remove("hidden");
@@ -119,7 +135,7 @@ function calculateEfficiency() {
   }
 
   // Sort high-to-low efficiency
-  results.sort((a, b) => b.efficiency - a.efficiency);
+  results.sort((a, b) => a.efficiency - b.efficiency);
 
   // Normalize efficiency values for coloring
   const maxEff = results[0].efficiency;
@@ -132,11 +148,11 @@ function calculateEfficiency() {
 
     const rowHtml = `
       <tr style="background-color: ${color}">
-        <td class="px-2 py-1">${r.building}</td>
         <td class="px-2 py-1">${r.mat}</td>
-        <td class="px-2 py-1">${r.price.toFixed(2)}</td>
+        <td class="px-2 py-1">${r.building}</td>
+        <td class="px-2 py-1">${"$" + parseFloat(r.price.toFixed(2)).toLocaleString()}</td>
         <td class="px-2 py-1">${r.qtyPerDay}</td>
-        <td class="px-2 py-1">${r.utility.toFixed(1)}</td>
+        <td class="px-2 py-1">${r.utility}</td>
         <td class="px-2 py-1 font-bold">${r.efficiency.toFixed(4)}</td>
       </tr>`;
     tbody.insertAdjacentHTML("beforeend", rowHtml);
@@ -147,13 +163,15 @@ function calculateEfficiency() {
 
 // Helper to map normalized efficiency to a color gradient
 function efficiencyColor(value) {
+  // better colors
+  value = Math.pow(value, 0.5);
   // value = 0..1, green → yellow → red
   const r = value < 0.5 ? (value * 2) * 255 : 255;
   const g = value < 0.5 ? 255 : (1 - (value - 0.5) * 2) * 255;
   const b = 0;
   return `rgb(${r}, ${g}, ${b}, 0.3)`;
 }
-
+ 
 // ---- initialize ----
 (async () => {
   initGovEfficiency();
