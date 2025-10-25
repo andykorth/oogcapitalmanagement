@@ -80,10 +80,29 @@ async function initGovEfficiency() {
   await fetchMaterials();
 
   const select = document.getElementById("utilityType");
-  select.addEventListener("change", () => calculateEfficiency());
+  const validUtilities = ["Safety", "Health", "Comfort", "Culture", "Education"];
 
-  // Automatically calculate once at startup (Safety is default)
+  // --- Read from URL ---
+  const params = new URLSearchParams(window.location.search);
+  let selected = params.get("t");
+  if (!validUtilities.includes(selected)) selected = "Safety";
+
+  // Set dropdown to match
+  select.value = selected;
+
+  // --- Run initial calculation ---
   calculateEfficiency();
+
+  // --- Update URL & recalc when user changes selection ---
+  select.addEventListener("change", (e) => {
+    const newUtility = e.target.value;
+
+    // Use a pretty, shareable URL (no page reload)
+    const newUrl = `${window.location.origin}${window.location.pathname}?t=${encodeURIComponent(newUtility)}`;
+    window.history.replaceState({}, "", newUrl);
+
+    calculateEfficiency();
+  });
 }
 
 function calculateEfficiency() {

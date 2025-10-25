@@ -10,6 +10,10 @@ fullWidthArticle: true
 
 To streamline the process of buying a new ship, we offer a single model with immediate delivery. We have no month-long order queues or confusing roster of ships. Our premium 2k/2k freighter is a fantastic balance of features for the price.
 
+{{< twoColImage right="true" imageURL="OOG2k2025.png">}}
+
+## Features
+
 * Fuel-Saving STL Engine uses half the fuel of a standard engine
 * Quick-Charge FTL Reactor, a great balance of cost with 1/5th the charge time
 * Medium STL and _Large_ FTL fuel tanks, for enhanced range
@@ -17,7 +21,6 @@ To streamline the process of buying a new ship, we offer a single model with imm
 * Lightweight hull plates improve acceleration
 * STS comes standard for immunity to gravitational damage- protect your entire fleet so you don't have to worry which ship is protected! 
 
-{{< twoColImage right="true" imageURL="OOG2k2025.png">}}
 
 ## Availability
 See our [discord post on the UFO discord](https://discord.com/channels/855488309802172469/1235430108127432754) for up to date stock information.
@@ -34,7 +37,21 @@ Create a ship blueprint that matches the above image. Rent 4 warehouses on Hepha
 
 {{< /twoColImage >}}
 
-{{< centerspan >}}
-![Premium Shipbuilding Logo](/images/oog_premium_shipbuilding.png)
-{{< /centerspan >}}
+## 5k Ships
 
+In special cases, we may have 5k ships available for sale. These two models may be in stock:
+
+* Unshielded 5K: 11,000,000 AIC
+* Shielded 5K: 19,700,000 AIC
+
+OOG Members, please refer to the pinned post in #ship-building for subsidy prices and rules.
+
+
+{{< twoColImage right="true" imageURL="shielded5k.png">}}
+
+![5k unshielded](5kUnshielded.png)
+{{< /twoColImage >}}
+
+{{< centerspan >}}
+![Premium Shipbuilding Logo](oog_premium_shipbuilding.png)
+{{< /centerspan >}}
