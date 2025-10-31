@@ -1,0 +1,78 @@
+<style>
+
+  label {
+    display: block;
+    margin-top: 1px;
+  }
+
+  #corp-tool {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  #corp-tool .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  #corp-tool .input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #corp-tool .input-row span {
+    flex: 0 0 130px;
+    text-align: right;
+    margin-right: 0.5rem;
+  }
+
+  #corp-tool input {
+    flex: 1;
+  }
+
+
+  #corp-tool button:hover {
+    background-color: rgb(55 65 81);
+  }
+
+  #corpStatus {
+    color: rgb(156 163 175); /* Tailwind gray-400 */
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+</style>
+
+<div id="corp-tool" class="calculator">
+  <div class="inputs">
+    <div class="input-row">
+      <span>Corporation Code:</span>
+      <input id="corpCodeInput" type="text" placeholder="e.g. OOG">
+    </div>
+    <button id="fetchCorpButton">Fetch</button>
+  </div>
+
+  <div id="corpStatus"></div>
+
+  <table id="corpTable" class="hidden">
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Company</th>
+        <th>Code</th>
+        <th>Tier</th>
+        <th>Country</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script type="module" src="/corp-manager.js"></script>

@@ -1,15 +1,4 @@
 <style>
-    input[type="number"], textarea, select {
-        background-color: rgb(255 255 255);
-        padding: 2px;
-        padding-left: 10px;
-    }
-
-    .dark input[type="number"], .dark textarea, .dark select {
-        background-color: rgb(17 24 39);
-        padding: 2px;
-        padding-left: 10px;
-    }
 
     textarea {
         resize: none;
@@ -27,11 +16,6 @@
         text-align: right;
         margin-right: 10px;
     }
-    tfoot td { font-weight: bold; }
-    th {
-        text-align: left;
-    }
-
     #scalableBuildings {
         max-width: 700px;
         display: flex;
@@ -45,6 +29,7 @@
     }
 
 </style>
+<div class="calculator">
 
 <h3>Planetary Projects:</h3>
 
@@ -122,6 +107,7 @@
 
 <textarea id="jsonOutput" readonly></textarea>
 <br/>
-<button class="px-5 py-2 mt-4 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10" id="copyBtn">Copy JSON</button>
+<button id="copyBtn">Copy JSON</button>
+</div>
 
 <script type="module" src="/infra-calc.js"></script>

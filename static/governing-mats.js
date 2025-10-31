@@ -167,11 +167,11 @@ function calculateEfficiency() {
 
     const rowHtml = `
       <tr style="background-color: ${color}">
-        <td class="px-2 py-1">${r.mat}</td>
-        <td class="px-2 py-1">${r.building}</td>
-        <td class="px-2 py-1">${"$" + parseFloat(r.price.toFixed(2)).toLocaleString()}</td>
-        <td class="px-2 py-1">${r.qtyPerDay}</td>
-        <td class="px-2 py-1">${r.utility}</td>
+        <td>${r.mat}</td>
+        <td>${r.building}</td>
+        <td>${"$" + parseFloat(r.price.toFixed(2)).toLocaleString()}</td>
+        <td>${r.qtyPerDay}</td>
+        <td>${r.utility}</td>
         <td class="px-2 py-1 font-bold">${r.efficiency.toFixed(4)}</td>
       </tr>`;
     tbody.insertAdjacentHTML("beforeend", rowHtml);

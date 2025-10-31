@@ -1,11 +1,111 @@
-    input[type="number"], textarea, select {
-        background-color: rgb(17 24 39);
+:root {
+  /* ===== LIGHT THEME COLORS ===== */
+  --bg-primary: rgb(255 255 255);
+  --bg-secondary: rgb(249 250 251);
+  --text-primary: rgb(31 41 55);
+  --text-secondary: rgb(107 114 128);
+  --border-color: rgb(209 213 219);
+  --table-row-even: rgb(249 250 251);
+  --table-row-odd: rgb(255 255 255);
+  --table-header-bg: rgb(229 231 235);
+  --table-border: rgb(209 213 219);
+}
 
-        padding: 2px;
-        padding-left: 10px;
-    }
+.dark {
+  /* ===== DARK THEME COLORS ===== */
+  --bg-primary: rgb(17 24 39);
+  --bg-secondary: rgb(31 41 55);
+  --text-primary: rgb(209 213 219);
+  --text-secondary: rgb(156 163 175);
+  --border-color: rgb(55 65 81);
+  --table-row-even: rgb(31 41 55);
+  --table-row-odd: rgb(17 24 39);
+  --table-header-bg: rgb(31 41 55);
+  --table-border: rgb(55 65 81);
+}
 
-/* Light theme (default) */
+/* ====== Shared Input Styling ====== */
+/* Base input + label style using shared theme variables */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 2px 10px; 
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Focus state for both themes */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--text-secondary);
+  box-shadow: 0 0 0 1px var(--text-secondary);
+}
+
+/* Labels keep consistent spacing */
+label {
+  display: block;
+  margin-top: 1px;
+  color: var(--text-primary);
+}
+
+.calculator button {
+  margin-top: 1em;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.calculator button:hover {
+  background-color: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+/* ====== Shared Table Formatting ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th {
+  text-align: left;
+  padding: 0.4rem;
+  background-color: var(--table-header-bg);
+  border-bottom: 1px solid var(--table-border);
+  color: var(--text-primary);
+}
+
+td {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom: 1px solid var(--table-border);
+  color: var(--text-primary);
+}
+
+tr:nth-child(even) {
+  background-color: var(--table-row-even);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--table-row-odd);
+}
+
+/* ====== Missing / Warning Price Styles ====== */
+
+/* Light theme */
 .missing-price {
   background: repeating-linear-gradient(
     -45deg,
@@ -35,7 +135,7 @@
     #441111 10px,
     #441111 20px
   );
-  color: #ffdede; /* light text contrast */
+  color: #ffdede;
 }
 
 .dark .warning-price {
@@ -46,7 +146,7 @@
     #444011 10px,
     #444011 20px
   );
-  color: #ffffdd; /* light text contrast */
+  color: #ffffdd;
 }
 
 
