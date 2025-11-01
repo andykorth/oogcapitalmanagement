@@ -40,12 +40,13 @@ async function fetchCompanyData(companyCode) {
   localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
   return data;
 }
-
 async function displayCorpInfo(corpCode) {
   const status = document.getElementById("corpStatus");
   const table = document.getElementById("corpTable");
   const tbody = table.querySelector("tbody");
+  
   const showInactive = document.getElementById("showInactiveCheckbox").checked;
+
   tbody.innerHTML = "";
   status.textContent = "Loading corporation data...";
   table.classList.add("hidden");
@@ -58,14 +59,25 @@ async function displayCorpInfo(corpCode) {
     }
 
     status.textContent = `Found ${members.length} members. Fetching company details...`;
+    let fetchedCount = 0;
+    let activeCount = 0;
+    let totalCount = 0;
+
     const rows = [];
 
+    // Sort members alphabetically by company code for consistent order
+    members.sort((a, b) => a.CompanyCode.localeCompare(b.CompanyCode));
+
     for (const m of members) {
+      fetchedCount++;
+      status.textContent = `Fetching ${fetchedCount} / ${members.length}...`;
+      
       const company = await fetchCompanyData(m.CompanyCode);
       if (!company) continue;
 
       const timestampStr = company.Timestamp;
       let isActive = true;
+      totalCount += 1;
 
       if (timestampStr) {
         const lastUpdate = new Date(timestampStr).getTime();
@@ -75,15 +87,16 @@ async function displayCorpInfo(corpCode) {
       }
 
       if (!showInactive && !isActive) continue;
+      activeCount += 1;
 
-      const tier = company.Tier ?? "";
-      const rating = company.OverallRating ?? "";
       const planetCount = Array.isArray(company.Planets) ? company.Planets.length : 0;
       const govCount = Array.isArray(company.Offices) ? company.Offices.length : 0;
+      const tier = company.Tier ?? "";
+      const rating = company.OverallRating ?? "";
       const ageDays = company.CreatedEpochMs
         ? Math.floor((Date.now() - company.CreatedEpochMs) / (1000 * 60 * 60 * 24))
         : "";
-
+        
       rows.push({
         user: m.UserName,
         companyName: company.CompanyName || "",
@@ -96,34 +109,42 @@ async function displayCorpInfo(corpCode) {
         createdEpochMs: company.CreatedEpochMs ?? 0,
       });
 
+      // clear current table content.
+      tbody.innerHTML = "";
+
+      if(rows.length > 0){
+        table.classList.remove("hidden");
+      }
+
+      // every time a row is added, re-sort our saved row list, and re-add all rows.
+      rows.sort((a, b) => a.createdEpochMs - b.createdEpochMs);
+
+      for (const r of rows) {
+        const row = `
+          <tr>
+            <td>${r.user}</td>
+            <td>${r.companyName}</td>
+            <td>${r.companyCode}</td>
+            <td>${r.tier}</td>
+            <td>${r.planetCount}</td>
+            <td>${r.govCount}</td>
+            <td>${r.rating}</td>    
+            <td>${r.ageDays}</td>
+            <td><button onclick="window.location.href='/intelReport?co=${r.companyCode}'">Show</button></td>
+          </tr>
+        `;
+        tbody.insertAdjacentHTML("beforeend", row);
+      }
     }
 
-    rows.sort((a, b) => a.createdEpochMs - b.createdEpochMs);
+    status.textContent = `All ${corpCode} companies loaded,  ${activeCount} active accounts of ${totalCount} in FIO.`;
 
-    for (const r of rows) {
-      const row = `
-        <tr>
-          <td>${r.user}</td>
-          <td>${r.companyName}</td>
-          <td>${r.companyCode}</td>
-          <td>${r.tier}</td>
-          <td>${r.planetCount}</td>
-          <td>${r.govCount}</td>
-          <td>${r.rating}</td>    
-          <td>${r.ageDays}</td>
-          <td><button onclick="window.location.href='/intelReport?co=${r.companyCode}'">Show</button></td>
-        </tr>
-      `;
-      tbody.insertAdjacentHTML("beforeend", row);
-    }
-
-    status.textContent = "";
-    table.classList.remove("hidden");
   } catch (err) {
     console.error(err);
     status.textContent = "Error loading corporation data.";
   }
 }
+
 
 function updateURLParam(key, value) {
   const url = new URL(window.location);
