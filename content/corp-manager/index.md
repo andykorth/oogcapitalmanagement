@@ -1,12 +1,12 @@
 ---
 title: "Corporation Info Lookup"
 language: en
-featured_image: 'images/govt-office-narrow.png'
+featured_image: 'images/corp-manager.png'
 omit_header_text: true
 type: page
 
-summary: Lookup all companies in a corporation
-description: Lookup all companies in a corporation
+summary: Lookup all companies in a corporation to aid in corp management
+description: Lookup all companies in a corporation to aid in corp management
 fullWidthArticle: true
 
 tags: tool

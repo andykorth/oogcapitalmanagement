@@ -80,17 +80,14 @@ table {
 
 th {
   text-align: left;
-  padding: 0.4rem;
+  padding: 0.1em 0.5em;
   background-color: var(--table-header-bg);
   border-bottom: 1px solid var(--table-border);
   color: var(--text-primary);
 }
 
 td {
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.1em 0.5em;
   border-bottom: 1px solid var(--table-border);
   color: var(--text-primary);
 }

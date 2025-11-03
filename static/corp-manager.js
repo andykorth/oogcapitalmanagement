@@ -96,7 +96,7 @@ async function displayCorpInfo(corpCode) {
       const ageDays = company.CreatedEpochMs
         ? Math.floor((Date.now() - company.CreatedEpochMs) / (1000 * 60 * 60 * 24))
         : "";
-        
+
       rows.push({
         user: m.UserName,
         companyName: company.CompanyName || "",
@@ -130,7 +130,7 @@ async function displayCorpInfo(corpCode) {
             <td>${r.govCount}</td>
             <td>${r.rating}</td>    
             <td>${r.ageDays}</td>
-            <td><button onclick="window.location.href='/intelReport?co=${r.companyCode}'">Show</button></td>
+            <td><button onclick="window.location.href='/intel?co=${r.companyCode}'">Intel</button></td>
           </tr>
         `;
         tbody.insertAdjacentHTML("beforeend", row);
