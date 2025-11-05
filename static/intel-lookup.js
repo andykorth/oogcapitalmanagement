@@ -84,7 +84,7 @@ async function displayCompanyInfo(companyCode) {
       }
     }
 
-    addRow(table, "Governor Count", company.Offices.length)
+    addRow(table, "Offices Held Count", company.Offices.length)
     addRow(table, "Planet (fio) Count", company.Planets.length)
     
 

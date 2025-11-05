@@ -130,7 +130,7 @@ async function displayCorpInfo(corpCode) {
             <td>${r.govCount}</td>
             <td>${r.rating}</td>    
             <td>${r.ageDays}</td>
-            <td><button onclick="window.location.href='/intel?co=${r.companyCode}'">Intel</button></td>
+            <td><a href="/intel?co=${r.companyCode}" target="_blank" class="button-link">Intel</a>
           </tr>
         `;
         tbody.insertAdjacentHTML("beforeend", row);

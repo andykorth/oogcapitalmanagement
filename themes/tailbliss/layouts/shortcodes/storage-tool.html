@@ -1,0 +1,66 @@
+<style>
+  #storage-tool {
+    max-width: 900px;
+    margin: 2rem auto;
+    font-family: sans-serif;
+    color: #e5e7eb;
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  #storage-tool h2 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #374151;
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+  }
+
+  th, td {
+    border: 1px solid #374151;
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  th {
+    background-color: #111827;
+  }
+
+  tr:nth-child(even) {
+    background-color: #2d3748;
+  }
+
+  button {
+    background-color: #4b5563;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 4px 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #6b7280;
+  }
+
+  .group-summary {
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
+  }
+</style>
+
+<div id="storage-tool">
+  <h1>Local Storage Manager</h1>
+  <div id="storageContent"></div>
+</div>
+
+
+<script type="module" src="/storage-tool.js"></script>
