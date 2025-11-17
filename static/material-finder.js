@@ -31,11 +31,11 @@ function findMatchingMaterials() {
     const qtyByVolume = totalVolume / mat.volume;
 
     // Both must be whole numbers (within tolerance)
-    const tolerance = 1e-6;
+    const tolerance = 1e-3;
     const isIntWeight = Math.abs(qtyByWeight - Math.round(qtyByWeight)) < tolerance;
     const isIntVolume = Math.abs(qtyByVolume - Math.round(qtyByVolume)) < tolerance;
 
-    if (isIntWeight && isIntVolume && Math.round(qtyByWeight) === Math.round(qtyByVolume)) {
+    if (Math.round(qtyByWeight) > 0 && isIntWeight && isIntVolume && Math.abs( qtyByWeight - qtyByVolume) < 0.01 ) {
       results.push({
         ticker,
         name: mat.name,
