@@ -4,8 +4,8 @@ date: 2025-11-05T06:10:36+08:00
 draft: false
 language: en
 featured_image: images/drinking-scientists.png
-summary: Press Release! Today OOG creates the first ever vortex engine, opening exploration into new regions of space!
-description: Press Release! Today OOG creates the first ever vortex engine, opening exploration into new regions of space!
+summary: OOG Announces Successful Completion of First-Ever Colony Ship; Immediate Failure to Launch Declared “Operational Pause”
+description: OOG Announces Successful Completion of First-Ever Colony Ship; Immediate Failure to Launch Declared “Operational Pause”
 author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
@@ -17,9 +17,9 @@ fullWidthArticle: true
 
 ---
 
-HECTATE – In a historic ceremony marked by optimism, confetti, and mild panic, OOG Capital Management proudly unveiled the first-ever fully constructed **Colony Ship** in human history — moments before discovering that no one knew how to turn it on.
+HECATE – In a historic ceremony marked by optimism, confetti, and mild panic, OOG Capital Management proudly unveiled the first-ever fully constructed **Colony Ship** in human history — moments before discovering that no one knew how to turn it on.
 
-The ship, christened _OOG Pioneer One_, was intended to make the inaugural journey from Hectate to Rhenos Pater, a newly identified world rich in **Rhenium Ore**, marking humanity’s first attempt to harvest the rare element. The voyage was to symbolize the dawn of a new industrial age, powered by OOG’s revolutionary **Vortex Engine**, fueled by Krypton-based **Vortex Fuel**, and guided by the steady hand of corporate efficiency.
+The ship, christened _OOG Pioneer One_, was intended to make the inaugural journey from Hecate to Rhenos Pater, a newly identified world rich in **Rhenium Ore**, marking humanity’s first attempt to harvest the rare element. The voyage was to symbolize the dawn of a new industrial age, powered by OOG’s revolutionary **Vortex Engine**, fueled by Krypton-based **Vortex Fuel**, and guided by the steady hand of corporate efficiency.
 
 Unfortunately, that hand misplaced the manual.
 
@@ -46,6 +46,6 @@ Despite the setback, OOG executives remain upbeat.
 
 Plans are already underway to begin drafting a manual “at the earliest sober opportunity.” Once complete, OOG expects to resume preparations for the journey to Rhenos Pater, where the first **Rhenium Ore** deposits await discovery — assuming someone can find the ignition switch.
 
-Until then, _OOG Pioneer One_ will remain on display at the Hectate Shipyards, where visitors are encouraged to admire its gleaming hull, its vast habitation module, and the haunting silence of a ship that dreams of stars it cannot yet reach.
+Until then, _OOG Pioneer One_ will remain on display at the Hecate Shipyards, where visitors are encouraged to admire its gleaming hull, its vast habitation module, and the haunting silence of a ship that dreams of stars it cannot yet reach.
 
 OOG Capital Management reminds all interested CEOs that [recruitment is still open](/joining/) — preferably to those who can both hold their liquor and write a manual.
