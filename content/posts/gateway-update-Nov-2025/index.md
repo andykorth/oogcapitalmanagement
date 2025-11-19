@@ -2,7 +2,7 @@
 title: "Gateway Update, Nov 2025"
 date: 2025-11-17T14:10:36+08:00
 language: en
-featured_image: images/gateway-march-2025-narrow.png
+featured_image: images/gateway-nov-2025.png
 summary: Join the Antares Gateway Cooperative as the gateway release nears.
 description: Join the Antares Gateway Cooperative as the gateway release nears.
 author: Archiel
@@ -57,6 +57,22 @@ These GWS subcomponents are not separately collected in the sheet, so if you are
 I'd love to see more people throughout the galaxy contributing to the project. Check the Gateway Ledger for an up to date list of most wanted items. As of the time of this writing we need:
 
 ![All Gateway Items](gatewayprogress.png)
+
+# Gateway Network:
+
+[![Final Network](final-network.png)](final-network.png)
+
+Of these gates, The ADI Gateway Cooperative is building the following:
+
+[![Gateway List](gateway_list.png)](gateway_list.png)
+
+# Governmental Responsibilities:
+
+We plan to have an Coop member as an MP on each planet with an ADI Gateway. That member can watch for and record gateway fees, manage the motions to create, upgrade, fuel, and upkeep the gateways. (It's a lot of motions). 
+
+We have a fiduciary obligation to return fees to the contributors of the project. Unfortunately, the funds are intermingled, so care is needed recording 
+
+![alt text](image.png)
 
 ## Join the efforts
 
