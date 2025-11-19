@@ -71,6 +71,15 @@ label {
   border-color: var(--accent-color);
 }
 
+table button,
+.calculator table button {
+  margin: 0;                /* remove spacing in rows */
+  padding: 0.25rem 0.35rem; /* much tighter */
+  font-size: 0.8rem;        /* compact */
+  line-height: 1.1;
+  border-radius: 4px;       /* smaller radius for dense layout */
+}
+
 .button-link {
   display: inline-block;
   background-color: rgb(31 41 55);

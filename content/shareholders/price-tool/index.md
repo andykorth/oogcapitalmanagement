@@ -15,7 +15,11 @@ authorimage: images/archiel.png
 fullWidthArticle: true
 ---
 
-# Price tool
+# Bid creation price tool
+
+Before using this tool, visit the [Storage Management](/storage-tool/) scroll to the bottom, and import modeled prices.
+
+Prices listed here are the highest bid. If the highest bid is under the imported modeled price, then it will be marked green.
 
 {{< price-tool >}}
 

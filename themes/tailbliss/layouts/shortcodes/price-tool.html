@@ -1,5 +1,4 @@
 <style>
-
     textarea {
         resize: none;
         width: 100%;
@@ -14,6 +13,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.8rem;
+        max-width: 340px;
     }
 
     #priceTable {
@@ -22,15 +22,76 @@
         border-collapse: collapse;
     }
 
+    #priceTable td, #priceTable th {
+        border-bottom: 1px solid #ddd;
+        padding: 4px 6px;
+    }
+
+    .expand-row {
+        background: #f7f7f7;
+    }
+
+    .green-highlight {
+        background-color: #d1fae5 !important; 
+    }
+    .dark .green-highlight {
+        background-color: #002c15 !important; 
+    }
+
+  .expand-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+  }
+
+  .expand-details-table th,
+  .expand-details-table td {
+    border: 1px solid #ddd;
+    padding: 4px 6px;
+    vertical-align: top;
+  }
+
+  .sell-text {
+    color: #b91c1c; /* Tailwind red-700 */
+    font-weight: bold;
+  }
+  .buy-text {
+    color: #065f46; /* Tailwind green-700 */
+    font-weight: bold;
+  }
+
+  .dark .sell-text {
+    color: #fca5a5; /* red-300 */
+  }
+  .dark .buy-text {
+    color: #6ee7b7; /* green-300 */
+  }
+
 </style>
 
 <div id="price-compare" class="calculator">
   <h3>Price Comparison Tool</h3>
 
   <div class="inputs">
-    <button
-      id="loadPrices"
-      class="">
+    <label>
+      Filter by Exchange:
+      <select id="exchangeFilter">
+        <option value="ALL">All</option>
+        <option value="AI1">AI1</option>
+        <option value="CI1">CI1</option>
+        <option value="CI2">CI2</option>
+        <option value="IC1">IC1</option>
+        <option value="NC1">NC1</option>
+        <option value="NC2">NC2</option>
+      </select>
+    </label>
+
+    <label>
+      Percent Markup (%):
+      <input type="number" id="markupInput" value="4" step="0.1">
+    </label>
+
+    <button id="loadPrices" class="">
       Load Comparison Data
     </button>
 
@@ -53,52 +114,58 @@
   const thead = document.getElementById("priceHead");
   const tbody = document.getElementById("priceBody");
 
+  const exchangeFilter = document.getElementById("exchangeFilter");
+  const markupInput = document.getElementById("markupInput");
+
   btn.addEventListener("click", async () => {
     status.textContent = "Loading…";
 
     await fetchExchangeData(status);
-    loadModeledPrices();  // refresh global modeledPrices
+    loadModeledPrices();
 
     if (!exchangeData.length) {
       status.textContent = "No exchange data available.";
       return;
     }
 
-    if (modeledPrices.length < 0) {
-      status.textContent = "No modeled prices locally stored. Visit the data tool.";
-      return;
-    }
+    const markupPct = Number(markupInput.value) / 100;
+    const filterEx = exchangeFilter.value;
 
-    // 1. Collect unique exchange codes
-    const exchangeCodes = [...new Set(exchangeData.map(r => r.ExchangeCode))].sort();
+    // Collect unique exchange codes
+    const exchangeCodes = [...new Set(exchangeData.map(r => r.ExchangeCode))].sort()
+      .filter(ex => filterEx === "ALL" || ex === filterEx);
 
-    // 2. Collect unique material tickers
+    // Collect unique materials
     const materials = [...new Set(exchangeData.map(r => r.MaterialTicker))].sort();
 
-    // 3. Build table header
+    // Build table header
     let headHTML = "<tr><th>Material</th>";
-    for (const ex of exchangeCodes) {
-      headHTML += `<th>${ex}</th>`;
-    }
-    headHTML += "<th>Modeled</th></tr>";
+    for (const ex of exchangeCodes) headHTML += `<th>${ex}</th>`;
+    headHTML += "<th>Modeled</th><th>Expand</th></tr>";
     thead.innerHTML = headHTML;
 
-    // 4. Prepare lookup structure for highest buying price per material per exchange
+    // Prepare highest buying price per material per exchange
     const priceMap = {};
+    const fullOrderData = {}; // store all orders for expand rows
+
     for (const row of exchangeData) {
       const ticker = row.MaterialTicker;
       const ex = row.ExchangeCode;
 
       if (!priceMap[ticker]) priceMap[ticker] = {};
+      if (!fullOrderData[ticker]) fullOrderData[ticker] = {};
+      if (!fullOrderData[ticker][ex]) {
+        fullOrderData[ticker][ex] = {
+          buying: row.BuyingOrders || [],
+          selling: row.SellingOrders || []
+        };
+      }
 
-      // find highest buying order price
       let maxBuy = null;
-      if (Array.isArray(row.BuyingOrders) && row.BuyingOrders.length > 0) {
+      if (Array.isArray(row.BuyingOrders)) {
         for (const bo of row.BuyingOrders) {
           if (typeof bo.ItemCost === "number") {
-            if (maxBuy === null || bo.ItemCost > maxBuy) {
-              maxBuy = bo.ItemCost;
-            }
+            if (maxBuy === null || bo.ItemCost > maxBuy) maxBuy = bo.ItemCost;
           }
         }
       }
@@ -108,24 +175,103 @@
       }
     }
 
-    // 5. Build table body
+    // Build table body
     let bodyHTML = "";
+
     for (const mat of materials) {
-      bodyHTML += `<tr><td>${mat}</td>`;
+      const modeled = modeledPrices[mat];
+      const threshold = modeled ? modeled * (1 - markupPct) : null;
+
+      bodyHTML += `<tr id="row-${mat}"><td>${mat}</td>`;
 
       for (const ex of exchangeCodes) {
         const p = priceMap[mat]?.[ex];
-        bodyHTML += `<td>${p !== undefined ? p.toLocaleString() : ""}</td>`;
+
+        // Highlight if price meets the condition
+        let cls = "";
+        if (p !== undefined && modeled !== undefined && p <= threshold) {
+          cls = 'class="green-highlight"';
+        }
+
+        bodyHTML += `<td ${cls}>${p !== undefined ? p.toLocaleString() : ""}</td>`;
       }
 
-      const modeled = modeledPrices[mat];
       bodyHTML += `<td>${modeled !== undefined ? modeled.toLocaleString() : ""}</td>`;
-
+      bodyHTML += `<td><button data-mat="${mat}" class="expandBtn">Expand</button></td>`;
       bodyHTML += "</tr>";
+
+      // Hidden expandable detail row
+      bodyHTML += `
+      <tr id="expand-${mat}" class="expand-row" style="display:none;">
+        <td colspan="${exchangeCodes.length + 3}">
+          <div id="expand-content-${mat}"></div>
+        </td>
+      </tr>`;
     }
 
     tbody.innerHTML = bodyHTML;
     table.style.display = "";
     status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.`;
+
+    // Attach expand handlers
+    document.querySelectorAll(".expandBtn").forEach(btn => {
+      btn.addEventListener("click", e => {
+                
+        const mat = e.target.dataset.mat;
+        const row = document.getElementById(`expand-${mat}`);
+        const content = document.getElementById(`expand-content-${mat}`);
+
+        if (row.style.display === "none") {
+          row.style.display = "";
+
+          // Build a table with one column per exchange
+          let html = `<table class="expand-details-table"><tr>`;
+
+          // Table header row
+          for (const ex of exchangeCodes) {
+            html += `<th>${ex}</th>`;
+          }
+          html += `</tr><tr>`;
+
+          // Table data row (each cell contains that exchange's orders)
+          for (const ex of exchangeCodes) {
+            const data = fullOrderData[mat]?.[ex];
+            if (!data) {
+              html += `<td>(no data)</td>`;
+              continue;
+            }
+
+            let cell = "";
+
+            // Selling (asks) – red
+            if (data.selling.length > 0) {
+              data.selling.sort((a, b) => Number(b.ItemCost) - Number(a.ItemCost));
+              for (const so of data.selling) {
+                cell += `<div class="sell-text">${so.ItemCost.toLocaleString()} × ${so.ItemCount} ${so.CompanyName}</div>`;
+              }
+            }
+
+            // Buying (bids) – green
+            if (data.buying.length > 0) {
+              data.buying.sort((a, b) => Number(b.ItemCost) - Number(a.ItemCost));
+              for (const bo of data.buying) {
+                cell += `<div class="buy-text">${bo.ItemCost.toLocaleString()} × ${bo.ItemCount}  ${bo.CompanyName}</div>`;
+              }
+            }
+
+            if (cell === "") cell = "(none)";
+            html += `<td>${cell}</td>`;
+          }
+
+          html += `</tr></table>`;
+
+          content.innerHTML = html;
+        } else {
+          row.style.display = "none";
+        }
+
+
+      });
+    });
   });
 </script>
