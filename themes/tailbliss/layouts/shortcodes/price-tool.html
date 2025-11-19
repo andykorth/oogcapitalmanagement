@@ -1,0 +1,131 @@
+<style>
+
+    textarea {
+        resize: none;
+        width: 100%;
+    }
+
+    label {  
+        display: block;
+        margin-top: 1px;
+    }
+
+    #price-compare .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    #priceTable {
+        width: 100%;
+        margin-top: 1em;
+        border-collapse: collapse;
+    }
+
+</style>
+
+<div id="price-compare" class="calculator">
+  <h3>Price Comparison Tool</h3>
+
+  <div class="inputs">
+    <button
+      id="loadPrices"
+      class="">
+      Load Comparison Data
+    </button>
+
+    <p id="priceStatus" style="font-weight: bold; margin-top: 0.5rem;"></p>
+  </div>
+
+  <table id="priceTable" style="display: none;">
+    <thead id="priceHead"></thead>
+    <tbody id="priceBody"></tbody>
+  </table>
+</div>
+
+<script type="module">
+  import { fetchExchangeData, exchangeData } from "/pricing-and-materials.js";
+  import { loadModeledPrices, modeledPrices } from "/pricing-and-materials.js";
+
+  const btn = document.getElementById("loadPrices");
+  const status = document.getElementById("priceStatus");
+  const table = document.getElementById("priceTable");
+  const thead = document.getElementById("priceHead");
+  const tbody = document.getElementById("priceBody");
+
+  btn.addEventListener("click", async () => {
+    status.textContent = "Loading…";
+
+    await fetchExchangeData(status);
+    loadModeledPrices();  // refresh global modeledPrices
+
+    if (!exchangeData.length) {
+      status.textContent = "No exchange data available.";
+      return;
+    }
+
+    if (modeledPrices.length < 0) {
+      status.textContent = "No modeled prices locally stored. Visit the data tool.";
+      return;
+    }
+
+    // 1. Collect unique exchange codes
+    const exchangeCodes = [...new Set(exchangeData.map(r => r.ExchangeCode))].sort();
+
+    // 2. Collect unique material tickers
+    const materials = [...new Set(exchangeData.map(r => r.MaterialTicker))].sort();
+
+    // 3. Build table header
+    let headHTML = "<tr><th>Material</th>";
+    for (const ex of exchangeCodes) {
+      headHTML += `<th>${ex}</th>`;
+    }
+    headHTML += "<th>Modeled</th></tr>";
+    thead.innerHTML = headHTML;
+
+    // 4. Prepare lookup structure for highest buying price per material per exchange
+    const priceMap = {};
+    for (const row of exchangeData) {
+      const ticker = row.MaterialTicker;
+      const ex = row.ExchangeCode;
+
+      if (!priceMap[ticker]) priceMap[ticker] = {};
+
+      // find highest buying order price
+      let maxBuy = null;
+      if (Array.isArray(row.BuyingOrders) && row.BuyingOrders.length > 0) {
+        for (const bo of row.BuyingOrders) {
+          if (typeof bo.ItemCost === "number") {
+            if (maxBuy === null || bo.ItemCost > maxBuy) {
+              maxBuy = bo.ItemCost;
+            }
+          }
+        }
+      }
+
+      if (maxBuy !== null) {
+        priceMap[ticker][ex] = maxBuy;
+      }
+    }
+
+    // 5. Build table body
+    let bodyHTML = "";
+    for (const mat of materials) {
+      bodyHTML += `<tr><td>${mat}</td>`;
+
+      for (const ex of exchangeCodes) {
+        const p = priceMap[mat]?.[ex];
+        bodyHTML += `<td>${p !== undefined ? p.toLocaleString() : ""}</td>`;
+      }
+
+      const modeled = modeledPrices[mat];
+      bodyHTML += `<td>${modeled !== undefined ? modeled.toLocaleString() : ""}</td>`;
+
+      bodyHTML += "</tr>";
+    }
+
+    tbody.innerHTML = bodyHTML;
+    table.style.display = "";
+    status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.`;
+  });
+</script>

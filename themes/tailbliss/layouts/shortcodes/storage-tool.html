@@ -1,7 +1,5 @@
 <style>
   #storage-tool {
-    max-width: 900px;
-    margin: 2rem auto;
     font-family: sans-serif;
     color: #e5e7eb;
     background-color: #1f2937;
@@ -55,12 +53,64 @@
     font-size: 0.85rem;
     color: #9ca3af;
   }
+
+    /* Local layout tweaks for this specific tool */
+    #modeled-prices .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    #modeled-prices textarea {
+        min-height: 200px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 0.5rem;
+        font-family: monospace;
+    }
+
 </style>
 
-<div id="storage-tool">
-  <h1>Local Storage Manager</h1>
+<div id="storage-tool" class="calculator">
+  <h2>Local Storage Manager</h2>
   <div id="storageContent"></div>
 </div>
 
+
+<div id="modeled-prices" class="calculator">
+  <h2>Modeled Price Loader</h2>
+
+  <div class="inputs">
+    <label for="modeledInput">Paste Modeled Prices:</label>
+    <textarea id="modeledInput" placeholder="Material Header Line&#10;AAR	14766.45&#10;ABH	44552.26"></textarea>
+
+    <button
+      id="saveModeled"
+      class="px-5 py-2 mt-4 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
+      Save Modeled Prices
+    </button>
+
+    <p id="modeledStatus" style="margin-top: 0.5rem; font-weight: bold;"></p>
+  </div>
+</div>
+
+
+<script type="module">
+  import { saveModeledPrices } from "/pricing-and-materials.js";
+
+  const btn = document.getElementById("saveModeled");
+  const textarea = document.getElementById("modeledInput");
+  const status = document.getElementById("modeledStatus");
+
+  btn.addEventListener("click", () => {
+    const text = textarea.value;
+    const count = saveModeledPrices(text);
+
+    status.textContent = `Saved ${count} modeled prices.`;
+  });
+</script>
 
 <script type="module" src="/storage-tool.js"></script>

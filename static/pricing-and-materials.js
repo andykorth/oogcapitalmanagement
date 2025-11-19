@@ -120,3 +120,150 @@ export async function fetchMaterials() {
     data: freshData
   }));
 }
+
+// ---- full commodity exchange data ----
+export let exchangeData = {};
+
+export async function fetchExchangeData(statusEl) {
+  const cacheKey = "exchangeData";
+  const cached = localStorage.getItem(cacheKey);
+
+  if (cached) {
+    const { timestamp, data } = JSON.parse(cached);
+    const age = Date.now() - timestamp;
+
+    // 1 hour cache
+    if (age < 3600 * 1000) {
+      exchangeData = data;
+      return; // cached data is ready
+    }
+  }
+
+  // Fetch fresh data from endpoint
+  const url = "https://rest.fnar.net/exchange/full";
+
+  let res;
+  try {
+    res = await fetch(url);
+  } catch (err) {
+    statusEl.textContent = "Network error while fetching exchange data.";
+    return;
+  }
+
+  let json;
+  try {
+    json = await res.json();
+  } catch (err) {
+    statusEl.textContent = "Failed to parse exchange data.";
+    return;
+  }
+
+  // Store raw array exactly as provided
+  const freshData = json;
+  exchangeData = freshData;
+
+  // Attempt to save in localStorage
+  const result = safeSetLocalStorage(
+    cacheKey,
+    JSON.stringify({
+      timestamp: Date.now(),
+      data: freshData
+    })
+  );
+
+  if(statusEl){
+    if (!result.ok) {
+      statusEl.textContent = result.error;
+    } else {
+      statusEl.textContent = "Exchange data saved.";
+    }
+  }
+}
+
+
+// ---- modeled price ingestion ----
+export let modeledPrices = {};
+
+export function parseModeledPrices(text) {
+  const lines = text.trim().split(/\r?\n/);
+  const data = {};
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    // Skip header row (starts with "Material")
+    if (i === 0 && line.toLowerCase().startsWith("material")) {
+      continue;
+    }
+
+    const parts = line.split(/\t/);
+
+    if (parts.length < 2) continue;
+
+    const ticker = parts[0].trim();
+    const priceStr = parts[1].trim();
+    const price = parseFloat(priceStr);
+
+    if (!ticker || isNaN(price)) continue;
+
+    data[ticker] = price;
+  }
+
+  return data;
+}
+
+export function saveModeledPrices(text) {
+  const parsed = parseModeledPrices(text);
+  modeledPrices = parsed;
+
+  localStorage.setItem("modeledPrices", JSON.stringify({
+    timestamp: Date.now(),
+    data: parsed
+  }));
+
+  return Object.keys(parsed).length; // number saved
+}
+
+export function loadModeledPrices() {
+  const cached = localStorage.getItem("modeledPrices");
+  if (!cached) return {};
+
+  const { data } = JSON.parse(cached);
+  modeledPrices = data || {};
+}
+
+
+function safeSetLocalStorage(key, value) {
+  try {
+    localStorage.setItem(key, value);
+    return { ok: true };
+  } catch (err) {
+    // Firefox-specific quota check:
+    const quotaExceeded =
+      err instanceof DOMException &&
+      (
+        err.name === "QuotaExceededError" ||
+        err.name === "NS_ERROR_DOM_QUOTA_REACHED" ||
+        err.code === 22
+      );
+
+    if (quotaExceeded) {
+      return {
+        ok: false,
+        error: `Your browser's local storage is full.
+
+Firefox stores only a few megabytes by default.  
+To increase storage in Firefox:
+
+1. Open:  **about:config**
+2. Search for: **dom.storage.default_quota**
+3. Increase it (e.g. from 5120 to 20480 for 20 MB).
+
+Then reload this page and try again.`
+      };
+    }
+
+    return { ok: false, error: err.toString() };
+  }
+}
