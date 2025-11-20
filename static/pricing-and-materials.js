@@ -1,3 +1,4 @@
+import pako from "https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.esm.mjs";
 
 // ---- pricing storage ----
 export let priceData = {};
@@ -121,20 +122,46 @@ export async function fetchMaterials() {
   }));
 }
 
-// ---- full commodity exchange data ----
-export let exchangeData = {};
+function gzipCompressToBase64(str) {
+  const binary = pako.gzip(str);
+  let b64 = "";
+  let bytes = new Uint8Array(binary);
 
-export async function fetchExchangeData(statusEl) {
+  for (let i = 0; i < bytes.length; i++) {
+    b64 += String.fromCharCode(bytes[i]);
+  }
+
+  return btoa(b64);
+}
+
+function gzipDecompressFromBase64(b64) {
+  const binary = atob(b64);
+  const len = binary.length;
+  const bytes = new Uint8Array(len);
+
+  for (let i = 0; i < len; i++) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+
+  const decompressed = pako.ungzip(bytes, { to: "string" });
+  return decompressed;
+}
+
+// ---- full commodity exchange data ----
+export let fullCXData = {};
+
+export async function fetchFullCXData(statusEl) {
   const cacheKey = "exchangeData";
   const cached = localStorage.getItem(cacheKey);
 
   if (cached) {
-    const { timestamp, data } = JSON.parse(cached);
+    const jsonStr = gzipDecompressFromBase64(cached);
+    const { timestamp, data } = JSON.parse(jsonStr);
     const age = Date.now() - timestamp;
 
     // 1 hour cache
     if (age < 3600 * 1000) {
-      exchangeData = data;
+      fullCXData = data;
       return; // cached data is ready
     }
   }
@@ -158,12 +185,11 @@ export async function fetchExchangeData(statusEl) {
     return;
   }
 
-  // Store raw array exactly as provided
   const freshData = json;
-  exchangeData = freshData;
+  fullCXData = freshData;
 
   // Attempt to save in localStorage
-  const result = safeSetLocalStorage(
+  const result = safeSetLocalStorageCompressed(
     cacheKey,
     JSON.stringify({
       timestamp: Date.now(),
@@ -234,9 +260,10 @@ export function loadModeledPrices() {
 }
 
 
-function safeSetLocalStorage(key, value) {
+function safeSetLocalStorageCompressed(key, value) {
   try {
-    localStorage.setItem(key, value);
+    const compressed = gzipCompressToBase64(value);
+    localStorage.setItem(key, compressed);
     return { ok: true };
   } catch (err) {
     // Firefox-specific quota check:

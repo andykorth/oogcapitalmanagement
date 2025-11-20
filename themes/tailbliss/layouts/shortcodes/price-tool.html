@@ -143,7 +143,7 @@
 </div>
 
 <script type="module">
-  import { fetchExchangeData, exchangeData } from "/pricing-and-materials.js";
+  import { fetchFullCXData, fullCXData } from "/pricing-and-materials.js";
   import { loadModeledPrices, modeledPrices } from "/pricing-and-materials.js";
 
   const btn = document.getElementById("loadPrices");
@@ -197,7 +197,7 @@
   btn.addEventListener("click", async () => {
     status.textContent = "Loading…";
 
-    await fetchExchangeData(status);
+  await fetchFullCXData(status);
     loadModeledPrices();
     renderTable();
   });
@@ -205,7 +205,7 @@
     
   async function renderTable() {
 
-    if (!exchangeData.length) {
+    if (!fullCXData.length) {
       status.textContent = "No exchange data available.";
       return;
     }
@@ -214,11 +214,11 @@
     const filterEx = exchangeFilter.value;
 
     // Collect unique exchange codes
-    const exchangeCodes = [...new Set(exchangeData.map(r => r.ExchangeCode))].sort()
+    const exchangeCodes = [...new Set(fullCXData.map(r => r.ExchangeCode))].sort()
       .filter(ex => filterEx === "ALL" || ex === filterEx);
 
     // Collect unique materials
-    const materials = [...new Set(exchangeData.map(r => r.MaterialTicker))].sort();
+    const materials = [...new Set(fullCXData.map(r => r.MaterialTicker))].sort();
 
     // Build table header
     let headHTML = "<tr><th>Material</th>";
@@ -231,7 +231,7 @@
     const priceMap = {};
     const fullOrderData = {};
 
-    for (const row of exchangeData) {
+    for (const row of fullCXData) {
       const ticker = row.MaterialTicker;
       const ex = row.ExchangeCode;
 
