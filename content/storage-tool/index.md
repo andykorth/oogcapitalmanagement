@@ -17,5 +17,7 @@ Use this to track your browser local storage. It shows the date of your data and
 
 Anything you delete here will be re-downloaded (generally from FIO) the next time you use a tool.
 
+The "modeled price" section allows importing data from: https://benten.space/calculator/pricecalc
+
 {{< storage-tool >}}
 

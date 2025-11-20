@@ -17,7 +17,7 @@ fullWidthArticle: true
 
 # Bid creation price tool
 
-Before using this tool, visit the [Storage Management](/storage-tool/) scroll to the bottom, and import modeled prices.
+Before using this tool, visit the [Storage Management](/storage-tool/) scroll to the bottom, and import modeled prices. These prices are imported from [https://benten.space/calculator/pricecalc](Taiyi's Price Model) calculator.
 
 Prices listed here are the highest bid. If the highest bid is under the imported modeled price, then it will be marked green.
 
