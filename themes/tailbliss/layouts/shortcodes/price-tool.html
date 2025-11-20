@@ -44,11 +44,17 @@
     margin-top: 0.5rem;
   }
 
+  table {
+    table-layout: fixed;
+    width: 100%;     /* prevents expanding past container */
+  }
+
+
   .expand-details-table th,
   .expand-details-table td {
     border: 1px solid #ddd;
     padding: 4px 6px;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   .sell-text {
@@ -65,6 +71,15 @@
   }
   .dark .buy-text {
     color: #6ee7b7; /* green-300 */
+  }
+
+  .sell-text,
+  .buy-text {
+    white-space: nowrap;        /* never wrap */
+    overflow: hidden;           /* hide anything too long */
+    text-overflow: ellipsis;    /* optional: "..." at end */
+    display: block;             /* or inline-block; needed for overflow rules */
+    max-width: 100%;            /* ensures it respects parent container width */
   }
 
 </style>
@@ -87,8 +102,31 @@
     </label>
 
     <label>
+      Filter by Material:
+      <input type="text" id="materialFilter" placeholder="e.g. H2O">
+    </label>
+
+    <label>
+      <input type="checkbox" id="hideNoPrices">
+      Hide materials with no prices
+    </label>
+
+    <label>
+      Show:
+      <select id="bidAskSelect">
+        <option value="bids">Show bids</option>
+        <option value="asks">Show asks</option>
+      </select>
+    </label>
+
+    <label>
       Percent Markup (%):
       <input type="number" id="markupInput" value="4" step="0.1">
+    </label>
+
+    <label id="fundsLabel" style="display: none;">
+      Available Funds:
+      <input type="number" id="fundsInput" value="" min="0">
     </label>
 
     <button id="loadPrices" class="">
@@ -116,12 +154,56 @@
 
   const exchangeFilter = document.getElementById("exchangeFilter");
   const markupInput = document.getElementById("markupInput");
+  const materialFilter = document.getElementById("materialFilter");
+  const hideNoPrices = document.getElementById("hideNoPrices");
+  const bidAskSelect = document.getElementById("bidAskSelect");
+  const fundsInput = document.getElementById("fundsInput");
+  const fundsLabel = document.getElementById("fundsLabel");
+
+
+  exchangeFilter.addEventListener("change", () => {
+    if (exchangeFilter.value === "ALL") {
+      fundsLabel.style.display = "none";
+    } else {
+      fundsLabel.style.display = "";
+    }
+  });
+
+  materialFilter.addEventListener("input", () => {
+    const q = materialFilter.value.trim().toUpperCase();
+
+    for (const row of tbody.querySelectorAll("tr[id^='row-']")) {
+      const mat = row.id.replace("row-", "");
+      const match = mat.includes(q);
+      row.style.display = match ? "" : "none";
+
+      const expandRow = document.getElementById(`expand-${mat}`);
+      if (expandRow) expandRow.style.display = match ? "none" : "none";
+    }
+  });
+
+  [
+    exchangeFilter,
+    markupInput,
+    materialFilter,
+    hideNoPrices,
+    bidAskSelect,
+    fundsInput
+  ].forEach(el => {
+    el.addEventListener("input", renderTable);
+    el.addEventListener("change", renderTable);
+  });
 
   btn.addEventListener("click", async () => {
     status.textContent = "Loading…";
 
     await fetchExchangeData(status);
     loadModeledPrices();
+    renderTable();
+  });
+
+    
+  async function renderTable() {
 
     if (!exchangeData.length) {
       status.textContent = "No exchange data available.";
@@ -144,9 +226,10 @@
     headHTML += "<th>Modeled</th><th>Expand</th></tr>";
     thead.innerHTML = headHTML;
 
-    // Prepare highest buying price per material per exchange
+    // Prepare price map based on user selection
+    const showBids = bidAskSelect.value === "bids";
     const priceMap = {};
-    const fullOrderData = {}; // store all orders for expand rows
+    const fullOrderData = {};
 
     for (const row of exchangeData) {
       const ticker = row.MaterialTicker;
@@ -161,17 +244,28 @@
         };
       }
 
-      let maxBuy = null;
-      if (Array.isArray(row.BuyingOrders)) {
+      let selectedPrice = null;
+
+      if (showBids && Array.isArray(row.BuyingOrders)) {
         for (const bo of row.BuyingOrders) {
           if (typeof bo.ItemCost === "number") {
-            if (maxBuy === null || bo.ItemCost > maxBuy) maxBuy = bo.ItemCost;
+            if (selectedPrice === null || bo.ItemCost > selectedPrice)
+              selectedPrice = bo.ItemCost;
           }
         }
       }
 
-      if (maxBuy !== null) {
-        priceMap[ticker][ex] = maxBuy;
+      if (!showBids && Array.isArray(row.SellingOrders)) {
+        for (const so of row.SellingOrders) {
+          if (typeof so.ItemCost === "number") {
+            if (selectedPrice === null || so.ItemCost < selectedPrice)
+              selectedPrice = so.ItemCost;
+          }
+        }
+      }
+
+      if (selectedPrice !== null) {
+        priceMap[ticker][ex] = selectedPrice;
       }
     }
 
@@ -181,6 +275,13 @@
     for (const mat of materials) {
       const modeled = modeledPrices[mat];
       const threshold = modeled ? modeled * (1 - markupPct) : null;
+
+      const hasAnyPrice = exchangeCodes.some(ex => priceMap[mat]?.[ex] !== undefined);
+
+      if (hideNoPrices.checked && !hasAnyPrice) {
+        continue; // skip this row entirely
+      }
+
 
       bodyHTML += `<tr id="row-${mat}"><td>${mat}</td>`;
 
@@ -247,7 +348,8 @@
             if (data.selling.length > 0) {
               data.selling.sort((a, b) => Number(b.ItemCost) - Number(a.ItemCost));
               for (const so of data.selling) {
-                cell += `<div class="sell-text">${so.ItemCost.toLocaleString()} × ${so.ItemCount} ${so.CompanyName}</div>`;
+                const count = so.ItemCount === null ? "∞" : so.ItemCount.toLocaleString();
+                cell += `<div class="sell-text">${so.ItemCost.toLocaleString()} × ${count} ${so.CompanyName}</div>`;
               }
             }
 
@@ -255,7 +357,8 @@
             if (data.buying.length > 0) {
               data.buying.sort((a, b) => Number(b.ItemCost) - Number(a.ItemCost));
               for (const bo of data.buying) {
-                cell += `<div class="buy-text">${bo.ItemCost.toLocaleString()} × ${bo.ItemCount}  ${bo.CompanyName}</div>`;
+                const count = bo.ItemCount === null ? "∞" : bo.ItemCount.toLocaleString();
+                cell += `<div class="buy-text">${bo.ItemCost.toLocaleString()} × ${count} ${bo.CompanyName}</div>`;
               }
             }
 
@@ -273,5 +376,5 @@
 
       });
     });
-  });
+  }
 </script>
