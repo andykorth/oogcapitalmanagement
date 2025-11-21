@@ -226,6 +226,7 @@
   <button id="makeBidsBtn">
     Calculate Bids
   </button>
+  <button id="copyJsonBids">Copy JSON Bids</button>
 
   <p id="bidResult" style="white-space: pre-wrap; margin-top: 1em;"></p>
 </div>
@@ -291,7 +292,9 @@
     renderTable();
   });
 
-    
+// GLOBAL: stores all buying/selling orders per material per exchange
+export const fullOrderData = {};
+
 async function renderTable() {
 
   if (!fullCXData.length) {
@@ -331,8 +334,7 @@ async function renderTable() {
   // prepare pricedata
   const showBids = bidAskSelect.value === "bids";
   const priceMap = {};
-  const volumeMap = {};          // NEW — tracks each row's VolumeAmount
-  const fullOrderData = {};
+  const volumeMap = {};
 
   for (const row of fullCXData) {
     const ticker = row.MaterialTicker;
@@ -341,6 +343,8 @@ async function renderTable() {
     if (!priceMap[ticker]) priceMap[ticker] = {};
     if (!volumeMap[ticker]) volumeMap[ticker] = {};
     if (!fullOrderData[ticker]) fullOrderData[ticker] = {};
+
+    // fill entries:
     if (!fullOrderData[ticker][ex]) {
       fullOrderData[ticker][ex] = {
         buying: row.BuyingOrders || [],
@@ -548,9 +552,7 @@ function evaluateHighlight({
     spreadOK = spreadPct >= minSpreadPct;
 
     if (underModeled && !spreadOK) {
-      explanation += `Spread percentage of ${spreadPct.toFixed(
-        2
-      )} is under target of ${minSpreadPct}.\n`;
+      explanation += `Spread percentage of ${spreadPct.toFixed(2)} is under target of ${minSpreadPct}.\n`;
     }
   }
 
@@ -575,6 +577,7 @@ function evaluateHighlight({
 }
 
 function makeBids() {
+  const filterEx = exchangeFilter.value;
   const funds = parseFloat(fundsInput.value);
   const markupPct = parseFloat(markupInput.value); // e.g. “2” means 2%
   const checked = [...document.querySelectorAll(".rowCheck:checked")];
@@ -593,29 +596,36 @@ function makeBids() {
 
   // Even split funds across checked materials
   const fundsPerMaterial = funds / checked.length;
+  let sum = 0;
 
   for (const cb of checked) {
     const mat = cb.dataset.mat;
 
     // Find highest BO
+    
     const buying = fullOrderData[mat]?.[filterEx]?.buying || [];
-    let highestBO = null;
+    let rawPrice = 0;
     if (buying.length > 0) {
-      highestBO = buying.reduce((a, b) =>
+      // regular case: highest BO + markup
+      const highestBO = buying.reduce((a, b) =>
         a.ItemCost > b.ItemCost ? a : b
       );
+      rawPrice = highestBO.ItemCost * (1 + markupPct / 100);
     } else {
-      // No buy orders, so we can't build a target price
-      continue;
+      // fallback: modeled - 20%
+      const modeled = modeledPriceMap[mat];
+      if (!modeled) continue;
+      rawPrice = modeled * 0.8;
     }
 
+
     // Compute target price
-    const rawPrice = highestBO.ItemCost * (1 + markupPct / 100);
     const targetPrice = roundToSigFigs(rawPrice, 3);
 
     // Determine quantity (floor) but always at least 1
     let qty = Math.floor(fundsPerMaterial / targetPrice);
     if (qty < 1) qty = 1;
+    sum += qty * targetPrice;
 
     bids.push({
       material: mat,
@@ -627,13 +637,14 @@ function makeBids() {
 
   // Display summary (you may replace with your UI)
   document.getElementById("bidResult").textContent =
-    bids.length > 0
+    (bids.length > 0
       ? bids.map(b => `${b.material}: ${b.quantity} @ ${b.targetPrice}`).join("\n")
-      : "No bids created.";
+      : "No bids created.")
+    + `\nSum $${sum.toFixed(2)}`;
+
+  return bids;
 }
 
-
-// ---- Helpers ----------------------------------
 
 function roundToSigFigs(value, sigFigs) {
   if (value === 0) return 0;
@@ -643,5 +654,64 @@ function roundToSigFigs(value, sigFigs) {
   return Math.round(value * factor) / factor;
 }
 
+document.getElementById("copyJsonBids").addEventListener("click", () => {
+  const result = makeBids(); 
+  if (!result || !result.bids || !Object.keys(result.bids).length) {
+    alert("No bids available to convert.");
+    return;
+  }
+
+  const { bids, exchange } = result;
+
+  // bids = { MAT1: { targetPrice, qty }, MAT2: ... }
+
+  // Assemble priceLimits (price) and materials (qty)
+  const priceLimits = {};
+  const materials = {};
+
+  for (const [mat, info] of Object.entries(bids)) {
+    priceLimits[mat] = info.targetPrice; // must be number
+    materials[mat] = info.qty;           // must be number
+  }
+
+  // Choose a group name (user config or default)
+  const groupName = "A1";
+
+  // Final JSON output in EXACT format:
+  const output = {
+    actions: [
+      {
+        group: groupName,
+        exchange: exchange,
+        priceLimits: priceLimits,
+        buyPartial: false,
+        allowUnfilled: true,
+        useCXInv: false,
+        name: "buyem",
+        type: "CX Buy"
+      }
+    ],
+    global: {
+      name: "OOG CX Buy Tool"
+    },
+    groups: [
+      {
+        materials: materials,
+        name: groupName,
+        type: "Manual"
+      }
+    ]
+  };
+
+  const jsonText = JSON.stringify(output);
+
+  // Copy to clipboard
+  navigator.clipboard.writeText(jsonText).then(() => {
+    alert("Bid JSON copied to clipboard!");
+  }).catch(err => {
+    console.error("Clipboard error:", err);
+    alert("Failed to copy to clipboard.");
+  });
+});
 
 </script>
