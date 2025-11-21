@@ -180,7 +180,7 @@
 
     <label>
       Percent Markup over Modeled (%):
-      <input type="number" id="markupInput" value="4" step="0.1">
+      <input type="number" id="markupInput" value="2" step="0.1">
     </label>
 
     <div id="actionModeFields">
@@ -192,7 +192,7 @@
       
       <label>
         Min Percent Spread (%):
-        <input type="number" id="minSpreadInput" value="6" step="0.1">
+        <input type="number" id="minSpreadInput" value="4" step="0.1">
       </label>
 
       <label>
@@ -294,6 +294,7 @@ async function renderTable() {
 
   const markupPct = Number(markupInput.value) / 100;
   const filterEx = exchangeFilter.value;
+  const ex = filterEx;
 
   const userMinVol = Number(document.getElementById("minVol").value || 0);
   const userMaxVol = Number(document.getElementById("maxVol").value || Infinity);
@@ -388,7 +389,7 @@ async function renderTable() {
         const underModeled = p <= threshold;
         const volOK = vol >= userMinVol && vol <= userMaxVol;
 
-        // Find highest buying order to check company skip condition
+        // Find highest buying order
         let highestBO = null;
         const buying = fullOrderData[mat]?.[filterEx]?.buying || [];
         if (buying.length > 0) {
@@ -397,21 +398,47 @@ async function renderTable() {
           );
         }
 
+        // Find lowest selling order
+        let lowestSO = null;
+        const selling = fullOrderData[mat]?.[filterEx]?.selling || [];
+        if (selling.length > 0) {
+          lowestSO = selling.reduce((a, b) =>
+            a.ItemCost < b.ItemCost ? a : b
+          );
+        }
+
+        // Calculate spread (percentage)
+        let spreadOK = true; // default OK if we can't calculate
+        const minSpreadPct = parseFloat(minSpreadInput.value);
+
+        if (highestBO && lowestSO && minSpreadPct > 0) {
+          // percentage spread relative to lowest sell
+          const spreadPct = (Math.abs(highestBO.ItemCost - lowestSO.ItemCost) / lowestSO.ItemCost) * 100;
+
+          spreadOK = spreadPct >= minSpreadPct;
+          if (underModeled && !spreadOK){
+            explanation += `Spread percentage of ${spreadPct.toFixed(2)} is under target of ${minSpreadPct}.\n`;
+          }
+        }
+
         const hasHighBidAlready =
-          highestBO && highestBO.CompanyCode?.toUpperCase() === userCompany.toUpperCase() ;
+          highestBO && highestBO.CompanyCode?.toUpperCase() === userCompany.toUpperCase();
 
-        highlightRow = underModeled && volOK && !hasHighBidAlready;
+        // Include spreadOK in final highlight eligibility
+        highlightRow = underModeled && volOK && !hasHighBidAlready && spreadOK;
 
-        if(underModeled){
-          if(!volOK){
-            explanation += `Outside cash volume params:  $${vol} traded is outside your $${userMinVol} .. $${userMaxVol}`;
+        if (underModeled) {
+          if (!volOK) {
+            explanation += `Outside cash volume params: $${vol} traded is outside your $${userMinVol} .. $${userMaxVol}.\n`;
           }
-          if(hasHighBidAlready){
-            explanation += `You already have high bid.`;
+          if (hasHighBidAlready) {
+            explanation += `You already have high bid.\n`;
           }
+
         }
       }
     }
+
 
     bodyHTML += `<tr id="row-${mat}" class="${highlightRow ? "green-highlight" : ""}">`;
 
