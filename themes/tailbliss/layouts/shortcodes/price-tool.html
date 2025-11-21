@@ -211,7 +211,7 @@
       
     </div>
 
-    <button id="loadPrices" class="">
+    <button id="loadPrices">
       Load Comparison Data
     </button>
 
@@ -222,6 +222,12 @@
     <thead id="priceHead"></thead>
     <tbody id="priceBody"></tbody>
   </table>
+
+  <button id="makeBidsBtn">
+    Calculate Bids
+  </button>
+
+  <p id="bidResult" style="white-space: pre-wrap; margin-top: 1em;"></p>
 </div>
 
 <script type="module">
@@ -242,7 +248,8 @@
   const fundsInput = document.getElementById("fundsInput");
   const minSpreadInput = document.getElementById("minSpreadInput");
   const actionModeFields = document.getElementById("actionModeFields");
-
+  
+  document.getElementById("makeBidsBtn").addEventListener("click", makeBids);
 
   exchangeFilter.addEventListener("change", () => {
     if (exchangeFilter.value === "ALL") {
@@ -378,70 +385,22 @@ async function renderTable() {
     if (hideNoPrices.checked && !hasAnyPrice) continue;
 
     // Determine highlight & auto-check logic
-    let highlightRow = false;
-    let explanation = "";
-
-    if (filterEx !== "ALL") {
-      const p = priceMap[mat]?.[ex];
-      const vol = volumeMap[mat]?.[ex];
-
-      if (p !== undefined && modeled !== undefined) {
-        const underModeled = p <= threshold;
-        const volOK = vol >= userMinVol && vol <= userMaxVol;
-
-        // Find highest buying order
-        let highestBO = null;
-        const buying = fullOrderData[mat]?.[filterEx]?.buying || [];
-        if (buying.length > 0) {
-          highestBO = buying.reduce((a, b) =>
-            a.ItemCost > b.ItemCost ? a : b
-          );
-        }
-
-        // Find lowest selling order
-        let lowestSO = null;
-        const selling = fullOrderData[mat]?.[filterEx]?.selling || [];
-        if (selling.length > 0) {
-          lowestSO = selling.reduce((a, b) =>
-            a.ItemCost < b.ItemCost ? a : b
-          );
-        }
-
-        // Calculate spread (percentage)
-        let spreadOK = true; // default OK if we can't calculate
-        const minSpreadPct = parseFloat(minSpreadInput.value);
-
-        if (highestBO && lowestSO && minSpreadPct > 0) {
-          // percentage spread relative to lowest sell
-          const spreadPct = (Math.abs(highestBO.ItemCost - lowestSO.ItemCost) / lowestSO.ItemCost) * 100;
-
-          spreadOK = spreadPct >= minSpreadPct;
-          if (underModeled && !spreadOK){
-            explanation += `Spread percentage of ${spreadPct.toFixed(2)} is under target of ${minSpreadPct}.\n`;
-          }
-        }
-
-        const hasHighBidAlready =
-          highestBO && highestBO.CompanyCode?.toUpperCase() === userCompany.toUpperCase();
-
-        // Include spreadOK in final highlight eligibility
-        highlightRow = underModeled && volOK && !hasHighBidAlready && spreadOK;
-
-        if (underModeled) {
-          if (!volOK) {
-            explanation += `Outside cash volume params: $${vol} traded is outside your $${userMinVol} .. $${userMaxVol}.\n`;
-          }
-          if (hasHighBidAlready) {
-            explanation += `You already have high bid.\n`;
-          }
-
-        }
-      }
-    }
-
+    const { highlightRow, explanation } = evaluateHighlight({
+      mat,
+      ex,
+      filterEx,
+      priceMap,
+      volumeMap,
+      fullOrderData,
+      modeled,
+      threshold,
+      userMinVol,
+      userMaxVol,
+      userCompany,
+      minSpreadInput
+    });
 
     bodyHTML += `<tr id="row-${mat}" class="${highlightRow ? "green-highlight" : ""}">`;
-
 
     // Checkbox column (checked if highlighted) and explanation column
     if (filterEx !== "ALL"){
@@ -531,5 +490,158 @@ function generateOrderText(cssType, o, userCode){
   const companyLink = `<A HREF="/intel/?co=${o.CompanyCode}" data-tooltip="${o.CompanyName}"  >${o.CompanyCode}</A>`;
   return `<div class="${cssType}">${o.ItemCost.toLocaleString()} × ${count} - <span class="${cssSpan}">${companyLink}</span></div>`;
 }
+
+function evaluateHighlight({
+  mat,
+  ex,
+  filterEx,
+  priceMap,
+  volumeMap,
+  fullOrderData,
+  modeled,
+  threshold,
+  userMinVol,
+  userMaxVol,
+  userCompany,
+  minSpreadInput
+}) {
+  let explanation = "";
+  let highlightRow = false;
+
+  if (filterEx === "ALL") {
+    return { highlightRow, explanation };
+  }
+
+  const p = priceMap[mat]?.[ex];
+  const vol = volumeMap[mat]?.[ex];
+
+  if (p === undefined || modeled === undefined) {
+    return { highlightRow, explanation };
+  }
+
+  const underModeled = p <= threshold;
+  const volOK = vol >= userMinVol && vol <= userMaxVol;
+
+  // Highest buy order
+  let highestBO = null;
+  const buying = fullOrderData[mat]?.[filterEx]?.buying || [];
+  if (buying.length > 0) {
+    highestBO = buying.reduce((a, b) => (a.ItemCost > b.ItemCost ? a : b));
+  }
+
+  // Lowest sell order
+  let lowestSO = null;
+  const selling = fullOrderData[mat]?.[filterEx]?.selling || [];
+  if (selling.length > 0) {
+    lowestSO = selling.reduce((a, b) => (a.ItemCost < b.ItemCost ? a : b));
+  }
+
+  // Spread logic
+  let spreadOK = true;
+  const minSpreadPct = parseFloat(minSpreadInput.value);
+
+  if (highestBO && lowestSO && minSpreadPct > 0) {
+    const spreadPct =
+      (Math.abs(highestBO.ItemCost - lowestSO.ItemCost) / lowestSO.ItemCost) *
+      100;
+
+    spreadOK = spreadPct >= minSpreadPct;
+
+    if (underModeled && !spreadOK) {
+      explanation += `Spread percentage of ${spreadPct.toFixed(
+        2
+      )} is under target of ${minSpreadPct}.\n`;
+    }
+  }
+
+  // Company already has high bid?
+  const hasHighBidAlready =
+    highestBO &&
+    highestBO.CompanyCode?.toUpperCase() === userCompany.toUpperCase();
+
+  // Final eligibility
+  highlightRow = underModeled && volOK && !hasHighBidAlready && spreadOK;
+
+  if (underModeled) {
+    if (!volOK) {
+      explanation += `Outside cash volume params: $${vol} traded is outside your $${userMinVol} .. $${userMaxVol}.\n`;
+    }
+    if (hasHighBidAlready) {
+      explanation += `You already have high bid.\n`;
+    }
+  }
+
+  return { highlightRow, explanation };
+}
+
+function makeBids() {
+  const funds = parseFloat(fundsInput.value);
+  const markupPct = parseFloat(markupInput.value); // e.g. “2” means 2%
+  const checked = [...document.querySelectorAll(".rowCheck:checked")];
+
+  if (checked.length === 0) {
+    document.getElementById("bidResult").textContent = "No materials selected.";
+    return;
+  }
+
+  if (!funds || funds <= 0) {
+    document.getElementById("bidResult").textContent = "Enter funds first.";
+    return;
+  }
+
+  const bids = [];
+
+  // Even split funds across checked materials
+  const fundsPerMaterial = funds / checked.length;
+
+  for (const cb of checked) {
+    const mat = cb.dataset.mat;
+
+    // Find highest BO
+    const buying = fullOrderData[mat]?.[filterEx]?.buying || [];
+    let highestBO = null;
+    if (buying.length > 0) {
+      highestBO = buying.reduce((a, b) =>
+        a.ItemCost > b.ItemCost ? a : b
+      );
+    } else {
+      // No buy orders, so we can't build a target price
+      continue;
+    }
+
+    // Compute target price
+    const rawPrice = highestBO.ItemCost * (1 + markupPct / 100);
+    const targetPrice = roundToSigFigs(rawPrice, 3);
+
+    // Determine quantity (floor) but always at least 1
+    let qty = Math.floor(fundsPerMaterial / targetPrice);
+    if (qty < 1) qty = 1;
+
+    bids.push({
+      material: mat,
+      targetPrice,
+      quantity: qty,
+      exchange: filterEx,
+    });
+  }
+
+  // Display summary (you may replace with your UI)
+  document.getElementById("bidResult").textContent =
+    bids.length > 0
+      ? bids.map(b => `${b.material}: ${b.quantity} @ ${b.targetPrice}`).join("\n")
+      : "No bids created.";
+}
+
+
+// ---- Helpers ----------------------------------
+
+function roundToSigFigs(value, sigFigs) {
+  if (value === 0) return 0;
+  const digits = Math.floor(Math.log10(Math.abs(value))) + 1;
+  const scale = sigFigs - digits;
+  const factor = Math.pow(10, scale);
+  return Math.round(value * factor) / factor;
+}
+
 
 </script>
