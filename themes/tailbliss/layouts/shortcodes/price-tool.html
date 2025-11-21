@@ -16,6 +16,10 @@
         max-width: 340px;
     }
 
+    #price-compare select {
+        padding: 4px 6px;
+    }
+
     #priceTable {
         width: 100%;
         margin-top: 1em;
@@ -49,7 +53,6 @@
     width: 100%;     /* prevents expanding past container */
   }
 
-
   .expand-details-table th,
   .expand-details-table td {
     border: 1px solid #ddd;
@@ -57,21 +60,46 @@
     vertical-align: middle;
   }
 
+  .expand-details-table a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  [data-tooltip]:hover::after {
+    display: block;
+    position: absolute;
+    content: attr(data-tooltip);
+    border: 1px solid black;
+    background: var(--bg-primary);
+    padding: .25em;
+  }
+
   .sell-text {
-    color: #b91c1c; /* Tailwind red-700 */
+    color: #b91c1c;
     font-weight: bold;
   }
+  .dark .sell-text {
+    color: #fca5a5; 
+  }
+
   .buy-text {
-    color: #065f46; /* Tailwind green-700 */
+    color: #065f46;
+    font-weight: bold;
+  }
+  .dark .buy-text {
+    color: #6ee7b7; 
+  }
+
+  .self-text {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .dark .self-text {
+    text-decoration: underline;
     font-weight: bold;
   }
 
-  .dark .sell-text {
-    color: #fca5a5; /* red-300 */
-  }
-  .dark .buy-text {
-    color: #6ee7b7; /* green-300 */
-  }
+
 
   .sell-text,
   .buy-text {
@@ -81,6 +109,8 @@
     display: block;             /* or inline-block; needed for overflow rules */
     max-width: 100%;            /* ensures it respects parent container width */
   }
+
+
 
 </style>
 
@@ -124,16 +154,33 @@
       <input type="number" id="markupInput" value="4" step="0.1">
     </label>
 
-    <label id="fundsLabel" style="display: none;">
-      Available Funds:
-      <input type="number" id="fundsInput" value="" min="0">
-    </label>
+    <div id="actionModeFields">
+
+      <label id="fundsLabel">
+        Available Funds:
+        <input type="number" id="fundsInput" value="" min="0">
+      </label>
+      <label id="minVolLabel">
+        Min Volume to Trade On: (in $)
+        <input type="number" id="minVol" value="" min="0">
+      </label>
+      <label id="maxVolLabel">
+        Max Volume to Trade On: (in $)
+        <input type="number" id="maxVol" value="" min="0">
+      </label>
+      <label id="companyCodeLabel">
+        Your company code
+        <input type="text" id="companyCode" value="ARCL">
+      </label>
+
+      
+    </div>
 
     <button id="loadPrices" class="">
       Load Comparison Data
     </button>
 
-    <p id="priceStatus" style="font-weight: bold; margin-top: 0.5rem;"></p>
+    <p id="calculatorStatus" style="font-weight: bold; margin-top: 0.5rem;"></p>
   </div>
 
   <table id="priceTable" style="display: none;">
@@ -147,7 +194,7 @@
   import { loadModeledPrices, modeledPrices } from "/pricing-and-materials.js";
 
   const btn = document.getElementById("loadPrices");
-  const status = document.getElementById("priceStatus");
+  const status = document.getElementById("calculatorStatus");
   const table = document.getElementById("priceTable");
   const thead = document.getElementById("priceHead");
   const tbody = document.getElementById("priceBody");
@@ -159,13 +206,14 @@
   const bidAskSelect = document.getElementById("bidAskSelect");
   const fundsInput = document.getElementById("fundsInput");
   const fundsLabel = document.getElementById("fundsLabel");
+  const actionModeFields = document.getElementById("actionModeFields");
 
 
   exchangeFilter.addEventListener("change", () => {
     if (exchangeFilter.value === "ALL") {
-      fundsLabel.style.display = "none";
+      actionModeFields.style.display = "none";
     } else {
-      fundsLabel.style.display = "";
+      actionModeFields.style.display = "";
     }
   });
 
@@ -202,178 +250,208 @@
   });
 
     
-  async function renderTable() {
+async function renderTable() {
 
-    if (!fullCXData.length) {
-      status.textContent = "No exchange data available.";
-      return;
-    }
-
-    const markupPct = Number(markupInput.value) / 100;
-    const filterEx = exchangeFilter.value;
-
-    // Collect unique exchange codes
-    const exchangeCodes = [...new Set(fullCXData.map(r => r.ExchangeCode))].sort()
-      .filter(ex => filterEx === "ALL" || ex === filterEx);
-
-    // Collect unique materials
-    const materials = [...new Set(fullCXData.map(r => r.MaterialTicker))].sort();
-
-    // Build table header
-    let headHTML = "<tr><th>Material</th>";
-    for (const ex of exchangeCodes) headHTML += `<th>${ex}</th>`;
-    headHTML += "<th>Modeled</th><th>Expand</th></tr>";
-    thead.innerHTML = headHTML;
-
-    // Prepare price map based on user selection
-    const showBids = bidAskSelect.value === "bids";
-    const priceMap = {};
-    const fullOrderData = {};
-
-    for (const row of fullCXData) {
-      const ticker = row.MaterialTicker;
-      const ex = row.ExchangeCode;
-
-      if (!priceMap[ticker]) priceMap[ticker] = {};
-      if (!fullOrderData[ticker]) fullOrderData[ticker] = {};
-      if (!fullOrderData[ticker][ex]) {
-        fullOrderData[ticker][ex] = {
-          buying: row.BuyingOrders || [],
-          selling: row.SellingOrders || []
-        };
-      }
-
-      let selectedPrice = null;
-
-      if (showBids && Array.isArray(row.BuyingOrders)) {
-        for (const bo of row.BuyingOrders) {
-          if (typeof bo.ItemCost === "number") {
-            if (selectedPrice === null || bo.ItemCost > selectedPrice)
-              selectedPrice = bo.ItemCost;
-          }
-        }
-      }
-
-      if (!showBids && Array.isArray(row.SellingOrders)) {
-        for (const so of row.SellingOrders) {
-          if (typeof so.ItemCost === "number") {
-            if (selectedPrice === null || so.ItemCost < selectedPrice)
-              selectedPrice = so.ItemCost;
-          }
-        }
-      }
-
-      if (selectedPrice !== null) {
-        priceMap[ticker][ex] = selectedPrice;
-      }
-    }
-
-    // Build table body
-    let bodyHTML = "";
-
-    for (const mat of materials) {
-      const modeled = modeledPrices[mat];
-      const threshold = modeled ? modeled * (1 - markupPct) : null;
-
-      const hasAnyPrice = exchangeCodes.some(ex => priceMap[mat]?.[ex] !== undefined);
-
-      if (hideNoPrices.checked && !hasAnyPrice) {
-        continue; // skip this row entirely
-      }
-
-
-      bodyHTML += `<tr id="row-${mat}"><td>${mat}</td>`;
-
-      for (const ex of exchangeCodes) {
-        const p = priceMap[mat]?.[ex];
-
-        // Highlight if price meets the condition
-        let cls = "";
-        if (p !== undefined && modeled !== undefined && p <= threshold) {
-          cls = 'class="green-highlight"';
-        }
-
-        bodyHTML += `<td ${cls}>${p !== undefined ? p.toLocaleString() : ""}</td>`;
-      }
-
-      bodyHTML += `<td>${modeled !== undefined ? modeled.toLocaleString() : ""}</td>`;
-      bodyHTML += `<td><button data-mat="${mat}" class="expandBtn">Expand</button></td>`;
-      bodyHTML += "</tr>";
-
-      // Hidden expandable detail row
-      bodyHTML += `
-      <tr id="expand-${mat}" class="expand-row" style="display:none;">
-        <td colspan="${exchangeCodes.length + 3}">
-          <div id="expand-content-${mat}"></div>
-        </td>
-      </tr>`;
-    }
-
-    tbody.innerHTML = bodyHTML;
-    table.style.display = "";
-    status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.`;
-
-    // Attach expand handlers
-    document.querySelectorAll(".expandBtn").forEach(btn => {
-      btn.addEventListener("click", e => {
-                
-        const mat = e.target.dataset.mat;
-        const row = document.getElementById(`expand-${mat}`);
-        const content = document.getElementById(`expand-content-${mat}`);
-
-        if (row.style.display === "none") {
-          row.style.display = "";
-
-          // Build a table with one column per exchange
-          let html = `<table class="expand-details-table"><tr>`;
-
-          // Table header row
-          for (const ex of exchangeCodes) {
-            html += `<th>${ex}</th>`;
-          }
-          html += `</tr><tr>`;
-
-          // Table data row (each cell contains that exchange's orders)
-          for (const ex of exchangeCodes) {
-            const data = fullOrderData[mat]?.[ex];
-            if (!data) {
-              html += `<td>(no data)</td>`;
-              continue;
-            }
-
-            let cell = "";
-
-            // Selling (asks) – red
-            if (data.selling.length > 0) {
-              data.selling.sort((a, b) => Number(b.ItemCost) - Number(a.ItemCost));
-              for (const so of data.selling) {
-                const count = so.ItemCount === null ? "∞" : so.ItemCount.toLocaleString();
-                cell += `<div class="sell-text">${so.ItemCost.toLocaleString()} × ${count} ${so.CompanyName}</div>`;
-              }
-            }
-
-            // Buying (bids) – green
-            if (data.buying.length > 0) {
-              data.buying.sort((a, b) => Number(b.ItemCost) - Number(a.ItemCost));
-              for (const bo of data.buying) {
-                const count = bo.ItemCount === null ? "∞" : bo.ItemCount.toLocaleString();
-                cell += `<div class="buy-text">${bo.ItemCost.toLocaleString()} × ${count} ${bo.CompanyName}</div>`;
-              }
-            }
-
-            if (cell === "") cell = "(none)";
-            html += `<td>${cell}</td>`;
-          }
-
-          html += `</tr></table>`;
-
-          content.innerHTML = html;
-        } else {
-          row.style.display = "none";
-        }
-
-
-      });
-    });
+  if (!fullCXData.length) {
+    status.textContent = "No exchange data available.";
+    return;
   }
+
+  const markupPct = Number(markupInput.value) / 100;
+  const filterEx = exchangeFilter.value;
+
+  const userMinVol = Number(document.getElementById("minVol").value || 0);
+  const userMaxVol = Number(document.getElementById("maxVol").value || Infinity);
+  const userCompany = document.getElementById("companyCode").value.trim().toUpperCase();
+
+  // Exchanges allowed in table
+  const exchangeCodes = [...new Set(fullCXData.map(r => r.ExchangeCode))]
+    .sort()
+    .filter(ex => filterEx === "ALL" || ex === filterEx);
+
+  // Unique materials
+  const materials = [...new Set(fullCXData.map(r => r.MaterialTicker))].sort();
+
+  // Build header (add checkbox column)
+  let headHTML = "<tr><th>Select</th><th>Material</th>";
+
+  if (filterEx == "ALL")
+    headHTML = "<th>Material</th>";
+
+  for (const ex of exchangeCodes) headHTML += `<th>${ex}</th>`;
+  headHTML += "<th>Modeled</th><th>Expand</th></tr>";
+  thead.innerHTML = headHTML;
+
+  // prepare pricedata
+  const showBids = bidAskSelect.value === "bids";
+  const priceMap = {};
+  const volumeMap = {};          // NEW — tracks each row's VolumeAmount
+  const fullOrderData = {};
+
+  for (const row of fullCXData) {
+    const ticker = row.MaterialTicker;
+    const ex = row.ExchangeCode;
+
+    if (!priceMap[ticker]) priceMap[ticker] = {};
+    if (!volumeMap[ticker]) volumeMap[ticker] = {};
+    if (!fullOrderData[ticker]) fullOrderData[ticker] = {};
+    if (!fullOrderData[ticker][ex]) {
+      fullOrderData[ticker][ex] = {
+        buying: row.BuyingOrders || [],
+        selling: row.SellingOrders || []
+      };
+    }
+
+    let selectedPrice = null;
+
+    if (showBids && Array.isArray(row.BuyingOrders)) {
+      for (const bo of row.BuyingOrders) {
+        if (typeof bo.ItemCost === "number") {
+          if (selectedPrice === null || bo.ItemCost > selectedPrice)
+            selectedPrice = bo.ItemCost;
+        }
+      }
+    }
+
+    if (!showBids && Array.isArray(row.SellingOrders)) {
+      for (const so of row.SellingOrders) {
+        if (typeof so.ItemCost === "number") {
+          if (selectedPrice === null || so.ItemCost < selectedPrice)
+            selectedPrice = so.ItemCost;
+        }
+      }
+    }
+
+    if (selectedPrice !== null) {
+      priceMap[ticker][ex] = selectedPrice;
+      volumeMap[ticker][ex] = row.VolumeAmount ?? 0;
+    }
+  }
+
+  // Build body
+  let bodyHTML = "";
+
+  for (const mat of materials) {
+    const modeled = modeledPrices[mat];
+    const threshold = modeled ? modeled * (1 - markupPct) : null;
+    const hasAnyPrice = exchangeCodes.some(ex => priceMap[mat]?.[ex] !== undefined);
+
+    if (hideNoPrices.checked && !hasAnyPrice) continue;
+
+    // Determine highlight & auto-check logic
+    let highlightRow = false;
+
+    if (filterEx !== "ALL") {
+      const ex = filterEx;
+      const p = priceMap[mat]?.[ex];
+      const vol = volumeMap[mat]?.[ex];
+
+      if (p !== undefined && modeled !== undefined) {
+        const underModeled = p <= threshold;
+        const volOK = vol >= userMinVol && vol <= userMaxVol;
+
+        // Find highest buying order to check company skip condition
+        let highestBO = null;
+        const buying = fullOrderData[mat]?.[ex]?.buying || [];
+        if (buying.length > 0) {
+          highestBO = buying.reduce((a, b) =>
+            a.ItemCost > b.ItemCost ? a : b
+          );
+        }
+
+        const hasHighBidAlready =
+          highestBO && highestBO.companyCode?.toUpperCase() === userCompany;
+
+        highlightRow = underModeled && volOK && !hasHighBidAlready;
+      }
+    }
+
+    bodyHTML += `<tr id="row-${mat}" class="${highlightRow ? "green-highlight" : ""}">`;
+
+    // Checkbox column (checked if highlighted)
+    if (filterEx !== "ALL")
+      bodyHTML += `<td><input type="checkbox" class="rowCheck" data-mat="${mat}" ${highlightRow ? "checked" : ""}></td>`;
+
+    bodyHTML += `<td>${mat}</td>`;
+
+    // draw (and highlight) individual cells for for each exchange selected
+    for (const ex of exchangeCodes) {
+      const p = priceMap[mat]?.[ex];
+      const cellCls = filterEx == "ALL" && ( p !== undefined ? 'class="green-highlight"' : "");
+      bodyHTML += `<td ${cellCls}>${p !== undefined ? p.toLocaleString() : ""}</td>`;
+    }
+
+    bodyHTML += `<td>${modeled !== undefined ? modeled.toLocaleString() : ""}</td>`;
+    bodyHTML += `<td><button data-mat="${mat}" class="expandBtn">Expand</button></td></tr>`;
+
+    // Expandable row
+    bodyHTML += `
+    <tr id="expand-${mat}" class="expand-row" style="display:none;">
+      <td colspan="${exchangeCodes.length + 4}">
+        <div id="expand-content-${mat}"></div>
+      </td>
+    </tr>`;
+  }
+
+  tbody.innerHTML = bodyHTML;
+  table.style.display = "";
+  status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.`;
+
+  // Expand handlers 
+  document.querySelectorAll(".expandBtn").forEach(btn => {
+    btn.addEventListener("click", e => {
+      addExpandContent(e, exchangeCodes, fullOrderData)
+    });
+  });
+}
+
+function addExpandContent(e, exchangeCodes, fullOrderData){
+  const mat = e.target.dataset.mat;
+  const row = document.getElementById(`expand-${mat}`);
+  const content = document.getElementById(`expand-content-${mat}`);
+
+  if (row.style.display === "none") {
+    row.style.display = "";
+
+    let html = `<table class="expand-details-table"><tr>`;
+    for (const ex of exchangeCodes) html += `<th>${ex}</th>`;
+    html += "</tr><tr>";
+
+    for (const ex of exchangeCodes) {
+      const data = fullOrderData[mat]?.[ex];
+      if (!data) {
+        html += "<td>(no data)</td>";
+        continue;
+      }
+
+      let cell = "";
+
+      data.selling.sort((a, b) => b.ItemCost - a.ItemCost);
+      for (const so of data.selling) {
+        cell += generateOrderText("sell-text", so, userCompany);
+      }
+
+      data.buying.sort((a, b) => b.ItemCost - a.ItemCost);
+      for (const bo of data.buying) {
+        cell += generateOrderText("buy-text", bo, userCompany);
+      }
+
+      if (cell === "") cell = "(none)";
+      html += `<td>${cell}</td>`;
+    }
+
+    html += "</tr></table>";
+    content.innerHTML = html;
+  } else {
+    row.style.display = "none";
+  }
+}
+
+function generateOrderText(cssType, o, userCode){
+  const count = o.ItemCount === null ? "∞" : o.ItemCount.toLocaleString();
+  const cssSpan = o.CompanyCode == userCode ? "self-text" : "";
+  const companyLink = `<A HREF="/intel/?co=${o.CompanyCode}" data-tooltip="${o.CompanyName}"  >${o.CompanyCode}</A>`;
+  return `<div class="${cssType}">${o.ItemCost.toLocaleString()} × ${count} - <span class="${cssSpan}">${companyLink}</span></div>`;
+}
+
 </script>
