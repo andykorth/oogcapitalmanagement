@@ -147,9 +147,10 @@ function gzipDecompressFromBase64(b64) {
   return decompressed;
 }
 
-// ---- full commodity exchange data ----
+// ---- full commodity exchange data ----// ---- full commodity exchange data ----
 export let fullCXData = {};
 
+// fetches full CX data and caches it (existing)
 export async function fetchFullCXData(statusEl) {
   const cacheKey = "exchangeData";
   const cached = localStorage.getItem(cacheKey);
@@ -173,31 +174,27 @@ export async function fetchFullCXData(statusEl) {
   try {
     res = await fetch(url);
   } catch (err) {
-    statusEl.textContent = "Network error while fetching exchange data.";
+    if (statusEl) statusEl.textContent = "Network error while fetching exchange data.";
     return;
   }
 
-  let json;
   try {
-    json = await res.json();
+    fullCXData = await res.json();
   } catch (err) {
-    statusEl.textContent = "Failed to parse exchange data.";
+    if (statusEl) statusEl.textContent = "Failed to parse exchange data.";
     return;
   }
 
-  const freshData = json;
-  fullCXData = freshData;
-
-  // Attempt to save in localStorage
+  // Save in localStorage
   const result = safeSetLocalStorageCompressed(
     cacheKey,
     JSON.stringify({
       timestamp: Date.now(),
-      data: freshData
+      data: fullCXData
     })
   );
 
-  if(statusEl){
+  if (statusEl) {
     if (!result.ok) {
       statusEl.textContent = result.error;
     } else {
@@ -205,6 +202,48 @@ export async function fetchFullCXData(statusEl) {
     }
   }
 }
+
+// --- new function: retrieve cached data if it exists, else null ---
+export function getCachedCXData() {
+  const cacheKey = "exchangeData";
+  const cached = localStorage.getItem(cacheKey);
+  if (!cached) return null;
+
+  try {
+    const jsonStr = gzipDecompressFromBase64(cached);
+    const { timestamp, data } = JSON.parse(jsonStr);
+    fullCXData = data;
+    return data;
+  } catch (err) {
+    console.warn("Failed to read cached CX data:", err);
+    return null;
+  }
+}
+
+// --- new function: get age of cached data as human-readable string ---
+export function getCachedCXDataAge() {
+  const cacheKey = "exchangeData";
+  const cached = localStorage.getItem(cacheKey);
+  if (!cached) return null;
+
+  try {
+    const jsonStr = gzipDecompressFromBase64(cached);
+    const { timestamp } = JSON.parse(jsonStr);
+    const ageMs = Date.now() - timestamp;
+
+    const seconds = Math.floor(ageMs / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+
+    if (hours > 0) return `${hours} hour${hours > 1 ? "s" : ""} ago`;
+    if (minutes > 0) return `${minutes} minute${minutes > 1 ? "s" : ""} ago`;
+    return `${seconds} second${seconds !== 1 ? "s" : ""} ago`;
+  } catch (err) {
+    console.warn("Failed to read cached CX data age:", err);
+    return null;
+  }
+}
+
 
 
 // ---- modeled price ingestion ----

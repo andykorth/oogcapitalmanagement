@@ -1,50 +1,81 @@
 <style>
-    textarea {
-        resize: none;
-        width: 100%;
-    }
+  /* Container for inputs, split into 2 columns */
+  #price-compare .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttonGroup {
+    display: flex;
+    justify-content: center; /* centers the entire group horizontally */
+    align-items: center;     /* vertically center if needed */
+    gap: 0.5rem;             /* spacing between direct children */
+    margin-top: 1rem;        /* optional spacing above */
+  }
 
-    label {  
-        display: block;
-        margin-top: 1px;
-    }
+  .buttonGroup span {
+    display: flex;
+    gap: 0.5rem;             /* spacing between buttons inside the span */
+  }
+  
+  /* Each column takes roughly half */
+  #price-compare .inputs .column {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 
-    #price-compare .inputs {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-        max-width: 340px;
-    }
+  /* Align labels and fields in a row */
+  #price-compare .inputs label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
 
-    #price-compare select {
-        padding: 4px 6px;
-    }
+  #price-compare .inputs label span {
+    flex: 0 0 180px; /* fixed width for alignment */
+    text-align: right;
+  }
 
-    #priceTable {
-        width: auto; /* override the 100% */
-        min-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1em;
-        border-collapse: collapse;
-    }
+  #price-compare .inputs input,
+  #price-compare .inputs select {
+    flex: 1;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
 
-    #priceTable td, #priceTable th {
-        border-bottom: 1px solid #ddd;
-        padding: 4px 6px;
-    }
+  /* Action mode fields column */
+  #actionModeFields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 
-    .expand-row {
-        background: #f7f7f7;
-    }
+  /* Table styles */
+  #priceTable {
+    width: auto;
+    min-width: 50%;
+    margin: 1em auto;
+    border-collapse: collapse;
+  }
 
-    .green-highlight {
-        background-color: #d1fae5 !important; 
-    }
-    .dark .green-highlight {
-        background-color: #002c15 !important; 
-    }
+  #priceTable td, #priceTable th {
+    border-bottom: 1px solid #ddd;
+    padding: 4px 6px;
+  }
 
+  .green-highlight {
+    background-color: #d1fae5 !important;
+  }
+  .dark .green-highlight {
+    background-color: #002c15 !important; 
+  }    
   .expand-details-table {
     width: 100%;
     border-collapse: collapse;
@@ -76,7 +107,7 @@
     background: var(--bg-primary);
     padding: .25em;
   }
-
+  
   .sell-text {
     color: #b91c1c;
     font-weight: bold;
@@ -102,8 +133,6 @@
     font-weight: bold;
   }
 
-
-
   .sell-text,
   .buy-text {
     white-space: nowrap;        /* never wrap */
@@ -113,129 +142,102 @@
     max-width: 100%;            /* ensures it respects parent container width */
   }
 
-  .info-icon {
-    cursor: help;
-    font-size: 14px;
-    padding: 2px;
-  }
+  .col-check { width: 32px; text-align: center; }
+  .col-info { width: 32px; text-align: center; }
+  .col-expand { width: 60px; text-align: center; }
 
-  .col-check {
-    width: 32px;        /* small, tight */
-    text-align: center;
-  }
-
-  .col-info {
-    width: 32px;
-    text-align: center;
-  }
-
-  .col-expand {
-    width: 60px;        /* enough for the button */
-    text-align: center;
-  }
-
-  /* Make sure cells don't stretch */
-  .col-check input,
-  .col-info span,
-  .col-expand button {
-    display: inline-block;
-  }
-
+  .info-icon { cursor: help; font-size: 14px; padding: 2px; }
 </style>
 
 <div id="price-compare" class="calculator">
   <h3>Price Comparison Tool</h3>
 
   <div class="inputs">
-    <label>
-      Filter by Exchange:
-      <select id="exchangeFilter">
-        <option value="ALL">All</option>
-        <option value="AI1">AI1</option>
-        <option value="CI1">CI1</option>
-        <option value="CI2">CI2</option>
-        <option value="IC1">IC1</option>
-        <option value="NC1">NC1</option>
-        <option value="NC2">NC2</option>
-      </select>
-    </label>
-
-    <label>
-      Filter by Material:
-      <input type="text" id="materialFilter" placeholder="e.g. H2O">
-    </label>
-
-    <label>
-      <input type="checkbox" id="hideNoPrices">
-      Hide materials with no prices
-    </label>
-
-    <label>
-      Show:
-      <select id="bidAskSelect">
-        <option value="bids">Show bids</option>
-        <option value="asks">Show asks</option>
-      </select>
-    </label>
-
-    <label>
-      Percent Markup over Modeled (%):
-      <input type="number" id="markupInput" value="2" step="0.1">
-    </label>
-
-    <div id="actionModeFields">
-
-      <label>
-        Available Funds for trade:
-        <input type="number" id="fundsInput" value="10000000" min="0">
-      </label>
-      
-      <label>
-        Min Percent Spread (%):
-        <input type="number" id="minSpreadInput" value="4" step="0.1">
+    <!-- Left column -->
+    <div class="column">
+      <label><span>Filter by Exchange:</span>
+        <select id="exchangeFilter">
+          <option value="ALL">All</option>
+          <option value="AI1">AI1</option>
+          <option value="CI1">CI1</option>
+          <option value="CI2">CI2</option>
+          <option value="IC1">IC1</option>
+          <option value="NC1">NC1</option>
+          <option value="NC2">NC2</option>
+        </select>
       </label>
 
-      <label>
-        Min Volume to Trade On: (in $)
-        <input type="number" id="minVol" value="" min="0">
-      </label>
-      <label>
-        Max Volume to Trade On: (in $)
-        <input type="number" id="maxVol" value="" min="0">
-      </label>
-      <label>
-        Your company code
-        <input type="text" id="companyCode" value="ARCL">
+      <label><span>Filter by Material:</span>
+        <input type="text" id="materialFilter" placeholder="e.g. H2O">
       </label>
 
-      
+      <label><span>Hide No Prices:</span>
+        <input type="checkbox" id="hideNoPrices">
+      </label>
+
+      <label><span>Show:</span>
+        <select id="bidAskSelect">
+          <option value="bids">Show bids</option>
+          <option value="asks">Show asks</option>
+        </select>
+      </label>
+
+      <label><span>Percent Markup (%):</span>
+        <input type="number" id="markupInput" value="2" step="0.1">
+      </label>
     </div>
 
-    <button id="loadPrices">
-      Load Comparison Data
-    </button>
+    <!-- Right column -->
+    <div class="column">
+      <div id="actionModeFields">
+        <label><span>Available Funds:</span>
+          <input type="number" id="fundsInput" value="10000000" min="0">
+        </label>
 
-    <p id="calculatorStatus" style="font-weight: bold; margin-top: 0.5rem;"></p>
+        <label><span>Min Percent Spread (%):</span>
+          <input type="number" id="minSpreadInput" value="4" step="0.1">
+        </label>
+
+        <label><span>Min Volume:</span>
+          <input type="number" id="minVol" value="" min="0">
+        </label>
+
+        <label><span>Max Volume:</span>
+          <input type="number" id="maxVol" value="" min="0">
+        </label>
+
+        <label><span>Company Code:</span>
+          <input type="text" id="companyCode" value="ARCL">
+        </label>
+      </div>
+    </div>
   </div>
+
+  <div class="buttonGroup">
+    <button id="loadPrices">Load Comparison Data</button>
+    <span id="actionModeButtons">
+      <button id="makeBidsBtn">Calculate Bids</button>
+      <button id="copyJsonBids">Copy JSON Bids</button>
+    </span>
+  </div>
+
+  <p id="calculatorStatus" style="font-weight: bold; margin-top: 0.5rem;"></p>
+
+  <p id="bidResult" style="white-space: pre-wrap; margin-top: 1em;"></p>
 
   <table id="priceTable" style="display: none;">
     <thead id="priceHead"></thead>
     <tbody id="priceBody"></tbody>
   </table>
 
-  <button id="makeBidsBtn">
-    Calculate Bids
-  </button>
-  <button id="copyJsonBids">Copy JSON Bids</button>
-
-  <p id="bidResult" style="white-space: pre-wrap; margin-top: 1em;"></p>
 </div>
 
+
 <script type="module">
-  import { fetchFullCXData, fullCXData } from "/pricing-and-materials.js";
+  import { fetchFullCXData, fullCXData, getCachedCXData, getCachedCXDataAge} from "/pricing-and-materials.js";
   import { loadModeledPrices, modeledPrices } from "/pricing-and-materials.js";
 
-  const btn = document.getElementById("loadPrices");
+  const loadFIOPrices = document.getElementById("loadPrices");
   const status = document.getElementById("calculatorStatus");
   const table = document.getElementById("priceTable");
   const thead = document.getElementById("priceHead");
@@ -249,16 +251,54 @@
   const fundsInput = document.getElementById("fundsInput");
   const minSpreadInput = document.getElementById("minSpreadInput");
   const actionModeFields = document.getElementById("actionModeFields");
+  const actionModeButtons = document.getElementById("actionModeButtons");
   
   document.getElementById("makeBidsBtn").addEventListener("click", makeBids);
 
-  exchangeFilter.addEventListener("change", () => {
-    if (exchangeFilter.value === "ALL") {
-      actionModeFields.style.display = "none";
-    } else {
-      actionModeFields.style.display = "";
+  // List all the inputs whose values you want to persist
+  const persistentInputs = [
+    exchangeFilter,
+    markupInput,
+    hideNoPrices,
+    bidAskSelect,
+    fundsInput,
+    minSpreadInput,
+    document.getElementById("minVol"),
+    document.getElementById("maxVol"),
+    document.getElementById("companyCode"),
+    materialFilter
+  ];
+
+  // Load saved values on page load
+  persistentInputs.forEach(el => {
+    const saved = localStorage.getItem("price-tool-" + el.id);
+    if (saved !== null) {
+      if (el.type === "checkbox") {
+        el.checked = saved === "true";
+      } else {
+        el.value = saved;
+      }
     }
   });
+
+  // Save value to localStorage whenever input changes
+  persistentInputs.forEach(el => {
+    el.addEventListener("input", () => {
+      if (el.type === "checkbox") {
+        localStorage.setItem("price-tool-" + el.id, el.checked);
+      } else {
+        localStorage.setItem("price-tool-" + el.id, el.value);
+      }
+    });
+    el.addEventListener("change", () => {
+      if (el.type === "checkbox") {
+        localStorage.setItem("price-tool-" + el.id, el.checked);
+      } else {
+        localStorage.setItem("price-tool-" + el.id, el.value);
+      }
+    });
+  });
+
 
   materialFilter.addEventListener("input", () => {
     const q = materialFilter.value.trim().toUpperCase();
@@ -278,17 +318,38 @@
     markupInput,
     hideNoPrices,
     bidAskSelect,
-    fundsInput
+    fundsInput,
+    minSpreadInput,
+    document.getElementById("minVol"),
+    document.getElementById("maxVol"),
   ].forEach(el => {
     el.addEventListener("input", renderTable);
     el.addEventListener("change", renderTable);
   });
 
-  btn.addEventListener("click", async () => {
-    status.textContent = "Loading…";
 
-  await fetchFullCXData(status);
+  // Page load logic
+  window.addEventListener("DOMContentLoaded", () => {
+    // this fills in: fullCXData
+    const cachedData = getCachedCXData();
+    if (cachedData) {
+
+      // Determine cache age string
+      
+      loadModeledPrices();
+      renderTable(); // pass age string so renderTable can show it
+    } else {
+      status.textContent = "No cached CX data available. Click 'Load Comparison Data' to fetch.";
+    }
+  });
+
+  // Update button logic
+  loadFIOPrices.addEventListener("click", async () => {
+    status.textContent = "Fetching CX Data from FIO...";
+
+    await fetchFullCXData(status);
     loadModeledPrices();
+    const ageStr = getCachedCXDataAge();
     renderTable();
   });
 
@@ -297,10 +358,17 @@ export const fullOrderData = {};
 
 async function renderTable() {
 
+  if (exchangeFilter.value === "ALL") {
+    actionModeFields.style.display = "none";
+  } else {
+    actionModeFields.style.display = "";
+  }
+
   if (!fullCXData.length) {
-    status.textContent = "No exchange data available.";
+    status.textContent = "No exchange data available, please click load.";
     return;
   }
+  const cacheAgeStr = getCachedCXDataAge();
 
   const markupPct = Number(markupInput.value) / 100;
   const filterEx = exchangeFilter.value;
@@ -436,7 +504,13 @@ async function renderTable() {
 
   tbody.innerHTML = bodyHTML;
   table.style.display = "";
-  status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.`;
+
+  // Count highlighted rows
+  const highlightedCount = tbody.querySelectorAll("tr.green-highlight").length;
+
+  let ageText = cacheAgeStr ? ` (Data age: ${cacheAgeStr})` : "";
+  let bidText = exchangeFilter.value === "ALL" ? "Choose a CX to create bids." : `Identified Bids: ${highlightedCount}.`
+  status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.\n${ageText}\n${bidText}`;
 
   // Expand handlers 
   document.querySelectorAll(".expandBtn").forEach(btn => {
@@ -637,10 +711,11 @@ function makeBids() {
 
   // Display summary (you may replace with your UI)
   document.getElementById("bidResult").textContent =
-    (bids.length > 0
-      ? bids.map(b => `${b.material}: ${b.quantity} @ ${b.targetPrice}`).join("\n")
-      : "No bids created.")
-    + `\nSum $${sum.toFixed(2)}`;
+  
+    (bids.length > 0 ? 
+      `Count ${bids.length}\nSum $${sum.toFixed(2).toLocaleLowerCase() }\n` +
+        bids.map(b => `${b.material}: ${b.quantity} @ ${b.targetPrice}`).join("\n")
+      : "No bids created.");
 
   return bids;
 }
@@ -655,25 +730,22 @@ function roundToSigFigs(value, sigFigs) {
 }
 
 document.getElementById("copyJsonBids").addEventListener("click", () => {
-  const result = makeBids(); 
-  if (!result || !result.bids || !Object.keys(result.bids).length) {
+  const bids = makeBids(); 
+  if (!bids || bids.length <= 0) {
     alert("No bids available to convert.");
     return;
   }
-
-  const { bids, exchange } = result;
-
+  let exchange = bids[0].exchange;
   // bids = { MAT1: { targetPrice, qty }, MAT2: ... }
 
   // Assemble priceLimits (price) and materials (qty)
   const priceLimits = {};
   const materials = {};
 
-  for (const [mat, info] of Object.entries(bids)) {
-    priceLimits[mat] = info.targetPrice; // must be number
-    materials[mat] = info.qty;           // must be number
+  for (const b of bids) {
+    priceLimits[b.material] = b.targetPrice; // must be number
+    materials[b.material] = b.quantity;           // must be number
   }
-
   // Choose a group name (user config or default)
   const groupName = "A1";
 
