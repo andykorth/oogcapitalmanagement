@@ -21,7 +21,10 @@
     }
 
     #priceTable {
-        width: 100%;
+        width: auto; /* override the 100% */
+        min-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 1em;
         border-collapse: collapse;
     }
@@ -50,7 +53,7 @@
 
   table {
     table-layout: fixed;
-    width: 100%;     /* prevents expanding past container */
+    max-width: 100%;     /* prevents expanding past container */
   }
 
   .expand-details-table th,
@@ -110,7 +113,33 @@
     max-width: 100%;            /* ensures it respects parent container width */
   }
 
+  .info-icon {
+    cursor: help;
+    font-size: 14px;
+    padding: 2px;
+  }
 
+  .col-check {
+    width: 32px;        /* small, tight */
+    text-align: center;
+  }
+
+  .col-info {
+    width: 32px;
+    text-align: center;
+  }
+
+  .col-expand {
+    width: 60px;        /* enough for the button */
+    text-align: center;
+  }
+
+  /* Make sure cells don't stretch */
+  .col-check input,
+  .col-info span,
+  .col-expand button {
+    display: inline-block;
+  }
 
 </style>
 
@@ -150,25 +179,31 @@
     </label>
 
     <label>
-      Percent Markup (%):
+      Percent Markup over Modeled (%):
       <input type="number" id="markupInput" value="4" step="0.1">
     </label>
 
     <div id="actionModeFields">
 
-      <label id="fundsLabel">
-        Available Funds:
-        <input type="number" id="fundsInput" value="" min="0">
+      <label>
+        Available Funds for trade:
+        <input type="number" id="fundsInput" value="10000000" min="0">
       </label>
-      <label id="minVolLabel">
+      
+      <label>
+        Min Percent Spread (%):
+        <input type="number" id="minSpreadInput" value="6" step="0.1">
+      </label>
+
+      <label>
         Min Volume to Trade On: (in $)
         <input type="number" id="minVol" value="" min="0">
       </label>
-      <label id="maxVolLabel">
+      <label>
         Max Volume to Trade On: (in $)
         <input type="number" id="maxVol" value="" min="0">
       </label>
-      <label id="companyCodeLabel">
+      <label>
         Your company code
         <input type="text" id="companyCode" value="ARCL">
       </label>
@@ -205,7 +240,7 @@
   const hideNoPrices = document.getElementById("hideNoPrices");
   const bidAskSelect = document.getElementById("bidAskSelect");
   const fundsInput = document.getElementById("fundsInput");
-  const fundsLabel = document.getElementById("fundsLabel");
+  const minSpreadInput = document.getElementById("minSpreadInput");
   const actionModeFields = document.getElementById("actionModeFields");
 
 
@@ -273,13 +308,16 @@ async function renderTable() {
   const materials = [...new Set(fullCXData.map(r => r.MaterialTicker))].sort();
 
   // Build header (add checkbox column)
-  let headHTML = "<tr><th>Select</th><th>Material</th>";
+  let headHTML = "";
+  if (filterEx !== "ALL") {
+    headHTML += `<th class="col-check">✔</th>`;
+    headHTML += `<th class="col-info">?</th>`;
+  }
 
-  if (filterEx == "ALL")
-    headHTML = "<th>Material</th>";
+   headHTML += "<th>Material</th>";
 
   for (const ex of exchangeCodes) headHTML += `<th>${ex}</th>`;
-  headHTML += "<th>Modeled</th><th>Expand</th></tr>";
+  headHTML += `<th>Modeled</th><th class="col-expand">Expand</th></tr>`;
   thead.innerHTML = headHTML;
 
   // prepare pricedata
@@ -340,9 +378,9 @@ async function renderTable() {
 
     // Determine highlight & auto-check logic
     let highlightRow = false;
+    let explanation = "";
 
     if (filterEx !== "ALL") {
-      const ex = filterEx;
       const p = priceMap[mat]?.[ex];
       const vol = volumeMap[mat]?.[ex];
 
@@ -352,7 +390,7 @@ async function renderTable() {
 
         // Find highest buying order to check company skip condition
         let highestBO = null;
-        const buying = fullOrderData[mat]?.[ex]?.buying || [];
+        const buying = fullOrderData[mat]?.[filterEx]?.buying || [];
         if (buying.length > 0) {
           highestBO = buying.reduce((a, b) =>
             a.ItemCost > b.ItemCost ? a : b
@@ -360,17 +398,30 @@ async function renderTable() {
         }
 
         const hasHighBidAlready =
-          highestBO && highestBO.companyCode?.toUpperCase() === userCompany;
+          highestBO && highestBO.CompanyCode?.toUpperCase() === userCompany.toUpperCase() ;
 
         highlightRow = underModeled && volOK && !hasHighBidAlready;
+
+        if(underModeled){
+          if(!volOK){
+            explanation += `Outside cash volume params:  $${vol} traded is outside your $${userMinVol} .. $${userMaxVol}`;
+          }
+          if(hasHighBidAlready){
+            explanation += `You already have high bid.`;
+          }
+        }
       }
     }
 
     bodyHTML += `<tr id="row-${mat}" class="${highlightRow ? "green-highlight" : ""}">`;
 
-    // Checkbox column (checked if highlighted)
-    if (filterEx !== "ALL")
-      bodyHTML += `<td><input type="checkbox" class="rowCheck" data-mat="${mat}" ${highlightRow ? "checked" : ""}></td>`;
+
+    // Checkbox column (checked if highlighted) and explanation column
+    if (filterEx !== "ALL"){
+      bodyHTML += `<td class="col-check"><input type="checkbox" class="rowCheck" data-mat="${mat}" ${highlightRow ? "checked" : ""}></td>`;
+      const expl = explanation === "" ? "" : `<span class="info-icon" title="${explanation}">ℹ️</span>`;
+      bodyHTML += `<td class="col-info">${expl}</td>`;
+    }
 
     bodyHTML += `<td>${mat}</td>`;
 
@@ -382,7 +433,7 @@ async function renderTable() {
     }
 
     bodyHTML += `<td>${modeled !== undefined ? modeled.toLocaleString() : ""}</td>`;
-    bodyHTML += `<td><button data-mat="${mat}" class="expandBtn">Expand</button></td></tr>`;
+    bodyHTML += `<td class="col-expand"><button data-mat="${mat}" class="expandBtn">Orders</button></td></tr>`;
 
     // Expandable row
     bodyHTML += `
@@ -400,12 +451,12 @@ async function renderTable() {
   // Expand handlers 
   document.querySelectorAll(".expandBtn").forEach(btn => {
     btn.addEventListener("click", e => {
-      addExpandContent(e, exchangeCodes, fullOrderData)
+      addExpandContent(e, exchangeCodes, fullOrderData, userCompany)
     });
   });
 }
 
-function addExpandContent(e, exchangeCodes, fullOrderData){
+function addExpandContent(e, exchangeCodes, fullOrderData, userCompany){
   const mat = e.target.dataset.mat;
   const row = document.getElementById(`expand-${mat}`);
   const content = document.getElementById(`expand-content-${mat}`);
