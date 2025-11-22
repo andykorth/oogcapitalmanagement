@@ -209,6 +209,10 @@
         <label><span>Company Code:</span>
           <input type="text" id="companyCode" value="ARCL">
         </label>
+        
+        <label><span>Ignored Mat List:</span>
+          <input type="text" id="ignoredMatList" value="">
+        </label>
       </div>
     </div>
   </div>
@@ -249,10 +253,11 @@
   const hideNoPrices = document.getElementById("hideNoPrices");
   const bidAskSelect = document.getElementById("bidAskSelect");
   const fundsInput = document.getElementById("fundsInput");
+  const ignoredMatList = document.getElementById("ignoredMatList");
   const minSpreadInput = document.getElementById("minSpreadInput");
   const actionModeFields = document.getElementById("actionModeFields");
   const actionModeButtons = document.getElementById("actionModeButtons");
-  
+
   document.getElementById("makeBidsBtn").addEventListener("click", makeBids);
 
   // List all the inputs whose values you want to persist
@@ -391,6 +396,7 @@ async function renderTable() {
   if (filterEx !== "ALL") {
     headHTML += `<th class="col-check">✔</th>`;
     headHTML += `<th class="col-info">?</th>`;
+    headHTML += `<th class="col-ignore">Ignore</th>`;
   }
 
    headHTML += "<th>Material</th>";
@@ -448,6 +454,8 @@ async function renderTable() {
 
   // Build body
   let bodyHTML = "";
+  let ignoredMaterials = getIgnoredMaterials();
+  saveIgnoredMaterials(ignoredMaterials);
 
   for (const mat of materials) {
     const modeled = modeledPrices[mat];
@@ -469,7 +477,8 @@ async function renderTable() {
       userMinVol,
       userMaxVol,
       userCompany,
-      minSpreadInput
+      minSpreadInput,
+      ignoredMaterials
     });
 
     bodyHTML += `<tr id="row-${mat}" class="${highlightRow ? "green-highlight" : ""}">`;
@@ -480,6 +489,21 @@ async function renderTable() {
       const expl = explanation === "" ? "" : `<span class="info-icon" title="${explanation}">ℹ️</span>`;
       bodyHTML += `<td class="col-info">${expl}</td>`;
     }
+
+    const ignored = ignoredMaterials.has(mat);
+    const ignoreIcon = ignored ? "🚫" : "⭕";
+
+    bodyHTML += `
+      <td class="col-ignore">
+        <span 
+          class="ignore-toggle" 
+          data-mat="${mat}" 
+          title="Toggle ignore"
+          style="cursor:pointer;">
+          ${ignoreIcon}
+        </span>
+      </td>
+    `;
 
     bodyHTML += `<td>${mat}</td>`;
 
@@ -518,6 +542,40 @@ async function renderTable() {
       addExpandContent(e, exchangeCodes, fullOrderData, userCompany)
     });
   });
+
+  const ignoreButtons = document.querySelectorAll(".ignore-toggle");
+  ignoreButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const mat = btn.dataset.mat;
+      const ignored = ignoredMaterials.has(mat);
+
+      if (ignored) {
+        ignoredMaterials.delete(mat);
+      } else {
+        ignoredMaterials.add(mat);
+      }
+
+      saveIgnoredMaterials(ignoredMaterials);
+      renderTable(); // re-render to update icon and row highlighting
+    });
+  });
+
+}
+
+const IGNORE_KEY = "ignoredMaterials";
+
+function getIgnoredMaterials() {
+  const raw = localStorage.getItem(IGNORE_KEY);
+  if (!raw) return new Set();
+  return new Set(raw.split(",").filter(Boolean));
+}
+
+function saveIgnoredMaterials(set) {
+  
+  const ignoreStr = [...set].join(",");
+  const ignoredMatList = document.getElementById("ignoredMatList");
+  ignoredMatList.value = ignoreStr;
+  localStorage.setItem(IGNORE_KEY, ignoreStr);
 }
 
 function addExpandContent(e, exchangeCodes, fullOrderData, userCompany){
@@ -581,7 +639,8 @@ function evaluateHighlight({
   userMinVol,
   userMaxVol,
   userCompany,
-  minSpreadInput
+  minSpreadInput,
+  ignoredMaterials
 }) {
   let explanation = "";
   let highlightRow = false;
@@ -645,6 +704,11 @@ function evaluateHighlight({
     if (hasHighBidAlready) {
       explanation += `You already have high bid.\n`;
     }
+    if (ignoredMaterials.has(mat)) {
+      highlightRow = false;
+      explanation += `You are explicitly ignoring this mat.\n`;
+    }
+
   }
 
   return { highlightRow, explanation };
@@ -673,7 +737,7 @@ function makeBids() {
   let sum = 0;
 
   for (const cb of checked) {
-    const mat = cb.dataset.mat;
+    const mat = cb.dataset.mat; 
 
     // Find highest BO
     
@@ -686,10 +750,20 @@ function makeBids() {
       );
       rawPrice = highestBO.ItemCost * (1 + markupPct / 100);
     } else {
-      // fallback: modeled - 20%
-      const modeled = modeledPriceMap[mat];
-      if (!modeled) continue;
-      rawPrice = modeled * 0.8;
+      const modeled = modeledPrices[mat];
+
+      // no buyers? first fallback, 20% under lowest sell order. (unless the modeled price is lower)
+      let lowestSO = null;
+      const selling = fullOrderData[mat]?.[filterEx]?.selling || [];
+      if (selling.length > 0) {
+        lowestSO = selling.reduce((a, b) => (a.ItemCost < b.ItemCost ? a : b));
+        rawPrice = Math.min(lowestSO.ItemCost, modeled) * 0.8;
+      }else{
+
+        // second fallback, no buyers or sellers: modeled - 20%
+        if (!modeled) continue;
+        rawPrice = modeled * 0.8;
+      }
     }
 
 
