@@ -39,7 +39,7 @@ Of these gates, The ADI Gateway Cooperative is building the following:
 * MOR region gates are being organized by *realbandit* of Supernova Foundries.
   * Additional non-cx gates are planned, including Circe <-> MOR.
 * HRT region gates are organized by *Filefolders*. 
-  * Additional non-cx gates are planned, including towards Boucher.bat90dewFace
+  * Additional non-cx gates are planned, including towards Boucher.
 * EvoV is constructing and running the gate from IA-158 to HRT.
 
 The redundant links (such as IA-158 to Antares V and New Antares to Nova) will be added last, if demand necessitates them.

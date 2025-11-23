@@ -41,7 +41,7 @@ Create a ship blueprint that matches the above image. Rent 4 warehouses on Hepha
 
 In special cases, we may have 5k ships available for sale. These two models may be in stock:
 
-* Unshielded 5K: 11,000,000 AIC
+* Unshielded 5K: 11,500,000 AIC
 * Shielded 5K: 19,700,000 AIC
 
 OOG Members, please refer to the pinned post in #ship-building for subsidy prices and rules.
