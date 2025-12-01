@@ -14,7 +14,7 @@ tags: Shareholders
 ---
 
 ## Introduction
-We are the premier corporation in Antares space and the largest governance organisation in the universe. As a corporation, we work to ensure the stability of the Antares region, as well as creating a fun and engaging place for our members to enjoy the Prosperous Universe. 
+We are the premier corporation in Antares space and the largest governance organisation in the universe. As a corporation, we work to ensure the stability of the Antares region, as well as creating a fun and engaging place for our members to enjoy the [Prosperous Universe](https://prosperousuniverse.com/). [Steam Link](https://store.steampowered.com/app/1761220?utm_source=OOGCapitalManagement)
 
 Our corporation includes governance training and support, planetary and regional development, a discord-based internal auction/order system and preferential material access and prices. The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones.
 
