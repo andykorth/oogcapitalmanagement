@@ -21,6 +21,8 @@ Gateways are coming, and Antares will be ready for them!
 
 ## Key Points We Know: 
 
+Gateways are now documented in the [Apex Handbook](https://handbook.apex.prosperousuniverse.com/wiki/infrastructure-gateway/index.html). Now with the gateways out in the [Connectivity Release](https://com.prosperousuniverse.com/t/release-notes-connectivity/7260), some of the information here is outdated.
+
 ### How they work:
 
 * A planetary government can commission gateways in orbit. They administer those gateways.
