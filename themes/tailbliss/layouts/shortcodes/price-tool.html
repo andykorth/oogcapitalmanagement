@@ -206,6 +206,18 @@
           <input type="number" id="maxVol" value="" min="0">
         </label>
 
+        <label><span>Don't outbid CX:</span>
+          <select id="outbidExchange">
+            <option value="Ignore">Ignore</option>
+            <option value="AI1">AI1</option>
+            <option value="CI1">CI1</option>
+            <option value="CI2">CI2</option>
+            <option value="IC1">IC1</option>
+            <option value="NC1">NC1</option>
+            <option value="NC2">NC2</option>
+          </select>
+        </label>
+
         <label><span>Company Code:</span>
           <input type="text" id="companyCode" value="ARCL">
         </label>
@@ -271,8 +283,27 @@
     document.getElementById("minVol"),
     document.getElementById("maxVol"),
     document.getElementById("companyCode"),
-    materialFilter
+    document.getElementById("outbidExchange"),
+    materialFilter,
+    ignoredMatList
   ];
+
+  // rerender when these change. almost the same list but not quite.
+  [
+    exchangeFilter,
+    markupInput,
+    hideNoPrices,
+    bidAskSelect,
+    fundsInput,
+    minSpreadInput,
+    document.getElementById("minVol"),
+    document.getElementById("maxVol"),
+    document.getElementById("companyCode"),
+    document.getElementById("outbidExchange"),
+  ].forEach(el => {
+    el.addEventListener("input", renderTable);
+    el.addEventListener("change", renderTable);
+  });
 
   // Load saved values on page load
   persistentInputs.forEach(el => {
@@ -285,6 +316,11 @@
       }
     }
   });
+
+  const IGNORE_KEY = "price-tool-ignoredMatList";
+
+  // special case loading for this:
+  ignoredMatList.value = localStorage.getItem(IGNORE_KEY);
 
   // Save value to localStorage whenever input changes
   persistentInputs.forEach(el => {
@@ -317,21 +353,6 @@
       if (expandRow) expandRow.style.display = match ? "none" : "none";
     }
   });
-
-  [
-    exchangeFilter,
-    markupInput,
-    hideNoPrices,
-    bidAskSelect,
-    fundsInput,
-    minSpreadInput,
-    document.getElementById("minVol"),
-    document.getElementById("maxVol"),
-  ].forEach(el => {
-    el.addEventListener("input", renderTable);
-    el.addEventListener("change", renderTable);
-  });
-
 
   // Page load logic
   window.addEventListener("DOMContentLoaded", () => {
@@ -562,8 +583,6 @@ async function renderTable() {
 
 }
 
-const IGNORE_KEY = "ignoredMaterials";
-
 function getIgnoredMaterials() {
   const raw = localStorage.getItem(IGNORE_KEY);
   if (!raw) return new Set();
@@ -571,7 +590,6 @@ function getIgnoredMaterials() {
 }
 
 function saveIgnoredMaterials(set) {
-  
   const ignoreStr = [...set].join(",");
   const ignoredMatList = document.getElementById("ignoredMatList");
   ignoredMatList.value = ignoreStr;
@@ -656,17 +674,17 @@ function evaluateHighlight({
     return { highlightRow, explanation };
   }
 
-  const underModeled = p <= threshold;
+  const underModeledPrice = p <= threshold;
   const volOK = vol >= userMinVol && vol <= userMaxVol;
 
-  // Highest buy order
+  // Highest buy order on filterEx
   let highestBO = null;
   const buying = fullOrderData[mat]?.[filterEx]?.buying || [];
   if (buying.length > 0) {
     highestBO = buying.reduce((a, b) => (a.ItemCost > b.ItemCost ? a : b));
   }
 
-  // Lowest sell order
+  // Lowest sell order on filterEx
   let lowestSO = null;
   const selling = fullOrderData[mat]?.[filterEx]?.selling || [];
   if (selling.length > 0) {
@@ -679,25 +697,57 @@ function evaluateHighlight({
 
   if (highestBO && lowestSO && minSpreadPct > 0) {
     const spreadPct =
-      (Math.abs(highestBO.ItemCost - lowestSO.ItemCost) / lowestSO.ItemCost) *
-      100;
+      (Math.abs(highestBO.ItemCost - lowestSO.ItemCost) / lowestSO.ItemCost) * 100;
 
     spreadOK = spreadPct >= minSpreadPct;
 
-    if (underModeled && !spreadOK) {
+    if (underModeledPrice && !spreadOK) {
       explanation += `Spread percentage of ${spreadPct.toFixed(2)} is under target of ${minSpreadPct}.\n`;
     }
   }
 
-  // Company already has high bid?
+  // Company already has highest bid on this exchange?
   const hasHighBidAlready =
     highestBO &&
     highestBO.CompanyCode?.toUpperCase() === userCompany.toUpperCase();
 
-  // Final eligibility
-  highlightRow = underModeled && volOK && !hasHighBidAlready && spreadOK;
+  // Don't outbid your bid on another CX
+  const outbidExSelect = document.getElementById("outbidExchange");
+  const outbidEx = outbidExSelect ? outbidExSelect.value : "Ignore";
+  let outbidConflict = false;
 
-  if (underModeled) {
+  if (outbidEx && outbidEx !== "Ignore") {
+    const otherBuying = fullOrderData[mat]?.[outbidEx]?.buying || [];
+
+    if (otherBuying.length > 0) {
+      // highest user bid on that other exchange
+      const highestUserBid = otherBuying
+        .filter(b => b.CompanyCode?.toUpperCase() === userCompany.toUpperCase())
+        .reduce((a, b) => {
+          if (!a) return b;     // first non-null item wins
+          if (!b) return a;     // ignore null or malformed entries
+          return a.ItemCost > b.ItemCost ? a : b;
+        }, null);
+
+      if (highestUserBid) {
+        // If our proposed new price would exceed this, block
+        // if (p > highestUserBid.ItemCost) {
+          outbidConflict = true;
+          explanation += `Would outbid your own bid on ${outbidEx} (${highestUserBid.ItemCost}).\n`;
+        // }
+      }
+    }
+  }
+
+  // Final eligibility
+  highlightRow =
+    underModeledPrice &&
+    volOK &&
+    !hasHighBidAlready &&
+    spreadOK &&
+    !outbidConflict;
+
+  if (underModeledPrice) {
     if (!volOK) {
       explanation += `Outside cash volume params: $${vol} traded is outside your $${userMinVol} .. $${userMaxVol}.\n`;
     }
@@ -708,11 +758,11 @@ function evaluateHighlight({
       highlightRow = false;
       explanation += `You are explicitly ignoring this mat.\n`;
     }
-
   }
 
   return { highlightRow, explanation };
 }
+
 
 function makeBids() {
   const filterEx = exchangeFilter.value;
