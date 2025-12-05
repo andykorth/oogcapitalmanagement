@@ -12,13 +12,13 @@
     gap:20px;
     padding:20px;
     user-select:none;
-    height:300px;
+    height:380px;
     box-sizing:border-box;
   }
 
   .inventory {
     width:320px;
-    min-height:360px;
+    min-height:280px;
     border:2px solid #3b3b3b;
     border-radius:8px;
     padding:10px;
@@ -43,10 +43,11 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    border-radius:6px;
+    border-radius:3px;
     cursor:grab;
     font-weight:700;
     position:relative;
+      text-shadow: 1px 1px 4px black;
     box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
     
     background: linear-gradient(180deg, rgba(255,255,255,0.3), rgba(255,255,255,0.01));
@@ -59,12 +60,18 @@
     font-size:11px;
     background:rgba(0,0,0,0.25);
     padding:2px 4px;
-    border-radius:6px;
+    border-radius:0px;
     color:var(--muted);
     font-weight:600;
   }
 
-  .item.selected { outline:3px solid rgba(255,255,255,0.18); transform: scale(1.03); }
+
+  .item.selected { 
+     box-shadow: 0 0 8px 4px rgb(229, 255, 0, 0.3);
+     outline:2px solid rgba(255,255,255,0.6); transform: scale(1.03);
+    }
+
+
 
   #selectionRect {
     position:fixed;
@@ -118,9 +125,49 @@
 
   /* small helper text */
   .legend { position: absolute; right:8px; top:8px; color:#999; font-size:12px; }
+
+
+  .about { margin:20px; color:#999; font-size:16px; }
+
+  #ServerCommands {
+    width:90%;
+  }
+
+  #contractMode {
+    background: #1e1e1e;
+    color: #ddd;
+    border: 1px solid #444;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  /* hover interaction */
+  #contractMode:hover {
+    border-color: #666;
+    background: #252525;
+  }
+
+  /* invert colors on open for clarity */
+  #contractMode:focus {
+    outline: none;
+    border-color: #888;
+  }
+
 </style>
 </head>
 <body>
+
+  <div class="about">
+    This inventory drag-drop demo is licensed as public domain.
+    <br/>
+    Try: Drag a selection box to select multiple items at a time. You can drag a bunch of them all at once! If you choose "half", it will split each stack you've selected in half.
+    <br/>
+    Sample server messages are shown, as an example of what it might look like to notify the server that items have moved.
+    <br/>
+    I'd also like to imagine being able to create contracts with drag and drop. Perhaps after dropping the items, you could fine tune the quantity and set the location. This is something of a niche use case, and you might need "containers" for that to be really useful.
+  </div>
 <div class="wrap">
   <div id="invA" class="inventory">
     <div class="legend">Inventory A</div>
@@ -144,6 +191,24 @@
       <button data-mode="100">100</button>
     </div>
   </div>
+
+  <div id="contractCreator" class="inventory">
+    <div class="legend">Contract Creator</div>
+    <div class="contract-mode">
+      <select id="contractMode">
+        <option value="ship">Ship Commodity</option>
+        <option value="sell">Sell Commodity</option>
+      </select>
+    </div>
+  </div>
+  <br/>
+
+</div>
+<div class="wrap">
+  <div id="ServerCommands" class="inventory">
+    <div class="legend">Server Commands</div>
+  </div>
+
 </div>
 
 <script>
@@ -228,10 +293,11 @@ function hideAllDropOptions(){
 
 function showDropOptionsFor(inv){
   hideAllDropOptions();
+  inv.classList.add('highlight');
+
   const panel = inv.querySelector('.drop-options');
   if (!panel) return;
   panel.classList.remove('hidden');
-  inv.classList.add('highlight');
   lastHoverInv = inv;
 }
 
@@ -240,6 +306,12 @@ function showDropOptionsFor(inv){
 // ------------------------------
 document.addEventListener('pointerdown', e => {
   const target = e.target;
+  
+  // Prevent selection rectangle when interacting with UI controls
+  if (target.closest('select') || target.closest('option') || target.closest('button')) {
+    return; // ignore pointerdown entirely
+  }
+
   // Start dragging on an item
   if (target.closest('.item')){
     const item = target.closest('.item');
@@ -303,13 +375,23 @@ document.addEventListener('pointerup', e => {
     const el = document.elementFromPoint(e.clientX, e.clientY);
     const btn = el && el.closest('.drop-options button');
     const inv = el && el.closest('.inventory');
+    const contractCreator = el && el.closest('#contractCreator');
+
+    if (contractCreator) {
+      logContractItems(dragData.items);   // print names/quantities
+      // cleanup drag state
+      if (dragData.ghost) dragData.ghost.remove();
+      dragData = null;
+      hideAllDropOptions();
+      clearSelection();
+      return;
+    }
 
     if (btn && inv){
       const mode = btn.dataset.mode;
       applyQuantityTransfer(dragData.items, dragData.originInv, inv, mode);
     } else {
       // if not dropped onto a button, do nothing (snap back)
-      // optional: you could append back to origin or leave where they were
     }
 
     // cleanup
@@ -379,6 +461,9 @@ function inventoryUnderPointer(x,y){
 // Quantity transfer logic
 // ------------------------------
 function applyQuantityTransfer(itemsSet, fromInv, toInv, mode){
+
+  if(fromInv === toInv) return;
+
   // For each item being transferred, compute transfer amount and merge into destination
   itemsSet.forEach(item => {
     const id = item.dataset.id;
@@ -417,13 +502,47 @@ function applyQuantityTransfer(itemsSet, fromInv, toInv, mode){
       clone.querySelector('.qty').textContent = transfer;
       toInv.appendChild(clone);
     }
+
+    logServerCommand(fromInv.id, toInv.id, id, transfer);
   });
 
-  // optionally remove items with zero qty from source inventory
+  // you must remove items with zero qty from source inventory
   Array.from(fromInv.querySelectorAll('.item')).forEach(it => {
     if (parseInt(it.dataset.qty,10) <= 0) it.remove();
   });
 }
+
+function logServerCommand(fromInv, toInv, materialName, quantity) {
+  const container = document.getElementById("ServerCommands");
+
+  const line = document.createElement("div");
+  line.classList.add("server-line");
+
+  // Construct the technical-style command string
+  line.textContent =
+    `STORAGE_TRANSFER_MATERIALS { source: ${fromInv}, target: ${toInv}, material: ${materialName}, amount: ${quantity} }`;
+
+  container.appendChild(line);
+}
+
+function logContractItems(itemsSet) {
+  const container = document.getElementById("contractCreator");
+
+  const block = document.createElement("div");
+  block.classList.add("contract-block");
+
+  itemsSet.forEach(item => {
+    const name = item.dataset.id;          // clean item name
+    const qty = Number(item.dataset.qty);  // item quantity
+
+    const p = document.createElement("p");
+    p.textContent = `Provision ${qty} units of ${name} at Antares Station.`;
+    block.appendChild(p);
+  });
+
+  container.appendChild(block);
+}
+
 
 // ------------------------------
 // Init: sort inventories initially
