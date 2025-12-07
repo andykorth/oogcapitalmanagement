@@ -302,147 +302,143 @@ function showDropOptionsFor(inv){
   panel.classList.remove('hidden');
   lastHoverInv = inv;
 }
-
-// Track which inventory a rectangle selection belongs to
 let selectionInventory = null;
-let pendingDrag = null;
-const DRAG_THRESHOLD = 4; // pixels mouse must move before drag starts
+let pendingItemDrag = null;
+let activeItemDrag = null;
+const DRAG_THRESHOLD = 4; // distance before a drag becomes an item drag
 
-
-// ------------------------------
-// Selection rectangle functions
-// ------------------------------
-document.addEventListener('pointerdown', e => {
+document.addEventListener("pointerdown", e => {
   const target = e.target;
-  const item = target.closest('.item');
+  const item = target.closest(".item");
 
-  // =====================================
-  // CLICKING AN ITEM
-  // =====================================
+  // Clicking an item
   if (item) {
-    const inv = item.closest('.inventory');
+    const inv = item.closest(".inventory");
 
-    // If current selection contains items from a *different* inventory, clear all.
+    // Constrain selection to one inventory
     if (selection.size > 0) {
-      const first = [...selection][0];
-      const firstInv = first.closest('.inventory');
-      if (firstInv !== inv) {
+      const firstSel = [...selection][0];
+      if (firstSel.closest(".inventory") !== inv) {
         clearSelection();
       }
     }
 
     if (e.shiftKey) {
-      // SHIFT-CLICK: TOGGLE THE ITEM
-      if (selection.has(item)) {
-        deselectItem(item);
-      } else {
+      // Toggle selection
+      if (selection.has(item)) deselectItem(item);
+      else selectItem(item);
+    } else {
+      // Normal click: select only this item unless it's already selected
+      if (!selection.has(item)) {
+        clearSelection();
         selectItem(item);
       }
-    } else {
-      // NORMAL CLICK: SELECT ONLY THIS ONE
-      // unless it's selected, then it's a possible drag.
-      clearSelection();
-      selectItem(item);
     }
 
     lastClickedItem = item;
 
-    // Prepare for a possible drag (do NOT start yet)
-    pendingDrag = {
+    // Prepare for a possible item drag
+    pendingItemDrag = {
       startX: e.clientX,
       startY: e.clientY,
       items: new Set(selection),
-      originInv: item.closest('.inventory')
+      originInv: inv
     };
 
     return;
   }
 
-  // =====================================
-  // CLICKING OUTSIDE ANY ITEM → MAYBE rectangle selection
-  // =====================================
+  // Clicking outside items may start a rectangle selection
+  const inv = target.closest(".inventory");
+  const clickingUI =
+    target.closest("select") ||
+    target.closest(".drop-options") ||
+    target.closest(".legend");
 
-  // ONLY start rectangle if clicking inside an inventory and NOT on UI elements
-  const inv = target.closest('.inventory');
-  if (!inv || target.closest('select') || target.closest('.drop-options') || target.closest('.legend')) {
-    // Don't start selection rectangle
+  if (!inv || clickingUI) {
     clearSelection();
     return;
   }
 
   clearSelection();
-
   isSelecting = true;
-  selectionInventory = inv;          // remember which inventory we're selecting in
+  selectionInventory = inv;
 
-  selectionRect = document.createElement('div');
-  selectionRect.id = 'selectionRect';
-  selectionRect.style.left = e.clientX + 'px';
-  selectionRect.style.top = e.clientY + 'px';
+  selectionRect = document.createElement("div");
+  selectionRect.id = "selectionRect";
   selectionRect.startX = e.clientX;
   selectionRect.startY = e.clientY;
+  selectionRect.style.left = e.clientX + "px";
+  selectionRect.style.top = e.clientY + "px";
   document.body.appendChild(selectionRect);
 });
 
-document.addEventListener('pointermove', e => {
-  // If drag has not started yet, check threshold
-  if (pendingDrag && !dragData) {
-    const dx = e.clientX - pendingDrag.startX;
-    const dy = e.clientY - pendingDrag.startY;
+document.addEventListener("pointermove", e => {
+  const inv = inventoryUnderPointer(e.clientX, e.clientY);
+
+  // Check if a pending drag becomes an active item drag
+  if (pendingItemDrag && !activeItemDrag) {
+    const dx = e.clientX - pendingItemDrag.startX;
+    const dy = e.clientY - pendingItemDrag.startY;
     if (Math.hypot(dx, dy) > DRAG_THRESHOLD) {
-      // Threshold exceeded → begin dragging now
-      startGroupDragFromPending(e);
+      console.log("Begin pending item drag.")
+      beginItemDragFromPending(e);
     }
   }
 
-  const inv = inventoryUnderPointer(e.clientX, e.clientY);
-
-  // selection rectangle
-  if (isSelecting && selectionRect){
-    console.log("Selection rectangle during pointer move.");
+  // Update selection rectangle
+  if (isSelecting && selectionRect) {
     const x1 = selectionRect.startX;
     const y1 = selectionRect.startY;
     const x2 = e.clientX;
     const y2 = e.clientY;
-    const left = Math.min(x1,x2), top = Math.min(y1,y2);
-    const width = Math.abs(x1-x2), height = Math.abs(y1-y2);
-    Object.assign(selectionRect.style, { left:left+'px', top:top+'px', width:width+'px', height:height+'px' });
-    updateSelection(left, top, width, height, inv);
+
+    const left = Math.min(x1, x2);
+    const top = Math.min(y1, y2);
+    const width = Math.abs(x1 - x2);
+    const height = Math.abs(y1 - y2);
+
+    Object.assign(selectionRect.style, {
+      left: left + "px",
+      top: top + "px",
+      width: width + "px",
+      height: height + "px"
+    });
+
+    updateSelection(left, top, width, height, selectionInventory);
   }
 
-  // dragging group
-  if (dragData){
-    dragData.ghost.style.left = e.clientX + 'px';
-    dragData.ghost.style.top = e.clientY + 'px';
+  // Move the active item-drag ghost
+  if (activeItemDrag) {
+    activeItemDrag.ghost.style.left = e.clientX + "px";
+    activeItemDrag.ghost.style.top = e.clientY + "px";
 
     if (inv) showDropOptionsFor(inv);
     else hideAllDropOptions();
   }
 });
 
-function startGroupDragFromPending(e) {
-  if (!pendingDrag) return;
+function beginItemDragFromPending(e) {
+  if (!pendingItemDrag) return;
 
-  dragData = {
-    items: pendingDrag.items,
-    originInv: pendingDrag.originInv,
-    ghost: createDragGhost(pendingDrag.items)
+  activeItemDrag = {
+    items: pendingItemDrag.items,
+    originInv: pendingItemDrag.originInv,
+    ghost: createDragGhost(pendingItemDrag.items)
   };
 
-  dragData.ghost.style.left = e.clientX + "px";
-  dragData.ghost.style.top = e.clientY + "px";
+  activeItemDrag.ghost.style.left = e.clientX + "px";
+  activeItemDrag.ghost.style.top = e.clientY + "px";
 
-  pendingDrag = null;  // clear
+  pendingItemDrag = null;
 }
 
-document.addEventListener('pointerup', e => {
+document.addEventListener("pointerup", e => {
+  // If no drag threshold was crossed, this was just a click
+  pendingItemDrag = null;
 
-  // If pointerup happens before drag threshold, it's just a click
-  pendingDrag = null;
-
-  // finish rectangle selection
+  // Finish rectangle selection
   if (isSelecting) {
-    console.log("pointer up while dragging.");
     isSelecting = false;
     selectionInventory = null;
     if (selectionRect) selectionRect.remove();
@@ -450,17 +446,17 @@ document.addEventListener('pointerup', e => {
     return;
   }
 
-  // drop the group
-  if (dragData) {
+  // Handle dropping dragged items
+  if (activeItemDrag) {
     const el = document.elementFromPoint(e.clientX, e.clientY);
-    const btn = el && el.closest('.drop-options button');
-    const inv = el && el.closest('.inventory');
-    const contractCreator = el && el.closest('#contractCreator');
+    const btn = el && el.closest(".drop-options button");
+    const inv = el && el.closest(".inventory");
+    const contractCreator = el && el.closest("#contractCreator");
 
     if (contractCreator) {
-      logContractItems(dragData.items);
-      if (dragData.ghost) dragData.ghost.remove();
-      dragData = null;
+      logContractItems(activeItemDrag.items);
+      if (activeItemDrag.ghost) activeItemDrag.ghost.remove();
+      activeItemDrag = null;
       hideAllDropOptions();
       clearSelection();
       return;
@@ -468,12 +464,16 @@ document.addEventListener('pointerup', e => {
 
     if (btn && inv) {
       const mode = btn.dataset.mode;
-      applyQuantityTransfer(dragData.items, dragData.originInv, inv, mode);
+      applyQuantityTransfer(
+        activeItemDrag.items,
+        activeItemDrag.originInv,
+        inv,
+        mode
+      );
     }
 
-    // cleanup
-    if (dragData.ghost) dragData.ghost.remove();
-    dragData = null;
+    if (activeItemDrag.ghost) activeItemDrag.ghost.remove();
+    activeItemDrag = null;
     hideAllDropOptions();
     cleanupEmptyItems();
     sortInventory(invA);
@@ -482,12 +482,8 @@ document.addEventListener('pointerup', e => {
   }
 });
 
-
-// ------------------------------
-// Selection helpers
-// ------------------------------
 function clearSelection() {
-  selection.forEach(it => it.classList.remove('selected'));
+  selection.forEach(it => it.classList.remove("selected"));
   selection.clear();
 }
 
@@ -501,11 +497,9 @@ function deselectItem(item) {
   item.classList.remove("selected");
 }
 
-// Only select items in SAME INVENTORY
 function updateSelection(left, top, width, height, inv) {
   const rect = { left, top, right: left + width, bottom: top + height };
-
-  const items = inv.querySelectorAll('.item');
+  const items = inv.querySelectorAll(".item");
 
   items.forEach(it => {
     const b = it.getBoundingClientRect();
@@ -520,7 +514,6 @@ function updateSelection(left, top, width, height, inv) {
     else if (selection.has(it)) deselectItem(it);
   });
 }
-
 
 function createDragGhost(items) {
   const ghost = document.createElement("div");
@@ -537,6 +530,7 @@ function createDragGhost(items) {
   document.body.appendChild(ghost);
   return ghost;
 }
+
 
 function inventoryUnderPointer(x,y){
   const el = document.elementFromPoint(x,y);
