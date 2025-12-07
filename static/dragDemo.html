@@ -71,8 +71,6 @@
      outline:2px solid rgba(255,255,255,0.6); transform: scale(1.03);
     }
 
-
-
   #selectionRect {
     position:fixed;
     border:2px dashed rgba(0,200,120,0.35);
@@ -121,6 +119,13 @@
     min-height:44px;
     font-weight:700;
   }
+
+  .server-line {
+    font-family: monospace;
+    white-space: nowrap;
+    width: 100%;           /* force each line to take its own row */
+    flex: 0 0 100%;        /* required when parent is flex */
+  }
   .drop-options button:hover { background:#555; }
 
   /* small helper text */
@@ -160,13 +165,19 @@
 <body>
 
   <div class="about">
-    This inventory drag-drop demo is licensed as public domain.
-    <br/>
+    <p>
+      This inventory drag-drop demo is licensed as public domain.
+    </p>
+    <p>
     Try: Drag a selection box to select multiple items at a time. You can drag a bunch of them all at once! If you choose "half", it will split each stack you've selected in half.
-    <br/>
+    Shift click to select multiple. You can't select across different inventories by design.
+    </p>
+    <p>
     Sample server messages are shown, as an example of what it might look like to notify the server that items have moved.
-    <br/>
-    I'd also like to imagine being able to create contracts with drag and drop. Perhaps after dropping the items, you could fine tune the quantity and set the location. This is something of a niche use case, and you might need "containers" for that to be really useful.
+    </p>
+    <p>
+    Create contracts with drag and drop. Perhaps after dropping the items, you could fine tune the quantity and set the location. This is something of a niche use case, and you might need "containers" for that to be really useful.
+    </p>
   </div>
 <div class="wrap">
   <div id="invA" class="inventory">
