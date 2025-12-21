@@ -107,7 +107,29 @@ _It’ll look something like this:_
 ![alt_text](image8.png)
 
 
-7. _If a contract has not been sent by the fulfilling member. _Send a contract in-game to the person to match the order details in discord.
+7. _If a contract has not been sent by the fulfilling member._ Send a contract in-game to the person to match the order details in discord.
 
-**Note: **If the person who fulfils your order adds the 🫵emoji, that means they would like you to send them the contract, rather than them creating it.
+**Note:** If the person who fulfils your order adds the 🫵emoji, that means they would like you to send them the contract, rather than them creating it.
 
+### Placing multi-product orders (projects)
+
+If you want to order multiple types of products then you can use the /projects command in the #orders channel on discord. For example, if you need multiple construction materials for your next base expansion:
+
+![Example of order for multiple goods as a project order](image.png)
+
+1. To place a project command you first need to construct a project string describing the goods that you require. The format is as follows, with each good separated by a comma: 
+    
+    _QuantityxMaterialTicker@PriceCurrency/u_
+
+    For the earlier example the project string would look like the following:
+
+    _1xBBH@100AIC/u,1xBDE@100AIC/u_
+
+2. Open the channel to post your order (#orders, #orders-ships, #hq-upgrades)
+3. Type /project and hit enter
+4. Enter a name for your project. E.g. Harmonia Expansion
+5. Enter your project string. e.g. 1xBBH@100AIC/u,1xBDE@100AIC/u
+6. Enter the location for the pickup, most often ANT
+7. Click submit.
+
+Tip: If you leave the prompt open for too long it’ll timeout and result in an error when you click submit, so prepare the project string in advance!
