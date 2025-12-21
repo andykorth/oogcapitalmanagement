@@ -168,7 +168,7 @@
       </label>
 
       <label><span>Filter by Material:</span>
-        <input type="text" id="materialFilter" placeholder="e.g. H2O">
+        <input type="text" id="materialFilter" placeholder="e.g. H2O, DW">
       </label>
 
       <label><span>Hide No Prices:</span>
@@ -342,16 +342,7 @@
 
 
   materialFilter.addEventListener("input", () => {
-    const q = materialFilter.value.trim().toUpperCase();
-
-    for (const row of tbody.querySelectorAll("tr[id^='row-']")) {
-      const mat = row.id.replace("row-", "");
-      const match = mat.includes(q);
-      row.style.display = match ? "" : "none";
-
-      const expandRow = document.getElementById(`expand-${mat}`);
-      if (expandRow) expandRow.style.display = match ? "none" : "none";
-    }
+    ApplyFilter();
   });
 
   // Page load logic
@@ -359,9 +350,7 @@
     // this fills in: fullCXData
     const cachedData = getCachedCXData();
     if (cachedData) {
-
       // Determine cache age string
-      
       loadModeledPrices();
       renderTable(); // pass age string so renderTable can show it
     } else {
@@ -378,6 +367,29 @@
     const ageStr = getCachedCXDataAge();
     renderTable();
   });
+
+function ApplyFilter() {
+  const raw = materialFilter.value.toUpperCase();
+  const filters = raw
+    .split(",")
+    .map(s => s.trim())
+    .filter(Boolean);
+
+  for (const row of tbody.querySelectorAll("tr[id^='row-']")) {
+    const mat = row.id.replace("row-", "");
+
+    const match =
+      filters.length === 0 ||
+      filters.some(f => mat.includes(f));
+
+    row.style.display = match ? "" : "none";
+
+    const expandRow = document.getElementById(`expand-${mat}`);
+    if (expandRow) {
+      expandRow.style.display = "none";
+    }
+  }
+}
 
 // GLOBAL: stores all buying/selling orders per material per exchange
 export const fullOrderData = {};
@@ -418,6 +430,8 @@ async function renderTable() {
     headHTML += `<th class="col-check">✔</th>`;
     headHTML += `<th class="col-info">?</th>`;
     headHTML += `<th class="col-ignore">Ignore</th>`;
+  }else{
+    headHTML += `<th class="col-check">✔</th>`;
   }
 
    headHTML += "<th>Material</th>";
@@ -580,6 +594,8 @@ async function renderTable() {
       renderTable(); // re-render to update icon and row highlighting
     });
   });
+
+  ApplyFilter();
 
 }
 

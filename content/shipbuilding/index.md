@@ -52,6 +52,19 @@ OOG Members, please refer to the pinned post in #ship-building for subsidy price
 ![5k unshielded](5kUnshielded.png)
 {{< /twoColImage >}}
 
+
+
+
+{{< twoColImage right="true" imageURL="shielded_2k.png">}}
+
+Shielded 2k ships may be available.
+
+* 10,997,000
+{{< /twoColImage >}}
+
+
+
+
 {{< centerspan >}}
 ![Premium Shipbuilding Logo](oog_premium_shipbuilding.png)
 {{< /centerspan >}}
