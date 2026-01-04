@@ -18,12 +18,12 @@
                 <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
                     <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
 						{{ range (where .Site.Pages "Params.tags" "tool") }}
-                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900" >
                             <a href="{{.Permalink}}">
                                 {{ with .Params.featured_image }}
                                 {{ with resources.Get . }}
                                 {{ $postimage := (.Fill "500x140 webp q90").RelPermalink }}
-                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="500" height="140" loading="lazy" alt="{{ .Title }}" />
+                                <img src="{{ $postimage }}" class="block mx-auto object-fill overflow-hidden rounded-t-lg" width="500" height="140" loading="lazy" alt="{{ .Title }}" />
 
                                 {{ end }}
                                 {{ end }}
