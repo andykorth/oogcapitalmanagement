@@ -40,5 +40,5 @@ Managing cash contributions dilligently has been a lot of effort, but through ca
 {{< calltoaction heading="Join the ADI Gateway Cooperative!" thetext="Are you interested in contributing to a cooperative focused on constructing a gateway? Ownerships shares are proportional to your contribution. Join the cooperative and commit to the rules of the shared-ownership model! " button="Learn more!" buttonlink="/adi-gateway-cooperative/"  color1="#86198f" color2="#4a044e" >}}
 
 
-[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
+[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/85e7buvEP6)
 

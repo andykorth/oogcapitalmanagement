@@ -56,5 +56,5 @@ Our gateway spreadsheet will be updated soon with the extra materials.
 
 The Antares Development Initiative is organizing gateway planning in the best region of space in the universe. It's important to consider both sides of a gateway in planning, the reusability of a gateway as a destination for multiple gateways, and the cost per jump saved, given the upgrades chosen.
 
-[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
+[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/85e7buvEP6)
 

@@ -31,11 +31,11 @@ With the free starter CM, this base costs $390k to construct and makes.... $37,3
 
 ## Antares, the best region
 
-Keep in mind that the Antares Development Initiative gives new players in Antares space 750k AIC grants. For most of these base designs, this is enough to complete your first 500 area base, especially if you get discounted building materials. For more information, join the [Antares Development Initiative Discord](https://discord.gg/gmx7br5XBQ). A pro license is required to receive contracts and grants.
+Keep in mind that the Antares Development Initiative gives new players in Antares space 750k AIC grants. For most of these base designs, this is enough to complete your first 500 area base, especially if you get discounted building materials. For more information, join the [Antares Development Initiative Discord](https://discord.gg/85e7buvEP6). A pro license is required to receive contracts and grants.
 
 However, all of these designs work if you don't get a grant. Build the buildings incrementally. Be sure you save money for production inputs, workforce consumables, and taxes.  
 
-[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
+[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/85e7buvEP6)
 
 ---
 

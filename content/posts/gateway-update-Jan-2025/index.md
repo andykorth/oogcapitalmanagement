@@ -10,6 +10,7 @@ author: Archiel
 authorimage: images/archiel.png
 accessCategories: Posts
 tags: News
+fullWidthArticle: true
 ---
 
 The ADI Gateway Cooperative is an Antares-based regional group focused on constructing gateways. By contributing resources to the gateways, members earn ownership shares proportional to their contributions. By banding together, [co-op members ensure the smooth operation of gateways](/adi-gateway-cooperative/) in Antares and beyond!
@@ -49,5 +50,5 @@ As before, these gateways are planned:
 {{< calltoaction heading="Join the ADI Gateway Cooperative!" thetext="Are you interested in contributing to a cooperative focused on constructing a gateway? Ownerships shares are proportional to your contribution. Join the cooperative and commit to the rules of the shared-ownership model! " button="Learn more!" buttonlink="/adi-gateway-cooperative/"  color1="#86198f" color2="#4a044e" >}}
 
 
-[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/gmx7br5XBQ)
+[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/85e7buvEP6)
 
