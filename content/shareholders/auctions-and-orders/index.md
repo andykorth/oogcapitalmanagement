@@ -119,11 +119,11 @@ If you want to order multiple types of products then you can use the /projects c
 
 1. To place a project command you first need to construct a project string describing the goods that you require. The format is as follows, with each good separated by a comma: 
     
-    _QuantityxMaterialTicker@PriceCurrency/u_
+    `QuantityxMaterialTicker@PriceCurrency/u`
 
     For the earlier example the project string would look like the following:
 
-    _1xBBH@100AIC/u,1xBDE@100AIC/u_
+    `1xBBH@100AIC/u,1xBDE@100AIC/u`
 
 2. Open the channel to post your order (#orders, #orders-ships, #hq-upgrades)
 3. Type /project and hit enter

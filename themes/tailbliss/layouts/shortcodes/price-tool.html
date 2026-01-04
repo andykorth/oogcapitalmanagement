@@ -380,7 +380,7 @@ function ApplyFilter() {
 
     const match =
       filters.length === 0 ||
-      filters.some(f => mat.includes(f));
+      filters.some(f => mat === f);
 
     row.style.display = match ? "" : "none";
 
