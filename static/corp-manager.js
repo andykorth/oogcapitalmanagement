@@ -12,7 +12,6 @@ async function fetchCorpMembers(corpCode) {
       }
     } catch {}
   }
-
   const url = `https://rest.fnar.net/user/corporation/${corpCode}`;
   const response = await fetch(url);
   if (!response.ok) throw new Error("Corporation not found");
@@ -20,6 +19,28 @@ async function fetchCorpMembers(corpCode) {
   localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
   return data;
 }
+
+function loadCorpReport(graphType, height, corpCode) {
+  const reportContainer = document.getElementById("reportContainer");
+
+  if (corpCode == null || corpCode === "") {
+    console.warn("No corpCode");
+    return;
+  }
+
+  const userName = encodeURIComponent(corpCode);
+
+  const iframe = document.createElement("iframe");
+
+  iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${userName}&hideOptions`;
+  iframe.width = "100%";
+  iframe.height = height;
+  iframe.style.border = "none";
+  iframe.loading = "lazy";
+
+  reportContainer.appendChild(iframe);
+}
+
 
 async function fetchCompanyData(companyCode) {
   const cacheKey = `company_${companyCode}`;
@@ -40,12 +61,21 @@ async function fetchCompanyData(companyCode) {
   localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
   return data;
 }
+
 async function displayCorpInfo(corpCode) {
   const status = document.getElementById("corpStatus");
   const table = document.getElementById("corpTable");
   const tbody = table.querySelector("tbody");
   
   const showInactive = document.getElementById("showInactiveCheckbox").checked;
+
+  const reportContainer = document.getElementById("reportContainer");
+  reportContainer.innerHTML = ""; // Clear any existing iframe
+
+  loadCorpReport("type=corpBreakdown&chartType=treemap&metric=volume", 400, corpCode);
+  loadCorpReport("type=compTotals&chartType=treemap&metric=volume&group=corp", 400, corpCode);
+  loadCorpReport("type=compHistory&metric=bases&group=corp", 300, corpCode);
+  loadCorpReport("type=compHistory&metric=volume&group=corp", 300, corpCode);
 
   tbody.innerHTML = "";
   status.textContent = "Loading corporation data...";

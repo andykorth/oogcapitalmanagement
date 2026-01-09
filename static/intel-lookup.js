@@ -163,6 +163,7 @@ function loadCompanyReport(graphType, height, company) {
 
   reportContainer.appendChild(iframe);
 }
+
 async function loadExchangeOrders(companyCode) {
   const container = document.getElementById("exchangeTable");
   container.innerHTML = `<tr><td class="p-2 text-gray-400">Loading exchange data...</td></tr>`;
