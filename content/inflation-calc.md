@@ -13,6 +13,6 @@ fullWidthArticle: true
 tags: tool
 
 type: redirect
-target: https://prun-site-alpha.vercel.app/inflation
+target: https://profitableprun.com/inflation
 ---
 
