@@ -11,7 +11,7 @@ tags: tool
 
 The Galactic Credit Bureau is a public data collection agency that consolidates information on borrowers and provides it to potential lenders.
 
-Submitting information on your borrowers is optional, but if you use this data in making credit-worthyness evaluations, please consider adding your information. To automatically submit your information, join the `76879762` [FIO group}(https://fio.fnar.net), and check the Contract Data box.
+Submitting information on your borrowers is optional, but if you use this data in making credit-worthyness evaluations, please consider adding your information. To automatically submit your information, join the `76879762` [FIO group](https://fio.fnar.net), and check the Contract Data box.
 
 The primary goal of this project is to centralize information about borrowers, so lenders are aware of how many loans a borrower may have. You may report various types of lending:
 
