@@ -1,0 +1,317 @@
+
+<div id="ship-builder-root"></div>
+
+<script type="module">
+
+const SHIP_RECIPES = {
+  "Standard 2k": {
+    SSC: 128,
+    LHP: 94,
+    LFE: 2,
+    MFE: 2,
+    LFL: 1,
+    MSL: 1,
+    SFE: 1,
+    LCB: 1,
+    FSE: 1,
+    QCR: 1,
+    CQM: 1,
+    BR1: 1,
+    FFC: 1
+  },
+  "5k Shields": {
+    SSC: 284,
+    AHP: 159,
+    APT: 159,
+    AWH: 159,
+    SRP: 159,
+    MFE: 2,
+    LFE: 5,
+    SFE: 2,
+    BR2: 1,
+    CQL: 1,
+    FFC: 1,
+    FSE: 1,
+    HYR: 1,
+    HCB: 1,
+    LFL: 1,
+    MSL: 1,
+    RDL: 1,
+    STS: 1
+  }
+};
+
+
+const SHIP_PART_TICKERS = new Set([
+  'MFL', 'LFL', 'MSL', 'LSL', 'LFE', 'MFE', 'SFE', 'LHP', 'SSC', 'LCB', 'VCB', 
+  'WCB', 'HCB', 'FSE', 'QCR', 'CQM', 'CQL', 'BR1', 'BR2', 'FFC', 'BRS', 'CQS', 
+  'CQT', 'GEN', 'AGS', 'BGS', 'SFL', 'SSL', 'SCB', 'STS', 'RDL', 'RDS', 'HPR', 
+  'HYR', 'AEN', 'HTE', 'RCT', 'AHP', 'AWH', 'APT', 'SRP'
+]);
+
+let appState = {
+  inventory: null,     // Map
+  byLocation: null,    // Map
+  selectedShip: null,
+  desiredCount: null
+};
+
+let root;
+let select;
+let desiredInput;
+
+const INVENTORY_URL =
+'https://api.fnar.net/csv/inventory?apikey=e643e7c0-2d21-4508-9172-ead017ac00e1&username=Archiel&include_bases=true&include_warehouses=true&include_ship_stores=true&include_ship_stl_stores=false&include_ship_ftl_stores=false&include_header=true&agg';
+
+const fetchData = async () => {
+  const cacheKey = "ship_inventory_cache";
+  const TTL = 24 * 3600 * 1000;
+
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) {
+    try {
+      const { timestamp, data } = JSON.parse(cached);
+      if (Date.now() - timestamp < TTL) {
+        const { inventory, byLocation } = data;
+        return {
+          inventory: new Map(inventory),
+          byLocation: new Map(byLocation),
+          timestamp
+        };
+      }
+    } catch {}
+  }
+
+  const response = await fetch(INVENTORY_URL);
+  const csv = await response.text();
+  const processed = processData(csv);
+
+  localStorage.setItem(cacheKey, JSON.stringify({
+    timestamp: Date.now(),
+    data: {
+      inventory: [...processed.inventory.entries()],
+      byLocation: [...processed.byLocation.entries()]
+    }
+  }));
+
+  return {
+    ...processed,
+    timestamp: Date.now()
+  };
+};
+
+
+const formatInventoryAge = () => {
+  const cacheKey = "ship_inventory_cache";
+  const cached = localStorage.getItem(cacheKey);
+  if (!cached) return null;
+
+  try {
+    const { timestamp } = JSON.parse(cached);
+    const ageMs = Date.now() - timestamp;
+
+    const seconds = Math.floor(ageMs / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+
+    if (hours > 0) return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
+    if (minutes > 0) return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
+    return `${seconds} second${seconds !== 1 ? "s" : ""} ago`;
+  } catch {
+    return null;
+  }
+};
+
+const calculateBuildCount = (inventory, recipe) => {
+  let maxBuilds = Infinity;
+
+  for (const [ticker, required] of Object.entries(recipe)) {
+    const available = inventory.get(ticker) || 0;
+    maxBuilds = Math.min(maxBuilds, Math.floor(available / required));
+  }
+
+  return Number.isFinite(maxBuilds) ? maxBuilds : 0;
+};
+
+const renderInventoryTable = () => {
+  root.querySelector("table")?.remove();
+
+  const table = createTable(
+    appState.inventory,
+    appState.byLocation,
+    appState.selectedShip,
+    appState.desiredCount
+  );
+
+  root.appendChild(table);
+};
+
+const setupControls = (timestamp) => {
+  const container = document.createElement("div");
+  container.className = "space-y-4 mb-4";
+
+  select = document.createElement("select");
+  select.className = "border px-2 py-1";
+
+  for (const ship of Object.keys(SHIP_RECIPES)) {
+    const opt = document.createElement("option");
+    opt.value = ship;
+    opt.textContent = ship;
+    select.appendChild(opt);
+  }
+
+  select.addEventListener("change", () => {
+    appState.selectedShip = select.value;
+    updateBuildCount();
+    renderInventoryTable();
+  });
+
+  desiredInput = document.createElement("input");
+  desiredInput.type = "number";
+  desiredInput.min = "1";
+  desiredInput.placeholder = "Desired ship count";
+  desiredInput.className = "border px-2 py-1 w-48";
+
+  desiredInput.addEventListener("input", () => {
+    appState.desiredCount = parseInt(desiredInput.value, 10) || null;
+    renderInventoryTable();
+  });
+
+  const result = document.createElement("div");
+  result.id = "build-result";
+  result.className = "font-bold";
+
+  const ageEl = document.createElement("div");
+  ageEl.className = "text-sm text-gray-600";
+  ageEl.textContent = `Inventory data from ${formatInventoryAge(timestamp)}`;
+
+  container.append(select, desiredInput, result, ageEl);
+  root.appendChild(container);
+};
+
+const updateBuildCount = () => {
+  const recipe = SHIP_RECIPES[appState.selectedShip];
+  const count = calculateBuildCount(appState.inventory, recipe);
+
+  document.getElementById("build-result").textContent =
+    `You can build ${count.toLocaleString()} x ${appState.selectedShip}`;
+};
+
+
+
+const processData = (csvData) => {
+  const inventory = new Map();
+  const byLocation = new Map();
+
+  const rows = csvData.trim().split('\n');
+  const header = rows.shift().trim().split(',');
+
+  const tickerIndex = header.indexOf('Ticker');
+  const amountIndex = header.indexOf('Amount');
+  const locationIndex = header.indexOf('NaturalId');
+
+  for (const row of rows) {
+    const values = row.split(',');
+    const ticker = values[tickerIndex];
+    const amount = parseInt(values[amountIndex], 10);
+    const location = values[locationIndex];
+
+    if (!SHIP_PART_TICKERS.has(ticker)) continue;
+
+    // total
+    inventory.set(ticker, (inventory.get(ticker) || 0) + amount);
+
+    // by location
+    if (!byLocation.has(ticker)) byLocation.set(ticker, {});
+    byLocation.get(ticker)[location] =
+      (byLocation.get(ticker)[location] || 0) + amount;
+  }
+
+  return { inventory, byLocation };
+};
+
+const computeMissing = (ticker, inventory, recipe, desiredCount) => {
+  if (!desiredCount || !recipe[ticker]) return "";
+
+  const needed = recipe[ticker] * desiredCount;
+  const have = inventory.get(ticker) || 0;
+
+  const missing = needed - have;
+  return missing > 0 ? missing.toLocaleString() : "0";
+};
+
+const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
+  const recipe = SHIP_RECIPES[selectedShip] || {};
+
+  const table = document.createElement('table');
+  table.className = 'table-auto w-full';
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Total</th>
+        <th>ANT</th>
+        <th>Hephaestus</th>
+        <th>Missing</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+
+  const sorted = [...inventory.keys()].sort();
+
+  for (const ticker of sorted) {
+    const total = inventory.get(ticker) || 0;
+    const loc = byLocation.get(ticker) || {};
+
+    const ant = loc["ANT"] || 0;
+    const hep = loc["ZV-307c"] || 0;
+
+    const missing = computeMissing(
+      ticker,
+      inventory,
+      recipe,
+      desiredCount
+    );
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${ticker}</td>
+      <td>${total.toLocaleString()}</td>
+      <td>${ant.toLocaleString()}</td>
+      <td>${hep.toLocaleString()}</td>
+      <td>${missing}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  return table;
+};
+
+document.addEventListener("DOMContentLoaded", async () => {
+  root = document.getElementById("ship-builder-root");
+  if (!root) return;
+
+  root.innerHTML = "<p>Loading inventory data...</p>";
+
+  const data = await fetchData();
+  if (!data) {
+    root.innerHTML = "<p>Failed to load inventory data.</p>";
+    return;
+  }
+
+  appState.inventory = data.inventory;
+  appState.byLocation = data.byLocation;
+  appState.selectedShip = Object.keys(SHIP_RECIPES)[0];
+
+  root.innerHTML = "";
+
+  setupControls(data.timestamp);
+  updateBuildCount();
+  renderInventoryTable();
+});
+	
+</script>
