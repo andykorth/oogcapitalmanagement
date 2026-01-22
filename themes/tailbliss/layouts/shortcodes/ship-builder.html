@@ -122,17 +122,6 @@ const formatInventoryAge = () => {
   }
 };
 
-const calculateBuildCount = (inventory, recipe) => {
-  let maxBuilds = Infinity;
-
-  for (const [ticker, required] of Object.entries(recipe)) {
-    const available = inventory.get(ticker) || 0;
-    maxBuilds = Math.min(maxBuilds, Math.floor(available / required));
-  }
-
-  return Number.isFinite(maxBuilds) ? maxBuilds : 0;
-};
-
 const renderInventoryTable = () => {
   root.querySelector("table")?.remove();
 
@@ -191,13 +180,40 @@ const setupControls = (timestamp) => {
 
 const updateBuildCount = () => {
   const recipe = SHIP_RECIPES[appState.selectedShip];
-  const count = calculateBuildCount(appState.inventory, recipe);
+  const count = calculateBuildCount(appState.byLocation, recipe);
 
   document.getElementById("build-result").textContent =
     `You can build ${count.toLocaleString()} x ${appState.selectedShip}`;
 };
 
 
+const calculateBuildCount = (byLocation, recipe) => {
+  let maxBuilds = Infinity;
+
+  for (const [ticker, required] of Object.entries(recipe)) {
+
+	const loc = byLocation.get(ticker) || {};
+
+	const ant = loc["ANT"] || 0;
+	const hep = loc["ZV-307c"] || 0;
+	const available = ant + hep;
+    maxBuilds = Math.min(maxBuilds, Math.floor(available / required));
+  }
+
+  return Number.isFinite(maxBuilds) ? maxBuilds : 0;
+};
+
+const computeMissing = (ticker, available, recipe, desiredCount) => {
+  if (!desiredCount) return "";
+
+  const perShip = recipe[ticker];
+  if (!perShip) return ""; // material not used by this ship
+
+  const needed = perShip * desiredCount;
+  const missing = Math.max(needed - available, 0);
+
+  return missing ? missing.toLocaleString() : "";
+};
 
 const processData = (csvData) => {
   const inventory = new Map();
@@ -230,15 +246,6 @@ const processData = (csvData) => {
   return { inventory, byLocation };
 };
 
-const computeMissing = (ticker, inventory, recipe, desiredCount) => {
-  if (!desiredCount || !recipe[ticker]) return "";
-
-  const needed = recipe[ticker] * desiredCount;
-  const have = inventory.get(ticker) || 0;
-
-  const missing = needed - have;
-  return missing > 0 ? missing.toLocaleString() : "0";
-};
 
 const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
   const recipe = SHIP_RECIPES[selectedShip] || {};
@@ -268,10 +275,11 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
 
     const ant = loc["ANT"] || 0;
     const hep = loc["ZV-307c"] || 0;
+  	const available = ant + hep;
 
     const missing = computeMissing(
       ticker,
-      inventory,
+      available,
       recipe,
       desiredCount
     );
