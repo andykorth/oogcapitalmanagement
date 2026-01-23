@@ -1,21 +1,57 @@
+<style>
+#ship-builder-root .input-row label {
+	flex: 0 0 130px;
+	text-align: right;
+	margin-right: 0.5rem;
+	display: inline;
+	min-width: 130px;
+}
+
+#ship-builder-root .inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.8rem;
+}
+</style>
 
 <div id="ship-builder-root" class="space-y-6">
 
-  <!-- Controls -->
-  <section class="space-y-4">
-    <div>
-      <label for="shipSelect" class="block font-semibold">
+	<h1>Current Inventory:</h1>
+	<div class="two-col">
+		<div class="col">
+			<div id="inventoryAge" class="text-sm text-gray-600"></div>
+
+			<div id="ship-summary-root" class="mb-4"></div>
+
+		</div>
+		<div class="col">
+			<div id="ship-detail" class="mb-4"></div>
+
+		</div>
+
+	</div>
+
+	<h1>Inventory Details:</h1>
+
+	<p class="text-sm text-gray-600">
+		This section is used by OOG ship builders to order the additional parts to reach the desired ship count. Missing materials will be calculated from ANT + Hephaestus only.
+	</p>
+	<p class="text-sm text-gray-600">
+		Select the ship type to filter inventory to that blueprint, otherwise all ship parts will be shown.
+	</p>
+  <section class="inputs">
+    <div class="input-row">
+      <label for="shipSelect" class="font-semibold">
         Ship model
       </label>
       <select id="shipSelect" class="border px-2 py-1">
         <!-- options filled by JS -->
       </select>
-      <p class="text-sm text-gray-600">
-        Select the ship type you want to build.
-      </p>
+
     </div>
 
-    <div>
+    <div class="input-row">
       <label for="desiredCount" class="block font-semibold">
         Desired ship count
       </label>
@@ -26,13 +62,9 @@
         class="border px-2 py-1 w-48"
         placeholder="Leave blank to disable"
       />
-      <p class="text-sm text-gray-600">
-        When set, missing materials will be calculated from ANT + Hephaestus only.
-      </p>
     </div>
 
     <div id="buildResult" class="font-bold"></div>
-    <div id="inventoryAge" class="text-sm text-gray-600"></div>
   </section>
 
   <!-- Table goes here -->
@@ -49,25 +81,43 @@ const desiredInput = document.getElementById("desiredCount");
 const resultEl = document.getElementById("buildResult");
 const ageEl = document.getElementById("inventoryAge");
 const tableContainer = document.getElementById("inventoryTableContainer");
+const shipDetailContainer = document.getElementById("ship-detail");
+
+
+
 let select;
 
 const SHIP_RECIPES = {
   "Standard 2k": {
-    SSC: 128,
-    LHP: 94,
-    LFE: 2,
-    MFE: 2,
-    LFL: 1,
-    MSL: 1,
-    SFE: 1,
-    LCB: 1,
-    FSE: 1,
-    QCR: 1,
-    CQM: 1,
-    BR1: 1,
-    FFC: 1
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+      SSC: 128,
+      LHP: 94,
+      LFE: 2,
+      MFE: 2,
+      LFL: 1,
+      MSL: 1,
+      SFE: 1,
+      LCB: 1,
+      FSE: 1,
+      QCR: 1,
+      CQM: 1,
+      BR1: 1,
+      FFC: 1
+    }
   },
   "5k Shields": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
     SSC: 284,
     AHP: 159,
     APT: 159,
@@ -86,6 +136,186 @@ const SHIP_RECIPES = {
     MSL: 1,
     RDL: 1,
     STS: 1
+	}
+  },
+
+  "5k Unshielded": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
+    BR1: 1,
+    CQL: 1,
+    FFC: 1,
+    FSE: 1,
+    HCB: 1,
+    LFE: 5,
+    LFL: 1,
+    LHP: 157,
+    MFE: 2,
+    MSL: 1,
+    QCR: 1,
+    SFE: 1,
+    SSC: 278,
+    STS: 1,
+    WCB: 1
+	}
+  },
+
+  "2k All Shields": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
+    SSC: 128,
+    AHP: 94,
+    APT: 94,
+    AWH: 94,
+    SRP: 94,
+    LFE: 2,
+    MFE: 2,
+    SFE: 1,
+    BR1: 1,
+    CQM: 1,
+    FFC: 1,
+    FSE: 1,
+    LCB: 1,
+    LFL: 1,
+    MSL: 1,
+    QCR: 1,
+    RDL: 1,
+    STS: 1
+	}
+  },
+
+  "WCB, All Shields": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
+    SSC: 72,
+    LHP: 64,
+    AWH: 64,
+    SFE: 2,
+    MFE: 1,
+    LFE: 1,
+    BR1: 1,
+    CQS: 1,
+    FFC: 1,
+    FSE: 1,
+    LFL: 1,
+    MFL: 1,
+    QCR: 1,
+    SSL: 1,
+    WCB: 1,
+    AGS: 1
+	}
+  },
+
+  "New WCB": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
+    SSC: 78,
+    LHP: 68,
+    MFE: 2,
+    LFE: 3,
+    LFL: 1,
+    MSL: 1,
+    SFE: 1,
+    FSE: 1,
+    QCR: 1,
+    CQL: 1,
+    BR1: 1,
+    FFC: 1,
+    HAM: 1,
+    HCB: 1,
+    SSL: 1,
+    BRS: 1,
+    CQL: 1,
+    WCB: 1,
+    STS: 1
+	}
+  },
+
+  "STL HCB": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
+    SSC: 256,
+    LHP: 152,
+    HCB: 1,
+    FSE: 1,
+    CQL: 1,
+    BR1: 1,
+    FFC: 1,
+    QCR: 1
+	}
+  },
+
+  "Standard Gas Hauler": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
+    SSC: 178,
+    LHP: 117,
+    SFE: 1,
+    MFE: 2,
+    LFL: 1,
+    MSL: 1,
+    FSE: 1,
+    QCR: 1,
+    CQL: 1,
+    BR1: 1,
+    FFC: 1
+	}
+  },
+
+  "Colony Ship": {
+    name: "Standard 2k",
+    price: 6150000,
+    internalSalesOnly: false,
+    imageUrl: "/images/ships/standard-2k.png",
+
+    parts: {
+
+    SSC: 406,
+    AHP: 202,
+    APT: 202,
+    AWH: 202,
+    BR2: 1,
+    CQL: 1,
+    FSE: 1,
+    HCB: 1,
+    HTE: 1,
+    VOR: 1,
+    VFT: 1,
+    LSL: 1,
+    RDL: 1,
+    AGS: 1,
+    STS: 1
+	}
   }
 };
 
@@ -106,6 +336,12 @@ let appState = {
 
 const INVENTORY_URL =
 'https://api.fnar.net/csv/inventory?apikey=e643e7c0-2d21-4508-9172-ead017ac00e1&username=Archiel&include_bases=true&include_warehouses=true&include_ship_stores=true&include_ship_stl_stores=false&include_ship_ftl_stores=false&include_header=true&agg';
+
+// Add "None" option first
+const noneOpt = document.createElement("option");
+noneOpt.value = "";
+noneOpt.textContent = "None (Show All Materials)";
+shipSelect.appendChild(noneOpt);
 
 for (const shipName of Object.keys(SHIP_RECIPES)) {
   const opt = document.createElement("option");
@@ -173,8 +409,51 @@ const formatInventoryAge = () => {
   }
 };
 
+const renderShipSummaryTable = () => {
+  const root = document.getElementById("ship-summary-root");
+  root.innerHTML = "";
+
+  if (!appState.byLocation) return;
+
+  const table = document.createElement("table");
+  table.className = "table-auto border-collapse text-sm";
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="text-left pr-4">Ship Model</th>
+        <th class="text-right">In Stock</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+
+  for (const shipName of Object.keys(SHIP_RECIPES)) {
+    const recipe = SHIP_RECIPES[shipName].parts;
+    const count = calculateBuildCount(appState.byLocation, recipe);
+
+	const tr = document.createElement("tr");
+	tr.classList.add("ship-row");
+	tr.addEventListener("click", () => {
+		shipSelect.value = shipName;
+		renderInventoryTable();
+	});
+	tr.innerHTML = `
+      <td class="pr-4">${shipName}</td>
+      <td class="text-right font-mono">${count.toLocaleString()}</td>
+    `;
+
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  root.appendChild(table);
+};
+
+
 const renderInventoryTable = () => {
-  const selectedShip = shipSelect.value;
+  const selectedShip = shipSelect.value || null;
   const desiredCount = parseInt(desiredInput.value, 10) || null;
 
   const table = createTable(
@@ -187,19 +466,27 @@ const renderInventoryTable = () => {
   tableContainer.querySelector("table")?.remove();
   tableContainer.appendChild(table);
 
-  // Update build count text
-  const recipe = SHIP_RECIPES[selectedShip];
+  if (!selectedShip) {
+    resultEl.textContent = "Showing all ship parts.";
+    return;
+  }
+
+  const recipe = SHIP_RECIPES[selectedShip].parts;
   const buildCount = calculateBuildCount(appState.byLocation, recipe);
-  resultEl.textContent = `You can build ${buildCount.toLocaleString()} x ${selectedShip}`;
+  resultEl.textContent = `I have parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
+
+  shipDetailContainer.textContent = resultEl.textContent;
+
 };
+
 
 shipSelect.addEventListener("change", renderInventoryTable);
 desiredInput.addEventListener("input", renderInventoryTable);
 
-const calculateBuildCount = (byLocation, recipe) => {
+const calculateBuildCount = (byLocation, parts) => {
   let maxBuilds = Infinity;
 
-  for (const [ticker, required] of Object.entries(recipe)) {
+  for (const [ticker, required] of Object.entries(parts)) {
 
 	const loc = byLocation.get(ticker) || {};
 
@@ -213,7 +500,7 @@ const calculateBuildCount = (byLocation, recipe) => {
 };
 
 const computeMissing = (ticker, available, recipe, desiredCount) => {
-  if (!desiredCount) return "";
+  if (!desiredCount || !recipe) return "";
 
   const perShip = recipe[ticker];
   if (!perShip) return ""; // material not used by this ship
@@ -257,61 +544,65 @@ const processData = (csvData) => {
 
 
 const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
-  const recipe = SHIP_RECIPES[selectedShip] || {};
 
-  const table = document.createElement('table');
-  table.className = 'table-auto w-full';
+	const table = document.createElement('table');
+	table.style = 'width:400px';
 
-  table.innerHTML = `
-    <thead>
-      <tr>
-        <th>Ticker</th>
-        <th>Total</th>
-        <th>ANT</th>
-        <th>Hephaestus</th>
-        <th>Missing</th>
-      </tr>
-    </thead>
-  `;
+	table.innerHTML = `
+	<thead>
+		<tr>
+		<th>Ticker</th>
+		<th>Total</th>
+		<th>ANT</th>
+		<th>Hephaestus</th>
+		<th>Missing</th>
+		</tr>
+	</thead>
+	`;
 
-  const tbody = document.createElement("tbody");
 
-  const sorted = [...inventory.keys()].sort();
+	const recipe = selectedShip ? SHIP_RECIPES[selectedShip].parts : null;
 
-  for (const ticker of sorted) {
-    const total = inventory.get(ticker) || 0;
-    const loc = byLocation.get(ticker) || {};
+	const sorted = selectedShip
+		? Object.keys(recipe).sort()           // only materials in ship recipe
+		: [...inventory.keys()].sort();        // show all ship parts
+	
+		const tbody = document.createElement("tbody");
+		
+	for (const ticker of sorted) {
+		const total = inventory.get(ticker) || 0;
+		const loc = byLocation.get(ticker) || {};
 
-    const ant = loc["ANT"] || 0;
-    const hep = loc["ZV-307c"] || 0;
-  	const available = ant + hep;
+		const ant = loc["ANT"] || 0;
+		const hep = loc["ZV-307c"] || 0;
+		const available = ant + hep;
 
-    const missing = computeMissing(
-      ticker,
-      available,
-      recipe,
-      desiredCount
-    );
+		const missing = computeMissing(
+			ticker,
+			available,
+			recipe,
+			desiredCount
+		);
 
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${ticker}</td>
-      <td>${total.toLocaleString()}</td>
-      <td>${ant.toLocaleString()}</td>
-      <td>${hep.toLocaleString()}</td>
-      <td>${missing}</td>
-    `;
-    tbody.appendChild(tr);
-  }
+		const tr = document.createElement("tr");
+		tr.innerHTML = `
+			<td>${ticker}</td>
+			<td>${total.toLocaleString()}</td>
+			<td>${ant.toLocaleString()}</td>
+			<td>${hep.toLocaleString()}</td>
+			<td>${missing}</td>
+		`;
+		tbody.appendChild(tr);
+	}
 
-  table.appendChild(tbody);
-  return table;
+	table.appendChild(tbody);
+	return table;
 };
 
 
 document.addEventListener("DOMContentLoaded", async () => {
   root.classList.add("opacity-50");
-  resultEl.textContent = "Loading inventory data…";
+  resultEl.textContent = "Loading inventory data...";
 
   const data = await fetchData();
   if (!data) {
@@ -325,6 +616,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   ageEl.textContent = `Inventory data from ${formatInventoryAge()}`;
 
   root.classList.remove("opacity-50");
+
+  renderShipSummaryTable();
   renderInventoryTable();
 });
 
