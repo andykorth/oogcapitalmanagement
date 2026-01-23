@@ -43,7 +43,7 @@
   <section class="inputs">
     <div class="input-row">
       <label for="shipSelect" class="font-semibold">
-        Ship model
+        Ship Blueprint
       </label>
       <select id="shipSelect" class="border px-2 py-1">
         <!-- options filled by JS -->
@@ -72,6 +72,10 @@
 
 </div>
 
+<div id="ship-image-modal" class="ship-image-modal hidden">
+  <div class="ship-image-backdrop" onclick="closeShipImageModal()"></div>
+  <img id="ship-image-modal-img" />
+</div>
 
 <script type="module">
 
@@ -92,7 +96,7 @@ const SHIP_RECIPES = {
     name: "Standard 2k",
     price: 6150000,
     internalSalesOnly: false,
-    imageUrl: "/images/ships/standard-2k.png",
+    imageUrl: "/shipbuilding/OOG2k2025.png",
 
     parts: {
       SSC: 128,
@@ -111,93 +115,91 @@ const SHIP_RECIPES = {
     }
   },
   "5k Shields": {
-    name: "Standard 2k",
-    price: 6150000,
+    name: "5k Shields",
+    price: 19700000,
     internalSalesOnly: false,
-    imageUrl: "/images/ships/standard-2k.png",
-
+    imageUrl: "/shipbuilding/shielded5k.png",
     parts: {
 
-    SSC: 284,
-    AHP: 159,
-    APT: 159,
-    AWH: 159,
-    SRP: 159,
-    MFE: 2,
-    LFE: 5,
-    SFE: 2,
-    BR2: 1,
-    CQL: 1,
-    FFC: 1,
-    FSE: 1,
-    HYR: 1,
-    HCB: 1,
-    LFL: 1,
-    MSL: 1,
-    RDL: 1,
-    STS: 1
+		SSC: 284,
+		AHP: 159,
+		APT: 159,
+		AWH: 159,
+		SRP: 159,
+		MFE: 2,
+		LFE: 5,
+		SFE: 2,
+		BR2: 1,
+		CQL: 1,
+		FFC: 1,
+		FSE: 1,
+		HYR: 1,
+		HCB: 1,
+		LFL: 1,
+		MSL: 1,
+		RDL: 1,
+		STS: 1
 	}
   },
 
   "5k Unshielded": {
-    name: "Standard 2k",
-    price: 6150000,
+    name: "5k Unshielded",
+    price: 11500000,
     internalSalesOnly: false,
-    imageUrl: "/images/ships/standard-2k.png",
+    imageUrl: "/shipbuilding/5kUnshielded.png",
 
     parts: {
 
-    BR1: 1,
-    CQL: 1,
-    FFC: 1,
-    FSE: 1,
-    HCB: 1,
-    LFE: 5,
-    LFL: 1,
-    LHP: 157,
-    MFE: 2,
-    MSL: 1,
-    QCR: 1,
-    SFE: 1,
-    SSC: 278,
-    STS: 1,
-    WCB: 1
+		BR1: 1,
+		CQL: 1,
+		FFC: 1,
+		FSE: 1,
+		HCB: 1,
+		LFE: 5,
+		LFL: 1,
+		LHP: 157,
+		MFE: 2,
+		MSL: 1,
+		QCR: 1,
+		SFE: 1,
+		SSC: 278,
+		STS: 1,
+		WCB: 1
 	}
   },
 
   "2k All Shields": {
     name: "Standard 2k",
-    price: 6150000,
+    price: 10997000,
     internalSalesOnly: false,
-    imageUrl: "/images/ships/standard-2k.png",
+    imageUrl: "/shipbuilding/shielded_2k.png",
 
     parts: {
-
-    SSC: 128,
-    AHP: 94,
-    APT: 94,
-    AWH: 94,
-    SRP: 94,
-    LFE: 2,
-    MFE: 2,
-    SFE: 1,
-    BR1: 1,
-    CQM: 1,
-    FFC: 1,
-    FSE: 1,
-    LCB: 1,
-    LFL: 1,
-    MSL: 1,
-    QCR: 1,
-    RDL: 1,
-    STS: 1
+		SSC: 128,
+		AHP: 94,
+		APT: 94,
+		AWH: 94,
+		SRP: 94,
+		LFE: 2,
+		MFE: 2,
+		SFE: 1,
+		BR1: 1,
+		CQM: 1,
+		FFC: 1,
+		FSE: 1,
+		LCB: 1,
+		LFL: 1,
+		MSL: 1,
+		QCR: 1,
+		RDL: 1,
+		STS: 1
 	}
   },
 
   "WCB, All Shields": {
-    name: "Standard 2k",
-    price: 6150000,
-    internalSalesOnly: false,
+    name: "WCB, All Shields",
+    price: 7200000,
+    internalSalesOnly: true,
     imageUrl: "/images/ships/standard-2k.png",
 
     parts: {
@@ -222,9 +224,9 @@ const SHIP_RECIPES = {
   },
 
   "New WCB": {
-    name: "Standard 2k",
-    price: 6150000,
-    internalSalesOnly: false,
+    name: "New WCB",
+    price: 5900000,
+    internalSalesOnly: true,
     imageUrl: "/images/ships/standard-2k.png",
 
     parts: {
@@ -252,9 +254,9 @@ const SHIP_RECIPES = {
   },
 
   "STL HCB": {
-    name: "Standard 2k",
-    price: 6150000,
-    internalSalesOnly: false,
+    name: "STL HCB",
+    price: 7800000,
+    internalSalesOnly: true,
     imageUrl: "/images/ships/standard-2k.png",
 
     parts: {
@@ -271,9 +273,9 @@ const SHIP_RECIPES = {
   },
 
   "Standard Gas Hauler": {
-    name: "Standard 2k",
-    price: 6150000,
-    internalSalesOnly: false,
+    name: "Standard Gas Hauler",
+    price: 7600000,
+    internalSalesOnly: true,
     imageUrl: "/images/ships/standard-2k.png",
 
     parts: {
@@ -293,28 +295,27 @@ const SHIP_RECIPES = {
   },
 
   "Colony Ship": {
-    name: "Standard 2k",
-    price: 6150000,
+    name: "Colony Ship",
+    price: 34800000,
     internalSalesOnly: false,
     imageUrl: "/images/ships/standard-2k.png",
 
     parts: {
-
-    SSC: 406,
-    AHP: 202,
-    APT: 202,
-    AWH: 202,
-    BR2: 1,
-    CQL: 1,
-    FSE: 1,
-    HCB: 1,
-    HTE: 1,
-    VOR: 1,
-    VFT: 1,
-    LSL: 1,
-    RDL: 1,
-    AGS: 1,
-    STS: 1
+      SSC: 406,
+      AHP: 202,
+      APT: 202,
+      AWH: 202,
+      BR2: 1,
+      CQL: 1,
+      FSE: 1,
+      HCB: 1,
+      HTE: 1,
+      VOR: 1,
+      VFT: 1,
+      LSL: 1,
+      RDL: 1,
+      AGS: 1,
+      STS: 1
 	}
   }
 };
@@ -352,7 +353,7 @@ for (const shipName of Object.keys(SHIP_RECIPES)) {
 
 const fetchData = async () => {
   const cacheKey = "ship_inventory_cache";
-  const TTL = 24 * 3600 * 1000;
+  const TTL = 4 * 3600 * 1000;
 
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
@@ -421,8 +422,9 @@ const renderShipSummaryTable = () => {
   table.innerHTML = `
     <thead>
       <tr>
-        <th class="text-left pr-4">Ship Model</th>
+        <th class="text-left pr-4">Ship Design</th>
         <th class="text-right">In Stock</th>
+        <th class="text-right pr-4">Cost</th>
       </tr>
     </thead>
   `;
@@ -430,8 +432,8 @@ const renderShipSummaryTable = () => {
   const tbody = document.createElement("tbody");
 
   for (const shipName of Object.keys(SHIP_RECIPES)) {
-    const recipe = SHIP_RECIPES[shipName].parts;
-    const count = calculateBuildCount(appState.byLocation, recipe);
+    const recipe = SHIP_RECIPES[shipName];
+    const count = calculateBuildCount(appState.byLocation, recipe.parts);
 
 	const tr = document.createElement("tr");
 	tr.classList.add("ship-row");
@@ -442,6 +444,7 @@ const renderShipSummaryTable = () => {
 	tr.innerHTML = `
       <td class="pr-4">${shipName}</td>
       <td class="text-right font-mono">${count.toLocaleString()}</td>
+      <td class="pr-4">${recipe.price.toLocaleString()} AIC</td>
     `;
 
     tbody.appendChild(tr);
@@ -466,18 +469,66 @@ const renderInventoryTable = () => {
   tableContainer.querySelector("table")?.remove();
   tableContainer.appendChild(table);
 
-  if (!selectedShip) {
+
+  if (!selectedShip || selectedShip === ""){
     resultEl.textContent = "Showing all ship parts.";
+  }else{
+	const recipe = SHIP_RECIPES[selectedShip]?.parts;
+	const buildCount = calculateBuildCount(appState.byLocation, recipe);
+
+	resultEl.textContent = `I have parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
+  }
+
+  renderShipDetails(selectedShip)
+};
+
+function renderShipDetails(selectedShip) {
+  if (!selectedShip || selectedShip === "") {
+    shipDetailContainer.textContent = "Please click a table row to select a ship.";
     return;
   }
 
-  const recipe = SHIP_RECIPES[selectedShip].parts;
+  const ship = SHIP_RECIPES[selectedShip];
+  const recipe = ship.parts;
   const buildCount = calculateBuildCount(appState.byLocation, recipe);
-  resultEl.textContent = `I have parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
 
-  shipDetailContainer.textContent = resultEl.textContent;
+  const priceText = ship.price
+    ? ship.price.toLocaleString() + " AIC"
+    : "Price unavailable";
 
-};
+  const stockStatus =
+    buildCount === 0
+      ? `<span class="ship-status out">Out of stock</span>`
+      : `<span class="ship-status in">In stock</span>`;
+
+  const internalNote = ship.internalSalesOnly
+    ? `<div class="ship-note">Not for public sale — internal only</div>`
+    : "";
+
+  const buildCountNote = buildCount > 0
+    ? `<div class="ship-build-count">Quantity in Stock: ${buildCount.toLocaleString()}</div>`
+    : "";
+
+  shipDetailContainer.innerHTML = `
+    <div class="ship-card">
+      <div class="ship-card-info">
+        <div class="ship-title">${ship.name}</div>
+        <div class="ship-price">${priceText}</div>
+        ${stockStatus}
+        ${internalNote}
+        ${buildCountNote}
+      </div>
+		<div class="ship-card-image">
+		<img 
+			src="${ship.imageUrl}" 
+			alt="${ship.name}" 
+			class="ship-preview-image"
+			onclick="openShipImageModal('${ship.imageUrl}', '${ship.name}')"
+		>
+		</div>
+    </div>
+  `;
+}
 
 
 shipSelect.addEventListener("change", renderInventoryTable);
@@ -621,5 +672,24 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderInventoryTable();
 });
 
-	
+window.openShipImageModal = (src, alt) => {
+  const modal = document.getElementById("ship-image-modal");
+  const img = document.getElementById("ship-image-modal-img");
+
+  img.src = src;
+  img.alt = alt;
+
+  modal.classList.remove("hidden");
+};
+
+window.closeShipImageModal = () => {
+  document.getElementById("ship-image-modal").classList.add("hidden");
+};
+
+// Close on ESC
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeShipImageModal();
+});
+
+
 </script>
