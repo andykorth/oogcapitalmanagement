@@ -1,7 +1,55 @@
 
-<div id="ship-builder-root"></div>
+<div id="ship-builder-root" class="space-y-6">
+
+  <!-- Controls -->
+  <section class="space-y-4">
+    <div>
+      <label for="shipSelect" class="block font-semibold">
+        Ship model
+      </label>
+      <select id="shipSelect" class="border px-2 py-1">
+        <!-- options filled by JS -->
+      </select>
+      <p class="text-sm text-gray-600">
+        Select the ship type you want to build.
+      </p>
+    </div>
+
+    <div>
+      <label for="desiredCount" class="block font-semibold">
+        Desired ship count
+      </label>
+      <input
+        id="desiredCount"
+        type="number"
+        min="1"
+        class="border px-2 py-1 w-48"
+        placeholder="Leave blank to disable"
+      />
+      <p class="text-sm text-gray-600">
+        When set, missing materials will be calculated from ANT + Hephaestus only.
+      </p>
+    </div>
+
+    <div id="buildResult" class="font-bold"></div>
+    <div id="inventoryAge" class="text-sm text-gray-600"></div>
+  </section>
+
+  <!-- Table goes here -->
+  <section id="inventoryTableContainer"></section>
+
+</div>
+
 
 <script type="module">
+
+const root = document.getElementById("ship-builder-root");
+const shipSelect = document.getElementById("shipSelect");
+const desiredInput = document.getElementById("desiredCount");
+const resultEl = document.getElementById("buildResult");
+const ageEl = document.getElementById("inventoryAge");
+const tableContainer = document.getElementById("inventoryTableContainer");
+let select;
 
 const SHIP_RECIPES = {
   "Standard 2k": {
@@ -56,12 +104,15 @@ let appState = {
   desiredCount: null
 };
 
-let root;
-let select;
-let desiredInput;
-
 const INVENTORY_URL =
 'https://api.fnar.net/csv/inventory?apikey=e643e7c0-2d21-4508-9172-ead017ac00e1&username=Archiel&include_bases=true&include_warehouses=true&include_ship_stores=true&include_ship_stl_stores=false&include_ship_ftl_stores=false&include_header=true&agg';
+
+for (const shipName of Object.keys(SHIP_RECIPES)) {
+  const opt = document.createElement("option");
+  opt.value = shipName;
+  opt.textContent = shipName;
+  shipSelect.appendChild(opt);
+}
 
 const fetchData = async () => {
   const cacheKey = "ship_inventory_cache";
@@ -123,69 +174,27 @@ const formatInventoryAge = () => {
 };
 
 const renderInventoryTable = () => {
-  root.querySelector("table")?.remove();
+  const selectedShip = shipSelect.value;
+  const desiredCount = parseInt(desiredInput.value, 10) || null;
 
   const table = createTable(
     appState.inventory,
     appState.byLocation,
-    appState.selectedShip,
-    appState.desiredCount
+    selectedShip,
+    desiredCount
   );
 
-  root.appendChild(table);
+  tableContainer.querySelector("table")?.remove();
+  tableContainer.appendChild(table);
+
+  // Update build count text
+  const recipe = SHIP_RECIPES[selectedShip];
+  const buildCount = calculateBuildCount(appState.byLocation, recipe);
+  resultEl.textContent = `You can build ${buildCount.toLocaleString()} x ${selectedShip}`;
 };
 
-const setupControls = (timestamp) => {
-  const container = document.createElement("div");
-  container.className = "space-y-4 mb-4";
-
-  select = document.createElement("select");
-  select.className = "border px-2 py-1";
-
-  for (const ship of Object.keys(SHIP_RECIPES)) {
-    const opt = document.createElement("option");
-    opt.value = ship;
-    opt.textContent = ship;
-    select.appendChild(opt);
-  }
-
-  select.addEventListener("change", () => {
-    appState.selectedShip = select.value;
-    updateBuildCount();
-    renderInventoryTable();
-  });
-
-  desiredInput = document.createElement("input");
-  desiredInput.type = "number";
-  desiredInput.min = "1";
-  desiredInput.placeholder = "Desired ship count";
-  desiredInput.className = "border px-2 py-1 w-48";
-
-  desiredInput.addEventListener("input", () => {
-    appState.desiredCount = parseInt(desiredInput.value, 10) || null;
-    renderInventoryTable();
-  });
-
-  const result = document.createElement("div");
-  result.id = "build-result";
-  result.className = "font-bold";
-
-  const ageEl = document.createElement("div");
-  ageEl.className = "text-sm text-gray-600";
-  ageEl.textContent = `Inventory data from ${formatInventoryAge(timestamp)}`;
-
-  container.append(select, desiredInput, result, ageEl);
-  root.appendChild(container);
-};
-
-const updateBuildCount = () => {
-  const recipe = SHIP_RECIPES[appState.selectedShip];
-  const count = calculateBuildCount(appState.byLocation, recipe);
-
-  document.getElementById("build-result").textContent =
-    `You can build ${count.toLocaleString()} x ${appState.selectedShip}`;
-};
-
+shipSelect.addEventListener("change", renderInventoryTable);
+desiredInput.addEventListener("input", renderInventoryTable);
 
 const calculateBuildCount = (byLocation, recipe) => {
   let maxBuilds = Infinity;
@@ -299,27 +308,25 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
   return table;
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
-  root = document.getElementById("ship-builder-root");
-  if (!root) return;
 
-  root.innerHTML = "<p>Loading inventory data...</p>";
+document.addEventListener("DOMContentLoaded", async () => {
+  root.classList.add("opacity-50");
+  resultEl.textContent = "Loading inventory data…";
 
   const data = await fetchData();
   if (!data) {
-    root.innerHTML = "<p>Failed to load inventory data.</p>";
+    resultEl.textContent = "Failed to load inventory data.";
     return;
   }
 
   appState.inventory = data.inventory;
   appState.byLocation = data.byLocation;
-  appState.selectedShip = Object.keys(SHIP_RECIPES)[0];
 
-  root.innerHTML = "";
+  ageEl.textContent = `Inventory data from ${formatInventoryAge()}`;
 
-  setupControls(data.timestamp);
-  updateBuildCount();
+  root.classList.remove("opacity-50");
   renderInventoryTable();
 });
+
 	
 </script>
