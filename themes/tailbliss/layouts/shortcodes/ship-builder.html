@@ -18,7 +18,10 @@
 <div id="ship-builder-root" class="space-y-6">
 
 	<h1>Current Inventory:</h1>
-	<div class="two-col">
+
+  <label><input id="onlyShowPublicShips" type="checkbox" checked /> Only show public ships</label>
+
+  <div class="two-col">
 		<div class="col">
 			<div id="inventoryAge" class="text-sm text-gray-600"></div>
 
@@ -70,6 +73,10 @@
   <!-- Table goes here -->
   <section id="inventoryTableContainer"></section>
 
+<button class="copy-order-btn" disabled>
+  Copy OOG Parts /projects order to clipboard
+</button>
+
 </div>
 
 <div id="ship-image-modal" class="ship-image-modal hidden">
@@ -78,16 +85,6 @@
 </div>
 
 <script type="module">
-
-const root = document.getElementById("ship-builder-root");
-const shipSelect = document.getElementById("shipSelect");
-const desiredInput = document.getElementById("desiredCount");
-const resultEl = document.getElementById("buildResult");
-const ageEl = document.getElementById("inventoryAge");
-const tableContainer = document.getElementById("inventoryTableContainer");
-const shipDetailContainer = document.getElementById("ship-detail");
-
-
 
 let select;
 
@@ -287,6 +284,52 @@ const SHIP_RECIPES = {
   }
 };
 
+const SHIP_PART_PRICES = {
+  MFL: 140000,
+  LFL: 300000,
+  MSL: 140000,
+  LSL: 300000,
+  LFE: 170000,
+  MFE: 90000,
+  SFE: 60000,
+  LHP: 3900,
+  SSC: 500,
+  LCB: 600000,
+  VCB: 650000,
+  WCB: 650000,
+  HCB: 3750000,
+  FSE: 900000,
+  QCR: 900000,
+  CQM: 950000,
+  CQL: 1800000,
+  BR1: 800000,
+  BR2: 950000,
+  FFC: 350000,
+  BRS: 400000,
+  CQS: 750000,
+  CQT: 200000,
+  GEN: 150000,
+  AGS: 400000,
+  BGS: 150000,
+  SFL: 30000,
+  SSL: 30000,
+  SCB: 80000,
+  STS: 175000,
+  RDL: 800000,
+  RDS: 400000,
+  HPR: 900000,
+  HYR: 1700000,
+  AEN: 1500000,
+  HTE: 3000000,
+  RCT: 900000,
+  AHP: 10000,
+  AWH: 13000,
+  APT: 14000,
+  SRP: 10000,
+  HAM: 6000000,
+  VOE: 5000000
+};
+
 
 const SHIP_PART_TICKERS = new Set([
   'MFL', 'LFL', 'MSL', 'LSL', 'LFE', 'MFE', 'SFE', 'LHP', 'SSC', 'LCB', 'VCB', 
@@ -301,6 +344,16 @@ let appState = {
   selectedShip: null,
   desiredCount: null
 };
+
+const root = document.getElementById("ship-builder-root");
+const shipSelect = document.getElementById("shipSelect");
+const desiredInput = document.getElementById("desiredCount");
+const resultEl = document.getElementById("buildResult");
+const ageEl = document.getElementById("inventoryAge");
+const tableContainer = document.getElementById("inventoryTableContainer");
+const shipDetailContainer = document.getElementById("ship-detail");
+const onlyShowPublicShips = document.getElementById("onlyShowPublicShips");
+const copyButton = document.querySelector(".copy-order-btn");
 
 const INVENTORY_URL =
 'https://api.fnar.net/csv/inventory?apikey=e643e7c0-2d21-4508-9172-ead017ac00e1&username=Archiel&include_bases=true&include_warehouses=true&include_ship_stores=true&include_ship_stl_stores=false&include_ship_ftl_stores=false&include_header=true&agg';
@@ -400,19 +453,24 @@ const renderShipSummaryTable = () => {
 
   for (const shipName of Object.keys(SHIP_RECIPES)) {
     const recipe = SHIP_RECIPES[shipName];
+
+    if(recipe.internalSalesOnly && onlyShowPublicShips.checked){
+      continue;
+    }
+
     const count = calculateBuildCount(appState.byLocation, recipe.parts);
 
-	const tr = document.createElement("tr");
-	tr.classList.add("ship-row");
-	tr.addEventListener("click", () => {
-		shipSelect.value = shipName;
-		renderInventoryTable();
-	});
-	tr.innerHTML = `
-      <td class="pr-4">${shipName}</td>
-      <td class="text-right font-mono">${count.toLocaleString()}</td>
-      <td class="pr-4">${recipe.price.toLocaleString()} AIC</td>
-    `;
+    const tr = document.createElement("tr");
+    tr.classList.add("ship-row");
+    tr.addEventListener("click", () => {
+      shipSelect.value = shipName;
+      renderInventoryTable();
+    });
+    tr.innerHTML = `
+        <td class="pr-4">${shipName}</td>
+        <td class="text-right font-mono">${count.toLocaleString()}</td>
+        <td class="pr-4">${recipe.price.toLocaleString()} AIC</td>
+      `;
 
     tbody.appendChild(tr);
   }
@@ -440,10 +498,10 @@ const renderInventoryTable = () => {
   if (!selectedShip || selectedShip === ""){
     resultEl.textContent = "Showing all ship parts.";
   }else{
-	const recipe = SHIP_RECIPES[selectedShip]?.parts;
-	const buildCount = calculateBuildCount(appState.byLocation, recipe);
+    const recipe = SHIP_RECIPES[selectedShip]?.parts;
+    const buildCount = calculateBuildCount(appState.byLocation, recipe);
 
-	resultEl.textContent = `Archiel has parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
+    resultEl.textContent = `Archiel has parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
   }
 
   renderShipDetails(selectedShip)
@@ -500,6 +558,8 @@ function renderShipDetails(selectedShip) {
 
 shipSelect.addEventListener("change", renderInventoryTable);
 desiredInput.addEventListener("input", renderInventoryTable);
+onlyShowPublicShips.addEventListener("input", renderShipSummaryTable);
+
 
 const calculateBuildCount = (byLocation, parts) => {
   let maxBuilds = Infinity;
@@ -528,6 +588,48 @@ const computeMissing = (ticker, available, recipe, desiredCount) => {
 
   return missing ? missing.toLocaleString() : "";
 };
+
+function buildOrderString(missing) {
+  return Object.entries(missing)
+    .filter(([_, qty]) => qty > 0)
+    .map(([ticker, qty]) => {
+      const price = SHIP_PART_PRICES[ticker] ?? 0;
+      return `${qty} ${ticker}@${price}AIC/u`;
+    })
+    .join(",");
+}
+
+function setupCopyButton(button, allMissing) {
+
+	const hasMissing = Object.values(allMissing).some(qty => qty > 0);
+	button.disabled = !hasMissing;
+
+	if (!hasMissing) return;
+
+	const orderText = Object.entries(allMissing)
+		.map(([ticker, qty]) => {
+			const price = SHIP_PART_PRICES[ticker] ?? 0;
+			return `${qty} ${ticker}@${price}AIC/u`;
+		})
+		.join(",");
+
+	button.onclick = async () => {
+		try {
+			await navigator.clipboard.writeText(orderText);
+
+			const oldText = button.textContent;
+			button.textContent = "Copied!";
+
+			setTimeout(() => {
+				button.textContent = oldText;
+			}, 1200);
+
+		} catch (err) {
+			console.error("Clipboard copy failed", err);
+		}
+	};
+}
+
 
 const processData = (csvData) => {
   const inventory = new Map();
@@ -582,11 +684,14 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
 	const recipe = selectedShip ? SHIP_RECIPES[selectedShip].parts : null;
 
 	const sorted = selectedShip
-		? Object.keys(recipe).sort()           // only materials in ship recipe
-		: [...inventory.keys()].sort();        // show all ship parts
-	
-		const tbody = document.createElement("tbody");
-		
+		? Object.keys(recipe).sort()
+		: [...inventory.keys()].sort();
+
+	const tbody = document.createElement("tbody");
+
+	// Collect missing totals across ALL tickers
+	const allMissing = {};
+
 	for (const ticker of sorted) {
 		const total = inventory.get(ticker) || 0;
 		const loc = byLocation.get(ticker) || {};
@@ -602,6 +707,10 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
 			desiredCount
 		);
 
+		if (missing > 0) {
+			allMissing[ticker] = missing;
+		}
+
 		const tr = document.createElement("tr");
 		tr.innerHTML = `
 			<td>${ticker}</td>
@@ -614,9 +723,12 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
 	}
 
 	table.appendChild(tbody);
+
+	// Setup copy button ONCE using aggregated missing list
+	setupCopyButton(copyButton, allMissing);
+
 	return table;
 };
-
 
 document.addEventListener("DOMContentLoaded", async () => {
   root.classList.add("opacity-50");
