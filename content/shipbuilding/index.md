@@ -46,14 +46,10 @@ In special cases, we may have 5k ships available for sale. These two models may 
 
 OOG Members, please refer to the pinned post in #ship-building for subsidy prices and rules.
 
-
 {{< twoColImage right="true" imageURL="shielded5k.png">}}
 
 ![5k unshielded](5kUnshielded.png)
 {{< /twoColImage >}}
-
-
-
 
 {{< twoColImage right="true" imageURL="shielded_2k.png">}}
 
@@ -61,8 +57,6 @@ Shielded 2k ships may be available.
 
 * 10,997,000
 {{< /twoColImage >}}
-
-
 
 
 {{< centerspan >}}

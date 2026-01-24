@@ -126,18 +126,18 @@ const SHIP_RECIPES = {
 		APT: 159,
 		AWH: 159,
 		SRP: 159,
-		MFE: 2,
 		LFE: 5,
+		MFE: 2,
 		SFE: 2,
 		BR2: 1,
 		CQL: 1,
-		FFC: 1,
 		FSE: 1,
 		HYR: 1,
 		HCB: 1,
 		LFL: 1,
 		MSL: 1,
 		RDL: 1,
+		FFC: 1,
 		STS: 1
 	}
   },
@@ -149,27 +149,25 @@ const SHIP_RECIPES = {
     imageUrl: "/shipbuilding/5kUnshielded.png",
 
     parts: {
-
-		BR1: 1,
-		CQL: 1,
-		FFC: 1,
-		FSE: 1,
-		HCB: 1,
-		LFE: 5,
-		LFL: 1,
-		LHP: 157,
-		MFE: 2,
-		MSL: 1,
-		QCR: 1,
-		SFE: 1,
-		SSC: 278,
-		STS: 1,
-		WCB: 1
+      SSC: 278,
+      LHP: 157,
+      BR1: 1,
+      CQL: 1,
+      FFC: 1,
+      FSE: 1,
+      HCB: 1,
+      LFE: 5,
+      MFE: 2,
+      SFE: 1,
+      LFL: 1,
+      MSL: 1,
+      QCR: 1,
+      STS: 1
 	}
   },
 
   "2k All Shields": {
-    name: "Standard 2k",
+    name: "2k All Shields",
     price: 10997000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/shielded_2k.png",
@@ -195,102 +193,70 @@ const SHIP_RECIPES = {
 		STS: 1
 	}
   },
-
-  "WCB, All Shields": {
-    name: "WCB, All Shields",
-    price: 7200000,
-    internalSalesOnly: true,
-    imageUrl: "/images/ships/standard-2k.png",
-
-    parts: {
-
-    SSC: 72,
-    LHP: 64,
-    AWH: 64,
-    SFE: 2,
-    MFE: 1,
-    LFE: 1,
-    BR1: 1,
-    CQS: 1,
-    FFC: 1,
-    FSE: 1,
-    LFL: 1,
-    MFL: 1,
-    QCR: 1,
-    SSL: 1,
-    WCB: 1,
-    AGS: 1
-	}
-  },
-
-  "New WCB": {
-    name: "New WCB",
+  "OOG New WCB": {
+    name: "OOG New WCB",
     price: 5900000,
     internalSalesOnly: true,
-    imageUrl: "/images/ships/standard-2k.png",
+    imageUrl: "/shipbuilding/oog-new-wcb.png",
 
     parts: {
 
-    SSC: 78,
-    LHP: 68,
+    SSC: 84,
+    LHP: 71,
     MFE: 2,
-    LFE: 3,
+    LFE: 1,
     LFL: 1,
     MSL: 1,
-    SFE: 1,
+    SFE: 2,
     FSE: 1,
-    QCR: 1,
-    CQL: 1,
-    BR1: 1,
+    HYR: 1,
+    CQM: 1,
+    BR2: 1,
     FFC: 1,
-    HAM: 1,
-    HCB: 1,
-    SSL: 1,
-    BRS: 1,
-    CQL: 1,
-    WCB: 1,
-    STS: 1
+    STS: 1,
+    WCB: 1
 	}
   },
 
-  "STL HCB": {
-    name: "STL HCB",
+  "5k STL HCB": {
+    name: "5k STL HCB",
     price: 7800000,
     internalSalesOnly: true,
-    imageUrl: "/images/ships/standard-2k.png",
+    imageUrl: "/shipbuilding/5k-stl-hcb.png",
 
     parts: {
-
-    SSC: 256,
-    LHP: 152,
-    HCB: 1,
-    FSE: 1,
-    CQL: 1,
-    BR1: 1,
-    FFC: 1,
-    QCR: 1
-	}
+      SSC: 265,
+      LHP: 152,
+      HCB: 1,
+      FSE: 1,
+      CQL: 1,
+      BRS: 1,
+      SSL: 1,
+    }
   },
 
-  "Standard Gas Hauler": {
-    name: "Standard Gas Hauler",
+  "OOG Gas Hauler": {
+    name: "OOG Gas Hauler",
     price: 7600000,
     internalSalesOnly: true,
-    imageUrl: "/images/ships/standard-2k.png",
+    imageUrl: "/shipbuilding/oog-gas-hauler.png",
 
     parts: {
 
     SSC: 178,
     LHP: 117,
-    SFE: 1,
+    LFE: 3,
     MFE: 2,
+    SFE: 1,
     LFL: 1,
     MSL: 1,
+    VCB: 1,
     FSE: 1,
     QCR: 1,
     CQL: 1,
     BR1: 1,
-    FFC: 1
+    FFC: 1,
+    STS: 1
 	}
   },
 
@@ -298,23 +264,24 @@ const SHIP_RECIPES = {
     name: "Colony Ship",
     price: 34800000,
     internalSalesOnly: false,
-    imageUrl: "/images/ships/standard-2k.png",
+    imageUrl: "/shipbuilding/colony-ship-blueprint.png",
 
     parts: {
       SSC: 406,
       AHP: 202,
       APT: 202,
       AWH: 202,
+      SRP: 202,
+      HAM: 1,
       BR2: 1,
       CQL: 1,
-      FSE: 1,
-      HCB: 1,
+      AGS: 1,
       HTE: 1,
       VOR: 1,
+      HCB: 1,
       VFT: 1,
       LSL: 1,
       RDL: 1,
-      AGS: 1,
       STS: 1
 	}
   }
@@ -325,7 +292,7 @@ const SHIP_PART_TICKERS = new Set([
   'MFL', 'LFL', 'MSL', 'LSL', 'LFE', 'MFE', 'SFE', 'LHP', 'SSC', 'LCB', 'VCB', 
   'WCB', 'HCB', 'FSE', 'QCR', 'CQM', 'CQL', 'BR1', 'BR2', 'FFC', 'BRS', 'CQS', 
   'CQT', 'GEN', 'AGS', 'BGS', 'SFL', 'SSL', 'SCB', 'STS', 'RDL', 'RDS', 'HPR', 
-  'HYR', 'AEN', 'HTE', 'RCT', 'AHP', 'AWH', 'APT', 'SRP'
+  'HYR', 'AEN', 'HTE', 'RCT', 'AHP', 'AWH', 'APT', 'SRP', 'HAM', 'VOR', 'VFT'
 ]);
 
 let appState = {
@@ -476,7 +443,7 @@ const renderInventoryTable = () => {
 	const recipe = SHIP_RECIPES[selectedShip]?.parts;
 	const buildCount = calculateBuildCount(appState.byLocation, recipe);
 
-	resultEl.textContent = `I have parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
+	resultEl.textContent = `Archiel has parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
   }
 
   renderShipDetails(selectedShip)
