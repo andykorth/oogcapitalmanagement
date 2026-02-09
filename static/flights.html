@@ -1,0 +1,293 @@
+<meta charset="UTF-8">
+<style>
+	/* Global baseline */
+html, body {
+	background: #000;
+	color: #fff;
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+	font-size: 13px;
+	line-height: 1.35;
+	margin: 0;
+	padding: 8px;
+	overflow: hidden; 
+}
+
+/* Table layout */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+thead {
+	color: #bbb;
+	border-bottom: 1px solid #333;
+}
+
+th, td {
+	padding: 4px 6px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+/* Row separators */
+tbody tr {
+	border-bottom: 1px solid #222;
+}
+
+/* Hover emphasis (no color flash, subtle glow) */
+tbody tr:hover {
+	background: #111;
+	outline: 1px solid #333;
+}
+
+/* Muted secondary text */
+.muted {
+	color: #888;
+	font-size: 11px;
+}
+
+/* Highlight important fields */
+.strong {
+	font-weight: 600;
+	color: #fff;
+}
+
+/* Status colors */
+.status-ok { color: #9be79b; }
+.status-warn { color: #ffd479; }
+.status-bad { color: #ff9a9a; }
+
+/* Small UI blocks */
+.panel {
+	background: #080808;
+	border: 1px solid #222;
+	border-radius: 6px;
+	padding: 8px;
+	margin-bottom: 8px;
+}
+
+/* Buttons */
+button {
+	background: #111;
+	color: #fff;
+	border: 1px solid #333;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #1a1a1a;
+}
+
+button:disabled {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.flight-destination {
+	max-width: 160px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.flight-time {
+	color: #bbb;
+	font-variant-numeric: tabular-nums;
+}
+
+
+</style>
+
+<div id="flight-root"></div>
+
+<script type="module">
+
+const API_KEY = "4a07e526-b678-4f17-8858-39d80ab2d413";
+const USERNAME = "Archiel";
+
+async function fetchShipFlights() {
+  try {
+    const response = await fetch(`https://rest.fnar.net/ship/flights/${USERNAME}`, {
+      method: "GET",
+			headers: {
+        "accept": "application/json",
+				"Authorization": API_KEY
+			}
+		});
+    
+		if (!response.ok) {
+      throw new Error(`HTTP ${response.status} - ${response.statusText}`);
+		}
+    
+		const data = await response.json();
+		console.log("Ship Flights:", data);
+		return data;
+    
+	} catch (err) {
+    console.error("Failed to fetch ship flights:", err);
+		return null;
+	}
+}
+
+async function fetchShips() {
+	const res = await fetch("https://rest.fnar.net/ship/ships/Archiel", {
+		method: "GET",
+		headers: {
+			"accept": "application/json",
+			"Authorization": "4a07e526-b678-4f17-8858-39d80ab2d413"
+		}
+	});
+
+	if (!res.ok) {
+		console.error("Failed to fetch ships:", res.status);
+		return null;
+	}
+
+	return res.json();
+}
+
+function formatRelativeTime(epochMs) {
+	if (!epochMs) return "";
+
+	const now = Date.now();
+	let diff = epochMs - now;
+	const future = diff > 0;
+
+	diff = Math.abs(diff);
+
+	const sec = Math.floor(diff / 1000);
+	const min = Math.floor(sec / 60);
+	const hr = Math.floor(min / 60);
+	const day = Math.floor(hr / 24);
+
+	let primary = "";
+	let secondary = "";
+
+	if (day > 0) {
+		primary = `${day}d`;
+		secondary = `${hr % 24}h`;
+	}
+	else if (hr > 0) {
+		primary = `${hr}h`;
+		secondary = `${min % 60}m`;
+	}
+	else if (min > 0) {
+		primary = `${min}m`;
+		secondary = `${sec % 60}s`;
+	}
+	else {
+		primary = `${sec}s`;
+	}
+
+	const timeStr = secondary && !secondary.startsWith("0")
+		? `${primary} ${secondary}`
+		: primary;
+
+	return future ? `in ${timeStr}` : `${timeStr} ago`;
+}
+
+
+function indexFlightsByShipId(flights) {
+	const map = new Map();
+
+	for (const f of flights) {
+		map.set(f.ShipId, f);
+	}
+
+	return map;
+}
+function createShipsFlightsTable(ships, flights) {
+	const flightMap = indexFlightsByShipId(flights);
+
+	const table = document.createElement("table");
+	table.className = "ships-flight-table";
+
+	table.innerHTML = `
+		<thead>
+			<tr>
+				<th>Ship</th>
+				<th>Destination</th>
+				<th>Arrival</th>
+			</tr>
+		</thead>
+	`;
+
+	const tbody = document.createElement("tbody");
+
+	const sortedShips = [...ships].sort((a, b) =>
+		a.Name.localeCompare(b.Name)
+	);
+
+	for (const ship of sortedShips) {
+		const flight = flightMap.get(ship.ShipId);
+
+		const tr = document.createElement("tr");
+
+		const destination = flight ? "→ " + formatDestination(flight.Destination) : formatDestination(ship.Location);
+		const arrival = flight ? formatRelativeTime(flight.ArrivalTimeEpochMs) : "";
+
+	const normalized = destination
+		.replace(/^STATION - Antares I$/i, "ANT")
+
+		tr.innerHTML = `
+			<td>${ship.Name}</td>
+			<td>${normalized}</td>
+			<td>${arrival}</td>
+		`;
+
+		tbody.appendChild(tr);
+	}
+
+	table.appendChild(tbody);
+	return table;
+}
+
+function formatDestination(raw) {
+	if (!raw) return "—";
+
+	// 1. Remove anything in parentheses (and the parentheses themselves)
+	let cleaned = raw.replace(/\s*\([^)]*\)/g, "").trim();
+
+	// 2. Split ONLY on the first " - " (must include spaces)
+	const splitIndex = cleaned.indexOf(" - ");
+	if (splitIndex === -1) return cleaned; // no split case
+
+	const first = cleaned.slice(0, splitIndex).trim();
+	const second = cleaned.slice(splitIndex + 3).trim();
+
+	// 3. If first is fully contained in second, show only second
+	if (second.includes(first)) {
+		return second;
+	}
+
+
+	// 4. Otherwise show: second - first
+	return `${second} - ${first}`;
+}
+
+
+
+async function loadShipsAndFlights() {
+	const [ships, flights] = await Promise.all([
+		fetchShips(),
+		fetchShipFlights()
+	]);
+
+	const root = document.getElementById("flight-root");
+
+	if (!ships || !flights) {
+		root.textContent = "Failed to load ship or flight data.";
+		return;
+	}
+
+	root.innerHTML = "";
+	root.appendChild(createShipsFlightsTable(ships, flights));
+}
+
+loadShipsAndFlights();
+
+
+</script>
