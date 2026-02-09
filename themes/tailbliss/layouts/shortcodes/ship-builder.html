@@ -339,8 +339,7 @@ const SHIP_PART_TICKERS = new Set([
 ]);
 
 let appState = {
-  inventory: null,     // Map
-  byLocation: null,    // Map
+  users: {},          // { username: { inventory, byLocation } }
   selectedShip: null,
   desiredCount: null
 };
@@ -355,8 +354,12 @@ const shipDetailContainer = document.getElementById("ship-detail");
 const onlyShowPublicShips = document.getElementById("onlyShowPublicShips");
 const copyButton = document.querySelector(".copy-order-btn");
 
-const INVENTORY_URL =
-'https://api.fnar.net/csv/inventory?apikey=e643e7c0-2d21-4508-9172-ead017ac00e1&username=Archiel&include_bases=true&include_warehouses=true&include_ship_stores=true&include_ship_stl_stores=false&include_ship_ftl_stores=false&include_header=true&agg';
+const INVENTORY_API_KEY = "4a07e526-b678-4f17-8858-39d80ab2d413";
+
+function buildInventoryUrl(username) {
+  return `https://rest.fnar.net/csv/inventory?apikey=${INVENTORY_API_KEY}&username=${username}`;
+}
+
 
 // Add "None" option first
 const noneOpt = document.createElement("option");
@@ -371,26 +374,25 @@ for (const shipName of Object.keys(SHIP_RECIPES)) {
   shipSelect.appendChild(opt);
 }
 
-const fetchData = async () => {
-  const cacheKey = "ship_inventory_cache";
-  const TTL = 4 * 3600 * 1000;
+async function fetchInventoryForUser(username) {
+  const cacheKey = `ship_inventory_cache_${username}`;
+  const TTL = 30 * 60 * 1000; // 30 min
 
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     try {
       const { timestamp, data } = JSON.parse(cached);
       if (Date.now() - timestamp < TTL) {
-        const { inventory, byLocation } = data;
         return {
-          inventory: new Map(inventory),
-          byLocation: new Map(byLocation),
+          inventory: new Map(data.inventory),
+          byLocation: new Map(data.byLocation), 
           timestamp
         };
       }
     } catch {}
   }
 
-  const response = await fetch(INVENTORY_URL);
+  const response = await fetch(buildInventoryUrl(username));
   const csv = await response.text();
   const processed = processData(csv);
 
@@ -406,11 +408,10 @@ const fetchData = async () => {
     ...processed,
     timestamp: Date.now()
   };
-};
-
+}
 
 const formatInventoryAge = () => {
-  const cacheKey = "ship_inventory_cache";
+  const cacheKey = "ship_inventory_cache_Archiel";
   const cached = localStorage.getItem(cacheKey);
   if (!cached) return null;
 
@@ -434,7 +435,7 @@ const renderShipSummaryTable = () => {
   const root = document.getElementById("ship-summary-root");
   root.innerHTML = "";
 
-  if (!appState.byLocation) return;
+  if (!appState.users["Archiel"].byLocation) return;
 
   const table = document.createElement("table");
   table.className = "table-auto border-collapse text-sm";
@@ -458,7 +459,7 @@ const renderShipSummaryTable = () => {
       continue;
     }
 
-    const count = calculateBuildCount(appState.byLocation, recipe.parts);
+    const count = calculateBuildCount(appState.users["Archiel"].byLocation, recipe.parts);
 
     const tr = document.createElement("tr");
     tr.classList.add("ship-row");
@@ -485,8 +486,7 @@ const renderInventoryTable = () => {
   const desiredCount = parseInt(desiredInput.value, 10) || null;
 
   const table = createTable(
-    appState.inventory,
-    appState.byLocation,
+    appState.users,
     selectedShip,
     desiredCount
   );
@@ -499,7 +499,7 @@ const renderInventoryTable = () => {
     resultEl.textContent = "Showing all ship parts.";
   }else{
     const recipe = SHIP_RECIPES[selectedShip]?.parts;
-    const buildCount = calculateBuildCount(appState.byLocation, recipe);
+    const buildCount = calculateBuildCount(appState.users["Archiel"].byLocation, recipe);
 
     resultEl.textContent = `Archiel has parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
   }
@@ -509,13 +509,12 @@ const renderInventoryTable = () => {
 
 function renderShipDetails(selectedShip) {
   if (!selectedShip || selectedShip === "") {
-    shipDetailContainer.textContent = "Please click a table row to select a ship.";
-    return;
+    selectedShip = "OOG Premium 2k";
   }
 
   const ship = SHIP_RECIPES[selectedShip];
   const recipe = ship.parts;
-  const buildCount = calculateBuildCount(appState.byLocation, recipe);
+  const buildCount = calculateBuildCount(appState.users["Archiel"].byLocation, recipe);
 
   const priceText = ship.price
     ? ship.price.toLocaleString() + " AIC"
@@ -663,7 +662,7 @@ const processData = (csvData) => {
 };
 
 
-const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
+const createTable = (users, selectedShip, desiredCount) => {
 
 	const table = document.createElement('table');
 	table.style = 'width:400px';
@@ -672,20 +671,20 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
 	<thead>
 		<tr>
 		<th>Ticker</th>
-		<th>Total</th>
+		<th>Total (Archiel)</th>
 		<th>ANT</th>
 		<th>Hephaestus</th>
+    <th>ANT (MrSmith33)</th>
 		<th>Missing</th>
 		</tr>
 	</thead>
 	`;
 
-
 	const recipe = selectedShip ? SHIP_RECIPES[selectedShip].parts : null;
 
 	const sorted = selectedShip
 		? Object.keys(recipe).sort()
-		: [...inventory.keys()].sort();
+		: [...users["Archiel"].inventory.keys()].sort();
 
 	const tbody = document.createElement("tbody");
 
@@ -693,12 +692,20 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
 	const allMissing = {};
 
 	for (const ticker of sorted) {
-		const total = inventory.get(ticker) || 0;
-		const loc = byLocation.get(ticker) || {};
+    const archiel = users["Archiel"];
+    const smith = users["MrSmith33"];
 
-		const ant = loc["ANT"] || 0;
-		const hep = loc["ZV-307c"] || 0;
-		const available = ant + hep;
+    const total = archiel.inventory.get(ticker) || 0;
+
+    const archLoc = archiel.byLocation.get(ticker) || {};
+    const smithLoc = smith.byLocation.get(ticker) || {};
+
+    const antArch = archLoc["ANT"] || 0;
+    const hep = archLoc["ZV-307c"] || 0;
+    const antSmith = smithLoc["ANT"] || 0;
+
+    // Missing still based ONLY on Archiel (unless you want combined)
+    const available = antArch + hep;
 
 		const missing = computeMissing(
 			ticker,
@@ -715,8 +722,9 @@ const createTable = (inventory, byLocation, selectedShip, desiredCount) => {
 		tr.innerHTML = `
 			<td>${ticker}</td>
 			<td>${total.toLocaleString()}</td>
-			<td>${ant.toLocaleString()}</td>
+			<td>${antArch.toLocaleString()}</td>
 			<td>${hep.toLocaleString()}</td>
+      <td>${antSmith.toLocaleString()}</td>
 			<td>${missing}</td>
 		`;
 		tbody.appendChild(tr);
@@ -734,14 +742,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   root.classList.add("opacity-50");
   resultEl.textContent = "Loading inventory data...";
 
-  const data = await fetchData();
-  if (!data) {
-    resultEl.textContent = "Failed to load inventory data.";
-    return;
-  }
+  const usernames = ["Archiel", "MrSmith33"];
 
-  appState.inventory = data.inventory;
-  appState.byLocation = data.byLocation;
+  const results = await Promise.all(
+    usernames.map(u => fetchInventoryForUser(u))
+  );
+
+  usernames.forEach((username, i) => {
+    appState.users[username] = results[i];
+  });
 
   ageEl.textContent = `Inventory data from ${formatInventoryAge()}`;
 
@@ -750,6 +759,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderShipSummaryTable();
   renderInventoryTable();
 });
+
 
 window.openShipImageModal = (src, alt) => {
   const modal = document.getElementById("ship-image-modal");
