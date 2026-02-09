@@ -139,11 +139,6 @@ menu:
       url: /joining/
       weight: 50
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
 taxonomies:
   accessCategory: AccessCategories
   tag: Tags

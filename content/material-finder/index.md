@@ -11,7 +11,6 @@ type: page
 language: en
 author: Archiel
 authorimage: images/archiel.png
-fullWidthArticle: true
 ---
 
 

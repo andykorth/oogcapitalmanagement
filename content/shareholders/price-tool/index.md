@@ -12,7 +12,6 @@ accessCategories: ShareholderPosts
 language: en
 author: Archiel
 authorimage: images/archiel.png
-fullWidthArticle: true
 ---
 
 # Bid creation price tool
