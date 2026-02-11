@@ -1,0 +1,607 @@
+<style>
+  label {
+    display: block;
+    margin-top: 1px;
+  }
+
+  #governor-helper-root {
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  #governor-helper-root .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  #governor-helper-root .input-row span {
+    flex: 0 0 130px;
+    text-align: right;
+    margin-right: 0.5rem;
+  }
+
+  #governor-helper-root input {
+    flex: 1;
+  }
+
+  #governor-helper-root button {
+    margin: 2px;
+    padding: 3px 10px 3px 10px;
+  }
+
+  #corpStatus {
+    color: rgb(156 163 175); /* Tailwind gray-400 */
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+</style>
+
+<div id="governor-helper-root"  class="calculator">
+
+  <input id="planetInput" type="text" placeholder="RC-040b" />
+  <button id="loadInfraBtn">Load Infrastructure</button>
+  <div id="infraTableContainer"></div>
+</div>
+
+<script type="module">
+
+
+  import { fetchFullCXData, fullCXData, getCachedCXData, getCachedCXDataAge} from "/pricing-and-materials.js";
+  import { loadModeledPrices, modeledPrices } from "/pricing-and-materials.js";
+
+// =============================
+// Constants
+// =============================
+
+export const UPKEEP_NEED_TYPES = [
+  "safety",
+  "health",
+  "comfort",
+  "culture",
+  "education",
+];
+
+export const UPKEEP_BUILDINGS = [
+  {
+    ticker: "SST",
+    name: "Safety Station",
+    materials: [
+      { ticker: "DW", qtyPerDay: 10 },
+      { ticker: "OFF", qtyPerDay: 10 },
+      { ticker: "SUN", qtyPerDay: 2 },
+    ],
+    needs: { safety: 833.3, health: 0, comfort: 0, culture: 0, education: 0 },
+  },
+  {
+    ticker: "SDP",
+    name: "Security Drone Post",
+    materials: [
+      { ticker: "POW", qtyPerDay: 1 },
+      { ticker: "RAD", qtyPerDay: 0.47 },
+      { ticker: "CCD", qtyPerDay: 0.07 },
+      { ticker: "SUD", qtyPerDay: 0.07 },
+    ],
+    needs: { safety: 1250, health: 0, comfort: 0, culture: 0, education: 0 },
+  },
+  {
+    ticker: "EMC",
+    name: "Emergency Center",
+    materials: [
+      { ticker: "PK", qtyPerDay: 2 },
+      { ticker: "POW", qtyPerDay: 0.4 },
+      { ticker: "BND", qtyPerDay: 4 },
+      { ticker: "RED", qtyPerDay: 0.07 },
+      { ticker: "BSC", qtyPerDay: 0.07 },
+    ],
+    needs: { safety: 200, health: 200, comfort: 0, culture: 0, education: 0 },
+  },
+  {
+    ticker: "INF",
+    name: "Infirmary",
+    materials: [
+      { ticker: "OFF", qtyPerDay: 10 },
+      { ticker: "TUB", qtyPerDay: 6.67 },
+      { ticker: "STR", qtyPerDay: 0.67 },
+    ],
+    needs: { safety: 0, health: 833.33, comfort: 0, culture: 0, education: 0 },
+  },
+  {
+    ticker: "HOS",
+    name: "Hospital",
+    materials: [
+      { ticker: "PK", qtyPerDay: 2 },
+      { ticker: "SEQ", qtyPerDay: 0.4 },
+      { ticker: "BND", qtyPerDay: 4 },
+      { ticker: "SDR", qtyPerDay: 0.07 },
+      { ticker: "RED", qtyPerDay: 0.07 },
+      { ticker: "BSC", qtyPerDay: 0.13 },
+    ],
+    needs: { safety: 0, health: 833.33, comfort: 0, culture: 0, education: 0 },
+  },
+  {
+    ticker: "WCE",
+    name: "Wellness Center",
+    materials: [
+      { ticker: "KOM", qtyPerDay: 4 },
+      { ticker: "OLF", qtyPerDay: 2 },
+      { ticker: "DW", qtyPerDay: 6 },
+      { ticker: "DEC", qtyPerDay: 0.67 },
+      { ticker: "PFE", qtyPerDay: 2.67 },
+      { ticker: "SOI", qtyPerDay: 6.67 },
+    ],
+    needs: { safety: 0, health: 166.67, comfort: 166.7, culture: 0, education: 0 },
+  },
+  {
+    ticker: "PAR",
+    name: "Park",
+    materials: [
+      { ticker: "DW", qtyPerDay: 10 },
+      { ticker: "FOD", qtyPerDay: 6 },
+      { ticker: "PFE", qtyPerDay: 2 },
+      { ticker: "SOI", qtyPerDay: 3.33 },
+      { ticker: "DEC", qtyPerDay: 0.33 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 500, culture: 0, education: 0 },
+  },
+  {
+    ticker: "4DA",
+    name: "4D Arcades",
+    materials: [
+      { ticker: "POW", qtyPerDay: 2 },
+      { ticker: "MHP", qtyPerDay: 2 },
+      { ticker: "OLF", qtyPerDay: 4 },
+      { ticker: "BID", qtyPerDay: 0.2 },
+      { ticker: "HOG", qtyPerDay: 0.2 },
+      { ticker: "EDC", qtyPerDay: 0.2 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 833.3, culture: 0, education: 0 },
+  },
+  {
+    ticker: "ACA",
+    name: "Art Cafe",
+    materials: [
+      { ticker: "COF", qtyPerDay: 8 },
+      { ticker: "OLF", qtyPerDay: 2 },
+      { ticker: "VIT", qtyPerDay: 8 },
+      { ticker: "DW", qtyPerDay: 10 },
+      { ticker: "GL", qtyPerDay: 6.67 },
+      { ticker: "DEC", qtyPerDay: 0.67 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 166.7, culture: 166.7, education: 0 },
+  },
+  {
+    ticker: "ART",
+    name: "Art Gallery",
+    materials: [
+      { ticker: "MHP", qtyPerDay: 1 },
+      { ticker: "HOG", qtyPerDay: 1 },
+      { ticker: "UTS", qtyPerDay: 0.67 },
+      { ticker: "DEC", qtyPerDay: 0.67 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 0, culture: 625, education: 0 },
+  },
+  {
+    ticker: "VRT",
+    name: "VR Theater",
+    materials: [
+      { ticker: "POW", qtyPerDay: 1.4 },
+      { ticker: "MHP", qtyPerDay: 2 },
+      { ticker: "HOG", qtyPerDay: 1.4 },
+      { ticker: "OLF", qtyPerDay: 4 },
+      { ticker: "BID", qtyPerDay: 0.33 },
+      { ticker: "DEC", qtyPerDay: 0.67 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 0, culture: 833.3, education: 0 },
+  },
+  {
+    ticker: "PBH",
+    name: "Planetary Broadcasting Hub",
+    materials: [
+      { ticker: "OFF", qtyPerDay: 10 },
+      { ticker: "MHP", qtyPerDay: 1 },
+      { ticker: "SP", qtyPerDay: 1.33 },
+      { ticker: "AAR", qtyPerDay: 0.67 },
+      { ticker: "EDC", qtyPerDay: 0.27 },
+      { ticker: "IDC", qtyPerDay: 0.13 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 0, culture: 166.7, education: 166.7 },
+  },
+  {
+    ticker: "LIB",
+    name: "Library",
+    materials: [
+      { ticker: "MHP", qtyPerDay: 1 },
+      { ticker: "HOG", qtyPerDay: 1 },
+      { ticker: "CD", qtyPerDay: 0.33 },
+      { ticker: "DIS", qtyPerDay: 0.33 },
+      { ticker: "BID", qtyPerDay: 0.2 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 0, culture: 0, education: 500 },
+  },
+  {
+    ticker: "UNI",
+    name: "University",
+    materials: [
+      { ticker: "COF", qtyPerDay: 10 },
+      { ticker: "REA", qtyPerDay: 10 },
+      { ticker: "TUB", qtyPerDay: 10 },
+      { ticker: "BID", qtyPerDay: 0.33 },
+      { ticker: "HD", qtyPerDay: 0.67 },
+      { ticker: "IDC", qtyPerDay: 0.2 },
+    ],
+    needs: { safety: 0, health: 0, comfort: 0, culture: 0, education: 833.3 },
+  },
+];
+
+export function calculatePricePerNeed(materialPrice, qtyPerDay, needProvided) {
+  if (needProvided === 0 || qtyPerDay === 0) return Infinity;
+  const needPerQty = needProvided / qtyPerDay;
+  return materialPrice / needPerQty;
+}
+
+export function getBuildingsForNeed(needType) {
+  return UPKEEP_BUILDINGS.filter(
+    (building) => building.needs[needType] > 0
+  );
+}
+
+export function getBuildingNeedCount(building) {
+  return UPKEEP_NEED_TYPES.filter(
+    (needType) => building.needs[needType] > 0
+  ).length;
+}
+
+export async function calculateMaterialsForNeed(
+  needType,
+  getPriceFunc
+) {
+  const buildings = getBuildingsForNeed(needType);
+  const calculations = [];
+
+  for (const building of buildings) {
+    const needProvided = building.needs[needType];
+    const needCount = getBuildingNeedCount(building);
+    const effectiveNeed = needProvided * needCount;
+
+    for (const material of building.materials) {
+      const cxPrice = await getPriceFunc(material.ticker);
+
+      const pricePerNeed = calculatePricePerNeed(
+        cxPrice,
+        material.qtyPerDay,
+        effectiveNeed
+      );
+
+      calculations.push({
+        ticker: material.ticker,
+        buildingTicker: building.ticker,
+        qtyPerDay: material.qtyPerDay,
+        needProvided,
+        pricePerNeed,
+        cxPrice,
+      });
+    }
+  }
+
+  calculations.sort((a, b) => {
+    if (a.cxPrice <= 0 && b.cxPrice <= 0) return 0;
+    if (a.cxPrice <= 0) return 1;
+    if (b.cxPrice <= 0) return -1;
+    return a.pricePerNeed - b.pricePerNeed;
+  });
+
+  return calculations;
+}
+
+const REFRESH_DURATION = 1 * 3600 * 1000;
+
+const planetInput = document.getElementById("planetInput");
+const loadInfraBtn = document.getElementById("loadInfraBtn");
+const tableContainer = document.getElementById("infraTableContainer");
+
+/**
+ * Fetch infrastructure for a planet with 2-week caching
+ */
+async function fetchInfrastructure(planetId) {
+  const cacheKey = `infra_${planetId}`;
+  const cached = localStorage.getItem(cacheKey);
+
+  if (cached) {
+    try {
+      const { timestamp, data } = JSON.parse(cached);
+      if (Date.now() - timestamp < REFRESH_DURATION) {
+        console.log("Loaded infrastructure from cache:", planetId);
+        return data;
+      }
+    } catch {}
+  }
+
+  const url = `https://rest.fnar.net/infrastructure/${planetId}`;
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error("Planet not found");
+  }
+
+  const data = await response.json();
+
+  localStorage.setItem(
+    cacheKey,
+    JSON.stringify({
+      timestamp: Date.now(),
+      data,
+    })
+  );
+
+  return data;
+}
+
+/**
+ * Extract only the entries from the largest SimulationPeriod
+ * and return a Map keyed by ticker
+ */
+function extractLatestProjects(data) {
+  const projects = data.InfrastructureProjects || [];
+  if (!projects.length) return new Map();
+
+  // Find max SimulationPeriod
+  let maxPeriod = -Infinity;
+  for (const p of projects) {
+    if (p.SimulationPeriod > maxPeriod) {
+      maxPeriod = p.SimulationPeriod;
+    }
+  }
+
+  // Filter only that period
+  const latest = projects.filter(
+    (p) => p.SimulationPeriod === maxPeriod
+  );
+
+  // Deduplicate by ticker (in case duplicates exist)
+  const byTicker = new Map();
+
+  for (const project of latest) {
+    byTicker.set(project.Ticker, {
+      level: project.Level,
+      currentLevel: project.CurrentLevel,
+    });
+  }
+
+  return byTicker;
+}
+
+function extractLatestReport(data) {
+  const reports = data.InfrastructureReports || [];
+  if (!reports.length) return null;
+
+  let latest = reports[0];
+
+  for (const report of reports) {
+    if (report.SimulationPeriod > latest.SimulationPeriod) {
+      latest = report;
+    }
+  }
+
+  return latest;
+}
+
+
+/**
+ * Render infrastructure table
+ */
+function renderInfrastructureTable(projectMap) {
+  tableContainer.innerHTML = "";
+
+  if (!projectMap.size) {
+    tableContainer.textContent = "No infrastructure found.";
+    return;
+  }
+
+  const table = document.createElement("table");
+  table.className = "table-auto border-collapse text-sm";
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="text-left pr-4">Ticker</th>
+        <th class="text-right pr-4">Level</th>
+        <th class="text-right">Current Level</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+
+  const sortedTickers = [...projectMap.keys()].sort();
+
+  for (const ticker of sortedTickers) {
+    const { level, currentLevel } = projectMap.get(ticker);
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="pr-4">${ticker}</td>
+      <td class="text-right pr-4">${level}</td>
+      <td class="text-right">${currentLevel}</td>
+    `;
+
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  return table;
+}
+
+function renderWorkforceTable(report) {
+  const tiers = [
+    "Pioneer",
+    "Settler",
+    "Technician",
+    "Engineer",
+    "Scientist"
+  ];
+
+  const table = document.createElement("table");
+  table.className = "table-auto border-collapse text-sm mb-6";
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="text-left pr-4">Metric</th>
+        ${tiers.map(t => `<th class="text-right pr-4">${t}</th>`).join("")}
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+
+  const rows = [
+    {
+      label: "Population",
+      key: "NextPopulation"
+    },
+    {
+      label: "Change",
+      key: "PopulationDifference"
+    },
+    {
+      label: "Happiness",
+      key: "AverageHappiness",
+      format: v => (v * 100).toFixed(1) + "%"
+    },
+    {
+      label: "Unemployment",
+      key: "UnemploymentRate",
+      format: v => (v * 100).toFixed(1) + "%"
+    },
+    {
+      label: "Open Jobs",
+      key: "OpenJobs"
+    }
+  ];
+
+  for (const row of rows) {
+    const tr = document.createElement("tr");
+
+    const cells = tiers.map(tier => {
+      const field = row.key + tier;
+      const value = report[field];
+
+      if (row.format) {
+        return `<td class="text-right pr-4">${row.format(value)}</td>`;
+      }
+
+      return `<td class="text-right pr-4">${value.toLocaleString()}</td>`;
+    });
+
+    tr.innerHTML = `
+      <td class="pr-4 font-semibold">${row.label}</td>
+      ${cells.join("")}
+    `;
+
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  return table;
+}function renderNeedsTable(report) {
+  const needs = [
+    "LifeSupport",
+    "Safety",
+    "Health",
+    "Comfort",
+    "Culture",
+    "Education"
+  ];
+
+  const table = document.createElement("table");
+  table.className = "table-auto border-collapse text-sm";
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        ${needs.map(n => `<th class="text-right pr-4">${n}</th>`).join("")}
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+
+  const tr = document.createElement("tr");
+
+  tr.innerHTML = needs
+    .map(need => {
+      const value = report["NeedFulfillment" + need];
+      const percent = (value * 100).toFixed(1) + "%";
+      return `<td class="text-right pr-4">${percent}</td>`;
+    })
+    .join("");
+
+  tbody.appendChild(tr);
+  table.appendChild(tbody);
+
+  return table;
+}
+
+
+
+/**
+ * Main handler
+ */
+async function loadInfrastructure() {
+  const planetId = planetInput.value.trim();
+
+  if (!planetId) {
+    alert("Please enter a planet identifier.");
+    return;
+  }
+
+  tableContainer.innerHTML = "Loading...";
+
+  try {
+    const data = await fetchInfrastructure(planetId);
+
+    // Existing building table
+    const latestProjects = extractLatestProjects(data);
+
+    // NEW: latest report
+    const latestReport = extractLatestReport(data);
+
+    tableContainer.innerHTML = "";
+
+    // Infrastructure Projects Table
+    const infraTable = renderInfrastructureTable(latestProjects);
+    tableContainer.appendChild(infraTable);
+
+    if (latestReport) {
+      const workforceTitle = document.createElement("h3");
+      workforceTitle.textContent = "Workforce Status";
+      workforceTitle.className = "mt-6 mb-2 font-bold";
+      tableContainer.appendChild(workforceTitle);
+
+      tableContainer.appendChild(renderWorkforceTable(latestReport));
+
+      const needsTitle = document.createElement("h3");
+      needsTitle.textContent = "Need Fulfillment";
+      needsTitle.className = "mt-6 mb-2 font-bold";
+      tableContainer.appendChild(needsTitle);
+
+      tableContainer.appendChild(renderNeedsTable(latestReport));
+    }
+
+  } catch (err) {
+    console.error(err);
+    tableContainer.textContent = "Failed to load infrastructure. " + err;
+  }
+}
+
+
+loadInfraBtn.addEventListener("click", loadInfrastructure);
+
+
+
+
+</script>
