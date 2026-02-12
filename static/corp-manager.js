@@ -68,9 +68,13 @@ async function displayCorpInfo(corpCode) {
   const tbody = table.querySelector("tbody");
   
   const showInactive = document.getElementById("showInactiveCheckbox").checked;
+  const showChurn = document.getElementById("showChurnCheckbox").checked;
 
   const reportContainer = document.getElementById("reportContainer");
   reportContainer.innerHTML = ""; // Clear any existing iframe
+
+  const churnContainer = document.getElementById("churnContainer");
+  churnContainer.innerHTML = ""; // Clear any existing iframe
 
   loadCorpReport("type=corpBreakdown&chartType=treemap&metric=volume", 400, corpCode);
   loadCorpReport("type=compTotals&chartType=treemap&metric=volume&group=corp", 400, corpCode);
@@ -98,6 +102,8 @@ async function displayCorpInfo(corpCode) {
     // Sort members alphabetically by company code for consistent order
     members.sort((a, b) => a.CompanyCode.localeCompare(b.CompanyCode));
 
+    const activeMemberNames = [];
+
     for (const m of members) {
       fetchedCount++;
       status.textContent = `Fetching ${fetchedCount} / ${members.length}...`;
@@ -113,6 +119,8 @@ async function displayCorpInfo(corpCode) {
         const lastUpdate = new Date(timestampStr).getTime();
         if (Date.now() - lastUpdate > TWO_WEEKS_MS) {
           isActive = false;
+        }else{
+          activeMemberNames.push(m.UserName);
         }
       }
 
@@ -166,6 +174,12 @@ async function displayCorpInfo(corpCode) {
         tbody.insertAdjacentHTML("beforeend", row);
       }
     }
+    if(showChurn){
+      for (const userName of activeMemberNames) {
+        console.log("Processing churn for member:", userName);
+        loadChurnReport("type=compHistory&metric=volume", 190, userName);
+      }
+    }
 
     status.textContent = `All ${corpCode} companies loaded,  ${activeCount} active accounts of ${totalCount} in FIO.`;
 
@@ -174,6 +188,30 @@ async function displayCorpInfo(corpCode) {
     status.textContent = "Error loading corporation data.";
   }
 }
+
+
+function loadChurnReport(graphType, height, user) {
+  const reportContainer = document.getElementById("churnContainer");
+  console.log("Loading company report for user:", user);
+
+  if (!user) {
+    console.warn("No user found ");
+    return;
+  }
+
+  const userName = encodeURIComponent(user);
+
+  const iframe = document.createElement("iframe");
+  
+  iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${userName}&hideOptions`;
+  iframe.width = "100%";
+  iframe.height = height;
+  iframe.style.border = "none";
+  iframe.loading = "lazy";
+
+  reportContainer.appendChild(iframe);
+}
+
 
 
 function updateURLParam(key, value) {

@@ -42,8 +42,9 @@
 
 <div id="governor-helper-root"  class="calculator">
 
-  <input id="planetInput" type="text" placeholder="RC-040b" />
+  <input id="planetInput" type="text" placeholder="RC-040b or Malahat" />
   <button id="loadInfraBtn">Load Infrastructure</button>
+  <div id="warnings"></div>
   <div id="infraTableContainer"></div>
 </div>
 
@@ -51,11 +52,13 @@
 
 
   import { fetchFullCXData, fullCXData, getCachedCXData, getCachedCXDataAge} from "/pricing-and-materials.js";
-  import { loadModeledPrices, modeledPrices } from "/pricing-and-materials.js";
+  import { loadModeledPrices, modeledPrices, priceData } from "/pricing-and-materials.js";
 
 // =============================
 // Constants
 // =============================
+
+const PLANET_STORAGE_KEY = "gov_helper_selected_planet";
 
 export const UPKEEP_NEED_TYPES = [
   "safety",
@@ -64,6 +67,14 @@ export const UPKEEP_NEED_TYPES = [
   "culture",
   "education",
 ];
+
+const WEIGHTS = {
+    pioneer: { safety: 0.25, health: 0.15, comfort: 0.03, culture: 0.02, education: 0.01 },
+    settler: { safety: 0.30, health: 0.20, comfort: 0.03, culture: 0.03, education: 0.03 },
+    technician: { safety: 0.20, health: 0.30, comfort: 0.20, culture: 0.10, education: 0.05 },
+    engineer: { safety: 0.10, health: 0.15, comfort: 0.35, culture: 0.20, education: 0.10 },
+    scientist: { safety: 0.10, health: 0.10, comfort: 0.20, culture: 0.25, education: 0.30 }
+};
 
 export const UPKEEP_BUILDINGS = [
   {
@@ -302,6 +313,7 @@ const REFRESH_DURATION = 1 * 3600 * 1000;
 const planetInput = document.getElementById("planetInput");
 const loadInfraBtn = document.getElementById("loadInfraBtn");
 const tableContainer = document.getElementById("infraTableContainer");
+const warnings = document.getElementById("warnings");
 
 /**
  * Fetch infrastructure for a planet with 2-week caching
@@ -507,7 +519,9 @@ function renderWorkforceTable(report) {
 
   table.appendChild(tbody);
   return table;
-}function renderNeedsTable(report) {
+}
+
+function renderNeedsTable(report) {
   const needs = [
     "LifeSupport",
     "Safety",
@@ -547,7 +561,6 @@ function renderWorkforceTable(report) {
 }
 
 
-
 /**
  * Main handler
  */
@@ -559,15 +572,17 @@ async function loadInfrastructure() {
     return;
   }
 
+  const planet = planetInput.value.trim();
+  if (!planet) return;
+
+  localStorage.setItem(PLANET_STORAGE_KEY, planet);
+
   tableContainer.innerHTML = "Loading...";
 
   try {
     const data = await fetchInfrastructure(planetId);
 
-    // Existing building table
     const latestProjects = extractLatestProjects(data);
-
-    // NEW: latest report
     const latestReport = extractLatestReport(data);
 
     tableContainer.innerHTML = "";
@@ -577,6 +592,15 @@ async function loadInfrastructure() {
     tableContainer.appendChild(infraTable);
 
     if (latestReport) {
+
+      const population = {
+        pioneer: latestReport.NextPopulationPioneer,
+        settler: latestReport.NextPopulationSettler,
+        technician: latestReport.NextPopulationTechnician,
+        engineer: latestReport.NextPopulationEngineer,
+        scientist: latestReport.NextPopulationScientist
+      };
+
       const workforceTitle = document.createElement("h3");
       workforceTitle.textContent = "Workforce Status";
       workforceTitle.className = "mt-6 mb-2 font-bold";
@@ -590,6 +614,11 @@ async function loadInfrastructure() {
       tableContainer.appendChild(needsTitle);
 
       tableContainer.appendChild(renderNeedsTable(latestReport));
+
+      const requiredNeeds = renderRequiredNeedsTable(population);
+
+      renderCheapestFulfillmentTable(requiredNeeds, latestProjects);
+
     }
 
   } catch (err) {
@@ -598,9 +627,305 @@ async function loadInfrastructure() {
   }
 }
 
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+function calculateRequiredNeeds(pop) {
+  const needs = {
+    safety: 0,
+    health: 0,
+    comfort: 0,
+    culture: 0,
+    education: 0
+  };
+
+  Object.entries(pop).forEach(([tier, count]) => {
+    const weights = WEIGHTS[tier];
+    if (!weights) return;
+
+    Object.entries(weights).forEach(([need, weight]) => {
+      needs[need] += count * weight;
+    });
+  });
+
+  return needs;
+}
+
+function renderRequiredNeedsTable(population) {
+  if (!population) return;
+
+  const required = calculateRequiredNeeds(population);
+
+  const NEED_ORDER = ["safety", "health", "comfort", "culture", "education"];
+
+  const table = document.createElement("table");
+  table.className = "infra-table";
+
+  // Header
+  const thead = document.createElement("thead");
+  const headRow = document.createElement("tr");
+  headRow.innerHTML = `
+    <th>Need</th>
+    ${NEED_ORDER.map(n => `<th>${capitalize(n)}</th>`).join("")}
+  `;
+  thead.appendChild(headRow);
+  table.appendChild(thead);
+
+  // Values row
+  const tbody = document.createElement("tbody");
+  const row = document.createElement("tr");
+
+  row.innerHTML = `
+    <td>Required</td>
+    ${NEED_ORDER.map(n => `<td>${required[n].toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>`).join("")}
+  `;
+
+  tbody.appendChild(row);
+  table.appendChild(tbody);
+
+  tableContainer.appendChild(table);
+
+  return required; // Important: reuse later
+}
+
+// -------------
+function computeExistingNeedCapacity(latestProjects) {
+  const capacity = {
+    safety: 0,
+    health: 0,
+    comfort: 0,
+    culture: 0,
+    education: 0
+  };
+
+  for (const building of UPKEEP_BUILDINGS) {
+    const project = latestProjects.get(building.ticker);
+    if (!project) continue;
+
+    const levels = project.level || 0;
+
+    for (const need of Object.keys(capacity)) {
+      capacity[need] += (building.needs[need] || 0) * levels;
+    }
+  }
+
+  return capacity;
+}
+
+function buildMaterialSupplyOptions(latestProjects) {
+  const optionsByNeed = {
+    safety: [],
+    health: [],
+    comfort: [],
+    culture: [],
+    education: []
+  };
+
+  for (const building of UPKEEP_BUILDINGS) {
+    const project = latestProjects.get(building.ticker);
+    if (!project) continue;
+
+    const levels = project.level || 0;
+    if (levels === 0) continue;
+
+    const materialCount = building.materials.length;
+
+    for (const material of building.materials) {
+      const price = priceData[material.ticker];
+      if (!price) continue;
+
+      for (const need of Object.keys(optionsByNeed)) {
+        const perLevelNeed = building.needs[need] || 0;
+        if (perLevelNeed === 0) continue;
+
+        const totalNeedProvided =
+          (perLevelNeed / materialCount) * levels;
+
+        const totalCost =
+          material.qtyPerDay * price * levels;
+
+        optionsByNeed[need].push({
+          building: building.ticker,
+          material: material.ticker,
+          levels,
+          needProvided: totalNeedProvided,
+          cost: totalCost,
+          costPerNeed: totalCost / totalNeedProvided
+        });
+      }
+    }
+  }
+
+  // Cheapest first
+  for (const need of Object.keys(optionsByNeed)) {
+    optionsByNeed[need].sort((a, b) => a.costPerNeed - b.costPerNeed);
+  }
+
+  return optionsByNeed;
+}
+function computeCheapestFulfillment(requiredNeeds, latestProjects) {
+  const TARGET_RATIO = 0.7;
+
+  // --- Target unmet amounts ---
+  const remaining = {};
+  for (const need of Object.keys(requiredNeeds)) {
+    remaining[need] = requiredNeeds[need] * TARGET_RATIO;
+  }
+
+  // --- Build candidate supply list ---
+  const candidates = [];
+
+  for (const building of UPKEEP_BUILDINGS) {
+    const project = latestProjects.get(building.ticker);
+    if (!project) continue;
+
+    const levels = project.level || 0;
+    if (levels === 0) continue;
+
+    const materialCount = building.materials.length;
+
+    for (const material of building.materials) {
+      const price = priceData[material.ticker];
+      if (!price) continue;
+
+      const cost =
+        material.qtyPerDay * price * levels;
+
+      const contribution = {};
+
+      let providesAnything = false;
+
+      for (const need of Object.keys(remaining)) {
+        const perLevel = building.needs[need] || 0;
+        if (perLevel === 0) continue;
+
+        providesAnything = true;
+
+        contribution[need] =
+          (perLevel / materialCount) * levels;
+      }
+
+      if (!providesAnything) continue;
+
+      candidates.push({
+        building: building.ticker,
+        level: levels,
+        material: material.ticker,
+        qtyPerDay: material.qtyPerDay * levels,
+        cost,
+        contribution
+      });
+    }
+  }
+
+  const selected = [];
+
+  // --- Greedy multi-need selection ---
+  while (true) {
+    // Check if all needs met
+    const unmetNeeds = Object.values(remaining)
+      .filter(v => v > 0);
+
+    if (unmetNeeds.length === 0) break;
+    if (candidates.length === 0) break;
+
+    // Recalculate effective efficiency for remaining needs
+    for (const c of candidates) {
+      let effectiveValue = 0;
+
+      for (const need of Object.keys(remaining)) {
+        if (remaining[need] > 0 && c.contribution[need]) {
+          effectiveValue += Math.min(
+            remaining[need],
+            c.contribution[need]
+          );
+        }
+      }
+
+      c.effectiveValue = effectiveValue;
+      c.efficiency =
+        effectiveValue > 0
+          ? c.cost / effectiveValue
+          : Infinity;
+    }
+
+    // Remove useless candidates
+    const viable = candidates.filter(c => c.effectiveValue > 0);
+    if (viable.length === 0) break;
+
+    viable.sort((a, b) => a.efficiency - b.efficiency);
+
+    const best = viable[0];
+
+    selected.push(best);
+
+    // Reduce remaining needs
+    for (const need of Object.keys(best.contribution)) {
+      if (remaining[need] > 0) {
+        remaining[need] -= best.contribution[need];
+      }
+    }
+
+    // Remove this candidate (cannot partially supply building)
+    const idx = candidates.indexOf(best);
+    candidates.splice(idx, 1);
+  }
+
+  return selected;
+}
+function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
+  const selected = computeCheapestFulfillment(
+    requiredNeeds,
+    latestProjects
+  );
+
+  if (selected.length === 0) {
+    warnings.textContent = "No viable supply plan found.";
+    return;
+  }
+
+  const table = document.createElement("table");
+  table.className = "infra-table";
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Building</th>
+        <th>Material</th>
+        <th>Qty / Day</th>
+        <th>Daily Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${selected.map(r => `
+        <tr>
+          <td>${r.building} (Level ${r.level})</td>
+          <td>${r.material}</td>
+          <td>${r.qtyPerDay.toLocaleString()}</td>
+          <td>$${r.cost.toLocaleString(undefined,{maximumFractionDigits:2})}</td>
+        </tr>
+      `).join("")}
+    </tbody>
+  `;
+
+  tableContainer.appendChild(table);
+
+  return selected;
+}
+
+
 
 loadInfraBtn.addEventListener("click", loadInfrastructure);
 
+document.addEventListener("DOMContentLoaded", async () => {
+  const savedPlanet = localStorage.getItem(PLANET_STORAGE_KEY);
+
+  if (savedPlanet) {
+    planetInput.value = savedPlanet;
+  }
+
+});
 
 
 
