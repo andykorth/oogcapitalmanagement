@@ -320,6 +320,10 @@ table button,
   border-radius: 4px;       /* smaller radius for dense layout */
 }
 
+.calculator select {
+  padding: 0.35rem 0.5rem;
+}
+
 .calculator textarea {
   resize: none;
   width: 100%;
