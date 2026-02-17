@@ -1,48 +1,26 @@
 <style>
   #storage-tool {
-    font-family: sans-serif;
-    color: #e5e7eb;
     padding: 1.5rem;
     border-radius: 12px;
   }
 
   #storage-tool h2 {
     font-size: 1.3rem;
-    border-bottom: 1px solid #374151;
+    border-bottom: 1px solid var(--border-color);
     margin-top: 1rem;
     padding-bottom: 0.3rem;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 0.5rem;
   }
 
   .group-summary {
     margin-top: 0.3rem;
     font-size: 0.85rem;
-    color: #9ca3af;
+    color: var(--text-secondary);
   }
 
-    /* Local layout tweaks for this specific tool */
-    #modeled-prices .inputs {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-        width: 100%;
-    }
-
-    #modeled-prices textarea {
-        min-height: 200px;
-        width: 100%;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        padding: 0.5rem;
-        font-family: monospace;
-    }
-
+  #modeled-prices textarea {
+    min-height: 200px;
+    font-family: monospace;
+  }
 </style>
 
 <div id="storage-tool" class="calculator">

@@ -1,65 +1,7 @@
 <style>
-    input[type="number"], textarea, select {
-        background-color: rgb(255 255 255);
-        padding: 2px;
-        padding-left: 10px;
-    }
-
-    .dark input[type="number"], .dark textarea, .dark select {
-        background-color: rgb(17 24 39);
-        padding: 2px;
-        padding-left: 10px;
-    }
-
-    textarea {
-        resize: none;
-        width: 100%;
-    }
-    label {  
-        display: block;
-        margin-top: 1px; }
-    .two-col label {
-        display: inline-block;
-    }
-    .tableLabel {
-        display: inline-block;
-        width: 100px;
-        text-align: right;
-        margin-right: 10px;
-    }
-    tfoot td { font-weight: bold; }
-    th {
-        text-align: left;
-    }
-
-  #material-matcher .inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-  }
-
   #material-matcher .input-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 300px; /* keeps it tidy on mobile */
+    max-width: 300px;
   }
-
-  #material-matcher .input-row span {
-    flex: 0 0 130px; /* fixed label width for alignment */
-    text-align: right;
-    margin-right: 0.5rem;
-  }
-
-  #material-matcher .input-row input {
-    flex: 1;
-    padding: 0.3rem 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-
 </style>
 <div id="material-matcher" class="calculator">
   <h3>Shipping Peeper</h3>

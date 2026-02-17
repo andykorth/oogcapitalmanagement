@@ -55,31 +55,6 @@ label {
   color: var(--text-primary);
 }
 
-.calculator button {
-  margin-top: 1em;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  color: var(--text-primary);
-  padding: 0.4rem 0.75rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.calculator button:hover {
-  background-color: var(--bg-primary);
-  border-color: var(--accent-color);
-}
-
-table button,
-.calculator table button {
-  margin: 0;                /* remove spacing in rows */
-  padding: 0.25rem 0.35rem; /* much tighter */
-  font-size: 0.8rem;        /* compact */
-  line-height: 1.1;
-  border-radius: 4px;       /* smaller radius for dense layout */
-}
-
 .button-link {
   display: inline-block;
   background-color: rgb(31 41 55);
@@ -316,4 +291,79 @@ text-white {
 .copy-order-btn:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+/* ====== Shared Calculator Tool Patterns ====== */
+
+.calculator button {
+  margin-top: 1em;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.calculator button:hover {
+  background-color: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+table button,
+.calculator table button {
+  margin: 0;                /* remove spacing in rows */
+  padding: 0.25rem 0.35rem; /* much tighter */
+  font-size: 0.8rem;        /* compact */
+  line-height: 1.1;
+  border-radius: 4px;       /* smaller radius for dense layout */
+}
+
+.calculator textarea {
+  resize: none;
+  width: 100%;
+}
+
+.calculator .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.calculator .input-row {
+  display: flex;
+  align-items: center;
+}
+
+.calculator .input-row span {
+  flex: 0 0 130px;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
+.calculator .input-row input {
+  flex: 1;
+}
+
+.two-col label {
+  display: inline-block;
+}
+
+.tableLabel {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+.tool-status {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }

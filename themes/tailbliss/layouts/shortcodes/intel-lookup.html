@@ -5,29 +5,6 @@
     padding: 1rem;
   }
 
-  #intel-tool .inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-  }
-
-  #intel-tool .input-row span {
-    flex: 0 0 130px;
-    text-align: right;
-    margin-right: 0.5rem;
-  }
-
-  #intel-tool input {
-    flex: 1;
-  }
-
-  #intelStatus {
-    color: rgb(156 163 175);
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-  }
-
   .section {
     margin-top: 0.5rem;
   }
@@ -38,22 +15,11 @@
     margin-bottom: 8px;
   }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 0.5rem;
-  }
-
   th, td {
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
   }
 
-  th {
-    background-color: #222;
-    color: #ddd;
-  }
-
-  /* New: Layout for overview + planets */
+  /* Layout for overview + planets */
   .info-flex {
     display: flex;
     gap: 1rem;
@@ -95,11 +61,13 @@
     <div class="input-row">
       <span>Company Code:</span>
       <input id="companyCodeInput" type="text" placeholder="e.g. ARCL" />
+    </div>
+    <div class="input-row">
       <button id="fetchCompanyButton">Fetch</button>
     </div>
   </div>
 
-  <div id="intelStatus"></div>
+  <div id="intelStatus" class="tool-status"></div>
 
   <div id="companyInfo" class="hidden">
     <div class="info-flex">
