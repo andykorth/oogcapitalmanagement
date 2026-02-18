@@ -1,0 +1,298 @@
+<style>
+  #gateway-tool-root {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* Section band — reuse the same indigo style as governor-helper */
+  .section-live {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(99 102 241);
+    background: rgba(99, 102, 241, 0.06);
+  }
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  /* Fuel bar */
+  .fuel-bar-outer {
+    display: inline-block;
+    width: 90px;
+    height: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .fuel-bar-inner {
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  /* Faction currency badge */
+  .faction-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .gateway-table td,
+  .gateway-table th {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  .gateway-table .phase-cell {
+    font-size: 0.82rem;
+  }
+  .gateway-table .upgrades-cell {
+    font-size: 0.78rem;
+  }
+  .upgrade-badge {
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--text-primary);
+    font-size: 0.72rem;
+    margin-right: 2px;
+  }
+</style>
+
+<div id="gateway-tool-root" class="calculator">
+  <div id="gw-status" class="tool-status">Loading gateway data…</div>
+
+  <div id="section-live" class="section-live" style="display:none">
+    <div class="section-label">Live Data</div>
+    <div id="gw-meta" style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem"></div>
+    <div id="gw-table-container"></div>
+    <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:0.75rem">
+      Phase jumps: <strong>↑ outbound</strong> / <strong>↓ inbound</strong> &nbsp;·&nbsp;
+      Days left estimated from average phase usage. Phase = 7 days.
+    </p>
+  </div>
+</div>
+
+<script type="module">
+const CACHE_KEY      = "gateway_data_v1";
+const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
+
+const statusEl    = document.getElementById("gw-status");
+const sectionLive = document.getElementById("section-live");
+const metaEl      = document.getElementById("gw-meta");
+const tableContEl = document.getElementById("gw-table-container");
+
+async function fetchGateways() {
+  const cached = localStorage.getItem(CACHE_KEY);
+  if (cached) {
+    try {
+      const { timestamp, data } = JSON.parse(cached);
+      if (Date.now() - timestamp < CACHE_DURATION) {
+        return { data, cacheAge: Date.now() - timestamp };
+      }
+    } catch {}
+  }
+  const resp = await fetch("https://api.fnar.net/gateway");
+  if (!resp.ok) throw new Error(`API error: ${resp.status}`);
+  const data = await resp.json();
+  localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data }));
+  return { data, cacheAge: 0 };
+}
+
+// ── helpers ──────────────────────────────────────────────────────────────
+
+function fuelPct(g) {
+  return g.MaxFuelUnits ? (g.AvailableFuelUnits / g.MaxFuelUnits) * 100 : 0;
+}
+
+function fuelColor(pct) {
+  if (pct > 60) return { bar: "#4ade80", text: "#4ade80" };
+  if (pct > 30) return { bar: "#fbbf24", text: "#fbbf24" };
+  return { bar: "#f87171", text: "#f87171" };
+}
+
+// Estimate days remaining at average daily usage
+function daysRemaining(g) {
+  // PhaseAverageJumps is over 7-day phases
+  const avgJumpsPerDay = (g.PhaseAverageJumps ?? 0) / 7;
+  if (avgJumpsPerDay <= 0) return null;
+  const fuelPerDay = avgJumpsPerDay * (g.FuelPerJump || 30);
+  return g.AvailableFuelUnits / fuelPerDay;
+}
+
+function fuelDaysText(g) {
+  const days = daysRemaining(g);
+  if (days == null) return "∞";
+  if (days > 99) return ">99d";
+  return days.toFixed(1) + "d";
+}
+
+function fuelDaysColor(g) {
+  const days = daysRemaining(g);
+  if (days == null) return "var(--text-secondary)";
+  if (days > 14) return "#4ade80";
+  if (days > 5)  return "#fbbf24";
+  return "#f87171";
+}
+
+// Faction/currency badge colors (PrUn faction currencies)
+const FACTION_COLORS = {
+  AIC: { bg: "#7c3500", fg: "#fb923c" },   // Antares (orange)
+  CIS: { bg: "#7c0a0a", fg: "#f87171" },   // Castillo-Ito Syndicate (red)
+  NCC: { bg: "#7c6800", fg: "#fde047" },   // Northstar Commission (yellow)
+  ICA: { bg: "#14532d", fg: "#86efac" },   // Insitor Cooperative (green)
+  BUC: { bg: "#3b1f00", fg: "#f59e0b" },   // Benten-Usaki
+};
+
+function factionBadge(code) {
+  const c = FACTION_COLORS[code] || { bg: "#374151", fg: "#d1d5db" };
+  return `<span class="faction-badge" style="background:${c.bg};color:${c.fg}">${code ?? "—"}</span>`;
+}
+
+function upgradeBadges(g) {
+  const parts = [];
+  if (g.CapacityUpgrades) parts.push(`<span class="upgrade-badge">Cap+${g.CapacityUpgrades}</span>`);
+  if (g.VolumeUpgrades)   parts.push(`<span class="upgrade-badge">Vol+${g.VolumeUpgrades}</span>`);
+  if (g.DistanceUpgrades) parts.push(`<span class="upgrade-badge">Dist+${g.DistanceUpgrades}</span>`);
+  return parts.length ? parts.join("") : `<span style="color:var(--text-secondary)">—</span>`;
+}
+
+function phaseCells(jumps, inbound) {
+  const out = jumps  ?? "—";
+  const inn = inbound ?? "—";
+  return `${out}<span style="color:var(--text-secondary)">↑</span> ${inn}<span style="color:var(--text-secondary)">↓</span>`;
+}
+
+function pct(value) {
+  if (value == null) return "—";
+  return (value * 100).toFixed(1) + "%";
+}
+
+function formatRelativeTime(isoString) {
+  if (!isoString) return "—";
+  const epochMs = new Date(isoString).getTime();
+  const now = Date.now();
+  let diff = epochMs - now;
+  const future = diff > 0;
+  diff = Math.abs(diff);
+  const sec = Math.floor(diff / 1000);
+  const min = Math.floor(sec / 60);
+  const hr  = Math.floor(min / 60);
+  const day = Math.floor(hr / 24);
+  let primary = "", secondary = "";
+  if (day > 0)      { primary = `${day}d`;  secondary = `${hr % 24}h`; }
+  else if (hr > 0)  { primary = `${hr}h`;   secondary = `${min % 60}m`; }
+  else if (min > 0) { primary = `${min}m`;  secondary = `${sec % 60}s`; }
+  else              { primary = `${sec}s`; }
+  const timeStr = secondary && !secondary.startsWith("0") ? `${primary} ${secondary}` : primary;
+  return future ? `in ${timeStr}` : `${timeStr} ago`;
+}
+
+// ── render ───────────────────────────────────────────────────────────────
+
+function renderTable(gateways) {
+  const operational = gateways
+    .filter(g => g.OperationalState === "OPERATIONAL" && g.LinkStatus === "ESTABLISHED")
+    .sort((a, b) => fuelPct(a) - fuelPct(b)); // lowest fuel first
+
+  if (!operational.length) {
+    tableContEl.innerHTML = "<p>No operational gateways found.</p>";
+    return;
+  }
+
+  const table = document.createElement("table");
+  table.className = "gateway-table table-auto border-collapse text-sm";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Faction</th>
+        <th colspan="2">Fuel</th>
+        <th class="text-right">Days Left</th>
+        <th class="text-right">Phase End</th>
+        <th class="text-right">Current Phase</th>
+        <th class="text-right">Last Phase</th>
+        <th class="text-right">Avg Phase</th>
+        <th>Upgrades</th>
+        <th class="text-right">Max Vol</th>
+        <th class="text-right">Uptime</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+
+  for (const g of operational) {
+    const pct_val   = fuelPct(g);
+    const colors    = fuelColor(pct_val);
+    const barWidth  = Math.min(pct_val, 100).toFixed(1);
+    const daysTxt   = fuelDaysText(g);
+    const daysColor = fuelDaysColor(g);
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td style="font-weight:600">${g.Name ?? g.NaturalId}</td>
+      <td style="color:var(--text-secondary)">${g.LocationNaturalId ?? "—"}</td>
+      <td>${factionBadge(g.CurrencyCode)}</td>
+      <td>
+        <div class="fuel-bar-outer">
+          <div class="fuel-bar-inner" style="width:${barWidth}%;background:${colors.bar}"></div>
+        </div>
+        <span style="margin-left:6px;color:${colors.text}">${pct_val.toFixed(1)}%</span>
+      </td>
+      <td style="color:var(--text-secondary);font-size:0.78rem">
+        ${g.AvailableFuelUnits.toLocaleString()} / ${g.MaxFuelUnits.toLocaleString()}
+      </td>
+      <td class="text-right" style="color:${daysColor};font-weight:600">${daysTxt}</td>
+      <td class="text-right" style="color:var(--text-secondary)">${formatRelativeTime(g.CurrentPhaseEnd)}</td>
+      <td class="text-right phase-cell">${phaseCells(g.CurrentPhaseJumps, g.CurrentPhaseInboundJumps)}</td>
+      <td class="text-right phase-cell">${phaseCells(g.LastPhaseJumps, g.LastPhaseInboundJumps)}</td>
+      <td class="text-right phase-cell">${phaseCells(g.PhaseAverageJumps, g.PhaseAverageInboundJumps)}</td>
+      <td class="upgrades-cell">${upgradeBadges(g)}</td>
+      <td class="text-right">${g.MaxShipVolume != null ? g.MaxShipVolume.toLocaleString() : "—"}</td>
+      <td class="text-right">${pct(g.AverageUpkeepUptime)}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  tableContEl.innerHTML = "";
+  tableContEl.appendChild(table);
+}
+
+// ── init ─────────────────────────────────────────────────────────────────
+
+(async () => {
+  try {
+    const { data, cacheAge } = await fetchGateways();
+
+    const operational = data.filter(g => g.OperationalState === "OPERATIONAL" && g.LinkStatus === "ESTABLISHED");
+    const cacheNote = cacheAge > 0
+      ? `· cached ${Math.floor(cacheAge / 60000)}m ago`
+      : "· fetched live";
+    metaEl.textContent = `${operational.length} operational gateways ${cacheNote} · refreshes every 30 min`;
+
+    renderTable(data);
+
+    statusEl.textContent = "";
+    sectionLive.style.display = "";
+  } catch (err) {
+    console.error(err);
+    statusEl.textContent = "Failed to load gateway data: " + err.message;
+    statusEl.style.color = "#f87171";
+  }
+})();
+</script>
