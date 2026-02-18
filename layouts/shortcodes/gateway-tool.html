@@ -343,7 +343,7 @@ function upkeepDataAttr(phase) {
 
 function renderTable(gateways) {
   const operational = gateways
-    .filter(g => g.OperationalState === "OPERATIONAL")
+    .filter(g => g.OperationalState === "OPERATIONAL" && g.FuelPerJump > 0)
     .sort((a, b) => a.UsageCurrency?.localeCompare(b.UsageCurrency));
 
   if (!operational.length) {
