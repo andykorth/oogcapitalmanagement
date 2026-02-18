@@ -77,10 +77,10 @@
         <div id="infra-table-container"></div>
       </div>
       <div>
-        <h3 class="mb-2 font-bold">Last Report's Need Fulfillment</h3>
-        <div id="needs-table-container"></div>
         <h3 class="mt-4 mb-2 font-bold">Last Population Report</h3>
         <div id="workforce-table-container"></div>
+        <h3 class="mb-2 font-bold">Last Report's Need Fulfillment</h3>
+        <div id="needs-table-container"></div>
       </div>
     </div>
   </div>
@@ -407,12 +407,10 @@ function renderNeedsTable(report) {
   for (const { key, label } of needs) {
     const value = report["NeedFulfillment" + key] ?? 0;
     const pct = (value * 100).toFixed(1) + "%";
-    const met = value >= 0.7;
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td class="pr-4 font-semibold">${label}</td>
       <td class="text-right pr-3">${pct}</td>
-      <td style="color:${met ? "#4ade80" : "#f87171"}">${met ? "✓" : "✗"}</td>
     `;
     tbody.appendChild(tr);
   }
@@ -524,77 +522,138 @@ function calculateRequiredNeeds(pop) {
 function computeCheapestFulfillment(requiredNeeds, latestProjects) {
   const TARGET = getTarget();
 
-  // Build one candidate per (building, material) for each present building.
-  // Each material independently provides 1/n of its building's need output,
-  // where n = total number of materials the building consumes.
+  // Each option = one (building, material) pair.
+  // Quantities are stored PER LEVEL so phase 2 can freely adjust active levels.
   const allOptions = [];
   for (const building of UPKEEP_BUILDINGS) {
     const project = latestProjects.get(building.ticker);
     if (!project || !project.level) continue;
-    const levels = project.level;
+    const builtLevel = project.level;
     const n = building.materials.length;
 
     for (const mat of building.materials) {
       const price = priceData[mat.ticker];
       if (!price) continue;
 
-      const contributions = {};
+      const contribPerLevel = {};
       for (const [need, needAmt] of Object.entries(building.needs)) {
-        if (needAmt > 0) contributions[need] = (needAmt / n) * levels;
+        if (needAmt > 0) contribPerLevel[need] = needAmt / n;
       }
-      if (Object.keys(contributions).length === 0) continue;
+      if (Object.keys(contribPerLevel).length === 0) continue;
 
       allOptions.push({
         building: building.ticker,
-        levels,
+        builtLevel,
+        activeLevel: builtLevel, // reduced in phase 2
         ticker: mat.ticker,
-        qtyPerDay: mat.qtyPerDay * levels,
-        cost: mat.qtyPerDay * price * levels,
-        contributions,
+        qtyPerDayPerLevel: mat.qtyPerDay,
+        costPerLevel: mat.qtyPerDay * price,
+        contribPerLevel,
       });
     }
   }
 
-  const selected = new Set(); // indices into allOptions
-
-  // Remaining need to satisfy (starts at 70% of required for each category)
+  // ── Phase 1: greedy material selection ──────────────────────────────────
+  // Cost-effectiveness = contribPerLevel / costPerLevel (level cancels out),
+  // so material ranking is independent of how many levels are active.
+  const selected = new Set();
   const remaining = {};
   for (const [need, req] of Object.entries(requiredNeeds)) {
     remaining[need] = req * TARGET;
   }
 
-  // Solve each need type independently with a greedy pass:
-  // pick the unselected material that provides the most of this need per dollar.
-  // When a material is selected, apply ALL its contributions so cross-need
-  // buildings (e.g. EMC covering safety + health) don't get double-purchased.
   for (const need of Object.keys(requiredNeeds)) {
-    // Credit contributions from materials already selected for prior needs
+    // Credit already-selected materials at their full built level
     for (const idx of selected) {
-      const contrib = allOptions[idx].contributions[need];
-      if (contrib) remaining[need] -= contrib;
+      remaining[need] -= (allOptions[idx].contribPerLevel[need] ?? 0) * allOptions[idx].builtLevel;
     }
     if (remaining[need] <= 0) continue;
 
-    // Sort unselected candidates for this need by need-per-dollar (descending)
     const candidates = allOptions
       .map((opt, i) => ({ opt, i }))
-      .filter(({ opt, i }) => !selected.has(i) && (opt.contributions[need] ?? 0) > 0)
-      .sort(
-        ({ opt: a }, { opt: b }) =>
-          b.contributions[need] / b.cost - a.contributions[need] / a.cost
+      .filter(({ i }) => !selected.has(i))
+      .filter(({ opt }) => (opt.contribPerLevel[need] ?? 0) > 0)
+      .sort(({ opt: a }, { opt: b }) =>
+        b.contribPerLevel[need] / b.costPerLevel - a.contribPerLevel[need] / a.costPerLevel
       );
 
     for (const { opt, i } of candidates) {
       if (remaining[need] <= 0) break;
       selected.add(i);
-      // Apply all contributions from this material (handles cross-need buildings)
-      for (const [n2, contrib] of Object.entries(opt.contributions)) {
-        remaining[n2] = (remaining[n2] ?? 0) - contrib;
+      // Apply all contributions so cross-need buildings aren't double-purchased
+      for (const [n2, c] of Object.entries(opt.contribPerLevel)) {
+        remaining[n2] = (remaining[n2] ?? 0) - c * opt.builtLevel;
       }
     }
   }
 
-  return [...selected].map(i => allOptions[i]);
+  if (selected.size === 0) return [];
+
+  // ── Phase 2: minimize active levels to avoid overshooting ───────────────
+  // Compute surplus over target at full built levels.
+  const provided = {};
+  for (const idx of selected) {
+    for (const [need, c] of Object.entries(allOptions[idx].contribPerLevel)) {
+      provided[need] = (provided[need] ?? 0) + c * allOptions[idx].builtLevel;
+    }
+  }
+  const surplus = {};
+  for (const [need, req] of Object.entries(requiredNeeds)) {
+    surplus[need] = (provided[need] ?? 0) - req * TARGET;
+  }
+
+  // Aggregate per-building totals for the reduction pass
+  const bldMap = new Map();
+  for (const idx of selected) {
+    const opt = allOptions[idx];
+    if (!bldMap.has(opt.building)) {
+      bldMap.set(opt.building, { indices: [], builtLevel: opt.builtLevel, costPerLvl: 0, contribPerLvl: {} });
+    }
+    const e = bldMap.get(opt.building);
+    e.indices.push(idx);
+    e.costPerLvl += opt.costPerLevel;
+    for (const [need, c] of Object.entries(opt.contribPerLevel)) {
+      e.contribPerLvl[need] = (e.contribPerLvl[need] ?? 0) + c;
+    }
+  }
+
+  // Reduce most-expensive buildings first to maximise savings
+  const sortedBlds = [...bldMap.values()].sort((a, b) => b.costPerLvl - a.costPerLvl);
+
+  for (const bData of sortedBlds) {
+    let maxReduce = bData.builtLevel;
+    for (const [need, c] of Object.entries(bData.contribPerLvl)) {
+      if (c <= 0) continue;
+      maxReduce = Math.min(maxReduce, Math.floor(surplus[need] / c));
+    }
+    maxReduce = Math.max(0, maxReduce);
+
+    // Update surplus to reflect the reduction before processing next building
+    for (const [need, c] of Object.entries(bData.contribPerLvl)) {
+      surplus[need] -= maxReduce * c;
+    }
+    const newActive = bData.builtLevel - maxReduce;
+    for (const idx of bData.indices) allOptions[idx].activeLevel = newActive;
+  }
+
+  // ── Return final plan ────────────────────────────────────────────────────
+  return [...selected]
+    .filter(i => allOptions[i].activeLevel > 0) // drop fully deactivated buildings
+    .map(i => {
+      const opt = allOptions[i];
+      const a = opt.activeLevel;
+      return {
+        building: opt.building,
+        builtLevel: opt.builtLevel,
+        activeLevel: a,
+        ticker: opt.ticker,
+        qtyPerDay: opt.qtyPerDayPerLevel * a,
+        cost: opt.costPerLevel * a,
+        contributions: Object.fromEntries(
+          Object.entries(opt.contribPerLevel).map(([k, v]) => [k, v * a])
+        ),
+      };
+    });
 }
 
 function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
@@ -693,7 +752,10 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       const tr = document.createElement("tr");
       tr.style.backgroundColor = rowColor;
       tr.innerHTML = `
-        <td>${opt.levels}x ${building}</td>
+        <td>${opt.activeLevel < opt.builtLevel
+          ? `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
+          : `${opt.activeLevel} ${building}`
+        }</td>
         <td>${opt.ticker}</td>
         <td class="text-right">${opt.qtyPerDay.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
         <td class="text-right">${opt.cost.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
@@ -735,7 +797,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
     const req = requiredNeeds[need] || 0;
     const prov = provided[need] || 0;
     const fulfillment = req > 0 ? prov / req : 1;
-    const met = fulfillment >= 0.7;
+    const met = fulfillment >= getTarget();
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
