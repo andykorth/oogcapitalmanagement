@@ -343,8 +343,8 @@ function upkeepDataAttr(phase) {
 
 function renderTable(gateways) {
   const operational = gateways
-    .filter(g => g.OperationalState === "OPERATIONAL" && g.LinkStatus === "ESTABLISHED")
-    .sort((a, b) => a.UsageCurrency.localeCompare(b.UsageCurrency));
+    .filter(g => g.OperationalState === "OPERATIONAL")
+    .sort((a, b) => a.UsageCurrency?.localeCompare(b.UsageCurrency));
 
   if (!operational.length) {
     tableContEl.innerHTML = "<p>No operational gateways found.</p>";
@@ -387,11 +387,11 @@ function renderTable(gateways) {
       ? progressBarHtml(up, upColor, null, upkeepDataAttr(upPhase))
       : `<span style="color:var(--text-secondary)">—</span>`;
 
-    const fuelSubtext = `${g.AvailableFuelUnits.toLocaleString()} / ${g.MaxFuelUnits.toLocaleString()}`;
+    const fuelSubtext = `${(g.AvailableFuelUnits ?? 0).toLocaleString()} / ${(g.MaxFuelUnits ?? 0)?.toLocaleString()}`;
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td style="font-weight:600">${g.Name ?? g.NaturalId}</td>
+      <td style="font-weight:600; ${(g.LinkStatus == "UNLINKED") ? "color:#fb923c;" : ""} ">${g.Name ?? g.NaturalId}</td>
       <td style="color:var(--text-secondary)">${g.LocationNaturalId ?? "—"}</td>
       <td>${factionBadge(g.UsageCurrency)}</td>
       <td>${progressBarHtml(fp, fColor, fuelSubtext)}</td>
