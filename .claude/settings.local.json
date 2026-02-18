@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "WebFetch(domain:kortham.net)",
+      "WebFetch(domain:pct.fnar.net)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:api.fnar.net)",
+      "WebFetch(domain:rest.fnar.net)"
+    ]
+  }
+}

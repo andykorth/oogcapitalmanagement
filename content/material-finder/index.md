@@ -1,5 +1,5 @@
 ---
-title: "Material Finder"
+title: "Shipping Peeper"
 featured_image: 'images/cargobay-narrow.png'
 summary: Determine what material is in a BLCK by examining its density.
 description: Determine what material is in a BLCK by examining its density.

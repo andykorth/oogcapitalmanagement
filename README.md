@@ -1,30 +1,82 @@
 # OOG Capital Management Website
 
-This site is developed with [Hugo](https://gohugo.io). 
+This site is developed with [Hugo](https://gohugo.io).
 
-Run local hugo server, include draft posts:
+Run local Hugo server (include draft posts):
 ```
 hugo server -D
 ```
 
-I'm using Hugo v147. The extended version may be required for some themes I use. Newer versions will probably work, just bump up the version number in the theme if needed.
+Hugo v0.147 extended or higher is required. The extended version is needed for some theme features (SCSS processing). Newer versions will probably work, just bump the version number in the theme if needed. But you can kind of ignore the theme 
 
-# Project Structure:
+## Project Structure
 
-`/assets/images` - For artwork used across the site, or used in shortcodes or featured_images. Stuff inside /assets/ will run through Hugo's processor scripts, so images will be reformatted and recompressed as needed. References will be replaced with size-specific references. In Hugo code, these are generally referenced like ` {{ with resources.Get . }} `
+```
+/assets/css/         OOG-specific CSS (custom.css). Hugo processes these before
+                     serving; root-level assets override the theme's copies. This is for non-tailwind css also.
 
-`/content/` - posts or pages for the site, written in markdown.  
+/assets/images/      Artwork used across the site and in featured images.
+                     Hugo reprocesses and recompresses these automatically.
+                     Referenced in templates via {{ with resources.Get . }}
 
-`/public/` - This is the build output of the `hugo` tool. This is very unlike React/Vite/Node, which use the `/public/` folder as input for static content.
+/content/            Pages and posts, written in Markdown.
+  posts/             Blog articles.
+  <tool-name>/       One directory per tool, each with a minimal index.md
+                     containing front matter + a shortcode invocation.
 
-`/static/` - Content here gets copied directly to the output directory. This includes favicons, certain images, and non-hugo webapps like the `/map/` project such as https://github.com/Taiyi-94/prun_universe_map
+/layouts/            OOG-specific Hugo template overrides. Root-level layouts
+                     take precedence over themes/tailbliss/layouts/.
+  shortcodes/        All interactive tool shortcodes (governor-helper,
+                     gateway-tool, intel-lookup, corp-manager, etc.)
+  home.html          Custom homepage template
+  tool-list/         Custom layout for the tools index page
 
-# Deployment
+/static/             Content copied directly to /public/ without processing.
+  *.js               Browser-side JavaScript for interactive tools.
+                     infra-data.js and pricing-and-materials.js are shared
+                     modules imported by multiple tools.
+  map/               Interactive universe map (~36 MB, don't open wholesale)
+  shareholders/      Discord chat exports archive (~121 MB)
+  flights.html       Standalone ship tracker (not a Hugo page). Goes in my MagicMirror
 
-Deploy to webserver via sftp or [rsync](https://gohugo.io/host-and-deploy/deploy-with-rsync/). But don't delete remote content as the tutorial suggests.
+/themes/tailbliss/   Upstream TailBliss theme. Contains base layouts, partials,
+                     generic shortcodes, and Tailwind/PostCSS configuration.
+                     Don't add OOG-specific files here — use root layouts/ instead.
 
+/public/             Hugo build output (git-ignored). Unlike React/Vite, this is
+                     output only — static source files live in /static/, not here.
+```
+
+## Development
+
+Most of the time you can develop using:
+```
+hugo server -D
+```
+
+If you need to mess with the tailwind bits of the tailbliss theme, then you might need hugo extended and npm:
+
+The npm scripts (Tailwind watch, dev server) live in `themes/tailbliss/`:
+
+```bash
+cd themes/tailbliss
+npm start        # Tailwind watch + Hugo dev server
+npm run build    # Production build (hugo --minify)
+```
+
+## Deployment
+
+Deploy to the web server via rsync or SFTP:
+
+```bash
+./deploy.sh      # rsync /public/ to remote server
+./upload.sh      # SFTP upload from /public/
+```
+
+Manual rsync (don't use `--delete` — it would remove content not in the local build):
 ```
 rsync -avz public/ username@host:~/path/
 ```
 
-(On windows rsync is not available via winget, but instead follow this painful tutorial: https://blog.holey.cc/2025/04/30/using-rsync-on-windows/ )
+On Windows, rsync isn't available via winget. See:
+https://blog.holey.cc/2025/04/30/using-rsync-on-windows/
