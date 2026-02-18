@@ -22,262 +22,10 @@
 <script type="module">
 
 
-  import { fetchFullCXData, fullCXData, getCachedCXData, getCachedCXDataAge} from "/pricing-and-materials.js";
-  import { loadModeledPrices, modeledPrices, priceData } from "/pricing-and-materials.js";
-
-// =============================
-// Constants
-// =============================
+  import { fetchPricing, priceData } from "/pricing-and-materials.js";
+  import { UPKEEP_BUILDINGS, UPKEEP_NEED_TYPES, WEIGHTS } from "/infra-data.js";
 
 const PLANET_STORAGE_KEY = "gov_helper_selected_planet";
-
-export const UPKEEP_NEED_TYPES = [
-  "safety",
-  "health",
-  "comfort",
-  "culture",
-  "education",
-];
-
-const WEIGHTS = {
-    pioneer: { safety: 0.25, health: 0.15, comfort: 0.03, culture: 0.02, education: 0.01 },
-    settler: { safety: 0.30, health: 0.20, comfort: 0.03, culture: 0.03, education: 0.03 },
-    technician: { safety: 0.20, health: 0.30, comfort: 0.20, culture: 0.10, education: 0.05 },
-    engineer: { safety: 0.10, health: 0.15, comfort: 0.35, culture: 0.20, education: 0.10 },
-    scientist: { safety: 0.10, health: 0.10, comfort: 0.20, culture: 0.25, education: 0.30 }
-};
-
-export const UPKEEP_BUILDINGS = [
-  {
-    ticker: "SST",
-    name: "Safety Station",
-    materials: [
-      { ticker: "DW", qtyPerDay: 10 },
-      { ticker: "OFF", qtyPerDay: 10 },
-      { ticker: "SUN", qtyPerDay: 2 },
-    ],
-    needs: { safety: 833.3, health: 0, comfort: 0, culture: 0, education: 0 },
-  },
-  {
-    ticker: "SDP",
-    name: "Security Drone Post",
-    materials: [
-      { ticker: "POW", qtyPerDay: 1 },
-      { ticker: "RAD", qtyPerDay: 0.47 },
-      { ticker: "CCD", qtyPerDay: 0.07 },
-      { ticker: "SUD", qtyPerDay: 0.07 },
-    ],
-    needs: { safety: 1250, health: 0, comfort: 0, culture: 0, education: 0 },
-  },
-  {
-    ticker: "EMC",
-    name: "Emergency Center",
-    materials: [
-      { ticker: "PK", qtyPerDay: 2 },
-      { ticker: "POW", qtyPerDay: 0.4 },
-      { ticker: "BND", qtyPerDay: 4 },
-      { ticker: "RED", qtyPerDay: 0.07 },
-      { ticker: "BSC", qtyPerDay: 0.07 },
-    ],
-    needs: { safety: 200, health: 200, comfort: 0, culture: 0, education: 0 },
-  },
-  {
-    ticker: "INF",
-    name: "Infirmary",
-    materials: [
-      { ticker: "OFF", qtyPerDay: 10 },
-      { ticker: "TUB", qtyPerDay: 6.67 },
-      { ticker: "STR", qtyPerDay: 0.67 },
-    ],
-    needs: { safety: 0, health: 833.33, comfort: 0, culture: 0, education: 0 },
-  },
-  {
-    ticker: "HOS",
-    name: "Hospital",
-    materials: [
-      { ticker: "PK", qtyPerDay: 2 },
-      { ticker: "SEQ", qtyPerDay: 0.4 },
-      { ticker: "BND", qtyPerDay: 4 },
-      { ticker: "SDR", qtyPerDay: 0.07 },
-      { ticker: "RED", qtyPerDay: 0.07 },
-      { ticker: "BSC", qtyPerDay: 0.13 },
-    ],
-    needs: { safety: 0, health: 833.33, comfort: 0, culture: 0, education: 0 },
-  },
-  {
-    ticker: "WCE",
-    name: "Wellness Center",
-    materials: [
-      { ticker: "KOM", qtyPerDay: 4 },
-      { ticker: "OLF", qtyPerDay: 2 },
-      { ticker: "DW", qtyPerDay: 6 },
-      { ticker: "DEC", qtyPerDay: 0.67 },
-      { ticker: "PFE", qtyPerDay: 2.67 },
-      { ticker: "SOI", qtyPerDay: 6.67 },
-    ],
-    needs: { safety: 0, health: 166.67, comfort: 166.7, culture: 0, education: 0 },
-  },
-  {
-    ticker: "PAR",
-    name: "Park",
-    materials: [
-      { ticker: "DW", qtyPerDay: 10 },
-      { ticker: "FOD", qtyPerDay: 6 },
-      { ticker: "PFE", qtyPerDay: 2 },
-      { ticker: "SOI", qtyPerDay: 3.33 },
-      { ticker: "DEC", qtyPerDay: 0.33 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 500, culture: 0, education: 0 },
-  },
-  {
-    ticker: "4DA",
-    name: "4D Arcades",
-    materials: [
-      { ticker: "POW", qtyPerDay: 2 },
-      { ticker: "MHP", qtyPerDay: 2 },
-      { ticker: "OLF", qtyPerDay: 4 },
-      { ticker: "BID", qtyPerDay: 0.2 },
-      { ticker: "HOG", qtyPerDay: 0.2 },
-      { ticker: "EDC", qtyPerDay: 0.2 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 833.3, culture: 0, education: 0 },
-  },
-  {
-    ticker: "ACA",
-    name: "Art Cafe",
-    materials: [
-      { ticker: "COF", qtyPerDay: 8 },
-      { ticker: "OLF", qtyPerDay: 2 },
-      { ticker: "VIT", qtyPerDay: 8 },
-      { ticker: "DW", qtyPerDay: 10 },
-      { ticker: "GL", qtyPerDay: 6.67 },
-      { ticker: "DEC", qtyPerDay: 0.67 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 166.7, culture: 166.7, education: 0 },
-  },
-  {
-    ticker: "ART",
-    name: "Art Gallery",
-    materials: [
-      { ticker: "MHP", qtyPerDay: 1 },
-      { ticker: "HOG", qtyPerDay: 1 },
-      { ticker: "UTS", qtyPerDay: 0.67 },
-      { ticker: "DEC", qtyPerDay: 0.67 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 0, culture: 625, education: 0 },
-  },
-  {
-    ticker: "VRT",
-    name: "VR Theater",
-    materials: [
-      { ticker: "POW", qtyPerDay: 1.4 },
-      { ticker: "MHP", qtyPerDay: 2 },
-      { ticker: "HOG", qtyPerDay: 1.4 },
-      { ticker: "OLF", qtyPerDay: 4 },
-      { ticker: "BID", qtyPerDay: 0.33 },
-      { ticker: "DEC", qtyPerDay: 0.67 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 0, culture: 833.3, education: 0 },
-  },
-  {
-    ticker: "PBH",
-    name: "Planetary Broadcasting Hub",
-    materials: [
-      { ticker: "OFF", qtyPerDay: 10 },
-      { ticker: "MHP", qtyPerDay: 1 },
-      { ticker: "SP", qtyPerDay: 1.33 },
-      { ticker: "AAR", qtyPerDay: 0.67 },
-      { ticker: "EDC", qtyPerDay: 0.27 },
-      { ticker: "IDC", qtyPerDay: 0.13 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 0, culture: 166.7, education: 166.7 },
-  },
-  {
-    ticker: "LIB",
-    name: "Library",
-    materials: [
-      { ticker: "MHP", qtyPerDay: 1 },
-      { ticker: "HOG", qtyPerDay: 1 },
-      { ticker: "CD", qtyPerDay: 0.33 },
-      { ticker: "DIS", qtyPerDay: 0.33 },
-      { ticker: "BID", qtyPerDay: 0.2 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 0, culture: 0, education: 500 },
-  },
-  {
-    ticker: "UNI",
-    name: "University",
-    materials: [
-      { ticker: "COF", qtyPerDay: 10 },
-      { ticker: "REA", qtyPerDay: 10 },
-      { ticker: "TUB", qtyPerDay: 10 },
-      { ticker: "BID", qtyPerDay: 0.33 },
-      { ticker: "HD", qtyPerDay: 0.67 },
-      { ticker: "IDC", qtyPerDay: 0.2 },
-    ],
-    needs: { safety: 0, health: 0, comfort: 0, culture: 0, education: 833.3 },
-  },
-];
-
-export function calculatePricePerNeed(materialPrice, qtyPerDay, needProvided) {
-  if (needProvided === 0 || qtyPerDay === 0) return Infinity;
-  const needPerQty = needProvided / qtyPerDay;
-  return materialPrice / needPerQty;
-}
-
-export function getBuildingsForNeed(needType) {
-  return UPKEEP_BUILDINGS.filter(
-    (building) => building.needs[needType] > 0
-  );
-}
-
-export function getBuildingNeedCount(building) {
-  return UPKEEP_NEED_TYPES.filter(
-    (needType) => building.needs[needType] > 0
-  ).length;
-}
-
-export async function calculateMaterialsForNeed(
-  needType,
-  getPriceFunc
-) {
-  const buildings = getBuildingsForNeed(needType);
-  const calculations = [];
-
-  for (const building of buildings) {
-    const needProvided = building.needs[needType];
-    const needCount = getBuildingNeedCount(building);
-    const effectiveNeed = needProvided * needCount;
-
-    for (const material of building.materials) {
-      const cxPrice = await getPriceFunc(material.ticker);
-
-      const pricePerNeed = calculatePricePerNeed(
-        cxPrice,
-        material.qtyPerDay,
-        effectiveNeed
-      );
-
-      calculations.push({
-        ticker: material.ticker,
-        buildingTicker: building.ticker,
-        qtyPerDay: material.qtyPerDay,
-        needProvided,
-        pricePerNeed,
-        cxPrice,
-      });
-    }
-  }
-
-  calculations.sort((a, b) => {
-    if (a.cxPrice <= 0 && b.cxPrice <= 0) return 0;
-    if (a.cxPrice <= 0) return 1;
-    if (b.cxPrice <= 0) return -1;
-    return a.pricePerNeed - b.pricePerNeed;
-  });
-
-  return calculations;
-}
 
 const REFRESH_DURATION = 1 * 3600 * 1000;
 
@@ -399,7 +147,18 @@ function renderInfrastructureTable(projectMap) {
 
   const tbody = document.createElement("tbody");
 
-  const sortedTickers = [...projectMap.keys()].sort();
+  const upkeepOrder = UPKEEP_BUILDINGS.map(b => b.ticker);
+  const sortedTickers = [...projectMap.keys()].sort(
+    (a, b) => {
+      const ai = upkeepOrder.indexOf(a);
+      const bi = upkeepOrder.indexOf(b);
+      // Known buildings first (in UPKEEP_BUILDINGS order), unknown alphabetically after
+      if (ai === -1 && bi === -1) return a.localeCompare(b);
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    }
+  );
 
   for (const ticker of sortedTickers) {
     const { level, currentLevel } = projectMap.get(ticker);
@@ -543,12 +302,16 @@ async function loadInfrastructure() {
     return;
   }
 
-  const planet = planetInput.value.trim();
-  if (!planet) return;
+  localStorage.setItem(PLANET_STORAGE_KEY, planetId);
 
-  localStorage.setItem(PLANET_STORAGE_KEY, planet);
+  // Reflect planet in the URL so the page is shareable / bookmarkable
+  const url = new URL(window.location.href);
+  url.searchParams.set("planet", planetId);
+  history.replaceState(null, "", url.toString());
 
   tableContainer.innerHTML = "Loading...";
+
+  await fetchPricing();
 
   try {
     const data = await fetchInfrastructure(planetId);
@@ -600,6 +363,13 @@ async function loadInfrastructure() {
 
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+function efficiencyColor(value) {
+  value = Math.pow(value, 0.5);
+  const r = value < 0.5 ? (value * 2) * 255 : 255;
+  const g = value < 0.5 ? 255 : (1 - (value - 0.5) * 2) * 255;
+  return `rgb(${r}, ${g}, 0, 0.3)`;
 }
 
 function calculateRequiredNeeds(pop) {
@@ -684,205 +454,241 @@ function computeExistingNeedCapacity(latestProjects) {
   return capacity;
 }
 
-function buildMaterialSupplyOptions(latestProjects) {
-  const optionsByNeed = {
-    safety: [],
-    health: [],
-    comfort: [],
-    culture: [],
-    education: []
-  };
-
-  for (const building of UPKEEP_BUILDINGS) {
-    const project = latestProjects.get(building.ticker);
-    if (!project) continue;
-
-    const levels = project.level || 0;
-    if (levels === 0) continue;
-
-    const materialCount = building.materials.length;
-
-    for (const material of building.materials) {
-      const price = priceData[material.ticker];
-      if (!price) continue;
-
-      for (const need of Object.keys(optionsByNeed)) {
-        const perLevelNeed = building.needs[need] || 0;
-        if (perLevelNeed === 0) continue;
-
-        const totalNeedProvided =
-          (perLevelNeed / materialCount) * levels;
-
-        const totalCost =
-          material.qtyPerDay * price * levels;
-
-        optionsByNeed[need].push({
-          building: building.ticker,
-          material: material.ticker,
-          levels,
-          needProvided: totalNeedProvided,
-          cost: totalCost,
-          costPerNeed: totalCost / totalNeedProvided
-        });
-      }
-    }
-  }
-
-  // Cheapest first
-  for (const need of Object.keys(optionsByNeed)) {
-    optionsByNeed[need].sort((a, b) => a.costPerNeed - b.costPerNeed);
-  }
-
-  return optionsByNeed;
-}
 function computeCheapestFulfillment(requiredNeeds, latestProjects) {
-  const TARGET_RATIO = 0.7;
+  const TARGET = 0.7;
 
-  // --- Target unmet amounts ---
-  const remaining = {};
-  for (const need of Object.keys(requiredNeeds)) {
-    remaining[need] = requiredNeeds[need] * TARGET_RATIO;
-  }
-
-  // --- Build candidate supply list ---
-  const candidates = [];
-
+  // Build one candidate per (building, material) for each present building.
+  // Each material independently provides 1/n of its building's need output,
+  // where n = total number of materials the building consumes.
+  const allOptions = [];
   for (const building of UPKEEP_BUILDINGS) {
     const project = latestProjects.get(building.ticker);
-    if (!project) continue;
+    if (!project || !project.level) continue;
+    const levels = project.level;
+    const n = building.materials.length;
 
-    const levels = project.level || 0;
-    if (levels === 0) continue;
-
-    const materialCount = building.materials.length;
-
-    for (const material of building.materials) {
-      const price = priceData[material.ticker];
+    for (const mat of building.materials) {
+      const price = priceData[mat.ticker];
       if (!price) continue;
 
-      const cost =
-        material.qtyPerDay * price * levels;
-
-      const contribution = {};
-
-      let providesAnything = false;
-
-      for (const need of Object.keys(remaining)) {
-        const perLevel = building.needs[need] || 0;
-        if (perLevel === 0) continue;
-
-        providesAnything = true;
-
-        contribution[need] =
-          (perLevel / materialCount) * levels;
+      const contributions = {};
+      for (const [need, needAmt] of Object.entries(building.needs)) {
+        if (needAmt > 0) contributions[need] = (needAmt / n) * levels;
       }
+      if (Object.keys(contributions).length === 0) continue;
 
-      if (!providesAnything) continue;
-
-      candidates.push({
+      allOptions.push({
         building: building.ticker,
-        level: levels,
-        material: material.ticker,
-        qtyPerDay: material.qtyPerDay * levels,
-        cost,
-        contribution
+        levels,
+        ticker: mat.ticker,
+        qtyPerDay: mat.qtyPerDay * levels,
+        cost: mat.qtyPerDay * price * levels,
+        contributions,
       });
     }
   }
 
-  const selected = [];
+  const selected = new Set(); // indices into allOptions
 
-  // --- Greedy multi-need selection ---
-  while (true) {
-    // Check if all needs met
-    const unmetNeeds = Object.values(remaining)
-      .filter(v => v > 0);
-
-    if (unmetNeeds.length === 0) break;
-    if (candidates.length === 0) break;
-
-    // Recalculate effective efficiency for remaining needs
-    for (const c of candidates) {
-      let effectiveValue = 0;
-
-      for (const need of Object.keys(remaining)) {
-        if (remaining[need] > 0 && c.contribution[need]) {
-          effectiveValue += Math.min(
-            remaining[need],
-            c.contribution[need]
-          );
-        }
-      }
-
-      c.effectiveValue = effectiveValue;
-      c.efficiency =
-        effectiveValue > 0
-          ? c.cost / effectiveValue
-          : Infinity;
-    }
-
-    // Remove useless candidates
-    const viable = candidates.filter(c => c.effectiveValue > 0);
-    if (viable.length === 0) break;
-
-    viable.sort((a, b) => a.efficiency - b.efficiency);
-
-    const best = viable[0];
-
-    selected.push(best);
-
-    // Reduce remaining needs
-    for (const need of Object.keys(best.contribution)) {
-      if (remaining[need] > 0) {
-        remaining[need] -= best.contribution[need];
-      }
-    }
-
-    // Remove this candidate (cannot partially supply building)
-    const idx = candidates.indexOf(best);
-    candidates.splice(idx, 1);
+  // Remaining need to satisfy (starts at 70% of required for each category)
+  const remaining = {};
+  for (const [need, req] of Object.entries(requiredNeeds)) {
+    remaining[need] = req * TARGET;
   }
 
-  return selected;
+  // Solve each need type independently with a greedy pass:
+  // pick the unselected material that provides the most of this need per dollar.
+  // When a material is selected, apply ALL its contributions so cross-need
+  // buildings (e.g. EMC covering safety + health) don't get double-purchased.
+  for (const need of Object.keys(requiredNeeds)) {
+    // Credit contributions from materials already selected for prior needs
+    for (const idx of selected) {
+      const contrib = allOptions[idx].contributions[need];
+      if (contrib) remaining[need] -= contrib;
+    }
+    if (remaining[need] <= 0) continue;
+
+    // Sort unselected candidates for this need by need-per-dollar (descending)
+    const candidates = allOptions
+      .map((opt, i) => ({ opt, i }))
+      .filter(({ opt, i }) => !selected.has(i) && (opt.contributions[need] ?? 0) > 0)
+      .sort(
+        ({ opt: a }, { opt: b }) =>
+          b.contributions[need] / b.cost - a.contributions[need] / a.cost
+      );
+
+    for (const { opt, i } of candidates) {
+      if (remaining[need] <= 0) break;
+      selected.add(i);
+      // Apply all contributions from this material (handles cross-need buildings)
+      for (const [n2, contrib] of Object.entries(opt.contributions)) {
+        remaining[n2] = (remaining[n2] ?? 0) - contrib;
+      }
+    }
+  }
+
+  return [...selected].map(i => allOptions[i]);
 }
+
 function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
-  const selected = computeCheapestFulfillment(
-    requiredNeeds,
-    latestProjects
-  );
+  const selected = computeCheapestFulfillment(requiredNeeds, latestProjects);
+
+  const planTitle = document.createElement("h3");
+  planTitle.textContent = "Recommended Supply Plan";
+  planTitle.className = "mt-6 mb-2 font-bold";
+  tableContainer.appendChild(planTitle);
 
   if (selected.length === 0) {
-    warnings.textContent = "No viable supply plan found.";
+    // Diagnose exactly why nothing was selected
+    const presentBuildings = UPKEEP_BUILDINGS.filter(b => {
+      const p = latestProjects.get(b.ticker);
+      return p && p.level > 0;
+    });
+
+    const reasons = [];
+
+    if (presentBuildings.length === 0) {
+      reasons.push("No infrastructure buildings are present on this planet yet.");
+    } else {
+      const missingPrices = new Set();
+      for (const b of presentBuildings) {
+        for (const mat of b.materials) {
+          if (!priceData[mat.ticker]) missingPrices.add(mat.ticker);
+        }
+      }
+      if (missingPrices.size > 0) {
+        reasons.push(`Market prices are missing for: ${[...missingPrices].sort().join(", ")}. Prices may still be loading — try again in a moment.`);
+      }
+      if (missingPrices.size === 0) {
+        reasons.push("All buildings have prices but no material contributes to the outstanding needs. This is unexpected — please report it.");
+      }
+    }
+
+    const msg = document.createElement("p");
+    msg.style.color = "#f87171";
+    msg.textContent = "No supply plan could be calculated. " + reasons.join(" ");
+    tableContainer.appendChild(msg);
     return;
   }
 
-  const table = document.createElement("table");
-  table.className = "infra-table";
+  // Compute totals for the summary
+  const provided = {};
+  let totalCost = 0;
+  for (const opt of selected) {
+    totalCost += opt.cost;
+    for (const [need, contrib] of Object.entries(opt.contributions)) {
+      provided[need] = (provided[need] || 0) + contrib;
+    }
+  }
 
-  table.innerHTML = `
-    <thead>
-      <tr>
-        <th>Building</th>
-        <th>Material</th>
-        <th>Qty / Day</th>
-        <th>Daily Cost</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${selected.map(r => `
-        <tr>
-          <td>${r.building} (Level ${r.level})</td>
-          <td>${r.material}</td>
-          <td>${r.qtyPerDay.toLocaleString()}</td>
-          <td>$${r.cost.toLocaleString(undefined,{maximumFractionDigits:2})}</td>
-        </tr>
-      `).join("")}
-    </tbody>
+  // --- Supply plan table grouped by building ---
+  const byBuilding = new Map();
+  for (const opt of selected) {
+    if (!byBuilding.has(opt.building)) byBuilding.set(opt.building, []);
+    byBuilding.get(opt.building).push(opt);
+  }
+
+  const planTable = document.createElement("table");
+  planTable.className = "infra-table";
+  const planHead = document.createElement("thead");
+  planHead.innerHTML = `
+    <tr>
+      <th>Building</th>
+      <th>Material</th>
+      <th class="text-right">Qty / Day</th>
+      <th class="text-right">Daily Cost</th>
+      <th>Needs Supplied</th>
+      <th class="text-right">Need Qty</th>
+      <th class="text-right">$ / Need</th>
+    </tr>
   `;
+  planTable.appendChild(planHead);
 
-  tableContainer.appendChild(table);
+  // Pre-compute $/need for each option so we can normalise for coloring
+  const allSelected = [...byBuilding.values()].flat();
+  const dollarPerNeed = opt => {
+    const totalNeed = Object.values(opt.contributions).reduce((s, v) => s + v, 0);
+    return totalNeed > 0 ? opt.cost / totalNeed : Infinity;
+  };
+  const dpnValues = allSelected.map(dollarPerNeed).filter(v => isFinite(v));
+  const dpnMin = Math.min(...dpnValues);
+  const dpnMax = Math.max(...dpnValues);
+  const dpnRange = dpnMax - dpnMin || 1;
 
-  return selected;
+  const planBody = document.createElement("tbody");
+  for (const [building, opts] of byBuilding) {
+    for (const opt of opts) {
+      const needNames = Object.keys(opt.contributions).map(capitalize).join(", ");
+      const needQtys = Object.values(opt.contributions)
+        .map(v => v.toLocaleString(undefined, { maximumFractionDigits: 1 }))
+        .join(", ");
+      const dpn = dollarPerNeed(opt);
+      const norm = isFinite(dpn) ? (dpn - dpnMin) / dpnRange : 1; // 0 = best, 1 = worst
+      const rowColor = efficiencyColor(norm);
+      const tr = document.createElement("tr");
+      tr.style.backgroundColor = rowColor;
+      tr.innerHTML = `
+        <td>${opt.levels}x ${building}</td>
+        <td>${opt.ticker}</td>
+        <td class="text-right">${opt.qtyPerDay.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
+        <td class="text-right">${opt.cost.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
+        <td>${needNames}</td>
+        <td class="text-right">${needQtys}</td>
+        <td class="text-right">${isFinite(dpn) ? dpn.toFixed(4) : "—"}</td>
+      `;
+      planBody.appendChild(tr);
+    }
+  }
+  const totalRow = document.createElement("tr");
+  totalRow.innerHTML = `
+    <td colspan="6" class="font-semibold text-right">Total daily cost</td>
+    <td class="text-right font-semibold">${totalCost.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
+  `;
+  planBody.appendChild(totalRow);
+  planTable.appendChild(planBody);
+  tableContainer.appendChild(planTable);
+
+  // --- Need fulfillment summary ---
+  const NEED_ORDER = ["safety", "health", "comfort", "culture", "education"];
+
+  const summaryTitle = document.createElement("h3");
+  summaryTitle.textContent = "Projected Need Fulfillment";
+  summaryTitle.className = "mt-6 mb-2 font-bold";
+  tableContainer.appendChild(summaryTitle);
+
+  const summaryTable = document.createElement("table");
+  summaryTable.className = "infra-table";
+  const summaryHead = document.createElement("thead");
+  summaryHead.innerHTML = `
+    <tr>
+      <th>Need</th>
+      <th class="text-right">Required</th>
+      <th class="text-right">Provided</th>
+      <th class="text-right">Fulfillment</th>
+      <th class="text-right">Status</th>
+    </tr>
+  `;
+  summaryTable.appendChild(summaryHead);
+
+  const summaryBody = document.createElement("tbody");
+  for (const need of NEED_ORDER) {
+    const req = requiredNeeds[need] || 0;
+    const prov = provided[need] || 0;
+    const fulfillment = req > 0 ? prov / req : 1;
+    const met = fulfillment >= 0.7;
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${capitalize(need)}</td>
+      <td class="text-right">${req.toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
+      <td class="text-right">${prov.toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
+      <td class="text-right">${(fulfillment * 100).toFixed(1)}%</td>
+      <td class="text-right" style="color:${met ? "#4ade80" : "#f87171"}">${met ? "✓" : "✗"}</td>
+    `;
+    summaryBody.appendChild(tr);
+  }
+  summaryTable.appendChild(summaryBody);
+  tableContainer.appendChild(summaryTable);
 }
 
 
@@ -890,12 +696,17 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
 loadInfraBtn.addEventListener("click", loadInfrastructure);
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const savedPlanet = localStorage.getItem(PLANET_STORAGE_KEY);
+  // URL param takes priority; fall back to last-used planet from localStorage
+  const urlPlanet = new URL(window.location.href).searchParams.get("planet");
+  const savedPlanet = urlPlanet || localStorage.getItem(PLANET_STORAGE_KEY);
 
   if (savedPlanet) {
     planetInput.value = savedPlanet;
+    if (urlPlanet) {
+      // Auto-load when planet is specified in the URL
+      await loadInfrastructure();
+    }
   }
-
 });
 
 
