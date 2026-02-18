@@ -4,13 +4,27 @@
     padding: 1rem;
   }
 
-  /* Section band — reuse the same indigo style as governor-helper */
+  /* Section bands */
   .section-live {
     margin-top: 1rem;
     padding: 0.75rem 1rem 1rem;
     border-radius: 6px;
     border-left: 3px solid rgb(99 102 241);
     background: rgba(99, 102, 241, 0.06);
+  }
+  .section-warning {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(245 158 11);
+    background: rgba(245, 158, 11, 0.06);
+  }
+  .section-neutral {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(107 114 128);
+    background: rgba(107, 114, 128, 0.06);
   }
   .section-label {
     font-size: 0.7rem;
@@ -21,10 +35,10 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Fuel bar */
-  .fuel-bar-outer {
+  /* Shared progress bar */
+  .prog-bar-outer {
     display: inline-block;
-    width: 90px;
+    width: 80px;
     height: 12px;
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
@@ -32,7 +46,7 @@
     overflow: hidden;
     vertical-align: middle;
   }
-  .fuel-bar-inner {
+  .prog-bar-inner {
     height: 100%;
     border-radius: 3px;
   }
@@ -69,6 +83,32 @@
     font-size: 0.72rem;
     margin-right: 2px;
   }
+  .bar-subtext {
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    display: block;
+    margin-top: 1px;
+  }
+
+  /* Upkeep hover tooltip */
+  #gw-tooltip {
+    position: fixed;
+    z-index: 9999;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    white-space: nowrap;
+  }
+  #gw-tooltip.hidden { display: none; }
+  #gw-tooltip table  { margin: 0; width: auto; }
+  #gw-tooltip td     { padding: 1px 8px 1px 0; border: none; background: none; color: var(--text-primary); }
+  #gw-tooltip td.fulfilled { color: #4ade80; }
+  #gw-tooltip td.partial   { color: #fbbf24; }
+  #gw-tooltip td.missing   { color: #f87171; }
 </style>
 
 <div id="gateway-tool-root" class="calculator">
@@ -80,19 +120,74 @@
     <div id="gw-table-container"></div>
     <p style="font-size:0.8rem;color:var(--text-secondary);margin-top:0.75rem">
       Phase jumps: <strong>↑ outbound</strong> / <strong>↓ inbound</strong> &nbsp;·&nbsp;
-      Days left estimated from average phase usage. Phase = 7 days.
+      Fuel days estimated from average phase usage. Upkeep % = average per-material fulfillment in current upkeep phase.
     </p>
+  </div>
+
+  <div id="section-upkeep-missing" class="section-warning" style="display:none">
+    <div class="section-label">Upkeep Missing</div>
+    <div id="gw-upkeep-missing-container"></div>
+  </div>
+
+  <div id="section-under-construction" class="section-neutral" style="display:none">
+    <div class="section-label">Under Construction</div>
+    <div id="gw-under-construction-container"></div>
   </div>
 </div>
 
+<div id="gw-tooltip" class="hidden"></div>
+
 <script type="module">
-const CACHE_KEY      = "gateway_data_v1";
+const CACHE_KEY      = "gateway_data_v2";
 const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 
-const statusEl    = document.getElementById("gw-status");
-const sectionLive = document.getElementById("section-live");
-const metaEl      = document.getElementById("gw-meta");
-const tableContEl = document.getElementById("gw-table-container");
+const statusEl              = document.getElementById("gw-status");
+const sectionLive           = document.getElementById("section-live");
+const metaEl                = document.getElementById("gw-meta");
+const tableContEl           = document.getElementById("gw-table-container");
+const sectionUpkeepMissing  = document.getElementById("section-upkeep-missing");
+const upkeepMissingContEl   = document.getElementById("gw-upkeep-missing-container");
+const sectionUnderConstruct = document.getElementById("section-under-construction");
+const underConstructContEl  = document.getElementById("gw-under-construction-container");
+const tooltipEl             = document.getElementById("gw-tooltip");
+
+// ── upkeep tooltip ────────────────────────────────────────────────────────
+
+const root = document.getElementById("gateway-tool-root");
+
+root.addEventListener("mouseover", (e) => {
+  const bar = e.target.closest("[data-upkeep]");
+  if (!bar) return;
+  const items = JSON.parse(bar.dataset.upkeep);
+  const rows = items.map(u => {
+    const frac = u.r > 0 ? u.c / u.r : 1;
+    const cls  = frac >= 1 ? "fulfilled" : frac > 0 ? "partial" : "missing";
+    return `<tr>
+      <td>${u.t}</td>
+      <td class="text-right ${cls}">${u.c}</td>
+      <td style="color:var(--text-secondary)">/ ${u.r}</td>
+    </tr>`;
+  }).join("");
+  tooltipEl.innerHTML = `<table>${rows}</table>`;
+  tooltipEl.classList.remove("hidden");
+});
+
+root.addEventListener("mousemove", (e) => {
+  if (tooltipEl.classList.contains("hidden")) return;
+  const x = e.clientX + 14;
+  const y = e.clientY + 14;
+  // Flip left/up if near viewport edge
+  const tw = tooltipEl.offsetWidth;
+  const th = tooltipEl.offsetHeight;
+  tooltipEl.style.left = (x + tw > window.innerWidth  ? e.clientX - tw - 6 : x) + "px";
+  tooltipEl.style.top  = (y + th > window.innerHeight ? e.clientY - th - 6 : y) + "px";
+});
+
+root.addEventListener("mouseout", (e) => {
+  const bar = e.target.closest("[data-upkeep]");
+  if (!bar) return;
+  if (!bar.contains(e.relatedTarget)) tooltipEl.classList.add("hidden");
+});
 
 async function fetchGateways() {
   const cached = localStorage.getItem(CACHE_KEY);
@@ -104,7 +199,7 @@ async function fetchGateways() {
       }
     } catch {}
   }
-  const resp = await fetch("https://api.fnar.net/gateway");
+  const resp = await fetch("https://api.fnar.net/gateway?include_phases=true");
   if (!resp.ok) throw new Error(`API error: ${resp.status}`);
   const data = await resp.json();
   localStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data }));
@@ -113,20 +208,24 @@ async function fetchGateways() {
 
 // ── helpers ──────────────────────────────────────────────────────────────
 
+function statusColor(pct) {
+  if (pct > 60) return "#4ade80";
+  if (pct > 30) return "#fbbf24";
+  return "#f87171";
+}
+
+function upkeepColor(pct) {
+  if (pct >= 100) return "#4ade80"; // green only at full fulfillment
+  return "#f87171";                  // red for anything less
+}
+
 function fuelPct(g) {
   return g.MaxFuelUnits ? (g.AvailableFuelUnits / g.MaxFuelUnits) * 100 : 0;
 }
 
-function fuelColor(pct) {
-  if (pct > 60) return { bar: "#4ade80", text: "#4ade80" };
-  if (pct > 30) return { bar: "#fbbf24", text: "#fbbf24" };
-  return { bar: "#f87171", text: "#f87171" };
-}
-
 // Estimate days remaining at average daily usage
 function daysRemaining(g) {
-  // PhaseAverageJumps is over 7-day phases
-  const avgJumpsPerDay = (g.PhaseAverageJumps ?? 0) / 7;
+  const avgJumpsPerDay = (g.PhaseAverageJumps ?? 0) / 7; // phases are 7 days
   if (avgJumpsPerDay <= 0) return null;
   const fuelPerDay = avgJumpsPerDay * (g.FuelPerJump || 30);
   return g.AvailableFuelUnits / fuelPerDay;
@@ -147,13 +246,29 @@ function fuelDaysColor(g) {
   return "#f87171";
 }
 
+// Returns the latest upkeep phase object (sorted by Start desc)
+function latestUpkeepPhase(g) {
+  const phases = g.UpkeepPhases;
+  if (!phases || !phases.length) return null;
+  return phases.slice().sort((a, b) => new Date(b.Start) - new Date(a.Start))[0];
+}
+
+// Average per-material fulfillment (0–100) from a phase object
+function upkeepPctFromPhase(phase) {
+  const upkeeps = phase?.Upkeeps;
+  if (!upkeeps || !upkeeps.length) return null;
+  const fractions = upkeeps.map(u =>
+    u.Required > 0 ? Math.min(u.Current, u.Required) / u.Required : 1
+  );
+  return (fractions.reduce((s, f) => s + f, 0) / fractions.length) * 100;
+}
+
 // Faction/currency badge colors (PrUn faction currencies)
 const FACTION_COLORS = {
   AIC: { bg: "#7c3500", fg: "#fb923c" },   // Antares (orange)
   CIS: { bg: "#7c0a0a", fg: "#f87171" },   // Castillo-Ito Syndicate (red)
   NCC: { bg: "#7c6800", fg: "#fde047" },   // Northstar Commission (yellow)
   ICA: { bg: "#14532d", fg: "#86efac" },   // Insitor Cooperative (green)
-  BUC: { bg: "#3b1f00", fg: "#f59e0b" },   // Benten-Usaki
 };
 
 function factionBadge(code) {
@@ -170,7 +285,7 @@ function upgradeBadges(g) {
 }
 
 function phaseCells(jumps, inbound) {
-  const out = jumps  ?? "—";
+  const out = jumps   ?? "—";
   const inn = inbound ?? "—";
   return `${out}<span style="color:var(--text-secondary)">↑</span> ${inn}<span style="color:var(--text-secondary)">↓</span>`;
 }
@@ -200,12 +315,36 @@ function formatRelativeTime(isoString) {
   return future ? `in ${timeStr}` : `${timeStr} ago`;
 }
 
+function progressBarHtml(pctVal, color, subtext, extraAttrs = "") {
+  const width = Math.min(pctVal, 100).toFixed(1);
+  return `
+    <div ${extraAttrs}>
+      <div class="prog-bar-outer">
+        <div class="prog-bar-inner" style="width:${width}%;background:${color}"></div>
+      </div>
+      ${subtext ? `<span class="bar-subtext">${subtext}</span>` : ""}
+    </div>
+  `;
+}
+
+// Serialize upkeep items into a data attribute string for the tooltip
+function upkeepDataAttr(phase) {
+  if (!phase?.Upkeeps?.length) return "";
+  const items = phase.Upkeeps.map(u => ({
+    t: u.MaterialTicker,
+    c: u.Current,
+    r: u.Required,
+  }));
+  // Single-quote the attribute so inner JSON double-quotes are safe
+  return `data-upkeep='${JSON.stringify(items)}'`;
+}
+
 // ── render ───────────────────────────────────────────────────────────────
 
 function renderTable(gateways) {
   const operational = gateways
     .filter(g => g.OperationalState === "OPERATIONAL" && g.LinkStatus === "ESTABLISHED")
-    .sort((a, b) => fuelPct(a) - fuelPct(b)); // lowest fuel first
+    .sort((a, b) => a.UsageCurrency.localeCompare(b.UsageCurrency));
 
   if (!operational.length) {
     tableContEl.innerHTML = "<p>No operational gateways found.</p>";
@@ -220,10 +359,10 @@ function renderTable(gateways) {
         <th>Name</th>
         <th>Location</th>
         <th>Faction</th>
-        <th colspan="2">Fuel</th>
+        <th>Fuel</th>
         <th class="text-right">Days Left</th>
         <th class="text-right">Phase End</th>
-        <th class="text-right">Current Phase</th>
+        <th>Upkeep</th>
         <th class="text-right">Last Phase</th>
         <th class="text-right">Avg Phase</th>
         <th>Upgrades</th>
@@ -236,29 +375,29 @@ function renderTable(gateways) {
   const tbody = document.createElement("tbody");
 
   for (const g of operational) {
-    const pct_val   = fuelPct(g);
-    const colors    = fuelColor(pct_val);
-    const barWidth  = Math.min(pct_val, 100).toFixed(1);
-    const daysTxt   = fuelDaysText(g);
-    const daysColor = fuelDaysColor(g);
+    const fp       = fuelPct(g);
+    const fColor   = statusColor(fp);
+    const daysTxt  = fuelDaysText(g);
+    const daysClr  = fuelDaysColor(g);
+
+    const upPhase  = latestUpkeepPhase(g);
+    const up       = upkeepPctFromPhase(upPhase);
+    const upColor  = up != null ? upkeepColor(up) : "var(--text-secondary)";
+    const upBar    = up != null
+      ? progressBarHtml(up, upColor, null, upkeepDataAttr(upPhase))
+      : `<span style="color:var(--text-secondary)">—</span>`;
+
+    const fuelSubtext = `${g.AvailableFuelUnits.toLocaleString()} / ${g.MaxFuelUnits.toLocaleString()}`;
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td style="font-weight:600">${g.Name ?? g.NaturalId}</td>
       <td style="color:var(--text-secondary)">${g.LocationNaturalId ?? "—"}</td>
-      <td>${factionBadge(g.CurrencyCode)}</td>
-      <td>
-        <div class="fuel-bar-outer">
-          <div class="fuel-bar-inner" style="width:${barWidth}%;background:${colors.bar}"></div>
-        </div>
-        <span style="margin-left:6px;color:${colors.text}">${pct_val.toFixed(1)}%</span>
-      </td>
-      <td style="color:var(--text-secondary);font-size:0.78rem">
-        ${g.AvailableFuelUnits.toLocaleString()} / ${g.MaxFuelUnits.toLocaleString()}
-      </td>
-      <td class="text-right" style="color:${daysColor};font-weight:600">${daysTxt}</td>
+      <td>${factionBadge(g.UsageCurrency)}</td>
+      <td>${progressBarHtml(fp, fColor, fuelSubtext)}</td>
+      <td class="text-right" style="color:${daysClr};font-weight:600">${daysTxt}</td>
       <td class="text-right" style="color:var(--text-secondary)">${formatRelativeTime(g.CurrentPhaseEnd)}</td>
-      <td class="text-right phase-cell">${phaseCells(g.CurrentPhaseJumps, g.CurrentPhaseInboundJumps)}</td>
+      <td>${upBar}</td>
       <td class="text-right phase-cell">${phaseCells(g.LastPhaseJumps, g.LastPhaseInboundJumps)}</td>
       <td class="text-right phase-cell">${phaseCells(g.PhaseAverageJumps, g.PhaseAverageInboundJumps)}</td>
       <td class="upgrades-cell">${upgradeBadges(g)}</td>
@@ -273,19 +412,127 @@ function renderTable(gateways) {
   tableContEl.appendChild(table);
 }
 
+// UPKEEP_MISSING gateways have full operational data but aren't running.
+function renderUpkeepMissingTable(gateways) {
+  const rows = gateways.filter(g => g.OperationalState === "UPKEEP_MISSING");
+  if (!rows.length) return;
+
+  const table = document.createElement("table");
+  table.className = "gateway-table table-auto border-collapse text-sm";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Faction</th>
+        <th>Fuel</th>
+        <th>Upkeep</th>
+        <th class="text-right">Last Phase</th>
+        <th class="text-right">Avg Phase</th>
+        <th>Upgrades</th>
+        <th class="text-right">Max Vol</th>
+        <th class="text-right">Uptime</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+  for (const g of rows) {
+    const fp      = g.MaxFuelUnits ? (g.AvailableFuelUnits / g.MaxFuelUnits) * 100 : 0;
+    const fColor  = statusColor(fp);
+    const fuelSubtext = g.MaxFuelUnits
+      ? `${(g.AvailableFuelUnits ?? 0).toLocaleString()} / ${g.MaxFuelUnits.toLocaleString()}`
+      : null;
+
+    const upPhase = latestUpkeepPhase(g);
+    const up      = upkeepPctFromPhase(upPhase);
+    const upColor = up != null ? upkeepColor(up) : "var(--text-secondary)";
+    const upBar   = up != null
+      ? progressBarHtml(up, upColor, null, upkeepDataAttr(upPhase))
+      : `<span style="color:var(--text-secondary)">—</span>`;
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td style="font-weight:600">${g.Name ?? g.NaturalId}</td>
+      <td style="color:var(--text-secondary)">${g.LocationNaturalId ?? "—"}</td>
+      <td>${factionBadge(g.UsageCurrency)}</td>
+      <td>${g.MaxFuelUnits ? progressBarHtml(fp, fColor, fuelSubtext) : `<span style="color:var(--text-secondary)">—</span>`}</td>
+      <td>${upBar}</td>
+      <td class="text-right phase-cell">${phaseCells(g.LastPhaseJumps, g.LastPhaseInboundJumps)}</td>
+      <td class="text-right phase-cell">${phaseCells(g.PhaseAverageJumps, g.PhaseAverageInboundJumps)}</td>
+      <td class="upgrades-cell">${upgradeBadges(g)}</td>
+      <td class="text-right">${g.MaxShipVolume != null ? g.MaxShipVolume.toLocaleString() : "—"}</td>
+      <td class="text-right">${pct(g.AverageUpkeepUptime)}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  upkeepMissingContEl.innerHTML = "";
+  upkeepMissingContEl.appendChild(table);
+  sectionUpkeepMissing.style.display = "";
+}
+
+// UNDER_CONSTRUCTION gateways have almost no operational data — just identity + date.
+function renderUnderConstructionTable(gateways) {
+  const rows = gateways.filter(g => g.OperationalState === "UNDER_CONSTRUCTION");
+  if (!rows.length) return;
+
+  const table = document.createElement("table");
+  table.className = "gateway-table table-auto border-collapse text-sm";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Faction</th>
+        <th>Link Status</th>
+        <th>Established</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+  for (const g of rows) {
+    const established = g.Established
+      ? new Date(g.Established).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })
+      : "—";
+    const linkStatus = g.LinkStatus ?? "—";
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td style="font-weight:600">${g.Name ?? g.NaturalId}</td>
+      <td style="color:var(--text-secondary)">${g.LocationNaturalId ?? "—"}</td>
+      <td>${factionBadge(g.UsageCurrency)}</td>
+      <td style="color:var(--text-secondary)">${linkStatus}</td>
+      <td style="color:var(--text-secondary)">${established}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  underConstructContEl.innerHTML = "";
+  underConstructContEl.appendChild(table);
+  sectionUnderConstruct.style.display = "";
+}
+
 // ── init ─────────────────────────────────────────────────────────────────
 
 (async () => {
   try {
     const { data, cacheAge } = await fetchGateways();
 
-    const operational = data.filter(g => g.OperationalState === "OPERATIONAL" && g.LinkStatus === "ESTABLISHED");
+    const operational    = data.filter(g => g.OperationalState === "OPERATIONAL" && g.LinkStatus === "ESTABLISHED");
+    const upkeepMissing  = data.filter(g => g.OperationalState === "UPKEEP_MISSING");
+    const underConstruct = data.filter(g => g.OperationalState === "UNDER_CONSTRUCTION");
     const cacheNote = cacheAge > 0
       ? `· cached ${Math.floor(cacheAge / 60000)}m ago`
       : "· fetched live";
-    metaEl.textContent = `${operational.length} operational gateways ${cacheNote} · refreshes every 30 min`;
+    metaEl.textContent = `${operational.length} operational · ${upkeepMissing.length} upkeep missing · ${underConstruct.length} under construction ${cacheNote} · refreshes every 30 min`;
 
     renderTable(data);
+    renderUpkeepMissingTable(data);
+    renderUnderConstructionTable(data);
 
     statusEl.textContent = "";
     sectionLive.style.display = "";
