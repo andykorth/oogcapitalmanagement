@@ -341,21 +341,81 @@ function upkeepDataAttr(phase) {
 
 // ── render ───────────────────────────────────────────────────────────────
 
+function buildPairedRows(operational) {
+  // Build lookup and detect bidirectional pairs
+  const gidMap = new Map(operational.map(g => [g.GatewayId, g]));
+  const isPaired = new Map(); // GatewayId -> partnerId (only if bidirectional)
+  for (const g of operational) {
+    if (!g.OutgoingLink) continue;
+    const partner = gidMap.get(g.OutgoingLink);
+    if (partner && partner.OutgoingLink === g.GatewayId) {
+      isPaired.set(g.GatewayId, partner.GatewayId);
+    }
+  }
+
+  // Walk sorted list; when we hit the first of a pair, immediately insert its partner
+  const sorted = [...operational].sort((a, b) =>
+    (a.UsageCurrency ?? "").localeCompare(b.UsageCurrency ?? "")
+  );
+  const visited = new Set();
+  const rows = []; // {g, pairRole: 'first'|'second'|null}
+
+  for (const g of sorted) {
+    if (visited.has(g.GatewayId)) continue;
+    visited.add(g.GatewayId);
+
+    const partnerId = isPaired.get(g.GatewayId);
+    const partner   = partnerId ? gidMap.get(partnerId) : null;
+    if (partner && !visited.has(partnerId)) {
+      rows.push({ g, pairRole: "first" });
+      rows.push({ g: partner, pairRole: "second" });
+      visited.add(partnerId);
+    } else {
+      rows.push({ g, pairRole: null });
+    }
+  }
+  return rows;
+}
+
+const PAIR_COLOR = "#818cf8"; // indigo-400 — visible in both light and dark
+
+function pairConnectorCell(pairRole) {
+  // position:relative on the td + position:absolute on the inner div lets us
+  // inset the bracket away from the cell edges so adjacent pairs don't bleed together.
+  if (pairRole === "first") {
+    return `<td style="width:6px;padding:0 3px 0 0;border:none;position:relative;">
+      <div style="position:absolute;top:30%;left:0;bottom:0;width:6px;
+                  border-top:2px solid ${PAIR_COLOR};border-left:2px solid ${PAIR_COLOR};
+                  border-radius:2px 0 0 0;"></div>
+    </td>`;
+  }
+  if (pairRole === "second") {
+    return `<td style="width:6px;padding:0 3px 0 0;border:none;position:relative;">
+      <div style="position:absolute;top:0;left:0;bottom:30%;width:6px;
+                  border-bottom:2px solid ${PAIR_COLOR};border-left:2px solid ${PAIR_COLOR};
+                  border-radius:0 0 0 2px;"></div>
+    </td>`;
+  }
+  return `<td style="width:6px;padding:0 3px 0 0;border:none;"></td>`;
+}
+
 function renderTable(gateways) {
   const operational = gateways
-    .filter(g => g.OperationalState === "OPERATIONAL" && g.FuelPerJump > 0)
-    .sort((a, b) => a.UsageCurrency?.localeCompare(b.UsageCurrency));
+    .filter(g => g.OperationalState === "OPERATIONAL" && g.FuelPerJump > 0);
 
   if (!operational.length) {
     tableContEl.innerHTML = "<p>No operational gateways found.</p>";
     return;
   }
 
+  const rows = buildPairedRows(operational);
+
   const table = document.createElement("table");
   table.className = "gateway-table table-auto border-collapse text-sm";
   table.innerHTML = `
     <thead>
       <tr>
+        <th style="width:6px;padding:0"></th>
         <th>Name</th>
         <th>Location</th>
         <th>Faction</th>
@@ -374,7 +434,7 @@ function renderTable(gateways) {
 
   const tbody = document.createElement("tbody");
 
-  for (const g of operational) {
+  for (const { g, pairRole } of rows) {
     const fp       = fuelPct(g);
     const fColor   = statusColor(fp);
     const daysTxt  = fuelDaysText(g);
@@ -391,6 +451,7 @@ function renderTable(gateways) {
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
+      ${pairConnectorCell(pairRole)}
       <td style="font-weight:600; ${(g.LinkStatus == "UNLINKED") ? "color:#fb923c;" : ""} ">${g.Name ?? g.NaturalId}</td>
       <td style="color:var(--text-secondary)">${g.LocationNaturalId ?? "—"}</td>
       <td>${factionBadge(g.UsageCurrency)}</td>
