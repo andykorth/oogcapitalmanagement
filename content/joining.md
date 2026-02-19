@@ -20,7 +20,7 @@ We don't make specific demands of our members, who are free to grow in any way y
 
 OOG was formed in early 2021, and now governs over 1 million citizens in ANT space. We've been a major funder of the Thalassa development project in coordination with FICSIT, the Antares Development Initiative and the Antares Gateway Cooperative.
 
-## 📈 Recruitment Guidelines
+## 📈 What we look for in new members
 
 We’re looking for members who: 
 
@@ -31,7 +31,7 @@ We’re looking for members who:
 * 🏛️ Bonus: Have an interest in planetary governance, or are already a governor.
 * 🛰️ Bonus: Have an interest in gateway production or ship building.
 
-## 📝 Joining Process
+## 📝 How we recruit
 
 We're selective about who joins in order to maintain the high trust environment that facilitates trade and working together. 
 
