@@ -79,8 +79,16 @@
       <div>
         <h3 class="mt-4 mb-2 font-bold">Last Population Report</h3>
         <div id="workforce-table-container"></div>
-        <h3 class="mb-2 font-bold">Last Report's Need Fulfillment</h3>
-        <div id="needs-table-container"></div>
+        <div style="display:flex;gap:2rem;align-items:flex-start;margin-top:1rem;flex-wrap:wrap">
+          <div>
+            <h3 class="mb-2 font-bold">Last Report's Need Fulfillment</h3>
+            <div id="needs-table-container"></div>
+          </div>
+          <div class="section-calculated" style="padding:0.5rem 0.75rem">
+            <div class="section-label">Projected Population Growth</div>
+            <div id="projected-growth-container"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -132,6 +140,7 @@ const needsTableCont      = document.getElementById("needs-table-container");
 const workforceTableCont  = document.getElementById("workforce-table-container");
 const supplyPlanCont      = document.getElementById("supply-plan-container");
 const projectedNeedsCont  = document.getElementById("projected-needs-container");
+const projectedGrowthCont = document.getElementById("projected-growth-container");
 
 async function fetchPlanet(planetId) {
   const cacheKey = `planet_${planetId}`;
@@ -461,6 +470,8 @@ async function loadInfrastructure() {
     if (latestReport) {
       needsTableCont.appendChild(renderNeedsTable(latestReport));
       workforceTableCont.appendChild(renderWorkforceTable(latestReport));
+      projectedGrowthCont.innerHTML = "";
+      projectedGrowthCont.appendChild(renderProjectedGrowthTable(latestReport, latestProjects));
     }
 
     sectionRetrieved.style.display = "";
@@ -489,6 +500,152 @@ async function loadInfrastructure() {
 
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// ── Happiness weights by tier ──────────────────────────────────────────────
+// Source: https://pct.fnar.net/population-infrastructure/
+const HAPPINESS_WEIGHTS = {
+  Pioneer:    { LifeSupport: 0.54, Safety: 0.25, Health: 0.15, Comfort: 0.03, Culture: 0.02, Education: 0.01 },
+  Settler:    { LifeSupport: 0.41, Safety: 0.30, Health: 0.20, Comfort: 0.03, Culture: 0.03, Education: 0.03 },
+  Technician: { LifeSupport: 0.15, Safety: 0.20, Health: 0.30, Comfort: 0.20, Culture: 0.10, Education: 0.05 },
+  Engineer:   { LifeSupport: 0.10, Safety: 0.10, Health: 0.15, Comfort: 0.35, Culture: 0.20, Education: 0.10 },
+  Scientist:  { LifeSupport: 0.05, Safety: 0.10, Health: 0.10, Comfort: 0.20, Culture: 0.25, Education: 0.30 },
+};
+
+// Education advancement base rates (S values) — ENG→SCI is 0 at base level
+const EDU_S_BASE = {
+  Pioneer_Settler:     0.020,
+  Settler_Technician:  0.015,
+  Technician_Engineer: 0.010,
+};
+
+// Education building bonuses per level (additive to S)
+const EDU_BUILDING_BONUS = { PBH: 0.001, LIB: 0.002, UNI: 0.004 };
+
+function renderProjectedGrowthTable(report, latestProjects) {
+  const TIERS = ['Pioneer', 'Settler', 'Technician', 'Engineer', 'Scientist'];
+
+  // Need fulfillment values
+  const fulfillment = {};
+  for (const key of ['LifeSupport', 'Safety', 'Health', 'Comfort', 'Culture', 'Education']) {
+    fulfillment[key] = report[`NeedFulfillment${key}`] ?? 0;
+  }
+
+  // Population and unemployment per tier
+  const pop = {};
+  const unemploymentRate = {};
+  for (const tier of TIERS) {
+    pop[tier]            = report[`NextPopulation${tier}`]  ?? 0;
+    unemploymentRate[tier] = report[`UnemploymentRate${tier}`] ?? 0;
+  }
+
+  // True Happiness per tier (no Explorer's Grace)
+  // u > 0 = unemployed workers (reduces happiness)
+  // u < 0 = open jobs (boosts happiness, capped at 30% of need fulfillment component)
+  const happiness = {};
+  for (const tier of TIERS) {
+    const weights = HAPPINESS_WEIGHTS[tier];
+    const needH = Object.entries(weights).reduce((s, [need, w]) => s + w * (fulfillment[need] ?? 0), 0);
+    const u = unemploymentRate[tier];
+    let h;
+    if (u >= 0) {
+      h = needH - u;
+    } else {
+      h = needH + Math.min(-u, 0.3 * needH);
+    }
+    happiness[tier] = Math.max(0, Math.min(1, h));
+  }
+
+  // Education S values + building bonuses
+  let eduBonus = 0;
+  for (const [ticker, rate] of Object.entries(EDU_BUILDING_BONUS)) {
+    const proj = latestProjects.get(ticker);
+    if (proj) eduBonus += (proj.level ?? 0) * rate;
+  }
+  const S = {
+    Pioneer_Settler:     EDU_S_BASE.Pioneer_Settler     + eduBonus,
+    Settler_Technician:  EDU_S_BASE.Settler_Technician  + eduBonus,
+    Technician_Engineer: EDU_S_BASE.Technician_Engineer + eduBonus,
+    Engineer_Scientist:  0                              + eduBonus,
+  };
+
+  // Education flows: S × source population × destination tier happiness
+  const edPioToSet  = S.Pioneer_Settler     * pop.Pioneer    * happiness.Settler;
+  const edSetToTec  = S.Settler_Technician  * pop.Settler    * happiness.Technician;
+  const edTecToEng  = S.Technician_Engineer * pop.Technician * happiness.Engineer;
+  const edEngToSci  = S.Engineer_Scientist  * pop.Engineer   * happiness.Scientist;
+
+  // Migration per tier
+  // In: PIO, SET, TEC only, when happiness > 70%
+  // Out: all tiers, when happiness < 50%
+  const CAN_MIGRATE_IN = new Set(['Pioneer', 'Settler', 'Technician']);
+  const migIn  = {};
+  const migOut = {};
+  for (const tier of TIERS) {
+    const h = happiness[tier];
+    const p = pop[tier];
+    migIn[tier]  = CAN_MIGRATE_IN.has(tier) && h > 0.70 ? p * (h - 0.70) : 0;
+    migOut[tier] = h < 0.50 ? 0.8 * p * (0.5 - h) : 0;
+  }
+
+  // Net components per tier
+  const netMig = {
+    Pioneer:    migIn.Pioneer    - migOut.Pioneer,
+    Settler:    migIn.Settler    - migOut.Settler,
+    Technician: migIn.Technician - migOut.Technician,
+    Engineer:  -migOut.Engineer,
+    Scientist: -migOut.Scientist,
+  };
+  const netEdu = {
+    Pioneer:    -edPioToSet,
+    Settler:    +edPioToSet  - edSetToTec,
+    Technician: +edSetToTec  - edTecToEng,
+    Engineer:   +edTecToEng  - edEngToSci,
+    Scientist:  +edEngToSci,
+  };
+
+  function fmt(v) {
+    const sign = v >= 0 ? '+' : '';
+    const color = v >  1 ? '#4ade80'
+                : v < -1 ? '#f87171'
+                :           'var(--text-secondary)';
+    return `<span style="color:${color}">${sign}${Math.round(v).toLocaleString()}</span>`;
+  }
+
+  const table = document.createElement('table');
+  table.className = 'table-auto border-collapse text-sm';
+  const thead = document.createElement('thead');
+  thead.innerHTML = `
+    <tr>
+      <th class="text-left pr-4">Tier</th>
+      <th class="text-right pr-4">Happiness</th>
+      <th class="text-right pr-4">Migration</th>
+      <th class="text-right pr-4">Education</th>
+      <th class="text-right">Δ Total</th>
+    </tr>
+  `;
+  table.appendChild(thead);
+  const tbody = document.createElement('tbody');
+
+  for (const tier of TIERS) {
+    if (pop[tier] === 0) continue;
+    const delta = netMig[tier] + netEdu[tier];
+    const h = happiness[tier];
+    const hPct = (h * 100).toFixed(1) + '%';
+    const hColor = h >= 0.70 ? '#4ade80' : h >= 0.50 ? '#fbbf24' : '#f87171';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="pr-4 font-semibold">${tier}</td>
+      <td class="text-right pr-4" style="color:${hColor}">${hPct}</td>
+      <td class="text-right pr-4">${fmt(netMig[tier])}</td>
+      <td class="text-right pr-4">${fmt(netEdu[tier])}</td>
+      <td class="text-right">${fmt(delta)}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  return table;
 }
 
 function efficiencyColor(value) {
