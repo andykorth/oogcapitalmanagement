@@ -12,27 +12,32 @@ fullWidthArticle: true
 type: page
 ---
 
-## 🚀  About OOG:
+## 🚀 About Us
 
-We are the premier corporation in Antares space and leaders in production, ship design, and galactic strategy. As a corporation, we work to ensure the stability of the Antares region, as well as creating a fun and engaging place for our members to enjoy Prosperous Universe. Our corporation includes governance training and support, shipbuilding, planetary and regional development (including gateways!), a discord-based internal auction/order system, and preferential material access and prices. The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones.
+We are the premier corporation in Antares space and leaders in production, ship design, and galactic strategy. As a corporation, we work to ensure the stability of the Antares region, as well as creating a fun and engaging place for our members to enjoy Prosperous Universe.
 
-OOG was formed in early 2021, and now governs over 1 million citizens in ANT space. We've been a major funder of the Thalassa development project in coordination with FICSIT and the Antares Development Initiative.  Prospective members should be based in ANT or be willing to relocate. Relocation support can be provided for the right people.
+We don't make specific demands of our members, who are free to grow in any way you want, but we're there to help each other in a variety of ways. We offer governance training and support, shipbuilding, planetary and regional development (including gateways!), a discord-based internal auction/order system, and preferential material access and prices. The Bank of OOG offers loans, currency conversion, and investment opportunities, including base teleports. Our friendly group has members that are active in all timezones.
 
-## 📈   Recruitment Guidelines:
+OOG was formed in early 2021, and now governs over 1 million citizens in ANT space. We've been a major funder of the Thalassa development project in coordination with FICSIT, the Antares Development Initiative and the Antares Gateway Cooperative.
 
-OOG is a highly selective corp with limited available positions. Each member will be internally discussed, then a 7 day trial is offered, followed by the full corp invite.
+## 📈 Recruitment Guidelines
 
-We're looking for members who:
+We’re looking for members who: 
 
-* 🤝 Interested in being a team player and being active in the corp and community
-* 📡 Are primarily based in ANT space
-* 💰 Have a Pro License and plan to maintain it
-* 🏛️ Bonus: Interest in planetary governance, or are already a governor
-* 🛰️ Bonus: Interest in gateway production
+* 🤝 Enjoy being a team player and being active in the corp and community
+* 🎓 Have played for at least 30 days, and established a minimum of 3 bases.
+* 📡 Are primarily based in Antares space, with an interest in promoting growth in the region.
+* 💰 Bonus: Have a pro licence, _in order to take advantage of the internal auction/order system._
+* 🏛️ Bonus: Have an interest in planetary governance, or are already a governor.
+* 🛰️ Bonus: Have an interest in gateway production or ship building.
 
-## Trial Member Process
+## 📝 Joining Process
 
-We have a 7 day trial period for all players interested in joining OOG. During this period, you have access to everything within the corp except corporate dividend payments. During your 7 day trial, feel free to ask questions, explore the Discord, and get to know us as a corp. We will do the same getting to know you as a player. After your 7 day trial is up, if we are a good match for each other, you will receive an official invite to the corporation in game.
+We're selective about who joins in order to maintain the high trust environment that facilitates trade and working together. 
+
+To join you'll need an existing member to propose you as a candidate for a trial. The best way to get noticed is to be active in Antares aligned community groups like [ADI](https://discord.gg/kwqBtWNy), or trade with our members. Once proposed your candidature will be considered by the members, and if there's consensus you'll be offered a trial. 
+
+During the trial period you'll have full access to everything the corp has to offer. You'll be free to ask questions, explore the Discord, and get to know us as a corp. We will do the same getting to know you as a player. After your trial is completed, if we are a good match for each other, you will receive an official invite to the corporation in game.
 
 ## Next Steps
 
