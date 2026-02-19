@@ -58,6 +58,13 @@
     color: var(--text-secondary);
     margin-bottom: 0.75rem;
   }
+  .projected-meta {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  
 </style>
 
 <div id="governor-helper-root" class="calculator">
@@ -154,6 +161,8 @@ const warnings               = document.getElementById("warnings");
 let lastRequiredNeeds  = null;
 let lastLatestProjects = null;
 let lastSelected       = null;
+let lastReport         = null;
+let lastSiteCount      = 0;
 const sectionRetrieved    = document.getElementById("section-retrieved");
 const sectionCalculated   = document.getElementById("section-calculated");
 const planetHeaderEl      = document.getElementById("planet-header");
@@ -223,6 +232,27 @@ async function fetchInfrastructure(planetId) {
  * Extract the entries from the largest SimulationPeriod.
  * Returns { projectMap, maxPeriod, startEpochMs }.
  */
+async function fetchSiteCount(planetId) {
+  const cacheKey = `sitecount_${planetId}`;
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) {
+    try {
+      const { timestamp, data } = JSON.parse(cached);
+      if (Date.now() - timestamp < PLANET_CACHE_DURATION) return data;
+    } catch {}
+  }
+  const response = await fetch(
+    `https://api.fnar.net/planet/sitecount?planet=${encodeURIComponent(planetId)}&include_non_player_sites=false`
+  );
+  if (!response.ok) return null;
+  const data = await response.json();
+  // API returns an array: [{ PlanetId, PlanetName, PlanetNaturalId, Count }]
+  const count = Array.isArray(data) ? data[0]?.Count : null;
+  if (count == null) return null;
+  localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data: count }));
+  return count;
+}
+
 function extractLatestProjects(data) {
   const projects = data.InfrastructureProjects || [];
   if (!projects.length) return { projectMap: new Map(), maxPeriod: null, startEpochMs: null };
@@ -268,7 +298,7 @@ function getTarget() {
   return (!isNaN(val) && val >= 1 && val <= 100) ? val / 100 : 0.7;
 }
 
-function renderPlanetHeader(planetData, maxPeriod, startEpochMs) {
+function renderPlanetHeader(planetData, maxPeriod, startEpochMs, siteCount) {
   const name = planetData.PlanetName || "";
   const id   = planetData.PlanetNaturalId || "";
   const startDate = startEpochMs
@@ -279,9 +309,10 @@ function renderPlanetHeader(planetData, maxPeriod, startEpochMs) {
     : "—";
   const endEpochMs = startEpochMs ? startEpochMs + 7 * 24 * 3600 * 1000 : null;
   const endsIn = endEpochMs ? formatRelativeTime(endEpochMs) : "—";
+  const basesStr = siteCount != null ? ` · ${siteCount} base${siteCount !== 1 ? 's' : ''}` : '';
   planetHeaderEl.innerHTML = `
     <div class="planet-name">${name}<span class="planet-id">${id}</span></div>
-    <div class="planet-meta">Simulation Period ${maxPeriod ?? "—"} · Started ${startDate} · Ends ${endsIn}</div>
+    <div class="planet-meta">Simulation Period ${maxPeriod ?? "—"} · Started ${startDate} · Ends ${endsIn}${basesStr}</div>
   `;
 }
 
@@ -473,12 +504,17 @@ async function loadInfrastructure() {
 
   try {
     // Fetch pricing, planet metadata, and infrastructure data in parallel
-    const [infraData, planetData] = await Promise.all([
+    const [infraData, planetData, , , siteCount] = await Promise.all([
       fetchInfrastructure(planetId),
       fetchPlanet(planetId),
       fetchPricing(),
       fetchMaterials(),
+      fetchSiteCount(planetId),
     ]);
+    if (siteCount == null) {
+      warnings.textContent = "Warning: could not retrieve base count for this planet — safety/health base contributions will not be included in calculations.";
+    }
+    lastSiteCount = siteCount ?? 0;
 
     const { projectMap: latestProjects, maxPeriod } = extractLatestProjects(infraData);
     const latestReport = extractLatestReport(infraData);
@@ -487,7 +523,7 @@ async function loadInfrastructure() {
     warnings.textContent = "";
 
     // ── Live Data ────────────────────────────────────────────────
-    renderPlanetHeader(planetData, maxPeriod, startEpochMs);
+    renderPlanetHeader(planetData, maxPeriod, startEpochMs, lastSiteCount);
 
     infraTableCont.innerHTML = "";
     const infraTable = renderInfrastructureTable(latestProjects);
@@ -495,11 +531,10 @@ async function loadInfrastructure() {
 
     needsTableCont.innerHTML = "";
     workforceTableCont.innerHTML = "";
+    lastReport = latestReport;
     if (latestReport) {
       needsTableCont.appendChild(renderNeedsTable(latestReport));
       workforceTableCont.appendChild(renderWorkforceTable(latestReport));
-      projectedGrowthCont.innerHTML = "";
-      projectedGrowthCont.appendChild(renderProjectedGrowthTable(latestReport, latestProjects));
     }
 
     sectionRetrieved.style.display = "";
@@ -550,30 +585,28 @@ const EDU_S_BASE = {
 // Education building bonuses per level (additive to S)
 const EDU_BUILDING_BONUS = { PBH: 0.001, LIB: 0.002, UNI: 0.004 };
 
-function renderProjectedGrowthTable(report, latestProjects) {
+function renderProjectedGrowthTable(report, latestProjects, projFulfillment) {
   const TIERS = ['Pioneer', 'Settler', 'Technician', 'Engineer', 'Scientist'];
 
-  // Need fulfillment values
-  const fulfillment = {};
-  for (const key of ['LifeSupport', 'Safety', 'Health', 'Comfort', 'Culture', 'Education']) {
-    fulfillment[key] = report[`NeedFulfillment${key}`] ?? 0;
-  }
+  const fulfillment = projFulfillment;
 
   // Population and unemployment per tier
   const pop = {};
   const unemploymentRate = {};
   for (const tier of TIERS) {
-    pop[tier]            = report[`NextPopulation${tier}`]  ?? 0;
+    pop[tier]              = report[`NextPopulation${tier}`]   ?? 0;
     unemploymentRate[tier] = report[`UnemploymentRate${tier}`] ?? 0;
   }
 
-  // True Happiness per tier (no Explorer's Grace)
-  // u > 0 = unemployed workers (reduces happiness)
-  // u < 0 = open jobs (boosts happiness, capped at 30% of need fulfillment component)
-  const happiness = {};
+  // Two happiness values per tier (no Explorer's Grace):
+  //   needHappiness = weighted need fulfillment only (before unemployment)
+  //   trueHappiness = after applying unemployment penalty/bonus
+  const needHappiness = {};
+  const trueHappiness = {};
   for (const tier of TIERS) {
     const weights = HAPPINESS_WEIGHTS[tier];
     const needH = Object.entries(weights).reduce((s, [need, w]) => s + w * (fulfillment[need] ?? 0), 0);
+    needHappiness[tier] = needH;
     const u = unemploymentRate[tier];
     let h;
     if (u >= 0) {
@@ -581,7 +614,7 @@ function renderProjectedGrowthTable(report, latestProjects) {
     } else {
       h = needH + Math.min(-u, 0.3 * needH);
     }
-    happiness[tier] = Math.max(0, Math.min(1, h));
+    trueHappiness[tier] = Math.max(0, Math.min(1, h));
   }
 
   // Education S values + building bonuses
@@ -597,20 +630,20 @@ function renderProjectedGrowthTable(report, latestProjects) {
     Engineer_Scientist:  0                              + eduBonus,
   };
 
-  // Education flows: S × source population × destination tier happiness
-  const edPioToSet  = S.Pioneer_Settler     * pop.Pioneer    * happiness.Settler;
-  const edSetToTec  = S.Settler_Technician  * pop.Settler    * happiness.Technician;
-  const edTecToEng  = S.Technician_Engineer * pop.Technician * happiness.Engineer;
-  const edEngToSci  = S.Engineer_Scientist  * pop.Engineer   * happiness.Scientist;
+  // Education flows: S × source population × destination tier true happiness
+  const edPioToSet  = S.Pioneer_Settler     * pop.Pioneer    * trueHappiness.Settler;
+  const edSetToTec  = S.Settler_Technician  * pop.Settler    * trueHappiness.Technician;
+  const edTecToEng  = S.Technician_Engineer * pop.Technician * trueHappiness.Engineer;
+  const edEngToSci  = S.Engineer_Scientist  * pop.Engineer   * trueHappiness.Scientist;
 
-  // Migration per tier
+  // Migration per tier (driven by true happiness)
   // In: PIO, SET, TEC only, when happiness > 70%
   // Out: all tiers, when happiness < 50%
   const CAN_MIGRATE_IN = new Set(['Pioneer', 'Settler', 'Technician']);
   const migIn  = {};
   const migOut = {};
   for (const tier of TIERS) {
-    const h = happiness[tier];
+    const h = trueHappiness[tier];
     const p = pop[tier];
     migIn[tier]  = CAN_MIGRATE_IN.has(tier) && h > 0.70 ? p * (h - 0.70) : 0;
     migOut[tier] = h < 0.50 ? 0.8 * p * (0.5 - h) : 0;
@@ -646,6 +679,7 @@ function renderProjectedGrowthTable(report, latestProjects) {
   thead.innerHTML = `
     <tr>
       <th class="text-left pr-4">Tier</th>
+      <th class="text-right pr-4">Base Happy</th>
       <th class="text-right pr-4">Happiness</th>
       <th class="text-right pr-4">Migration</th>
       <th class="text-right pr-4">Education</th>
@@ -655,16 +689,20 @@ function renderProjectedGrowthTable(report, latestProjects) {
   table.appendChild(thead);
   const tbody = document.createElement('tbody');
 
+  function hColor(h) {
+    return h >= 0.70 ? '#4ade80' : h >= 0.50 ? '#fbbf24' : '#f87171';
+  }
+
   for (const tier of TIERS) {
     if (pop[tier] === 0) continue;
-    const delta = netMig[tier] + netEdu[tier];
-    const h = happiness[tier];
-    const hPct = (h * 100).toFixed(1) + '%';
-    const hColor = h >= 0.70 ? '#4ade80' : h >= 0.50 ? '#fbbf24' : '#f87171';
+    const delta  = netMig[tier] + netEdu[tier];
+    const needH  = needHappiness[tier];
+    const trueH  = trueHappiness[tier];
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td class="pr-4 font-semibold">${tier}</td>
-      <td class="text-right pr-4" style="color:${hColor}">${hPct}</td>
+      <td class="text-right pr-4" style="color:${hColor(needH)}">${(needH * 100).toFixed(1)}%</td>
+      <td class="text-right pr-4" style="color:${hColor(trueH)}">${(trueH * 100).toFixed(1)}%</td>
       <td class="text-right pr-4">${fmt(netMig[tier])}</td>
       <td class="text-right pr-4">${fmt(netEdu[tier])}</td>
       <td class="text-right">${fmt(delta)}</td>
@@ -741,11 +779,17 @@ function computeCheapestFulfillment(requiredNeeds, latestProjects) {
   // ── Phase 1: greedy material selection ──────────────────────────────────
   // Cost-effectiveness = contribPerLevel / costPerLevel (level cancels out),
   // so material ranking is independent of how many levels are active.
+  // Each base provides 50 safety and 50 health (fixed, independent of infra buildings)
+  const baseContrib = lastSiteCount * 50;
+
   const selected = new Set();
   const remaining = {};
   for (const [need, req] of Object.entries(requiredNeeds)) {
     remaining[need] = req * TARGET;
   }
+  // Subtract base contributions so optimizer only selects what buildings still need to cover
+  if (remaining.safety !== undefined) remaining.safety -= baseContrib;
+  if (remaining.health !== undefined) remaining.health -= baseContrib;
 
   for (const need of Object.keys(requiredNeeds)) {
     // Credit already-selected materials at their full built level
@@ -775,8 +819,8 @@ function computeCheapestFulfillment(requiredNeeds, latestProjects) {
   if (selected.size === 0) return [];
 
   // ── Phase 2: minimize active levels to avoid overshooting ───────────────
-  // Compute surplus over target at full built levels.
-  const provided = {};
+  // Compute surplus over target at full built levels (include base contrib).
+  const provided = { safety: baseContrib, health: baseContrib };
   for (const idx of selected) {
     for (const [need, c] of Object.entries(allOptions[idx].contribPerLevel)) {
       provided[need] = (provided[need] ?? 0) + c * allOptions[idx].builtLevel;
@@ -880,8 +924,8 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
     return;
   }
 
-  // Compute totals for the summary
-  const provided = {};
+  // Compute totals for the summary (include base safety/health from player bases)
+  const provided = { safety: lastSiteCount * 50, health: lastSiteCount * 50 };
   let totalCost = 0;
   for (const opt of selected) {
     totalCost += opt.cost;
@@ -1021,6 +1065,25 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   // Store and render export
   lastSelected = selected;
   updateSupplyExport();
+
+  // Rerender projected growth using projected fulfillment from this plan
+  if (lastReport && lastLatestProjects) {
+    const pf = need => requiredNeeds[need] > 0
+      ? Math.min(1, (provided[need] || 0) / requiredNeeds[need])
+      : (lastReport[`NeedFulfillment${need.charAt(0).toUpperCase() + need.slice(1)}`] ?? 0);
+    const projFulfillment = {
+      LifeSupport: lastReport.NeedFulfillmentLifeSupport ?? 0,
+      Safety:      pf('safety'),
+      Health:      pf('health'),
+      Comfort:     pf('comfort'),
+      Culture:     pf('culture'),
+      Education:   pf('education'),
+    };
+    projectedGrowthCont.innerHTML = `<div class="projected-meta">Projected happiness with each need at ${getTarget() * 100}%. <br/>Base Happy does not include unemployment, but "Happiness" does.</div>`;
+    projectedGrowthCont.appendChild(
+      renderProjectedGrowthTable(lastReport, lastLatestProjects, projFulfillment)
+    );
+  }
 }
 
 // ── XIT ACTION export ─────────────────────────────────────────────────────
