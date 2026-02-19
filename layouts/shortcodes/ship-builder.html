@@ -1,81 +1,136 @@
 <style>
-#ship-builder-root .input-row label {
-	flex: 0 0 130px;
-	text-align: right;
-	margin-right: 0.5rem;
-	display: inline;
-	min-width: 130px;
-}
+  #ship-builder-root {
+    margin: 0 auto;
+    padding: 1rem;
+  }
 
-#ship-builder-root .inputs {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 0.8rem;
-}
+  /* Section bands */
+  #ship-builder-root .section-live {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(99 102 241);
+    background: rgba(99, 102, 241, 0.06);
+  }
+  #ship-builder-root .section-calculated {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(16 185 129);
+    background: rgba(16, 185, 129, 0.06);
+  }
+  #ship-builder-root .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  #ship-builder-root .input-row label {
+    flex: 0 0 130px;
+    text-align: right;
+    margin-right: 0.5rem;
+    display: inline;
+    min-width: 130px;
+  }
+  #ship-builder-root .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Ship summary table */
+  #ship-builder-root .ship-summary-table td,
+  #ship-builder-root .ship-summary-table th {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  #ship-builder-root .ship-row {
+    cursor: pointer;
+  }
+  #ship-builder-root .ship-row:hover td {
+    background: rgba(99, 102, 241, 0.08);
+  }
+  #ship-builder-root .stock-in  { color: #4ade80; font-weight: 600; }
+  #ship-builder-root .stock-out { color: var(--text-secondary); }
+
+  /* Inventory table */
+  #ship-builder-root .inventory-table {
+    width: 100%;
+  }
+  #ship-builder-root .inventory-table td,
+  #ship-builder-root .inventory-table th {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  #ship-builder-root .missing-cell {
+    color: #f87171;
+    font-weight: 600;
+  }
 </style>
 
-<div id="ship-builder-root" class="space-y-6 calculator">
+<div id="ship-builder-root" class="space-y-2 calculator">
 
-	<h1>Current Inventory:</h1>
+  <div id="sb-status" class="tool-status">Loading inventory data…</div>
 
-  <label><input id="onlyShowPublicShips" type="checkbox" checked /> Only show public ships</label>
+  <div id="section-inventory" class="section-live" style="display:none">
+    <div class="section-label">Live Inventory</div>
+    <div id="sb-meta" style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem"></div>
 
-  <div class="two-col">
-		<div class="col">
-			<div id="inventoryAge" class="text-sm text-gray-600"></div>
+    <label style="font-size:0.85rem;margin-bottom:0.75rem;display:block">
+      <input id="onlyShowPublicShips" type="checkbox" checked /> Only show public ships
+    </label>
 
-			<div id="ship-summary-root" class="mb-4"></div>
-
-		</div>
-		<div class="col">
-			<div id="ship-detail" class="mb-4"></div>
-
-		</div>
-
-	</div>
-
-	<h1>Inventory Details:</h1>
-
-	<p class="text-sm text-gray-600">
-		This section is used by OOG ship builders to order the additional parts to reach the desired ship count. Missing materials will be calculated from ANT + Hephaestus only.
-	</p>
-	<p class="text-sm text-gray-600">
-		Select the ship type to filter inventory to that blueprint, otherwise all ship parts will be shown.
-	</p>
-  <section class="inputs">
-    <div class="input-row">
-      <label for="shipSelect" class="font-semibold">
-        Ship Blueprint
-      </label>
-      <select id="shipSelect" class="border px-2 py-1">
-        <!-- options filled by JS -->
-      </select>
-
+    <div class="two-col">
+      <div class="col">
+        <div id="ship-summary-root" class="mb-4"></div>
+      </div>
+      <div class="col">
+        <div id="ship-detail" class="mb-4"></div>
+      </div>
     </div>
+  </div>
 
-    <div class="input-row">
-      <label for="desiredCount" class="block font-semibold">
-        Desired ship count
-      </label>
-      <input
-        id="desiredCount"
-        type="number"
-        min="1"
-        class="border px-2 py-1 w-48"
-        placeholder="Leave blank to disable"
-      />
-    </div>
+  <div id="section-order" class="section-calculated" style="display:none">
+    <div class="section-label">Parts Order</div>
 
-    <div id="buildResult" class="font-bold"></div>
-  </section>
+    <p class="text-sm" style="color:var(--text-secondary);margin-bottom:0.4rem">
+      Used by OOG ship builders to calculate parts needed to reach the desired ship count. Missing materials calculated from Archiel's stock at ANT + Hephaestus only.
+    </p>
+    <p class="text-sm" style="color:var(--text-secondary);margin-bottom:0.75rem">
+      Select a ship type to filter the parts list to that blueprint, or leave blank to show all ship parts.
+    </p>
 
-  <!-- Table goes here -->
-  <section id="inventoryTableContainer"></section>
+    <section class="inputs">
+      <div class="input-row">
+        <label for="shipSelect" class="font-semibold">Ship Blueprint</label>
+        <select id="shipSelect" class="border px-2 py-1">
+          <!-- options filled by JS -->
+        </select>
+      </div>
+      <div class="input-row">
+        <label for="desiredCount" class="block font-semibold">Desired ship count</label>
+        <input
+          id="desiredCount"
+          type="number"
+          min="1"
+          class="border px-2 py-1 w-48"
+          placeholder="Leave blank to disable"
+        />
+      </div>
+      <div id="buildResult" style="font-weight:600;font-size:0.9rem;color:var(--text-secondary)"></div>
+    </section>
 
-<button class="copy-order-btn" disabled>
-  Copy OOG Parts /projects order to clipboard
-</button>
+    <section id="inventoryTableContainer"></section>
+
+    <button class="copy-order-btn" disabled style="margin-top:0.75rem">
+      Copy OOG Parts /projects order to clipboard
+    </button>
+  </div>
 
 </div>
 
@@ -94,7 +149,6 @@ const SHIP_RECIPES = {
     price: 6150000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/OOG2k2025.png",
-
     parts: {
       SSC: 128,
       LHP: 94,
@@ -117,34 +171,31 @@ const SHIP_RECIPES = {
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/shielded5k.png",
     parts: {
-
-		SSC: 284,
-		AHP: 159,
-		APT: 159,
-		AWH: 159,
-		SRP: 159,
-		LFE: 5,
-		MFE: 2,
-		SFE: 2,
-		BR2: 1,
-		CQL: 1,
-		FSE: 1,
-		HYR: 1,
-		HCB: 1,
-		LFL: 1,
-		MSL: 1,
-		RDL: 1,
-		FFC: 1,
-		STS: 1
-	}
+      SSC: 284,
+      AHP: 159,
+      APT: 159,
+      AWH: 159,
+      SRP: 159,
+      LFE: 5,
+      MFE: 2,
+      SFE: 2,
+      BR2: 1,
+      CQL: 1,
+      FSE: 1,
+      HYR: 1,
+      HCB: 1,
+      LFL: 1,
+      MSL: 1,
+      RDL: 1,
+      FFC: 1,
+      STS: 1
+    }
   },
-
   "5k Unshielded": {
     name: "5k Unshielded",
     price: 11500000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/5kUnshielded.png",
-
     parts: {
       SSC: 278,
       LHP: 157,
@@ -160,67 +211,61 @@ const SHIP_RECIPES = {
       MSL: 1,
       QCR: 1,
       STS: 1
-	}
+    }
   },
-
   "2k All Shields": {
     name: "2k All Shields",
     price: 10997000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/shielded_2k.png",
-
     parts: {
-		SSC: 128,
-		AHP: 94,
-		APT: 94,
-		AWH: 94,
-		SRP: 94,
-		LFE: 2,
-		MFE: 2,
-		SFE: 1,
-		BR1: 1,
-		CQM: 1,
-		FFC: 1,
-		FSE: 1,
-		LCB: 1,
-		LFL: 1,
-		MSL: 1,
-		QCR: 1,
-		RDL: 1,
-		STS: 1
-	}
+      SSC: 128,
+      AHP: 94,
+      APT: 94,
+      AWH: 94,
+      SRP: 94,
+      LFE: 2,
+      MFE: 2,
+      SFE: 1,
+      BR1: 1,
+      CQM: 1,
+      FFC: 1,
+      FSE: 1,
+      LCB: 1,
+      LFL: 1,
+      MSL: 1,
+      QCR: 1,
+      RDL: 1,
+      STS: 1
+    }
   },
   "OOG New WCB": {
     name: "OOG New WCB",
     price: 5900000,
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/oog-new-wcb.png",
-
     parts: {
-
-    SSC: 84,
-    LHP: 71,
-    MFE: 2,
-    LFE: 1,
-    LFL: 1,
-    MSL: 1,
-    SFE: 2,
-    FSE: 1,
-    HYR: 1,
-    CQM: 1,
-    BR2: 1,
-    FFC: 1,
-    STS: 1,
-    WCB: 1
-	}
+      SSC: 84,
+      LHP: 71,
+      MFE: 2,
+      LFE: 1,
+      LFL: 1,
+      MSL: 1,
+      SFE: 2,
+      FSE: 1,
+      HYR: 1,
+      CQM: 1,
+      BR2: 1,
+      FFC: 1,
+      STS: 1,
+      WCB: 1
+    }
   },
-
   "5k STL HCB": {
     name: "5k STL HCB",
     price: 7800000,
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/5k-stl-hcb.png",
-
     parts: {
       SSC: 265,
       LHP: 152,
@@ -231,38 +276,33 @@ const SHIP_RECIPES = {
       SSL: 1,
     }
   },
-
   "OOG Gas Hauler": {
     name: "OOG Gas Hauler",
     price: 7600000,
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/oog-gas-hauler.png",
-
     parts: {
-
-    SSC: 178,
-    LHP: 117,
-    LFE: 3,
-    MFE: 2,
-    SFE: 1,
-    LFL: 1,
-    MSL: 1,
-    VCB: 1,
-    FSE: 1,
-    QCR: 1,
-    CQL: 1,
-    BR1: 1,
-    FFC: 1,
-    STS: 1
-	}
+      SSC: 178,
+      LHP: 117,
+      LFE: 3,
+      MFE: 2,
+      SFE: 1,
+      LFL: 1,
+      MSL: 1,
+      VCB: 1,
+      FSE: 1,
+      QCR: 1,
+      CQL: 1,
+      BR1: 1,
+      FFC: 1,
+      STS: 1
+    }
   },
-
   "Colony Ship": {
     name: "Colony Ship",
     price: 34800000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/colony-ship-blueprint.png",
-
     parts: {
       SSC: 406,
       AHP: 202,
@@ -280,7 +320,7 @@ const SHIP_RECIPES = {
       LSL: 1,
       RDL: 1,
       STS: 1
-	}
+    }
   }
 };
 
@@ -330,36 +370,42 @@ const SHIP_PART_PRICES = {
   VOE: 5000000
 };
 
-
 const SHIP_PART_TICKERS = new Set([
-  'MFL', 'LFL', 'MSL', 'LSL', 'LFE', 'MFE', 'SFE', 'LHP', 'SSC', 'LCB', 'VCB', 
-  'WCB', 'HCB', 'FSE', 'QCR', 'CQM', 'CQL', 'BR1', 'BR2', 'FFC', 'BRS', 'CQS', 
-  'CQT', 'GEN', 'AGS', 'BGS', 'SFL', 'SSL', 'SCB', 'STS', 'RDL', 'RDS', 'HPR', 
+  'MFL', 'LFL', 'MSL', 'LSL', 'LFE', 'MFE', 'SFE', 'LHP', 'SSC', 'LCB', 'VCB',
+  'WCB', 'HCB', 'FSE', 'QCR', 'CQM', 'CQL', 'BR1', 'BR2', 'FFC', 'BRS', 'CQS',
+  'CQT', 'GEN', 'AGS', 'BGS', 'SFL', 'SSL', 'SCB', 'STS', 'RDL', 'RDS', 'HPR',
   'HYR', 'AEN', 'HTE', 'RCT', 'AHP', 'AWH', 'APT', 'SRP', 'HAM', 'VOR', 'VFT'
 ]);
 
+// Archiel is the primary builder — his ANT + Hephaestus stock drives buildCount and missing.
+// Secondary suppliers contribute parts that will be shipped to Archiel; their ANT totals
+// are shown as informational columns only.
+const PRIMARY_BUILDER    = "Archiel";
+const SECONDARY_SUPPLIERS = ["MrSmith33", "Taiyi", "Exeler"];
+
 let appState = {
-  users: {},          // { username: { inventory, byLocation } }
+  users: {},          // { username: { inventory, byLocation, timestamp } }
   selectedShip: null,
   desiredCount: null
 };
 
-const root = document.getElementById("ship-builder-root");
-const shipSelect = document.getElementById("shipSelect");
-const desiredInput = document.getElementById("desiredCount");
-const resultEl = document.getElementById("buildResult");
-const ageEl = document.getElementById("inventoryAge");
-const tableContainer = document.getElementById("inventoryTableContainer");
+const statusEl           = document.getElementById("sb-status");
+const metaEl             = document.getElementById("sb-meta");
+const sectionInventory   = document.getElementById("section-inventory");
+const sectionOrder       = document.getElementById("section-order");
+const shipSelect         = document.getElementById("shipSelect");
+const desiredInput       = document.getElementById("desiredCount");
+const resultEl           = document.getElementById("buildResult");
+const tableContainer     = document.getElementById("inventoryTableContainer");
 const shipDetailContainer = document.getElementById("ship-detail");
 const onlyShowPublicShips = document.getElementById("onlyShowPublicShips");
-const copyButton = document.querySelector(".copy-order-btn");
+const copyButton         = document.querySelector(".copy-order-btn");
 
 const INVENTORY_API_KEY = "4a07e526-b678-4f17-8858-39d80ab2d413";
 
 function buildInventoryUrl(username) {
   return `https://rest.fnar.net/csv/inventory?apikey=${INVENTORY_API_KEY}&username=${username}`;
 }
-
 
 // Add "None" option first
 const noneOpt = document.createElement("option");
@@ -385,7 +431,7 @@ async function fetchInventoryForUser(username) {
       if (Date.now() - timestamp < TTL) {
         return {
           inventory: new Map(data.inventory),
-          byLocation: new Map(data.byLocation), 
+          byLocation: new Map(data.byLocation),
           timestamp
         };
       }
@@ -395,57 +441,43 @@ async function fetchInventoryForUser(username) {
   const response = await fetch(buildInventoryUrl(username));
   const csv = await response.text();
   const processed = processData(csv);
+  const timestamp = Date.now();
 
   localStorage.setItem(cacheKey, JSON.stringify({
-    timestamp: Date.now(),
+    timestamp,
     data: {
       inventory: [...processed.inventory.entries()],
       byLocation: [...processed.byLocation.entries()]
     }
   }));
 
-  return {
-    ...processed,
-    timestamp: Date.now()
-  };
+  return { ...processed, timestamp };
 }
 
-const formatInventoryAge = () => {
-  const cacheKey = "ship_inventory_cache_Archiel";
-  const cached = localStorage.getItem(cacheKey);
-  if (!cached) return null;
-
-  try {
-    const { timestamp } = JSON.parse(cached);
-    const ageMs = Date.now() - timestamp;
-
-    const seconds = Math.floor(ageMs / 1000);
-    const minutes = Math.floor(seconds / 60);
-    const hours = Math.floor(minutes / 60);
-
-    if (hours > 0) return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
-    if (minutes > 0) return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
-    return `${seconds} second${seconds !== 1 ? "s" : ""} ago`;
-  } catch {
-    return null;
-  }
-};
+function formatCacheAge(timestamp) {
+  const ageMs = Date.now() - timestamp;
+  const minutes = Math.floor(ageMs / 60000);
+  const hours   = Math.floor(minutes / 60);
+  if (hours > 0)    return `cached ${hours}h ${minutes % 60}m ago`;
+  if (minutes > 0)  return `cached ${minutes}m ago`;
+  return "<1 minute ago";
+}
 
 const renderShipSummaryTable = () => {
-  const root = document.getElementById("ship-summary-root");
-  root.innerHTML = "";
+  const summaryRoot = document.getElementById("ship-summary-root");
+  summaryRoot.innerHTML = "";
 
-  if (!appState.users["Archiel"].byLocation) return;
+  if (!appState.users["Archiel"]?.byLocation) return;
 
   const table = document.createElement("table");
-  table.className = "table-auto border-collapse text-sm";
+  table.className = "ship-summary-table table-auto border-collapse text-sm";
 
   table.innerHTML = `
     <thead>
       <tr>
         <th class="text-left pr-4">Ship Design</th>
-        <th class="text-right">In Stock</th>
-        <th class="text-right pr-4">Cost</th>
+        <th class="text-right pr-3">In Stock</th>
+        <th class="text-right">Price</th>
       </tr>
     </thead>
   `;
@@ -454,12 +486,10 @@ const renderShipSummaryTable = () => {
 
   for (const shipName of Object.keys(SHIP_RECIPES)) {
     const recipe = SHIP_RECIPES[shipName];
-
-    if(recipe.internalSalesOnly && onlyShowPublicShips.checked){
-      continue;
-    }
+    if (recipe.internalSalesOnly && onlyShowPublicShips.checked) continue;
 
     const count = calculateBuildCount(appState.users["Archiel"].byLocation, recipe.parts);
+    const stockClass = count > 0 ? "stock-in" : "stock-out";
 
     const tr = document.createElement("tr");
     tr.classList.add("ship-row");
@@ -468,43 +498,36 @@ const renderShipSummaryTable = () => {
       renderInventoryTable();
     });
     tr.innerHTML = `
-        <td class="pr-4">${shipName}</td>
-        <td class="text-right font-mono">${count.toLocaleString()}</td>
-        <td class="pr-4">${recipe.price.toLocaleString()} AIC</td>
-      `;
-
+      <td class="pr-4">${shipName}</td>
+      <td class="text-right pr-3 font-mono ${stockClass}">${count.toLocaleString()}</td>
+      <td class="text-right" style="color:var(--text-secondary)">${recipe.price.toLocaleString()} AIC</td>
+    `;
     tbody.appendChild(tr);
   }
 
   table.appendChild(tbody);
-  root.appendChild(table);
+  summaryRoot.appendChild(table);
 };
 
-
 const renderInventoryTable = () => {
-  const selectedShip = shipSelect.value || null;
-  const desiredCount = parseInt(desiredInput.value, 10) || null;
+  const selectedShip  = shipSelect.value || null;
+  const desiredCount  = parseInt(desiredInput.value, 10) || null;
 
-  const table = createTable(
-    appState.users,
-    selectedShip,
-    desiredCount
-  );
+  const table = createTable(appState.users, selectedShip, desiredCount);
 
   tableContainer.querySelector("table")?.remove();
   tableContainer.appendChild(table);
 
-
-  if (!selectedShip || selectedShip === ""){
+  if (!selectedShip || selectedShip === "") {
     resultEl.textContent = "Showing all ship parts.";
-  }else{
-    const recipe = SHIP_RECIPES[selectedShip]?.parts;
+  } else {
+    const recipe     = SHIP_RECIPES[selectedShip]?.parts;
     const buildCount = calculateBuildCount(appState.users["Archiel"].byLocation, recipe);
-
-    resultEl.textContent = `Archiel has parts for ${buildCount.toLocaleString()} x ${selectedShip}`;
+    const color      = buildCount > 0 ? "#4ade80" : "#f87171";
+    resultEl.innerHTML = `Archiel has parts for <span style="color:${color};font-weight:700">${buildCount.toLocaleString()}</span> × ${selectedShip}`;
   }
 
-  renderShipDetails(selectedShip)
+  renderShipDetails(selectedShip);
 };
 
 function renderShipDetails(selectedShip) {
@@ -512,18 +535,17 @@ function renderShipDetails(selectedShip) {
     selectedShip = "OOG Premium 2k";
   }
 
-  const ship = SHIP_RECIPES[selectedShip];
-  const recipe = ship.parts;
+  const ship       = SHIP_RECIPES[selectedShip];
+  const recipe     = ship.parts;
   const buildCount = calculateBuildCount(appState.users["Archiel"].byLocation, recipe);
 
   const priceText = ship.price
     ? ship.price.toLocaleString() + " AIC"
     : "Price unavailable";
 
-  const stockStatus =
-    buildCount === 0
-      ? `<span class="ship-status out">Out of stock</span>`
-      : `<span class="ship-status in">In stock</span>`;
+  const stockStatus = buildCount === 0
+    ? `<span class="ship-status out">Out of stock</span>`
+    : `<span class="ship-status in">In stock</span>`;
 
   const internalNote = ship.internalSalesOnly
     ? `<div class="ship-note">Not for public sale — internal only</div>`
@@ -542,117 +564,87 @@ function renderShipDetails(selectedShip) {
         ${internalNote}
         ${buildCountNote}
       </div>
-		<div class="ship-card-image">
-		<img 
-			src="${ship.imageUrl}" 
-			alt="${ship.name}" 
-			class="ship-preview-image"
-			onclick="openShipImageModal('${ship.imageUrl}', '${ship.name}')"
-		>
-		</div>
+      <div class="ship-card-image">
+        <img
+          src="${ship.imageUrl}"
+          alt="${ship.name}"
+          class="ship-preview-image"
+          onclick="openShipImageModal('${ship.imageUrl}', '${ship.name}')"
+        >
+      </div>
     </div>
   `;
 }
-
 
 shipSelect.addEventListener("change", renderInventoryTable);
 desiredInput.addEventListener("input", renderInventoryTable);
 onlyShowPublicShips.addEventListener("input", renderShipSummaryTable);
 
-
 const calculateBuildCount = (byLocation, parts) => {
   let maxBuilds = Infinity;
-
   for (const [ticker, required] of Object.entries(parts)) {
-
-	const loc = byLocation.get(ticker) || {};
-
-	const ant = loc["ANT"] || 0;
-	const hep = loc["ZV-307c"] || 0;
-	const available = ant + hep;
+    const loc       = byLocation.get(ticker) || {};
+    const ant       = loc["ANT"]     || 0;
+    const hep       = loc["ZV-307c"] || 0;
+    const available = ant + hep;
     maxBuilds = Math.min(maxBuilds, Math.floor(available / required));
   }
-
   return Number.isFinite(maxBuilds) ? maxBuilds : 0;
 };
 
 const computeMissing = (ticker, available, recipe, desiredCount) => {
-  if (!desiredCount || !recipe) return "";
-
+  if (!desiredCount || !recipe) return 0;
   const perShip = recipe[ticker];
-  if (!perShip) return ""; // material not used by this ship
-
-  const needed = perShip * desiredCount;
-  const missing = Math.max(needed - available, 0);
-
-  return missing ? missing.toLocaleString() : "";
+  if (!perShip) return 0;
+  return Math.max(perShip * desiredCount - available, 0);
 };
 
-function buildOrderString(missing) {
-  return Object.entries(missing)
+function setupCopyButton(button, allMissing) {
+  const hasMissing = Object.values(allMissing).some(qty => qty > 0);
+  button.disabled = !hasMissing;
+  if (!hasMissing) return;
+
+  const orderText = Object.entries(allMissing)
     .filter(([_, qty]) => qty > 0)
     .map(([ticker, qty]) => {
       const price = SHIP_PART_PRICES[ticker] ?? 0;
       return `${qty} ${ticker}@${price}AIC/u`;
     })
     .join(",");
+
+  button.onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(orderText);
+      const oldText = button.textContent;
+      button.textContent = "Copied!";
+      setTimeout(() => { button.textContent = oldText; }, 1200);
+    } catch (err) {
+      console.error("Clipboard copy failed", err);
+    }
+  };
 }
-
-function setupCopyButton(button, allMissing) {
-
-	const hasMissing = Object.values(allMissing).some(qty => qty > 0);
-	button.disabled = !hasMissing;
-
-	if (!hasMissing) return;
-
-	const orderText = Object.entries(allMissing)
-		.map(([ticker, qty]) => {
-			const price = SHIP_PART_PRICES[ticker] ?? 0;
-			return `${qty} ${ticker}@${price}AIC/u`;
-		})
-		.join(",");
-
-	button.onclick = async () => {
-		try {
-			await navigator.clipboard.writeText(orderText);
-
-			const oldText = button.textContent;
-			button.textContent = "Copied!";
-
-			setTimeout(() => {
-				button.textContent = oldText;
-			}, 1200);
-
-		} catch (err) {
-			console.error("Clipboard copy failed", err);
-		}
-	};
-}
-
 
 const processData = (csvData) => {
-  const inventory = new Map();
+  const inventory  = new Map();
   const byLocation = new Map();
 
-  const rows = csvData.trim().split('\n');
+  const rows   = csvData.trim().split('\n');
   const header = rows.shift().trim().split(',');
 
-  const tickerIndex = header.indexOf('Ticker');
-  const amountIndex = header.indexOf('Amount');
+  const tickerIndex   = header.indexOf('Ticker');
+  const amountIndex   = header.indexOf('Amount');
   const locationIndex = header.indexOf('NaturalId');
 
   for (const row of rows) {
-    const values = row.split(',');
-    const ticker = values[tickerIndex];
-    const amount = parseInt(values[amountIndex], 10);
+    const values   = row.split(',');
+    const ticker   = values[tickerIndex];
+    const amount   = parseInt(values[amountIndex], 10);
     const location = values[locationIndex];
 
     if (!SHIP_PART_TICKERS.has(ticker)) continue;
 
-    // total
     inventory.set(ticker, (inventory.get(ticker) || 0) + amount);
 
-    // by location
     if (!byLocation.has(ticker)) byLocation.set(ticker, {});
     byLocation.get(ticker)[location] =
       (byLocation.get(ticker)[location] || 0) + amount;
@@ -661,113 +653,114 @@ const processData = (csvData) => {
   return { inventory, byLocation };
 };
 
-
 const createTable = (users, selectedShip, desiredCount) => {
+  const table = document.createElement('table');
+  table.className = "inventory-table table-auto border-collapse text-sm";
 
-	const table = document.createElement('table');
-	table.style = 'width:400px';
+  // Dynamic supplier header columns
+  const supplierHeaders = SECONDARY_SUPPLIERS
+    .map(u => `<th class="text-right pr-3">ANT (${u})</th>`)
+    .join("");
 
-	table.innerHTML = `
-	<thead>
-		<tr>
-		<th>Ticker</th>
-		<th>Total (Archiel)</th>
-		<th>ANT</th>
-		<th>Hephaestus</th>
-    <th>ANT (MrSmith33)</th>
-		<th>Missing</th>
-		</tr>
-	</thead>
-	`;
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="text-left pr-3">Ticker</th>
+        <th class="text-right pr-3">Total (Archiel)</th>
+        <th class="text-right pr-3">ANT</th>
+        <th class="text-right pr-3">Hephaestus</th>
+        ${supplierHeaders}
+        <th class="text-right">Missing</th>
+      </tr>
+    </thead>
+  `;
 
-	const recipe = selectedShip ? SHIP_RECIPES[selectedShip].parts : null;
+  const recipe = selectedShip ? SHIP_RECIPES[selectedShip].parts : null;
 
-	const sorted = selectedShip
-		? Object.keys(recipe).sort()
-		: [...users["Archiel"].inventory.keys()].sort();
+  const sorted = selectedShip
+    ? Object.keys(recipe).sort()
+    : [...users[PRIMARY_BUILDER].inventory.keys()].sort();
 
-	const tbody = document.createElement("tbody");
+  const tbody    = document.createElement("tbody");
+  const allMissing = {};
 
-	// Collect missing totals across ALL tickers
-	const allMissing = {};
+  for (const ticker of sorted) {
+    const archiel  = users[PRIMARY_BUILDER];
+    const archLoc  = archiel.byLocation.get(ticker) || {};
 
-	for (const ticker of sorted) {
-    const archiel = users["Archiel"];
-    const smith = users["MrSmith33"];
-
-    const total = archiel.inventory.get(ticker) || 0;
-
-    const archLoc = archiel.byLocation.get(ticker) || {};
-    const smithLoc = smith.byLocation.get(ticker) || {};
-
-    const antArch = archLoc["ANT"] || 0;
-    const hep = archLoc["ZV-307c"] || 0;
-    const antSmith = smithLoc["ANT"] || 0;
-
-    // Missing still based ONLY on Archiel (unless you want combined)
+    const total     = archiel.inventory.get(ticker) || 0;
+    const antArch   = archLoc["ANT"]     || 0;
+    const hep       = archLoc["ZV-307c"] || 0;
     const available = antArch + hep;
 
-		const missing = computeMissing(
-			ticker,
-			available,
-			recipe,
-			desiredCount
-		);
+    const missing = computeMissing(ticker, available, recipe, desiredCount);
+    if (missing > 0) allMissing[ticker] = missing;
 
-		if (missing > 0) {
-			allMissing[ticker] = missing;
-		}
+    const missingCell = missing > 0
+      ? `<td class="text-right missing-cell">${missing.toLocaleString()}</td>`
+      : `<td class="text-right" style="color:var(--text-secondary)">—</td>`;
 
-		const tr = document.createElement("tr");
-		tr.innerHTML = `
-			<td>${ticker}</td>
-			<td>${total.toLocaleString()}</td>
-			<td>${antArch.toLocaleString()}</td>
-			<td>${hep.toLocaleString()}</td>
-      <td>${antSmith.toLocaleString()}</td>
-			<td>${missing}</td>
-		`;
-		tbody.appendChild(tr);
-	}
+    // One cell per secondary supplier (ANT stock only)
+    const supplierCells = SECONDARY_SUPPLIERS.map(u => {
+      const loc = users[u]?.byLocation.get(ticker) || {};
+      const ant = loc["ANT"] || 0;
+      return `<td class="text-right pr-3 font-mono" style="color:var(--text-secondary)">${ant.toLocaleString()}</td>`;
+    }).join("");
 
-	table.appendChild(tbody);
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="pr-3" style="font-weight:600">${ticker}</td>
+      <td class="text-right pr-3 font-mono">${total.toLocaleString()}</td>
+      <td class="text-right pr-3 font-mono">${antArch.toLocaleString()}</td>
+      <td class="text-right pr-3 font-mono">${hep.toLocaleString()}</td>
+      ${supplierCells}
+      ${missingCell}
+    `;
+    tbody.appendChild(tr);
+  }
 
-	// Setup copy button ONCE using aggregated missing list
-	setupCopyButton(copyButton, allMissing);
-
-	return table;
+  table.appendChild(tbody);
+  setupCopyButton(copyButton, allMissing);
+  return table;
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  root.classList.add("opacity-50");
-  resultEl.textContent = "Loading inventory data...";
+  statusEl.textContent = "Loading inventory data…";
 
-  const usernames = ["Archiel", "MrSmith33"];
+  const allUsers = [PRIMARY_BUILDER, ...SECONDARY_SUPPLIERS];
 
-  const results = await Promise.all(
-    usernames.map(u => fetchInventoryForUser(u))
-  );
+  try {
+    const results = await Promise.all(
+      allUsers.map(u => fetchInventoryForUser(u))
+    );
 
-  usernames.forEach((username, i) => {
-    appState.users[username] = results[i];
-  });
+    allUsers.forEach((username, i) => {
+      appState.users[username] = results[i];
+    });
 
-  ageEl.textContent = `Inventory data from ${formatInventoryAge()}`;
+    const archielTimestamp = appState.users[PRIMARY_BUILDER].timestamp;
+    const cacheNote = formatCacheAge(archielTimestamp);
+    const supplierList = SECONDARY_SUPPLIERS.join(", ");
+    metaEl.textContent = `${PRIMARY_BUILDER} + ${supplierList} · ${cacheNote} · refreshes every 30 min`;
 
-  root.classList.remove("opacity-50");
+    statusEl.textContent = "";
+    sectionInventory.style.display = "";
+    sectionOrder.style.display     = "";
 
-  renderShipSummaryTable();
-  renderInventoryTable();
+    renderShipSummaryTable();
+    renderInventoryTable();
+  } catch (err) {
+    console.error(err);
+    statusEl.textContent = "Failed to load inventory: " + err.message;
+    statusEl.style.color = "#f87171";
+  }
 });
-
 
 window.openShipImageModal = (src, alt) => {
   const modal = document.getElementById("ship-image-modal");
-  const img = document.getElementById("ship-image-modal-img");
-
+  const img   = document.getElementById("ship-image-modal-img");
   img.src = src;
   img.alt = alt;
-
   modal.classList.remove("hidden");
 };
 
@@ -775,10 +768,8 @@ window.closeShipImageModal = () => {
   document.getElementById("ship-image-modal").classList.add("hidden");
 };
 
-// Close on ESC
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeShipImageModal();
 });
-
 
 </script>
