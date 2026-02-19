@@ -110,6 +110,27 @@
     <div id="projected-needs-container"></div>
     <h3 class="mt-6 mb-2 font-bold">Recommended Supply Plan</h3>
     <div id="supply-plan-container"></div>
+
+    <div id="supply-export-section" style="display:none;margin-top:1.5rem">
+      <h3 class="mt-2 mb-2 font-bold">Export to XIT ACTION</h3>
+      <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-bottom:0.75rem">
+        <label style="display:flex;align-items:center;gap:0.35rem;color:var(--text-secondary);font-size:0.9rem">
+          Origin:
+          <select id="supplyOriginSelect">
+            <option>Antares Station Warehouse</option>
+            <option>Moria Station Warehouse</option>
+            <option>Arclight Station Warehouse</option>
+            <option>Benten Station Warehouse</option>
+            <option>Hortus Station Warehouse</option>
+            <option>Hubur Station Warehouse</option>
+          </select>
+          <span id="supplyOriginEmoji">😀</span>
+        </label>
+      </div>
+      <textarea id="supplyJsonOutput" readonly style="width:100%;height:8rem;font-size:0.75rem;font-family:monospace;resize:vertical"></textarea>
+      <br>
+      <button id="supplyCopyBtn" style="margin-top:0.5rem">Copy JSON</button>
+    </div>
   </div>
 
 </div>
@@ -117,7 +138,7 @@
 <script type="module">
 
 
-  import { fetchPricing, priceData } from "/pricing-and-materials.js";
+  import { fetchPricing, fetchMaterials, priceData, materialData } from "/pricing-and-materials.js";
   import { UPKEEP_BUILDINGS, UPKEEP_NEED_TYPES, WEIGHTS } from "/infra-data.js";
 
 const PLANET_STORAGE_KEY = "gov_helper_selected_planet";
@@ -132,6 +153,7 @@ const warnings               = document.getElementById("warnings");
 // Preserved across loads so the fulfillment input can trigger recalculation
 let lastRequiredNeeds  = null;
 let lastLatestProjects = null;
+let lastSelected       = null;
 const sectionRetrieved    = document.getElementById("section-retrieved");
 const sectionCalculated   = document.getElementById("section-calculated");
 const planetHeaderEl      = document.getElementById("planet-header");
@@ -141,6 +163,11 @@ const workforceTableCont  = document.getElementById("workforce-table-container")
 const supplyPlanCont      = document.getElementById("supply-plan-container");
 const projectedNeedsCont  = document.getElementById("projected-needs-container");
 const projectedGrowthCont = document.getElementById("projected-growth-container");
+const supplyExportSection = document.getElementById("supply-export-section");
+const supplyOriginSelect  = document.getElementById("supplyOriginSelect");
+const supplyOriginEmoji   = document.getElementById("supplyOriginEmoji");
+const supplyJsonOutput    = document.getElementById("supplyJsonOutput");
+const supplyCopyBtn       = document.getElementById("supplyCopyBtn");
 
 async function fetchPlanet(planetId) {
   const cacheKey = `planet_${planetId}`;
@@ -450,6 +477,7 @@ async function loadInfrastructure() {
       fetchInfrastructure(planetId),
       fetchPlanet(planetId),
       fetchPricing(),
+      fetchMaterials(),
     ]);
 
     const { projectMap: latestProjects, maxPeriod } = extractLatestProjects(infraData);
@@ -932,6 +960,27 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   planTable.appendChild(planBody);
   supplyPlanCont.appendChild(planTable);
 
+  // --- Supply period summary (weight, volume, cost) ---
+  const supplyDays = parseFloat(document.getElementById("supplyDays").value) || 30;
+  let periodWeight = 0;
+  let periodVolume = 0;
+  for (const opt of selected) {
+    const qty = opt.qtyPerDay * supplyDays;
+    const matInfo = materialData[opt.ticker] || {};
+    periodWeight += qty * (matInfo.weight || 0);
+    periodVolume += qty * (matInfo.volume || 0);
+  }
+  const periodCost = totalCost * supplyDays;
+
+  const summaryDiv = document.createElement("div");
+  summaryDiv.style.cssText = "margin-top:0.75rem;font-size:0.9rem;color:var(--text-secondary);display:flex;gap:1.5rem;flex-wrap:wrap";
+  summaryDiv.innerHTML = `
+    <span>Supply period cost: <strong style="color:var(--text-primary)">${periodCost.toLocaleString(undefined, { maximumFractionDigits: 0 })}</strong></span>
+    <span>Weight: <strong style="color:var(--text-primary)">${periodWeight.toLocaleString(undefined, { maximumFractionDigits: 1 })} t</strong></span>
+    <span>Volume: <strong style="color:var(--text-primary)">${periodVolume.toLocaleString(undefined, { maximumFractionDigits: 1 })} m³</strong></span>
+  `;
+  supplyPlanCont.appendChild(summaryDiv);
+
   // --- Need fulfillment summary ---
   const NEED_ORDER = ["safety", "health", "comfort", "culture", "education"];
 
@@ -968,9 +1017,73 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   }
   summaryTable.appendChild(summaryBody);
   projectedNeedsCont.appendChild(summaryTable);
+
+  // Store and render export
+  lastSelected = selected;
+  updateSupplyExport();
 }
 
+// ── XIT ACTION export ─────────────────────────────────────────────────────
 
+const CX_MAP = {
+  "Antares Station Warehouse": "AI1",
+  "Moria Station Warehouse":   "NC1",
+  "Arclight Station Warehouse":"CI2",
+  "Benten Station Warehouse":  "CI1",
+  "Hortus Station Warehouse":  "IC1",
+  "Hubur Station Warehouse":   "NC2",
+};
+
+function updateSupplyExport() {
+  if (!lastSelected || !lastSelected.length) {
+    supplyExportSection.style.display = "none";
+    return;
+  }
+
+  const supplyDays = parseFloat(document.getElementById("supplyDays").value) || 30;
+  const origin = supplyOriginSelect.value;
+
+  // Aggregate qty per ticker across all selected building/material pairs
+  const materials = {};
+  for (const opt of lastSelected) {
+    const qty = Math.ceil(opt.qtyPerDay * supplyDays);
+    if (qty > 0) materials[opt.ticker] = (materials[opt.ticker] || 0) + qty;
+  }
+
+  const exportJson = {
+    actions: [
+      {
+        group: "Items",
+        exchange: CX_MAP[origin] || "NC1",
+        priceLimits: {},
+        buyPartial: false,
+        useCXInv: true,
+        name: "BuyItems",
+        type: "CX Buy",
+      },
+      {
+        type: "MTRA",
+        name: "TransferAction",
+        group: "Items",
+        origin,
+        dest: "Configure on Execution",
+      },
+    ],
+    global: { name: "OOG Governor Supply Plan" },
+    groups: [{ type: "Manual", name: "Items", materials }],
+  };
+
+  supplyJsonOutput.value = JSON.stringify(exportJson, null, 2);
+  supplyOriginEmoji.textContent = origin === "Antares Station Warehouse" ? "😀" : "😢";
+  supplyExportSection.style.display = "";
+}
+
+supplyCopyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(supplyJsonOutput.value).then(() => {
+    supplyCopyBtn.textContent = "Copied!";
+    setTimeout(() => (supplyCopyBtn.textContent = "Copy JSON"), 1500);
+  });
+});
 
 loadInfraBtn.addEventListener("click", loadInfrastructure);
 
@@ -979,6 +1092,9 @@ targetFulfillmentInput.addEventListener("input", () => {
     renderCheapestFulfillmentTable(lastRequiredNeeds, lastLatestProjects);
   }
 });
+
+document.getElementById("supplyDays").addEventListener("input", updateSupplyExport);
+supplyOriginSelect.addEventListener("input", updateSupplyExport);
 
 document.addEventListener("DOMContentLoaded", async () => {
   // URL param takes priority; fall back to last-used planet from localStorage
