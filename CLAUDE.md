@@ -9,18 +9,22 @@ OOG Capital Management is a Hugo static site for a community organization managi
 ## Commands
 
 ```bash
-# Development (from themes/tailbliss/ — that's where package.json lives)
-npm start              # Watch mode: Tailwind CSS + Hugo dev server concurrently
-npm run watch:tw       # Watch and compile Tailwind CSS only
-npm run watch:hugo     # Hugo dev server only (with drafts)
+# Normal development — run from the project root
+hugo server -D         # Dev server with drafts (Hugo v0.155+)
 
-# Build (from themes/tailbliss/)
-npm run build          # Production build: hugo --minify
+# Tailwind CSS rebuild — only needed when editing Tailwind classes in layouts/
+# Run from themes/tailbliss/ in a separate terminal alongside hugo server -D
+npm start              # Watch and recompile Tailwind CSS (tailbliss/assets/css/style.css)
+npm run watch:tw       # Same as npm start
 
-# Or use Hugo directly from root
-hugo server -D         # Dev server with drafts
-hugo --minify          # Minified production build
+# Production build (from themes/tailbliss/)
+npm run build          # hugo --minify
 ```
+
+> **Note:** `npm start` no longer launches Hugo. It only runs the Tailwind watcher.
+> Run `hugo server -D` from the project root separately.
+> The Tailwind config scans both `themes/tailbliss/layouts/` and the root `layouts/`
+> directory, so classes added to root-level shortcodes and overrides are included.
 
 ```bash
 # Deployment (from root)

@@ -54,15 +54,18 @@ Most of the time you can develop using:
 hugo server -D
 ```
 
-If you need to mess with the tailwind bits of the tailbliss theme, then you might need hugo extended and npm:
-
-The npm scripts (Tailwind watch, dev server) live in `themes/tailbliss/`:
+If you add or change Tailwind CSS classes in any layout file, you need to recompile
+the Tailwind stylesheet. Run this in a second terminal alongside `hugo server -D`:
 
 ```bash
 cd themes/tailbliss
-npm start        # Tailwind watch + Hugo dev server
+npm start        # Tailwind CSS watch only (recompiles on file changes)
 npm run build    # Production build (hugo --minify)
 ```
+
+`npm start` only runs the Tailwind watcher — Hugo runs separately from the project root.
+The Tailwind config scans both `themes/tailbliss/layouts/` and the root `layouts/`
+directory, so classes used in OOG-specific shortcodes and overrides are included.
 
 ## Deployment
 
