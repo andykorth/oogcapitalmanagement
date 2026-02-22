@@ -67,6 +67,9 @@
     white-space: nowrap;
     vertical-align: middle;
   }
+  .gateway-table tr > *:last-child {
+    padding-right: 0.75rem;
+  }
 
   .gateway-table .phase-cell {
     font-size: 0.82rem;
@@ -290,6 +293,13 @@ function phaseCells(jumps, inbound) {
   return `${out}<span style="color:var(--text-secondary)">↑</span> ${inn}<span style="color:var(--text-secondary)">↓</span>`;
 }
 
+function volEmoji(vol) {
+  if (vol == null) return "";
+  if (vol >= 6000) return " 💪";
+  if (vol >= 3000) return " 😅";
+  return " 🐜";
+}
+
 function pct(value) {
   if (value == null) return "—";
   return (value * 100).toFixed(1) + "%";
@@ -462,7 +472,7 @@ function renderTable(gateways) {
       <td class="text-right phase-cell">${phaseCells(g.LastPhaseJumps, g.LastPhaseInboundJumps)}</td>
       <td class="text-right phase-cell">${phaseCells(g.PhaseAverageJumps, g.PhaseAverageInboundJumps)}</td>
       <td class="upgrades-cell">${upgradeBadges(g)}</td>
-      <td class="text-right">${g.MaxShipVolume != null ? g.MaxShipVolume.toLocaleString() : "—"}</td>
+      <td class="text-right">${g.MaxShipVolume != null ? g.MaxShipVolume.toLocaleString() + volEmoji(g.MaxShipVolume) : "—"}</td>
       <td class="text-right">${pct(g.AverageUpkeepUptime)}</td>
     `;
     tbody.appendChild(tr);
@@ -522,7 +532,7 @@ function renderUpkeepMissingTable(gateways) {
       <td class="text-right phase-cell">${phaseCells(g.LastPhaseJumps, g.LastPhaseInboundJumps)}</td>
       <td class="text-right phase-cell">${phaseCells(g.PhaseAverageJumps, g.PhaseAverageInboundJumps)}</td>
       <td class="upgrades-cell">${upgradeBadges(g)}</td>
-      <td class="text-right">${g.MaxShipVolume != null ? g.MaxShipVolume.toLocaleString() : "—"}</td>
+      <td class="text-right">${g.MaxShipVolume != null ? g.MaxShipVolume.toLocaleString() + volEmoji(g.MaxShipVolume) : "—"}</td>
       <td class="text-right">${pct(g.AverageUpkeepUptime)}</td>
     `;
     tbody.appendChild(tr);
