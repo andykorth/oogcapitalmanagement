@@ -312,7 +312,7 @@ function renderPlanetHeader(planetData, maxPeriod, startEpochMs, siteCount) {
   const basesStr = siteCount != null ? ` · ${siteCount} base${siteCount !== 1 ? 's' : ''}` : '';
   planetHeaderEl.innerHTML = `
     <div class="planet-name">${name}<span class="planet-id">${id}</span></div>
-    <div class="planet-meta">Simulation Period ${maxPeriod ?? "—"} · Started ${startDate} · Ends ${endsIn}${basesStr}</div>
+    <div class="planet-meta">Population Report #${maxPeriod ?? "—"} · Started ${startDate} · Ends ${endsIn}${basesStr}</div>
   `;
 }
 
@@ -1034,27 +1034,57 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   summaryHead.innerHTML = `
     <tr>
       <th>Need</th>
-      <th class="text-right">Required</th>
+      <th class="text-right">Required for 100%</th>
       <th class="text-right">Provided</th>
       <th class="text-right">Fulfillment</th>
-      <th class="text-right">Status</th>
+      <th class="text-right">Satisfaction</th>
+      <th class="text-right">Achieved Target</th>
     </tr>
   `;
   summaryTable.appendChild(summaryHead);
 
-  const summaryBody = document.createElement("tbody");
+  // Compute fulfillments first so we can apply cascading caps
+  const fulfillments = {};
   for (const need of NEED_ORDER) {
     const req = requiredNeeds[need] || 0;
     const prov = provided[need] || 0;
-    const fulfillment = req > 0 ? prov / req : 1;
-    const met = fulfillment >= getTarget();
+    fulfillments[need] = req > 0 ? prov / req : 1;
+  }
 
+  // Apply satisfaction caps (PrUn mechanics):
+  //   Safety, Health  → uncapped
+  //   Comfort, Culture → capped by min(Safety, Health)
+  //   Education        → capped by min(Comfort_sat, Culture_sat)
+  const satisfactions = {};
+  const wasCapped = {};
+  const lowerBound = Math.min(fulfillments.safety, fulfillments.health);
+
+  satisfactions.safety    = fulfillments.safety;    wasCapped.safety    = false;
+  satisfactions.health    = fulfillments.health;    wasCapped.health    = false;
+  satisfactions.comfort   = Math.min(fulfillments.comfort,   lowerBound);
+  satisfactions.culture   = Math.min(fulfillments.culture,   lowerBound);
+  satisfactions.education = Math.min(fulfillments.education, Math.min(satisfactions.comfort, satisfactions.culture));
+  wasCapped.comfort   = satisfactions.comfort   < fulfillments.comfort;
+  wasCapped.culture   = satisfactions.culture   < fulfillments.culture;
+  wasCapped.education = satisfactions.education < fulfillments.education;
+
+  const summaryBody = document.createElement("tbody");
+  for (const need of NEED_ORDER) {
+    const req         = requiredNeeds[need] || 0;
+    const prov        = provided[need] || 0;
+    const fulfillment = fulfillments[need];
+    const satisfaction = satisfactions[need];
+    const capped      = wasCapped[need];
+    const met         = satisfaction >= getTarget();
+
+    const satColor = capped ? "#f87171" : "inherit";
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${capitalize(need)}</td>
       <td class="text-right">${req.toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
       <td class="text-right">${prov.toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
       <td class="text-right">${(fulfillment * 100).toFixed(1)}%</td>
+      <td class="text-right" style="color:${satColor}">${(satisfaction * 100).toFixed(1)}%</td>
       <td class="text-right" style="color:${met ? "#4ade80" : "#f87171"}">${met ? "✓" : "✗"}</td>
     `;
     summaryBody.appendChild(tr);
