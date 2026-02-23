@@ -1,5 +1,18 @@
 const TWO_WEEKS_MS = 14 * 24 * 3600 * 1000;
 
+function formatRelativeTime(epochMs) {
+  if (!epochMs) return "—";
+  const diff = Math.abs(Date.now() - epochMs);
+  const sec  = Math.floor(diff / 1000);
+  const min  = Math.floor(sec / 60);
+  const hr   = Math.floor(min / 60);
+  const day  = Math.floor(hr / 24);
+  if (day > 0)  return `${day}d ${hr % 24}h ago`;
+  if (hr > 0)   return `${hr}h ${min % 60}m ago`;
+  if (min > 0)  return `${min}m ago`;
+  return `${sec}s ago`;
+}
+
 async function fetchCorpMembers(corpCode) {
   const cacheKey = `corp_${corpCode}`;
   const cached = localStorage.getItem(cacheKey);
@@ -7,7 +20,6 @@ async function fetchCorpMembers(corpCode) {
     try {
       const { timestamp, data } = JSON.parse(cached);
       if (Date.now() - timestamp < 24 * 3600 * 1000) {
-        console.log("Loaded from cache:", corpCode);
         return data;
       }
     } catch {}
@@ -29,21 +41,17 @@ function loadCorpReport(graphType, height, corpCode) {
   }
 
   const userName = encodeURIComponent(corpCode);
-
   const iframe = document.createElement("iframe");
-
   iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${userName}&hideOptions`;
   iframe.width = "100%";
   iframe.height = height;
   iframe.style.border = "none";
   iframe.loading = "lazy";
-
   reportContainer.appendChild(iframe);
 }
 
-
 async function fetchCompanyData(companyCode) {
-  const cacheKey = `company_${companyCode}`;
+  const cacheKey = `company_v2_${companyCode}`;
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     try {
@@ -53,28 +61,49 @@ async function fetchCompanyData(companyCode) {
       }
     } catch {}
   }
-
-  const url = `https://rest.fnar.net/company/code/${companyCode}`;
+  const url = `https://api.fnar.net/company/lookup?company=${encodeURIComponent(companyCode)}&include_planets=true`;
   const response = await fetch(url);
   if (!response.ok) return null;
-  const data = await response.json();
-  localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
+  const arr = await response.json();
+  const data = Array.isArray(arr) && arr.length ? arr[0] : null;
+  if (data) {
+    localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
+  }
+  return data;
+}
+
+async function fetchApexUserData(companyCode) {
+  const cacheKey = `apexuser_v1_${companyCode}`;
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) {
+    try {
+      const { timestamp, data } = JSON.parse(cached);
+      if (Date.now() - timestamp < 24 * 3600 * 1000) {
+        return data;
+      }
+    } catch {}
+  }
+  const url = `https://api.fnar.net/apexuser?user=${encodeURIComponent(companyCode)}`;
+  const response = await fetch(url);
+  if (!response.ok) return null;
+  const arr = await response.json();
+  const data = Array.isArray(arr) && arr.length ? arr[0] : null;
+  if (data) {
+    localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
+  }
   return data;
 }
 
 async function displayCorpInfo(corpCode) {
   const status = document.getElementById("corpStatus");
-  const table = document.getElementById("corpTable");
-  const tbody = table.querySelector("tbody");
-  
+  const table  = document.getElementById("corpTable");
+  const tbody  = table.querySelector("tbody");
+
   const showInactive = document.getElementById("showInactiveCheckbox").checked;
-  const showChurn = document.getElementById("showChurnCheckbox").checked;
+  const showChurn    = document.getElementById("showChurnCheckbox").checked;
 
-  const reportContainer = document.getElementById("reportContainer");
-  reportContainer.innerHTML = ""; // Clear any existing iframe
-
-  const churnContainer = document.getElementById("churnContainer");
-  churnContainer.innerHTML = ""; // Clear any existing iframe
+  document.getElementById("reportContainer").innerHTML = "";
+  document.getElementById("churnContainer").innerHTML  = "";
 
   loadCorpReport("type=corpBreakdown&chartType=treemap&metric=volume", 400, corpCode);
   loadCorpReport("type=compTotals&chartType=treemap&metric=volume&group=corp", 400, corpCode);
@@ -83,7 +112,7 @@ async function displayCorpInfo(corpCode) {
 
   tbody.innerHTML = "";
   status.textContent = "Loading corporation data...";
-  table.classList.add("hidden");
+  document.getElementById("memberSection").style.display = "none";
 
   try {
     const members = await fetchCorpMembers(corpCode);
@@ -92,96 +121,135 @@ async function displayCorpInfo(corpCode) {
       return;
     }
 
-    status.textContent = `Found ${members.length} members. Fetching company details...`;
-    let fetchedCount = 0;
-    let activeCount = 0;
-    let totalCount = 0;
-
-    const rows = [];
-
-    // Sort members alphabetically by company code for consistent order
     members.sort((a, b) => a.CompanyCode.localeCompare(b.CompanyCode));
 
+    status.textContent = `Found ${members.length} members. Fetching company details...`;
+    let fetchedCount  = 0;
+    let activeCount   = 0;
+    let totalCount    = 0;
+    const rows = [];
     const activeMemberNames = [];
 
     for (const m of members) {
       fetchedCount++;
-      status.textContent = `Fetching ${fetchedCount} / ${members.length}...`;
-      
-      const company = await fetchCompanyData(m.CompanyCode);
-      if (!company) continue;
+      status.textContent = `Fetching ${fetchedCount} / ${members.length}…`;
 
-      const timestampStr = company.Timestamp;
-      let isActive = true;
+      // Fetch company and apexuser data in parallel for each member
+      const [company, apexUser] = await Promise.all([
+        fetchCompanyData(m.CompanyCode),
+        fetchApexUserData(m.UserName),
+      ]);
+
+      if (!company) continue;
       totalCount += 1;
 
-      if (timestampStr) {
-        const lastUpdate = new Date(timestampStr).getTime();
-        if (Date.now() - lastUpdate > TWO_WEEKS_MS) {
-          isActive = false;
-        }else{
-          activeMemberNames.push(m.UserName);
-        }
-      }
+      // Use LastOnlineTimestamp from apexuser as the primary activity signal
+      const lastOnlineMs = apexUser?.LastOnlineTimestamp ?? null;
+      const isActive = lastOnlineMs
+        ? Date.now() - lastOnlineMs <= TWO_WEEKS_MS
+        : false;
 
+      if (isActive) activeMemberNames.push(m.UserName);
       if (!showInactive && !isActive) continue;
       activeCount += 1;
 
-      const planetCount = Array.isArray(company.Planets) ? company.Planets.length : 0;
-      const govCount = Array.isArray(company.Offices) ? company.Offices.length : 0;
-      const tier = company.Tier ?? "";
-      const rating = company.OverallRating ?? "";
-      const ageDays = company.CreatedEpochMs
-        ? Math.floor((Date.now() - company.CreatedEpochMs) / (1000 * 60 * 60 * 24))
-        : "";
+      const foundedMs    = company.Founded ? new Date(company.Founded).getTime() : null;
+      const ageDays      = foundedMs ? Math.floor((Date.now() - foundedMs) / (1000 * 60 * 60 * 24)) : "";
+      const planetCount  = Array.isArray(company.Planets) ? company.Planets.length : 0;
+      const rating       = company.OverallRating ?? "";
+      const ratingCount  = company.RatingContractCount ?? null;
+      const tier         = apexUser?.HighestTier ?? "";
+      const license      = apexUser?.SubscriptionLevel ?? "";
+      const activeDays   = apexUser?.ActiveDaysPerWeek ?? "";
 
       rows.push({
-        user: m.UserName,
-        companyName: company.CompanyName || "",
-        companyCode: company.CompanyCode || "",
-        tier,
+        user:          m.UserName,
+        companyName:   company.Name  || "",
+        companyCode:   company.Code  || "",
         planetCount,
-        govCount,
         rating,
+        ratingCount,
+        tier,
+        license,
+        activeDays,
+        lastOnlineMs,
         ageDays,
-        createdEpochMs: company.CreatedEpochMs ?? 0,
+        liquidated:  apexUser?.Liquidated ?? false,
+        createdMs: foundedMs ?? 0,
       });
 
-      // clear current table content.
+      // Re-render table after each member so results stream in
       tbody.innerHTML = "";
+      document.getElementById("memberSection").style.display = "";
 
-      if(rows.length > 0){
-        table.classList.remove("hidden");
-      }
-
-      // every time a row is added, re-sort our saved row list, and re-add all rows.
       rows.sort((a, b) => a.createdEpochMs - b.createdEpochMs);
 
       for (const r of rows) {
-        const row = `
-          <tr>
-            <td>${r.user}</td>
+        const isRowActive = activeMemberNames.includes(r.user);
+
+        // Rating: color-coded grade + muted contract count
+        const RATING_COLOR = { A: "#4ade80", B: "#a3e635", C: "#fbbf24", D: "#fb923c", F: "#f87171" };
+        const ratingColor = RATING_COLOR[r.rating] ?? "var(--text-secondary)";
+        const ratingCell = r.rating
+          ? `<span style="color:${ratingColor};font-weight:700">${r.rating}</span>${r.ratingCount != null ? `<span style="opacity:0.55;font-size:0.82em"> (${r.ratingCount})</span>` : ""}`
+          : `<span style="color:var(--text-secondary)">—</span>`;
+
+        // Last online: color by recency
+        const ageMs = r.lastOnlineMs ? Date.now() - r.lastOnlineMs : Infinity;
+        const onlineColor = ageMs < 86400000 ? "#4ade80"
+          : ageMs < 3 * 86400000  ? "#a3e635"
+          : ageMs < 7 * 86400000  ? "#fbbf24"
+          : ageMs < 14 * 86400000 ? "#fb923c"
+          : "var(--text-secondary)";
+        const lastOnlineCell = r.lastOnlineMs
+          ? `<span style="color:${onlineColor}">${formatRelativeTime(r.lastOnlineMs)}</span>`
+          : `<span style="color:var(--text-secondary)">—</span>`;
+
+        // Tier badge
+        const TIER_STYLE = {
+          GALAXY:  "background:rgba(139,92,246,0.2);color:#a78bfa",
+          UNIVERSE:   "background:rgba(245,158,11,0.2);color:#fbbf24",
+          COMET: "background:rgba(16,185,129,0.2);color:#34d399",
+        };
+        const tierCell = r.tier
+          ? `<span class="corp-badge" style="${TIER_STYLE[r.tier] ?? "background:rgba(107,114,128,0.15);color:#9ca3af"}">${r.tier}</span>`
+          : "";
+
+        // License badge
+        const licenseCell = r.license
+          ? `<span class="corp-badge" style="${r.license === "PRO" ? "background:rgba(16,185,129,0.2);color:#34d399" : "background:rgba(107,114,128,0.15);color:#9ca3af"}">${r.license}</span>`
+          : "";
+
+        // Liquidated badge next to user name
+        const liqBadge = r.liquidated ? `<span class="liq-badge">LIQUIDATED</span>` : "";
+
+        const rowClass = r.liquidated ? "liquidated" : !isRowActive ? "inactive" : "";
+
+        tbody.insertAdjacentHTML("beforeend", `
+          <tr class="${rowClass}">
+            <td>${r.user}${liqBadge}</td>
             <td>${r.companyName}</td>
-            <td>${r.companyCode}</td>
-            <td>${r.tier}</td>
-            <td>${r.planetCount}</td>
-            <td>${r.govCount}</td>
-            <td>${r.rating}</td>    
-            <td>${r.ageDays}</td>
-            <td><a href="/intel?co=${r.companyCode}" target="_blank" class="button-link">Intel</a>
+            <td style="color:var(--text-secondary)">${r.companyCode}</td>
+            <td class="num">${r.planetCount}</td>
+            <td>${ratingCell}</td>
+            <td>${tierCell}</td>
+            <td>${licenseCell}</td>
+            <td class="num">${r.activeDays}</td>
+            <td>${lastOnlineCell}</td>
+            <td class="num" style="color:var(--text-secondary)">${r.ageDays}</td>
+            <td><a href="/intel?co=${r.companyCode}" target="_blank" class="intel-pill">Intel ↗</a></td>
           </tr>
-        `;
-        tbody.insertAdjacentHTML("beforeend", row);
+        `);
       }
     }
-    if(showChurn){
+
+    if (showChurn) {
       for (const userName of activeMemberNames) {
-        console.log("Processing churn for member:", userName);
         loadChurnReport("type=compHistory&metric=volume", 190, userName);
       }
     }
 
-    status.textContent = `All ${corpCode} companies loaded,  ${activeCount} active accounts of ${totalCount} in FIO.`;
+    status.textContent = `All ${corpCode} companies loaded — ${activeCount} active of ${totalCount} in FIO.`;
 
   } catch (err) {
     console.error(err);
@@ -189,30 +257,17 @@ async function displayCorpInfo(corpCode) {
   }
 }
 
-
 function loadChurnReport(graphType, height, user) {
   const reportContainer = document.getElementById("churnContainer");
-  console.log("Loading company report for user:", user);
-
-  if (!user) {
-    console.warn("No user found ");
-    return;
-  }
-
-  const userName = encodeURIComponent(user);
-
+  if (!user) return;
   const iframe = document.createElement("iframe");
-  
-  iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${userName}&hideOptions`;
+  iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${encodeURIComponent(user)}&hideOptions`;
   iframe.width = "100%";
   iframe.height = height;
   iframe.style.border = "none";
   iframe.loading = "lazy";
-
   reportContainer.appendChild(iframe);
 }
-
-
 
 function updateURLParam(key, value) {
   const url = new URL(window.location);
@@ -234,8 +289,7 @@ document.getElementById("showInactiveCheckbox").addEventListener("change", () =>
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const corp = urlParams.get("corp");
+  const corp = new URLSearchParams(window.location.search).get("corp");
   if (corp) {
     document.getElementById("corpCodeInput").value = corp;
     displayCorpInfo(corp);

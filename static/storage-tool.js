@@ -88,7 +88,7 @@ function parseLocalStorage() {
 
     const entry = { key, size, timestamp };
 
-    if (key.startsWith("company_")) groups.company_.push(entry);
+    if (key.startsWith("company_") || key.startsWith("apexuser_")) groups.company_.push(entry);
     else if (key.startsWith("corp_")) groups.corp_.push(entry);
     else groups.other.push(entry);
   }

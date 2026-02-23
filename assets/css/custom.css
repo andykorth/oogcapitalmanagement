@@ -55,40 +55,47 @@ label {
   color: var(--text-primary);
 }
 
-.button-link {
-  display: inline-block;
-  background-color: rgb(31 41 55);
-  border: 1px solid rgb(55 65 81);
-  border-radius: 6px;
-  color: white;
-  padding: 0.4rem 0.75rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.button-link:hover {
-  background-color: rgb(55 65 81);
-}
-
 /* ====== Shared Table Formatting ====== */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+
+}
+
+th, td {
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 th {
   text-align: left;
-  padding: 0.1em 0.5em;
+  padding-top: 0.5rem;
   background-color: var(--table-header-bg);
   border-bottom: 1px solid var(--table-border);
   color: var(--text-primary);
 }
 
 td {
-  padding: 0.1em 0.5em;
   border-bottom: 1px solid var(--table-border);
   color: var(--text-primary);
+  padding: 4px 10px 4px 0;
+}
+
+/* .calculator td beats the Tailwind prose selector (.prose :where(tbody td))
+   because .calculator td is (0,1,1) vs prose's (0,1,0) */
+.calculator td {
+  padding: 4px 10px 4px 0;
+}
+
+.calculator th:first-child,
+.calculator td:first-child {
+  padding-left: 0.75rem;
+}
+
+.calculator th:last-child,
+.calculator td:last-child {
+  padding-right: 0.75rem;
 }
 
 tr:nth-child(even) {

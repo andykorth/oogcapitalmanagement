@@ -18,7 +18,8 @@ function formatRelativeTime(epochMs) {
 }
 
 async function fetchCompanyData(companyCode) {
-  const cacheKey = `company_${companyCode}`;
+  // v2: switched to api.fnar.net which returns an array and uses new field names
+  const cacheKey = `company_v2_${companyCode}`;
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     try {
@@ -28,17 +29,41 @@ async function fetchCompanyData(companyCode) {
       }
     } catch {}
   }
-  const url = `https://rest.fnar.net/company/code/${companyCode}`;
+  const url = `https://api.fnar.net/company/lookup?company=${encodeURIComponent(companyCode)}&include_planets=true&include_offices=true`;
   const response = await fetch(url);
   if (!response.ok) throw new Error("Company not found");
-  const data = await response.json();
+  const arr = await response.json();
+  if (!Array.isArray(arr) || !arr.length) throw new Error("Company not found");
+  const data = arr[0];
   const now = Date.now();
   localStorage.setItem(cacheKey, JSON.stringify({ timestamp: now, data }));
   return { data, fetchedAt: now };
 }
 
+async function fetchApexUserData(companyCode) {
+  const cacheKey = `apexuser_v1_${companyCode}`;
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) {
+    try {
+      const { timestamp, data } = JSON.parse(cached);
+      if (Date.now() - timestamp < 24 * 3600 * 1000) {
+        return { data };
+      }
+    } catch {}
+  }
+  const url = `https://api.fnar.net/apexuser?user=${encodeURIComponent(companyCode)}`;
+  const response = await fetch(url);
+  if (!response.ok) return { data: null };
+  const arr = await response.json();
+  const data = Array.isArray(arr) && arr.length ? arr[0] : null;
+  if (data) {
+    localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
+  }
+  return { data };
+}
+
 function clearCompanyCache(companyCode) {
-  localStorage.removeItem(`company_${companyCode}`);
+  localStorage.removeItem(`company_v2_${companyCode}`);
 }
 
 function addRow(tbody, label, value) {
@@ -51,29 +76,45 @@ function clearTable(tbody) {
 
 // ── render header card ────────────────────────────────────────────────────
 
-function renderHeaderCard(company, fetchedAt, companyCode) {
+function renderHeaderCard(company, apexUser, fetchedAt, companyCode) {
   const headerEl = document.getElementById("companyHeader");
   const cacheEl  = document.getElementById("cacheIndicator");
 
-  const founded = company.CreatedEpochMs
+  // Founded is now an ISO string
+  const foundedMs = company.Founded ? new Date(company.Founded).getTime() : null;
+  const founded = foundedMs
     ? (() => {
-        const date = new Date(company.CreatedEpochMs).toLocaleDateString(undefined, {
+        const date = new Date(foundedMs).toLocaleDateString(undefined, {
           year: "numeric", month: "short", day: "numeric",
         });
-        const days = Math.floor((Date.now() - company.CreatedEpochMs) / (1000 * 60 * 60 * 24));
+        const days = Math.floor((Date.now() - foundedMs) / (1000 * 60 * 60 * 24));
         return `${date} (${days.toLocaleString()} days ago)`;
       })()
     : "—";
 
+  const ratingColor = { A: "#4ade80", B: "#a3e635", C: "#fbbf24", D: "#fb923c", F: "#f87171" };
   const badges = [
-    company.Tier             ? `<span class="intel-badge badge-tier">${company.Tier}</span>`                     : "",
-    company.SubscriptionLevel ? `<span class="intel-badge badge-sub">${company.SubscriptionLevel}</span>`        : "",
-    company.OverallRating    ? `<span class="intel-badge badge-rating">Rating ${company.OverallRating}</span>`   : "",
+    apexUser?.HighestTier
+      ? `<span class="intel-badge badge-tier">${apexUser.HighestTier}</span>`
+      : "",
+    apexUser?.SubscriptionLevel
+      ? `<span class="intel-badge badge-sub">${apexUser.SubscriptionLevel}</span>`
+      : "",
+    company.OverallRating
+      ? (() => {
+          const color = ratingColor[company.OverallRating] ?? "#9ca3af";
+          const count = company.RatingContractCount != null ? ` · ${company.RatingContractCount}` : "";
+          return `<span class="intel-badge badge-rating" style="background:${color}22;color:${color}">Rating ${company.OverallRating}${count}</span>`;
+        })()
+      : "",
+    company.CurrentAPEXRepresentationLevel != null
+      ? `<span class="intel-badge badge-tier">ARC Level ${company.CurrentAPEXRepresentationLevel}</span>`
+      : "",
   ].filter(Boolean).join(" ");
 
   headerEl.innerHTML = `
     <div class="company-card-name">
-      ${company.CompanyName ?? "—"}<span class="company-card-code">(${company.CompanyCode ?? "—"})</span>
+      ${company.Name ?? "—"}<span class="company-card-code">(${company.Code ?? "—"})</span>
     </div>
     <div class="company-card-meta">
       ${company.CorporationName ?? "—"} (${company.CorporationCode ?? "—"})
@@ -98,7 +139,7 @@ function renderHeaderCard(company, fetchedAt, companyCode) {
 
 // ── render company overview table ─────────────────────────────────────────
 
-function renderOverviewTable(company) {
+function renderOverviewTable(company, apexUser) {
   const tbody = document.getElementById("companyTable").querySelector("tbody");
   clearTable(tbody);
 
@@ -107,24 +148,39 @@ function renderOverviewTable(company) {
     addRow(tbody, label, value);
   };
 
-  addIf("Activity rating",    company.ActivityRating);
-  addIf("Reliability rating", company.ReliabilityRating);
-  addIf("Stability rating",   company.StabilityRating);
-  addIf("Headquarters",       company.HeadquartersNaturalId);
+  // Activity
+  if (apexUser?.LastOnlineTimestamp) {
+    addRow(tbody, "Last online", formatRelativeTime(apexUser.LastOnlineTimestamp));
+  }
+  if (apexUser?.ActiveDaysPerWeek != null) {
+    addRow(tbody, "Active days/week", apexUser.ActiveDaysPerWeek);
+  }
+  if (apexUser?.Liquidated) {
+    addRow(tbody, "Status", `<span style="color:#f87171;font-weight:600">Liquidated</span>`);
+  }
 
-  if (company.HeadquartersBasePermits > 0) {
+  // Reputation
+  if (company.Reputation != null) {
+    const faction = company.ReputationEntityName ? ` (${company.ReputationEntityName})` : "";
+    addRow(tbody, "Faction Reputation", `${company.Reputation.toLocaleString()}${faction}`);
+  }
+
+  // APEX representation
+  addIf("APEX representation level", company.CurrentAPEXRepresentationLevel);
+
+  // Headquarters
+  addIf("Headquarters",      company.HeadquartersLocationNaturalId);
+  addIf("HQ level",          company.HeadquartersLevel);
+
+  if (company.TotalBasePermits != null && company.TotalBasePermits > 0) {
     addRow(tbody, "HQ base permits",
-      `${company.HeadquartersUsedBasePermits} / ${company.HeadquartersBasePermits}`);
+      `${company.UsedBasePermits ?? "?"} / ${company.TotalBasePermits}`);
   }
-  if (company.AdditionalBasePermits > 0) {
-    addRow(tbody, "Extra base permits", company.AdditionalBasePermits);
-  }
-  if (company.AdditionalProductionQueueSlots > 0) {
-    addRow(tbody, "Extra queue slots", company.AdditionalProductionQueueSlots);
-  }
+  addIf("Extra base permits",   company.AdditionalBasePermits);
+  addIf("Extra queue slots",    company.AdditionalProductionQueueSlots);
 
-  addRow(tbody, "Total offices held", company.Offices?.length ?? 0);
-  addRow(tbody, "Total planets inhabited",     company.Planets?.length ?? 0);
+  addRow(tbody, "Total offices held",      company.Offices?.length ?? 0);
+  addRow(tbody, "Total planets inhabited", company.Planets?.length ?? 0);
 }
 
 // ── render offices table ──────────────────────────────────────────────────
@@ -291,7 +347,11 @@ async function displayCompanyInfo(companyCode) {
   containerEl.classList.add("hidden");
 
   try {
-    const { data: company, fetchedAt } = await fetchCompanyData(companyCode);
+    const [{ data: company, fetchedAt }, { data: apexUser }] = await Promise.all([
+      fetchCompanyData(companyCode),
+      fetchApexUserData(companyCode),
+    ]);
+
     if (!company) {
       statusEl.textContent = "Company not found.";
       return;
@@ -300,8 +360,8 @@ async function displayCompanyInfo(companyCode) {
     statusEl.textContent = "";
     containerEl.classList.remove("hidden");
 
-    renderHeaderCard(company, fetchedAt, companyCode);
-    renderOverviewTable(company);
+    renderHeaderCard(company, apexUser, fetchedAt, companyCode);
+    renderOverviewTable(company, apexUser);
 
     reportContainer.innerHTML = "";
     loadCompanyReport("type=compTotals&chartType=treemap&metric=volume", 700, company);
@@ -310,7 +370,7 @@ async function displayCompanyInfo(companyCode) {
 
     renderOfficesTable(company);
     renderPlanetsTable(company);
-    loadExchangeOrders(company.CompanyCode);
+    loadExchangeOrders(company.Code);
 
   } catch (err) {
     console.error(err);
