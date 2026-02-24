@@ -9,14 +9,15 @@ export const UPKEEP_NEED_TYPES = [
   "education",
 ];
 
-// Happiness weight per workforce tier for each need type.
+// Happiness weight per workforce tier for each need type (including life support).
+// lifeSupport is not an infrastructure need — callers assume it is always 100% supplied.
 // Source: https://pct.fnar.net/population-infrastructure/
-export const WEIGHTS = {
-  pioneer:    { safety: 0.25, health: 0.15, comfort: 0.03, culture: 0.02, education: 0.01 },
-  settler:    { safety: 0.30, health: 0.20, comfort: 0.03, culture: 0.03, education: 0.03 },
-  technician: { safety: 0.20, health: 0.30, comfort: 0.20, culture: 0.10, education: 0.05 },
-  engineer:   { safety: 0.10, health: 0.15, comfort: 0.35, culture: 0.20, education: 0.10 },
-  scientist:  { safety: 0.10, health: 0.10, comfort: 0.20, culture: 0.25, education: 0.30 },
+export const HAPPINESS_WEIGHTS = {
+  Pioneer:    { lifeSupport: 0.54, safety: 0.25, health: 0.15, comfort: 0.03, culture: 0.02, education: 0.01 },
+  Settler:    { lifeSupport: 0.41, safety: 0.30, health: 0.20, comfort: 0.03, culture: 0.03, education: 0.03 },
+  Technician: { lifeSupport: 0.15, safety: 0.20, health: 0.30, comfort: 0.20, culture: 0.10, education: 0.05 },
+  Engineer:   { lifeSupport: 0.10, safety: 0.10, health: 0.15, comfort: 0.35, culture: 0.20, education: 0.10 },
+  Scientist:  { lifeSupport: 0.05, safety: 0.10, health: 0.10, comfort: 0.20, culture: 0.25, education: 0.30 },
 };
 
 // Each building entry describes one infrastructure building type.
