@@ -101,9 +101,12 @@ export function renderWorkforceTable(report) {
   const rows = [
     { label: "Population",   key: "NextPopulation" },
     { label: "Change",       key: "PopulationDifference" },
-    { label: "Happiness",    key: "AverageHappiness",  format: v => (v * 100).toFixed(1) + "%" },
-    { label: "Unemployment", key: "UnemploymentRate",  format: v => (v * 100).toFixed(1) + "%" },
-    { label: "Open Jobs",    key: "OpenJobs" },
+    { label: "Happiness",    key: "AverageHappiness",  format: v => (v * 100).toFixed(1) + "%",
+          tip: "Happiness reported on POPI reports are a weighted average over the last 5 weeks." },
+    { label: "Unemployment", key: "UnemploymentRate",  format: v => (v * 100).toFixed(1) + "%",
+      tip: "Percent unemployed workers, which causes wasted upkeep and unhappiness. For most planets, try to keep this around 10%." },
+    { label: "Open Jobs",    key: "OpenJobs",
+      tip: "Open jobs at the start of this report, before population growth occurs. For actual open jobs, subtract the population change. It's common for all open jobs to be filled by growth in a given cycle." },
   ];
 
   for (const row of rows) {
@@ -113,9 +116,12 @@ export function renderWorkforceTable(report) {
         ? `<td class="text-right pr-4">${row.format(value)}</td>`
         : `<td class="text-right pr-4">${value.toLocaleString()}</td>`;
     });
+    const labelHtml = row.tip
+      ? `<span class="has-tip" data-tip="${row.tip}">${row.label}</span>`
+      : row.label;
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td class="pr-4 font-semibold">${row.label}</td>
+      <td class="pr-4 font-semibold">${labelHtml}</td>
       ${cells.join("")}
     `;
     tbody.appendChild(tr);

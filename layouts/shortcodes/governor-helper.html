@@ -64,6 +64,53 @@
     margin-bottom: 0.75rem;
   }
 
+  /* Shared tooltip for any element with data-tip */
+  .has-tip {
+    display: inline-block;
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted var(--text-secondary);
+  }
+
+  .has-tip::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 0;
+    width: 240px;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    font-weight: normal;
+    line-height: 1.45;
+    white-space: normal;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 10;
+  }
+
+  .has-tip:hover::after {
+    opacity: 1;
+  }
+
+  /* Quick-set fulfillment buttons */
+  .quick-set-btn {
+    position: relative;
+    margin: 0;
+    padding: 2px 8px;
+    font-size: 0.78rem;
+    /* tooltip centered under the button rather than left-aligned */
+  }
+
+  .quick-set-btn.has-tip::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
 </style>
 
@@ -108,6 +155,15 @@
         <input id="targetFulfillment" type="number" min="1" max="100" value="70" style="width:4rem" />
         %
       </label>
+      <div style="display:flex;gap:0.3rem;align-items:center">
+        <span style="font-size:0.78rem;color:var(--text-secondary)">Quick:</span>
+        <button class="quick-set-btn has-tip" data-value="55"
+          data-tip="Sustains the population at the lowest cost possible. Some losses may occur due to unemployment but will generally be stable.">55%</button>
+        <button class="quick-set-btn has-tip" data-value="70"
+          data-tip="Sustain population reliably.">70%</button>
+        <button class="quick-set-btn has-tip" data-value="100"
+          data-tip="Maximum natural population growth.">100%</button>
+      </div>
       <label style="display:flex;align-items:center;gap:0.35rem;color:var(--text-secondary);font-size:0.9rem">
         Supply days
         <input id="supplyDays" type="number" min="1" value="30" style="width:4rem" />

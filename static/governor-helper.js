@@ -523,6 +523,13 @@ targetFulfillmentInput.addEventListener("input", () => {
   }
 });
 
+document.querySelectorAll(".quick-set-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    targetFulfillmentInput.value = btn.dataset.value;
+    targetFulfillmentInput.dispatchEvent(new Event("input"));
+  });
+});
+
 document.getElementById("supplyDays").addEventListener("input", updateSupplyExport);
 supplyOriginSelect.addEventListener("input", updateSupplyExport);
 
