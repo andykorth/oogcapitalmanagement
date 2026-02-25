@@ -408,24 +408,27 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   planTable.appendChild(planBody);
   supplyPlanCont.appendChild(planTable);
 
-  // --- Supply period summary (weight, volume, cost) ---
-  const supplyDays = parseFloat(document.getElementById("supplyDays").value) || 30;
-  let periodWeight = 0;
-  let periodVolume = 0;
+  // --- Fill-to-capacity summary (cost, weight, volume to top up all storage) ---
+  let fillCost   = 0;
+  let fillWeight = 0;
+  let fillVolume = 0;
   for (const opt of selectedOpts) {
-    const qty     = opt.qtyPerDay * supplyDays;
-    const matInfo = materialData[opt.ticker] || {};
-    periodWeight += qty * (matInfo.weight || 0);
-    periodVolume += qty * (matInfo.volume || 0);
+    const upkeep = lastUpkeepMap.get(opt.building)?.get(opt.ticker);
+    const qty    = upkeep ? Math.max(0, upkeep.storeCapacity - upkeep.stored) : 0;
+    if (qty > 0) {
+      fillCost   += qty * (priceData[opt.ticker]      || 0);
+      const matInfo = materialData[opt.ticker] || {};
+      fillWeight += qty * (matInfo.weight || 0);
+      fillVolume += qty * (matInfo.volume || 0);
+    }
   }
-  const periodCost = totalCost * supplyDays;
 
   const summaryDiv = document.createElement("div");
   summaryDiv.style.cssText = "margin-top:0.75rem;font-size:0.9rem;color:var(--text-secondary);display:flex;gap:1.5rem;flex-wrap:wrap";
   summaryDiv.innerHTML = `
-    <span>Supply period cost: <strong style="color:var(--text-primary)">${periodCost.toLocaleString(undefined, { maximumFractionDigits: 0 })}</strong></span>
-    <span>Weight: <strong style="color:var(--text-primary)">${periodWeight.toLocaleString(undefined, { maximumFractionDigits: 1 })} t</strong></span>
-    <span>Volume: <strong style="color:var(--text-primary)">${periodVolume.toLocaleString(undefined, { maximumFractionDigits: 1 })} m³</strong></span>
+    <span>Fill cost: <strong style="color:var(--text-primary)">${fillCost.toLocaleString(undefined, { maximumFractionDigits: 0 })}</strong></span>
+    <span>Weight: <strong style="color:var(--text-primary)">${fillWeight.toLocaleString(undefined, { maximumFractionDigits: 1 })} t</strong></span>
+    <span>Volume: <strong style="color:var(--text-primary)">${fillVolume.toLocaleString(undefined, { maximumFractionDigits: 1 })} m³</strong></span>
   `;
   supplyPlanCont.appendChild(summaryDiv);
 
@@ -537,13 +540,13 @@ function updateSupplyExport() {
     return;
   }
 
-  const supplyDays = parseFloat(document.getElementById("supplyDays").value) || 30;
-  const origin     = supplyOriginSelect.value;
+  const origin = supplyOriginSelect.value;
 
-  // Aggregate qty per ticker across all selected building/material pairs
+  // Aggregate fill-to-capacity qty per ticker across all selected building/material pairs
   const materials = {};
   for (const opt of lastSelected) {
-    const qty = Math.ceil(opt.qtyPerDay * supplyDays);
+    const upkeep = lastUpkeepMap.get(opt.building)?.get(opt.ticker);
+    const qty    = upkeep ? Math.max(0, upkeep.storeCapacity - upkeep.stored) : 0;
     if (qty > 0) materials[opt.ticker] = (materials[opt.ticker] || 0) + qty;
   }
 
@@ -560,7 +563,7 @@ function updateSupplyExport() {
       },
       {
         type: "MTRA",
-        name: "TransferAction",
+        name: "Governor Helper Supply",
         group: "Items",
         origin,
         dest: "Configure on Execution",
@@ -599,7 +602,6 @@ document.querySelectorAll(".quick-set-btn").forEach(btn => {
   });
 });
 
-document.getElementById("supplyDays").addEventListener("input", updateSupplyExport);
 supplyOriginSelect.addEventListener("input", updateSupplyExport);
 
 showAllMatsCheckbox.addEventListener("change", () => {

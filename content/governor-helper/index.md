@@ -14,7 +14,7 @@ tags: tool
 
 # Archiel's Governor Helper
 
-This tool is in beta, most of the math has been verified, but there are still some functional gaps I might consider implementing.
+This tool is in beta, most of the math has been verified, but there are still some functional gaps I might consider implementing. Prices currently PP7D_UNIVERSE.
 
 {{< governor-helper >}}
 
