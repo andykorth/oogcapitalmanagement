@@ -399,8 +399,6 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       const buildingCell = opt.activeLevel < opt.builtLevel
         ? `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
         : `${opt.builtLevel} ${building}`;
-
-        debugger;
         
       const upkeep = lastUpkeepMap.get(opt.building)?.get(opt.ticker);
       let storageCell;

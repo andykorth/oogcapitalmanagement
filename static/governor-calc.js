@@ -273,10 +273,9 @@ export function computeCheapestFulfillment(requiredNeeds, latestProjects, target
   for (const idx of selected) {
     const opt = allOptions[idx];
     if (!bldMap.has(opt.building)) {
-      bldMap.set(opt.building, { indices: [], builtLevel: opt.builtLevel, costPerLvl: 0, contribPerLvl: {} });
+      bldMap.set(opt.building, { building: opt.building, builtLevel: opt.builtLevel, costPerLvl: 0, contribPerLvl: {} });
     }
     const e = bldMap.get(opt.building);
-    e.indices.push(idx);
     e.costPerLvl += opt.costPerLevel;
     for (const [need, c] of Object.entries(opt.contribPerLevel)) {
       e.contribPerLvl[need] = (e.contribPerLvl[need] ?? 0) + c;
@@ -299,7 +298,9 @@ export function computeCheapestFulfillment(requiredNeeds, latestProjects, target
       surplus[need] -= maxReduce * c;
     }
     const newActive = bData.builtLevel - maxReduce;
-    for (const idx of bData.indices) allOptions[idx].activeLevel = newActive; // todo: Replace all matching options with the newActive level, not just the ones matching idx, compare via building name.
+    for (const opt of allOptions) {
+      if (opt.building === bData.building) opt.activeLevel = newActive;
+    }
   }
 
   // ── Return final plan ────────────────────────────────────────────────────
