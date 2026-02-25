@@ -261,6 +261,44 @@ async function loadInfrastructure() {
   }
 }
 
+// ── DPN helpers ────────────────────────────────────────────────────────────
+
+// Builds per-need dpn ($/need-unit) scales from ALL options (including unselected)
+// so the color scale reflects the full range of available material options.
+function buildNeedDpnScales(options) {
+  const needDpns = {}; // need → [dpn values]
+  for (const opt of options) {
+    for (const [need, contrib] of Object.entries(opt.contributions)) {
+      if (contrib <= 0) continue;
+      const dpn = opt.cost / contrib;
+      if (!isFinite(dpn)) continue;
+      if (!needDpns[need]) needDpns[need] = [];
+      needDpns[need].push(dpn);
+    }
+  }
+  const scales = {};
+  for (const [need, values] of Object.entries(needDpns)) {
+    const min = Math.min(...values);
+    const max = Math.max(...values);
+    scales[need] = { min, max, range: (max - min) || 1 };
+  }
+  return scales;
+}
+
+// Returns a 0–1 normalized dpn for an option, relative to its primary need category.
+// 0 = best value (cheapest per need unit in that category), 1 = worst.
+function getOptionNorm(opt, needScales) {
+  const entries = Object.entries(opt.contributions).filter(([, v]) => v > 0);
+  if (!entries.length) return 1;
+  // Primary need = highest contribution
+  const [primaryNeed, primaryContrib] = entries.sort((a, b) => b[1] - a[1])[0];
+  const scale = needScales[primaryNeed];
+  if (!scale) return 1;
+  const dpn = opt.cost / primaryContrib;
+  if (!isFinite(dpn)) return 1;
+  return (dpn - scale.min) / scale.range;
+}
+
 // ── Supply plan orchestration ──────────────────────────────────────────────
 
 function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
@@ -340,16 +378,12 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   `;
   planTable.appendChild(planHead);
 
-  // Pre-compute $/need for coloring (scale across all displayed options for context)
-  const displayedOpts = [...byBuilding.values()].flat();
+  // Pre-compute $/need for coloring, normalized per need category across ALL options
+  const needScales = buildNeedDpnScales(allOptions);
   const dollarPerNeed = opt => {
     const totalNeed = Object.values(opt.contributions).reduce((s, v) => s + v, 0);
     return totalNeed > 0 ? opt.cost / totalNeed : Infinity;
   };
-  const dpnValues = displayedOpts.map(dollarPerNeed).filter(v => isFinite(v));
-  const dpnMin   = Math.min(...dpnValues);
-  const dpnMax   = Math.max(...dpnValues);
-  const dpnRange = dpnMax - dpnMin || 1;
 
   const planBody = document.createElement("tbody");
   for (const [building, opts] of byBuilding) {
@@ -359,11 +393,15 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
         .map(v => v.toLocaleString(undefined, { maximumFractionDigits: 1 }))
         .join(", ");
       const dpn      = dollarPerNeed(opt);
-      const norm     = isFinite(dpn) ? (dpn - dpnMin) / dpnRange : 1; // 0 = best, 1 = worst
+      const norm     = getOptionNorm(opt, needScales); // 0 = best, 1 = worst within its need category
       const rowColor = opt.selected ? efficiencyColor(norm) : "rgba(128,128,128,0.07)";
       const dim      = opt.selected ? "" : "color:var(--text-secondary)";
-      const buildingCell = `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
+      const buildingCell = opt.activeLevel < opt.builtLevel
+        ? `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
+        : `${opt.builtLevel} ${building}`;
 
+        debugger;
+        
       const upkeep = lastUpkeepMap.get(opt.building)?.get(opt.ticker);
       let storageCell;
       if (upkeep) {
@@ -372,8 +410,8 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
         const pct      = capacity > 0 ? Math.min(100, (total / capacity) * 100) : 0;
         const barColor = (opt.selected) ? (pct > 60 ? '#4ade80' : pct > 30 ? '#fbbf24' : '#f87171') : 'rgba(128,128,128,0.5)';
         storageCell = `
-          <td style="min-width:100px">
-            <div style="background:rgba(128,128,128,0.2);border-radius:3px;height:5px;margin-bottom:3px">
+          <td style="line-height: 1; min-width:100px">
+            <div style="background:rgba(64,64,64,0.8);border-radius:3px;height:5px;margin-bottom:3px">
               <div style="width:${pct.toFixed(1)}%;background:${barColor};border-radius:3px;height:5px"></div>
             </div>
             <div style="font-size:0.7rem;color:var(--text-secondary);white-space:nowrap">${total.toLocaleString()} / ${capacity.toLocaleString()}</div>
@@ -459,21 +497,21 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   wasCapped.culture   = satisfactions.culture   < fulfillments.culture;
   wasCapped.education = satisfactions.education < fulfillments.education;
 
-  const summaryTable = document.createElement("table");
-  summaryTable.className = "infra-table";
+  const projectedNeedsTable = document.createElement("table");
+  projectedNeedsTable.className = "infra-table";
   const summaryHead = document.createElement("thead");
 
 
   summaryHead.innerHTML = `
     <tr>
-      <th>Need</th>
+      <th>Projected Need Fulfillment</th>
       <th class="text-right">Required for 100%</th>
       <th class="text-right">Provided</th>
       <th class="text-right">Fulfillment</th>
       <th class="text-right"><span class="has-tip" data-tip="Satisfaction here is the fulfillment with caps (from previous levels) applied. Red numbers indicate a cap was hit.">Satisfaction</span></th>
     </tr>
   `;
-  summaryTable.appendChild(summaryHead);
+  projectedNeedsTable.appendChild(summaryHead);
 
   const summaryBody = document.createElement("tbody");
   for (const need of NEED_ORDER) {
@@ -495,8 +533,8 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
     `;
     summaryBody.appendChild(tr);
   }
-  summaryTable.appendChild(summaryBody);
-  projectedNeedsCont.appendChild(summaryTable);
+  projectedNeedsTable.appendChild(summaryBody);
+  projectedNeedsCont.appendChild(projectedNeedsTable);
 
   // Store and render export (only selected options go into the supply export)
   lastSelected = selectedOpts;
@@ -508,7 +546,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       ? Math.min(1, (provided[need] || 0) / requiredNeeds[need])
       : (lastReport[`NeedFulfillment${capitalize(need)}`] ?? 0);
     const projFulfillment = {
-      lifeSupport: 1.0, // always assume 100% — life support is not an infra governor need
+      lifeSupport: 1.0, // always assume 100% — life support cannot be controlled by infrastructure buildings.
       safety:      pf('safety'),
       health:      pf('health'),
       comfort:     pf('comfort'),

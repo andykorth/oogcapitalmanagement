@@ -299,7 +299,7 @@ export function computeCheapestFulfillment(requiredNeeds, latestProjects, target
       surplus[need] -= maxReduce * c;
     }
     const newActive = bData.builtLevel - maxReduce;
-    for (const idx of bData.indices) allOptions[idx].activeLevel = newActive;
+    for (const idx of bData.indices) allOptions[idx].activeLevel = newActive; // todo: Replace all matching options with the newActive level, not just the ones matching idx, compare via building name.
   }
 
   // ── Return final plan ────────────────────────────────────────────────────
