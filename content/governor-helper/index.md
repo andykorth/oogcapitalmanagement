@@ -5,8 +5,8 @@ featured_image: 'images/governance-team-2.png'
 omit_header_text: true
 type: page
 
-summary: Archiel's Governor Helper v2
-description: Archiel's Governor Helper v2
+summary: A new web tool for governance that auto-selects the most efficient upkeep materials for your goals.
+description: A new web tool for governance that auto-selects the most efficient upkeep materials for your goals.
 fullWidthArticle: true
 
 tags: tool

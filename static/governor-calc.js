@@ -304,10 +304,9 @@ export function computeCheapestFulfillment(requiredNeeds, latestProjects, target
 
   // ── Return final plan ────────────────────────────────────────────────────
   // Returns ALL options (selected and not) each with a `selected` flag.
-  // Unselected options use builtLevel for their qty/cost so $/need can be compared.
   return allOptions.map((opt, i) => {
     const isSelected = selected.has(i) && opt.activeLevel > 0;
-    const displayLevel = isSelected ? opt.activeLevel : opt.builtLevel;
+    const displayLevel = opt.builtLevel;
     return {
       building: opt.building,
       builtLevel: opt.builtLevel,
