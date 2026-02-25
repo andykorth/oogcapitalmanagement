@@ -315,11 +315,11 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
 
   // --- Supply plan table grouped by building ---
   const showAll = showAllMatsCheckbox.checked;
-  const displayOpts = showAll ? allOptions : selectedOpts;
+  const displayMats = showAll ? allOptions : selectedOpts;
   const byBuilding = new Map();
-  for (const opt of displayOpts) {
-    if (!byBuilding.has(opt.building)) byBuilding.set(opt.building, []);
-    byBuilding.get(opt.building).push(opt);
+  for (const mat of displayMats) {
+    if (!byBuilding.has(mat.building)) byBuilding.set(mat.building, []);
+    byBuilding.get(mat.building).push(mat);
   }
 
   const planTable = document.createElement("table");
@@ -335,7 +335,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       <th>Needs Supplied</th>
       <th class="text-right">Need Qty</th>
       <th class="text-right">$ / Need</th>
-      <th>Storage</th>
+      <th>Buffer Storage</th>
     </tr>
   `;
   planTable.appendChild(planHead);
@@ -362,9 +362,8 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       const norm     = isFinite(dpn) ? (dpn - dpnMin) / dpnRange : 1; // 0 = best, 1 = worst
       const rowColor = opt.selected ? efficiencyColor(norm) : "rgba(128,128,128,0.07)";
       const dim      = opt.selected ? "" : "color:var(--text-secondary)";
-      const buildingCell = opt.selected && opt.activeLevel < opt.builtLevel
-        ? `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
-        : `${opt.selected ? opt.activeLevel : opt.builtLevel} ${building}`;
+      const buildingCell = `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
+
       const upkeep = lastUpkeepMap.get(opt.building)?.get(opt.ticker);
       let storageCell;
       if (upkeep) {
@@ -408,7 +407,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   planTable.appendChild(planBody);
   supplyPlanCont.appendChild(planTable);
 
-  // --- Fill-to-capacity summary (cost, weight, volume to top up all storage) ---
+  // --- Fill the upkeep to the upkeeps capacity while tracking the cost, weight, and volume.
   let fillCost   = 0;
   let fillWeight = 0;
   let fillVolume = 0;
@@ -416,7 +415,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
     const upkeep = lastUpkeepMap.get(opt.building)?.get(opt.ticker);
     const qty    = upkeep ? Math.max(0, upkeep.storeCapacity - upkeep.stored) : 0;
     if (qty > 0) {
-      fillCost   += qty * (priceData[opt.ticker]      || 0);
+      fillCost   += qty * (priceData[opt.ticker] || 0);
       const matInfo = materialData[opt.ticker] || {};
       fillWeight += qty * (matInfo.weight || 0);
       fillVolume += qty * (matInfo.volume || 0);
@@ -463,14 +462,15 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   const summaryTable = document.createElement("table");
   summaryTable.className = "infra-table";
   const summaryHead = document.createElement("thead");
+
+
   summaryHead.innerHTML = `
     <tr>
       <th>Need</th>
       <th class="text-right">Required for 100%</th>
       <th class="text-right">Provided</th>
       <th class="text-right">Fulfillment</th>
-      <th class="text-right">Satisfaction</th>
-      <th class="text-right">Achieved Target</th>
+      <th class="text-right"><span class="has-tip" data-tip="Satisfaction here is the fulfillment with caps (from previous levels) applied. Red numbers indicate a cap was hit.">Satisfaction</span></th>
     </tr>
   `;
   summaryTable.appendChild(summaryHead);
@@ -492,7 +492,6 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       <td class="text-right">${prov.toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
       <td class="text-right">${(fulfillment * 100).toFixed(1)}%</td>
       <td class="text-right" style="color:${satColor}">${(satisfaction * 100).toFixed(1)}%</td>
-      <td class="text-right" style="color:${met ? "#4ade80" : "#f87171"}">${met ? "✓" : "✗"}</td>
     `;
     summaryBody.appendChild(tr);
   }

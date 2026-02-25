@@ -306,16 +306,15 @@ export function computeCheapestFulfillment(requiredNeeds, latestProjects, target
   // Returns ALL options (selected and not) each with a `selected` flag.
   return allOptions.map((opt, i) => {
     const isSelected = selected.has(i) && opt.activeLevel > 0;
-    const displayLevel = opt.builtLevel;
     return {
       building: opt.building,
       builtLevel: opt.builtLevel,
-      activeLevel: isSelected ? opt.activeLevel : 0,
+      activeLevel: opt.activeLevel,
       ticker: opt.ticker,
-      qtyPerDay: opt.qtyPerDayPerLevel * displayLevel,
-      cost: opt.costPerLevel * displayLevel,
+      qtyPerDay: opt.qtyPerDayPerLevel * opt.activeLevel,
+      cost: opt.costPerLevel * opt.activeLevel,
       contributions: Object.fromEntries(
-        Object.entries(opt.contribPerLevel).map(([k, v]) => [k, v * displayLevel])
+        Object.entries(opt.contribPerLevel).map(([k, v]) => [k, v * opt.activeLevel])
       ),
       selected: isSelected,
     };
