@@ -303,21 +303,22 @@ export function computeCheapestFulfillment(requiredNeeds, latestProjects, target
   }
 
   // ── Return final plan ────────────────────────────────────────────────────
-  return [...selected]
-    .filter(i => allOptions[i].activeLevel > 0) // drop fully deactivated buildings
-    .map(i => {
-      const opt = allOptions[i];
-      const a = opt.activeLevel;
-      return {
-        building: opt.building,
-        builtLevel: opt.builtLevel,
-        activeLevel: a,
-        ticker: opt.ticker,
-        qtyPerDay: opt.qtyPerDayPerLevel * a,
-        cost: opt.costPerLevel * a,
-        contributions: Object.fromEntries(
-          Object.entries(opt.contribPerLevel).map(([k, v]) => [k, v * a])
-        ),
-      };
-    });
+  // Returns ALL options (selected and not) each with a `selected` flag.
+  // Unselected options use builtLevel for their qty/cost so $/need can be compared.
+  return allOptions.map((opt, i) => {
+    const isSelected = selected.has(i) && opt.activeLevel > 0;
+    const displayLevel = isSelected ? opt.activeLevel : opt.builtLevel;
+    return {
+      building: opt.building,
+      builtLevel: opt.builtLevel,
+      activeLevel: isSelected ? opt.activeLevel : 0,
+      ticker: opt.ticker,
+      qtyPerDay: opt.qtyPerDayPerLevel * displayLevel,
+      cost: opt.costPerLevel * displayLevel,
+      contributions: Object.fromEntries(
+        Object.entries(opt.contribPerLevel).map(([k, v]) => [k, v * displayLevel])
+      ),
+      selected: isSelected,
+    };
+  });
 }

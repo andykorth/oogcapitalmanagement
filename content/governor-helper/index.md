@@ -14,11 +14,7 @@ tags: tool
 
 # Archiel's Governor Helper
 
-# This is under construction, some of the math is not complete yet!!!
-
-# This is under construction, some of the math is not complete yet!!!
-
-in particular projected pop growth isn't right. Probably education coeffs?
+This tool is in beta, most of the math has been verified, but there are still some functional gaps I might consider implementing.
 
 {{< governor-helper >}}
 

@@ -13,6 +13,24 @@ const PLANET_STORAGE_KEY   = "gov_helper_selected_planet";
 const REFRESH_DURATION     = 1 * 3600 * 1000;
 const PLANET_CACHE_DURATION = 24 * 3600 * 1000;
 
+// Maps the new api.fnar.net infrastructure Type field to our UPKEEP_BUILDINGS tickers
+const TYPE_TO_TICKER = {
+  SAFETY_STATION:             "SST",
+  SECURITY_DRONE_POST:        "SDP",
+  EMERGENCY_CENTER:           "EMC",
+  INFIRMARY:                  "INF",
+  HOSPITAL:                   "HOS",
+  WELLNESS_CENTER:            "WCE",
+  WILDLIFE_PARK:              "PAR",
+  ARCADES:                    "4DA",
+  ART_CAFE:                   "ACA",
+  ART_GALLERY:                "ART",
+  THEATER:                    "VRT",
+  PLANETARY_BROADCASTING_HUB: "PBH",
+  LIBRARY:                    "LIB",
+  UNIVERSITY:                 "UNI",
+};
+
 const planetInput            = document.getElementById("planetInput");
 const loadInfraBtn           = document.getElementById("loadInfraBtn");
 const targetFulfillmentInput = document.getElementById("targetFulfillment");
@@ -24,6 +42,7 @@ let lastLatestProjects = null;
 let lastSelected       = null;
 let lastReport         = null;
 let lastSiteCount      = 0;
+let lastUpkeepMap      = new Map(); // building ticker → Map(material ticker → upkeep data)
 
 const sectionRetrieved    = document.getElementById("section-retrieved");
 const sectionCalculated   = document.getElementById("section-calculated");
@@ -38,39 +57,45 @@ const supplyOriginSelect  = document.getElementById("supplyOriginSelect");
 const supplyOriginEmoji   = document.getElementById("supplyOriginEmoji");
 const supplyJsonOutput    = document.getElementById("supplyJsonOutput");
 const supplyCopyBtn       = document.getElementById("supplyCopyBtn");
+const showAllMatsCheckbox = document.getElementById("showAllMats");
 
 // ── API fetches ────────────────────────────────────────────────────────────
 
-async function fetchPlanet(planetId) {
-  const cacheKey = `planet_${planetId}`;
+// Fetches infrastructure project data (building levels) from the new api.fnar.net endpoint.
+// Returns a flat array of project objects, each with Type, Level, CurrentLevel, PlanetName, etc.
+async function fetchInfrastructure(planetId) {
+  const cacheKey = `infra3_${planetId}`;
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     try {
       const { timestamp, data } = JSON.parse(cached);
-      if (Date.now() - timestamp < PLANET_CACHE_DURATION) return data;
+      if (Date.now() - timestamp < REFRESH_DURATION) return data;
     } catch {}
   }
-  const response = await fetch(`https://rest.fnar.net/planet/${planetId}`);
+  const response = await fetch(
+    `https://api.fnar.net/infrastructure?infrastructure=${encodeURIComponent(planetId)}&include_upkeeps=true`
+  );
   if (!response.ok) throw new Error("Planet not found");
   const data = await response.json();
   localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
   return data;
 }
 
-async function fetchInfrastructure(planetId) {
-  const cacheKey = `infra_${planetId}`;
+// Fetches population report data (InfrastructureReports) from the old rest.fnar.net endpoint.
+// This is the only remaining use of the old infrastructure endpoint.
+async function fetchPopulationReports(planetId) {
+  const cacheKey = `popreports_${planetId}`;
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     try {
       const { timestamp, data } = JSON.parse(cached);
-      if (Date.now() - timestamp < REFRESH_DURATION) {
-        console.log("Loaded infrastructure from cache:", planetId);
-        return data;
-      }
+      if (Date.now() - timestamp < REFRESH_DURATION) return data;
     } catch {}
   }
+
+  // todo move to: https://api.fnar.net/planet/Malahat?include_population_reports=true
   const response = await fetch(`https://rest.fnar.net/infrastructure/${planetId}`);
-  if (!response.ok) throw new Error("Planet not found");
+  if (!response.ok) throw new Error("Population reports not found");
   const data = await response.json();
   localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
   return data;
@@ -99,30 +124,47 @@ async function fetchSiteCount(planetId) {
 
 // ── Data extraction helpers ────────────────────────────────────────────────
 
-function extractLatestProjects(data) {
-  const projects = data.InfrastructureProjects || [];
-  if (!projects.length) return { projectMap: new Map(), maxPeriod: null };
-
-  let maxPeriod = -Infinity;
-  for (const p of projects) {
-    if (p.SimulationPeriod > maxPeriod) maxPeriod = p.SimulationPeriod;
+// Parses the flat-array response from api.fnar.net/infrastructure.
+// Returns projectMap (building levels), planetData, and upkeepMap (storage data per material).
+function extractLatestProjects(projects) {
+  if (!Array.isArray(projects) || !projects.length) {
+    return { projectMap: new Map(), planetData: null, upkeepMap: new Map() };
   }
 
-  const latest = projects.filter(p => p.SimulationPeriod === maxPeriod);
   const byTicker = new Map();
-  for (const project of latest) {
-    byTicker.set(project.Ticker, {
+  const upkeepMap = new Map(); // buildingTicker → Map(materialTicker → upkeep info)
+
+  for (const project of projects) {
+    const ticker = TYPE_TO_TICKER[project.Type];
+    if (!ticker) continue;
+    byTicker.set(ticker, {
       level: project.Level,
       currentLevel: project.CurrentLevel,
     });
+
+    if (project.Upkeeps?.length) {
+      const matMap = new Map();
+      for (const u of project.Upkeeps) {
+        matMap.set(u.Ticker, {
+          amount:        u.Amount,
+          currentAmount: u.CurrentAmount,
+          stored:        u.Stored,
+          storeCapacity: u.StoreCapacity,
+          duration:      u.Duration,
+        });
+      }
+      upkeepMap.set(ticker, matMap);
+    }
   }
 
-  return { projectMap: byTicker, maxPeriod };
+  // Planet metadata is embedded in every record — use the first one
+  const { PlanetName, PlanetNaturalId } = projects[0];
+  return { projectMap: byTicker, planetData: { PlanetName, PlanetNaturalId }, upkeepMap };
 }
 
 function extractLatestReport(data) {
   const reports = data.InfrastructureReports || [];
-  if (!reports.length) return null;
+  if (!reports.length) return { latestReport: null, maxPeriod: null };
 
   let latest = reports[0];
   for (const report of reports) {
@@ -130,7 +172,7 @@ function extractLatestReport(data) {
       latest = report;
     }
   }
-  return latest;
+  return { latestReport: latest, maxPeriod: latest.SimulationPeriod };
 }
 
 function getTarget() {
@@ -157,10 +199,10 @@ async function loadInfrastructure() {
   warnings.textContent = "Loading…";
 
   try {
-    // Fetch pricing, planet metadata, and infrastructure data in parallel
-    const [infraData, planetData, , , siteCount] = await Promise.all([
+    // Fetch pricing, infrastructure buildings, and population reports in parallel
+    const [infraProjects, reportsData, , , siteCount] = await Promise.all([
       fetchInfrastructure(planetId),
-      fetchPlanet(planetId),
+      fetchPopulationReports(planetId),
       fetchPricing(),
       fetchMaterials(),
       fetchSiteCount(planetId),
@@ -171,14 +213,15 @@ async function loadInfrastructure() {
     }
     lastSiteCount = siteCount ?? 0;
 
-    const { projectMap: latestProjects, maxPeriod } = extractLatestProjects(infraData);
-    const latestReport = extractLatestReport(infraData);
-    const startEpochMs = latestReport.TimestampMs;
+    const { projectMap: latestProjects, planetData, upkeepMap } = extractLatestProjects(infraProjects);
+    lastUpkeepMap = upkeepMap;
+    const { latestReport, maxPeriod } = extractLatestReport(reportsData);
+    const startEpochMs = latestReport?.TimestampMs ?? null;
 
     warnings.textContent = "";
 
     // ── Live Data ────────────────────────────────────────────────
-    renderPlanetHeader(planetData, maxPeriod, startEpochMs, lastSiteCount);
+    renderPlanetHeader(planetData ?? {}, maxPeriod, startEpochMs, lastSiteCount);
 
     infraTableCont.innerHTML = "";
     const infraTable = renderInfrastructureTable(latestProjects);
@@ -224,11 +267,12 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   supplyPlanCont.innerHTML = "";
   projectedNeedsCont.innerHTML = "";
 
-  const selected = computeCheapestFulfillment(
+  const allOptions = computeCheapestFulfillment(
     requiredNeeds, latestProjects, getTarget(), lastSiteCount, priceData
   );
+  const selectedOpts = allOptions.filter(o => o.selected);
 
-  if (selected.length === 0) {
+  if (selectedOpts.length === 0) {
     const presentBuildings = UPKEEP_BUILDINGS.filter(b => {
       const p = latestProjects.get(b.ticker);
       return p && p.level > 0;
@@ -262,7 +306,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   // Compute totals (include base safety/health from player bases)
   const provided = { safety: lastSiteCount * 50, health: lastSiteCount * 50 };
   let totalCost = 0;
-  for (const opt of selected) {
+  for (const opt of selectedOpts) {
     totalCost += opt.cost;
     for (const [need, contrib] of Object.entries(opt.contributions)) {
       provided[need] = (provided[need] || 0) + contrib;
@@ -270,8 +314,10 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   }
 
   // --- Supply plan table grouped by building ---
+  const showAll = showAllMatsCheckbox.checked;
+  const displayOpts = showAll ? allOptions : selectedOpts;
   const byBuilding = new Map();
-  for (const opt of selected) {
+  for (const opt of displayOpts) {
     if (!byBuilding.has(opt.building)) byBuilding.set(opt.building, []);
     byBuilding.get(opt.building).push(opt);
   }
@@ -281,6 +327,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   const planHead = document.createElement("thead");
   planHead.innerHTML = `
     <tr>
+      ${showAll ? '<th></th>' : ''}
       <th>Building</th>
       <th>Material</th>
       <th class="text-right">Qty / Day</th>
@@ -288,17 +335,18 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       <th>Needs Supplied</th>
       <th class="text-right">Need Qty</th>
       <th class="text-right">$ / Need</th>
+      <th>Storage</th>
     </tr>
   `;
   planTable.appendChild(planHead);
 
-  // Pre-compute $/need for coloring
-  const allSelected = [...byBuilding.values()].flat();
+  // Pre-compute $/need for coloring (scale across all displayed options for context)
+  const displayedOpts = [...byBuilding.values()].flat();
   const dollarPerNeed = opt => {
     const totalNeed = Object.values(opt.contributions).reduce((s, v) => s + v, 0);
     return totalNeed > 0 ? opt.cost / totalNeed : Infinity;
   };
-  const dpnValues = allSelected.map(dollarPerNeed).filter(v => isFinite(v));
+  const dpnValues = displayedOpts.map(dollarPerNeed).filter(v => isFinite(v));
   const dpnMin   = Math.min(...dpnValues);
   const dpnMax   = Math.max(...dpnValues);
   const dpnRange = dpnMax - dpnMin || 1;
@@ -312,27 +360,48 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
         .join(", ");
       const dpn      = dollarPerNeed(opt);
       const norm     = isFinite(dpn) ? (dpn - dpnMin) / dpnRange : 1; // 0 = best, 1 = worst
-      const rowColor = efficiencyColor(norm);
+      const rowColor = opt.selected ? efficiencyColor(norm) : "rgba(128,128,128,0.07)";
+      const dim      = opt.selected ? "" : "color:var(--text-secondary)";
+      const buildingCell = opt.selected && opt.activeLevel < opt.builtLevel
+        ? `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
+        : `${opt.selected ? opt.activeLevel : opt.builtLevel} ${building}`;
+      const upkeep = lastUpkeepMap.get(opt.building)?.get(opt.ticker);
+      let storageCell;
+      if (upkeep) {
+        const total    = upkeep.stored;
+        const capacity = upkeep.storeCapacity;
+        const pct      = capacity > 0 ? Math.min(100, (total / capacity) * 100) : 0;
+        const barColor = (opt.selected) ? (pct > 60 ? '#4ade80' : pct > 30 ? '#fbbf24' : '#f87171') : 'rgba(128,128,128,0.5)';
+        storageCell = `
+          <td style="min-width:100px">
+            <div style="background:rgba(128,128,128,0.2);border-radius:3px;height:5px;margin-bottom:3px">
+              <div style="width:${pct.toFixed(1)}%;background:${barColor};border-radius:3px;height:5px"></div>
+            </div>
+            <div style="font-size:0.7rem;color:var(--text-secondary);white-space:nowrap">${total.toLocaleString()} / ${capacity.toLocaleString()}</div>
+          </td>`;
+      } else {
+        storageCell = `<td style="color:var(--text-secondary)">—</td>`;
+      }
+
       const tr = document.createElement("tr");
       tr.style.backgroundColor = rowColor;
       tr.innerHTML = `
-        <td>${opt.activeLevel < opt.builtLevel
-          ? `<span style="color:#4ade80;font-weight:600">${opt.activeLevel}</span><span style="color:var(--text-secondary)">/${opt.builtLevel}</span> ${building}`
-          : `${opt.activeLevel} ${building}`
-        }</td>
-        <td>${opt.ticker}</td>
-        <td class="text-right">${opt.qtyPerDay.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
-        <td class="text-right">${opt.cost.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
-        <td>${needNames}</td>
-        <td class="text-right">${needQtys}</td>
-        <td class="text-right">${isFinite(dpn) ? dpn.toFixed(4) : "—"}</td>
+        ${showAll ? `<td class="text-center" style="color:${opt.selected ? '#4ade80' : 'var(--text-secondary)'}">${opt.selected ? '✓' : '✗'}</td>` : ''}
+        <td style="${dim}">${buildingCell}</td>
+        <td style="${dim}">${opt.ticker}</td>
+        <td class="text-right" style="${dim}">${opt.qtyPerDay.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
+        <td class="text-right" style="${dim}">${opt.cost.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
+        <td style="${dim}">${needNames}</td>
+        <td class="text-right" style="${dim}">${needQtys}</td>
+        <td class="text-right" style="${dim}">${isFinite(dpn) ? dpn.toFixed(4) : "—"}</td>
+        ${storageCell}
       `;
       planBody.appendChild(tr);
     }
   }
   const totalRow = document.createElement("tr");
   totalRow.innerHTML = `
-    <td colspan="6" class="font-semibold text-right">Total daily cost</td>
+    <td colspan="${showAll ? 8 : 7}" class="font-semibold text-right">Total daily cost</td>
     <td class="text-right font-semibold">${totalCost.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
   `;
   planBody.appendChild(totalRow);
@@ -343,7 +412,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   const supplyDays = parseFloat(document.getElementById("supplyDays").value) || 30;
   let periodWeight = 0;
   let periodVolume = 0;
-  for (const opt of selected) {
+  for (const opt of selectedOpts) {
     const qty     = opt.qtyPerDay * supplyDays;
     const matInfo = materialData[opt.ticker] || {};
     periodWeight += qty * (matInfo.weight || 0);
@@ -427,8 +496,8 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   summaryTable.appendChild(summaryBody);
   projectedNeedsCont.appendChild(summaryTable);
 
-  // Store and render export
-  lastSelected = selected;
+  // Store and render export (only selected options go into the supply export)
+  lastSelected = selectedOpts;
   updateSupplyExport();
 
   // Rerender projected growth using projected fulfillment from this plan
@@ -444,7 +513,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
       culture:     pf('culture'),
       education:   pf('education'),
     };
-    projectedGrowthCont.innerHTML = `<div class="projected-meta">Projected happiness with each need at ${getTarget() * 100}%. <br/>Base Happy does not include unemployment, but "Happiness" does.</div>`;
+    projectedGrowthCont.innerHTML = `<div class="projected-meta">Projected happiness with each need at ${(getTarget() * 100).toFixed(0)}%. <br/>Base Happy does not include unemployment, but "Happiness" does.</div>`;
     projectedGrowthCont.appendChild(
       renderProjectedGrowthTable(lastReport, lastLatestProjects, projFulfillment)
     );
@@ -532,6 +601,12 @@ document.querySelectorAll(".quick-set-btn").forEach(btn => {
 
 document.getElementById("supplyDays").addEventListener("input", updateSupplyExport);
 supplyOriginSelect.addEventListener("input", updateSupplyExport);
+
+showAllMatsCheckbox.addEventListener("change", () => {
+  if (lastRequiredNeeds && lastLatestProjects && sectionCalculated.style.display !== "none") {
+    renderCheapestFulfillmentTable(lastRequiredNeeds, lastLatestProjects);
+  }
+});
 
 document.addEventListener("DOMContentLoaded", async () => {
   // URL param takes priority; fall back to last-used planet from localStorage

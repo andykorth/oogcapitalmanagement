@@ -85,7 +85,7 @@ td {
 /* .calculator td beats the Tailwind prose selector (.prose :where(tbody td))
    because .calculator td is (0,1,1) vs prose's (0,1,0) */
 .calculator td {
-  padding: 4px 10px 4px 0;
+  padding: 3px 10px 3px 0;
 }
 
 .calculator th:first-child,
