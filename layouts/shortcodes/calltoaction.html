@@ -1,0 +1,39 @@
+<div class="cta">
+    <div
+    {{ if (.Get "color1") }}
+        style="background-color:{{ .Get "color1" }};"
+    {{ end }}
+    class="cta-card">
+        <div aria-hidden="true" class="cta-bg">
+            <svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" loading="lazy">
+                <path
+                {{ if (.Get "color2") }}
+                    style="color:{{ .Get "color2" }}50;"
+                {{ end }}
+                fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
+                <path
+                {{ if (.Get "color2") }}
+                    style="color:{{ .Get "color2" }}50;"
+                {{ end }}
+                fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
+            </svg>
+        </div>
+        <div class="cta-content">
+            <div class="cta-text">
+                <h2 class="cta-heading">
+                    {{ .Get "heading" }}
+                </h2>
+                <p class="cta-body">
+                    {{ .Get "thetext" }}
+                </p>
+            </div>
+            <div class="cta-actions">
+                <div class="cta-btn-wrap">
+                    <a href="{{ .Get "buttonlink" }}" class="cta-btn">
+                        {{ .Get "button" }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
