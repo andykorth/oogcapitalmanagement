@@ -1,101 +1,165 @@
 <style>
-    #scalableBuildings {
-        max-width: 700px;
-        display: flex;
-        flex-flow: row wrap;
-        width: 100%;
-        justify-content: space-around;
-    }
-    #scalableBuildings label {
-        flex: 0 1 310px;
-        display: inline-block;
-    }
-</style>
-<div class="calculator">
+  #infra-calc-root {
+    padding: 1rem;
+  }
 
-<h3>Planetary Projects:</h3>
+  /* Section wrappers — matches governor-helper pattern */
+  #infra-calc-root .section-input {
+    border-left: 3px solid rgb(99 102 241);
+    background: rgba(99, 102, 241, 0.06);
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+  }
+
+  #infra-calc-root .section-results {
+    border-left: 3px solid rgb(16 185 129);
+    background: rgba(16, 185, 129, 0.06);
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+  }
+
+  #infra-calc-root .section-export {
+    border-left: 3px solid rgb(99 102 241);
+    background: rgba(99, 102, 241, 0.04);
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  /* Preserve the original scalable buildings flex-wrap alignment */
+  #scalableBuildings {
+    max-width: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #scalableBuildings label {
+    flex: 0 1 310px;
+    display: inline-block;
+  }
+
+  /* Fixed buildings row */
+  .fixed-buildings {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .fixed-buildings label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0;
+  }
+
+  /* Warehouse row */
+  .warehouse-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+</style>
+
+<div id="infra-calc-root" class="calculator">
+
+  <!-- ── Inputs ─────────────────────────────────────────────── -->
+  <div class="section-input">
+    <div class="section-label">Configuration</div>
+
+    <div class="warehouse-row">
+      <span class="tableLabel">Warehouse:</span>
+      <input id="startWarehouseLevel" type="number" min="0" max="20" value="0" style="width:4rem">
+      →
+      <input id="endWarehouseLevel" type="number" min="0" max="20" value="0" style="width:4rem">
+      <span style="color:var(--text-secondary); font-size:0.9rem">
+        Capacity: <strong><span id="endCap">0</span> t / m³</strong>
+      </span>
+    </div>
+
+    <div class="section-label" style="margin-top:0.75rem">Planetary Projects</div>
+    <div class="fixed-buildings">
+      <label><input type="checkbox" id="togglePlanetaryAdmin"> Planetary Administration Center</label>
+      <label><input type="checkbox" id="toggleCOGC"> Chamber of Global Commerce</label>
+      <label><input type="checkbox" id="toggleShipyard"> Shipyard</label>
+      <label><input type="checkbox" id="toggleLocalMarket"> Local Market</label>
+    </div>
+
+    <div class="section-label" style="margin-top:1rem">Infrastructure Buildings</div>
+    <div id="scalableBuildings"></div>
+  </div>
+
+  <!-- ── Results ────────────────────────────────────────────── -->
+  <div class="section-results">
+    <div class="section-label">Materials &amp; Costs</div>
+    <table id="results">
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Subtotal</th>
+          <th>Weight</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Price</td>
+          <td id="grandTotal">0</td>
+          <td id="totalWeight"></td>
+          <td id="totalVolume"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <!-- ── Export ─────────────────────────────────────────────── -->
+  <div class="section-export">
+    <div class="section-label">Export to XIT ACTION</div>
 
     <label>
-         <span class="tableLabel">Warehouse:</span>
-        <input id="startWarehouseLevel" type="number" min="0" max="20" value="0">
-            →
-        <input id="endWarehouseLevel" type="number" min="0" max="20" value="0">
+      Origin:
+      <select id="originSelect">
+        <option>Antares Station Warehouse</option>
+        <option>Moria Station Warehouse</option>
+        <option>Arclight Station Warehouse</option>
+        <option>Benten Station Warehouse</option>
+        <option>Hortus Station Warehouse</option>
+        <option>Hubur Station Warehouse</option>
+      </select>
+      <span id="originEmoji">😀</span>
     </label>
-    <span style="margin-left:30px">
-        Warehouse Capacity: <span id="endCap">0</span> t / m3.
-    </span>
-<label>
-  <input type="checkbox" id="togglePlanetaryAdmin">
-  Planetary Administration Center
-</label>
-<label>
-  <input type="checkbox" id="toggleCOGC">
-  Chamber of Global Commerce
-</label>
-<label>
-  <input type="checkbox" id="toggleShipyard">
-  Shipyard
-</label>
-<label>
-  <input type="checkbox" id="toggleLocalMarket">
-  Local Market
-</label>
 
-<h3>Infrastructure Buildings:</h3>
-<div id="scalableBuildings"></div>
+    <br>
+    <textarea id="jsonOutput" readonly></textarea>
+    <br>
+    <button id="copyBtn">Copy JSON</button>
+  </div>
 
-<hr/>
+  <!-- ── Cache status ───────────────────────────────────────── -->
+  <div class="cache-status-bar">
+    Prices: <span id="infracalc-cache-age">—</span>
+    · <button class="cache-refresh-btn" id="infracalc-refresh-btn">Refresh</button>
+    · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
+  </div>
 
-<h3>Materials:</h3>
-<table id="results">
-  <thead>
-    <tr>
-      <th>Material</th>
-      <th>Quantity</th>
-      <th>Price</th>
-      <th>Subtotal</th>
-      <th>Weight</th>
-      <th>Volume</th>      
-    </tr>
-  </thead>
-  <tbody></tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">Total Price</td>
-      <td id="grandTotal">0</td>
-
-      <td id="totalWeight"></td>
-      <td id="totalVolume"></td>
-    </tr>
-  </tfoot>
-</table>
-
-<h3>Export to XIT ACTION</h3>
-
-<h3>Export Options</h3>
-<label>
-  Origin:
-  <select id="originSelect">
-    <option>Antares Station Warehouse</option>
-    <option>Moria Station Warehouse</option>
-    <option>Arclight Station Warehouse</option>
-    <option>Benten Station Warehouse</option>
-    <option>Hortus Station Warehouse</option>
-    <option>Hubur Station Warehouse</option>
-  </select>
-  <span id="originEmoji">😀</span>
-</label>
-<br/>
-
-<textarea id="jsonOutput" readonly></textarea>
-<br/>
-<button id="copyBtn">Copy JSON</button>
-
-<div class="cache-status-bar">
-  Prices: <span id="infracalc-cache-age">—</span>
-  · <button class="cache-refresh-btn" id="infracalc-refresh-btn">Refresh</button>
-  · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
-</div>
 </div>
 
 <script type="module" src="/infra-calc.js"></script>
