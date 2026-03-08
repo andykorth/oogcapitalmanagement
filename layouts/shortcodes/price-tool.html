@@ -238,6 +238,12 @@
 
   <p id="calculatorStatus" style="font-weight: bold; margin-top: 0.5rem;"></p>
 
+  <div class="cache-status-bar" id="pricetool-cache-status" style="display:none">
+    Exchange data: <span id="pricetool-cache-age">—</span>
+    · <button class="cache-refresh-btn" id="pricetool-refresh-btn">Refresh</button>
+    · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
+  </div>
+
   <p id="bidResult" style="white-space: pre-wrap; margin-top: 1em;"></p>
 
   <table id="priceTable" style="display: none;">
@@ -344,14 +350,33 @@
     ApplyFilter();
   });
 
+  function updateCacheStatus() {
+    const bar = document.getElementById("pricetool-cache-status");
+    const ageEl = document.getElementById("pricetool-cache-age");
+    const refreshBtn = document.getElementById("pricetool-refresh-btn");
+    if (!bar || !ageEl) return;
+    bar.style.display = "";
+    ageEl.textContent = getCachedCXDataAge() ?? "just loaded";
+    if (refreshBtn) {
+      refreshBtn.onclick = async () => {
+        localStorage.removeItem("exchangeData");
+        status.textContent = "Fetching CX Data from FIO...";
+        await fetchFullCXData(status);
+        loadModeledPrices();
+        renderTable();
+        updateCacheStatus();
+      };
+    }
+  }
+
   // Page load logic
   window.addEventListener("DOMContentLoaded", () => {
     // this fills in: fullCXData
     const cachedData = getCachedCXData();
     if (cachedData) {
-      // Determine cache age string
       loadModeledPrices();
-      renderTable(); // pass age string so renderTable can show it
+      renderTable();
+      updateCacheStatus();
     } else {
       status.textContent = "No cached CX data available. Click 'Load Comparison Data' to fetch.";
     }
@@ -363,8 +388,8 @@
 
     await fetchFullCXData(status);
     loadModeledPrices();
-    const ageStr = getCachedCXDataAge();
     renderTable();
+    updateCacheStatus();
   });
 
 function ApplyFilter() {
@@ -405,7 +430,6 @@ async function renderTable() {
     status.textContent = "No exchange data available, please click load.";
     return;
   }
-  const cacheAgeStr = getCachedCXDataAge();
 
   const markupPct = Number(markupInput.value) / 100;
   const filterEx = exchangeFilter.value;
@@ -566,9 +590,8 @@ async function renderTable() {
   // Count highlighted rows
   const highlightedCount = tbody.querySelectorAll("tr.green-highlight").length;
 
-  let ageText = cacheAgeStr ? ` (Data age: ${cacheAgeStr})` : "";
   let bidText = exchangeFilter.value === "ALL" ? "Choose a CX to create bids." : `Identified Bids: ${highlightedCount}.`
-  status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.\n${ageText}\n${bidText}`;
+  status.textContent = `Loaded ${materials.length} materials across ${exchangeCodes.length} exchanges.\n${bidText}`;
 
   // Expand handlers 
   document.querySelectorAll(".expandBtn").forEach(btn => {

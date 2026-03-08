@@ -379,6 +379,39 @@ tfoot td {
   margin-top: 0.5rem;
 }
 
+/* ====== Cache Status Bar ====== */
+.cache-status-bar {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.6rem;
+  padding: 0.2rem 0;
+}
+
+button.cache-refresh-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(129 140 248);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+button.cache-refresh-btn:hover {
+  color: rgb(165 180 252);
+}
+
+.cache-storage-link {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.cache-storage-link:hover {
+  opacity: 1;
+}
+
 /* ====== Article / Prose Heading Styles ====== */
 
 /* H2: gradient bottom rule to delineate major sections */

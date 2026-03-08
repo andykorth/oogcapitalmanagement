@@ -1,4 +1,4 @@
-import { fetchPricing, fetchMaterials, priceData, materialData } from "/pricing-and-materials.js";
+import { fetchPricing, fetchMaterials, priceData, materialData, getCacheAge, gzipCompressToBase64, gzipDecompressFromBase64 } from "/pricing-and-materials.js";
 import { UPKEEP_BUILDINGS } from "/infra-data.js";
 import {
   capitalize, efficiencyColor,
@@ -88,8 +88,15 @@ async function fetchPopulationReports(planetId) {
   const cached = localStorage.getItem(cacheKey);
   if (cached) {
     try {
-      const { timestamp, data } = JSON.parse(cached);
-      if (Date.now() - timestamp < REFRESH_DURATION) return data;
+      const envelope = JSON.parse(cached);
+      if (Date.now() - envelope.timestamp < REFRESH_DURATION) {
+        // New format: data field is gzip-compressed
+        if (typeof envelope.data === "string") {
+          return JSON.parse(gzipDecompressFromBase64(envelope.data));
+        }
+        // Old format: data field is plain object
+        return envelope.data;
+      }
     } catch {}
   }
 
@@ -97,7 +104,8 @@ async function fetchPopulationReports(planetId) {
   const response = await fetch(`https://rest.fnar.net/infrastructure/${planetId}`);
   if (!response.ok) throw new Error("Population reports not found");
   const data = await response.json();
-  localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data }));
+  const compressed = gzipCompressToBase64(JSON.stringify(data));
+  localStorage.setItem(cacheKey, JSON.stringify({ timestamp: Date.now(), data: compressed }));
   return data;
 }
 
@@ -180,6 +188,24 @@ function getTarget() {
   return (!isNaN(val) && val >= 1 && val <= 100) ? val / 100 : 0.7;
 }
 
+function updateGovHelperCacheStatus(planetId) {
+  const bar = document.getElementById("govhelper-cache-status");
+  const ageEl = document.getElementById("govhelper-cache-age");
+  const refreshBtn = document.getElementById("govhelper-refresh-btn");
+  if (!bar || !ageEl) return;
+  bar.style.display = "";
+  ageEl.textContent = getCacheAge(`infra3_${planetId}`) ?? "just loaded";
+  if (refreshBtn) {
+    refreshBtn.onclick = () => {
+      localStorage.removeItem(`infra3_${planetId}`);
+      localStorage.removeItem(`popreports_${planetId}`);
+      localStorage.removeItem(`sitecount_${planetId}`);
+      localStorage.removeItem("pricingData");
+      loadInfrastructure();
+    };
+  }
+}
+
 // ── Main load ──────────────────────────────────────────────────────────────
 
 async function loadInfrastructure() {
@@ -254,6 +280,8 @@ async function loadInfrastructure() {
       renderCheapestFulfillmentTable(requiredNeeds, latestProjects);
       sectionCalculated.style.display = "";
     }
+
+    updateGovHelperCacheStatus(planetId);
 
   } catch (err) {
     console.error(err);

@@ -1,4 +1,4 @@
-import { fetchMaterials, fetchPricing, materialData, priceData, missingPrices, warningPrices} from './pricing-and-materials.js';
+import { fetchMaterials, fetchPricing, materialData, priceData, missingPrices, warningPrices, getCacheAge } from './pricing-and-materials.js';
 
 
 const baseFactor = [
@@ -479,10 +479,28 @@ copyBtn.addEventListener("click", () => {
   });
 });
 
+function updateCacheStatus() {
+  const ageEl = document.getElementById("infracalc-cache-age");
+  const refreshBtn = document.getElementById("infracalc-refresh-btn");
+  if (!ageEl) return;
+  ageEl.textContent = getCacheAge("pricingData") ?? "just loaded";
+  if (refreshBtn) {
+    refreshBtn.onclick = async () => {
+      localStorage.removeItem("pricingData");
+      localStorage.removeItem("materialData");
+      await fetchPricing();
+      await fetchMaterials();
+      update();
+      updateCacheStatus();
+    };
+  }
+}
+
 // ---- initial run ----
 (async () => {
   fillUI();
   await fetchPricing();
   await fetchMaterials();
   update();
+  updateCacheStatus();
 })();

@@ -589,7 +589,7 @@ function renderUnderConstructionTable(gateways) {
 
 // ── init ─────────────────────────────────────────────────────────────────
 
-(async () => {
+async function initGateways() {
   try {
     const { data, cacheAge } = await fetchGateways();
 
@@ -597,9 +597,19 @@ function renderUnderConstructionTable(gateways) {
     const upkeepMissing  = data.filter(g => g.OperationalState === "UPKEEP_MISSING");
     const underConstruct = data.filter(g => g.OperationalState === "UNDER_CONSTRUCTION");
     const cacheNote = cacheAge > 0
-      ? `· cached ${Math.floor(cacheAge / 60000)}m ago`
-      : "· fetched live";
-    metaEl.textContent = `${operational.length} operational · ${upkeepMissing.length} upkeep missing · ${underConstruct.length} under construction ${cacheNote} · refreshes every 30 min`;
+      ? `cached ${Math.floor(cacheAge / 60000)}m ago`
+      : "fetched live";
+    metaEl.innerHTML = `
+      ${operational.length} operational · ${upkeepMissing.length} upkeep missing · ${underConstruct.length} under construction
+      · ${cacheNote} · refreshes every 30 min
+      · <button class="cache-refresh-btn" id="gwRefreshBtn">Refresh</button>
+      · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
+    `;
+    document.getElementById("gwRefreshBtn").addEventListener("click", () => {
+      localStorage.removeItem(CACHE_KEY);
+      metaEl.textContent = "Refreshing…";
+      initGateways();
+    });
 
     renderTable(data);
     renderUpkeepMissingTable(data);
@@ -612,5 +622,7 @@ function renderUnderConstructionTable(gateways) {
     statusEl.textContent = "Failed to load gateway data: " + err.message;
     statusEl.style.color = "#f87171";
   }
-})();
+}
+
+initGateways();
 </script>

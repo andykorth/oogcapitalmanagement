@@ -130,6 +130,7 @@ function renderHeaderCard(company, apexUser, fetchedAt, companyCode) {
   cacheEl.innerHTML = `
     Data fetched ${formatRelativeTime(fetchedAt)}
     <span class="cache-refresh" id="refreshBtn">Refresh</span>
+    · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
   `;
   document.getElementById("refreshBtn").addEventListener("click", () => {
     clearCompanyCache(companyCode);

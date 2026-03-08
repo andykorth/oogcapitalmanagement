@@ -747,8 +747,9 @@ const createTable = (users, selectedShip, desiredCount) => {
   return table;
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
+async function loadInventoryData() {
   statusEl.textContent = "Loading inventory data…";
+  statusEl.style.color = "";
 
   const allUsers = [PRIMARY_BUILDER, ...SECONDARY_SUPPLIERS];
 
@@ -764,7 +765,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     const archielTimestamp = appState.users[PRIMARY_BUILDER].timestamp;
     const cacheNote = formatCacheAge(archielTimestamp);
     const supplierList = SECONDARY_SUPPLIERS.join(", ");
-    metaEl.textContent = `${PRIMARY_BUILDER} + ${supplierList} · ${cacheNote} · refreshes every 30 min`;
+    metaEl.innerHTML = `
+      ${PRIMARY_BUILDER} + ${supplierList} · ${cacheNote} · refreshes every 30 min
+      · <button class="cache-refresh-btn" id="sbRefreshBtn">Refresh</button>
+      · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
+    `;
+    document.getElementById("sbRefreshBtn").addEventListener("click", () => {
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith("ship_inventory_cache_")) localStorage.removeItem(key);
+      }
+      loadInventoryData();
+    });
 
     statusEl.textContent = "";
     sectionInventory.style.display = "";
@@ -777,7 +789,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     statusEl.textContent = "Failed to load inventory: " + err.message;
     statusEl.style.color = "#f87171";
   }
-});
+}
+
+document.addEventListener("DOMContentLoaded", loadInventoryData);
 
 window.openShipImageModal = (src, alt) => {
   const modal = document.getElementById("ship-image-modal");

@@ -1,5 +1,22 @@
-import { fetchMaterials, fetchPricing, materialData, priceData, missingPrices, warningPrices} from './pricing-and-materials.js';
+import { fetchMaterials, fetchPricing, materialData, priceData, missingPrices, warningPrices, getCacheAge } from './pricing-and-materials.js';
 import { UPKEEP_BUILDINGS, UPKEEP_NEED_TYPES } from './infra-data.js';
+
+function updateCacheStatus() {
+  const ageEl = document.getElementById("govmats-cache-age");
+  const refreshBtn = document.getElementById("govmats-refresh-btn");
+  if (!ageEl) return;
+  ageEl.textContent = getCacheAge("pricingData") ?? "just loaded";
+  if (refreshBtn) {
+    refreshBtn.onclick = async () => {
+      localStorage.removeItem("pricingData");
+      localStorage.removeItem("materialData");
+      await fetchPricing();
+      await fetchMaterials();
+      calculateEfficiency();
+      updateCacheStatus();
+    };
+  }
+}
 
 async function initGovEfficiency() {
   await fetchPricing();
@@ -18,6 +35,7 @@ async function initGovEfficiency() {
 
   // --- Run initial calculation ---
   calculateEfficiency();
+  updateCacheStatus();
 
   // --- Update URL & recalc when user changes selection ---
   select.addEventListener("change", (e) => {

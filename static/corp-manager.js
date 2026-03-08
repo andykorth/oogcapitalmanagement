@@ -1,5 +1,41 @@
 const TWO_WEEKS_MS = 14 * 24 * 3600 * 1000;
 
+function getCacheAgeStr(key) {
+  try {
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
+    const { timestamp } = JSON.parse(raw);
+    if (!timestamp) return null;
+    const ageMs = Date.now() - timestamp;
+    const minutes = Math.floor(ageMs / 60000);
+    const hours = Math.floor(minutes / 60);
+    if (hours > 0) return `${hours}h ${minutes % 60}m ago`;
+    if (minutes > 0) return `${minutes}m ago`;
+    return "just now";
+  } catch { return null; }
+}
+
+function updateCorpCacheStatus(corpCode) {
+  const bar = document.getElementById("corpCacheStatus");
+  const ageEl = document.getElementById("corp-cache-age");
+  const refreshBtn = document.getElementById("corp-refresh-btn");
+  if (!bar || !ageEl) return;
+  bar.style.display = "";
+  ageEl.textContent = getCacheAgeStr(`corp_${corpCode}`) ?? "just loaded";
+  if (refreshBtn) {
+    refreshBtn.onclick = () => {
+      // Clear all corp and company caches for this corp
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const key = localStorage.key(i);
+        if (key && (key.startsWith("corp_") || key.startsWith("company_v2_") || key.startsWith("apexuser_v1_"))) {
+          localStorage.removeItem(key);
+        }
+      }
+      displayCorpInfo(corpCode);
+    };
+  }
+}
+
 function formatRelativeTime(epochMs) {
   if (!epochMs) return "—";
   const diff = Math.abs(Date.now() - epochMs);
@@ -250,6 +286,7 @@ async function displayCorpInfo(corpCode) {
     }
 
     status.textContent = `All ${corpCode} companies loaded — ${activeCount} active of ${totalCount} in FIO.`;
+    updateCorpCacheStatus(corpCode);
 
   } catch (err) {
     console.error(err);

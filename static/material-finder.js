@@ -1,4 +1,4 @@
-import { fetchMaterials, fetchPricing, materialData, priceData, missingPrices, warningPrices} from './pricing-and-materials.js';
+import { fetchMaterials, fetchPricing, materialData, getCacheAge } from './pricing-and-materials.js';
 
 async function initMaterialMatcher() {
   await fetchMaterials(); // reuses your existing function
@@ -66,9 +66,26 @@ function findMatchingMaterials() {
   }
 }
 
+function updateCacheStatus() {
+  const ageEl = document.getElementById("matfind-cache-age");
+  const refreshBtn = document.getElementById("matfind-refresh-btn");
+  if (!ageEl) return;
+  ageEl.textContent = getCacheAge("materialData") ?? "just loaded";
+  if (refreshBtn) {
+    refreshBtn.onclick = async () => {
+      localStorage.removeItem("materialData");
+      localStorage.removeItem("pricingData");
+      await fetchMaterials();
+      await fetchPricing();
+      updateCacheStatus();
+    };
+  }
+}
+
 // ---- initial run ----
 (async () => {
   initMaterialMatcher();
   await fetchPricing();
   await fetchMaterials();
+  updateCacheStatus();
 })();

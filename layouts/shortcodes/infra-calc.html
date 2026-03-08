@@ -90,6 +90,12 @@
 <textarea id="jsonOutput" readonly></textarea>
 <br/>
 <button id="copyBtn">Copy JSON</button>
+
+<div class="cache-status-bar">
+  Prices: <span id="infracalc-cache-age">—</span>
+  · <button class="cache-refresh-btn" id="infracalc-refresh-btn">Refresh</button>
+  · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
+</div>
 </div>
 
 <script type="module" src="/infra-calc.js"></script>

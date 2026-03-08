@@ -27,49 +27,76 @@ function estimateSize(value) {
   return new Blob([value]).size;
 }
 
-function renderGroup(title, items, showEntries = true) {
-  const totalSize = items.reduce((sum, i) => sum + i.size, 0);
-  const summary = `
-    <h2>${title}</h2>
-    <div class="group-summary">
-      ${items.length} entries — total size ${formatSize(totalSize)}
-      <button class="delete-group" data-group="${title}">Delete All</button>
-    </div>
-  `;
+// ── Group definitions ─────────────────────────────────────────────────────
+// Groups are tested in order; the first match wins. "other" is the catch-all.
 
-  if (!showEntries) return summary;
+const GROUPS = [
+  {
+    key: "company",
+    label: "Company / Intel Cache",
+    description: "Per-company and apex-user data from intel lookups (24 h TTL)",
+    match: key => key.startsWith("company_") || key.startsWith("apexuser_"),
+    showEntries: false, // typically 100+ entries
+  },
+  {
+    key: "corp",
+    label: "Corporation Cache",
+    description: "Corporation member lists (24 h TTL)",
+    match: key => key.startsWith("corp_"),
+    showEntries: true,
+  },
+  {
+    key: "govhelper",
+    label: "Governor Helper",
+    description: "Planet infrastructure, population reports, and site counts (1 h TTL)",
+    match: key =>
+      ["infra_", "infra2_", "infra3_", "popreports_", "sitecount_", "planet_", "gov_helper_"].some(p =>
+        key.startsWith(p)
+      ),
+    showEntries: true,
+  },
+  {
+    key: "ship",
+    label: "Ship Builder",
+    description: "Ship part inventory per builder (30 min TTL)",
+    match: key => key.startsWith("ship_inventory_cache"),
+    showEntries: true,
+  },
+  {
+    key: "prices",
+    label: "Price & Market Data",
+    description: "Exchange order book, pricing averages, material data, gateway data (1 h TTL)",
+    match: key =>
+      ["exchangeData", "pricingData", "materialData", "modeledPrices"].includes(key) ||
+      key.startsWith("gateway_data_") ||
+      key.startsWith("price-tool-"),
+    showEntries: true,
+  },
+  {
+    key: "other",
+    label: "Other",
+    description: "Settings and uncategorized data",
+    match: () => true,
+    showEntries: true,
+  },
+];
 
-  const tableRows = items
-    .map(
-      (i) => `
-      <tr>
-        <td>${i.key}</td>
-        <td>${formatTimestamp(i.timestamp)}</td>
-        <td>${formatSize(i.size)}</td>
-        <td><button data-key="${i.key}" class="delete-entry">Delete</button></td>
-      </tr>
-    `
-    )
-    .join("");
+// ── Classify a single key into its group ─────────────────────────────────
+// Returns the group key (string) for a given localStorage key.
+// Uses the same first-match-wins order as the GROUPS array.
 
-  return `
-    ${summary}
-    <table>
-      <thead>
-        <tr>
-          <th>Key</th>
-          <th>Timestamp</th>
-          <th>Size</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>${tableRows}</tbody>
-    </table>
-  `;
+function getKeyGroup(key) {
+  for (const g of GROUPS.slice(0, -1)) {
+    if (g.match(key)) return g.key;
+  }
+  return "other";
 }
 
+// ── Parse localStorage into groups ────────────────────────────────────────
+
 function parseLocalStorage() {
-  const groups = { company_: [], corp_: [], other: [] };
+  const groupMap = {};
+  for (const g of GROUPS) groupMap[g.key] = [];
 
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
@@ -83,51 +110,85 @@ function parseLocalStorage() {
       const parsed = JSON.parse(value);
       if (parsed.timestamp) timestamp = parsed.timestamp;
     } catch {
-      // Not JSON
+      // Not JSON — no timestamp
     }
 
-    const entry = { key, size, timestamp };
-
-    if (key.startsWith("company_") || key.startsWith("apexuser_")) groups.company_.push(entry);
-    else if (key.startsWith("corp_")) groups.corp_.push(entry);
-    else groups.other.push(entry);
+    groupMap[getKeyGroup(key)].push({ key, size, timestamp });
   }
 
-  return groups;
+  return groupMap;
+}
+
+// ── Render ────────────────────────────────────────────────────────────────
+
+function renderGroup(group, items) {
+  const totalSize = items.reduce((sum, i) => sum + i.size, 0);
+
+  const entryRows = items
+    .map(
+      (i) => `
+      <tr>
+        <td>${i.key}</td>
+        <td>${formatTimestamp(i.timestamp)}</td>
+        <td>${formatSize(i.size)}</td>
+        <td><button data-key="${i.key}" class="delete-entry">Delete</button></td>
+      </tr>`
+    )
+    .join("");
+
+  const entriesTable = group.showEntries
+    ? `<table>
+        <thead>
+          <tr><th>Key</th><th>Timestamp</th><th>Size</th><th></th></tr>
+        </thead>
+        <tbody>${entryRows}</tbody>
+      </table>`
+    : `<p style="font-size:0.82rem;color:var(--text-secondary);margin:0.25rem 0 0.5rem">
+        (${items.length} entries — expand in browser DevTools if needed)
+       </p>`;
+
+  return `
+    <div class="storage-group" data-group-key="${group.key}">
+      <div class="storage-group-header">
+        <div>
+          <h2 class="storage-group-title">${group.label}</h2>
+          <p class="storage-group-desc">${group.description}</p>
+        </div>
+        <div class="storage-group-meta">
+          <span>${items.length} entr${items.length === 1 ? "y" : "ies"} &middot; ${formatSize(totalSize)}</span>
+          <button class="delete-group" data-group-key="${group.key}">Delete All</button>
+        </div>
+      </div>
+      ${entriesTable}
+    </div>`;
 }
 
 function renderStorage() {
-  const groups = parseLocalStorage();
+  const groupMap = parseLocalStorage();
   const content = document.getElementById("storageContent");
   content.innerHTML = "";
 
-  for (const [title, items] of Object.entries(groups)) {
+  for (const group of GROUPS) {
+    const items = groupMap[group.key];
     if (items.length === 0) continue;
-
-    const showEntries = title === "other";
-    content.insertAdjacentHTML(
-      "beforeend",
-      renderGroup(title, items, showEntries)
-    );
+    content.insertAdjacentHTML("beforeend", renderGroup(group, items));
   }
 
-  // Attach delete button handlers
   content.querySelectorAll(".delete-entry").forEach((btn) =>
     btn.addEventListener("click", (e) => {
-      const key = e.target.dataset.key;
-      localStorage.removeItem(key);
+      localStorage.removeItem(e.target.dataset.key);
       renderStorage();
     })
   );
 
   content.querySelectorAll(".delete-group").forEach((btn) =>
-    btn.addEventListener("click", (e) => {
-      const group = e.target.dataset.group;
+    btn.addEventListener("click", () => {
+      const groupKey = btn.dataset.groupKey;
+      const group = GROUPS.find(g => g.key === groupKey);
+      if (!group) return;
       for (let i = localStorage.length - 1; i >= 0; i--) {
         const key = localStorage.key(i);
-        if (key.startsWith(group)) {
-          localStorage.removeItem(key);
-        }
+        if (key && getKeyGroup(key) === group.key) localStorage.removeItem(key);
       }
       renderStorage();
     })
