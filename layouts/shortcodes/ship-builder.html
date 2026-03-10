@@ -72,6 +72,37 @@
     font-weight: 600;
   }
 
+  #ship-builder-root .ship-notes {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    margin-bottom: 0.25rem;
+  }
+  #ship-builder-root .copy-cont-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    font-size: 0.82rem;
+    border-radius: 4px;
+    border: 1px solid rgb(16 185 129);
+    color: rgb(16 185 129);
+    background: none;
+    cursor: pointer;
+  }
+  #ship-builder-root .copy-cont-btn:hover {
+    background: rgba(16, 185, 129, 0.12);
+  }
+  #ship-builder-root .ship-action-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+  }
+  #ship-builder-root .ship-action-btns .drydock-btn,
+  #ship-builder-root .ship-action-btns .copy-cont-btn {
+    margin-top: 0;
+  }
   #ship-builder-root .drydock-btn {
     display: inline-block;
     margin-top: 0.5rem;
@@ -162,6 +193,7 @@ const SHIP_RECIPES = {
     name: "OOG Premium 2k",
     price: 6150000,
     internalSalesOnly: false,
+    notes: "A well-rounded workhorse, low cost with solid performance for most cargo types.",
     imageUrl: "/shipbuilding/OOG2k2025.png",
     drydockUrl: "https://drydock.cc/?bp=1-112341001&n=OOG+Premium+2k",
     parts: {
@@ -573,6 +605,16 @@ function renderShipDetails(selectedShip) {
     ? `<div class="ship-build-count">Quantity in Stock: ${buildCount.toLocaleString()}</div>`
     : "";
 
+  const notesNote = ship.notes
+    ? `<p class="ship-notes">${ship.notes}</p>`
+    : "";
+
+  const contParts = Object.entries(ship.parts).sort((a, b) => a[1] - b[1]);
+  const contLines = contParts.map(([ticker, qty], i) => {
+    const price = i === 0 ? ship.price : 0.01;
+    return `${ticker},${qty},${price}`;
+  }).join("\n");
+
   const drydockBtn = ship.drydockUrl
     ? `<a href="${ship.drydockUrl}" target="_blank" rel="noopener noreferrer" class="drydock-btn">View on Drydock.cc ↗</a>`
     : "";
@@ -585,7 +627,11 @@ function renderShipDetails(selectedShip) {
         ${stockStatus}
         ${internalNote}
         ${buildCountNote}
-        ${drydockBtn}
+        ${notesNote}
+        <div class="ship-action-btns">
+          ${drydockBtn}
+          <button class="copy-cont-btn">Copy Sell CONT</button>
+        </div>
       </div>
       <div class="ship-card-image">
         <img
@@ -597,6 +643,16 @@ function renderShipDetails(selectedShip) {
       </div>
     </div>
   `;
+
+  shipDetailContainer.querySelector(".copy-cont-btn").addEventListener("click", async function() {
+    try {
+      await navigator.clipboard.writeText(contLines);
+      this.textContent = "Copied!";
+      setTimeout(() => { this.textContent = "Copy Sell CONT"; }, 1200);
+    } catch (err) {
+      console.error("Clipboard copy failed", err);
+    }
+  });
 }
 
 shipSelect.addEventListener("change", renderInventoryTable);
