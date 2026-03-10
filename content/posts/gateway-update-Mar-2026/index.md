@@ -39,13 +39,14 @@ Additionally, any voting that may be needed will be ranked choice, rather than w
 
 # Proposed Gates
 
-## Antares IIa to Norwick
+## Eos to Norwick
 
-{{< twoColImage right="true" imageURL="norwick.png" >}}
+{{< twoColImage right="true" imageURL="newNorwickGate.png" >}}
 
 Pros:
 * Solid distance savings from ANT to Norwick
-* FTL jump from ANT CX to the gate in Antares IIa gate.
+* We did a ton of math and Eos -> Norwick slightly beats Ant IIa to Norwick
+* AppleTree23 offers to donate 200m of the $475,696,662 est cost.
 
 Cons:
 * Minimal benefit to other planets in Norwick's system. 
