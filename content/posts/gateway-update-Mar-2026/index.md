@@ -15,9 +15,10 @@ math: true
 
 The ADI Gateway Cooperative is an Antares-based regional group focused on constructing gateways. By contributing resources to the gateways, members earn ownership shares proportional to their contributions. By banding together, [co-op members ensure the smooth operation of gateways](/adi-gateway-cooperative/) in Antares and beyond!
 
-# Phase 1 Complete!
 
-{{< twoColImage right="false" imageURL="MarchProfits.png" >}}
+{{< twoColImage right="false" imageURL="MidMarchProfits.png" >}}
+
+# Phase 1 Complete!
 
 I'm thrilled to announce the initial phase of five fully upgraded gates capable of supporting 5k ships has been completed in Antares space. Not only are we the only region with 5k ship support, but all our gates support the largest ships. The upgrade for 5k ships apprixmately doubles the number of GWS needed for a gate, so it's a sizable expense.
 
@@ -84,20 +85,23 @@ Cons:
 
 {{< /twoColImage >}}
 
-## Hecate or Nyx to Eremos
+## Gate to Eremos
 
-{{< twoColImage right="false" imageURL="eremos-gate.png" >}}
+{{< twoColImage right="false" imageURL="eremos2.png" >}}
+
+Note, this gate has been significantly reworked, thanks to AppleTree, Melon, and others.
 
 Pros:
 * The only truly transformative gate option
-* Relatively short and cheap gate
 * Drastic improvement in RE shipping
 * Opens void region to poor people
+* Saves 45.5pc FTL off the trip to Hecate, plus the void jump in a 23.28 pc gate. 
+* ~~Relatively short and cheap gate~~
 
 Cons:
 * The sum population served is pretty low
 * Gonna take a lot of colony ship trips to get a gate inside
-* Sunk cost fallacy saddens colony ship owners
+* Sunk cost fallacy saddens colony ship owners (not me though!)
 
 {{< /twoColImage >}}
 

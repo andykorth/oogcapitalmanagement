@@ -64,9 +64,11 @@ Where:
 * $v_{\text{gateway}}$ will be 3 parsecs/hr
 * $v_{\text{FTL}}$ typically slightly higher, 3.5 to 4.5.
 
-## Place Gates to avoid STL Flight Segments
+Thanks to AppleTree23 for significant STL flight calculations. ANT -> Eos average 1.76 hours. ANT -> Heph averages 3.55 hrs. 
 
-Avoid Large STL Segments
+## Place Gates to minimize STL Flight length
+
+{{< twoColImage right="false" imageURL="norwick-vs-eos.png" >}}
 
 If your route requires:
 * STL travel from a CX to a gate, or
@@ -74,9 +76,14 @@ If your route requires:
 
 you may introduce a long STL segment. Due to ship flight computer behavior and default SF allocation, these STL legs can be longer than expected. This is why some gate routes are slower than pure FTL routes.
 
-We are now suggesting:
+We are now suggesting two rules:
 
-> Place gates in adjacent systems so ships FTL directly to them.
+* In the CX system, choose planet a. 
+* Check if placing a gate in an adjacent systems reduces flight time.
+
+In this case, Eos has a slight edge. The trip from CX to Eos is slightly longer than the gate approach. 
+
+{{< /twoColImage >}}
 
 ## Don’t Compromise the Network for Aesthetic Connectivity
 
