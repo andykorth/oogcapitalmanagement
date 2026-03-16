@@ -216,6 +216,7 @@ const SHIP_RECIPES = {
     name: "5k Shields",
     price: 19700000,
     internalSalesOnly: false,
+    notes: "The ultimate 5k hauler. High upfront cost, but the lowest operating cost overall. High powered FTL and STL engines keep the speed competitive.",
     imageUrl: "/shipbuilding/shielded5k.png",
     drydockUrl: "https://drydock.cc/?bp=1-11437422122&n=OOG+5k+Shields",
     parts: {
@@ -242,6 +243,7 @@ const SHIP_RECIPES = {
   "5k Unshielded": {
     name: "5k Unshielded",
     price: 11500000,
+    notes: "A cost effective 5k option.",
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/5kUnshielded.png",
     drydockUrl: "https://drydock.cc/?bp=1-112371001&n=OOG+5k+Unshielded+LFL",
@@ -265,6 +267,7 @@ const SHIP_RECIPES = {
   "2k All Shields": {
     name: "2k All Shields",
     price: 10997000,
+    notes: "Archiel's main ship design. Very low running cost, repair only about once per year.",
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/shielded_2k.png",
     drydockUrl: "https://drydock.cc/?bp=1-11234122122&n=OOG+2k+All+Shields",
@@ -290,7 +293,31 @@ const SHIP_RECIPES = {
     }
   },
   "OOG New WCB": {
-    name: "OOG New WCB",
+    name: "OOG Upgraded WCB",
+    notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
+    price: 5900000,
+    internalSalesOnly: true,
+    imageUrl: "/shipbuilding/oog-new-wcb.png",
+    parts: {
+      SSC: 84,
+      LHP: 71,
+      MFE: 2,
+      LFE: 1,
+      LFL: 1,
+      MSL: 1,
+      SFE: 2,
+      FSE: 1,
+      HYR: 1,
+      CQM: 1,
+      BR2: 1,
+      FFC: 1,
+      STS: 1,
+      WCB: 1
+    }
+  },
+    "Boring Standard WCB": {
+    name: "Boring Standard WCB",
+    notes: "This is the cheap WCB option.",
     price: 5900000,
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/oog-new-wcb.png",
@@ -314,6 +341,7 @@ const SHIP_RECIPES = {
   "5k STL HCB": {
     name: "5k STL HCB",
     price: 7800000,
+    notes: "STL only 5k ships are very cheap due to the BRS, most of the cost is in the HCB itself. For regions with good gateways like ANT, this can be a very cost effective option for certain planets.",
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/5k-stl-hcb.png",
     parts: {
@@ -329,6 +357,7 @@ const SHIP_RECIPES = {
   "OOG Gas Hauler": {
     name: "OOG Gas Hauler",
     price: 7600000,
+    notes: "Pretty standard VCB, suited for SPT and a few specific gas products.",
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/oog-gas-hauler.png",
     parts: {
@@ -350,6 +379,7 @@ const SHIP_RECIPES = {
   },
   "Colony Ship": {
     name: "Colony Ship",
+    notes: "If you're in the market for one of these, you already know what to expect.",
     price: 34800000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/colony-ship-blueprint.png",

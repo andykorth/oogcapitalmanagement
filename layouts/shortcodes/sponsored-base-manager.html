@@ -1,0 +1,566 @@
+<style>
+  #sbm-root {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* Section bands */
+  #sbm-root .section-live {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(99 102 241);
+    background: rgba(99, 102, 241, 0.06);
+  }
+  #sbm-root .section-calculated {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(16 185 129);
+    background: rgba(16, 185, 129, 0.06);
+  }
+  #sbm-root .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  /* Input layout */
+  #sbm-root .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  #sbm-root .input-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #sbm-root .input-row label {
+    flex: 0 0 160px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  /* Supply table */
+  #sbm-root .supply-table {
+    width: 100%;
+  }
+  #sbm-root .supply-table td,
+  #sbm-root .supply-table th {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  #sbm-root .missing-cell {
+    color: #f87171;
+    font-weight: 600;
+  }
+  #sbm-root .ok-cell {
+    color: #4ade80;
+  }
+  /* XIT export section */
+  #sbm-root .export-section {
+    margin-top: 1rem;
+  }
+  #sbm-root .export-two-col {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #sbm-root .export-xit-col {
+    flex: 1 1 300px;
+    min-width: 0;
+  }
+  #sbm-root .export-cont-col {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1.6rem; /* align with textarea */
+  }
+  #sbm-root .export-origin-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  #sbm-root .export-json {
+    width: 100%;
+    font-family: monospace;
+    font-size: 0.78rem;
+    height: 180px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-primary);
+    padding: 0.5rem;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  #sbm-root .action-btn {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.82rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(16 185 129);
+    color: rgb(16 185 129);
+    background: none;
+  }
+  #sbm-root .action-btn:hover {
+    background: rgba(16, 185, 129, 0.12);
+  }
+  #sbm-root .action-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+  #sbm-root .load-btn {
+    border-color: rgb(99 102 241);
+    color: rgb(99 102 241);
+  }
+  #sbm-root .load-btn:hover {
+    background: rgba(99, 102, 241, 0.12);
+  }
+</style>
+
+<div id="sbm-root" class="calculator">
+
+  <!-- Inputs -->
+  <div class="section-live">
+    <div class="section-label">Configuration</div>
+    <div class="inputs">
+      <div class="input-row">
+        <label for="sbm-sponsor">Sponsor Username</label>
+        <input id="sbm-sponsor" type="text" class="border px-2 py-1 w-48" placeholder="e.g. Archiel" />
+      </div>
+      <div class="input-row">
+        <label for="sbm-beneficiary">Beneficiary Username</label>
+        <input id="sbm-beneficiary" type="text" class="border px-2 py-1 w-48" placeholder="e.g. NewPlayer" />
+      </div>
+      <div class="input-row">
+        <label for="sbm-planet">Planet Identifier</label>
+        <input id="sbm-planet" type="text" class="border px-2 py-1 w-48" placeholder="e.g. BN-908b or Rhenos Pater" />
+      </div>
+      <div class="input-row">
+        <label for="sbm-days">Days Provided</label>
+        <input id="sbm-days" type="number" min="1" class="border px-2 py-1 w-24" value="30" />
+      </div>
+      <div class="input-row">
+        <label></label>
+        <button id="sbm-load-btn" class="action-btn load-btn">Load Data</button>
+      </div>
+    </div>
+    <div id="sbm-status" class="tool-status"></div>
+  </div>
+
+  <!-- Results -->
+  <div id="sbm-results" class="section-calculated" style="display:none">
+    <div class="section-label">Supply Requirements</div>
+    <div id="sbm-planet-header" style="font-size:0.9rem;color:var(--text-secondary);margin-bottom:0.75rem"></div>
+    <div id="sbm-table-container"></div>
+
+    <!-- XIT ACTION + Sell CONT Export -->
+    <div id="sbm-export-section" class="export-section" style="display:none">
+      <div class="section-label" style="margin-top:1rem">Export — Missing Materials</div>
+      <div class="export-two-col">
+        <div class="export-xit-col">
+          <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:0.4rem">XIT ACTION</div>
+          <div class="export-origin-row">
+            <label for="sbm-origin-select" style="font-size:0.85rem;font-weight:600">Purchase from:</label>
+            <select id="sbm-origin-select" class="border px-2 py-1">
+              <option>Antares Station Warehouse</option>
+              <option>Moria Station Warehouse</option>
+              <option>Arclight Station Warehouse</option>
+              <option>Benten Station Warehouse</option>
+              <option>Hortus Station Warehouse</option>
+              <option>Hubur Station Warehouse</option>
+            </select>
+            <span id="sbm-origin-emoji"></span>
+          </div>
+          <textarea id="sbm-json-output" class="export-json" readonly></textarea>
+          <button id="sbm-copy-btn" class="action-btn" style="margin-top:0.5rem">Copy JSON</button>
+        </div>
+        <div class="export-cont-col">
+          <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:0.4rem">Sell CONT</div>
+          <button id="sbm-sell-cont-btn" class="action-btn">Copy Sell CONT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script type="module">
+
+const API_KEY = "4a07e526-b678-4f17-8858-39d80ab2d413";
+const CACHE_TTL = 30 * 60 * 1000; // 30 minutes
+
+const CX_MAP = {
+  "Antares Station Warehouse":  "AI1",
+  "Moria Station Warehouse":    "NC1",
+  "Arclight Station Warehouse": "CI2",
+  "Benten Station Warehouse":   "CI1",
+  "Hortus Station Warehouse":   "IC1",
+  "Hubur Station Warehouse":    "NC2",
+};
+
+// ── DOM refs ────────────────────────────────────────────────────────────────
+
+const sponsorInput     = document.getElementById("sbm-sponsor");
+const beneficiaryInput = document.getElementById("sbm-beneficiary");
+const planetInput      = document.getElementById("sbm-planet");
+const daysInput        = document.getElementById("sbm-days");
+const loadBtn          = document.getElementById("sbm-load-btn");
+const statusEl         = document.getElementById("sbm-status");
+const resultsSection   = document.getElementById("sbm-results");
+const planetHeader     = document.getElementById("sbm-planet-header");
+const tableContainer   = document.getElementById("sbm-table-container");
+const exportSection    = document.getElementById("sbm-export-section");
+const originSelect     = document.getElementById("sbm-origin-select");
+const originEmoji      = document.getElementById("sbm-origin-emoji");
+const jsonOutput       = document.getElementById("sbm-json-output");
+const copyBtn          = document.getElementById("sbm-copy-btn");
+const sellContBtn      = document.getElementById("sbm-sell-cont-btn");
+
+// ── State ────────────────────────────────────────────────────────────────────
+
+let lastMissingMaterials = {};
+let lastSellContText     = "";
+
+// ── Caching helpers ──────────────────────────────────────────────────────────
+
+function getCached(key) {
+  try {
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
+    const { timestamp, data } = JSON.parse(raw);
+    if (Date.now() - timestamp < CACHE_TTL) return data;
+  } catch {}
+  return null;
+}
+
+function setCache(key, data) {
+  localStorage.setItem(key, JSON.stringify({ timestamp: Date.now(), data }));
+}
+
+// ── API fetchers ─────────────────────────────────────────────────────────────
+
+async function fetchBurnrate(username) {
+  const key = `sbm_burnrate_${username.toLowerCase()}`;
+  const cached = getCached(key);
+  if (cached) return cached;
+
+  const resp = await fetch(
+    `https://rest.fnar.net/csv/burnrate?apikey=${API_KEY}&username=${encodeURIComponent(username)}`
+  );
+  if (!resp.ok) throw new Error(`Burnrate fetch failed (${resp.status})`);
+  const csv = await resp.text();
+  setCache(key, csv);
+  return csv;
+}
+
+async function fetchInventory(username) {
+  const key = `sbm_inventory_${username.toLowerCase()}`;
+  const cached = getCached(key);
+  if (cached) return cached;
+
+  const resp = await fetch(
+    `https://rest.fnar.net/csv/inventory?apikey=${API_KEY}&username=${encodeURIComponent(username)}`
+  );
+  if (!resp.ok) throw new Error(`Inventory fetch failed (${resp.status})`);
+  const csv = await resp.text();
+  setCache(key, csv);
+  return csv;
+}
+
+// ── CSV parsers ──────────────────────────────────────────────────────────────
+
+function parseBurnrate(csv) {
+  // Returns array of { planetNaturalId, planetName, ticker, dailyConsumption, essential }
+  const rows   = csv.trim().split("\n");
+  const header = rows.shift().trim().split(",");
+
+  const iNatId    = header.indexOf("PlanetNaturalId");
+  const iName     = header.indexOf("PlanetName");
+  const iTicker   = header.indexOf("Ticker");
+  const iDaily    = header.indexOf("DailyConsumption");
+  const iEssential = header.indexOf("Essential");
+
+  return rows.map(row => {
+    const v = row.split(",");
+    return {
+      planetNaturalId:  v[iNatId]?.trim()  ?? "",
+      planetName:       v[iName]?.trim()   ?? "",
+      ticker:           v[iTicker]?.trim() ?? "",
+      dailyConsumption: parseFloat(v[iDaily]) || 0,
+      essential:        v[iEssential]?.trim().toLowerCase() === "true",
+    };
+  }).filter(r => r.ticker);
+}
+
+function parseInventory(csv) {
+  // Returns Map<location, Map<ticker, qty>>
+  const rows   = csv.trim().split("\n");
+  const header = rows.shift().trim().split(",");
+
+  const iLoc    = header.indexOf("NaturalId");
+  const iTicker = header.indexOf("Ticker");
+  const iAmount = header.indexOf("Amount");
+
+  const byLocation = new Map();
+  for (const row of rows) {
+    const v        = row.split(",");
+    const loc      = v[iLoc]?.trim()    ?? "";
+    const ticker   = v[iTicker]?.trim() ?? "";
+    const amount   = parseInt(v[iAmount], 10) || 0;
+    if (!loc || !ticker) continue;
+
+    if (!byLocation.has(loc)) byLocation.set(loc, new Map());
+    byLocation.get(loc).set(ticker, (byLocation.get(loc).get(ticker) || 0) + amount);
+  }
+  return byLocation;
+}
+
+// ── URL param helpers ────────────────────────────────────────────────────────
+
+function loadFromUrl() {
+  const p = new URL(window.location.href).searchParams;
+  if (p.get("sponsor"))     sponsorInput.value     = p.get("sponsor");
+  if (p.get("beneficiary")) beneficiaryInput.value = p.get("beneficiary");
+  if (p.get("planet"))      planetInput.value      = p.get("planet");
+  if (p.get("days"))        daysInput.value        = p.get("days");
+}
+
+function pushUrl() {
+  const url = new URL(window.location.href);
+  url.searchParams.set("sponsor",     sponsorInput.value.trim());
+  url.searchParams.set("beneficiary", beneficiaryInput.value.trim());
+  url.searchParams.set("planet",      planetInput.value.trim());
+  url.searchParams.set("days",        daysInput.value.trim());
+  history.replaceState(null, "", url.toString());
+}
+
+// ── XIT ACTION export ────────────────────────────────────────────────────────
+
+function updateExport() {
+  const hasMissing = Object.values(lastMissingMaterials).some(q => q > 0);
+  if (!hasMissing) {
+    exportSection.style.display = "none";
+    return;
+  }
+
+  const origin = originSelect.value;
+  const materials = Object.fromEntries(
+    Object.entries(lastMissingMaterials).filter(([, q]) => q > 0)
+  );
+
+  const exportJson = {
+    actions: [
+      {
+        group: "Items",
+        exchange: CX_MAP[origin] || "AI1",
+        priceLimits: {},
+        buyPartial: false,
+        useCXInv: true,
+        name: "BuyItems",
+        type: "CX Buy",
+      },
+      {
+        type: "MTRA",
+        name: "Sponsored Base Supply",
+        group: "Items",
+        origin,
+        dest: "Configure on Execution",
+      },
+    ],
+    global: { name: "OOG Sponsored Base Supply" },
+    groups: [{ type: "Manual", name: "Items", materials }],
+  };
+
+  jsonOutput.value = JSON.stringify(exportJson, null, 2);
+  originEmoji.textContent = origin === "Antares Station Warehouse" ? "😀" : "😢";
+
+  lastSellContText = Object.entries(lastMissingMaterials)
+    .filter(([, q]) => q > 0)
+    .map(([ticker, qty]) => `${ticker},${qty},0.01`)
+    .join("\n");
+
+  exportSection.style.display = "";
+}
+
+// ── Render ───────────────────────────────────────────────────────────────────
+
+function renderTable(burnRows, inventoryByLoc, planetNaturalId, days) {
+  const planetInv = inventoryByLoc.get(planetNaturalId) || new Map();
+
+  const table = document.createElement("table");
+  table.className = "supply-table table-auto border-collapse text-sm";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="text-left pr-4">Ticker</th>
+        <th class="text-right pr-4">Daily</th>
+        <th class="text-right pr-4">Days Remaining</th>
+        <th class="text-right pr-4">Needed (${days}d)</th>
+        <th class="text-right pr-4">In Stock</th>
+        <th class="text-right">Missing</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+  const missing = {};
+  let anyMissing = false;
+
+  for (const row of burnRows) {
+    const needed  = Math.ceil(row.dailyConsumption * days);
+    const inStock = planetInv.get(row.ticker) || 0;
+    const deficit = Math.max(0, needed - inStock);
+    if (deficit > 0) {
+      missing[row.ticker] = deficit;
+      anyMissing = true;
+    }
+
+    const missingCell = deficit > 0
+      ? `<td class="text-right missing-cell">${deficit.toLocaleString()}</td>`
+      : `<td class="text-right ok-cell">—</td>`;
+
+    const daysRemaining = row.dailyConsumption > 0
+      ? inStock / row.dailyConsumption
+      : Infinity;
+    const daysRemainingText = isFinite(daysRemaining)
+      ? daysRemaining.toLocaleString(undefined, { maximumFractionDigits: 1 })
+      : "∞";
+    const daysRemainingColor = daysRemaining < days ? "#f87171" : "#4ade80";
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="pr-4" style="font-weight:600">${row.ticker}</td>
+      <td class="text-right pr-4 font-mono">${row.dailyConsumption.toLocaleString(undefined, { maximumFractionDigits: 2 })}</td>
+      <td class="text-right pr-4 font-mono" style="color:${daysRemainingColor}">${daysRemainingText}</td>
+      <td class="text-right pr-4 font-mono">${needed.toLocaleString()}</td>
+      <td class="text-right pr-4 font-mono">${inStock.toLocaleString()}</td>
+      ${missingCell}
+    `;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  tableContainer.innerHTML = "";
+  tableContainer.appendChild(table);
+
+  lastMissingMaterials = missing;
+
+  if (!anyMissing) {
+    const note = document.createElement("p");
+    note.style.cssText = "margin-top:0.75rem;color:#4ade80;font-weight:600;font-size:0.9rem";
+    note.textContent = "All materials are fully stocked for the requested duration.";
+    tableContainer.appendChild(note);
+  }
+
+  updateExport();
+}
+
+// ── Main load ────────────────────────────────────────────────────────────────
+
+async function loadData() {
+  const beneficiary = beneficiaryInput.value.trim();
+  const planetQuery = planetInput.value.trim();
+  const days        = parseFloat(daysInput.value) || 30;
+
+  if (!beneficiary || !planetQuery) {
+    statusEl.textContent = "Please enter a beneficiary username and planet identifier.";
+    statusEl.style.color = "#f87171";
+    return;
+  }
+
+  pushUrl();
+  statusEl.textContent = "Loading burnrate and inventory…";
+  statusEl.style.color = "";
+  resultsSection.style.display = "none";
+
+  try {
+    const [burnCsv, invCsv] = await Promise.all([
+      fetchBurnrate(beneficiary),
+      fetchInventory(beneficiary),
+    ]);
+
+    const allBurnRows = parseBurnrate(burnCsv);
+    const planetLower = planetQuery.toLowerCase();
+
+    // Match planet by natural id or name (case-insensitive)
+    const planetRows = allBurnRows.filter(r =>
+      r.planetNaturalId.toLowerCase() === planetLower ||
+      r.planetName.toLowerCase()      === planetLower
+    );
+
+    if (!planetRows.length) {
+      const knownPlanets = [...new Set(allBurnRows.map(r => `${r.planetName} (${r.planetNaturalId})`))];
+      statusEl.textContent =
+        `No burnrate found for "${planetQuery}" under ${beneficiary}. ` +
+        (knownPlanets.length
+          ? `Known planets: ${knownPlanets.join(", ")}`
+          : "No planet data available.");
+      statusEl.style.color = "#f87171";
+      return;
+    }
+
+    const canonicalNatId  = planetRows[0].planetNaturalId;
+    const canonicalName   = planetRows[0].planetName;
+    const inventoryByLoc  = parseInventory(invCsv);
+
+    statusEl.textContent = "";
+    planetHeader.textContent =
+      `${beneficiary} · ${canonicalName} (${canonicalNatId}) · ${days} days`;
+
+    renderTable(planetRows, inventoryByLoc, canonicalNatId, days);
+    resultsSection.style.display = "";
+
+  } catch (err) {
+    console.error(err);
+    statusEl.textContent = "Error: " + err.message;
+    statusEl.style.color = "#f87171";
+  }
+}
+
+// ── Event listeners ──────────────────────────────────────────────────────────
+
+loadBtn.addEventListener("click", loadData);
+
+[sponsorInput, beneficiaryInput, planetInput].forEach(el => {
+  el.addEventListener("keydown", e => { if (e.key === "Enter") loadData(); });
+});
+
+originSelect.addEventListener("change", updateExport);
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(jsonOutput.value).then(() => {
+    copyBtn.textContent = "Copied!";
+    setTimeout(() => { copyBtn.textContent = "Copy JSON"; }, 1500);
+  });
+});
+
+sellContBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(lastSellContText).then(() => {
+    sellContBtn.textContent = "Copied!";
+    setTimeout(() => { sellContBtn.textContent = "Copy Sell CONT"; }, 1500);
+  });
+});
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadFromUrl();
+  // Auto-load if all required fields are pre-filled from URL
+  if (beneficiaryInput.value && planetInput.value) {
+    loadData();
+  }
+});
+
+</script>
