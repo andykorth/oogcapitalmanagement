@@ -118,17 +118,13 @@
   }
 </style>
 
-<div id="ship-builder-root" class="space-y-2 calculator">
+<div id="ship-builder-root" class="space-y-2 calculator" data-oog-mode="{{ if eq (.Get `oog`) `true` }}true{{ else }}false{{ end }}">
 
   <div id="sb-status" class="tool-status">Loading inventory data…</div>
 
   <div id="section-inventory" class="section-live" style="display:none">
     <div class="section-label">Live Inventory</div>
     <div id="sb-meta" style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem"></div>
-
-    <label style="font-size:0.85rem;margin-bottom:0.75rem;display:block">
-      <input id="onlyShowPublicShips" type="checkbox" checked /> Only show public ships
-    </label>
 
     <div class="two-col">
       <div class="col">
@@ -175,6 +171,14 @@
     <button class="copy-order-btn" disabled style="margin-top:0.75rem">
       Copy OOG Parts /projects order to clipboard
     </button>
+
+    <div style="margin-top:1.5rem">
+      <div class="section-label">Component Pricing</div>
+      <p class="text-sm" style="color:var(--text-secondary);margin-bottom:0.75rem">
+        Prices for the selected ship's components. OOG Price is our internal sell price; Market (7d VWAP) is from prunplanner.
+      </p>
+      <section id="pricingTableContainer"></section>
+    </div>
   </div>
 
 </div>
@@ -186,12 +190,15 @@
 
 <script type="module">
 
+import { fetchPricing, priceData, loadModeledPrices, modeledPrices } from "/pricing-and-materials.js";
+
 let select;
 
 const SHIP_RECIPES = {
   "OOG Premium 2k": {
     name: "OOG Premium 2k",
     price: 6150000,
+    markup: 200000,
     internalSalesOnly: false,
     notes: "A well-rounded workhorse, low cost with solid performance for most cargo types.",
     imageUrl: "/shipbuilding/OOG2k2025.png",
@@ -215,6 +222,7 @@ const SHIP_RECIPES = {
   "5k Shields": {
     name: "5k Shields",
     price: 19700000,
+    markup: 200000,
     internalSalesOnly: false,
     notes: "The ultimate 5k hauler. High upfront cost, but the lowest operating cost overall. High powered FTL and STL engines keep the speed competitive.",
     imageUrl: "/shipbuilding/shielded5k.png",
@@ -243,6 +251,7 @@ const SHIP_RECIPES = {
   "5k Unshielded": {
     name: "5k Unshielded",
     price: 11500000,
+    markup: 200000,
     notes: "A cost effective 5k option.",
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/5kUnshielded.png",
@@ -267,6 +276,7 @@ const SHIP_RECIPES = {
   "2k All Shields": {
     name: "2k All Shields",
     price: 10997000,
+    markup: 200000,
     notes: "Archiel's main ship design. Very low running cost, repair only about once per year.",
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/shielded_2k.png",
@@ -296,6 +306,7 @@ const SHIP_RECIPES = {
     name: "OOG Upgraded WCB",
     notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
     price: 6100000,
+    markup: 200000,
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/oog-new-wcb.png",
     parts: {
@@ -319,6 +330,7 @@ const SHIP_RECIPES = {
     name: "Boring Standard WCB",
     notes: "This is the cheap WCB option.",
     price: 5800000,
+    markup: 200000,
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/oog-new-wcb.png",
     parts: {
@@ -341,6 +353,7 @@ const SHIP_RECIPES = {
   "5k STL HCB": {
     name: "5k STL HCB",
     price: 7800000,
+    markup: 200000,
     notes: "STL only 5k ships are very cheap due to the BRS, most of the cost is in the HCB itself. For regions with good gateways like ANT, this can be a very cost effective option for certain planets.",
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/5k-stl-hcb.png",
@@ -357,6 +370,7 @@ const SHIP_RECIPES = {
   "OOG Gas Hauler": {
     name: "OOG Gas Hauler",
     price: 7600000,
+    markup: 200000,
     notes: "Pretty standard VCB, suited for SPT and a few specific gas products.",
     internalSalesOnly: true,
     imageUrl: "/shipbuilding/oog-gas-hauler.png",
@@ -381,6 +395,7 @@ const SHIP_RECIPES = {
     name: "Colony Ship",
     notes: "If you're in the market for one of these, you already know what to expect.",
     price: 34800000,
+    markup: 200000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/colony-ship-blueprint.png",
     parts: {
@@ -478,10 +493,25 @@ const desiredInput       = document.getElementById("desiredCount");
 const resultEl           = document.getElementById("buildResult");
 const tableContainer     = document.getElementById("inventoryTableContainer");
 const shipDetailContainer = document.getElementById("ship-detail");
-const onlyShowPublicShips = document.getElementById("onlyShowPublicShips");
 const copyButton         = document.querySelector(".copy-order-btn");
 
+const OOG_MODE = document.getElementById("ship-builder-root").dataset.oogMode === "true";
+
 const INVENTORY_API_KEY = "4a07e526-b678-4f17-8858-39d80ab2d413";
+
+function getShipFromUrl() {
+  return new URLSearchParams(window.location.search).get("ship") || "";
+}
+
+function updateUrlForShip(shipName) {
+  const url = new URL(window.location);
+  if (shipName) {
+    url.searchParams.set("ship", shipName);
+  } else {
+    url.searchParams.delete("ship");
+  }
+  history.replaceState(null, "", url);
+}
 
 function buildInventoryUrl(username) {
   return `https://rest.fnar.net/csv/inventory?apikey=${INVENTORY_API_KEY}&username=${username}`;
@@ -566,7 +596,7 @@ const renderShipSummaryTable = () => {
 
   for (const shipName of Object.keys(SHIP_RECIPES)) {
     const recipe = SHIP_RECIPES[shipName];
-    if (recipe.internalSalesOnly && onlyShowPublicShips.checked) continue;
+    if (recipe.internalSalesOnly && !OOG_MODE) continue;
 
     const count = calculateBuildCount(appState.users["Archiel"].byLocation, recipe.parts);
     const stockClass = count > 0 ? "stock-in" : "stock-out";
@@ -608,7 +638,82 @@ const renderInventoryTable = () => {
   }
 
   renderShipDetails(selectedShip);
+  renderPricingTable();
 };
+
+function renderPricingTable() {
+  const container = document.getElementById("pricingTableContainer");
+  container.innerHTML = "";
+
+  const selectedShip = shipSelect.value || null;
+  if (!selectedShip) return;
+
+  const recipe = SHIP_RECIPES[selectedShip]?.parts;
+  if (!recipe) return;
+
+  const table = document.createElement("table");
+  table.className = "inventory-table table-auto border-collapse text-sm";
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="text-left pr-3">Ticker</th>
+        <th class="text-right pr-3">Qty</th>
+        <th class="text-right pr-3">OOG Price</th>
+        <th class="text-right pr-3">Market (7d VWAP)</th>
+        <th class="text-right pr-3">Modeled</th>
+        <th class="text-right">OOG Line Total</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement("tbody");
+  let oogTotal = 0;
+  let mktTotal = 0;
+  let modTotal = 0;
+
+  for (const ticker of Object.keys(recipe).sort()) {
+    const qty        = recipe[ticker];
+    const oogPrice   = SHIP_PART_PRICES[ticker] ?? null;
+    const mktPrice   = priceData[ticker]         ?? null;
+    const modPrice   = modeledPrices[ticker]     ?? null;
+    const lineTotal  = oogPrice !== null ? oogPrice * qty : null;
+    const mktLine    = mktPrice !== null ? Math.round(mktPrice) * qty : null;
+    const modLine    = modPrice !== null ? Math.round(modPrice) * qty : null;
+
+    if (lineTotal !== null) oogTotal += lineTotal;
+    if (mktLine   !== null) mktTotal += mktLine;
+    if (modLine   !== null) modTotal += modLine;
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="pr-3" style="font-weight:600">${ticker}</td>
+      <td class="text-right pr-3 font-mono">${qty.toLocaleString()}</td>
+      <td class="text-right pr-3 font-mono">${oogPrice !== null ? oogPrice.toLocaleString() : "—"}</td>
+      <td class="text-right pr-3 font-mono">${mktPrice !== null ? Math.round(mktPrice).toLocaleString() : "—"}</td>
+      <td class="text-right pr-3 font-mono">${modPrice !== null ? Math.round(modPrice).toLocaleString() : "—"}</td>
+      <td class="text-right font-mono">${lineTotal !== null ? lineTotal.toLocaleString() : "—"}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  container.appendChild(table);
+
+  // Summary totals below the table
+  const ship   = SHIP_RECIPES[selectedShip];
+  const markup = ship?.markup ?? 0;
+
+  const summary = document.createElement("div");
+  summary.style.cssText = "margin-top:0.75rem;font-size:0.88rem;display:flex;flex-direction:column;gap:0.2rem;";
+  const fmt = n => n > 0 ? n.toLocaleString() + " AIC" : "—";
+  summary.innerHTML = `
+    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">OOG sell total:</span> <strong>${fmt(oogTotal)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">Builder markup:</span> <strong>${fmt(markup)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">Total at market (7d VWAP):</span> <strong>${fmt(mktTotal)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">Total at modeled:</span> <strong>${fmt(modTotal)}</strong></div>
+  `;
+  container.appendChild(summary);
+}
 
 function renderShipDetails(selectedShip) {
   if (!selectedShip || selectedShip === "") {
@@ -685,9 +790,11 @@ function renderShipDetails(selectedShip) {
   });
 }
 
-shipSelect.addEventListener("change", renderInventoryTable);
+shipSelect.addEventListener("change", () => {
+  updateUrlForShip(shipSelect.value);
+  renderInventoryTable();
+});
 desiredInput.addEventListener("input", renderInventoryTable);
-onlyShowPublicShips.addEventListener("input", renderShipSummaryTable);
 
 const calculateBuildCount = (byLocation, parts) => {
   let maxBuilds = Infinity;
@@ -864,9 +971,19 @@ async function loadInventoryData() {
       loadInventoryData();
     });
 
+    await fetchPricing();
+    loadModeledPrices();
+
+    // Read ship from URL param and apply it before rendering
+    const urlShip = getShipFromUrl();
+    if (urlShip && SHIP_RECIPES[urlShip]) {
+      shipSelect.value = urlShip;
+    }
+
     statusEl.textContent = "";
     sectionInventory.style.display = "";
-    sectionOrder.style.display     = "";
+    // Parts Order is internal-only — only visible in OOG mode
+    sectionOrder.style.display = OOG_MODE ? "" : "none";
 
     renderShipSummaryTable();
     renderInventoryTable();
