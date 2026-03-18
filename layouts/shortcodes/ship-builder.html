@@ -302,13 +302,13 @@ const SHIP_RECIPES = {
       STS: 1
     }
   },
-  "OOG New WCB": {
-    name: "OOG Upgraded WCB",
+  "OOG Premium WCB": {
+    name: "OOG Premium WCB",
     notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
     price: 6400000,
     markup: 200000,
-    internalSalesOnly: true,
-    imageUrl: "/shipbuilding/oog-new-wcb.png",
+    internalSalesOnly: false,
+    imageUrl: "/shipbuilding/oog-premium-wcb.png",
     parts: {
       SSC: 84,
       LHP: 71,
@@ -326,13 +326,13 @@ const SHIP_RECIPES = {
       WCB: 1
     }
   },
-    "Boring Standard WCB": {
-    name: "Boring Standard WCB",
-    notes: "This is the cheap WCB option.",
+    "Basic WCB": {
+    name: "Basic WCB",
+    notes: "This is the cheap WCB option, with standard engines.",
     price: 6000000,
     markup: 200000,
-    internalSalesOnly: true,
-    imageUrl: "/shipbuilding/oog-new-wcb.png",
+    internalSalesOnly: false,
+    imageUrl: "/shipbuilding/basic-wcb.png",
     parts: {
       SSC: 78,
       LHP: 68,
@@ -348,23 +348,6 @@ const SHIP_RECIPES = {
       FFC: 1,
       STS: 1,
       WCB: 1
-    }
-  },
-  "5k STL HCB": {
-    name: "5k STL HCB",
-    price: 7800000,
-    markup: 200000,
-    notes: "STL only 5k ships are very cheap due to the BRS, most of the cost is in the HCB itself. For regions with good gateways like ANT, this can be a very cost effective option for certain planets.",
-    internalSalesOnly: true,
-    imageUrl: "/shipbuilding/5k-stl-hcb.png",
-    parts: {
-      SSC: 265,
-      LHP: 152,
-      HCB: 1,
-      FSE: 1,
-      CQL: 1,
-      BRS: 1,
-      SSL: 1,
     }
   },
   "OOG Gas Hauler": {
@@ -391,6 +374,43 @@ const SHIP_RECIPES = {
       STS: 1
     }
   },
+  "STL - 5k HCB": {
+    name: "STL - 5k HCB",
+    price: 7800000,
+    markup: 200000,
+    notes: "STL only 5k ships are very cheap due to the BRS, most of the cost is in the HCB itself. For regions with good gateways like ANT, this can be a very cost effective option for certain planets.",
+    internalSalesOnly: true,
+    imageUrl: "/shipbuilding/5k-stl-hcb.png",
+    parts: {
+      SSC: 265,
+      LHP: 152,
+      HCB: 1,
+      FSE: 1,
+      CQL: 1,
+      BRS: 1,
+      SSL: 1,
+    }
+  },
+
+  "STL - 2k": {
+    name: "STL - 2k",
+    price: 3900000,
+    markup: 250000,
+    notes: "A cheap STL only 2k, good option for local transit or for regions with strong gateways like ANT.",
+    internalSalesOnly: true,
+    imageUrl: "/shipbuilding/stl-2k.png",
+    parts: {
+      SSC: 121,
+      LHP: 90,
+      LCB: 1,
+      FSE: 1,
+      CQM: 1,
+      BRS: 1,
+      MSL: 1,
+    }
+  },
+
+  
   "Colony Ship": {
     name: "Colony Ship",
     notes: "If you're in the market for one of these, you already know what to expect.",
@@ -717,17 +737,25 @@ function renderPricingTable() {
   container.appendChild(table);
 
   // Summary totals below the table
-  const ship   = SHIP_RECIPES[selectedShip];
-  const markup = ship?.markup ?? 0;
+  const ship           = SHIP_RECIPES[selectedShip];
+  const desiredMarkup  = ship?.markup ?? 0;
+  const salePrice      = ship?.price  ?? 0;
+  const actualMarkup   = salePrice - oogTotal;
+  const mktSavings   = -(salePrice - mktTotal);
 
   const summary = document.createElement("div");
   summary.style.cssText = "margin-top:0.75rem;font-size:0.88rem;display:flex;flex-direction:column;gap:0.2rem;";
-  const fmt = n => n > 0 ? n.toLocaleString() + " AIC" : "—";
+  const fmt     = n => n.toLocaleString() + " AIC";
+  const fmtDiff = n => (n >= 0 ? "+" : "") + n.toLocaleString() + " AIC";
+  const diffColor = actualMarkup >= desiredMarkup ? "#4ade80" : "#f87171";
   summary.innerHTML = `
-    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">OOG sell total:</span> <strong>${fmt(oogTotal)}</strong></div>
-    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">Builder markup:</span> <strong>${fmt(markup)}</strong></div>
-    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">Total at market (7d VWAP):</span> <strong>${fmt(mktTotal)}</strong></div>
-    <div><span style="color:var(--text-secondary);min-width:200px;display:inline-block">Total at modeled:</span> <strong>${fmt(modTotal)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">OOG parts cost:</span> <strong>${fmt(oogTotal)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Sale price:</span> <strong>${fmt(salePrice)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Actual markup:</span> <strong style="color:${diffColor}">${fmtDiff(actualMarkup)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Desired builder markup:</span> <strong>${fmt(desiredMarkup)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Ship price at Taiyi's:</span> <strong>${fmt(modTotal)}</strong></div>
+    <div style="margin-top:0.4rem"><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Ship at market price (7d VWAP):</span> <strong>${fmt(mktTotal)}</strong></div>
+    <div style="margin-top:0.4rem"><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Savings over market price:</span> <strong>${fmt(mktSavings)}</strong></div>
   `;
   container.appendChild(summary);
 }

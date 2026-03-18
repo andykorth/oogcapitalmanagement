@@ -1,6 +1,6 @@
 ---
 title: "Premium Shipbuilding"
-featured_image: 'images/conceptShipbuildingNarrowest.png'
+featured_image: 'images/ship-builder-wide.png'
 omit_header_text: true
 type: page
 fullWidthArticle: true
