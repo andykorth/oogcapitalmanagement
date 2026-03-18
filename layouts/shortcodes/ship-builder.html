@@ -642,6 +642,7 @@ const renderShipSummaryTable = () => {
     tr.classList.add("ship-row");
     tr.addEventListener("click", () => {
       shipSelect.value = shipName;
+      updateUrlForShip(shipName);
       renderInventoryTable();
     });
     tr.innerHTML = `
