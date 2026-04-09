@@ -806,7 +806,10 @@ function makeBids() {
   const filterEx = exchangeFilter.value;
   const funds = parseFloat(fundsInput.value);
   const markupPct = parseFloat(markupInput.value); // e.g. “2” means 2%
-  const checked = [...document.querySelectorAll(".rowCheck:checked")];
+  const checked = [...document.querySelectorAll(".rowCheck:checked")].filter(cb => {
+    const row = document.getElementById(`row-${cb.dataset.mat}`);
+    return row && row.style.display !== "none";
+  });
 
   if (checked.length === 0) {
     document.getElementById("bidResult").textContent = "No materials selected.";

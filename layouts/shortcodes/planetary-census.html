@@ -1,0 +1,75 @@
+<style>
+  #planetary-census-root {
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .census-section {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid rgb(99 102 241);
+    background: rgba(99, 102, 241, 0.06);
+  }
+
+  .census-section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  #census-table-wrap {
+    overflow-x: auto;
+  }
+
+  #census-table {
+    width: 100%;
+  }
+
+  #census-table thead th {
+    position: sticky;
+    top: 0;
+    background: var(--table-header-bg);
+    z-index: 1;
+  }
+
+  #census-table thead th:hover {
+    color: var(--link-color, #818cf8);
+  }
+</style>
+
+<div id="planetary-census-root" class="calculator">
+
+  <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;margin-bottom:0.5rem">
+    <input id="census-filter" type="text" placeholder="Filter by planet name, ID, or region…" style="flex:1;min-width:200px;max-width:360px" />
+    <label style="display:flex;align-items:center;gap:0.35rem;color:var(--text-secondary);font-size:0.9rem;white-space:nowrap">
+      <input id="census-hide-empty" type="checkbox" checked />
+      Hide unpopulated planets
+    </label>
+  </div>
+
+  <div class="cache-status-bar" id="census-cache-bar" style="display:none">
+    Data age: <span id="census-cache-age">—</span>
+    · <button class="cache-refresh-btn" id="census-refresh-btn">Refresh</button>
+    · <a href="/storage-tool/" class="cache-storage-link">Manage storage</a>
+  </div>
+
+  <div id="census-status" style="color:var(--text-secondary);margin:0.5rem 0"></div>
+
+  <div style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:0.5rem" id="census-summary"></div>
+
+  <div id="census-table-wrap" class="census-section">
+    <div class="census-section-label">Live Data · All Planets</div>
+    <table id="census-table" class="infra-table">
+      <thead id="census-thead"></thead>
+      <tbody id="census-tbody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script type="module" src="/planetary-census.js"></script>
