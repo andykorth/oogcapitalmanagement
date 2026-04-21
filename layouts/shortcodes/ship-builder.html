@@ -197,7 +197,7 @@ let select;
 const SHIP_RECIPES = {
   "OOG Premium 2k": {
     name: "OOG Premium 2k",
-    price: 6350000,
+    price: 7200000,
     markup: 200000,
     internalSalesOnly: false,
     notes: "A well-rounded workhorse, low cost with solid performance for most cargo types.",
@@ -217,12 +217,14 @@ const SHIP_RECIPES = {
       CQM: 1,
       BR1: 1,
       FFC: 1,
-      STS: 1
+      STS: 1,
+      SF: 3500,
+      FF: 800,
     }
   },
   "5k Shields": {
     name: "5k Shields",
-    price: 21000000,
+    price: 22500000,
     markup: 200000,
     internalSalesOnly: false,
     notes: "The ultimate 5k hauler. High upfront cost, but the lowest operating cost overall. High powered FTL and STL engines keep the speed competitive.",
@@ -246,12 +248,14 @@ const SHIP_RECIPES = {
       MSL: 1,
       RDL: 1,
       FFC: 1,
-      STS: 1
+      STS: 1,
+      SF: 500,
+      FF: 500
     }
   },
   "5k Unshielded": {
     name: "5k Unshielded",
-    price: 11400000,
+    price: 12200000,
     markup: 400000,
     notes: "A cost effective 5k option.",
     internalSalesOnly: false,
@@ -271,12 +275,14 @@ const SHIP_RECIPES = {
       LFL: 1,
       MSL: 1,
       QCR: 1,
-      STS: 1
+      STS: 1,
+      SF: 500,
+      FF: 500
     }
   },
   "2k All Shields": {
     name: "2k All Shields",
-    price: 12800000,
+    price: 12900000,
     markup: 200000,
     notes: "Archiel's main ship design. Very low running cost, repair only about once per year.",
     internalSalesOnly: false,
@@ -300,13 +306,15 @@ const SHIP_RECIPES = {
       MSL: 1,
       QCR: 1,
       RDL: 1,
-      STS: 1
+      STS: 1,
+      SF: 500,
+      FF: 500
     }
   },
   "OOG Premium WCB": {
     name: "OOG Premium WCB",
     notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
-    price: 6400000,
+    price: 8400000,
     markup: 200000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/oog-premium-wcb.png",
@@ -324,13 +332,15 @@ const SHIP_RECIPES = {
       BR2: 1,
       FFC: 1,
       STS: 1,
-      WCB: 1
+      WCB: 1,
+      SF: 500,
+      FF: 500
     }
   },
     "Basic WCB": {
     name: "Basic WCB",
     notes: "This is the cheap WCB option, with standard engines.",
-    price: 6000000,
+    price: 6700000,
     markup: 200000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/basic-wcb.png",
@@ -348,12 +358,14 @@ const SHIP_RECIPES = {
       BR1: 1,
       FFC: 1,
       STS: 1,
-      WCB: 1
+      WCB: 1,
+      SF: 500,
+      FF: 500
     }
   },
   "OOG Gas Hauler": {
     name: "OOG Gas Hauler",
-    price: 7600000,
+    price: 8300000,
     markup: 200000,
     notes: "Pretty standard VCB, suited for SPT and a few specific gas products.",
     internalSalesOnly: true,
@@ -372,12 +384,14 @@ const SHIP_RECIPES = {
       CQL: 1,
       BR1: 1,
       FFC: 1,
-      STS: 1
+      STS: 1,
+      SF: 500,
+      FF: 500
     }
   },
   "STL - 5k HCB": {
     name: "STL - 5k HCB",
-    price: 7800000,
+    price: 8200000,
     markup: 200000,
     notes: "STL only 5k ships are very cheap due to the BRS, most of the cost is in the HCB itself. For regions with good gateways like ANT, this can be a very cost effective option for certain planets.",
     internalSalesOnly: true,
@@ -390,12 +404,13 @@ const SHIP_RECIPES = {
       CQL: 1,
       BRS: 1,
       SSL: 1,
+      SF: 500
     }
   },
 
   "STL - 2k": {
     name: "STL - 2k",
-    price: 3900000,
+    price: 4200000,
     markup: 250000,
     notes: "A cheap STL only 2k, good option for local transit or for regions with strong gateways like ANT.",
     internalSalesOnly: true,
@@ -408,6 +423,7 @@ const SHIP_RECIPES = {
       CQM: 1,
       BRS: 1,
       MSL: 1,
+      SF: 500
     }
   },
 
@@ -415,7 +431,7 @@ const SHIP_RECIPES = {
   "Colony Ship": {
     name: "Colony Ship",
     notes: "If you're in the market for one of these, you already know what to expect.",
-    price: 35700000,
+    price: 36200000,
     markup: 400000,
     internalSalesOnly: false,
     imageUrl: "/shipbuilding/colony-ship-blueprint.png",
@@ -435,79 +451,82 @@ const SHIP_RECIPES = {
       VFT: 1,
       LSL: 1,
       RDL: 1,
-      STS: 1
+      STS: 1,
+      SF: 500
     }
   }
 };
 
 const SHIP_PART_PRICES = {
-  MFL: 140000,
-  LFL: 300000,
-  MSL: 175000,
-  LSL: 400000,
-  LFE: 170000,
-  MFE: 90000,
-  SFE: 60000,
-  LHP: 3900,
-  SSC: 550,
-  LCB: 700000,
-  VCB: 700000,
-  WCB: 700000,
-  HCB: 3750000,
-  FSE: 950000,
-  QCR: 950000,
-  CQM: 1000000,
-  CQL: 1700000,
+  ACS: 150000,
+  ADR: 80000,
+  AEN: 1800000,
+  AFR: 17000,
+  AGS: 400000,
+  AHP: 11000,
+  APT: 14000,
+  AWH: 14000,
+  BGS: 150000,
   BR1: 800000,
   BR2: 950000,
-  FFC: 300000,
   BRS: 400000,
+  BSU: 1100000,
+  COM: 115000,
+  CPU: 3200000,
+  CQL: 1800000,
+  CQM: 1100000,
   CQS: 800000,
   CQT: 250000,
-  GEN: 250000,
-  AGS: 400000,
-  BGS: 150000,
-  SFL: 70000,
-  SSL: 50000,
-  SCB: 100000,
-  STS: 175000,
-  RDL: 900000,
-  RDS: 500000,
-  HPR: 1000000,
-  HYR: 1900000,
-  AEN: 1800000,
-  HTE: 3400000,
-  RCT: 900000,
-  AHP: 11000,
-  AWH: 14000,
-  APT: 14000,
-  SRP: 14000,
-  COM: 120000,
-  LIS: 450000,
-  TCU: 140000,
-  NV1: 150000,
-  ACS: 150000,
-  RCS: 140000,
-  RAG: 500000,
-  ADR: 70000,
-  EES: 45000,
   CTF: 17000,
-  WAL: 5000,
-  AFR: 17000,
+  EES: 45000,
+  FF: 21,
+  FFC: 300000,
   FIR: 950000,
-  VFT: 1800000,
-  VOR: 4900000,
+  FSE: 1050000,
+  GEN: 250000,
   HAM: 6000000,
-  BSU: 1100000,
-  CPU: 3200000,
+  HCB: 4000000,
+  HPR: 1000000,
+  HTE: 3400000,
+  HYR: 2300000,
+  LCB: 800000,
+  LFE: 195000,
+  LFL: 380000,
+  LHP: 3900,
+  LIS: 500000,
+  LSL: 490000,
+  MFE: 150000,
+  MFL: 210000,
+  MSL: 250000,
+  NV1: 170000,
+  QCR: 1050000,
+  RAG: 600000,
+  RCS: 200000,
+  RCT: 900000,
+  RDL: 1000000,
+  RDS: 500000,
+  SCB: 100000,
+  SF: 17,
+  SFE: 65000,
+  SFL: 70000,
+  SRP: 14000,
+  SSC: 550,
+  SSL: 50000,
+  STS: 175000,
+  TCU: 180000,
+  VCB: 800000,
+  VFT: 1800000,
   VOE: 5400000,
+  VOR: 4900000,
+  WAL: 5000,
+  WCB: 800000,
 };
 
 const SHIP_PART_TICKERS = new Set([
   'MFL', 'LFL', 'MSL', 'LSL', 'LFE', 'MFE', 'SFE', 'LHP', 'SSC', 'LCB', 'VCB',
   'WCB', 'HCB', 'FSE', 'QCR', 'CQM', 'CQL', 'BR1', 'BR2', 'FFC', 'BRS', 'CQS',
   'CQT', 'GEN', 'AGS', 'BGS', 'SFL', 'SSL', 'SCB', 'STS', 'RDL', 'RDS', 'HPR',
-  'HYR', 'AEN', 'HTE', 'RCT', 'AHP', 'AWH', 'APT', 'SRP', 'HAM', 'VOR', 'VFT'
+  'HYR', 'AEN', 'HTE', 'RCT', 'AHP', 'AWH', 'APT', 'SRP', 'HAM', 'VOR', 'VFT', 'FF', 'SF'
 ]);
 
 // Archiel is the primary builder — his ANT + Hephaestus stock drives buildCount and missing.
