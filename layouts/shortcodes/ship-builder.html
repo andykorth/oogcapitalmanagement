@@ -116,6 +116,14 @@
   #ship-builder-root .drydock-btn:hover {
     background: rgba(99, 102, 241, 0.12);
   }
+  #ship-builder-root .status-badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
 </style>
 
 <div id="ship-builder-root" class="space-y-2 calculator" data-oog-mode="{{ if eq (.Get `oog`) `true` }}true{{ else }}false{{ end }}">
@@ -134,6 +142,12 @@
         <div id="ship-detail" class="mb-4"></div>
       </div>
     </div>
+  </div>
+
+  <div id="section-orders" class="section-live" style="display:none">
+    <div class="section-label">Pending Orders</div>
+    <div id="orders-meta" style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem"></div>
+    <div id="orders-table-container"></div>
   </div>
 
   <div id="section-order" class="section-calculated" style="display:none">
@@ -537,6 +551,7 @@ const SECONDARY_SUPPLIERS = ["MrSmith33", "Exeler", "YGB", "evayoo"];
 
 let appState = {
   users: {},          // { username: { inventory, byLocation, timestamp } }
+  pendingOrders: [],  // Awaiting Delivery orders fetched from Google Sheets
   selectedShip: null,
   desiredCount: null
 };
@@ -555,6 +570,20 @@ const copyButton         = document.querySelector(".copy-order-btn");
 const OOG_MODE = document.getElementById("ship-builder-root").dataset.oogMode === "true";
 
 const INVENTORY_API_KEY = "4a07e526-b678-4f17-8858-39d80ab2d413";
+const ORDERS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQKyLRrl7JXDV9IuKkia0MMB6o1Td9tYsAzve-T3s7FLitaeU-6aTcUSw7vrofrKwtMkfuik9WHEtZH/pub?gid=1243564379&single=true&output=csv";
+
+const STATUS_CONFIG = {
+  'awaiting validation': { label: 'Awaiting Validation', color: '#f59e0b',         bg: 'rgba(245,158,11,0.12)'   },
+  'awaiting delivery':   { label: 'Awaiting Delivery',   color: 'rgb(99,102,241)', bg: 'rgba(99,102,241,0.12)'  },
+  'delivered':           { label: 'Delivered',           color: '#4ade80',         bg: 'rgba(74,222,128,0.12)'  },
+  'rejected':            { label: 'Rejected',            color: '#f87171',         bg: 'rgba(248,113,113,0.12)' },
+  'on hold':             { label: 'On Hold',             color: '#fb923c',         bg: 'rgba(251,146,60,0.12)'  },
+  'withdrawn':           { label: 'Withdrawn',           color: '#94a3b8',         bg: 'rgba(148,163,184,0.12)' },
+};
+
+const ordersSection   = document.getElementById("section-orders");
+const ordersMetaEl    = document.getElementById("orders-meta");
+const ordersTableEl   = document.getElementById("orders-table-container");
 
 function getShipFromUrl() {
   return new URLSearchParams(window.location.search).get("ship") || "";
@@ -651,11 +680,13 @@ const renderShipSummaryTable = () => {
 
   const tbody = document.createElement("tbody");
 
+  const reservations = computeReservations(appState.pendingOrders);
+
   for (const shipName of Object.keys(SHIP_RECIPES)) {
     const recipe = SHIP_RECIPES[shipName];
     if (recipe.internalSalesOnly && !OOG_MODE) continue;
 
-    const count = calculateBuildCount(appState.users["Archiel"].byLocation, recipe.parts);
+    const count = calculateBuildCount(appState.users["Archiel"].byLocation, recipe.parts, reservations);
     const stockClass = count > 0 ? "stock-in" : "stock-out";
 
     const tr = document.createElement("tr");
@@ -680,8 +711,9 @@ const renderShipSummaryTable = () => {
 const renderInventoryTable = () => {
   const selectedShip  = shipSelect.value || null;
   const desiredCount  = parseInt(desiredInput.value, 10) || null;
+  const reservations  = computeReservations(appState.pendingOrders);
 
-  const table = createTable(appState.users, selectedShip, desiredCount);
+  const table = createTable(appState.users, selectedShip, desiredCount, reservations);
 
   tableContainer.querySelector("table")?.remove();
   tableContainer.appendChild(table);
@@ -690,7 +722,7 @@ const renderInventoryTable = () => {
     resultEl.textContent = "Showing all ship parts.";
   } else {
     const recipe     = SHIP_RECIPES[selectedShip]?.parts;
-    const buildCount = calculateBuildCount(appState.users["Archiel"].byLocation, recipe);
+    const buildCount = calculateBuildCount(appState.users["Archiel"].byLocation, recipe, reservations);
     const color      = buildCount > 0 ? "#4ade80" : "#f87171";
     resultEl.innerHTML = `Archiel has parts for <span style="color:${color};font-weight:700">${buildCount.toLocaleString()}</span> × ${selectedShip}`;
   }
@@ -786,9 +818,10 @@ function renderShipDetails(selectedShip) {
     selectedShip = "OOG Premium 2k";
   }
 
-  const ship       = SHIP_RECIPES[selectedShip];
-  const recipe     = ship.parts;
-  const buildCount = calculateBuildCount(appState.users["Archiel"].byLocation, recipe);
+  const ship         = SHIP_RECIPES[selectedShip];
+  const recipe       = ship.parts;
+  const reservations = computeReservations(appState.pendingOrders);
+  const buildCount   = calculateBuildCount(appState.users["Archiel"].byLocation, recipe, reservations);
 
   const priceText = ship.price
     ? ship.price.toLocaleString() + " AIC"
@@ -862,13 +895,27 @@ shipSelect.addEventListener("change", () => {
 });
 desiredInput.addEventListener("input", renderInventoryTable);
 
-const calculateBuildCount = (byLocation, parts) => {
+// Returns a Map of ticker → total units reserved by all pending (Awaiting Delivery) orders.
+function computeReservations(orders) {
+  const reservations = new Map();
+  for (const order of orders) {
+    if (order.status.toLowerCase() !== 'awaiting delivery') continue;
+    if (!order.recipe) continue;
+    for (const [ticker, qty] of Object.entries(order.recipe.parts)) {
+      reservations.set(ticker, (reservations.get(ticker) || 0) + qty);
+    }
+  }
+  return reservations;
+}
+
+const calculateBuildCount = (byLocation, parts, reservations = new Map()) => {
   let maxBuilds = Infinity;
   for (const [ticker, required] of Object.entries(parts)) {
     const loc       = byLocation.get(ticker) || {};
     const ant       = loc["ANT"]     || 0;
     const hep       = loc["ZV-307c"] || 0;
-    const available = ant + hep;
+    const reserved  = reservations.get(ticker) || 0;
+    const available = Math.max(ant + hep - reserved, 0);
     maxBuilds = Math.min(maxBuilds, Math.floor(available / required));
   }
   return Number.isFinite(maxBuilds) ? maxBuilds : 0;
@@ -935,7 +982,7 @@ const processData = (csvData) => {
   return { inventory, byLocation };
 };
 
-const createTable = (users, selectedShip, desiredCount) => {
+const createTable = (users, selectedShip, desiredCount, reservations = new Map()) => {
   const table = document.createElement('table');
   table.className = "inventory-table table-auto border-collapse text-sm";
 
@@ -944,13 +991,18 @@ const createTable = (users, selectedShip, desiredCount) => {
     .map(u => `<th class="text-right pr-3">ANT (${u})</th>`)
     .join("");
 
+  const showPrice = !selectedShip;
+
   table.innerHTML = `
     <thead>
       <tr>
         <th class="text-left pr-3">Ticker</th>
+        ${showPrice ? '<th class="text-right pr-3">OOG Price</th>' : ''}
         <th class="text-right pr-3">Total (Archiel)</th>
         <th class="text-right pr-3">ANT</th>
         <th class="text-right pr-3">Hephaestus</th>
+        <th class="text-right pr-3">Reserved</th>
+        <th class="text-right pr-3">Available</th>
         ${supplierHeaders}
         <th class="text-right">Missing</th>
       </tr>
@@ -973,7 +1025,8 @@ const createTable = (users, selectedShip, desiredCount) => {
     const total     = archiel.inventory.get(ticker) || 0;
     const antArch   = archLoc["ANT"]     || 0;
     const hep       = archLoc["ZV-307c"] || 0;
-    const available = antArch + hep;
+    const reserved  = reservations.get(ticker) || 0;
+    const available = Math.max(antArch + hep - reserved, 0);
 
     const missing = computeMissing(ticker, available, recipe, desiredCount);
     if (missing > 0) allMissing[ticker] = missing;
@@ -981,6 +1034,15 @@ const createTable = (users, selectedShip, desiredCount) => {
     const missingCell = missing > 0
       ? `<td class="text-right missing-cell">${missing.toLocaleString()}</td>`
       : `<td class="text-right" style="color:var(--text-secondary)">—</td>`;
+
+    const reservedCell = reserved > 0
+      ? `<td class="text-right pr-3 font-mono" style="color:#f87171">-${reserved.toLocaleString()}</td>`
+      : `<td class="text-right pr-3 font-mono" style="color:var(--text-secondary)">—</td>`;
+
+    const oogPrice = SHIP_PART_PRICES[ticker] ?? null;
+    const priceCell = showPrice
+      ? `<td class="text-right pr-3 font-mono" style="color:var(--text-secondary)">${oogPrice !== null ? oogPrice.toLocaleString() : '—'}</td>`
+      : '';
 
     // One cell per secondary supplier (ANT stock only)
     const supplierCells = SECONDARY_SUPPLIERS.map(u => {
@@ -992,9 +1054,12 @@ const createTable = (users, selectedShip, desiredCount) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td class="pr-3" style="font-weight:600">${ticker}</td>
+      ${priceCell}
       <td class="text-right pr-3 font-mono">${total.toLocaleString()}</td>
       <td class="text-right pr-3 font-mono">${antArch.toLocaleString()}</td>
       <td class="text-right pr-3 font-mono">${hep.toLocaleString()}</td>
+      ${reservedCell}
+      <td class="text-right pr-3 font-mono">${available.toLocaleString()}</td>
       ${supplierCells}
       ${missingCell}
     `;
@@ -1006,6 +1071,117 @@ const createTable = (users, selectedShip, desiredCount) => {
   return table;
 };
 
+function parseCSVRow(row) {
+  const result = [];
+  let current = '';
+  let inQuotes = false;
+  for (let i = 0; i < row.length; i++) {
+    const ch = row[i];
+    if (ch === '"') {
+      inQuotes = !inQuotes;
+    } else if (ch === ',' && !inQuotes) {
+      result.push(current.trim());
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  result.push(current.trim());
+  return result;
+}
+
+async function fetchShipOrders() {
+  const cacheKey = 'ship_orders_cache';
+  const TTL = 60 * 60 * 1000; // 1 hour
+
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) {
+    try {
+      const { timestamp, data } = JSON.parse(cached);
+      if (Date.now() - timestamp < TTL) return { orders: data, timestamp };
+    } catch {}
+  }
+
+  const response = await fetch(ORDERS_CSV_URL);
+  const text = await response.text();
+  const lines = text.trim().split('\n');
+  const header = parseCSVRow(lines[0]);
+
+  const idx = name => header.findIndex(h => h.trim() === name);
+  const userIdx   = idx('User');
+  const compIdx   = idx('Company Code');
+  const corpIdx   = idx('Corporation');
+  const shipIdx   = idx('Ship');
+  const statusIdx = idx('Status');
+
+  const orders = lines.slice(1)
+    .map(line => parseCSVRow(line))
+    .filter(cols => cols[userIdx]?.trim())
+    .map(cols => ({
+      user:    cols[userIdx]?.trim()   || '',
+      company: cols[compIdx]?.trim()   || '',
+      corp:    cols[corpIdx]?.trim()   || '',
+      ship:    cols[shipIdx]?.trim()   || '',
+      status:  cols[statusIdx]?.trim() || '',
+      recipe:  SHIP_RECIPES[cols[shipIdx]?.trim()] ?? null,
+    }));
+
+  const timestamp = Date.now();
+  localStorage.setItem(cacheKey, JSON.stringify({ timestamp, data: orders }));
+  return { orders, timestamp };
+}
+
+function renderOrdersTable(orders, timestamp) {
+  ordersMetaEl.textContent = formatCacheAge(timestamp) + ' · refreshes every hour';
+
+  const pending = orders.filter(o => o.status.toLowerCase() === 'awaiting delivery');
+
+  const table = document.createElement('table');
+  table.className = 'inventory-table table-auto border-collapse text-sm';
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="text-left pr-4">User</th>
+        <th class="text-left pr-4">Company</th>
+        <th class="text-left pr-4">Corp</th>
+        <th class="text-left">Ship</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement('tbody');
+  for (const order of pending) {
+    const knownShip = order.recipe !== null;
+    const shipColor = knownShip ? '' : 'color:#f87171;';
+
+    const tr = document.createElement('tr');
+    tr.className = 'ship-row';
+    tr.innerHTML = `
+      <td class="pr-4">${order.user}</td>
+      <td class="pr-4 font-mono" style="color:var(--text-secondary)">${order.company}</td>
+      <td class="pr-4" style="color:var(--text-secondary)">${order.corp}</td>
+      <td style="${shipColor}">${order.ship}</td>
+    `;
+
+    if (knownShip) {
+      tr.style.cursor = 'pointer';
+      tr.addEventListener('click', () => {
+        shipSelect.value = order.ship;
+        updateUrlForShip(order.ship);
+        renderInventoryTable();
+        document.getElementById('section-inventory').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    tbody.appendChild(tr);
+  }
+
+  table.appendChild(tbody);
+  ordersTableEl.innerHTML = '';
+  ordersTableEl.appendChild(table);
+  ordersSection.style.display = '';
+}
+
 async function loadInventoryData() {
   statusEl.textContent = "Loading inventory data…";
   statusEl.style.color = "";
@@ -1013,13 +1189,17 @@ async function loadInventoryData() {
   const allUsers = [PRIMARY_BUILDER, ...SECONDARY_SUPPLIERS];
 
   try {
-    const results = await Promise.all(
-      allUsers.map(u => fetchInventoryForUser(u))
-    );
+    // Fetch inventory and orders in parallel so reservations are ready before rendering
+    const [inventoryResults, ordersResult] = await Promise.all([
+      Promise.all(allUsers.map(u => fetchInventoryForUser(u))),
+      fetchShipOrders().catch(err => { console.warn('Failed to load ship orders:', err); return null; }),
+    ]);
 
     allUsers.forEach((username, i) => {
-      appState.users[username] = results[i];
+      appState.users[username] = inventoryResults[i];
     });
+
+    appState.pendingOrders = ordersResult?.orders ?? [];
 
     const archielTimestamp = appState.users[PRIMARY_BUILDER].timestamp;
     const cacheNote = formatCacheAge(archielTimestamp);
@@ -1033,6 +1213,7 @@ async function loadInventoryData() {
       for (let i = localStorage.length - 1; i >= 0; i--) {
         const key = localStorage.key(i);
         if (key && key.startsWith("ship_inventory_cache_")) localStorage.removeItem(key);
+        if (key === "ship_orders_cache") localStorage.removeItem(key);
       }
       loadInventoryData();
     });
@@ -1053,6 +1234,10 @@ async function loadInventoryData() {
 
     renderShipSummaryTable();
     renderInventoryTable();
+
+    if (ordersResult) {
+      renderOrdersTable(ordersResult.orders, ordersResult.timestamp);
+    }
   } catch (err) {
     console.error(err);
     statusEl.textContent = "Failed to load inventory: " + err.message;
