@@ -6,15 +6,8 @@ type: page
 fullWidthArticle: true
 ---
 
-<h1>OOG Premium Shipbuilding <span style="color:#ef4444;display:inline-block;animation:bounce-suspended 0.8s infinite alternate ease-in-out;">SUSPENDED</span></h1>
-<style>
-@keyframes bounce-suspended {
-  0%   { transform: translateY(0) scale(1); }
-  100% { transform: translateY(-8px) scale(1.08); }
-}
-</style>
-
-See [our shipbuilding announcement](shipbuilding announcement).
+<h1>OOG Premium Shipbuilding</h1>
+{{< suspended-banner >}}
 
 
 Due to a variety of ongoing issues, sales of OOG ships is now suspended, effective immediately.  This is due to a number of reasons:
@@ -29,7 +22,7 @@ My apologies to everyone who has requested a ship recently. We will not be able 
 <!--
 # Premium Shipbuilding
 
-OOG Premium Shipbuilding offers a variety of ship designs with immediate availability on Hephaestus. There's no queue and we feature a live-updating ship inventory!
+OOG Premium Shipbuilding offers a variety of ship designs with immediate availability on Hephaestus. We endeavor to have immediately-available ships and our site features a live-updating ship inventory! Every ship includes enough fuel to reach a CX- ready to build, ready to fly!
 
 ## Our Premium 2k LCB Ship
 
@@ -48,7 +41,9 @@ Although we offer a variety of ships, our core offering is our Premium 2k LCB sh
 
 ## Instructions
 
-Contact Archiel (preferably via Discord).  Create a ship blueprint that matches your ship blueprint image. Rent 4 warehouses on Hephaestus to store the entire ship, or insert components into the ship as you accept the contracts. Make sure to click "start" in the shipyard after adding all the components.
+Choose one of the listed blueprints and contact Akyan (preferably via Discord) for vetting. AIC is assumed and preferred. If you prefer another currency, please specify. Your sales contract will come from Archiel.  
+
+Next, create a ship blueprint that matches your ship blueprint image. Rent 4 warehouses on Hephaestus to store the entire ship, or insert components into the ship as you accept the contracts. Make sure to click "start" in the shipyard after adding all the components.
 
 {{< ship-builder >}}
 -->

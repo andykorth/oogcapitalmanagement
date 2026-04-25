@@ -128,10 +128,10 @@
 
 <div id="ship-builder-root" class="space-y-2 calculator" data-oog-mode="{{ if eq (.Get `oog`) `true` }}true{{ else }}false{{ end }}">
 
-  <div id="sb-status" class="tool-status">Loading inventory data…</div>
+  <div id="sb-status" class="tool-status">Loading inventory data from FIO and pending orders from google sheets…</div>
 
   <div id="section-inventory" class="section-live" style="display:none">
-    <div class="section-label">Live Inventory</div>
+    <div class="section-label">Live Inventory of OOG Shipbuilders</div>
     <div id="sb-meta" style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem"></div>
 
     <div class="two-col">
@@ -146,6 +146,7 @@
 
   <div id="section-orders" class="section-live" style="display:none">
     <div class="section-label">Pending Orders</div>
+	<div class="tool-status">Akyan manages orders, verifies them, and adds them to the OOG Google Sheet. Pending ship orders appear here, and are filled by Archiel.</div>
     <div id="orders-meta" style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:0.75rem"></div>
     <div id="orders-table-container"></div>
   </div>
@@ -154,7 +155,7 @@
     <div class="section-label">Parts Order</div>
 
     <p class="text-sm" style="color:var(--text-secondary);margin-bottom:0.4rem">
-      Used by OOG ship builders to calculate parts needed to reach the desired ship count. Missing materials calculated from Archiel's stock at ANT + Hephaestus only.
+      Used by OOG ship building staff to calculate parts needed to reach the desired ship count. Missing materials are the sum of the pending orders and the desired ships, minus the stock held by Archiel at ANT + Hephaestus.
     </p>
     <p class="text-sm" style="color:var(--text-secondary);margin-bottom:0.75rem">
       Select a ship type to filter the parts list to that blueprint, or leave blank to show all ship parts.
@@ -687,7 +688,7 @@ const renderShipSummaryTable = () => {
     if (recipe.internalSalesOnly && !OOG_MODE) continue;
 
     const count = calculateBuildCount(appState.users["Archiel"].byLocation, recipe.parts, reservations);
-    const stockClass = count > 0 ? "stock-in" : "stock-out";
+    const stockClass = count > 0 ? "`stock-in`" : "stock-out";
 
     const tr = document.createElement("tr");
     tr.classList.add("ship-row");
