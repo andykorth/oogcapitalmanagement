@@ -167,7 +167,7 @@
           <!-- options filled by JS -->
         </select>
       </div>
-      <div class="input-row">
+      <div id="desiredCountRow" class="input-row">
         <label for="desiredCount" class="block font-semibold">Desired ship count</label>
         <input
           id="desiredCount"
@@ -711,6 +711,8 @@ const renderShipSummaryTable = () => {
 const renderInventoryTable = () => {
   const selectedShip  = shipSelect.value || null;
   const desiredCount  = parseInt(desiredInput.value, 10) || null;
+
+  document.getElementById("desiredCountRow").style.display = selectedShip ? "" : "none";
   const reservations  = computeReservations(appState.pendingOrders);
 
   const table = createTable(appState.users, selectedShip, desiredCount, reservations);
@@ -1028,7 +1030,8 @@ const createTable = (users, selectedShip, desiredCount, reservations = new Map()
     const reserved  = reservations.get(ticker) || 0;
     const available = Math.max(antArch + hep - reserved, 0);
 
-    const missing = computeMissing(ticker, available, recipe, desiredCount);
+    const reservationDeficit = Math.max(reserved - (antArch + hep), 0);
+    const missing = reservationDeficit + computeMissing(ticker, available, recipe, desiredCount);
     if (missing > 0) allMissing[ticker] = missing;
 
     const missingCell = missing > 0
@@ -1131,16 +1134,48 @@ async function fetchShipOrders() {
   return { orders, timestamp };
 }
 
+// Walks the queue in order, greedily reserving stock for each fillable order.
+// Returns a parallel array: true = fillable, false = not enough stock, null = unknown ship.
+function computeFulfillability(orders) {
+  const archiel = appState.users[PRIMARY_BUILDER];
+  if (!archiel) return orders.map(() => null);
+
+  // Seed working stock from ANT + Hephaestus (same basis as calculateBuildCount)
+  const stock = new Map();
+  for (const [ticker, locMap] of archiel.byLocation) {
+    stock.set(ticker, (locMap["ANT"] || 0) + (locMap["ZV-307c"] || 0));
+  }
+
+  return orders.map(order => {
+    if (!order.recipe) return null;
+    const parts = order.recipe.parts;
+
+    const canFill = Object.entries(parts).every(
+      ([ticker, qty]) => (stock.get(ticker) || 0) >= qty
+    );
+
+    if (canFill) {
+      for (const [ticker, qty] of Object.entries(parts)) {
+        stock.set(ticker, (stock.get(ticker) || 0) - qty);
+      }
+    }
+
+    return canFill;
+  });
+}
+
 function renderOrdersTable(orders, timestamp) {
   ordersMetaEl.textContent = formatCacheAge(timestamp) + ' · refreshes every hour';
 
   const pending = orders.filter(o => o.status.toLowerCase() === 'awaiting delivery');
+  const fillable = computeFulfillability(pending);
 
   const table = document.createElement('table');
   table.className = 'inventory-table table-auto border-collapse text-sm';
   table.innerHTML = `
     <thead>
       <tr>
+        <th class="text-left pr-4">Can Fill</th>
         <th class="text-left pr-4">User</th>
         <th class="text-left pr-4">Company</th>
         <th class="text-left pr-4">Corp</th>
@@ -1150,13 +1185,21 @@ function renderOrdersTable(orders, timestamp) {
   `;
 
   const tbody = document.createElement('tbody');
-  for (const order of pending) {
+  pending.forEach((order, i) => {
     const knownShip = order.recipe !== null;
     const shipColor = knownShip ? '' : 'color:#f87171;';
+
+    const f = fillable[i];
+    const fillCell = f === null
+      ? `<td class="pr-4" style="color:var(--text-secondary)">?</td>`
+      : f
+        ? `<td class="pr-4" style="color:#4ade80;font-weight:600">Yes</td>`
+        : `<td class="pr-4" style="color:#f87171;font-weight:600">No</td>`;
 
     const tr = document.createElement('tr');
     tr.className = 'ship-row';
     tr.innerHTML = `
+      ${fillCell}
       <td class="pr-4">${order.user}</td>
       <td class="pr-4 font-mono" style="color:var(--text-secondary)">${order.company}</td>
       <td class="pr-4" style="color:var(--text-secondary)">${order.corp}</td>
@@ -1174,7 +1217,7 @@ function renderOrdersTable(orders, timestamp) {
     }
 
     tbody.appendChild(tr);
-  }
+  });
 
   table.appendChild(tbody);
   ordersTableEl.innerHTML = '';
