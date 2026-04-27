@@ -124,6 +124,18 @@
     font-weight: 600;
     white-space: nowrap;
   }
+
+  
+  /* Faction currency badge */
+  .faction-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
 </style>
 
 <div id="ship-builder-root" class="space-y-2 calculator" data-oog-mode="{{ if eq (.Get `oog`) `true` }}true{{ else }}false{{ end }}">
@@ -1094,6 +1106,18 @@ function parseCSVRow(row) {
   return result;
 }
 
+// Faction/currency badge colors (PrUn faction currencies)
+const FACTION_COLORS = {
+  AIC: { bg: "#7c3500", fg: "#fb923c" },   // Antares (orange)
+  CIS: { bg: "#7c0a0a", fg: "#f87171" },   // Castillo-Ito Syndicate (red)
+  NCC: { bg: "#7c6800", fg: "#fde047" },   // Northstar Commission (yellow)
+  ICA: { bg: "#14532d", fg: "#86efac" },   // Insitor Cooperative (green)
+};
+function factionBadge(code) {
+  const c = FACTION_COLORS[code] || { bg: "#374151", fg: "#d1d5db" };
+  return `<span class="faction-badge" style="background:${c.bg};color:${c.fg}">${code ?? "—"}</span>`;
+}
+
 async function fetchShipOrders() {
   const cacheKey = 'ship_orders_cache';
   const TTL = 60 * 60 * 1000; // 1 hour
@@ -1117,16 +1141,18 @@ async function fetchShipOrders() {
   const corpIdx   = idx('Corporation');
   const shipIdx   = idx('Ship');
   const statusIdx = idx('Status');
+  const currencyIdx = idx('Currency');
 
   const orders = lines.slice(1)
     .map(line => parseCSVRow(line))
     .filter(cols => cols[userIdx]?.trim())
     .map(cols => ({
-      user:    cols[userIdx]?.trim()   || '',
-      company: cols[compIdx]?.trim()   || '',
-      corp:    cols[corpIdx]?.trim()   || '',
-      ship:    cols[shipIdx]?.trim()   || '',
-      status:  cols[statusIdx]?.trim() || '',
+      user:     cols[userIdx]?.trim()     || '',
+      company:  cols[compIdx]?.trim()     || '',
+      corp:     cols[corpIdx]?.trim()     || '',
+      ship:     cols[shipIdx]?.trim()     || '',
+      status:   cols[statusIdx]?.trim()   || '',
+      currency: cols[currencyIdx]?.trim() || '',
       recipe:  SHIP_RECIPES[cols[shipIdx]?.trim()] ?? null,
     }));
 
@@ -1180,7 +1206,8 @@ function renderOrdersTable(orders, timestamp) {
         <th class="text-left pr-4">User</th>
         <th class="text-left pr-4">Company</th>
         <th class="text-left pr-4">Corp</th>
-        <th class="text-left">Ship</th>
+        <th class="text-left pr-4">Ship</th>
+        <th class="text-left">Currency</th>
       </tr>
     </thead>
   `;
@@ -1204,7 +1231,8 @@ function renderOrdersTable(orders, timestamp) {
       <td class="pr-4">${order.user}</td>
       <td class="pr-4 font-mono" style="color:var(--text-secondary)">${order.company}</td>
       <td class="pr-4" style="color:var(--text-secondary)">${order.corp}</td>
-      <td style="${shipColor}">${order.ship}</td>
+      <td class="pr-4" style="${shipColor}">${order.ship}</td>
+      <td>${factionBadge(order.currency)}</td>
     `;
 
     if (knownShip) {
