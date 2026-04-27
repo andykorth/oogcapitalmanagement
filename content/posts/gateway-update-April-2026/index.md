@@ -29,7 +29,7 @@ The ANT to HRT link is nearly complete, they are just waiting on us, so I'd love
 
 {{< /twoColImage >}}
 
-We have great progress on the next 3 gates. [More details on Phase 2 gates](/posts/gateway-update-Mar-2026/).
+We have great progress on the next 3 gates. [More details on Phase 2 gates](/posts/gateway-update-mar-2026/).
 
 ![Great progress on the next 3 gates.](progress.png)
 
