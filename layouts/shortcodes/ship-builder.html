@@ -222,6 +222,26 @@ import { fetchPricing, priceData, loadModeledPrices, modeledPrices } from "/pric
 let select;
 
 const SHIP_RECIPES = {
+  
+  "STL - 2k": {
+    name: "STL - 2k",
+    price: 4200000,
+    markup: 250000,
+    internalSalesOnly: true,
+    stl: true,
+    notes: "A cheap STL only 2k, good option for local transit or for regions with strong gateways like ANT.",
+    imageUrl: "/shipbuilding/stl-2k.png",
+    parts: {
+      BRS: 1,
+      CQM: 1,
+      FSE: 1,
+      LCB: 1,
+      LHP: 90,
+      MSL: 1,
+      SF: 3500,
+      SSC: 121,
+    }
+  },
   "OOG Premium 2k": {
     name: "OOG Premium 2k",
     price: 7200000,
@@ -231,163 +251,294 @@ const SHIP_RECIPES = {
     imageUrl: "/shipbuilding/OOG2k2025.png",
     drydockUrl: "https://drydock.cc/?bp=1-112341001&n=OOG+Premium+2k",
     parts: {
-      SSC: 128,
-      LHP: 94,
-      LFE: 2,
-      MFE: 2,
-      LFL: 1,
-      MSL: 1,
-      SFE: 1,
-      LCB: 1,
-      FSE: 1,
-      QCR: 1,
-      CQM: 1,
       BR1: 1,
+      CQM: 1,
+      FF: 2000,
       FFC: 1,
-      STS: 1,
+      FSE: 1,
+      LCB: 1,
+      LFE: 2,
+      LFL: 1,
+      LHP: 94,
+      MFE: 2,
+      MSL: 1,
+      QCR: 1,
       SF: 3500,
-      FF: 800,
+      SFE: 1,
+      SSC: 128,
+      STS: 1,
     }
   },
-  "5k Shields": {
-    name: "5k Shields",
-    price: 22500000,
+  "OOG Prestige 2k": {
+    name: "OOG Prestige 2k",
+    price: 7200000,
     markup: 200000,
+    fast: true,
     internalSalesOnly: false,
-    notes: "The ultimate 5k hauler. High upfront cost, but the lowest operating cost overall. High powered FTL and STL engines keep the speed competitive.",
-    imageUrl: "/shipbuilding/shielded5k.png",
-    drydockUrl: "https://drydock.cc/?bp=1-11437422122&n=OOG+5k+Shields",
+    notes: "Upgraded with the faster HYR engine.",
+    imageUrl: "",
+    drydockUrl: "",
     parts: {
-      SSC: 284,
-      AHP: 159,
-      APT: 159,
-      AWH: 159,
-      SRP: 159,
-      LFE: 5,
-      MFE: 2,
-      SFE: 2,
       BR2: 1,
       CQL: 1,
+      FF: 2000,
+      FFC: 1,
       FSE: 1,
       HYR: 1,
-      HCB: 1,
+      LCB: 1,
+      LFE: 2,
       LFL: 1,
-      MSL: 1,
-      RDL: 1,
-      FFC: 1,
-      STS: 1,
-      SF: 500,
-      FF: 500
-    }
-  },
-  "5k Unshielded": {
-    name: "5k Unshielded",
-    price: 12200000,
-    markup: 400000,
-    notes: "A cost effective 5k option.",
-    internalSalesOnly: false,
-    imageUrl: "/shipbuilding/5kUnshielded.png",
-    drydockUrl: "https://drydock.cc/?bp=1-112371001&n=OOG+5k+Unshielded+LFL",
-    parts: {
-      SSC: 278,
-      LHP: 157,
-      BR1: 1,
-      CQL: 1,
-      FFC: 1,
-      FSE: 1,
-      HCB: 1,
-      LFE: 5,
+      LHP: 97,
       MFE: 2,
-      SFE: 1,
-      LFL: 1,
       MSL: 1,
-      QCR: 1,
+      SF: 3500,
+      SFE: 2,
+      SSC: 134,
       STS: 1,
-      SF: 500,
-      FF: 500
     }
   },
-  "2k All Shields": {
-    name: "2k All Shields",
+  "OOG Signature 2k": {
+    name: "OOG Signature 2k",
     price: 12900000,
     markup: 200000,
-    notes: "Archiel's main ship design. Very low running cost, repair only about once per year.",
     internalSalesOnly: false,
+    fast: true,
+    shields: true,
+    notes: "Archiel's personal main ship choice. Very low running cost, repair only about once per year.",
     imageUrl: "/shipbuilding/shielded_2k.png",
     drydockUrl: "https://drydock.cc/?bp=1-11234122122&n=OOG+2k+All+Shields",
     parts: {
-      SSC: 128,
-      AHP: 94,
-      APT: 94,
-      AWH: 94,
-      SRP: 94,
-      LFE: 2,
-      MFE: 2,
-      SFE: 1,
-      BR1: 1,
-      CQM: 1,
+      AHP: 97,
+      APT: 97,
+      AWH: 97,
+      BR2: 1,
+      CQL: 1,
+      FF: 2000,
       FFC: 1,
       FSE: 1,
+      HYR: 1,
       LCB: 1,
+      LFE: 2,
       LFL: 1,
+      MFE: 2,
+      MSL: 1,
+      RDL: 1,
+      SF: 3500,
+      SFE: 2,
+      SRP: 97,
+      SSC: 134,
+      STS: 1,
+    }
+  },
+  "STL - 5k HCB": {
+    name: "STL - 5k HCB",
+    price: 8200000,
+    markup: 200000,
+    internalSalesOnly: true,
+    stl: true,
+    notes: "STL only 5k ships are very cheap due to the BRS, most of the cost is in the HCB itself. For regions with good gateways like ANT, this can be a very cost effective option for certain planets.",
+    imageUrl: "/shipbuilding/5k-stl-hcb.png",
+    parts: {
+      BRS: 1,
+      CQL: 1,
+      FSE: 1,
+      HCB: 1,
+      LHP: 155,
+      MSL: 1,
+      SF: 3500,
+      SSC: 271,
+    }
+  },
+
+  "OOG Premium 5k": {
+    name: "OOG Premium 5k",
+    price: 22500000,
+    markup: 200000,
+    internalSalesOnly: false,
+    notes: "A cost effective 5k option.",
+    imageUrl: "/shipbuilding/shielded5k.png",
+    drydockUrl: "https://drydock.cc/?bp=1-11437422122&n=OOG+5k+Shields",
+    parts: {
+      BR1: 1,
+      CQL: 1,
+      FF: 2000,
+      FFC: 1,
+      FSE: 1,
+      HCB: 1,
+      LFE: 5,
+      LFL: 1,
+      LHP: 157,
+      MFE: 2,
       MSL: 1,
       QCR: 1,
-      RDL: 1,
+      SF: 3500,
+      SFE: 1,
+      SSC: 278,
       STS: 1,
-      SF: 500,
-      FF: 500
+    }
+  },
+  "OOG Prestige 5k": {
+    name: "OOG Prestige 5k",
+    price: 12200000,
+    markup: 400000,
+    notes: "A faster 5k build.",
+    internalSalesOnly: false,
+    fast: true,
+    imageUrl: "/shipbuilding/5kUnshielded.png",
+    drydockUrl: "https://drydock.cc/?bp=1-112371001&n=OOG+5k+Unshielded+LFL",
+    parts: {
+      BR2: 1,
+      CQL: 1,
+      FF: 2000,
+      FFC: 1,
+      FSE: 1,
+      HCB: 1,
+      HYR: 1,
+      LFE: 5,
+      LFL: 1,
+      LHP: 159,
+      MFE: 2,
+      MSL: 1,
+      SF: 3500,
+      SFE: 2,
+      SSC: 284,
+      STS: 1,
+    }
+  },
+    "OOG Signature 5k": {
+    name: "OOG Signature 5k",
+    price: 12200000,
+    markup: 400000,
+    fast: true,
+    shields: true,
+    notes: "The ultimate 5k hauler. High upfront cost, but the lowest operating cost overall. High powered FTL and STL engines keep the speed competitive.",
+    imageUrl: "/shipbuilding/shielded5k.png",
+    drydockUrl: "https://drydock.cc/?bp=1-11437422122&n=OOG+5k+Shields",
+    internalSalesOnly: false,
+    parts: {
+      AHP: 159,
+      APT: 159,
+      AWH: 159,
+      BR2: 1,
+      CQL: 1,
+      FF: 2000,
+      FFC: 1,
+      FSE: 1,
+      HCB: 1,
+      HYR: 1,
+      LFE: 5,
+      LFL: 1,
+      MFE: 2,
+      MSL: 1,
+      RDL: 1,
+      SF: 3500,
+      SFE: 2,
+      SRP: 159,
+      SSC: 284,
+      STS: 1,
+    }
+  },
+  "OOG STL WCB": {
+    name: "OOG STL WCB",
+    price: 8400000,
+    markup: 200000,
+    internalSalesOnly: false,
+    stl: true,
+    notes: "STL only version of the WCB.",
+    parts: {
+      BRS: 1,
+      CQS: 1,
+      FSE: 1,
+      LHP: 63,
+      MSL: 1,
+      SF: 3500,
+      SSC: 71,
+      WCB: 1,
     }
   },
   "OOG Premium WCB": {
     name: "OOG Premium WCB",
-    notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
     price: 8400000,
     markup: 200000,
     internalSalesOnly: false,
-    imageUrl: "/shipbuilding/oog-premium-wcb.png",
+    notes: "A discount WCB.",
+    imageUrl: "/shipbuilding/basic-wcb.png",
     parts: {
-      SSC: 84,
-      LHP: 71,
-      MFE: 2,
+      BR1: 1,
+      CQS: 1,
+      FF: 2000,
+      FFC: 1,
+      FSE: 1,
       LFE: 1,
       LFL: 1,
+      LHP: 68,
+      MFE: 2,
       MSL: 1,
-      SFE: 2,
-      FSE: 1,
-      HYR: 1,
-      CQM: 1,
-      BR2: 1,
-      FFC: 1,
+      QCR: 1,
+      SF: 3500,
+      SFE: 1,
+      SSC: 78,
       STS: 1,
       WCB: 1,
-      SF: 500,
-      FF: 500
     }
   },
-    "Basic WCB": {
-    name: "Basic WCB",
-    notes: "This is the cheap WCB option, with standard engines.",
+    "OOG Prestige WCB": {
+    name: "OOG Prestige WCB",
+    notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
+    imageUrl: "/shipbuilding/oog-premium-wcb.png",
     price: 6700000,
     markup: 200000,
     internalSalesOnly: false,
-    imageUrl: "/shipbuilding/basic-wcb.png",
+    fast: true,
     parts: {
-      SSC: 78,
-      LHP: 68,
-      MFE: 2,
+      BR2: 1,
+      CQM: 1,
+      FF: 2000,
+      FFC: 1,
+      FSE: 1,
+      HYR: 1,
       LFE: 1,
       LFL: 1,
+      LHP: 71,
+      MFE: 2,
       MSL: 1,
-      SFE: 1,
-      FSE: 1,
-      QCR: 1,
-      CQS: 1,
-      BR1: 1,
-      FFC: 1,
+      SF: 3500,
+      SFE: 2,
+      SSC: 84,
       STS: 1,
       WCB: 1,
-      SF: 500,
-      FF: 500
+    }
+  },
+  "OOG Signature WCB": {
+    name: "OOG Signature WCB",
+    notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
+    imageUrl: "/shipbuilding/oog-premium-wcb.png",
+    price: 6700000,
+    markup: 200000,
+    fast: true,
+    shields: true,
+    internalSalesOnly: false,
+    parts: {
+      AHP: 71,
+      APT: 71,
+      AWH: 71,
+      BR2: 1,
+      CQM: 1,
+      FF: 2000,
+      FFC: 1,
+      FSE: 1,
+      HYR: 1,
+      LFE: 1,
+      LFL: 1,
+      MFE: 2,
+      MSL: 1,
+      RDL: 1,
+      SF: 3500,
+      SFE: 2,
+      SRP: 71,
+      SSC: 84,
+      STS: 1,
+      WCB: 1,
     }
   },
   "OOG Gas Hauler": {
@@ -416,51 +567,12 @@ const SHIP_RECIPES = {
       FF: 500
     }
   },
-  "STL - 5k HCB": {
-    name: "STL - 5k HCB",
-    price: 8200000,
-    markup: 200000,
-    notes: "STL only 5k ships are very cheap due to the BRS, most of the cost is in the HCB itself. For regions with good gateways like ANT, this can be a very cost effective option for certain planets.",
-    internalSalesOnly: true,
-    imageUrl: "/shipbuilding/5k-stl-hcb.png",
-    parts: {
-      SSC: 265,
-      LHP: 152,
-      HCB: 1,
-      FSE: 1,
-      CQL: 1,
-      BRS: 1,
-      SSL: 1,
-      SF: 500
-    }
-  },
-
-  "STL - 2k": {
-    name: "STL - 2k",
-    price: 4200000,
-    markup: 250000,
-    notes: "A cheap STL only 2k, good option for local transit or for regions with strong gateways like ANT.",
-    internalSalesOnly: true,
-    imageUrl: "/shipbuilding/stl-2k.png",
-    parts: {
-      SSC: 121,
-      LHP: 90,
-      LCB: 1,
-      FSE: 1,
-      CQM: 1,
-      BRS: 1,
-      MSL: 1,
-      SF: 500
-    }
-  },
-
-  
   "Colony Ship": {
     name: "Colony Ship",
-    notes: "If you're in the market for one of these, you already know what to expect.",
     price: 36200000,
     markup: 400000,
     internalSalesOnly: false,
+    notes: "If you're in the market for one of these, you already know what to expect.",
     imageUrl: "/shipbuilding/colony-ship-blueprint.png",
     parts: {
       SSC: 406,
@@ -556,6 +668,14 @@ const SHIP_PART_TICKERS = new Set([
   'HYR', 'AEN', 'HTE', 'RCT', 'AHP', 'AWH', 'APT', 'SRP', 'HAM', 'VOR', 'VFT', 'FF', 'SF'
 ]);
 
+function shipFlagIcons(recipe) {
+  const icons = [];
+  if (recipe.stl)     icons.push('<span title="STL only — relies on gateways, no FTL drive" style="font-size:1em">⚓</span>');
+  if (recipe.fast)    icons.push('<span title="Fast — HYR hyperspace engine" style="font-size:1em">⚡</span>');
+  if (recipe.shields) icons.push('<span title="Shielded — armor plating reduces repair costs" style="font-size:1em">🛡️</span>');
+  return icons.length ? ' ' + icons.join('') : '';
+}
+
 // Archiel is the primary builder — his ANT + Hephaestus stock drives buildCount and missing.
 // Secondary suppliers contribute parts that will be shipped to Archiel; their ANT totals
 // are shown as informational columns only.
@@ -588,6 +708,7 @@ const ORDERS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQKyLRrl
 const STATUS_CONFIG = {
   'awaiting validation': { label: 'Awaiting Validation', color: '#f59e0b',         bg: 'rgba(245,158,11,0.12)'   },
   'awaiting delivery':   { label: 'Awaiting Delivery',   color: 'rgb(99,102,241)', bg: 'rgba(99,102,241,0.12)'  },
+  'awaiting pickup':   { label: 'Awaiting Pickup',   color: 'rgb(99,102,241)', bg: 'rgba(99,102,241,0.12)'  },
   'delivered':           { label: 'Delivered',           color: '#4ade80',         bg: 'rgba(74,222,128,0.12)'  },
   'rejected':            { label: 'Rejected',            color: '#f87171',         bg: 'rgba(248,113,113,0.12)' },
   'on hold':             { label: 'On Hold',             color: '#fb923c',         bg: 'rgba(251,146,60,0.12)'  },
@@ -710,7 +831,7 @@ const renderShipSummaryTable = () => {
       renderInventoryTable();
     });
     tr.innerHTML = `
-      <td class="pr-4">${shipName}</td>
+      <td class="pr-4">${shipName}${shipFlagIcons(recipe)}</td>
       <td class="text-right pr-3 font-mono ${stockClass}">${count.toLocaleString()}</td>
       <td class="text-right" style="color:var(--text-secondary)">${recipe.price.toLocaleString()} AIC</td>
     `;
@@ -871,7 +992,7 @@ function renderShipDetails(selectedShip) {
   shipDetailContainer.innerHTML = `
     <div class="ship-card">
       <div class="ship-card-info">
-        <div class="ship-title">${ship.name}</div>
+        <div class="ship-title">${ship.name}${shipFlagIcons(ship)}</div>
         <div class="ship-price">${priceText}</div>
         ${stockStatus}
         ${internalNote}
