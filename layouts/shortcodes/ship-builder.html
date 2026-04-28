@@ -243,7 +243,7 @@ const SHIP_RECIPES = {
     }
   },
   "OOG Premium 2k": {
-    name: "OOG Premium 2k",
+    name: "2k - Premium",
     price: 7200000,
     markup: 200000,
     internalSalesOnly: false,
@@ -270,8 +270,8 @@ const SHIP_RECIPES = {
     }
   },
   "OOG Prestige 2k": {
-    name: "OOG Prestige 2k",
-    price: 7200000,
+    name: "2k - Prestige",
+    price: 15400000,
     markup: 200000,
     fast: true,
     internalSalesOnly: false,
@@ -298,7 +298,7 @@ const SHIP_RECIPES = {
     }
   },
   "OOG Signature 2k": {
-    name: "OOG Signature 2k",
+    name: "2k - Signature",
     price: 12900000,
     markup: 200000,
     internalSalesOnly: false,
@@ -332,7 +332,7 @@ const SHIP_RECIPES = {
   },
   "STL - 5k HCB": {
     name: "STL - 5k HCB",
-    price: 8200000,
+    price: 8400000,
     markup: 200000,
     internalSalesOnly: true,
     stl: true,
@@ -351,8 +351,8 @@ const SHIP_RECIPES = {
   },
 
   "OOG Premium 5k": {
-    name: "OOG Premium 5k",
-    price: 22500000,
+    name: "5k - Premium",
+    price: 12200000,
     markup: 200000,
     internalSalesOnly: false,
     notes: "A cost effective 5k option.",
@@ -378,9 +378,9 @@ const SHIP_RECIPES = {
     }
   },
   "OOG Prestige 5k": {
-    name: "OOG Prestige 5k",
-    price: 12200000,
-    markup: 400000,
+    name: "5k - Prestige",
+    price: 13700000,
+    markup: 200000,
     notes: "A faster 5k build.",
     internalSalesOnly: false,
     fast: true,
@@ -406,8 +406,8 @@ const SHIP_RECIPES = {
     }
   },
     "OOG Signature 5k": {
-    name: "OOG Signature 5k",
-    price: 12200000,
+    name: "5k - Signature",
+    price: 22500000,
     markup: 400000,
     fast: true,
     shields: true,
@@ -440,9 +440,9 @@ const SHIP_RECIPES = {
   },
   "OOG STL WCB": {
     name: "OOG STL WCB",
-    price: 8400000,
-    markup: 200000,
-    internalSalesOnly: false,
+    price: 3900000,
+    markup: 300000,
+    internalSalesOnly: true,
     stl: true,
     notes: "STL only version of the WCB.",
     parts: {
@@ -457,8 +457,8 @@ const SHIP_RECIPES = {
     }
   },
   "OOG Premium WCB": {
-    name: "OOG Premium WCB",
-    price: 8400000,
+    name: "WCB - Premium",
+    price: 6700000,
     markup: 200000,
     internalSalesOnly: false,
     notes: "A discount WCB.",
@@ -483,10 +483,10 @@ const SHIP_RECIPES = {
     }
   },
     "OOG Prestige WCB": {
-    name: "OOG Prestige WCB",
+    name: "WCB - Prestige",
     notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
     imageUrl: "/shipbuilding/oog-premium-wcb.png",
-    price: 6700000,
+    price: 8500000,
     markup: 200000,
     internalSalesOnly: false,
     fast: true,
@@ -510,14 +510,14 @@ const SHIP_RECIPES = {
     }
   },
   "OOG Signature WCB": {
-    name: "OOG Signature WCB",
+    name: "WCB - Signature",
     notes: "Due to the small size (low volume) of WCBs, they can be quite fast and benefit from high powered STL engines. This is more expensive than a standard WCB, but offers great performance.",
     imageUrl: "/shipbuilding/oog-premium-wcb.png",
-    price: 6700000,
+    price: 13000000,
     markup: 200000,
     fast: true,
     shields: true,
-    internalSalesOnly: false,
+    internalSalesOnly: true,
     parts: {
       AHP: 71,
       APT: 71,
@@ -542,7 +542,7 @@ const SHIP_RECIPES = {
     }
   },
   "OOG Gas Hauler": {
-    name: "OOG Gas Hauler",
+    name: "VCB - Gas Hauler",
     price: 8300000,
     markup: 200000,
     notes: "Pretty standard VCB, suited for SPT and a few specific gas products.",
@@ -746,7 +746,7 @@ shipSelect.appendChild(noneOpt);
 for (const shipName of Object.keys(SHIP_RECIPES)) {
   const opt = document.createElement("option");
   opt.value = shipName;
-  opt.textContent = shipName;
+  opt.textContent = SHIP_RECIPES[shipName].name;
   shipSelect.appendChild(opt);
 }
 
@@ -831,7 +831,7 @@ const renderShipSummaryTable = () => {
       renderInventoryTable();
     });
     tr.innerHTML = `
-      <td class="pr-4">${shipName}${shipFlagIcons(recipe)}</td>
+      <td class="pr-4">${recipe.name}${shipFlagIcons(recipe)}</td>
       <td class="text-right pr-3 font-mono ${stockClass}">${count.toLocaleString()}</td>
       <td class="text-right" style="color:var(--text-secondary)">${recipe.price.toLocaleString()} AIC</td>
     `;
@@ -942,7 +942,7 @@ function renderPricingTable() {
     <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Sale price:</span> <strong>${fmt(salePrice)}</strong></div>
     <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Actual markup:</span> <strong style="color:${diffColor}">${fmtDiff(actualMarkup)}</strong></div>
     <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Desired builder markup:</span> <strong>${fmt(desiredMarkup)}</strong></div>
-    <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Ship price at Taiyi's:</span> <strong>${fmt(modTotal)}</strong></div>
+    <div><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Modeled min price:</span> <strong>${fmt(modTotal)}</strong></div>
     <div style="margin-top:0.4rem"><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Ship at market price (7d VWAP):</span> <strong>${fmt(mktTotal)}</strong></div>
     <div style="margin-top:0.4rem"><span style="color:var(--text-secondary);min-width:250px;display:inline-block">Savings over market price:</span> <strong>${fmt(mktSavings)}</strong></div>
   `;
