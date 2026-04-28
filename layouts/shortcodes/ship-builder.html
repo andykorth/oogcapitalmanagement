@@ -708,7 +708,7 @@ const ORDERS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQKyLRrl
 const STATUS_CONFIG = {
   'awaiting validation': { label: 'Awaiting Validation', color: '#f59e0b',         bg: 'rgba(245,158,11,0.12)'   },
   'awaiting delivery':   { label: 'Awaiting Delivery',   color: 'rgb(99,102,241)', bg: 'rgba(99,102,241,0.12)'  },
-  'awaiting pickup':   { label: 'Awaiting Pickup',   color: 'rgb(99,102,241)', bg: 'rgba(99,102,241,0.12)'  },
+  'awaiting pickup':   { label: 'Awaiting Pickup',   color: '#22d3ee',         bg: 'rgba(34,211,238,0.12)'  },
   'delivered':           { label: 'Delivered',           color: '#4ade80',         bg: 'rgba(74,222,128,0.12)'  },
   'rejected':            { label: 'Rejected',            color: '#f87171',         bg: 'rgba(248,113,113,0.12)' },
   'on hold':             { label: 'On Hold',             color: '#fb923c',         bg: 'rgba(251,146,60,0.12)'  },
@@ -1031,11 +1031,13 @@ shipSelect.addEventListener("change", () => {
 });
 desiredInput.addEventListener("input", renderInventoryTable);
 
-// Returns a Map of ticker → total units reserved by all pending (Awaiting Delivery) orders.
+const ACTIVE_ORDER_STATUSES = new Set(['awaiting delivery', 'awaiting pickup']);
+
+// Returns a Map of ticker → total units reserved by all active (Awaiting Delivery/Pickup) orders.
 function computeReservations(orders) {
   const reservations = new Map();
   for (const order of orders) {
-    if (order.status.toLowerCase() !== 'awaiting delivery') continue;
+    if (!ACTIVE_ORDER_STATUSES.has(order.status.toLowerCase())) continue;
     if (!order.recipe) continue;
     for (const [ticker, qty] of Object.entries(order.recipe.parts)) {
       reservations.set(ticker, (reservations.get(ticker) || 0) + qty);
@@ -1238,6 +1240,10 @@ function factionBadge(code) {
   const c = FACTION_COLORS[code] || { bg: "#374151", fg: "#d1d5db" };
   return `<span class="faction-badge" style="background:${c.bg};color:${c.fg}">${code ?? "—"}</span>`;
 }
+function statusBadge(statusStr) {
+  const cfg = STATUS_CONFIG[statusStr.toLowerCase()] || { label: statusStr, color: '#d1d5db', bg: 'rgba(209,213,219,0.12)' };
+  return `<span class="status-badge" style="background:${cfg.bg};color:${cfg.color}">${cfg.label}</span>`;
+}
 
 async function fetchShipOrders() {
   const cacheKey = 'ship_orders_cache';
@@ -1315,8 +1321,28 @@ function computeFulfillability(orders) {
 function renderOrdersTable(orders, timestamp) {
   ordersMetaEl.textContent = formatCacheAge(timestamp) + ' · refreshes every hour';
 
-  const pending = orders.filter(o => o.status.toLowerCase() === 'awaiting delivery');
-  const fillable = computeFulfillability(pending);
+  // Preserve the checkbox across re-renders; create it only on first call.
+  let showAllCb = document.getElementById('orders-show-all');
+  if (!showAllCb) {
+    const wrap = document.createElement('label');
+    wrap.style.cssText = 'display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;cursor:pointer;margin-bottom:0.75rem;color:var(--text-secondary);';
+    wrap.innerHTML = '<input type="checkbox" id="orders-show-all"> Show all orders';
+    ordersTableEl.appendChild(wrap);
+    showAllCb = document.getElementById('orders-show-all');
+    showAllCb.addEventListener('change', () => renderOrdersTable(orders, timestamp));
+  }
+  const showAll = showAllCb.checked;
+
+  ordersTableEl.querySelector('table')?.remove();
+
+  const displayOrders = showAll
+    ? orders
+    : orders.filter(o => ACTIVE_ORDER_STATUSES.has(o.status.toLowerCase()));
+
+  // Compute fillability only for active orders; map by object reference for O(1) lookup.
+  const activeOrders = displayOrders.filter(o => ACTIVE_ORDER_STATUSES.has(o.status.toLowerCase()));
+  const activeFillable = computeFulfillability(activeOrders);
+  const fillableMap = new Map(activeOrders.map((o, i) => [o, activeFillable[i]]));
 
   const table = document.createElement('table');
   table.className = 'inventory-table table-auto border-collapse text-sm';
@@ -1328,22 +1354,26 @@ function renderOrdersTable(orders, timestamp) {
         <th class="text-left pr-4">Company</th>
         <th class="text-left pr-4">Corp</th>
         <th class="text-left pr-4">Ship</th>
+        <th class="text-left pr-4">Status</th>
         <th class="text-left">Currency</th>
       </tr>
     </thead>
   `;
 
   const tbody = document.createElement('tbody');
-  pending.forEach((order, i) => {
+  displayOrders.forEach(order => {
     const knownShip = order.recipe !== null;
     const shipColor = knownShip ? '' : 'color:#f87171;';
+    const isActive  = ACTIVE_ORDER_STATUSES.has(order.status.toLowerCase());
 
-    const f = fillable[i];
-    const fillCell = f === null
-      ? `<td class="pr-4" style="color:var(--text-secondary)">?</td>`
-      : f
-        ? `<td class="pr-4" style="color:#4ade80;font-weight:600">Yes</td>`
-        : `<td class="pr-4" style="color:#f87171;font-weight:600">No</td>`;
+    const f = isActive ? fillableMap.get(order) : undefined;
+    const fillCell = !isActive
+      ? `<td class="pr-4" style="color:var(--text-secondary)">—</td>`
+      : f === null
+        ? `<td class="pr-4" style="color:var(--text-secondary)">?</td>`
+        : f
+          ? `<td class="pr-4" style="color:#4ade80;font-weight:600">Yes</td>`
+          : `<td class="pr-4" style="color:#f87171;font-weight:600">No</td>`;
 
     const tr = document.createElement('tr');
     tr.className = 'ship-row';
@@ -1353,6 +1383,7 @@ function renderOrdersTable(orders, timestamp) {
       <td class="pr-4 font-mono" style="color:var(--text-secondary)">${order.company}</td>
       <td class="pr-4" style="color:var(--text-secondary)">${order.corp}</td>
       <td class="pr-4" style="${shipColor}">${order.ship}</td>
+      <td class="pr-4">${statusBadge(order.status)}</td>
       <td>${factionBadge(order.currency)}</td>
     `;
 
@@ -1370,7 +1401,6 @@ function renderOrdersTable(orders, timestamp) {
   });
 
   table.appendChild(tbody);
-  ordersTableEl.innerHTML = '';
   ordersTableEl.appendChild(table);
   ordersSection.style.display = '';
 }
