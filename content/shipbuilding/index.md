@@ -3,6 +3,9 @@ title: "Premium Shipbuilding"
 featured_image: 'images/ship-builder-wide.png'
 omit_header_text: true
 type: page
+
+summary: OOG Premium Shipbuilding offers ready-to-build ships delivered directly to a shipyard, check out our live-updating inventory!
+description: OOG Premium Shipbuilding offers ready-to-build ships delivered directly to a shipyard, check out our live-updating inventory!
 fullWidthArticle: true
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: "Ship Builder Stock Check"
-featured_image: 'images/ship-builder-wide.png'
-summary: Ship Builder Stock Check
-description: Ship Builder Stock Check
+featured_image: 'images/ship-in-flight-narrow.png'
+
+summary: An OOG-internal tool for tracking shipbuilding components, managing our ship queue, and balancing ship component production.
+description: An OOG-internal tool for tracking shipbuilding components, managing our ship queue, and balancing ship component production.
+
 omit_header_text: true
 fullWidthArticle: true
 tags: tool
