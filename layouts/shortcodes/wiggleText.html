@@ -1,0 +1,15 @@
+<span class="wiggle-text">{{ .Inner }}</span>
+<style>
+.wiggle-text {
+  color: #ef4444;
+  display: inline-block;
+  animation: wiggle-text 0.45s infinite ease-in-out;
+  transform-origin: center;
+  text-shadow: 0 0 14px rgba(239, 68, 68, 0.45);
+}
+@keyframes wiggle-text {
+  0%   { transform: rotate(-2deg) translateX(-2px); }
+  50%  { transform: rotate(2deg) translateX(2px); }
+  100% { transform: rotate(-2deg) translateX(-2px); }
+}
+</style>
