@@ -5,6 +5,8 @@ omit_header_text: true
 type: page
 description: OOG fork browser extensions for Refined PrUn
 fullWidthArticle: true
+featured_image: 'images/oog-rprun-narrow.png'
+
 ---
 
 # OOG Fork Browser Extensions
