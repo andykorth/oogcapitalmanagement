@@ -17,4 +17,4 @@ These are OOG-maintained fork builds of the Refined PrUn browser extension.
 
 ## Firefox
 
-*Private extension link — coming soon.*
+<a href="https://storage.googleapis.com/oog-fork-gcs-bucket/refined-prun-latest.xpi" target="_blank" rel="noopener noreferrer">Download Firefox Extension (.xpi)</a>
