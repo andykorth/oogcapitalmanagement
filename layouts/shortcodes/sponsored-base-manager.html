@@ -259,7 +259,7 @@ async function fetchBurnrate(username) {
   const resp = await fetch(
     `https://rest.fnar.net/csv/burnrate?apikey=${API_KEY}&username=${encodeURIComponent(username)}`
   );
-  if (!resp.ok) throw new Error(`Burnrate fetch failed (${resp.status})`);
+  if (!resp.ok) throw new Error(`Burnrate fetch failed from ${resp.url} (HTTP Error: ${resp.status})  Check that url yourself and see if they have a public inventory or if the username is correct.`);
   const csv = await resp.text();
   setCache(key, csv);
   return csv;
@@ -273,7 +273,7 @@ async function fetchInventory(username) {
   const resp = await fetch(
     `https://rest.fnar.net/csv/inventory?apikey=${API_KEY}&username=${encodeURIComponent(username)}`
   );
-  if (!resp.ok) throw new Error(`Inventory fetch failed (${resp.status})`);
+  if (!resp.ok) throw new Error(`Inventory fetch failed from ${resp.url} (HTTP Error: ${resp.status}) Check that url yourself and see if they have a public inventory or if the username is correct.`);
   const csv = await resp.text();
   setCache(key, csv);
   return csv;
