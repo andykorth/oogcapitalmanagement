@@ -273,7 +273,7 @@ async function fetchInventory(username) {
   const resp = await fetch(
     `https://rest.fnar.net/csv/inventory?apikey=${API_KEY}&username=${encodeURIComponent(username)}`
   );
-  if (!resp.ok) throw new Error(`Inventory fetch failed from ${resp.url} (HTTP Error: ${resp.status}) Check that url yourself and see if they have a public inventory or if the username is correct.`);
+  if (!resp.ok) throw new Error(`Inventory fetch failed from ${resp.url} (HTTP Error: ${resp.status}) Check that url yourself and see if they have a public inventory or if the username is correct. If you have a 401 Unauthorized error, it likely means the user has not made their inventory public.`);
   const csv = await resp.text();
   setCache(key, csv);
   return csv;
@@ -481,7 +481,7 @@ async function loadData() {
   }
 
   pushUrl();
-  statusEl.textContent = "Loading burnrate and inventory…";
+  statusEl.textContent = `Loading ${beneficiary}'s burnrate and inventory…`;
   statusEl.style.color = "";
   resultsSection.style.display = "none";
 
@@ -505,7 +505,7 @@ async function loadData() {
       statusEl.textContent =
         `No burnrate found for "${planetQuery}" under ${beneficiary}. ` +
         (knownPlanets.length
-          ? `Known planets: ${knownPlanets.join(", ")}`
+          ? `Known planets for ${beneficiary}: ${knownPlanets.join(", ")}`
           : "No planet data available.");
       statusEl.style.color = "#f87171";
       return;
