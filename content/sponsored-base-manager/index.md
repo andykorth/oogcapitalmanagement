@@ -14,4 +14,6 @@ featured_image: images/dependency-graph-narrow.png
 
 Enter a beneficiary's username and planet to see how much of each consumable material needs to be restocked for a given number of days. Calculates the gap between what's currently in the base and what's needed, then exports a ready-to-use XIT ACTION plan for purchasing and shipping the missing materials.
 
+For this tool to work, the "Beneficiary" must have public inventory. They can set the permission for their Storage data on the [fio settings page](https://fio.fnar.net/settings). Enable public Storage for `*`.
+
 {{< sponsored-base-manager >}}
