@@ -309,7 +309,8 @@ function update() {
   startWarehouseLevelInput.value = start;
   endWarehouseLevelInput.value = end;
 
-  endCapEl.innerText = Math.ceil(end / 2) * 500;
+  // June 2026 change, now it's one level of storage per upgrade.
+  endCapEl.innerText = end * 500;
 
   const totals = {};
 
