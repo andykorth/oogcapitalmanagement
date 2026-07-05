@@ -54,5 +54,5 @@ This is realbandit's summary image of the gates planned by all gate building org
 {{< calltoaction heading="Join the ADI Gateway Cooperative!" thetext="Are you interested in contributing to a cooperative focused on constructing a gateway? Ownerships shares are proportional to your contribution. Join the cooperative and commit to the rules of the shared-ownership model! " button="Learn more!" buttonlink="/adi-gateway-cooperative/"  color1="#86198f" color2="#4a044e" >}}
 
 
-[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/5bJQcVfPyy)
+[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/ratQnq9XDE)
 
