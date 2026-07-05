@@ -45,5 +45,5 @@ Profitability of the gateway project continues to improve, with 34 million earne
 
 {{< calltoaction heading="Join the ADI Gateway Cooperative!" thetext="Are you interested in contributing to a cooperative focused on constructing a gateway? Ownerships shares are proportional to your contribution. Join the cooperative and commit to the rules of the shared-ownership model! " button="Learn more!" buttonlink="/adi-gateway-cooperative/"  color1="#86198f" color2="#4a044e" >}}
 
-[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/85e7buvEP6)
+[![Antares Logo](/images/ADI-Discord.png)](https://discord.gg/5bJQcVfPyy)
 

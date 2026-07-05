@@ -35,7 +35,7 @@ We’re looking for members who:
 
 We're selective about who joins in order to maintain the high trust environment that facilitates trade and working together. 
 
-To join you'll need an existing member to propose you as a candidate for a trial. The best way to get noticed is to be active in Antares aligned community groups like [ADI](https://discord.gg/kwqBtWNy), or trade with our members. Once proposed your candidature will be considered by the members, and if there's consensus you'll be offered a trial. 
+To join you'll need an existing member to propose you as a candidate for a trial. The best way to get noticed is to be active in Antares aligned community groups like [ADI](https://discord.gg/5bJQcVfPyy), or trade with our members. Once proposed your candidature will be considered by the members, and if there's consensus you'll be offered a trial. 
 
 During the trial period you'll have full access to everything the corp has to offer. You'll be free to ask questions, explore the Discord, and get to know us as a corp. We will do the same getting to know you as a player. After your trial is completed, if we are a good match for each other, you will receive an official invite to the corporation in game.
 
