@@ -75,7 +75,7 @@ Some tools are self-contained with inline `<script type="module">` in their shor
 - `https://rest.fnar.net/` — Primary game data via the older FIO api (corporations, ships, companies, flights, infrastructure, planets)
 - `https://api.fnar.net/` — Additional game data via the newer FIO api, such as gateways.
 - `https://api.prunplanner.org/data/exchanges` — Market pricing data
-- `https://pmmg-products.github.io/reports/` — Embedded analytics reports (iframes)
+- `https://prun.raylu.net/stats/` — Embedded analytics reports (iframes)
 
 ### Hugo Theme and Override Structure
 

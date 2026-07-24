@@ -78,7 +78,7 @@ function loadCorpReport(graphType, height, corpCode) {
 
   const userName = encodeURIComponent(corpCode);
   const iframe = document.createElement("iframe");
-  iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${userName}&hideOptions`;
+  iframe.src = `https://prun.raylu.net/stats/?${graphType}&companyName=${userName}&hideOptions`;
   iframe.width = "100%";
   iframe.height = height;
   iframe.style.border = "none";
@@ -298,7 +298,7 @@ function loadChurnReport(graphType, height, user) {
   const reportContainer = document.getElementById("churnContainer");
   if (!user) return;
   const iframe = document.createElement("iframe");
-  iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${encodeURIComponent(user)}&hideOptions`;
+  iframe.src = `https://prun.raylu.net/stats/?${graphType}&companyName=${encodeURIComponent(user)}&hideOptions`;
   iframe.width = "100%";
   iframe.height = height;
   iframe.style.border = "none";
