@@ -8,6 +8,8 @@ type: page
 
 ## Shareholder Tools:
 
-* [Intel / Info Lookup Tool](/intelTool/) - Tools using FIO and other data sources for running intel on users. (login required)
+OOG maintains a [custom fork of Refined Prun](/oogfork).
+
+We also have a shareholder exclusive [price and bid creation tool](/shareholders/price-tool/).
 
 ## Shareholder Guides:

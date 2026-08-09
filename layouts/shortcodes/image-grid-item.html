@@ -1,0 +1,32 @@
+<!-- image-grid-item.html -->
+<figure class="image-grid-item">
+    {{- $src := .Get "imageURL" -}}
+    {{- $image := .Page.Resources.GetMatch $src -}}
+
+    {{- $srcVid := .Get "videoURL" -}}
+    {{- $vidResource := .Page.Resources.GetMatch $srcVid -}}
+
+    {{ if $vidResource }}
+    <video width="100%" autoplay loop muted alt="{{ .Get "alt" }}">
+        <source src="{{ $vidResource.RelPermalink }}" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    {{ else if $image }}
+    <a href="{{ $image.RelPermalink }}">
+        <img
+            src="{{ $image.RelPermalink }}"
+            alt="{{ .Get "alt" }}"
+            width="{{ $image.Width }}"
+            height="{{ $image.Height }}"
+            class="image-grid-img"
+        />
+    </a>
+    {{ else }}
+    <a href="{{ $src }}">
+        <img src="{{ $src }}" alt="{{ .Get "alt" }}" class="image-grid-img" />
+    </a>
+    {{ end }}
+    {{ with .Inner }}
+    <figcaption class="image-grid-caption">{{ . | markdownify }}</figcaption>
+    {{ end }}
+</figure>

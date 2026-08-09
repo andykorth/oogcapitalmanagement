@@ -43,6 +43,7 @@ let lastSelected       = null;
 let lastReport         = null;
 let lastSiteCount      = 0;
 let lastUpkeepMap      = new Map(); // building ticker → Map(material ticker → upkeep data)
+let lastPlanetName     = null;
 
 const sectionRetrieved    = document.getElementById("section-retrieved");
 const sectionCalculated   = document.getElementById("section-calculated");
@@ -58,6 +59,9 @@ const supplyOriginEmoji   = document.getElementById("supplyOriginEmoji");
 const supplyJsonOutput    = document.getElementById("supplyJsonOutput");
 const supplyCopyBtn       = document.getElementById("supplyCopyBtn");
 const showAllMatsCheckbox = document.getElementById("showAllMats");
+const govburnExportSection = document.getElementById("govburn-export-section");
+const govburnJsonOutput    = document.getElementById("govburnJsonOutput");
+const govburnCopyBtn       = document.getElementById("govburnCopyBtn");
 
 // ── API fetches ────────────────────────────────────────────────────────────
 
@@ -241,6 +245,7 @@ async function loadInfrastructure() {
 
     const { projectMap: latestProjects, planetData, upkeepMap } = extractLatestProjects(infraProjects);
     lastUpkeepMap = upkeepMap;
+    lastPlanetName = planetData?.PlanetName ?? planetId;
     const { latestReport, maxPeriod } = extractLatestReport(reportsData);
     const startEpochMs = latestReport?.TimestampMs ?? null;
 
@@ -565,6 +570,7 @@ function renderCheapestFulfillmentTable(requiredNeeds, latestProjects) {
   // Store and render export (only selected options go into the supply export)
   lastSelected = selectedOpts;
   updateSupplyExport();
+  updateGovburnExport();
 
   // Rerender projected growth using projected fulfillment from this plan
   if (lastReport && lastLatestProjects) {
@@ -641,12 +647,51 @@ function updateSupplyExport() {
   supplyExportSection.style.display = "";
 }
 
+// ── XIT GOVBURN export ──────────────────────────────────────────────────────
+
+function updateGovburnExport() {
+  if (!lastSelected || !lastSelected.length) {
+    govburnExportSection.style.display = "none";
+    return;
+  }
+
+  // Group selected material options by building, since a building's
+  // selected/max level is shared across all of its selected materials.
+  const buildingsMap = new Map();
+  for (const opt of lastSelected) {
+    if (!buildingsMap.has(opt.building)) {
+      buildingsMap.set(opt.building, {
+        building: opt.building,
+        selectedLevel: opt.activeLevel,
+        maxLevel: opt.builtLevel,
+        materials: [],
+      });
+    }
+    buildingsMap.get(opt.building).materials.push(opt.ticker);
+  }
+
+  const exportJson = {
+    planet: lastPlanetName,
+    buildings: [...buildingsMap.values()],
+  };
+
+  govburnJsonOutput.value = JSON.stringify(exportJson, null, 2);
+  govburnExportSection.style.display = "";
+}
+
 // ── Event listeners ────────────────────────────────────────────────────────
 
 supplyCopyBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(supplyJsonOutput.value).then(() => {
     supplyCopyBtn.textContent = "Copied!";
     setTimeout(() => (supplyCopyBtn.textContent = "Copy JSON"), 1500);
+  });
+});
+
+govburnCopyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(govburnJsonOutput.value).then(() => {
+    govburnCopyBtn.textContent = "Copied!";
+    setTimeout(() => (govburnCopyBtn.textContent = "Copy JSON"), 1500);
   });
 });
 

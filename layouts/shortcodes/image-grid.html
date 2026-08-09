@@ -1,0 +1,5 @@
+<!-- image-grid.html -->
+{{- $cols := .Get "cols" | default "2" -}}
+<div class="image-grid image-grid-cols-{{ $cols }}">
+    {{ .Inner }}
+</div>

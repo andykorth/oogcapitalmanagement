@@ -24,7 +24,7 @@ Generally the responsibilities of a newly elected governor falls into these cate
 * Ensure sustainable finances
 
 We assume at this point, you're fairly familiar with the basics of Prosperous Universe. Before trying your hand at governance, you probably should have a few bases and have looked around to see what is behind the “Planetary Administration Center”, “Local Rules”, and other screens on a planet buffer. Be aware that governing a low population planet can require some upfront investment from the governor before being able to build up a financial buffer for investments. Income may ramp up slowly for new planets and is primarily dependent on tax income from working population. It will also help if you understand how a COGC works.
-A governor is never alone as the parliament has MP's that can support you with advice, materials or even take over in case real life takes priority. The UFO discord channel is also full of players ready to assist in any way: https://discord.gg/Ywm2kGRH 
+A governor is never alone as the parliament has MP's that can support you with advice, materials or even take over in case real life takes priority. The UFO discord channel is also full of players ready to assist in any way: 
 
 ## Archiel's Governor Helper spreadsheet
 Make a copy of this sheet, and enter the name of your planet in the green box in the top left.
