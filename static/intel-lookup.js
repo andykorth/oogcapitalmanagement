@@ -255,7 +255,7 @@ function loadCompanyReport(graphType, height, company) {
   if (!company?.UserName) return;
   const userName = encodeURIComponent(company.UserName);
   const iframe = document.createElement("iframe");
-  iframe.src = `https://pmmg-products.github.io/reports/?${graphType}&companyName=${userName}&hideOptions`;
+  iframe.src = `https://prun.raylu.net/stats/?${graphType}&companyName=${userName}&hideOptions`;
   iframe.width = "100%";
   iframe.height = height;
   iframe.style.border = "none";
