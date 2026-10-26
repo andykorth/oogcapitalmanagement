@@ -3,7 +3,7 @@ title: "OOG Fork Shipping Routes Preview"
 date: 2026-10-23T20:00:00-04:00
 draft: false
 language: en
-featured_image: images/oog-fork-shipping-routes-narrow.png
+featured_image: images/oog-fork-shipping-routes-header.png
 summary: A preview of new features available soon for shipping routes in the OOG Fork.
 description: A preview of new features available soon for shipping routes in the OOG Fork.
 author: Jackinabox
