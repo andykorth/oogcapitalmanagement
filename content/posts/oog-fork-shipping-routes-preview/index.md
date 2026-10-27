@@ -33,15 +33,19 @@ If a player finds that more supply days fit in a route than the route days requi
 
 But how does one know what bases to put on what route? There is a new external tool to help with that, <http://profitableprun.com/star-map>. By using the COPY button in XIT BURN, one can import their empire and burn to a 3d star map that allows easy view of potential routes and can propose efficient routes for testing in game. If nothing else, it's a cool way to look at one's empire.
 
-{{< vimeo id="1239696240" title="Star Map" >}}
+<div style="position: relative; padding-bottom: 43.44%; height: 0; overflow: hidden;">
+<iframe src="https://player.vimeo.com/video/1239696240?dnt=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen" title="Star Map"></iframe>
+</div>
 
 At this point, if someone wants to create an on-demand, non-automated route, it's now ready to be set up and launched through Refined PrUn. The player clicks assign in XIT ROUTEBURN, which opens a CX buy for any needed materials, then dispatches the designated ship on the route.
 
-![XIT ROUTEBURN with automated and on-demand routes](xit-routeburn.png)
+![XIT ROUTEBURN on-demand route with the ASSIGN button](xit-routeburn-assign.png)
 
 The real power of shipping routes is automated, repeating routes though. We all want to go away for a week and have our empire operate on autopilot. A crucial nuance is that the game’s shipping routes do not include automatically buying needed goods at the commodity exchange. This means that for an automated, repeating route, players need to keep a stockpile at the commodity exchange in addition to the one already present at their base. One does not want to leave for the weekend and find that a route supporting several bases failed to fire on Saturday morning because needed materials were not in the warehouse at the route origin.
 
 Buying such a stockpile is trivial, and I have a feature to do so over a restock period (ROUTESUPPLY), similar to the resupply period for burnact. Tracking the stockpile drawdown also isn’t particularly difficult, so in XIT ROUTEBURN, I have a separate countdown for each route origin: the days until the first departure that the stock at the origin can’t fully load.
+
+![XIT ROUTEBURN with automated and on-demand routes](xit-routeburn.png)
 
 The challenge comes in making sure that one doesn’t accidentally sell, ship, or trade that buffer in the meantime. Given we don’t have containers, it just sits in an inventory, probably one's most frequently turned-over inventory, the CX. To protect that CX buffer, I have adjusted the CX Buy step in every action package except Route Restock itself (BURN, REPAIR, GOVBURN, DISPATCH and custom packages) to ignore the stockpile when calculating how much needs to be purchased for resupply, repair, etc. Also, I have created warnings on ACT MTRA steps and on contract fulfillment, if one tries to transfer stockpile goods. There’s also a new guard in CXPO if one is selling stockpiled goods. All of these are warnings players can dismiss; none of them are hard blocks. It’s a lot, but necessary if the dream of automated routes is to be realized in the current feature set.
 
