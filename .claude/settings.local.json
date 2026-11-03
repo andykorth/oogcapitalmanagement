@@ -6,7 +6,9 @@
       "WebFetch(domain:pct.fnar.net)",
       "WebFetch(domain:localhost)",
       "WebFetch(domain:api.fnar.net)",
-      "WebFetch(domain:rest.fnar.net)"
+      "WebFetch(domain:rest.fnar.net)",
+      "Bash(hugo --quiet)",
+      "Bash(echo \"EXIT:$?\")"
     ]
   }
 }
